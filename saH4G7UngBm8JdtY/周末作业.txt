@@ -1,0 +1,23 @@
+CDCBC
+ADBDD
+B
+
+6
+i = n To 1 Step -1
+Text2.Text = outs
+6
+¿ªÊ¼
+Int(Rnd * 50) + 1
+List1.AddItem Str(m)
+3
+Dim a(1 To 10) As Integer
+i = i  + 1
+4
+4
+Text1.Text
+Mid(s,i,1)
+num = num + 1
+.vbp  .frm
+Caption
+Text1.Text
+Èý
