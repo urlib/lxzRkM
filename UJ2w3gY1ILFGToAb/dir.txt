@@ -1,0 +1,29 @@
+.
+├── [Content_Types].xml
+├── _rels
+├── dir.txt
+├── docProps
+│   ├── app.xml
+│   ├── core.xml
+│   └── custom.xml
+├── xl
+│   ├── _rels
+│   │   └── workbook.xml.rels
+│   ├── drawings
+│   │   ├── _rels
+│   │   │   └── drawing1.xml.rels
+│   │   └── drawing1.xml
+│   ├── media
+│   │   └── image1.png
+│   ├── sharedStrings.xml
+│   ├── styles.xml
+│   ├── theme
+│   │   └── theme1.xml
+│   ├── workbook.xml
+│   └── worksheets
+│       ├── _rels
+│       │   └── sheet1.xml.rels
+│       └── sheet1.xml
+└── 标准模板-ISP花样出锅项目.xlsx
+
+10 directories, 16 files
