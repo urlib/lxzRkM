@@ -1,0 +1,8 @@
+<error>
+    <code>wp_die</code>
+    <title><![CDATA[WordPress &amp;rsaquo; Error]]></title>
+    <message><![CDATA[HTTP redirect status code must be a redirection code, 3xx.]]></message>
+    <data>
+        <status>500</status>
+    </data>
+</error>
