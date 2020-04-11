@@ -1,0 +1,2928 @@
+
+
+
+<!DOCTYPE html>
+<html class="" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Made Possible – Arm</title>
+
+    
+    
+
+<link rel="stylesheet" href="//cdn.designsystem.arm.com/rel/2.20.1/arm-design-system-scoped.css" crossorigin="anonymous" />
+<script>
+// akam-sw.js install script version 1.3.3
+"serviceWorker"in navigator&&"find"in[]&&function(){var e=new Promise(function(e){"complete"===document.readyState||!1?e():(window.addEventListener("load",function(){e()}),setTimeout(function(){"complete"!==document.readyState&&e()},1e4))}),n=window.akamServiceWorkerInvoked,r="1.3.3";if(n)aka3pmLog("akam-setup already invoked");else{window.akamServiceWorkerInvoked=!0,window.aka3pmLog=function(){window.akamServiceWorkerDebug&&console.log.apply(console,arguments)};function o(e){(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"sm.sw.s":e,"sm.sw.v":r}])}var i="/akam-sw.js",a=new Map;navigator.serviceWorker.addEventListener("message",function(e){var n,r,o=e.data;if(o.isAka3pm)if(o.command){var i=(n=o.command,(r=a.get(n))&&r.length>0?r.shift():null);i&&i(e.data.response)}else if(o.commandToClient)switch(o.commandToClient){case"enableDebug":window.akamServiceWorkerDebug||(window.akamServiceWorkerDebug=!0,aka3pmLog("Setup script debug enabled via service worker message"),p());break;case"boomerangMQ":o.payload&&(window.BOOMR_mq=window.BOOMR_mq||[]).push(o.payload)}aka3pmLog("akam-sw message: "+JSON.stringify(e.data))});var t=function(e){return new Promise(function(n){var r,o;r=e.command,o=n,a.has(r)||a.set(r,[]),a.get(r).push(o),navigator.serviceWorker.controller&&(e.isAka3pm=!0,navigator.serviceWorker.controller.postMessage(e))})},c=function(e){return t({command:"navTiming",navTiming:e})},s=null,m={},d=function(){var e=i;return s&&(e+="?othersw="+encodeURIComponent(s)),function(e,n){return new Promise(function(r,i){aka3pmLog("Registering service worker with URL: "+e),navigator.serviceWorker.register(e,n).then(function(e){aka3pmLog("ServiceWorker registration successful with scope: ",e.scope),r(e),o(1)}).catch(function(e){aka3pmLog("ServiceWorker registration failed: ",e),o(0),i(e)})})}(e,m)},g=ServiceWorkerContainer.prototype.register;if(ServiceWorkerContainer.prototype.register=function(n,r){return n.includes(i)?g.call(this,n,r):(aka3pmLog("Overriding registration of service worker for: "+n),s=new URL(n,window.location.href),m=r,navigator.serviceWorker.controller?new Promise(function(n,r){var o=navigator.serviceWorker.controller.scriptURL;if(o.includes(i)){var a=encodeURIComponent(s);o.includes(a)?(aka3pmLog("Cancelling registration as we already integrate other SW: "+s),navigator.serviceWorker.getRegistration().then(function(e){n(e)})):e.then(function(){aka3pmLog("Unregistering existing 3pm service worker"),navigator.serviceWorker.getRegistration().then(function(e){e.unregister().then(function(){return d()}).then(function(e){n(e)}).catch(function(e){r(e)})})})}else aka3pmLog("Cancelling registration as we already have akam-sw.js installed"),navigator.serviceWorker.getRegistration().then(function(e){n(e)})}):g.call(this,n,r))},navigator.serviceWorker.controller){var u=navigator.serviceWorker.controller.scriptURL;u.includes("/akam-sw.js")||u.includes("/akam-sw-preprod.js")||u.includes("/threepm-sw.js")||(aka3pmLog("Detected existing service worker. Removing and re-adding inside akam-sw.js"),s=new URL(u,window.location.href),e.then(function(){navigator.serviceWorker.getRegistration().then(function(e){m={scope:e.scope},e.unregister(),d()})}))}else e.then(function(){window.akamServiceWorkerPreprod&&(i="/akam-sw-preprod.js"),d()});if(window.performance){var w=window.performance.timing,l=w.responseEnd-w.responseStart;c(l)}e.then(function(){t({command:"pageLoad"})});var k=!1;function p(){window.akamServiceWorkerDebug&&!k&&(k=!0,aka3pmLog("Initializing debug functions at window scope"),window.aka3pmInjectSwPolicy=function(e){return t({command:"updatePolicy",policy:e})},window.aka3pmDisableInjectedPolicy=function(){return t({command:"disableInjectedPolicy"})},window.aka3pmDeleteInjectedPolicy=function(){return t({command:"deleteInjectedPolicy"})},window.aka3pmGetStateAsync=function(){return t({command:"getState"})},window.aka3pmDumpState=function(){aka3pmGetStateAsync().then(function(e){aka3pmLog(JSON.stringify(e,null,"\t"))})},window.aka3pmInjectTiming=function(e){return c(e)},window.aka3pmUpdatePolicyFromNetwork=function(){return t({command:"pullPolicyFromNetwork"})})}p()}}();</script>
+<script src="//cdn.designsystem.arm.com/rel/2.20.1/arm-design-system.js" crossorigin="anonymous"></script>
+
+
+    
+    <link rel="stylesheet" href="/shared/vendor/js/foundation/css/normalize.min.css" />
+    <link rel="stylesheet" href="https://www.arm.com/shared/arm.com-new/css/app.css?v=3.2.2.0" />
+
+    
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta content="en" http-equiv="content-language">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Arm Ltd.">
+<meta name="description" content="This page is a homage to people who push the boundaries, do big things, and embrace the future of innovation as limitless. Every inspiring thing you see here is a result of hard work and big dreams. The technology is Made Possible by Arm and our partners.">
+<meta name="keywords" content="">
+<meta content="Copyright &#169; 1995-2020 Arm Limited (or its affiliates). All rights reserved." name="copyright">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="msapplication-config" content="https://www.arm.com:443/shared/common/img/favicon/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="msapplication-TileImage" content="https://www.arm.com:443/shared/common/img/favicon/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="server" content="788CE777" />
+
+<meta property="og:title" content="Made Possible">
+<meta property="og:description" content="This page is a homage to people who push the boundaries, do big things, and embrace the future of innovation as limitless. Every inspiring thing you see here is a result of hard work and big dreams.">
+<meta property="og:image" content="https://www.arm.com:443">
+<meta property="og:site_name" content="Arm | The Architecture for the Digital World">
+<meta property="og:url" content="https://www.arm.com/why-arm/innovation/made-possible">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en">
+
+<meta property="article:author" content="Arm Ltd.">
+<meta property="article:publisher" content="Arm Ltd.">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="Arm | The Architecture for the Digital World">
+<meta name="twitter:title" content="Made Possible">
+<meta name="twitter:description" content="This page is a homage to people who push the boundaries, do big things, and embrace the future of innovation as limitless. Every inspiring thing you see here is a result of hard work and big dreams.">
+<meta name="twitter:image" content="https://www.arm.com:443">
+<meta name="twitter:url" content="https://www.arm.com/why-arm/innovation/made-possible">
+
+<meta itemprop="name" content="Made Possible">
+<meta itemprop="description" content="This page is a homage to people who push the boundaries, do big things, and embrace the future of innovation as limitless. Every inspiring thing you see here is a result of hard work and big dreams.">
+<meta itemprop="image" content="https://www.arm.com:443">
+
+
+
+    
+    
+
+<link rel="apple-touch-icon" sizes="57x57" href="https://www.arm.com/shared/common/img/favicon/apple-touch-icon.png?v=3.2.2.0" />
+<link rel="apple-touch-icon" sizes="60x60" href="https://www.arm.com/shared/common/img/favicon/apple-touch-icon.png?v=3.2.2.0" />
+<link rel="apple-touch-icon" sizes="72x72" href="https://www.arm.com/shared/common/img/favicon/apple-touch-icon.png?v=3.2.2.0" />
+<link rel="apple-touch-icon" sizes="76x76" href="https://www.arm.com/shared/common/img/favicon/apple-touch-icon.png?v=3.2.2.0" />
+<link rel="apple-touch-icon" sizes="114x114" href="https://www.arm.com/shared/common/img/favicon/apple-touch-icon.png?v=3.2.2.0" />
+<link rel="apple-touch-icon" sizes="120x120" href="https://www.arm.com/shared/common/img/favicon/apple-touch-icon.png?v=3.2.2.0" />
+<link rel="apple-touch-icon" sizes="144x144" href="https://www.arm.com/shared/common/img/favicon/apple-touch-icon.png?v=3.2.2.0" />
+<link rel="apple-touch-icon" sizes="152x152" href="https://www.arm.com/shared/common/img/favicon/apple-touch-icon.png?v=3.2.2.0" />
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.arm.com/shared/common/img/favicon/apple-touch-icon.png?v=3.2.2.0" />
+<link rel="icon" type="image/png" href="https://www.arm.com/shared/common/img/favicon/favicon-32x32.png?v=3.2.2.0" sizes="32x32" />
+<link rel="icon" type="image/png" href="https://www.arm.com/shared/common/img/favicon/favicon-48x48.png?v=3.2.2.0" sizes="48x48" />
+<link rel="icon" type="image/png" href="https://www.arm.com/shared/common/img/favicon/android-chrome-192x192.png?v=3.2.2.0" sizes="192x192" />
+<link rel="icon" type="image/png" href="https://www.arm.com/shared/common/img/favicon/android-chrome-256x256.png?v=3.2.2.0" sizes="256x256" />
+<link rel="icon" type="image/png" href="https://www.arm.com/shared/common/img/favicon/favicon-16x16.png?v=3.2.2.0" sizes="16x16" />
+<link rel="shortcut icon" type="image/ico" href="https://www.arm.com/shared/common/img/favicon/favicon.ico?v=3.2.2.0" />
+<link rel="manifest" href="https://www.arm.com/shared/common/img/favicon/manifest.json?v=3.2.2.0" />
+
+
+    
+    
+<!-- Clearbit -->
+<script src="https://reveal.clearbit.com/v1/companies/reveal?authorization=pk_acf6fc4fd7e2fec55c586040e1705149&variable=reveal"></script>
+<!-- End Clearbit -->
+
+
+    
+    
+
+
+<!-- Google Tag Manager -->
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window, document, 'script', 'dataLayer', 'GTM-K25LQR');
+</script>
+<!-- End Google Tag Manager -->
+
+    
+
+    
+    
+
+<!-- Optimizely -->
+<script src="https://cdn.optimizely.com/js/14326880155.js"></script>
+<!-- End Optimizely -->
+
+
+    
+    
+
+<!-- Adobe -->
+<script src="//assets.adobedtm.com/launch-EN10e66088202b43a3b7f30a6ded39776d.min.js" async></script>
+<!-- End Adobe -->
+
+
+    
+    <script src="/shared/common/js/polyfills/intersection-observer.js"></script>
+
+  <script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"","rua.cook":"false","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false"}]);</script>
+  <script>!function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="YX9U9-3CW2M-92JLU-3BLJD-T6LD5",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,o,_,r=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);r.src="javascript:void(0)",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="width:0;height:0;border:0;display:none;",_=document.getElementsByTagName("script")[0],_.parentNode.insertBefore(r,_);try{o=r.contentWindow.document}catch(O){i=document.domain,r.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",o=r.contentWindow.document}o.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"YX9U9-3CW2M-92JLU-3BLJD-T6LD5",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},o.write("<bo"+'dy onload="document._l();">'),o.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e=""=="true"?1:0,t="",n="oafkwfg7o7gbkxurnraa-f-ae2faf18e-clientnsv4-s.akamaihd.net",i={"ak.v":"27","ak.cp":"496968","ak.ai":parseInt("325459",10),"ak.ol":"0","ak.cr":173,"ak.ipv":4,"ak.proto":"","ak.rid":"a060837","ak.r":29433,"ak.a2":e,"ak.m":"a","ak.n":"essl","ak.bpcip":"112.10.171.0","ak.cport":9213,"ak.gh":"223.119.50.167","ak.quicv":"","ak.tlsv":"tls1.2","ak.0rtt":"","ak.csrc":"-","ak.acc":"reno","ak.t":"1586588736","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==l3ySpHyFS72B3RCuA+0e8Z6VdJgRwQhNaq3yLjsgCMk455hlPtOUIEXqjf6Qodhw8uI6S18fcVu6E+IyVTRLb2KnhgDffI6y11sGszdIxt0fnWg+CCp2Ej7/kmez34ZorbwmRkRVvkSAABx/Sd9lrZazvhfwiiomsbhrEDquEHjOltA4OPed+CPFxs3XakEzqOjfUHFdKBsa1jBH4jBO3+VOd7YzK90dPEzAZq8CCiVsm3nuxbPIKXL3ghr3Y3aNiKslAqVN81vqBwIc+amb7AwH99yrt050GgEINE0WYp2FdmKIeVXkk0cSdxHP2qq9nXBvfbSwZIPlbcaU4V6cZeVy/sjEkSs6DwRQVUJBWepxIXny2EMzoFbzuFlmRkfNmKt/7CtERh0RsZz0mdsOY9sfqbeVeSYqLjdCB67yDRI=","ak.pv":"177"};if(""!==t)i["ak.ruds"]=t;var o={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))i["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var a=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:n,init:function(){if(!o.i){var a=BOOMR.subscribe;a("before_beacon",o.av,null,null),a("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+<body>
+    
+    
+
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K25LQR" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+
+    
+    <ul class="sr-only">
+        <li><a href="#content" aria-label="Skip to main content" tabindex="-1" title="Skip to main content">Skip to Main Content</a></li>
+        <li><a href="#footer" aria-label="Skip to footer" tabindex="-1" title="Skip to footer">Skip to Footer</a></li>
+    </ul>
+
+    <div class="c-app-wrapper">
+
+        
+        
+<div class="c-unsupported-browser u-no-print" role="complementary" style="display: none;">
+    <!--[if lt IE 9]><style>.c-unsupported-browser { display: block; }</style><![endif]-->
+    <div class="c-unsupported-browser__message"><p>Sorry, your browser is not supported. We recommend upgrading your browser.</p></div>
+</div>
+
+
+        
+        <div class="c-sticky-wrapper u-no-print">
+
+            <style>
+                .c-sticky-wrapper {
+                    position: fixed;
+                    position: -webkit-sticky;
+                    position: sticky;
+                    top: 0;
+                    width: 100%;
+                    z-index: 50 !important;
+                }
+            </style>
+
+            
+            <div class="c-alerts js-alerts">
+
+                
+                <div class="c-notifications-wrapper">
+
+                    
+                    <style>
+                        .c-notifications-wrapper {
+                            background-color: #e5eceb;
+                            position: -webkit-sticky;
+                            position: sticky;
+                            z-index: 99;
+                        }
+                        .c-notification {
+                            background-color: #e5eceb;
+                            box-sizing: content-box;
+                            min-height: 55px;
+                            position: sticky !important;
+                            width: 100%;
+                        }
+                    </style>
+
+                    
+                    
+
+                    
+                    <script>
+                       (function () {
+                            function setYHeight() {
+                                var $notification = document.querySelector('.c-notification');
+                                if (!$notification) return;
+                                var computedStyles = getComputedStyle($notification);
+                                var height = computedStyles.getPropertyValue('height');
+                                var $parent = $notification.parentElement;
+                                if ($parent) $parent.style.height = height;
+                            }
+                            window.addEventListener('resize', setYHeight);
+                            setYHeight();
+                        })();
+                    </script>
+                </div>
+
+                
+
+<div id="c-9c11746c-9962-4218-8ef2-7f048b85cb5b" class="c-language-switcher" data-widget="LanguageSwitcher" >
+
+
+    
+    <script>
+        (function () {
+
+            var position = 1;
+            var dropdownType = "inverted";
+
+            var isAlertBanner = !false;
+            var viewModel = {"Default":{"Label":"English","Value":"en","Icon":"fas fa-globe"},"Items":[{"Label":"English","Value":"en","Icon":null},{"Label":"日本語","Value":"ja","Icon":null}]};
+
+            var language = ConvertKeysToLowerCase(viewModel);
+            var selectedData = language.default;
+
+            function ConvertKeysToLowerCase(obj) {
+                var json = JSON.stringify(obj);
+                var newJson = json.replace(/"([\w]+)":/g,
+                    function($0, $1) {
+                        return ('"' + $1.toLowerCase() + '":');
+                    });
+                return JSON.parse(newJson);
+            };
+
+            function buildLocalization(locale, url) {
+                var pathArray = url.split('/');
+                var secondLevelLocation = pathArray[position];
+                var found = false;
+                for (var i = 0; i < language.items.length; i++) {
+                    if (language.items[i].value == secondLevelLocation) {
+                        found = true;
+                        break;
+                    }
+                }
+                var urlPath = found ? '/' + pathArray.slice(position + 1, pathArray.length).join('/') : url;
+                return '/' + locale + urlPath;
+            }
+
+            function redirectPath(value) {
+                var url = new URL(window.location.href);
+                var redirectUrl = url.origin + buildLocalization(value, url.pathname);
+                return redirectUrl;
+            }
+
+            function setCookie(cname, cvalue) {
+                var expiryDate = new Date();
+                expiryDate.setTime(expiryDate.getTime() + (3650*24*60*60*1000));
+                var expires = "expires="+ expiryDate.toGMTString();
+                document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+            }
+
+            var dropdownId = isAlertBanner ? '#alert-language-dropdown' : '#footer-language-dropdown';
+            var dropdown = document.querySelector(dropdownId);
+            if (dropdown) {
+                dropdown.type = dropdownType;
+                dropdown.data = language;
+                dropdown.addEventListener('adsDropdownOnChanged',
+                    function(evt) {
+                        selectedData = evt.detail;
+                        if (!isAlertBanner) {
+                            document.cookie = setCookie('language-banner', selectedData.value);
+                            window.location.href = redirectPath(selectedData.value);
+                        }
+                    });
+            }
+
+            if (isAlertBanner) {
+                var alertTop = document.querySelector('#alert-top');
+                if (alertTop) {
+                    alertTop.addEventListener('adsCloseButtonClicked',
+                        function() {
+                            alertTop.close();
+                        });
+                }
+
+                var confirmButton = document.querySelector('#c-language-switcher__alert__button_id');
+                if (confirmButton) {
+                    confirmButton.addEventListener('click',
+                        function () {
+                            document.cookie = setCookie('language-banner', selectedData.value);
+                            window.location.href = redirectPath(selectedData.value);
+                        });
+                }
+            }
+
+        })();
+    </script>
+</div>
+
+            </div>
+
+            
+            <div class="c-utility-navigation-sticky-wrapper">
+
+                <style>
+                    .c-utility-navigation-sticky-wrapper {
+                        display: block;
+                        position: fixed;
+                        position: -webkit-sticky;
+                        position: sticky;
+                        top: 0;
+                        width: 100%;
+                    }
+
+                    .c-utility-navigation-wrapper {
+                        position: absolute;
+                        right: 0;
+                        top: 35px;
+                    }
+                </style>
+
+                <div class="c-utility-navigation-wrapper">
+                    
+
+
+<div id="c-8e67f050-3065-497e-bece-2b8dd5d5c54a" class="c-utility-navigation js-utility-navigation" data-widget="utility-navigation">
+
+    
+    <link rel="stylesheet" href="https://www.arm.com/shared/arm.com-new/modules/c-utility-navigation/style.css?v=3.2.2.0" />
+
+    
+
+    
+    <ads-utility-navigation id="c-8e67f050-3065-497e-bece-2b8dd5d5c54a-utility-navigation">
+
+        
+<div data-slot="content" id="slot-8f8f44c2-e4f4-4d80-8308-91a808e86b1d">
+    <div class="o-widget c-utility-navigation-search" data-widget="UtilityNavigationSearch">
+    
+
+<div class="o-widget c-global-search" data-widget="GlobalSearch">
+
+    
+    <link rel="stylesheet" href="https://www.arm.com/shared/arm.com-new/modules/c-global-search/style.css?v=3.2.2.0" />
+
+    
+    <form id="form-96ac1d6030dd49839cbbc893e49a5739" class="js-global-search" data-url="/Search" role="search">
+        
+        <input class="c-global-search__input js-global-search-input" type="search" placeholder="" name="q" aria-label="Search this site" data-component="GlobalSearchInput"/>
+    </form>
+
+    
+    <script src="https://www.arm.com/shared/arm.com-new/modules/c-global-search/app.js?v=3.2.2.0" data-src="https://www.arm.com/shared/arm.com-new/modules/c-global-search/app.js?v=3.2.2.0"></script>
+</div>
+
+</div>
+
+</div>
+<div data-slot="content" id="slot-c9328ce9-503c-4984-be02-7f82f843137b">
+    <div class="o-widget c-utility-navigation-login" data-widget="UtilityNavigationLoginContainer">
+
+
+    
+
+<div class="c-utility-navigation-login__row">
+        <div class="c-utility-navigation-login__column">
+            <h6 class="c-utility-navigation-login__title u-hide--md-down" data-component="Title" tabindex="0">Arm Account</h6>
+            <div class="c-utility-navigation-login__description u-text-center" data-component="Description" tabindex="0">Log in to access your Arm Account.</div>
+            <a href="/login?returnUrl=/why-arm/innovation/made-possible" class="c-utility-navigation-login__sign-in-button c-button c-button--cta c-cta-button is-primary" title="Login" tabindex="0">Login</a>
+            <a href="/register?returnUrl=/why-arm/innovation/made-possible" class="c-utility-navigation-login__register-link" title="Register" tabindex="0">Register</a>
+        </div>
+
+</div>
+</div>
+
+</div>
+
+    </ads-utility-navigation>
+
+    
+    <script>
+        (function() {
+
+            var $utilityNavigation = document.querySelector('#c-8e67f050-3065-497e-bece-2b8dd5d5c54a-utility-navigation');
+            if (!$utilityNavigation) return;
+            window.addEventListener('close.utility.navigation.arm.com', function() {
+                $utilityNavigation.close();
+            });
+            var params = "contextLanguage=en";
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', '/api/utility-navigation/a4a6d9bf-b836-4c08-bc06-b8306291bfe9'+"?" + params,true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    try {
+                        var items = JSON.parse(xhr.responseText);
+                        $utilityNavigation.data = items;
+                    }
+                    catch (error) {
+                        console.error(error);
+                    }
+                }
+            };
+            xhr.send();
+
+        })();
+
+
+
+    </script>
+</div>
+
+
+                </div>
+            </div>
+
+            <script>
+                (function () {
+                    var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
+
+                    function setOffset() {
+                        var $notificationWrapper = document.querySelector('.c-notifications-wrapper');
+                        var computedStyles = getComputedStyle($notificationWrapper);
+                        var height = computedStyles.getPropertyValue('height');
+                        var $utilityNavigationWrapper = document.querySelector('.c-utility-navigation-wrapper');
+                        $utilityNavigationWrapper.style.marginTop = height;
+                    }
+
+                    /**
+                     * Set a cookie with a specific identifier
+                     * @param {string} id
+                     * @return {void}
+                     */
+                    function setCookie(id) {
+                        var expiryDate = new Date();
+                        expiryDate.setTime(expiryDate.getTime() + (3650 * 24 * 60 * 60 * 1000));
+                        document.cookie = id + '=true; expires=' + expiryDate + '; domain=.arm.com; path=/';
+                    }
+
+                    /**
+                     * Return the cookie value for a specific identifier
+                     * @param {string} id
+                     * @return {string}
+                     */
+                    function getCookie(id) {
+                        var name = id + '=';
+                        var decodedCookie = decodeURIComponent(document.cookie);
+                        var ca = decodedCookie.split(';');
+                        for (var i = 0; i < ca.length; i++) {
+                            var c = ca[i];
+                            while (c.charAt(0) == ' ') {
+                                c = c.substring(1);
+                            }
+                            if (c.indexOf(name) == 0) {
+                                return c.substring(name.length, c.length);
+                            }
+                        }
+                        return '';
+                    }
+
+                    function alertTopBannerOffset(is_close) {
+                        var siteWrapper = document.querySelector('.c-site-wrapper');
+                        var utilityNavigation = document.querySelector('.c-utility-navigation-sticky-wrapper');
+                        var adsAlerts = document.querySelector('.c-alerts.js-alerts');
+                        var offsetValue = 'margin-top:' + adsAlerts.offsetHeight + 'px';
+                        var isBannerCloseStyle = is_close ? offsetValue : 'margin-top: 0';
+                        siteWrapper.setAttribute('style', isBannerCloseStyle);
+                        utilityNavigation.setAttribute('style', isBannerCloseStyle);
+                        console.log(isBannerCloseStyle);
+                      
+                    }
+
+                    function alertCloseButtonClicked(evt) {
+                        var $component = evt.target;
+                        setCookie($component.id);
+                        $component.removeEventListener('adsCloseButtonClicked', alertCloseButtonClicked);
+                        $component.close();
+                        isIE11 && alertTopBannerOffset();
+                    }
+
+                    function initialise() {
+                        var $alerts = document.querySelectorAll('.js-alerts ads-alert');
+                        for (var i = 0; i < $alerts.length; i++) {
+                            var $component = $alerts[i];
+                            if (!getCookie($component.id)) {
+                                $component.addEventListener('adsCloseButtonClicked', alertCloseButtonClicked);
+                            } else {
+                                $component.remove();
+                            }
+                        }
+
+                        if (isIE11) {
+                            document.querySelector('ads-alert').addEventListener('adsAlertOpened', function (evt) {
+                                alertTopBannerOffset(true);
+                            });
+                            document.querySelector('ads-alert').addEventListener('adsAlertClosed', function (evt) {
+                                alertTopBannerOffset(true);
+                            });
+                            window.addEventListener('resize', function () { alertTopBannerOffset(true) });
+                        }
+                    }
+
+                    initialise();
+
+                    var $notificationWrapper = document.querySelector('.c-notifications-wrapper');
+                    if (!$notificationWrapper) return;
+                    var $closeNotification = document.querySelector('.c-notification__close');
+                    if (!$closeNotification) return;
+                    $closeNotification.onclick = function () {
+                        $notificationWrapper.style.display = 'none';
+                        var expiryDate = new Date();
+                        expiryDate.setTime(expiryDate.getTime() + (3650 * 24 * 60 * 60 * 1000));
+                        document.cookie = 'acceptSesameCookie=true; expires=' + expiryDate + '; domain=.arm.com; path=/';
+                        if (isIE11) {
+                            alertTopBannerOffset(true);
+                        }
+                    };
+                    var acceptCookie = getCookie('acceptSesameCookie');
+                    if (acceptCookie) {
+                        $notificationWrapper.style.display = 'none';
+                    }
+                    window.addEventListener('resize', setOffset);
+                    setOffset();
+                })();
+            </script>
+
+            
+        </div>
+
+        
+        <div id="top" class="c-site-wrapper">
+
+            
+            <div class="c-navigation-wrapper u-layer-4">
+
+
+
+
+<div id="c-b0e410e9-886c-46cc-b4bf-e3e86ccff7f8" class="c-mega-navigation js-mega-navigation">
+
+    
+    <link rel="stylesheet" href="https://www.arm.com/shared/arm.com-new/modules/c-mega-navigation/style.css?v=3.2.2.0" />
+
+    
+    <nav class="c-mega-navigation__bar">
+
+        
+        <div class="c-mega-navigation__actions">
+
+            
+            <ul class="c-mega-navigation__actions__section c-mega-navigation__actions__section--left">
+                <li class="c-mega-navigation__actions__section__item is-hidden-on-active" title="Open navigation">
+                    <a class="c-mega-navigation__action js-navigation-action" href="#" title="Open navigation" data-action="navigation" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                        <span class="c-mega-navigation__action__icon"><i class="fa fa-bars"></i></span>
+                    </a>
+                </li>
+                <li class="c-mega-navigation__actions__section__item is-visible-on-active">
+                    <a class="c-mega-navigation__action js-navigation-action" href="#" title="Close mobile navigation" data-action="close" aria-haspopup="false" tabindex="0">
+                        <span class="c-mega-navigation__action__icon"><i class="fa fa-times"></i></span>
+                    </a>
+                </li>
+            </ul>
+
+            
+            <ul class="c-mega-navigation__actions__section c-mega-navigation__actions__section--center">
+                <li class="c-mega-navigation__actions__section__item">
+<a href="/" class="c-mega-navigation__logo c-mega-navigation__logo--default js-navigation-logo" role="navigation" aria-label="Arm Logo" ><img src="/-/media/global/logos/Arm-logo-black-pms432.svg?revision=dfb81f02-b74e-45f6-8523-6d2037b838f1&amp;la=en&amp;hash=D7FBF600E4DB572D15E8E253977779E9FBB7E52C" alt="Arm" /></a>                    <a href="/" class="c-mega-navigation__logo c-mega-navigation__logo--inverted js-navigation-logo" role="navigation" aria-label="Arm Logo" ><img src="/-/media/global/logos/arm-logo-white-rgb.svg?revision=d98f22d3-09c8-4813-a9d8-434c89710774&amp;la=en&amp;hash=AF0BF14FED9A3730164D627E38F07C7E9198BCEC" alt="arm" /></a>                </li>
+            </ul>
+
+            
+            
+            <ul class="c-mega-navigation__actions__section c-mega-navigation__actions__section--right">
+                <li class="c-mega-navigation__actions__section__item is-hidden-on-active">
+                    <a class="c-mega-navigation__action js-navigation-action" href="#" title="Open search" data-action="search" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                        <span class="c-mega-navigation__action__icon"><i class="fa fa-search"></i></span>
+                    </a>
+                </li>
+                <li class="c-mega-navigation__actions__section__item is-hidden-on-active">
+                    <a class="c-mega-navigation__action js-navigation-action" href="#" title="Open login" data-action="login" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                        <span class="c-mega-navigation__action__icon"><i class="fa fa-user"></i></span>
+                    </a>
+                </li>
+                <li class="c-mega-navigation__actions__section__item is-visible-on-active is-hidden js-navigation-action-back" title="Go back">
+                    <a class="c-mega-navigation__action c-mega-navigation__back-button js-navigation-action" href="#" title="Go back" data-action="back" aria-haspopup="false" tabindex="0">
+                        <span role="text">
+                            <span class="c-mega-navigation__action__icon" tabindex="-1"><i class="fa fa-chevron-left"></i></span>
+                            <span class="c-mega-navigation__action__label" tabindex="-1">Back</span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        
+        <div class="c-mega-navigation__home-logo">
+<a href="/" class="c-mega-navigation__home-link is-hidden js-navigation-home-link" ><img src="/-/media/global/logos/Arm-logo-black-pms432.svg?revision=dfb81f02-b74e-45f6-8523-6d2037b838f1&amp;la=en&amp;hash=D7FBF600E4DB572D15E8E253977779E9FBB7E52C" alt="Arm" /></a>        </div>
+
+        
+        <div class="c-mega-navigation__categories">
+
+            
+            <ul class="c-mega-navigation__items js-navigation-items" role="menu">
+                    <li class="c-mega-navigation__item" role="none">
+
+                        
+                        <a class="c-mega-navigation__tile js-navigation-item" href="#" data-container="dc5921bd-ba88-4670-b148-c81e5f8fa7c5" role="menuitem" tabindex="0" aria-haspopup="true" aria-expanded="false">
+                            <span class="c-mega-navigation__icons" title="Products" aria-label="menu item Products collapsed">
+                                <img src="/-/media/arm-com/mega navigation/products.png?revision=4d889c93-242c-4fb3-9c19-89d986f73c60&amp;h=30&amp;w=30&amp;la=en&amp;hash=8FC5C5563C8AEA6177381AA1323280DECC768CE8" class="c-mega-navigation__icon" alt="Products" title="Products" />
+                                <img src="/-/media/arm-com/mega navigation/products-active.png?revision=c35d3292-1fae-43db-bc4a-8776be853e54&amp;h=30&amp;w=30&amp;la=en&amp;hash=D87D1237F466E2B9F65D7D708C02CB169ACCBF40" class="c-mega-navigation__icon c-mega-navigation__icon--active" alt="Products" title="Products" />
+                                <span class="c-mega-navigation__label">Products</span>
+                            </span>
+                            <span class="c-mega-navigation__close" title="Close">
+                                <img class="close--default" src="/shared/arm.com-new/images/x-default.svg" aria-label="menu item Products expanded" alt="Close" />
+                                <img class="close--hover" src="/shared/arm.com-new/images/x-hover.svg" aria-label="menu item Products expanded" alt="Close" />
+                            </span>
+                        </a>
+
+                        
+                        <a class="c-mega-navigation__category js-navigation-category" href="#" data-container="dc5921bd-ba88-4670-b148-c81e5f8fa7c5" role="menuitem" tabindex="0" aria-expanded="false">
+                            <span class="c-mega-navigation__label" aria-label="menu item Products collapsed">Products</span>
+                        </a>
+
+                        
+                        
+
+    <template class="js-navigation-category-content" data-container="dc5921bd-ba88-4670-b148-c81e5f8fa7c5">
+        <h2 class="c-mega-navigation__mobile__heading" role="link" tabindex="0" aria-label="menu item Products expanded">
+<a href="/products" class="c-mega-navigation__mobile__heading__link" title="Landing page to Arm product offerings" >Products</a>        </h2>
+        <ul class="c-mega-navigation__mobile">
+                    <li class="c-mega-navigation__mobile__subcategory">
+                        <span class="c-mega-navigation__mobile__subcategory__label" tabindex="0">Processor IP</span>
+                            <ul class="c-mega-navigation__mobile__links">
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/products/silicon-ip-cpu" title="Menu link to CPU IP " >CPUs</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/products/silicon-ip-multimedia" title="Menu links to Multimedia IP" >Multimedia</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/products/silicon-ip-physical" title="Menu link to Physical IP " >Physical IP</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/products/silicon-ip-system" title="Menu link to System IP" >System IP</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/products/silicon-ip-security" title="Menu link to Security IP" >Security</a>            </li>
+    </ul>
+
+                    </li>
+                    <li class="c-mega-navigation__mobile__subcategory">
+                        <span class="c-mega-navigation__mobile__subcategory__label" tabindex="0">IoT</span>
+                            <ul class="c-mega-navigation__mobile__links">
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/products/iot/pelion-iot-platform" title="Menu Link to Pelion IoT Platform" >Pelion IoT Platform</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/products/iot/mbed-os" title="Menu link to Mbed OS" >Mbed OS</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/products/iot/soc" title="Menu Link to IoT SoC Solutions" >IoT SoC Solutions</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/products/iot/kigen-sim" title="Menu Link to Kigen SIM Solutions" >Kigen SIM Solutions</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/products/iot/pelion-iot-platform/connectivity-management" title="Menu link to Connectivity Management" >Connectivity Management</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/products/iot/pelion-iot-platform/device-management" title="Menu Link to Device Management" >Device Management</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/products/iot/pelion-iot-platform/data-management" title="Menu Link to Data Management" >Data Management</a>            </li>
+    </ul>
+
+                    </li>
+                    <li class="c-mega-navigation__mobile__subcategory">
+                        <span class="c-mega-navigation__mobile__subcategory__label" tabindex="0">Software and Tools</span>
+                            <ul class="c-mega-navigation__mobile__links">
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/products/development-tools" title="Menu Link to Design and Development Tools" >Design and Development</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/products/flexible-access/product" title="Arm Flexible Access" >Need Arm IP for your next project?</a>            </li>
+    </ul>
+
+                    </li>
+        </ul>
+    </template>
+
+
+                    </li>
+                    <li class="c-mega-navigation__item" role="none">
+
+                        
+                        <a class="c-mega-navigation__tile js-navigation-item" href="#" data-container="765f0788-5475-4b29-a1c3-f349ab9c2f5d" role="menuitem" tabindex="0" aria-haspopup="true" aria-expanded="false">
+                            <span class="c-mega-navigation__icons" title="Solutions" aria-label="menu item Solutions collapsed">
+                                <img src="/-/media/arm-com/mega navigation/solutions.png?revision=d064293c-82d9-4765-a21f-ec6fdd26b5dd&amp;h=27&amp;w=27&amp;la=en&amp;hash=7D382B10AD6F1FB3DE822CC77A213EF01D993090" class="c-mega-navigation__icon" alt="Solutions" title="Solutions" />
+                                <img src="/-/media/arm-com/mega navigation/solutions-active.png?revision=48c23f10-b6eb-4321-b4b8-b17010a50c73&amp;h=27&amp;w=27&amp;la=en&amp;hash=458BF9D0E97245149B27CB4C9DDA72C19B936312" class="c-mega-navigation__icon c-mega-navigation__icon--active" alt="Solutions" title="Solutions" />
+                                <span class="c-mega-navigation__label">Solutions</span>
+                            </span>
+                            <span class="c-mega-navigation__close" title="Close">
+                                <img class="close--default" src="/shared/arm.com-new/images/x-default.svg" aria-label="menu item Solutions expanded" alt="Close" />
+                                <img class="close--hover" src="/shared/arm.com-new/images/x-hover.svg" aria-label="menu item Solutions expanded" alt="Close" />
+                            </span>
+                        </a>
+
+                        
+                        <a class="c-mega-navigation__category js-navigation-category" href="#" data-container="765f0788-5475-4b29-a1c3-f349ab9c2f5d" role="menuitem" tabindex="0" aria-expanded="false">
+                            <span class="c-mega-navigation__label" aria-label="menu item Solutions collapsed">Solutions</span>
+                        </a>
+
+                        
+                        
+
+    <template class="js-navigation-category-content" data-container="765f0788-5475-4b29-a1c3-f349ab9c2f5d">
+        <h2 class="c-mega-navigation__mobile__heading" role="link" tabindex="0" aria-label="menu item Solutions expanded">
+<a href="/solutions" class="c-mega-navigation__mobile__heading__link" title="Menu link to Solutions" >Solutions</a>        </h2>
+        <ul class="c-mega-navigation__mobile">
+                    <li class="c-mega-navigation__mobile__subcategory">
+                        <span class="c-mega-navigation__mobile__subcategory__label" tabindex="0">Technologies</span>
+                            <ul class="c-mega-navigation__mobile__links">
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/solutions/artificial-intelligence" title="Menu link to machine learning" >Artificial Intelligence</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/solutions/iot" title="Menu link to Internet of Things" >Internet of Things</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/solutions/security" title="Menu link to Security Solution" >Security</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/solutions/5g" title="Learn about 5G" >5G</a>            </li>
+    </ul>
+
+                    </li>
+                    <li class="c-mega-navigation__mobile__subcategory">
+                        <span class="c-mega-navigation__mobile__subcategory__label" tabindex="0">Industries</span>
+                            <ul class="c-mega-navigation__mobile__links">
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/solutions/automotive" >Automotive</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/solutions/retail" title="Menu link to Arm&#39;s Retail solution" >Retail</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/solutions/logistics" title="Menu link to Transportation and Logistics" >Logistics</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/solutions/smart-cities" title="Menu Link to Smart Cities Solutions" >Smart Cities</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/solutions/smart-spaces" title="Menu Link to Smart Buildings Solution" >Smart Spaces</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/solutions/smart-homes" title="Menu link to Smart Homes Solution" >Smart Homes</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/solutions/healthcare" >Healthcare</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/solutions/storage" title="Menu link to Storage solution" >Storage</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/solutions/industrial" title="Menu Link to Industrial Solutions" >Industrial</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/solutions/wearables" title="Menu Link to Consumer Electronics" >Wearables</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/solutions/utilities" title="Menu Link to Utilities and Energy" >Utilities &amp; Energy</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/solutions/mobile-computing" title="Menu link for Mobile Solution" >Mobile Computing</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/solutions/infrastructure" title="Menu link for Infrastructure" >Infrastructure</a>            </li>
+    </ul>
+
+                    </li>
+        </ul>
+    </template>
+
+
+                    </li>
+                    <li class="c-mega-navigation__item" role="none">
+
+                        
+                        <a class="c-mega-navigation__tile js-navigation-item" href="#" data-container="4139be5c-83b4-4079-9c16-50f1f3a7f30e" role="menuitem" tabindex="0" aria-haspopup="true" aria-expanded="false">
+                            <span class="c-mega-navigation__icons" title="Why Arm" aria-label="menu item Why Arm collapsed">
+                                <img src="/-/media/arm-com/mega navigation/whyarm.png?revision=1337ae78-f9b9-4f6a-a0b2-99398415aeaa&amp;h=27&amp;w=26&amp;la=en&amp;hash=CA0A6DB78FD9E6D23C8A66967C2CB69FB1E431B2" class="c-mega-navigation__icon" alt="Why Arm" title="Why Arm" />
+                                <img src="/-/media/arm-com/mega navigation/whyarm-active.png?revision=4815085e-e8b6-43c4-89a0-9bd159f2865e&amp;h=27&amp;w=26&amp;la=en&amp;hash=BC1F7F7BE8F1D381AA7E72CC9FD0CFD63A237282" class="c-mega-navigation__icon c-mega-navigation__icon--active" alt="Why Arm" title="Why Arm" />
+                                <span class="c-mega-navigation__label">Why Arm</span>
+                            </span>
+                            <span class="c-mega-navigation__close" title="Close">
+                                <img class="close--default" src="/shared/arm.com-new/images/x-default.svg" aria-label="menu item Why Arm expanded" alt="Close" />
+                                <img class="close--hover" src="/shared/arm.com-new/images/x-hover.svg" aria-label="menu item Why Arm expanded" alt="Close" />
+                            </span>
+                        </a>
+
+                        
+                        <a class="c-mega-navigation__category js-navigation-category" href="#" data-container="4139be5c-83b4-4079-9c16-50f1f3a7f30e" role="menuitem" tabindex="0" aria-expanded="false">
+                            <span class="c-mega-navigation__label" aria-label="menu item Why Arm collapsed">Why Arm</span>
+                        </a>
+
+                        
+                        
+
+    <template class="js-navigation-category-content" data-container="4139be5c-83b4-4079-9c16-50f1f3a7f30e">
+        <h2 class="c-mega-navigation__mobile__heading" role="link" tabindex="0" aria-label="menu item Why Arm expanded">
+<a href="/why-arm" class="c-mega-navigation__mobile__heading__link" title="Menu link to Why Arm" >Why Arm</a>        </h2>
+        <ul class="c-mega-navigation__mobile">
+                    <li class="c-mega-navigation__mobile__subcategory">
+                        <span class="c-mega-navigation__mobile__subcategory__label" tabindex="0">Overview</span>
+                            <ul class="c-mega-navigation__mobile__links">
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/why-arm/how-iot-and-ip-work-together" title="Menu link to how IoT and IP work together" >How Arm IoT &amp; IP Work Better Together</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/why-arm/security" title="Menu Link to Security from Chip to Cloud" >Security from Chip to Cloud</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/why-arm/custom-socs" title="Menu Link to Custom SoCs" >Custom SoCs</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/why-arm/innovation" title="Menu Link to Arm Innovations" >Innovation</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/why-arm/innovation/made-possible" title="Menu Link to Made Possible by Arm page" >Made Possible by Arm Technologies</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="https://www.arm.com/blogs/blueprint/" title="Menu Link to Arm Blueprint Blog" >Arm Blueprint Blog</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/why-arm/partner-ecosystem" title="Menu Link to Arm Partner Ecosystem" >Partner Ecosystem</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/why-arm/architecture" title="Menu Link to Arm Architecture" >Arm Architecture</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/why-arm/technologies" title="Menu Link to Arm Technologies" >Arm Technologies</a>            </li>
+    </ul>
+
+                    </li>
+                    <li class="c-mega-navigation__mobile__subcategory">
+                        <span class="c-mega-navigation__mobile__subcategory__label" tabindex="0">Overview</span>
+                            <ul class="c-mega-navigation__mobile__links">
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/solutions/iot" title="Learn about Arm&#39;s New Vision for IoT" >A New Vision for IoT</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/why-arm/innovation/gen-arm-2z" title="Learn more about Gen Arm 2Z" >Gen Arm 2Z</a>            </li>
+    </ul>
+
+                    </li>
+        </ul>
+    </template>
+
+
+                    </li>
+                    <li class="c-mega-navigation__item" role="none">
+
+                        
+                        <a class="c-mega-navigation__tile js-navigation-item" href="#" data-container="70e1d346-d2e1-4625-8ad6-e3c2dd446031" role="menuitem" tabindex="0" aria-haspopup="true" aria-expanded="false">
+                            <span class="c-mega-navigation__icons" title="Support &amp; Training" aria-label="menu item Support &amp; Training collapsed">
+                                <img src="/-/media/arm-com/mega navigation/support.png?revision=50088506-b667-492e-8182-75b941fc8aa9&amp;h=26&amp;w=26&amp;la=en&amp;hash=84054C5E4FF120D7692835D92A153970EA4833CD" class="c-mega-navigation__icon" alt="Support &amp; Training" title="Support &amp; Training" />
+                                <img src="/-/media/arm-com/mega navigation/support-active.png?revision=68136b02-c600-4fe0-9fbd-cfb482708e03&amp;h=26&amp;w=26&amp;la=en&amp;hash=622281713FB90138993F63A8C09481989CB48267" class="c-mega-navigation__icon c-mega-navigation__icon--active" alt="Support &amp; Training" title="Support &amp; Training" />
+                                <span class="c-mega-navigation__label">Support & Training</span>
+                            </span>
+                            <span class="c-mega-navigation__close" title="Close">
+                                <img class="close--default" src="/shared/arm.com-new/images/x-default.svg" aria-label="menu item Support &amp; Training expanded" alt="Close" />
+                                <img class="close--hover" src="/shared/arm.com-new/images/x-hover.svg" aria-label="menu item Support &amp; Training expanded" alt="Close" />
+                            </span>
+                        </a>
+
+                        
+                        <a class="c-mega-navigation__category js-navigation-category" href="#" data-container="70e1d346-d2e1-4625-8ad6-e3c2dd446031" role="menuitem" tabindex="0" aria-expanded="false">
+                            <span class="c-mega-navigation__label" aria-label="menu item Support & Training collapsed">Support & Training</span>
+                        </a>
+
+                        
+                        
+
+    <template class="js-navigation-category-content" data-container="70e1d346-d2e1-4625-8ad6-e3c2dd446031">
+        <h2 class="c-mega-navigation__mobile__heading" role="link" tabindex="0" aria-label="menu item Support &amp; Training expanded">
+<a href="/support" class="c-mega-navigation__mobile__heading__link" title="Learn about Support and Training" >Support &amp; Training</a>        </h2>
+        <ul class="c-mega-navigation__mobile">
+                    <li class="c-mega-navigation__mobile__subcategory">
+                        <span class="c-mega-navigation__mobile__subcategory__label" tabindex="0">Processor IP, Tools and Software Support</span>
+                            <ul class="c-mega-navigation__mobile__links">
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="https://developer.arm.com/downloads" title="Downloads" >Downloads</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="https://developer.arm.com/documentation" title="Documentation" >Documentation</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="https://community.arm.com/developer" target="_blank" title="Developer Community" >Developer Community</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/support" title="Support and Training" >Support and Training Information</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="https://support.developer.arm.com/my-cases/open-case" target="_blank" title="Open a Support Case" >Open a Support Case</a>            </li>
+    </ul>
+
+                    </li>
+                    <li class="c-mega-navigation__mobile__subcategory">
+                        <span class="c-mega-navigation__mobile__subcategory__label" tabindex="0">Pelion IoT Support</span>
+                            <ul class="c-mega-navigation__mobile__links">
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="https://www.pelion.com/docs/" target="_blank" title="Documentation" >Documentation</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/support/contact-support/pelion-iot-support" title="Open a Support Case" >Open a Support Case</a>            </li>
+    </ul>
+
+                    </li>
+                    <li class="c-mega-navigation__mobile__subcategory">
+                        <span class="c-mega-navigation__mobile__subcategory__label" tabindex="0">Overview</span>
+                            <ul class="c-mega-navigation__mobile__links">
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/support/training" title="Training" >Training</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/support/design-reviews" title="Design Reviews" >Design Reviews</a>            </li>
+    </ul>
+
+                    </li>
+        </ul>
+    </template>
+
+
+                    </li>
+                    <li class="c-mega-navigation__item" role="none">
+
+                        
+                        <a class="c-mega-navigation__tile js-navigation-item" href="#" data-container="949c52dc-6ca8-4815-a764-83187f4dbe69" role="menuitem" tabindex="0" aria-haspopup="true" aria-expanded="false">
+                            <span class="c-mega-navigation__icons" title="Resources" aria-label="menu item Resources collapsed">
+                                <img src="/-/media/arm-com/mega navigation/resources.png?revision=3d066af1-dfe8-46c4-b6d9-9a5b56deb2b4&amp;h=26&amp;w=26&amp;la=en&amp;hash=802C0179B27FA92BA1704536300A0D0AB8D5B31C" class="c-mega-navigation__icon" alt="Resources" title="Resources" />
+                                <img src="/-/media/arm-com/mega navigation/resources-active.png?revision=78c41bd3-f050-4695-8bc3-5a1ead8f61e2&amp;h=26&amp;w=26&amp;la=en&amp;hash=0E03176CEAF109CC7BAD29F397F668612CDABCAF" class="c-mega-navigation__icon c-mega-navigation__icon--active" alt="Resources" title="Resources" />
+                                <span class="c-mega-navigation__label">Resources</span>
+                            </span>
+                            <span class="c-mega-navigation__close" title="Close">
+                                <img class="close--default" src="/shared/arm.com-new/images/x-default.svg" aria-label="menu item Resources expanded" alt="Close" />
+                                <img class="close--hover" src="/shared/arm.com-new/images/x-hover.svg" aria-label="menu item Resources expanded" alt="Close" />
+                            </span>
+                        </a>
+
+                        
+                        <a class="c-mega-navigation__category js-navigation-category" href="#" data-container="949c52dc-6ca8-4815-a764-83187f4dbe69" role="menuitem" tabindex="0" aria-expanded="false">
+                            <span class="c-mega-navigation__label" aria-label="menu item Resources collapsed">Resources</span>
+                        </a>
+
+                        
+                        
+
+    <template class="js-navigation-category-content" data-container="949c52dc-6ca8-4815-a764-83187f4dbe69">
+        <h2 class="c-mega-navigation__mobile__heading" role="link" tabindex="0" aria-label="menu item Resources expanded">
+<a href="/resources" class="c-mega-navigation__mobile__heading__link" title="Menu link to Arm Resources" >Resources</a>        </h2>
+        <ul class="c-mega-navigation__mobile">
+                    <li class="c-mega-navigation__mobile__subcategory">
+                        <span class="c-mega-navigation__mobile__subcategory__label" tabindex="0">Resources</span>
+                            <ul class="c-mega-navigation__mobile__links">
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="https://developer.arm.com/" title="Visit Arm Developer Site" >Arm Developer Site</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="https://community.arm.com/p/arm-blog " title="Menu Link to Arm Tech Blogs" >Arm Tech Blogs</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="https://os.mbed.com/" title="Menu Link to Mbed Developer Site" >Mbed OS</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="https://forums.mbed.com/c/pelion" class="Menu Link to Pelion Device Management Forum" target="_blank" title="Pelion Device Management Forum" >Pelion Device Management</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/resources/education" title="Learn about Education Media" >Education</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/resources/education/books" title="Browse Arm Textbooks" >Books</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/resources/research" title="Learn about Arm Research" >Research</a>            </li>
+    </ul>
+
+                    </li>
+                    <li class="c-mega-navigation__mobile__subcategory">
+                        <span class="c-mega-navigation__mobile__subcategory__label" tabindex="0">Overview</span>
+                            <ul class="c-mega-navigation__mobile__links">
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/resources/designstart" title="Learn about Arm DesignStart" >Custom SoCs with Arm DesignStart</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="https://community.arm.com/iot/b/blog/posts/arm-pelion-iot-platform-delivers-flexible-secure-and-efficient-device-to-data-solution-for-iot" target="_blank" title="Learn about Pelion IoT Platform" >What’s Arm Doing Now?</a>            </li>
+    </ul>
+
+                    </li>
+        </ul>
+    </template>
+
+
+                    </li>
+                    <li class="c-mega-navigation__item" role="none">
+
+                        
+                        <a class="c-mega-navigation__tile js-navigation-item" href="#" data-container="ed1222d6-0425-4909-95a9-6958e9eb1ea7" role="menuitem" tabindex="0" aria-haspopup="true" aria-expanded="false">
+                            <span class="c-mega-navigation__icons" title="Company" aria-label="menu item Company collapsed">
+                                <img src="/-/media/arm-com/mega navigation/company.png?revision=2470da99-ab4e-4139-9038-45e0f6ece4f2&amp;h=29&amp;w=29&amp;la=en&amp;hash=503D366647B7C8ED1575BA1C4A6D974777E813E8" class="c-mega-navigation__icon" alt="Company" title="Company" />
+                                <img src="/-/media/arm-com/mega navigation/company-active.png?revision=33e9bd2f-40c6-440f-b8f0-da3397056228&amp;h=29&amp;w=29&amp;la=en&amp;hash=193424F63531DA5140DD0DEAAD2937C921DF6B1F" class="c-mega-navigation__icon c-mega-navigation__icon--active" alt="Company" title="Company" />
+                                <span class="c-mega-navigation__label">Company</span>
+                            </span>
+                            <span class="c-mega-navigation__close" title="Close">
+                                <img class="close--default" src="/shared/arm.com-new/images/x-default.svg" aria-label="menu item Company expanded" alt="Close" />
+                                <img class="close--hover" src="/shared/arm.com-new/images/x-hover.svg" aria-label="menu item Company expanded" alt="Close" />
+                            </span>
+                        </a>
+
+                        
+                        <a class="c-mega-navigation__category js-navigation-category" href="#" data-container="ed1222d6-0425-4909-95a9-6958e9eb1ea7" role="menuitem" tabindex="0" aria-expanded="false">
+                            <span class="c-mega-navigation__label" aria-label="menu item Company collapsed">Company</span>
+                        </a>
+
+                        
+                        
+
+    <template class="js-navigation-category-content" data-container="ed1222d6-0425-4909-95a9-6958e9eb1ea7">
+        <h2 class="c-mega-navigation__mobile__heading" role="link" tabindex="0" aria-label="menu item Company expanded">
+<a href="/company" class="c-mega-navigation__mobile__heading__link" title="Menu link to Arm Company page" >Company</a>        </h2>
+        <ul class="c-mega-navigation__mobile">
+                    <li class="c-mega-navigation__mobile__subcategory">
+                        <span class="c-mega-navigation__mobile__subcategory__label" tabindex="0">About</span>
+                            <ul class="c-mega-navigation__mobile__links">
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/company/leadership" title="Menu Link to Arm Leadership" >Leadership</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/company/careers" title="Menu Link to Arm Careers" >Careers</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/company/news" title="Menu link to Arm News" >News</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/company/events" title="Menu link to Arm Events" >Events</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/company/policies" title="Menu Link to Arm Policies" >Policies</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/company/code-of-conduct" title="Menu link to Arm&#39;s Code of Conduct " >Code of Conduct</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/company/sustainability" title="Arm Corporate Sustainability" >Sustainability</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/company/sustainability/modern-slavery-act-transparency-statement" title="Menu link to Modern Slavery Statement page" >Modern Slavery Statement</a>            </li>
+    </ul>
+
+                    </li>
+                    <li class="c-mega-navigation__mobile__subcategory">
+                        <span class="c-mega-navigation__mobile__subcategory__label" tabindex="0">Overview</span>
+                            <ul class="c-mega-navigation__mobile__links">
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="https://www.arm.com/blogs/blueprint/" title="Learn about Arm Blueprint Blog" >Arm Blueprint Blog</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/company/offices" title="Menu Link to Arm Global Offices" >View All Global Offices</a>            </li>
+            <li class="c-mega-navigation__mobile__links__item">
+<a href="/company/contact-us" title="Menu Link to Contact Arm" >Contact Us</a>            </li>
+    </ul>
+
+                    </li>
+        </ul>
+    </template>
+
+
+                    </li>
+            </ul>
+
+            
+            <div class="c-mega-navigation-category__container js-navigation-category-container"><!-- --></div>
+        </div>
+
+        
+        <div class="c-mega-navigation__overlay is-hidden js-mega-navigation-overlay">
+            <div class="c-mega-navigation__overlay__buttons">
+                <a class="c-mega-navigation__overlay__button js-mega-navigation-overlay-close" href="#" title="Close"><i class="fa fa-times"></i></a>
+            </div>
+            <div class="c-mega-navigation__overlay__content">
+
+<div class="o-widget c-global-search" data-widget="GlobalSearch">
+
+    
+    <link rel="stylesheet" href="https://www.arm.com/shared/arm.com-new/modules/c-global-search/style.css?v=3.2.2.0" />
+
+    
+    <form id="form-afcc739a2f8d4506a8d104a7ab8d4858" class="js-global-search" data-url="/Search" role="search">
+        
+        <input class="c-global-search__input js-global-search-input" type="search" placeholder="" name="q" aria-label="Search this site" data-component="GlobalSearchInput"/>
+    </form>
+
+    
+    <script src="https://www.arm.com/shared/arm.com-new/modules/c-global-search/app.js?v=3.2.2.0" data-src="https://www.arm.com/shared/arm.com-new/modules/c-global-search/app.js?v=3.2.2.0"></script>
+</div>
+</div>
+        </div>
+        <div class="c-mega-navigation__overlay is-hidden js-mega-navigation-accout-overlay">
+            <div class="c-mega-navigation__overlay__buttons">
+                <a class="c-mega-navigation__overlay__button js-mega-navigation-account-overlay-close" href="#" title="Close"><i class="fa fa-times"></i></a>
+            </div>
+            <div class="c-mega-navigation__overlay__content">
+                <div class="c-mega-navigation__overlay__content__account">
+                    <div class="o-widget c-utility-navigation-login" data-widget="UtilityNavigationLoginContainer">
+
+
+    
+
+<div class="c-utility-navigation-login__row">
+        <div class="c-utility-navigation-login__column">
+            <h6 class="c-utility-navigation-login__title u-hide--md-down" data-component="Title" tabindex="0">Arm Account</h6>
+            <div class="c-utility-navigation-login__description u-text-center" data-component="Description" tabindex="0">Log in to access your Arm Account.</div>
+            <a href="/login?returnUrl=/why-arm/innovation/made-possible" class="c-utility-navigation-login__sign-in-button c-button c-button--cta c-cta-button is-primary" title="Login" tabindex="0">Login</a>
+            <a href="/register?returnUrl=/why-arm/innovation/made-possible" class="c-utility-navigation-login__register-link" title="Register" tabindex="0">Register</a>
+        </div>
+
+</div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div class="c-mega-navigation__container js-navigation-container"><!-- --></div>
+
+    
+        <template class="js-navigation-content" data-container="dc5921bd-ba88-4670-b148-c81e5f8fa7c5">
+            <div class="c-mega-navigation__content">
+                <div class="c-mega-navigation__content__heading" tabindex="0">
+                    <a href="/products" class="c-mega-navigation__content__heading__link" title="Landing page to Arm product offerings" >Products</a>
+                </div>
+                <div class="c-mega-navigation__content__item">
+    <h3>Processor IP</h3>
+    
+    
+
+<div class="nav-colored-box" style="border-color: rgba(120,190,32,.7);">
+<a href="/products/silicon-ip-cpu" title="Menu link to CPU IP " >CPUs</a>    <p>Processor IP for the widest range of devices—from sensors to servers.</p>
+</div>
+
+
+<div class="nav-colored-box" style="border-color: rgba(0, 145, 189,.7);">
+<a href="/products/silicon-ip-multimedia" title="Menu links to Multimedia IP" >Multimedia</a>    <p>Graphics processors that offer a complete multimedia solution for SoC.</p>
+</div>
+
+
+<div class="nav-colored-box" style="border-color: rgba(255, 199, 0,.7);">
+<a href="/products/silicon-ip-physical" title="Menu link to Physical IP " >Physical IP</a>    <p>Solutions for the efficient implementation of complex SoC designs.</p>
+</div>
+
+
+<div class="nav-colored-box" style="border-color: rgba(120,190,32,.7);">
+<a href="/products/silicon-ip-system" title="Menu link to System IP" >System IP</a>    <p>Perfect for high-efficiency IoT endpoints or a high-performance server SoC.</p>
+</div>
+
+
+<div class="nav-colored-box" style="border-color: rgba(0, 145, 189,.7);">
+<a href="/products/silicon-ip-security" title="Menu link to Security IP" >Security</a>    <p>Security IP designed to protect against a variety of different vulnerabilities.</p>
+</div>
+
+</div>
+<div class="c-mega-navigation__content__item">
+    <h3>IoT</h3>
+    
+    <a href="/products/iot/pelion-iot-platform" title="Menu Link to Pelion IoT Platform" >Pelion IoT Platform</a><p>The Pelion IoT Platform is a flexible, secure, and efficient foundation spanning connectivity, device, and data management.</p>
+
+
+<ul class="list-links">
+    <li class="list-item-heading">Platform Includes:</li>
+
+
+
+        <li aria-posinset="1" aria-setsize="3">
+<a href="/products/iot/pelion-iot-platform/connectivity-management" title="Menu link to Connectivity Management" >Connectivity Management</a>        </li>
+        <li aria-posinset="2" aria-setsize="3">
+<a href="/products/iot/pelion-iot-platform/device-management" title="Menu Link to Device Management" >Device Management</a>        </li>
+        <li aria-posinset="3" aria-setsize="3">
+<a href="/products/iot/pelion-iot-platform/data-management" title="Menu Link to Data Management" >Data Management</a>        </li>
+</ul>
+        <div class="nav-line-break"></div>
+
+
+<div class="nav-colored-box" style="border-color: rgba(120,190,32,.7);">
+<a href="/products/iot/mbed-os" title="Menu link to Mbed OS" >Mbed OS</a>    <p>Open-source embedded operating system ideal for IoT connected products.</p>
+</div>
+
+
+<div class="nav-colored-box" style="border-color: rgba(0, 145, 189,.7);">
+<a href="/products/iot/soc" title="Menu Link to IoT SoC Solutions" >IoT SoC Solutions</a>    <p>Tools to accelerate time to security for SoC designers, device makers, and developers.</p>
+</div>
+
+
+<div class="nav-colored-box" style="border-color: rgba(255, 199, 0,.7);">
+<a href="/products/iot/kigen-sim" title="Menu Link to Kigen SIM Solutions" >Kigen SIM Solutions</a>    <p>Build and remotely provision SIM, eSIM and iSIM.</p>
+</div>
+
+</div>
+<div class="c-mega-navigation__content__item">
+    <h3>Software and Tools</h3>
+    
+    <a href="/products/development-tools" title="Menu Link to Design and Development Tools" >Design and Development</a><p>Created by Arm architecture experts, our development tools are designed to accelerate product engineering from SoC architecture to software application development.</p>
+
+
+<ul>
+    <li class="list-item-heading">Tools include:</li>
+
+<li><span>SOC Design</span></li><li><span>Embedded & IoT Software Tools</span></li><li><span>Server & HPC Application Tools</span></li><li><span>Graphics Development Tools</span></li><li><span>Development Boards</span></li></ul>
+
+
+<div class="nav-promo-box bg-color-arm-light-grey">
+    <h3 class = "nav-promo-box__title">Need Arm IP for your next project?</h3>
+    <p class = "nav-promo-box__text">Arm Flexible Access provides quick, easy, and unlimited access to a wide range of IP, tools and support to evaluate and fully design solutions.</p>
+    <a href="/products/flexible-access/product" class="nav-promo-box__link" title="Arm Flexible Access" >Learn More</a>
+</div>
+
+</div>
+
+            </div>
+        </template>
+        <template class="js-navigation-content" data-container="765f0788-5475-4b29-a1c3-f349ab9c2f5d">
+            <div class="c-mega-navigation__content">
+                <div class="c-mega-navigation__content__heading" tabindex="0">
+                    <a href="/solutions" class="c-mega-navigation__content__heading__link" title="Menu link to Solutions" >Solutions</a>
+                </div>
+                <div class="c-mega-navigation__content__item">
+    <h3>Technologies</h3>
+    
+    <div class="nav-thumb-box">
+<a href="/solutions/artificial-intelligence" title="Menu link to machine learning" ><img src="/-/media/global/icons/more solutions/machine-learning-icon-yellow.svg?revision=d3b30083-4995-464a-8797-4af3b308d54e&amp;h=76&amp;w=76&amp;la=en&amp;hash=D42D25EABC57C5477273D5CEF706C5FBDD95D58E" alt="Machine Learning" /></a>  <div>
+<a href="/solutions/artificial-intelligence" title="Menu link to machine learning" >Artificial Intelligence</a>      <p>Transform lives through machine learning solutions.</p>
+  </div>
+  <div class="clearfix"></div>
+</div>
+<div class="nav-thumb-box">
+<a href="/solutions/iot" title="Menu link to Internet of Things" ><img src="/-/media/global/icons/more solutions/iot-icon-arm-blue.svg?revision=33b6ddf6-c4f2-4efd-b61b-15e53d1b5635&amp;h=76&amp;w=76&amp;la=en&amp;hash=D2D6F52837E7772F3CF0AE59E7BB82906C291F10" alt="IoT" /></a>  <div>
+<a href="/solutions/iot" title="Menu link to Internet of Things" >Internet of Things</a>      <p>Compute power built into everyday objects and physical systems.</p>
+  </div>
+  <div class="clearfix"></div>
+</div>
+<div class="nav-thumb-box">
+<a href="/solutions/security" title="Menu link to Security Solution" ><img src="/-/media/global/icons/more solutions/security-icon-orange.svg?revision=d1ad09e2-abe9-4bb6-b03d-d44a1fc446fd&amp;h=76&amp;w=76&amp;la=en&amp;hash=723204B9CE21CD6CC073CC683AA579EA5B6B1C84" alt="Security" /></a>  <div>
+<a href="/solutions/security" title="Menu link to Security Solution" >Security</a>      <p>Security for billions of devices through Arm technologies.</p>
+  </div>
+  <div class="clearfix"></div>
+</div>
+<div class="nav-thumb-box">
+<a href="/solutions/5g" title="Learn about 5G" ><img src="/-/media/global/icons/homepage/5g-icon-76x76-green.svg?revision=73c71267-b0e8-4d74-81a8-5dedd3f859ec&amp;h=76&amp;w=76&amp;la=en&amp;hash=64589B8B34E4BDBC2898FA6D9A16D6E0C9F21448" alt="5G icon green" /></a>  <div>
+<a href="/solutions/5g" title="Learn about 5G" >5G</a>      <p>Connect anything anywhere with faster, low-latency 5G networks.</p>
+  </div>
+  <div class="clearfix"></div>
+</div>
+
+</div>
+
+
+<div class="c-mega-navigation__content__item c-mega-navigation__content__item--double">
+  <h3>
+    Industries
+  </h3>
+
+  
+
+    <div class="c-mega-navigation__content__item--column-left">
+      <a href="/solutions/automotive" >Automotive</a><p>Autonomous driving is the next frontier for car manufacturers.</p>
+<a href="/solutions/retail" title="Menu link to Arm&#39;s Retail solution" >Retail</a><p>Leverages IoT for insights into shopper engagements to improve customer experience.</p>
+<a href="/solutions/logistics" title="Menu link to Transportation and Logistics" >Logistics</a><p>Technology that brings end-to-end visibility for transport goods.</p>
+<a href="/solutions/smart-cities" title="Menu Link to Smart Cities Solutions" >Smart Cities</a><p>Transform cities to be more responsive to events and changes.</p>
+<a href="/solutions/smart-spaces" title="Menu Link to Smart Buildings Solution" >Smart Spaces</a><p>Modernize indoor space operations using IoT devices to realize significant savings.</p>
+<a href="/solutions/smart-homes" title="Menu link to Smart Homes Solution" >Smart Homes</a><p>The power of home automation through always-on IoT devices.</p>
+<a href="/solutions/healthcare" >Healthcare</a><p>Improve healthcare with proactive, and advanced treatment solutions.</p>
+
+    </div>
+
+    <div class="c-mega-navigation__content__item--column-right">
+      <a href="/solutions/storage" title="Menu link to Storage solution" >Storage</a><p>Power to meet the growing needs of HDD & SSD storage applications.</p>
+<a href="/solutions/industrial" title="Menu Link to Industrial Solutions" >Industrial</a><p>Industrial and operational practices become increasing efficient with connected IoT devices.</p>
+<a href="/solutions/wearables" title="Menu Link to Consumer Electronics" >Wearables</a><p>Secure, flexible processing for wearable electronics with small silicon footprint.</p>
+<a href="/solutions/utilities" title="Menu Link to Utilities and Energy" >Utilities & Energy</a><p> Data management for the spectrum of critical infrastructure for IoT Utilities.</p>
+<a href="/solutions/mobile-computing" title="Menu link for Mobile Solution" >Mobile Computing</a><p>Mobile technology for always-on, always-connected devices with AI.</p>
+<a href="/solutions/infrastructure" title="Menu link for Infrastructure" >Infrastructure</a><p>IoT, cloud and 5G are driving the transformation from datacenter to devices.</p>
+
+    </div>
+</div>
+
+            </div>
+        </template>
+        <template class="js-navigation-content" data-container="4139be5c-83b4-4079-9c16-50f1f3a7f30e">
+            <div class="c-mega-navigation__content">
+                <div class="c-mega-navigation__content__heading" tabindex="0">
+                    <a href="/why-arm" class="c-mega-navigation__content__heading__link" title="Menu link to Why Arm" >Why Arm</a>
+                </div>
+                
+
+<div class="c-mega-navigation__content__item c-mega-navigation__content__item--double">
+  <h3>
+    
+  </h3>
+
+  <div class="nav-thumb-box">
+<a href="/why-arm/how-iot-and-ip-work-together" title="Menu link to how IoT and IP work together" ><img src="/-/media/global/icons/more solutions/iot-icon-arm-blue.svg?revision=33b6ddf6-c4f2-4efd-b61b-15e53d1b5635&amp;h=76&amp;w=76&amp;la=en&amp;hash=D2D6F52837E7772F3CF0AE59E7BB82906C291F10" alt="IoT" /></a>  <div>
+<a href="/why-arm/how-iot-and-ip-work-together" title="Menu link to how IoT and IP work together" >How Arm IoT & IP Work Better Together</a>      <p>Arm enables a world of a trillion connected devices.</p>
+  </div>
+  <div class="clearfix"></div>
+</div>
+        <div class="nav-line-break"></div>
+
+
+    <div class="c-mega-navigation__content__item--column-left">
+      <a href="/why-arm/security" title="Menu Link to Security from Chip to Cloud" >Security from Chip to Cloud</a><p>Arm helps enterprises secure devices from chip to cloud.</p>
+<a href="/why-arm/custom-socs" title="Menu Link to Custom SoCs" >Custom SoCs</a><p>Arm provides proven IP and the industry’s most robust SoC development resources.</p>
+<a href="/why-arm/innovation" title="Menu Link to Arm Innovations" >Innovation</a><p>Start your concept-to-compute journey with Arm processor designs and rich development resources.</p>
+<a href="/why-arm/innovation/made-possible" title="Menu Link to Made Possible by Arm page" >Made Possible by Arm Technologies</a><p> Learn about real life stories and the triumphs that imagination, tenacity and Arm technology work together to create.</p>
+
+    </div>
+
+    <div class="c-mega-navigation__content__item--column-right">
+      <a href="https://www.arm.com/blogs/blueprint/" title="Menu Link to Arm Blueprint Blog" >Arm Blueprint Blog</a><p>Arm executives and influencers bring insights and opinions from the world’s largest compute ecosystem.</p>
+<a href="/why-arm/partner-ecosystem" title="Menu Link to Arm Partner Ecosystem" >Partner Ecosystem</a><p> Partnership opportunities with Arm range from device chip designs to managing these devices. </p>
+<a href="/why-arm/architecture" title="Menu Link to Arm Architecture" >Arm Architecture</a><p>Arm Architecture enables our partners to build their products in an efficient, affordable, and secure way. </p>
+<a href="/why-arm/technologies" title="Menu Link to Arm Technologies" >Arm Technologies</a><p>Arm technologies continuously evolve to ensure intelligence is at the core of a secure and connected digital world.</p>
+
+    </div>
+</div>
+<div class="c-mega-navigation__content__item c-mega-navigation__content__item--promo">
+  
+
+<div class="nav-promo-box bg-color-arm-light-grey">
+    <h3 class = "nav-promo-box__title">A New Vision for IoT</h3>
+    <p class = "nav-promo-box__text">Arm is rapidly advancing IoT technologies through the design and development of the integral platforms, sensors, and subsystems that drive IoT performance.</p>
+    <a href="/solutions/iot" class="nav-promo-box__link" title="Learn about Arm&#39;s New Vision for IoT" >Learn More</a>
+</div>
+
+
+<div class="nav-promo-box bg-color-arm-light-grey">
+    <h3 class = "nav-promo-box__title">Gen Arm 2Z</h3>
+    <p class = "nav-promo-box__text">Meet the young entrepreneurs who are engaging with our tech leaders to help shape how technology should be built for their future.</p>
+    <a href="/why-arm/innovation/gen-arm-2z" class="nav-promo-box__link" title="Learn more about Gen Arm 2Z" >Learn More</a>
+</div>
+
+</div>
+
+            </div>
+        </template>
+        <template class="js-navigation-content" data-container="70e1d346-d2e1-4625-8ad6-e3c2dd446031">
+            <div class="c-mega-navigation__content">
+                <div class="c-mega-navigation__content__heading" tabindex="0">
+                    <a href="/support" class="c-mega-navigation__content__heading__link" title="Learn about Support and Training" >Support &amp; Training</a>
+                </div>
+                <div class="c-mega-navigation__content__item">
+    <h3>Processor IP, Tools and Software Support</h3>
+    
+    <a href="https://developer.arm.com/downloads" title="Downloads" >Downloads</a><p>Download a wide range of Arm products, software and tools from our Developer website.</p>
+<a href="https://developer.arm.com/documentation" title="Documentation" >Documentation</a><p>Stay informed with technical manuals and other documentation.</p>
+<a href="https://community.arm.com/developer" target="_blank" title="Developer Community" >Developer Community</a><p>Learn more, and ask and answer questions on the self-service Arm Community.</p>
+<a href="/support" title="Support and Training" >Support and Training Information</a><p>Get the help you need, when you need it, with our range of support and training options.</p>
+<a href="https://support.developer.arm.com/my-cases/open-case" target="_blank" title="Open a Support Case" >Open a Support Case</a><p>Open a support case to help to get advice from Arm experts throughout your support contract.</p>
+
+</div>
+<div class="c-mega-navigation__content__item">
+    <h3>Pelion IoT Support</h3>
+    
+    <a href="https://www.pelion.com/docs/" target="_blank" title="Documentation" >Documentation</a><p>Stay informed with technical manuals and other documentation.</p>
+<a href="/support/contact-support/pelion-iot-support" title="Open a Support Case" >Open a Support Case</a><p>Open a support case to help to get advice from Arm experts throughout your support contract.</p>
+
+</div>
+<div class="c-mega-navigation__content__item c-mega-navigation__content__item--promo">
+  
+
+<div class="nav-promo-box bg-color-arm-light-grey">
+    <h3 class = "nav-promo-box__title">Training</h3>
+    <p class = "nav-promo-box__text">Learn about Arm technology directly from the experts, with face-to-face, virtual classroom and online training options.</p>
+    <a href="/support/training" class="nav-promo-box__link" title="Training" >Learn More</a>
+</div>
+
+
+<div class="nav-promo-box bg-color-arm-light-grey">
+    <h3 class = "nav-promo-box__title">Design Reviews</h3>
+    <p class = "nav-promo-box__text">Optimize your Arm system on chip designs using advice from the most experienced Arm engineers in the industry.</p>
+    <a href="/support/design-reviews" class="nav-promo-box__link" title="Design Reviews" >Learn More</a>
+</div>
+
+</div>
+
+            </div>
+        </template>
+        <template class="js-navigation-content" data-container="949c52dc-6ca8-4815-a764-83187f4dbe69">
+            <div class="c-mega-navigation__content">
+                <div class="c-mega-navigation__content__heading" tabindex="0">
+                    <a href="/resources" class="c-mega-navigation__content__heading__link" title="Menu link to Arm Resources" >Resources</a>
+                </div>
+                
+
+<div class="c-mega-navigation__content__item c-mega-navigation__content__item--double">
+  <h3>
+    Resources
+  </h3>
+
+  
+
+    <div class="c-mega-navigation__content__item--column-left">
+      <a href="https://developer.arm.com/" title="Visit Arm Developer Site" >Arm Developer Site</a><p>Technical resources for Arm products, services, architecture, and technologies.</p>
+<a href="https://community.arm.com/p/arm-blog " title="Menu Link to Arm Tech Blogs" >Arm Tech Blogs</a><p>Get the latest news on Arm products and solutions.</p>
+<a href="https://os.mbed.com/" title="Menu Link to Mbed Developer Site" >Mbed OS</a><p>A dedicated website for Mbed OS developers and the Mbed forum for detailed discussions. </p>
+<a href="https://forums.mbed.com/c/pelion" class="Menu Link to Pelion Device Management Forum" target="_blank" title="Pelion Device Management Forum" >Pelion Device Management</a><p>Latest updates from the Device Management forum and access to documentation and other resources.</p>
+
+    </div>
+
+    <div class="c-mega-navigation__content__item--column-right">
+      <a href="/resources/education" title="Learn about Education Media" >Education</a><p>Arm Education comprises of the Arm University Program, Arm Education Media and the Arm School Program.</p>
+<a href="/resources/education/books" title="Browse Arm Textbooks" >Books</a><p>Arm Education books appeal to students and learners as they progress from novices to experts in Arm-based system design.</p>
+<a href="/resources/research" title="Learn about Arm Research" >Research</a><p>Arm Research Program supports academic and industrial researchers across a wide range of disciplines.</p>
+
+    </div>
+</div>
+<div class="c-mega-navigation__content__item c-mega-navigation__content__item--promo">
+  
+
+<div class="nav-promo-box bg-color-arm-light-grey-alt">
+    <h3 class = "nav-promo-box__title">Custom SoCs with Arm DesignStart</h3>
+    <p class = "nav-promo-box__text">Fast, simple, no-risk access to build your SoC using the world’s most proven IP.</p>
+    <a href="/resources/designstart" class="nav-promo-box__link" title="Learn about Arm DesignStart" >Learn More</a>
+</div>
+
+
+<div class="nav-promo-box bg-color-arm-light-grey-alt">
+    <h3 class = "nav-promo-box__title">What’s Arm Doing Now?</h3>
+    <p class = "nav-promo-box__text">Arm Pelion IoT Platform delivers flexible, secure and efficient device-to-data solution for IoT.</p>
+    <a href="https://community.arm.com/iot/b/blog/posts/arm-pelion-iot-platform-delivers-flexible-secure-and-efficient-device-to-data-solution-for-iot" class="nav-promo-box__link" target="_blank" title="Learn about Pelion IoT Platform" >Learn More</a>
+</div>
+
+</div>
+
+            </div>
+        </template>
+        <template class="js-navigation-content" data-container="ed1222d6-0425-4909-95a9-6958e9eb1ea7">
+            <div class="c-mega-navigation__content">
+                <div class="c-mega-navigation__content__heading" tabindex="0">
+                    <a href="/company" class="c-mega-navigation__content__heading__link" title="Menu link to Arm Company page" >Company</a>
+                </div>
+                
+
+<div class="c-mega-navigation__content__item c-mega-navigation__content__item--double">
+  <h3>
+    About
+  </h3>
+
+  
+
+    <div class="c-mega-navigation__content__item--column-left">
+      <a href="/company/leadership" title="Menu Link to Arm Leadership" >Leadership</a><p>Our business is foundational technology. Our leaders are the foundation we build on.</p>
+<a href="/company/careers" title="Menu Link to Arm Careers" >Careers</a><p>Join the team with the skills and talent to make billions of lives better.</p>
+<a href="/company/news" title="Menu link to Arm News" >News</a><p>Get the latest news on Arm and our product and services.</p>
+<a href="/company/events" title="Menu link to Arm Events" >Events</a><p>Visit Arm at tradeshows, seminars, workshops, webinar and technical symposia.</p>
+
+    </div>
+
+    <div class="c-mega-navigation__content__item--column-right">
+      <a href="/company/policies" title="Menu Link to Arm Policies" >Policies</a><p>Website terms and policies.</p>
+<a href="/company/code-of-conduct" title="Menu link to Arm&#39;s Code of Conduct " >Code of Conduct</a><p>The foundation of our compliance program and a valuable source of information for everyone at Arm to be familiar with.</p>
+<a href="/company/sustainability" title="Arm Corporate Sustainability" >Sustainability</a><p>See how Arm creates positive change at scale through people, innovation, investment, and leadership.</p>
+<a href="/company/sustainability/modern-slavery-act-transparency-statement" title="Menu link to Modern Slavery Statement page" >Modern Slavery Statement</a><p>Arm adheres to Section 54 of the UK Modern Slavery Act 2015. </p>
+
+    </div>
+</div>
+<div class="c-mega-navigation__content__item c-mega-navigation__content__item--promo">
+  
+
+<div class="nav-promo-box bg-color-arm-black-alt">
+    <h4>Global Headquarters</h4>
+<p>110 Fulbourn Road<br>Cambridge, UK<br>CB1 9NJ<br>Tel: +44 (1223) 400 400<br>Fax: +44(1223) 400 410</p>
+
+
+<ul class="list-links">
+    
+
+
+
+        <li aria-posinset="1" aria-setsize="2">
+<a href="/company/offices" title="Menu Link to Arm Global Offices" >View All Global Offices</a>        </li>
+        <li aria-posinset="2" aria-setsize="2">
+<a href="/company/contact-us" title="Menu Link to Contact Arm" >Contact Us</a>        </li>
+</ul>
+
+</div>
+
+
+<div class="nav-promo-box bg-color-arm-light-grey">
+    <h3 class = "nav-promo-box__title">Arm Blueprint Blog</h3>
+    <p class = "nav-promo-box__text">Arm executives and influencers bring insights and opinions from the world’s largest compute ecosystem.</p>
+    <a href="https://www.arm.com/blogs/blueprint/" class="nav-promo-box__link" title="Learn about Arm Blueprint Blog" >Learn More</a>
+</div>
+
+</div>
+
+            </div>
+        </template>
+
+    <script>
+        (function() {
+
+            var $navigation = document.querySelector('.js-mega-navigation');
+
+            // Desktop
+            var $navigationItemsContainer = $navigation.querySelector('.js-navigation-items');
+            var $navigationItems = $navigation.querySelectorAll('.js-navigation-item');
+            var $navigationHomeLink = $navigation.querySelector('.js-navigation-home-link');
+            var $navigationLogo = $navigation.querySelector('.js-navigation-logo');
+            var $navigationContainer = $navigation.querySelector('.js-navigation-container');
+            var $selectedContainerContent;
+
+            // Mobile
+            var $navigationActions = $navigation.querySelectorAll('.js-navigation-action');
+            var $navigationBackButton = $navigation.querySelector('.js-navigation-action-back');
+            var $navigationCategories = $navigation.querySelectorAll('.js-navigation-category');
+            var $navigationCategoryContainer = $navigation.querySelector('.js-navigation-category-container');
+
+            var CLASS_IS_ACTIVE = 'is-active';
+            var CLASS_IS_ASIDE = 'is-aside';
+            var CLASS_IS_HIDDEN = 'is-hidden';
+
+            var _isActive = false;
+            var _isHomeLinkHidden = false;
+            var _selectedSubCategory;
+            var _selectedItem;
+
+            /**
+             * Close the navigation
+             * This function closes the navigation
+             *
+             * @return {void}
+             */
+            function close(isCloseButton) {
+                return updateNavigation(setSelectedItem(null), isCloseButton);
+            }
+
+            /**
+             * Return the Y offset
+             * @return {Number}                The Y offset
+             */
+            function getOffsetY() {
+                var offsetY = window.scrollY || window.pageYOffset || 0;
+                return offsetY;
+            }
+
+            /**
+             * Verify whether or not the home link should be hidden
+             * @return {Boolean}               Whether or not the home link should be hidden
+             */
+            function shouldHomeLinkBeHiddenBasedOnOffsetY() {
+                return (getOffsetY() <= 90);
+            }
+
+            /**
+             * Verify whether or not the home link should be displayed after scrolling
+             */
+            function showOrHideHomeLinkAfterScrolling() {
+                var shouldBeHidden = shouldHomeLinkBeHiddenBasedOnOffsetY();
+                if (shouldBeHidden) {
+                    if (!_isHomeLinkHidden) {
+                        _isHomeLinkHidden = true;
+                        showHomeLink();
+                    }
+                } else {
+                    _isHomeLinkHidden = false;
+                    showHomeLink();
+                }
+            }
+
+            /**
+             * Verify whether or not the home link should be displayed after navigation selection
+             * @param  {Boolean}   isItemSelected      Whether or not an item was selected
+             */
+            function showOrHideHomeLinkAfterSelection(isItemSelected) {
+                _isHomeLinkHidden = (shouldHomeLinkBeHiddenBasedOnOffsetY() && !isItemSelected);
+                showHomeLink();
+            }
+
+            /**
+             * Show or hide the home link
+             * @return {void}
+             */
+            function showHomeLink() {
+                if (!_isHomeLinkHidden) return $navigationHomeLink.classList.remove(CLASS_IS_HIDDEN);
+                $navigationHomeLink.classList.add(CLASS_IS_HIDDEN);
+            }
+
+            /**
+             * Update the navigation
+             * This function updates and re-renders the navigation
+             *
+             * @param  {String}    [selectedItem]  The ID of the selected item, if any
+             */
+            function updateNavigation(selectedItem, isCloseButton) {
+                showOrHideHomeLinkAfterSelection(!!selectedItem);
+                updateNavigationLogoDisplayMode(!selectedItem);
+                updateMobileNavigationCategoriesDisplayMode(!!selectedItem);
+                updateNavigationActiveClass(!!selectedItem, isCloseButton);
+                updateNavigationItems(selectedItem, isCloseButton);
+                loadSelectedContent(selectedItem);
+            }
+
+            /**
+             * Change the navigation's active class
+             * This function adds/removes the active class to/from the navigation root
+             *
+             * @param  {Boolean}   isActive        Whether or not the navigation is active
+             * @return {void}
+             */
+            function updateNavigationActiveClass(isActive, isCloseButton) {
+                if (isCloseButton) return $navigation.classList.remove(CLASS_IS_ACTIVE);
+                if (isActive) {
+                    $navigation.classList.remove(CLASS_IS_HIDDEN);
+                    return $navigation.classList.add(CLASS_IS_ACTIVE);
+                }
+                return $navigation.classList.add(CLASS_IS_HIDDEN);
+            }
+
+            /**
+             * Update the navigation items
+             * This function updates the navigation list items
+             *
+             * @param  {String}    [selectedItem]  The ID of the selected item, if any
+             */
+            function updateNavigationItems(selectedItem, isCloseButton) {
+                for (var i = 0; i < $navigationItems.length; i++) {
+                    var $item = $navigationItems[i];
+                    if (selectedItem && $item.getAttribute('data-container') === selectedItem) {
+                        $item.classList.add(CLASS_IS_ACTIVE);
+                        $item.setAttribute('aria-expanded', true);
+                        $item.focus();
+                    } else {
+                        $item.classList.remove(CLASS_IS_ACTIVE);
+                        $item.setAttribute('aria-expanded', false);
+                        if (!isCloseButton || isCloseButton === undefined) {
+                            $item.blur();
+                        }
+                    }
+                }
+            }
+
+            /**
+             * Update the logo display mode
+             * This function will hide or show the logo
+             *
+             * @param  {Boolean}   show            Whether or not the logo needs to be displayed
+             */
+            function updateNavigationLogoDisplayMode(show) {
+                if (show) return $navigationLogo.classList.remove('is-hidden');
+                return $navigationLogo.classList.add('is-hidden');
+            }
+
+            /**
+             * Load the selected item content
+             * This function loads the corresponding content into the content container
+             *
+             * @param {String}     selectedItem    The ID of the selected item
+             */
+            function loadSelectedContent(selectedItem) {
+                if (!selectedItem) {
+                    $selectedContainerContent = $navigationContainer.querySelector('.c-mega-navigation__content');
+                    if ($selectedContainerContent) {
+                        $navigationContainer.removeChild($selectedContainerContent);
+                        $selectedContainerContent = null;
+                    }
+                    return $navigationContainer.classList.remove(CLASS_IS_ACTIVE);
+                }
+                var selectedContent = $navigation.querySelector('.js-navigation-content[data-container="' + selectedItem + '"]').innerHTML;
+                if (selectedContent) {
+                    $navigationContainer.innerHTML = selectedContent;
+                    $navigationContainer.classList.add(CLASS_IS_ACTIVE);
+                    $navigationContainer.removeAttribute('aria-hidden');
+                    $navigationContainer.removeAttribute('tabindex');
+                    var $focusedElement = $navigationContainer.querySelector('.c-mega-navigation__content__heading');
+                    $focusedElement.focus();
+                } else {
+                    $navigationContainer.classList.remove(CLASS_IS_ACTIVE);
+                    $navigationContainer.setAttribute('aria-hidden', 'true');
+                    $navigationContainer.setAttribute('tabindex', '-3');
+                }
+            }
+
+            /**
+             * Set the selected item
+             * This function registers the selected item and dispatches an event
+             *
+             * @param  {String}    [selectedItem]  The ID of the selected item, if any
+             * @return {String}                    The ID of the selected item
+             */
+            function setSelectedItem(selectedItem) {
+                _selectedItem = (_selectedItem != selectedItem) ? selectedItem : undefined;
+                dispatchNavigationActiveEvent(!!_selectedItem);
+                return _selectedItem;
+            }
+
+            /**
+             * Handle navigation item click events
+             * This function persists the selected item to the registration function
+             *
+             * @return {void}
+             */
+            function navigationItemClickHandler() {
+                var selectedItem = setSelectedItem(this.getAttribute('data-container'));
+                return updateNavigation(selectedItem);
+            }
+
+            /**
+             * Handle keyboard events
+             * This function persists the selected item to the registration function for certain key codes
+             *
+             * @param  {Event}     evt     The keyboard event
+             * @return {void}
+             */
+            function navigationItemKeyUpHandler(evt) {
+                var key = evt.keyCode || evt.which || 0;
+                if (key !== 13 && key !== 27) return;
+
+                // Open/Update
+                if (key === 13) {
+                    var selectedItem = setSelectedItem(this.getAttribute('data-container'));
+                    var isClose = !selectedItem
+                    return updateNavigation(selectedItem, isClose);
+
+                // Close
+                } else if (key === 27) {
+                    return close(true);
+                }
+            }
+
+            /**
+             * Handle global keyboard events
+             * @param  {Event}     evt     The keyboard event
+             * @return {void}
+             */
+            function keyUpHandler(evt) {
+                var key = evt.keyCode || evt.which || 0;
+                if (key === 27) return close(true);
+            }
+
+            /**
+             * Handle global scroll events
+             * @return {void}
+             */
+            function scrollHandler() {
+                showOrHideHomeLinkAfterScrolling();
+            }
+
+            /**
+             * Handle transitionend event of navigation container
+             * @param  {Event}     evt     The transitionend event
+             * @return {void}
+             */
+            function navigationContainerTransitionendHandler(evt) {
+                if ($navigation.classList.contains(CLASS_IS_ACTIVE) && $navigation.classList.contains(CLASS_IS_HIDDEN)) {
+                    $navigation.classList.remove(CLASS_IS_ACTIVE);
+                    $navigation.classList.remove(CLASS_IS_HIDDEN);
+                }
+            }
+
+            /**
+             * Handle global resize events
+             * @return {void}
+             */
+
+            var breakpoint = 1024;
+
+            var _previousViewportMode;
+            var _previousViewportWidth;
+
+            /**
+             * Get the viewport width
+             * @return {Number}    The viewport width
+             */
+            function getViewportWidth() {
+                return window.innerWidth || 0;
+            }
+
+            /**
+             * Verify whether or not if we're dealing with a mobile viewport
+             * @param  {Number}    viewPortWidth
+             * @return {Boolean}
+             */
+            function isMobileViewport(viewportWidth) {
+                return (viewportWidth < breakpoint);
+            }
+
+            /**
+             * Update the viewport
+             * @return {void}
+             */
+            function updateViewport() {
+                var viewportWidth = getViewportWidth();
+                var isMobile = isMobileViewport(viewportWidth);
+
+                if (_previousViewportMode != isMobile && _previousViewportWidth != viewportWidth) {
+                    updateNavigationSubCategoryDisplayMode(null);
+                    resetUtilityNavigation();
+                    close();
+                }
+
+                _previousViewportMode = isMobile;
+                _previousViewportWidth = viewportWidth;
+            }
+
+            /**
+             * Iniatialize the viewport
+             * @return {void}
+             */
+            function initializeViewport() {
+                _previousViewportWidth = getViewportWidth();
+                _previousViewportMode = isMobileViewport(_previousViewportWidth);
+            }
+
+            initializeViewport();
+
+            /**
+             * Handle window resize events
+             */
+            function resizeHandler() {
+                updateViewport();
+            }
+
+            window.addEventListener('keyup', keyUpHandler);
+            window.addEventListener('scroll', scrollHandler);
+
+
+            /************************/
+            /* MOBILE FUNCTIONALITY */
+            /************************/
+
+            /**
+             * Handle back button touch events
+             */
+            function backButtonSelectHandler() {
+                _selectedSubCategory = undefined;
+                updateNavigationSubCategoryDisplayMode(_selectedSubCategory);
+                $navigationBackButton.classList.add('is-hidden');
+            }
+
+            /**
+             * Show the navigation categories
+             * This function will expand/collapse the navigation categories
+             *
+             * @param  {Boolean}   isActive    Whether or not the navigation categories need to be displayed
+             * @return {void}
+             */
+            function updateMobileNavigationCategoriesDisplayMode(isActive) {
+                var allElements = document.body.getElementsByTagName('*');
+                if (isActive) {
+                    var siteWrapper = document.getElementsByClassName('c-site-wrapper');
+                    var navigationWrapper = document.getElementsByClassName('c-navigation-wrapper');
+                    var megaNavigation = document.getElementsByClassName('c-mega-navigation');
+                    var megaNavigationBar = document.getElementsByClassName('c-mega-navigation__bar');
+                    var megaNavigationActions = document.getElementsByClassName('c-mega-navigation__actions');
+                    var megaNavigationCategories = document.getElementsByClassName('c-mega-navigation__categories');
+                    var megaNavActionsSectionCenter = document.getElementsByClassName('c-mega-navigation__actions__section--center');
+                    var armLogoInverted = document.getElementsByClassName('c-mega-navigation__logo--inverted');
+                    var megaNavActionsSectionRight = document.getElementsByClassName('c-mega-navigation__actions__section--right');
+                    var closeButton = megaNavActionsSectionRight[0].querySelector('.js-navigation-action[data-action="close"]');
+                    var categoriesElements = megaNavigationCategories[0].getElementsByTagName('*');
+
+                    for (var i = 0; i < allElements.length; i++) {
+                        if (allElements[i].hasAttribute('class')) {
+                            if (allElements[i].getAttribute('class').indexOf('overlay') === -1 && allElements[i].getAttribute('class').indexOf('js-global-search-input') === -1) {
+                                allElements[i].setAttribute('aria-hidden', 'true');
+                                allElements[i].setAttribute('data-hidden', 'true');
+                                if (allElements[i].hasAttribute('tabindex') && allElements[i].getAttribute('tabindex') === '0') {
+                                    allElements[i].setAttribute('tabindex', '-2');
+                                } else {
+                                    allElements[i].setAttribute('tabindex', '-3');
+                                }
+                            }
+                        } else {
+                            allElements[i].setAttribute('aria-hidden', 'true');
+                            allElements[i].setAttribute('data-hidden', 'true');
+                            if (allElements[i].hasAttribute('tabindex') && allElements[i].getAttribute('tabindex') === '0') {
+                                allElements[i].setAttribute('tabindex', '-2');
+                            } else {
+                                allElements[i].setAttribute('tabindex', '-3');
+                            }
+                        }
+                    }
+
+                    for (var j = 0; j < categoriesElements.length; j++) {
+                        if (categoriesElements[j].hasAttribute('aria-hidden')) {
+                            categoriesElements[j].removeAttribute('aria-hidden');
+                        }
+                        if (categoriesElements[j].hasAttribute('tabindex')) {
+                            if (categoriesElements[j].getAttribute('tabindex') === '-2') {
+                                categoriesElements[j].setAttribute('tabindex', '0');
+                            } else {
+                                categoriesElements[j].removeAttribute('tabindex');
+                            }
+                        }
+                    }
+
+                    if (siteWrapper[0]) {
+                        removeElementAttributes(siteWrapper[0]);
+                    }
+
+                    if (navigationWrapper[0]) {
+                        removeElementAttributes(navigationWrapper[0]);
+                    }
+
+                    if (megaNavigation[0]) {
+                        removeElementAttributes(megaNavigation[0]);
+                    }
+
+                    if (megaNavigationBar[0]) {
+                        removeElementAttributes(megaNavigationBar[0]);
+                    }
+
+                    if (megaNavigationActions[0]) {
+                        removeElementAttributes(megaNavigationActions[0]);
+                    }
+
+                    if (megaNavigationCategories[0]) {
+                        removeElementAttributes(megaNavigationCategories[0]);
+                    }
+
+                    if (megaNavActionsSectionCenter[0]) {
+                        removeElementAttributes(megaNavActionsSectionCenter[0]);
+                    }
+
+                    if (armLogoInverted[0]) {
+                        var armLogoParent = armLogoInverted[0].parentElement;
+                        removeElementAttributes(armLogoParent);
+                        removeElementAttributes(armLogoInverted[0]);
+                    }
+
+                    if (megaNavActionsSectionRight[0]) {
+                        removeElementAttributes(megaNavActionsSectionRight[0]);
+                    }
+
+                    if (closeButton) {
+                        var closeButtonParent = closeButton.parentElement;
+                        var closeButtonElements = closeButton.getElementsByTagName('*');
+                        for (var i = 0; i < closeButtonElements.length; i++) {
+                            if (closeButtonElements[i].hasAttribute('aria-hidden')) {
+                                closeButtonElements[i].removeAttribute('aria-hidden');
+                            }
+                            if (closeButtonElements[i].hasAttribute('tabindex')) {
+                                if (closeButtonElements[i].getAttribute('tabindex') === '-2') {
+                                    closeButtonElements[i].setAttribute('tabindex', '0');
+                                } else {
+                                    closeButtonElements[i].removeAttribute('tabindex');
+                                }
+                            }
+                        }
+                        removeElementAttributes(closeButton);
+                        removeElementAttributes(closeButtonParent);
+                    }
+                } else {
+                    for (var i = 0; i < allElements.length; i++) {
+                        if (allElements[i].hasAttribute('data-hidden')) {
+                            if (allElements[i].hasAttribute('tabindex') && allElements[i].getAttribute('tabindex') === '-3') {
+                                allElements[i].removeAttribute('tabindex')
+                            } else if (allElements[i].hasAttribute('tabindex') && allElements[i].getAttribute('tabindex') === '-2') {
+                                allElements[i].setAttribute('tabindex', '0');
+                            }
+                            allElements[i].removeAttribute('aria-hidden');
+                            allElements[i].removeAttribute('data-hidden');
+                        }
+                    }
+                }
+
+                if (isActive) return $navigationItemsContainer.classList.add(CLASS_IS_ACTIVE);
+                return $navigationItemsContainer.classList.remove(CLASS_IS_ACTIVE);
+            }
+
+            /**
+             * Show the navigation subcategories
+             * This function will expand/collapse the navigation subcategories
+             *
+             * @param  {String}    [selectedCategory]  The content ID
+             * @return {void}
+             */
+            function updateNavigationSubCategoryDisplayMode(selectedCategory) {
+                var navigationBackButtonElements = $navigationBackButton.getElementsByTagName('*');
+                var megaNavigationsSectionLeft = document.getElementsByClassName('c-mega-navigation__actions__section--left');
+                var megaNavigationCategories = document.getElementsByClassName('js-navigation-items');
+                var categoriesElements = megaNavigationCategories[0].getElementsByTagName('*');
+
+                if (!!selectedCategory) {
+
+                    var template = $navigation.querySelector('.js-navigation-category-content[data-container="' + selectedCategory + '"]');
+                    if (!template) return;
+
+                    $navigationItemsContainer.classList.add(CLASS_IS_ASIDE);
+                    $navigationCategoryContainer.innerHTML = template.innerHTML;
+                    $navigationCategoryContainer.scrollTop = 0;
+                    $navigationCategoryContainer.classList.add(CLASS_IS_ACTIVE);
+
+                    if (megaNavigationsSectionLeft[0]) {
+                        removeElementAttributes(megaNavigationsSectionLeft[0]);
+                    }
+
+                    if ($navigationBackButton.hasAttribute('aria-hidden')) {
+                        $navigationBackButton.removeAttribute('aria-hidden');
+                        if ($navigationBackButton.hasAttribute('tabindex')) {
+                            if ($navigationBackButton.getAttribute('tabindex') === '-2') {
+                                $navigationBackButton.setAttribute('tabindex', '0');
+                            } else {
+                                $navigationBackButton.removeAttribute('tabindex');
+                            }
+                        }
+                    }
+
+                    for (var i = 0; i < categoriesElements.length; i++) {
+                        categoriesElements[i].setAttribute('aria-hidden', 'true');
+                        categoriesElements[i].setAttribute('data-hidden', 'true');
+                        if (categoriesElements[i].hasAttribute('tabindex') && categoriesElements[i].getAttribute('tabindex') === '0') {
+                            categoriesElements[i].setAttribute('tabindex', '-2');
+                        } else {
+                            categoriesElements[i].setAttribute('tabindex', '-3');
+                        }                        
+                    }
+
+                    for (var j = 0; j < navigationBackButtonElements.length; j++) {
+                        if (navigationBackButtonElements[j].hasAttribute('aria-hidden')) {
+                            navigationBackButtonElements[j].removeAttribute('aria-hidden');
+                        }
+                        if (navigationBackButtonElements[j].hasAttribute('tabindex')) {
+                            if (navigationBackButtonElements[j].getAttribute('tabindex') === '-2') {
+                                navigationBackButtonElements[j].setAttribute('tabindex', '0');
+                            } else {
+                                navigationBackButtonElements[j].removeAttribute('tabindex');
+                            }
+                        }
+                    }
+
+                    var $focusedElement = $navigationCategoryContainer.querySelector('.c-mega-navigation__mobile__heading');
+                    $focusedElement.focus();
+                } else {
+                    for (var i = 0; i < categoriesElements.length; i++) {
+                        if (categoriesElements[i].hasAttribute('aria-hidden')) {
+                            categoriesElements[i].removeAttribute('aria-hidden');
+                        }
+                        if (categoriesElements[i].hasAttribute('tabindex')) {
+                            if (categoriesElements[i].getAttribute('tabindex') === '-2') {
+                                categoriesElements[i].setAttribute('tabindex', '0');
+                            } else {
+                                categoriesElements[i].removeAttribute('tabindex');
+                            }
+                        }
+                    }                    
+
+                    if (megaNavigationsSectionLeft[0]) {
+                        megaNavigationsSectionLeft[0].setAttribute('aria-hidden', 'true');
+                        megaNavigationsSectionLeft[0].setAttribute('tabindex', '-3');
+                    }
+
+                    $navigationBackButton.setAttribute('aria-hidden', 'true');
+                    if ($navigationBackButton.hasAttribute('data-hidden')) {
+                        if ($navigationBackButton.hasAttribute('tabindex')) {
+                            if ($navigationBackButton.getAttribute('tabindex') === '0') {
+                                $navigationBackButton.setAttribute('tabindex', '-2');
+                            } else {
+                                $navigationBackButton.setAttribute('tabindex', '-3');
+                            }
+                        }
+                    }
+
+                    for (var j = 0; j < navigationBackButtonElements.length; j++) {
+                        navigationBackButtonElements[j].setAttribute('aria-hidden', 'true');
+                        if (navigationBackButtonElements[j].hasAttribute('data-hidden')) {
+                            if (navigationBackButtonElements[j].hasAttribute('tabindex')) {
+                                if (navigationBackButtonElements[j].getAttribute('tabindex') === '0') {
+                                    navigationBackButtonElements[j].setAttribute('tabindex', '-2');
+                                } else {
+                                    navigationBackButtonElements[j].setAttribute('tabindex', '-3');
+                                }
+                            }
+                        }
+                    }
+
+                    $navigationItemsContainer.scrollTop = 0;
+                    $navigationItemsContainer.classList.remove(CLASS_IS_ASIDE);
+                    $navigationCategoryContainer.classList.remove(CLASS_IS_ACTIVE);
+                    $navigationCategoryContainer.innerHTML = '';
+                }
+            }
+
+            /**
+             * Toggle the active state for the navigation
+             * This function toggles the active state for the sub categories
+             *
+             * @return {void}
+             */
+            function toggleNavigationActiveState() {
+                _isActive = !_isActive;
+                dispatchNavigationActiveEvent(_isActive);
+                updateNavigationActiveClass(_isActive);
+                return updateMobileNavigationCategoriesDisplayMode(_isActive);
+            }
+
+
+            /************/
+            /* OVERLAYS */
+            /************/
+
+            var $overlay = $navigation.querySelector('.js-mega-navigation-overlay');
+            var $overlayCloseButton = $overlay.querySelector('.js-mega-navigation-overlay-close');
+
+            var $accountOverlay = $navigation.querySelector('.js-mega-navigation-accout-overlay');
+            var $accountOverlayCloseButton = $accountOverlay.querySelector('.js-mega-navigation-account-overlay-close');
+
+            var _isOverlayActive = false;
+
+            /**
+             * toggle the overlay active state
+             * @return {void}
+             */
+            function toggleOverlayActiveState(action) {
+                var version = detectIE();
+
+                if (version === false || version >= 12) {
+                    return window.dispatchEvent(new CustomEvent('active.overlay.arm.com', { 'detail': action }));
+                } else {
+                    var evt = document.createEvent("CustomEvent");
+                    evt.initCustomEvent('active.overlay.arm.com', false, false, { 'detail': action });
+                    return window.dispatchEvent(evt);
+                }
+            }
+
+            /**
+             * Show the overlay
+             * @param  {Event}     evt
+             * @return {void}
+             */
+            function handleOverlayActiveState(evt) {
+                _isOverlayActive = true;
+                $overlay.classList.remove('is-hidden');
+
+                var allElements = document.body.getElementsByTagName('*');
+                var siteWrapper = document.getElementsByClassName('c-site-wrapper');
+                var navigationWrapper = document.getElementsByClassName('c-navigation-wrapper');
+                var megaNavigation = document.getElementsByClassName('c-mega-navigation');
+                var megaNavigationBar = document.getElementsByClassName('c-mega-navigation__bar');
+                var overlayElements = $overlay.getElementsByTagName('*');
+
+                console.log(overlayElements);
+
+                for (var i = 0; i < allElements.length; i++) {
+                    if (allElements[i].hasAttribute('class')) {
+                        if (allElements[i].getAttribute('class').indexOf('overlay') === -1 && allElements[i].getAttribute('class').indexOf('js-global-search-input') === -1) {
+                            allElements[i].setAttribute('aria-hidden', 'true');
+                            allElements[i].setAttribute('data-hidden', 'true');
+                            if (allElements[i].hasAttribute('tabindex') && allElements[i].getAttribute('tabindex') === '0') {
+                                allElements[i].setAttribute('tabindex', '-2');
+                            } else {
+                                allElements[i].setAttribute('tabindex', '-3');
+                            }
+                        }
+                    } else {
+                        allElements[i].setAttribute('aria-hidden', 'true');
+                        allElements[i].setAttribute('data-hidden', 'true');
+                        if (allElements[i].hasAttribute('tabindex') && allElements[i].getAttribute('tabindex') === '0') {
+                            allElements[i].setAttribute('tabindex', '-2');
+                        } else {
+                            allElements[i].setAttribute('tabindex', '-3');
+                        }
+                    }
+                }
+
+                for (var j = 0; j < overlayElements.length; j++) {
+                    if (overlayElements[j].hasAttribute('aria-hidden')) {
+                        overlayElements[j].removeAttribute('aria-hidden');
+                    }
+                    if (overlayElements[j].hasAttribute('tabindex')) {
+                        overlayElements[j].removeAttribute('tabindex');
+                    }
+                }
+
+                if (siteWrapper[0]) {
+                    removeElementAttributes(siteWrapper[0]);
+                }
+
+                if (navigationWrapper[0]) {
+                    removeElementAttributes(navigationWrapper[0]);
+                }
+
+                if (megaNavigation[0]) {
+                    removeElementAttributes(megaNavigation[0]);
+                }
+
+                if (megaNavigationBar[0]) {
+                    removeElementAttributes(megaNavigationBar[0]);
+                }
+            }
+
+            var closeOverlay = function () {
+                _isOverlayActive = false;
+                $overlay.classList.add('is-hidden');
+                $accountOverlay.classList.add('is-hidden');
+
+                var allElements = document.body.getElementsByTagName('*');
+
+                for (var i = 0; i < allElements.length; i++) {
+                    if (allElements[i].hasAttribute('data-hidden')) {
+                        if (allElements[i].hasAttribute('tabindex') && allElements[i].getAttribute('tabindex') === '-3') {
+                            allElements[i].removeAttribute('tabindex')
+                        } else if (allElements[i].hasAttribute('tabindex') && allElements[i].getAttribute('tabindex') === '-2') {
+                            allElements[i].setAttribute('tabindex', '0');
+                        }
+                        allElements[i].removeAttribute('aria-hidden');
+                        allElements[i].removeAttribute('data-hidden');
+                    }
+                }
+            }
+
+            $accountOverlayCloseButton.addEventListener('click', closeOverlay);
+            $overlayCloseButton.addEventListener('click', closeOverlay );
+
+            window.addEventListener('active.overlay.arm.com', handleOverlayActiveState);
+
+            /**
+             * Remove attributes from element
+             * */
+            function removeElementAttributes(element) {
+                element.removeAttribute('aria-hidden');
+                element.removeAttribute('tabindex');
+            }
+
+            /**
+             * Handle navigation action click events
+             */
+            function navigationActionClickHandler() {
+                var action = this.getAttribute('data-action');
+                switch (action) {
+                    case 'navigation':
+                        toggleNavigationActiveState();
+                        break;
+
+                    case 'close':
+                        _isActive = !_isActive;
+                        backButtonSelectHandler();
+                        updateNavigationSubCategoryDisplayMode(null);
+                        close(true);
+                        break;
+
+                    case 'back':
+                        backButtonSelectHandler();
+                        break;
+
+                    case 'search':
+                        toggleOverlayActiveState(action);
+                        break;
+
+                    case 'login':
+                        showAccountLogin();
+                        break;
+                }
+            }
+
+            /**
+             * Handle navigation category touch events
+             */
+            function navigationCategoryTouchHandler() {
+                _selectedSubCategory = this.getAttribute('data-container');
+                updateNavigationSubCategoryDisplayMode(_selectedSubCategory);
+                return $navigationBackButton.classList.remove('is-hidden');
+            }
+
+
+            /***********/
+            /* GENERAL */
+            /***********/
+
+            /**
+             * @param  {Boolean}   isActive        Whether or not the navigation is active
+             * @return {void}
+             */
+            function dispatchNavigationActiveEvent(isActive) {
+                var event = document.createEvent('Event');
+                var eventString = (isActive) ? 'active.navigation.arm.com' : 'disabled.navigation.arm.com';
+                event.initEvent(eventString, false, true);
+                return window.dispatchEvent(event);
+            }
+
+            /**
+             * Initialize the navigation
+             */
+            function initializeNavigation() {
+
+                // Add event listeners to navigation actions (small screens)
+                for (var i = 0; i < $navigationActions.length; i++) {
+                    var $item = $navigationActions[i];
+                    $item.removeAttribute('href');
+                    $item.addEventListener('click', navigationActionClickHandler);
+                }
+
+                // Add event listeners to navigation categories (small screens)
+                for (var i = 0; i < $navigationCategories.length; i++) {
+                    var $item = $navigationCategories[i];
+                    $item.removeAttribute('href');
+                    $item.addEventListener('click', navigationCategoryTouchHandler);
+                }
+
+                // Add event listeners to navigation list items (large screens)
+                for (var i = 0; i < $navigationItems.length; i++) {
+                    var $item = $navigationItems[i];
+                    $item.removeAttribute('href');
+                    $item.addEventListener('click', navigationItemClickHandler);
+                    $item.addEventListener('keyup', navigationItemKeyUpHandler);
+                }
+
+                $navigationContainer.addEventListener("transitionend", navigationContainerTransitionendHandler);
+            }
+
+
+            /**
+             * TODO: NEEDS REWRITING:
+             * We cannot assume that the utility navigation will be there.
+             */
+
+            function detectIE() {
+                var ua = window.navigator.userAgent;
+
+                var trident = ua.indexOf('Trident/');
+                if (trident > 0) {
+                    var rv = ua.indexOf('rv:');
+                    return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+                }
+
+                return false;
+            }
+
+            function showAccountLogin() {
+                $accountOverlay.classList.remove('is-hidden');
+            }
+
+            function toggleUtilityNavigation() {
+                var $utilityNavigation = document.querySelector('.js-utility-navigation');
+                var $utilityNavigationContentContainer = $utilityNavigation.querySelector('.c-utility-navigation__content');
+                var $utilityNavigationContentPlaceholder = $utilityNavigationContentContainer.querySelector('.js-utility-navigation__placeholder');
+                var $utilityNavigationItems = $utilityNavigation.querySelectorAll('.c-utility-navigation__item__link');
+                var $utilityNavigationAccountItem = (Array.prototype.slice.call($utilityNavigationItems)).find(function (item) { return (item.innerHTML).includes('Login') });
+                var contentToLoad = $utilityNavigationAccountItem.getAttribute('data-container');
+                var hasContent = $utilityNavigationContentPlaceholder.innerHTML.trim() !== "";
+                var activeClass = 'is-active';
+
+                if (!hasContent) {
+                    var template = document.querySelector('.js-content-container[data-container="' + contentToLoad + '"]');
+                    if (template === null) return;
+                    $utilityNavigationContentPlaceholder.innerHTML = template.innerHTML;
+                    $utilityNavigationContentContainer.classList.add(activeClass);
+                    $utilityNavigationContentContainer.focus();
+
+                    var $scriptTag = $utilityNavigationContentPlaceholder.querySelector('script[data-src]');
+                    if ($scriptTag) {
+                        var url = $scriptTag.getAttribute('data-src');
+                        var dependency = document.createElement('script');
+                        dependency.type = 'text/javascript';
+                        dependency.src = url;
+                        $scriptTag.parentNode.appendChild(dependency);
+                        $scriptTag.parentNode.removeChild($scriptTag);
+                    }
+                } else {
+                    $utilityNavigationContentPlaceholder.innerHTML = "";
+                    $utilityNavigationContentContainer.classList.remove(activeClass);
+                }
+            }
+
+            function resetUtilityNavigation() {
+                var $utilityNavigation = document.querySelector('.js-utility-navigation');
+                var $utilityNavigationContentContainer = $utilityNavigation.querySelector('.c-utility-navigation__content');
+                var $utilityNavigationContentPlaceholder = $utilityNavigationContentContainer.querySelector('.js-utility-navigation__placeholder');
+                var $utilityNavigationItems = $utilityNavigation.querySelectorAll('.c-utility-navigation__item__link');
+                var activeClass = 'is-active';
+
+                for (var i = 0; i < $utilityNavigationItems.length; i++) {
+                    var $item = $utilityNavigationItems[i];
+                    $item.parentNode.classList.remove(activeClass);
+                    $item.setAttribute('aria-expanded', false);
+                }
+
+                $utilityNavigationContentPlaceholder.innerHTML = "";
+                $utilityNavigationContentContainer.classList.remove(activeClass);
+            }
+
+            /* END NEEDS REWRITING */
+
+            window.addEventListener('resize', resizeHandler);
+
+            initializeNavigation();
+
+        })();
+    </script>
+
+</div>
+
+</div>
+
+            
+            <div class="c-content-wrapper">
+
+                
+                
+
+<header class="o-widget c-header c-header--small" role="banner">
+
+    <link rel="stylesheet" href="https://www.arm.com/shared/arm.com-new/modules/c-header/style.css?v=3.2.2.0" />
+
+    
+
+
+
+<div id="c-049ab686-e30d-431f-b645-2087588fc2e3" class="o-widget c-site-logo" data-widget="Logo" >
+
+    
+    <link rel="stylesheet" href="/shared/arm.com-new/modules/c-logo/style.css?v=3.2.2.0" />
+
+    
+    
+
+    
+<a href="/" class="c-site-logo__link" tabindex="0" ><img src="/-/media/global/logos/arm-logo-white-rgb.svg?revision=d98f22d3-09c8-4813-a9d8-434c89710774&amp;h=40&amp;la=en&amp;hash=D0FDBD895BD8524551E3CFAA80984DC9DB32BC74" height="40" class="c-site-logo__image" alt="Arm" /></a></div>
+
+<div class="o-widget c-masthead" id="c-20a0ff93-310d-4131-a1b9-9e39b325a9aa">
+    
+        <div class="c-masthead__slider">
+        
+
+<div id="c-ae47a34a-6837-405a-9a34-c954f2c9b63c" class="c-masthead__slider__item is-inverted " style="z-index: 0" >
+    <div class="c-masthead__slider__item__content">
+        
+        <div class="c-masthead__slider__item__content__main">
+            <div class="c-masthead__slider__item__content__main__subtitle">
+                <div tabindex="0" class="title">why arm</div>
+                <div tabindex="0">
+                    Made possible
+                    <div class="c-masthead__hr c-masthead__hr--visible bg-color-arm-yellow"></div>
+                </div>
+            </div>
+            <div class="c-masthead__slider__item__content__fadebox has-opacity60" >
+                
+                <div class="c-masthead__cta" >
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <style type="text/css">
+            #c-ae47a34a-6837-405a-9a34-c954f2c9b63c .c-masthead__slider__item__content {
+                background-image: url('/-/media/global/innovation/made-possible/made-possible-med-hero-v2.jpg?revision=b8335e54-057d-4f0a-af8a-826822b35227');
+            }
+            @media (min-width: 1024px) {
+                #c-ae47a34a-6837-405a-9a34-c954f2c9b63c .c-masthead__slider__item__content {
+                    background-image: url('/-/media/global/innovation/made-possible/made-possible-med-hero-v2.jpg?revision=b8335e54-057d-4f0a-af8a-826822b35227');
+                }
+            }
+        </style>
+</div>
+
+    </div>
+
+</div>
+
+
+
+    <script src="/shared/arm.com-new/modules/c-masthead-slider/src/index.js" id="c-20a0ff93-310d-4131-a1b9-9e39b325a9aa"></script>
+
+
+    
+    
+
+    
+    <script type="text/javascript">
+        (function() {
+
+            var header = document.getElementsByClassName('c-header')[0];
+            var headerBar = header.getElementsByClassName('js-header-bar')[0];
+
+            var mastheadHeadline = header.getElementsByClassName('c-masthead__headline')[0];
+
+            var globalSearch = document.getElementsByClassName('js-header-bar-search')[0];
+            var globalNavigation = document.getElementsByClassName('js-header-bar-navigation')[0];
+
+            document.addEventListener('search.toggle', function(evt) {
+                globalSearch.classList.toggle('c-bar__item--is-expanded');
+                globalNavigation.classList.toggle('c-bar__item--is-collapsed');
+            });
+
+            /**
+             * Define whether or not the sticky state needs to be ignored
+             */
+            function ignoreStickyState() {
+                if (!header || !headerBar) return true;
+                return !!(header.classList.contains('c-header--title-only') || header.classList.contains('c-header--nav-only'));
+            }
+
+            /**
+             * Handle window changes
+             */
+            function onWindowChange() {
+                if (ignoreStickyState()) return;
+
+                // Calculate the required offset before the top bar becomes sticky
+                var offset = (mastheadHeadline) ? mastheadHeadline.offsetTop : 120;
+                if (window.pageYOffset >= (offset - headerBar.clientHeight)) return headerBar.classList.add('is-stuck');
+                return headerBar.classList.remove('is-stuck');
+            };
+
+            window.addEventListener('scroll', onWindowChange);
+            window.addEventListener('resize', onWindowChange);
+
+        })();
+
+    </script>
+</header>
+
+
+                
+                <main class="c-content" id="content" role="main" >
+                    
+
+<div id="c-39ce9108-7009-45f1-8d35-07dd621708c8" class="o-widget c-full-width-text-subcontent is-inverted bg-color-arm-black-new h-align-center v-align-center u-text-center" data-widget="FullWidthTextWithSubComponent" >
+    
+    <div class="row">
+        <div class="column">
+<div class="c-full-width-text-subcontent__placeholder"></div>
+<h1 class="c-full-width-text-subcontent__primary" data-component="PrimaryHeading" tabindex="0">A Celebration of Partnership and Innovation</h1><div class="c-full-width-text-subcontent__description " data-component="TextDescription" tabindex="0"><p>Made Possible is a homage to people who push the boundaries, do big things, and embrace the future of innovation as limitless. Every inspiring technology you see is a result of hard work and big dreams. The technology is a result of Arm and our partners working together to make the world a more connected place.</p></div>                <div>
+                    
+                    
+                </div>
+        </div>
+    </div>
+</div>
+
+<style type="text/css">
+
+</style>
+
+
+<div id="c-688b01d9-2c98-4b39-9f81-241904e845f2" class="o-widget c-full-width-text-subcontent bg-color-arm-light-grey h-align-center v-align-center u-text-center" data-widget="FullWidthTextWithSubComponent" >
+    
+    <div class="row">
+        <div class="column">
+<div class="c-full-width-text-subcontent__feature" data-component="FeatureHeading" tabindex="0">Innovation</div><div class="c-full-width-text-subcontent__primary" data-component="PrimaryHeading" tabindex="0">Made Possible by Arm</div><div class="c-full-width-text-subcontent__description " data-component="TextDescription" tabindex="0"><p>Arm technology is used by billions of people, across billions of devices, every single day. This ubiquity makes for some pretty amazing stories spanning across nations, industries and generations. Here are just a few&hellip;</p></div><div class="c-full-width-text-subcontent__placeholder">
+
+
+
+<div id="c-c93c71cd-3ef0-4c91-bbda-07909e5929cd" class="o-widget c-grid" data-widget="GridWidget" >
+    
+
+<div class="o-widget c-grid__row" data-component="ThreeColumnsRow" >
+    <div class="row" data-equalizer="13915991" data-options="equalize_on_stack: true" data-equalizer-mq="large-up">
+        <div class="column large-4" data-equalizer-watch="13915991">
+            
+
+<div id="c-e1b9e11c-4117-4458-ba50-97527ee0fb18" class="o-widget c-image-above-text-card is-inverted bg-color-arm-blue u-text-center" data-widget="ImageAboveTextCard" >
+    
+
+    
+<a href="/why-arm/innovation/made-possible/innovating-towards-autonomy" class="c-image-above-text-card__link" title="Innovating Towards Autonomy" ><div class="c-image-above-text-card__image" style=" background-image: url(&#39;/-/media/global/innovation/made-possible/Innovating Towards Autonomy/MP_Swift_654x314.png?revision=bff3cab4-17d7-4913-a71f-ed732f5c96bb&#39;);" data-component="Image"></div></a>    <h3 tabindex="0" class="c-image-above-text-card__primary" data-component="Primary">Innovating Towards Autonomy</h3>
+    
+    <div class="c-image-above-text-card__text" data-component="Text" tabindex="0"><p>For vehicles to autonomously navigate the world, they need to be able to precisely determine absolute location. Our partners at Swift Navigation create solutions make this feat (and autonomy as we know it today) possible.</p></div>
+    <div class="c-image-above-text-card__cta"><a href="/why-arm/innovation/made-possible/innovating-towards-autonomy" data-component="CallToAction" title="Innovating towards autonomy" class="c-button c-button--cta" >Watch Video</a></div>
+</div>
+
+        </div>
+        <div class="column large-4" data-equalizer-watch="13915991">
+            
+
+<div id="c-7b5df751-69f9-4908-831a-1d80274d701f" class="o-widget c-image-above-text-card is-inverted bg-color-arm-blue u-text-center" data-widget="ImageAboveTextCard" >
+    
+
+    
+<a href="/why-arm/innovation/made-possible/rethinking-voice-technology" class="c-image-above-text-card__link" title="Rethinking Voice Technology" ><div class="c-image-above-text-card__image" style=" background-image: url(&#39;/-/media/global/innovation/made-possible/Made_Possible_Still005.jpg?revision=49d72895-a009-4b4a-aa4a-de08a1062bca&#39;); background-size: cover;" data-component="Image"></div></a>    <h3 tabindex="0" class="c-image-above-text-card__primary" data-component="Primary">Rethinking Voice Technology</h3>
+    
+    <div class="c-image-above-text-card__text" data-component="Text" tabindex="0"><p>As we move towards a voice-powered future, Snips is creating the technology that will ensure ease, efficiency and privacy. Its Arm-powered offering uses machine learning to turn speech into action, making smart devices even smarter.</p></div>
+    <div class="c-image-above-text-card__cta"><a href="/why-arm/innovation/made-possible/rethinking-voice-technology" data-component="CallToAction" title="Untethering virtual reality" class="c-button c-button--cta" >Watch Video</a></div>
+</div>
+
+        </div>
+        <div class="column large-4 end" data-equalizer-watch="13915991">
+            
+
+<div id="c-747f7346-d8c8-400e-b7c9-a325e9f4fb55" class="o-widget c-image-above-text-card is-inverted bg-color-arm-blue u-text-center" data-widget="ImageAboveTextCard" >
+    
+
+    
+<a href="/why-arm/innovation/made-possible/untethering-virtual-reality" class="c-image-above-text-card__link" title="Untethering Virtual Reality" ><div class="c-image-above-text-card__image" style=" background-image: url(&#39;/-/media/global/Why Arm/innovation/made-possible/FTG 654.jpg?revision=448e5c9c-3303-4303-bd35-b899aebb0e16&#39;); background-size: cover;" data-component="Image"></div></a>    <h3 tabindex="0" class="c-image-above-text-card__primary" data-component="Primary">Untethering Virtual Reality</h3>
+    
+    <div class="c-image-above-text-card__text" data-component="Text" tabindex="0"><p>To achieve their goal of bringing high-fidelity VR gaming to everyone, everywhere, Fast Travel Games teamed up with Arm to bring their award-winning game, Apex Construct, to mobile VR. </p></div>
+    <div class="c-image-above-text-card__cta"><a href="/why-arm/innovation/made-possible/untethering-virtual-reality" data-component="CallToAction" title="Untethering virtual reality" class="c-button c-button--cta" >Watch Video</a></div>
+</div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="o-widget c-grid__row" data-component="ThreeColumnsRow" >
+    <div class="row" data-equalizer="55739091" data-options="equalize_on_stack: true" data-equalizer-mq="large-up">
+        <div class="column large-4" data-equalizer-watch="55739091">
+            
+
+<div id="c-85bdea60-d4df-4b58-b74d-35e83abb94bb" class="o-widget c-image-above-text-card is-inverted bg-color-arm-blue u-text-center" data-widget="ImageAboveTextCard" >
+    
+
+    
+<a href="/why-arm/innovation/made-possible/life-changing-tech" class="c-image-above-text-card__link" title="Life-Changing Technology" ><div class="c-image-above-text-card__image" style=" background-image: url(&#39;/-/media/global/innovation/made-possible/Life-Changing-Technology_950x250.jpg?revision=c1b7198c-482d-4600-86f6-c022e6ed5c86&#39;);" data-component="Image"></div></a>    <h3 tabindex="0" class="c-image-above-text-card__primary" data-component="Primary">Life-Changing Technology</h3>
+    
+    <div class="c-image-above-text-card__text" data-component="Text" tabindex="0"><p>The power of machine learning is transforming how patients, doctors and medication can work together and leverage better learnings and, ultimately, better health. It&rsquo;s just the beginning of innovation will change treatment plans tomorrow and into the future.</p></div>
+    <div class="c-image-above-text-card__cta"><a href="/why-arm/innovation/made-possible/life-changing-tech" data-component="CallToAction" title="Life-changing Tech" class="c-button c-button--cta" >Watch Video</a></div>
+</div>
+
+        </div>
+        <div class="column large-4" data-equalizer-watch="55739091">
+            
+
+<div id="c-ad120300-ca28-4df5-8de3-3ee3238ba2d9" class="o-widget c-image-above-text-card is-inverted bg-color-arm-blue u-text-center" data-widget="ImageAboveTextCard" >
+    
+
+    
+<a href="/why-arm/innovation/made-possible/vr-in-a-new-light" class="c-image-above-text-card__link" title="Experiencing VR in a New Light " ><div class="c-image-above-text-card__image" style=" background-image: url(&#39;/-/media/global/innovation/made-possible/vr-in-a-new-light_950x250.jpg?revision=e939592a-2b3a-42a4-9440-036b1251cce5&#39;);" data-component="Image"></div></a>    <h3 tabindex="0" class="c-image-above-text-card__primary" data-component="Primary">Experiencing VR in a New Light </h3>
+    
+    <div class="c-image-above-text-card__text" data-component="Text" tabindex="0"><p>Some might think VR begins and ends with gaming but, for others, it&rsquo;s a lifesaving tool that helps inject hope back into life. Meet the man who is testament to the power of thinking outside the box using today&rsquo;s tech.</p></div>
+    <div class="c-image-above-text-card__cta"><a href="/why-arm/innovation/made-possible/vr-in-a-new-light" data-component="CallToAction" title="VR in a New Light" class="c-button c-button--cta" >Watch Video</a></div>
+</div>
+
+        </div>
+        <div class="column large-4 end" data-equalizer-watch="55739091">
+            
+
+<div id="c-fe987951-8aa7-4fc4-8253-d46ef6201a8e" class="o-widget c-image-above-text-card is-inverted bg-color-arm-blue u-text-center" data-widget="ImageAboveTextCard" >
+    
+
+    
+<a href="/why-arm/innovation/made-possible/empowering-gen-z" class="c-image-above-text-card__link" title="Empowering Gen Z" ><div class="c-image-above-text-card__image" style=" background-image: url(&#39;/-/media/global/innovation/made-possible/Femi-Owolade_950x250.jpg?revision=4c677e88-f431-47c2-b4a3-749a1b6b1170&#39;);" data-component="Image"></div></a>    <h3 tabindex="0" class="c-image-above-text-card__primary" data-component="Primary">Empowering Gen Z</h3>
+    
+    <div class="c-image-above-text-card__text" data-component="Text" tabindex="0"><p>Femi Owolade-Coombes is an award-winning young inventor who&rsquo;s using technology to inspire a new generation of coders &ndash; from the UK to Bangladesh and beyond. At just 12 years old, he&rsquo;s already deep into his coding career with inclusivity at the heart of his mission.</p></div>
+    <div class="c-image-above-text-card__cta"><a href="/why-arm/innovation/made-possible/empowering-gen-z" data-component="CallToAction" title="Femi" class="c-button c-button--cta" >Watch Video</a></div>
+</div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="o-widget c-grid__row" data-component="ThreeColumnsRow" >
+    <div class="row" data-equalizer="53723133" data-options="equalize_on_stack: true" data-equalizer-mq="large-up">
+        <div class="column large-4" data-equalizer-watch="53723133">
+            
+
+<div id="c-ad116aa1-a23f-460c-91f0-339251e986a5" class="o-widget c-image-above-text-card is-inverted bg-color-arm-blue u-text-center" data-widget="ImageAboveTextCard" >
+    
+
+    
+<a href="/why-arm/innovation/made-possible/gamifying-empathy-to-foster-equality" class="c-image-above-text-card__link" title="Gamifying Empathy to Foster Equality" ><div class="c-image-above-text-card__image" style=" background-image: url(&#39;/-/media/global/innovation/made-possible/Clorama.jpeg?revision=491a3231-f18b-43b4-8454-402c80261c3f&#39;);" data-component="Image"></div></a>    <h3 tabindex="0" class="c-image-above-text-card__primary" data-component="Primary">Gamifying Empathy to Foster Equality</h3>
+    
+    <div class="c-image-above-text-card__text" data-component="Text" tabindex="0"><p>With a master&rsquo;s degree in Interaction Design and a lifetime of navigating the world as a woman of color, Clorama Dorvilias combined her experiences to create a virtual reality teaching tool with the aim of giving every student the equal opportunity to be seen and to succeed.</p></div>
+    <div class="c-image-above-text-card__cta"><a href="/why-arm/innovation/made-possible/gamifying-empathy-to-foster-equality" data-component="CallToAction" title="Gamifying Empathy to Foster Equality" class="c-button c-button--cta" >Watch Video</a></div>
+</div>
+
+        </div>
+        <div class="column large-4" data-equalizer-watch="53723133">
+            
+        </div>
+        <div class="column large-4 end" data-equalizer-watch="53723133">
+            
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+        </div>
+    </div>
+</div>
+
+<style type="text/css">
+
+</style>
+
+<div id="c-816f9955-15c5-41d2-b683-7e3ec3e506ae" class="o-widget c-full-width-rich-text small-text-center has-background-covered is-inverted h-align-center v-align-center" data-widget="FullWidthRichText" >
+    
+    <div class="row">
+        <div class="column u-text-center">
+            
+<div tabindex="0" class="c-full-width-rich-text__primary-heading" data-component="PrimaryHeading">Story Submission</div>            
+            <div tabindex="0" class="c-full-width-rich-text__text " data-component="Text"><p>Inspire us by sharing your story that was Made Possible by Arm.</p></div>
+            <a href="/why-arm/innovation/made-possible/story-submission" data-component="CallToAction" title="Submit Now" class="c-button c-button--cta" >Submit Now</a>
+        </div>
+    </div>
+</div>
+
+<style type="text/css">
+#c-816f9955-15c5-41d2-b683-7e3ec3e506ae { background-image: url('/-/media/global/products/backgrounds/talk-to-experts-dark-grey-bg-lg.jpg?revision=c2f3bd66-6cf9-4e24-8701-9adc0bc054cd');  background-color: transparent !important; }
+</style>
+
+                </main>
+                
+
+                
+                
+
+                
+                
+
+
+
+<footer class="c-footer" id="footer" role="contentinfo">
+
+    <link rel="stylesheet" href="https://www.arm.com/shared/arm.com-new/modules/c-footer/style.css?v=3.2.2.0" />
+
+    <div class="row">
+        <div class="column">
+
+            
+            <div class="c-footer__row row c-footer__internal">
+
+
+
+    <div class="c-footer__section column small-12 medium-6 large-2 ">
+        <ul class="o-list">
+                <li class="o-list__item">
+<a href="/products" title="Arm Products" >                            <span class="c-list__label">Products</span>
+</a>
+                        <ul class="o-list">
+<li class="o-list__item"><a href="/products/iot" target="_blank" title="IoT Solutions" >IoT Solutions</a></li><li class="o-list__item"><a href="/products/silicon-ip-cpu" target="_blank" title="Arm Processors " >Processors</a></li><li class="o-list__item"><a href="/products/silicon-ip-cpu/ai-platform" title="AI Platform for Machine Learning" >AI Platform</a></li><li class="o-list__item"><a href="/products/silicon-ip-multimedia" title="Graphics and Multimedia" >Graphics and Multimedia</a></li><li class="o-list__item"><a href="/products/development-tools" target="_blank" title="Development Tools" >Development Tools</a></li><li class="o-list__item"><a href="/why-arm/custom-socs" title="Learn about Custom SoCs" >Custom SoCs</a></li>                        </ul>
+                </li>
+        </ul>
+    </div>
+    <div class="c-footer__section column small-12 medium-6 large-2 ">
+        <ul class="o-list">
+                <li class="o-list__item">
+<a href="/why-arm/technologies" title="Footer Link to Arm Technologies" >                            <span class="c-list__label">Technologies</span>
+</a>
+                        <ul class="o-list">
+<li class="o-list__item"><a href="/why-arm/technologies/dynamiq" title="DynamIQ" >DynamIQ</a></li><li class="o-list__item"><a href="/why-arm/technologies/big-little" title="big.LITTLE" >big.LITTLE</a></li><li class="o-list__item"><a href="/products/silicon-ip-cpu/ethos/arm-nn" title="Arm NN" >Arm NN</a></li><li class="o-list__item"><a href="/why-arm/technologies/cmsis" title="CMSIS" >CMSIS</a></li><li class="o-list__item"><a href="https://developer.arm.com/architectures/instruction-sets/simd-isas/neon" target="_blank" title="Neon" >Neon</a></li><li class="o-list__item"><a href="https://developer.arm.com/ip-products/security-ip/trustzone" target="_blank" title="TrustZone" >TrustZone</a></li>                        </ul>
+                </li>
+        </ul>
+    </div>
+    <div class="c-footer__section column small-12 medium-6 large-2 ">
+        <ul class="o-list">
+                <li class="o-list__item">
+<a href="/why-arm/partner-ecosystem" title="Arm Partner Ecosystem" >                            <span class="c-list__label">Partner Ecosystem</span>
+</a>
+                        <ul class="o-list">
+<li class="o-list__item"><a href="/why-arm/partner-ecosystem/arm-approved-program" title="Arm Approved Program" >Arm Approved Program</a></li><li class="o-list__item"><a href="https://developer.arm.com/markets/automotive/arm-automotive-developer-community/automotive-ecosystem-partners" title="Automotive Ecosystem Partners" >Automotive</a></li><li class="o-list__item"><a href="https://developer.arm.com/solutions/hpc" target="_blank" title="Arm HPC Partner Ecosystem" >HPC</a></li><li class="o-list__item"><a href="https://developer.arm.com/solutions/infrastructure/arm-infrastructure-developer-community/ecosystem-partners" target="_blank" title="Infrastructure Ecosystem Partners" >Infrastructure</a></li><li class="o-list__item"><a href="https://developer.arm.com/technologies/machine-learning-on-arm/ecosystem-partners" target="_blank" title="Machine Learning Partner Ecosystem" >Machine Learning</a></li><li class="o-list__item"><a href="https://www.mbed.com/en/partners/our-partners/" target="_blank" title="Mbed Partners" >Mbed Partners</a></li>                        </ul>
+                </li>
+        </ul>
+    </div>
+    <div class="c-footer__section column small-12 medium-6 large-2 ">
+        <ul class="o-list">
+                <li class="o-list__item">
+<a href="/support" title="Footer Link to Support" >                            <span class="c-list__label">Support</span>
+</a>
+                        <ul class="o-list">
+<li class="o-list__item"><a href="/support/design-reviews" title="Design Reviews" >Design Reviews</a></li><li class="o-list__item"><a href="https://community.arm.com/developer/f" target="_blank" title="Developer Forums" >Developer Forums</a></li><li class="o-list__item"><a href="/support/training" target="_blank" title="Training" >Training</a></li><li class="o-list__item"><a href="https://developer.arm.com/docs" title="Documentation" >Documentation</a></li><li class="o-list__item"><a href="https://developer.arm.com/downloads" title="Downloads" >Downloads</a></li><li class="o-list__item"><a href="/support/contact-support" title="Contact Support" >Contact Support</a></li>                        </ul>
+                </li>
+        </ul>
+    </div>
+    <div class="c-footer__section column small-12 medium-6 large-2 end">
+        <ul class="o-list">
+                <li class="o-list__item">
+<a href="/company" title="Footer Link to Company" >                            <span class="c-list__label">About Arm</span>
+</a>
+                        <ul class="o-list">
+<li class="o-list__item"><a href="/company/leadership" target="_blank" title="Leadership" >Leadership</a></li><li class="o-list__item"><a href="/company/careers" target="_blank" title="Careers" >Careers</a></li><li class="o-list__item"><a href="/company/security" title="Security on Arm" >Security on Arm</a></li><li class="o-list__item"><a href="https://www.arm.com/blogs/blueprint/" target="_blank" title="Arm Blog" >Arm Blog</a></li><li class="o-list__item"><a href="/company/news" target="_blank" title="News" >News</a></li><li class="o-list__item"><a href="/company/offices" title="Arm Global Offices" >Arm Offices</a></li>                        </ul>
+                </li>
+        </ul>
+    </div>
+
+
+<div class="c-footer__section column small-12 medium-6 large-2">
+    
+
+<div id="c-7ee95ea4-c58b-48d7-92fc-72f1d260aeeb" class="c-language-switcher" data-widget="LanguageSwitcher" >
+
+        <ads-dropdown id="footer-language-dropdown"></ads-dropdown>
+
+    
+    <script>
+        (function () {
+
+            var position = 1;
+            var dropdownType = "inverted";
+
+            var isAlertBanner = !true;
+            var viewModel = {"Default":{"Label":"English","Value":"en","Icon":"fas fa-globe"},"Items":[{"Label":"English","Value":"en","Icon":null},{"Label":"日本語","Value":"ja","Icon":null}]};
+
+            var language = ConvertKeysToLowerCase(viewModel);
+            var selectedData = language.default;
+
+            function ConvertKeysToLowerCase(obj) {
+                var json = JSON.stringify(obj);
+                var newJson = json.replace(/"([\w]+)":/g,
+                    function($0, $1) {
+                        return ('"' + $1.toLowerCase() + '":');
+                    });
+                return JSON.parse(newJson);
+            };
+
+            function buildLocalization(locale, url) {
+                var pathArray = url.split('/');
+                var secondLevelLocation = pathArray[position];
+                var found = false;
+                for (var i = 0; i < language.items.length; i++) {
+                    if (language.items[i].value == secondLevelLocation) {
+                        found = true;
+                        break;
+                    }
+                }
+                var urlPath = found ? '/' + pathArray.slice(position + 1, pathArray.length).join('/') : url;
+                return '/' + locale + urlPath;
+            }
+
+            function redirectPath(value) {
+                var url = new URL(window.location.href);
+                var redirectUrl = url.origin + buildLocalization(value, url.pathname);
+                return redirectUrl;
+            }
+
+            function setCookie(cname, cvalue) {
+                var expiryDate = new Date();
+                expiryDate.setTime(expiryDate.getTime() + (3650*24*60*60*1000));
+                var expires = "expires="+ expiryDate.toGMTString();
+                document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+            }
+
+            var dropdownId = isAlertBanner ? '#alert-language-dropdown' : '#footer-language-dropdown';
+            var dropdown = document.querySelector(dropdownId);
+            if (dropdown) {
+                dropdown.type = dropdownType;
+                dropdown.data = language;
+                dropdown.addEventListener('adsDropdownOnChanged',
+                    function(evt) {
+                        selectedData = evt.detail;
+                        if (!isAlertBanner) {
+                            document.cookie = setCookie('language-banner', selectedData.value);
+                            window.location.href = redirectPath(selectedData.value);
+                        }
+                    });
+            }
+
+            if (isAlertBanner) {
+                var alertTop = document.querySelector('#alert-top');
+                if (alertTop) {
+                    alertTop.addEventListener('adsCloseButtonClicked',
+                        function() {
+                            alertTop.close();
+                        });
+                }
+
+                var confirmButton = document.querySelector('#c-language-switcher__alert__button_id');
+                if (confirmButton) {
+                    confirmButton.addEventListener('click',
+                        function () {
+                            document.cookie = setCookie('language-banner', selectedData.value);
+                            window.location.href = redirectPath(selectedData.value);
+                        });
+                }
+            }
+
+        })();
+    </script>
+</div>
+
+</div>
+            </div>
+
+            
+            <hr />
+
+            
+            <div class="c-footer__row row c-footer__social">
+                    <div class="c-footer__section column small-12 large-10">
+
+    <ul class="o-list o-list--inline">
+            <li class="o-list__item c-footer__social-link">
+                    <a href="https://www.facebook.com/Arm" target="_blank" title="Arm Facebook Account"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="o-list__item c-footer__social-link">
+                    <a href="http://www.linkedin.com/company/Arm" target="_blank" title="Arm LinkedIn Account"><i class="fab fa-linkedin"></i></a>
+            </li>
+            <li class="o-list__item c-footer__social-link">
+                    <a href="http://www.instagram.com/Arm" target="_blank" title="Arm Instagram Account"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li class="o-list__item c-footer__social-link">
+                    <a href="http://www.twitter.com/Arm" target="_blank" title="Arm Twitter Account"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="o-list__item c-footer__social-link">
+                    <a href="https://www.youtube.com/user/Armflix" target="_blank" title="Arm YouTube Account"><i class="fab fa-youtube"></i></a>
+            </li>
+    </ul>
+                    </div>
+                <div class="c-footer__section column small-12 large-2 hide-for-medium-down u-text-right"><img src="/-/media/global/logos/arm-logo-white-rgb.svg?revision=d98f22d3-09c8-4813-a9d8-434c89710774&amp;la=en&amp;hash=AF0BF14FED9A3730164D627E38F07C7E9198BCEC" tabindex="0" class="c-footer__logo" alt="arm" /></div>
+
+            </div>
+
+            
+            <div class="c-footer__row row c-footer__legal">
+
+
+    <div class="c-footer__section column">
+        <ul class="o-list o-list--inline c-footer--legal-links">
+<li class="o-list__item c-footer__legal-link"><a href="/company/policies/cookies" title="Footer link to Cookie Policy" >Cookie Policy</a></li><li class="o-list__item c-footer__legal-link"><a href="/company/policies/terms-and-conditions" title="Footer link to Terms of Use" >Terms of Use</a></li><li class="o-list__item c-footer__legal-link"><a href="/company/policies/privacy" title="Footer link to Privacy Policy" >Privacy Policy</a></li><li class="o-list__item c-footer__legal-link"><a href="/company/policies/accessibility" title="Footer link to Accessibility" >Accessibility</a></li><li class="o-list__item c-footer__legal-link"><a href="https://login.arm.com/subscriptions.php" target="_blank" title="Footer link to Subscription Center" >Subscription Center</a></li><li class="o-list__item c-footer__legal-link"><a href="/company/policies/trademarks" title="Trademarks Footer Link" >Trademarks</a></li><li class="o-list__item c-footer__legal-link"><a href="/glossary" title="Footer Link to IoT Glossary" >Glossary</a></li>        </ul>
+    </div>
+            </div>
+
+            
+            <div class="c-footer__row row c-footer__copyright">
+                <div class="c-footer__section column">
+                    Copyright &#169; 1995-2020 Arm Limited (or its affiliates). All rights reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+            </div>
+        </div>
+
+        
+        <div id="js-exportcontrol-modal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+            <h2 id="modalTitle">Content not available</h2>
+            <p class="js-blocked-text">This Section is blocked in your Country</p>
+            <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        </div>
+
+        
+            <aside class="c-component c-policies u-no-print" role="contentinfo">
+            <dialog class="c-component c-policy c-cookie-policy js-policy" data-key="com.arm.accepted.cookie" data-updated="1471284437000" data-iscookiepolicy="true" title="Cookie Policy" role="alert" style="display: none;">
+                <div class="row">
+                    <div class="small-12 large-9 u-small-text-center column" tabindex="0">
+                        <p>Important Information for the Arm website. This site uses cookies to store information on your computer. By continuing to use our site, you consent to our cookies. If you are not happy with the use of these cookies, please review our <a class="cookie-link" href="/company/policies/cookies" "="" title="Cookie Policy">Cookie Policy</a> to learn how they can be disabled. By disabling cookies, some features of the site will not work.</p>
+                    </div>
+                    <div class="small-12 large-auto u-text-center column">
+                        <a class="c-button is-primary c-policy__accept-button js-accept-policy" tabindex="0" title="Accept and hide this message ">
+                            Accept and hide this message  <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+            </dialog>  
+    </aside>
+
+
+    </div>
+
+    
+    <script src="https://www.arm.com/bundles/vendor?v=QuK8JxlupJIIFn9DuulkcKO2AxiyF0uBKG53NEZR5MU1"></script>
+    <script src="https://www.arm.com/bundles/arm?v=UdQw6J-daBFwKplKSYdWxJfehNkkr_dedKbIHGBfuE41"></script>
+
+
+    <!-- Munchkin -->
+<script src="//munchkin.marketo.net/munchkin.js" type="text/javascript"></script>
+<script type="text/javascript">
+    Munchkin.init("312-SAX-488", {asyncOnly: true, altIds: ["714-XIJ-402"]});
+</script>
+<!-- End Munchkin -->
+
+
+    
+        
+
+    <!-- Mobile Performance  -->
+    <script src="https://nebula-cdn.kampyle.com/we/8144/onsite/embed.js" async></script>
+    <!-- End Mobile Performance -->
+
+
+    
+    
+</body>
+</html>
