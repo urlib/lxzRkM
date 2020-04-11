@@ -1,0 +1,43 @@
+/* LINT.IfChange */
+
+body[type=landing] devsite-header,
+devsite-header .devsite-collapsible-section {
+  box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+}
+
+.devsite-jsfiddle-hide,
+devsite-toc {
+  display: block;
+}
+
+.devsite-dialog:not([is-upgraded]),
+iframe.devsite-embedded-youtube-video:not([is-upgraded]),
+pre.prettyprint:not([is-upgraded]) {
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.code-sample,
+.data-sample,
+.ds-selector-dropdown,
+.ds-selector-tabs,
+.kd-tabbed-horz,
+.kd-tabbed-vert {
+  display: none;
+}
+
+iframe.framebox,
+iframe.inherit-locale {
+  display: block;
+  width: 100%;
+}
+
+*:not(:defined) {
+  visibility: visible;
+}
+
+/* LINT.ThenChange(//depot/google3/devsite/two/static/css/app/core/components.scss) */
+firebase-status .firebase-status-content{-webkit-box-align:center;-ms-flex-align:center;align-items:center;border-radius:8px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;font-family:Google Sans,Noto Sans,Noto Sans JP,Noto Sans KR,Noto Naskh Arabic,Noto Sans Thai,Noto Sans Hebrew,Noto Sans Bengali,sans-serif;font-size:14px;font-weight:500;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;margin:16px 0;padding:16px 24px}firebase-status .firebase-status-content::before{font:normal normal normal 24px/1 "Material Icons";-webkit-font-feature-settings:"liga";font-feature-settings:"liga";-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;text-transform:none;word-wrap:normal;margin-right:24px}firebase-status .firebase-status-text{-webkit-box-flex:1;-ms-flex:1;flex:1;font-size:18px}firebase-status .firebase-status-link{color:inherit;-ms-flex-negative:0;flex-shrink:0;text-decoration:none}firebase-status .firebase-status-success{background:#e0f2f1;color:#00796b}firebase-status .firebase-status-success::before{content:"check_circle"}firebase-status .firebase-status-note{background:#e1f5fe;color:#01579b}firebase-status .firebase-status-note::before{content:"star"}firebase-status .firebase-status-caution{background:#feefe3;color:#bf360c}firebase-status .firebase-status-caution::before{content:"error"}firebase-status .firebase-status-warning{background:#fce8e6;color:#d50000}firebase-status .firebase-status-warning::before{content:"warning"}
+
+firebase-troubleshooter :link,firebase-troubleshooter :visited{color:#1e88e5;outline:0;text-decoration:none}firebase-troubleshooter a,firebase-troubleshooter button{-webkit-transition:all 0s 0s;transition:all 0s 0s}firebase-troubleshooter p{font:400 14px/24px "Roboto",sans-serif}firebase-troubleshooter h4{color:#424242;font:500 36px/46px "Google Sans",sans-serif;margin-bottom:16px;margin-top:0;overflow:visible}firebase-troubleshooter hr{margin:50px 0}firebase-troubleshooter .slide-transition-hidden-before{opacity:0;-webkit-transform:translate(20px, 0);transform:translate(20px, 0)}firebase-troubleshooter .slide-transition-hidden-after{opacity:0}firebase-troubleshooter .trouble-page{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;min-height:400px}firebase-troubleshooter .trouble-breadcrumbs{margin-bottom:32px;min-height:20px}firebase-troubleshooter .trouble-body{font-size:14px}firebase-troubleshooter .trouble-body p{margin-top:6px;padding-right:20px}firebase-troubleshooter .trouble-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row wrap;flex-flow:row wrap;overflow-y:auto}@media screen and (max-width: 900px){firebase-troubleshooter .trouble-body{padding-right:0}}firebase-troubleshooter .trouble-back{border:1px solid rgba(0,0,0,0);color:rgba(0,0,0,.4);cursor:pointer;font-style:normal;font-weight:normal;line-height:1;-webkit-transition:color .1s linear;transition:color .1s linear}firebase-troubleshooter .trouble-back i{cursor:pointer}firebase-troubleshooter .trouble-back:hover{background-color:transparent;border:1px solid rgba(0,0,0,0);color:#000}firebase-troubleshooter .trouble-back:active{-webkit-box-shadow:none;box-shadow:none;color:#000}firebase-troubleshooter .trouble-back:focus{background-color:transparent;border:1px solid rgba(0,0,0,.2)}firebase-troubleshooter .trouble-item{height:auto;width:30%}firebase-troubleshooter .trouble-item.product .trouble-link{-webkit-box-align:top;-ms-flex-align:top;align-items:top;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}firebase-troubleshooter .trouble-item.product .trouble-link .title{margin:auto 0;padding:0 20px}firebase-troubleshooter .trouble-item.product .trouble-link .product-icon{-webkit-box-align:center;-ms-flex-align:center;align-items:center;background:#ffca28;border-radius:50%;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-negative:0;flex-shrink:0;height:40px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;width:40px}firebase-troubleshooter .trouble-item.product .trouble-link .product-icon .gmp-icons{color:#fff;font-size:20px}firebase-troubleshooter .trouble-item .trouble-link{background-color:transparent;border:1px solid rgba(0,0,0,0);display:block;font-weight:400;height:100%;line-height:initial;padding:30px;text-align:left;text-decoration:none;-webkit-transition:background-color .1s linear;transition:background-color .1s linear;white-space:normal;width:100%}firebase-troubleshooter .trouble-item .trouble-link:hover{background-color:rgba(0,0,0,.04);border:1px solid rgba(0,0,0,0);border-radius:8px}firebase-troubleshooter .trouble-item .trouble-link:active{-webkit-box-shadow:none;box-shadow:none}firebase-troubleshooter .trouble-item .trouble-link:focus{border:1px solid rgba(0,0,0,.2)}firebase-troubleshooter .trouble-item .trouble-link .target{display:none}firebase-troubleshooter .trouble-item .firesite-feature-icon{margin-bottom:0}firebase-troubleshooter .trouble-item .title{color:rgba(0,0,0,.87);font-family:Google Sans,Roboto,sans-serif;font-size:18px;margin-bottom:10px}firebase-troubleshooter .trouble-item .description{color:rgba(0,0,0,.54);font-family:Roboto,sans-serif;font-size:14px}firebase-troubleshooter .trouble-item .title::after{content:"arrow_forward";direction:ltr;display:inline;font-family:"Material Icons";font-style:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin-left:8px;margin-right:-24px;text-transform:none;vertical-align:middle;white-space:nowrap;width:24px}firebase-troubleshooter .trouble-item .title.external-open::after{content:"open_in_new";margin-left:12px}@media screen and (max-width: 900px){firebase-troubleshooter .trouble-item{width:100%}}
+
