@@ -1,0 +1,35 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,viewport-fit=cover"><meta name=apple-mobile-web-app-capable content=yes><meta name=apple-mobile-web-app-status-bar-style content=black-translucent><meta name=format-detection content="telephone=yes"><meta name=msapplication-tap-highlight content=no><meta http-equiv=X-UA-Compatible content="IE=edge"><title>欢迎您来咨询</title><link rel=stylesheet href=/webchat/static/qq-face/css/jquery.emoji.css><link rel="shortcut icon" href=/webchat/favicon.ico><link href=/webchat/static/css/app.7f685806f4bace4dc613d99876cc9e00.css rel=stylesheet></head><style>* {
+      box-sizing: border-box;
+    }
+    *:before, *:after {
+      box-sizing: inherit;
+    }
+    body, html {
+      height: 100%;
+      overflow: hidden;
+    }
+    body, ul {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      color: #4d4d4d;
+      font: 14px/1.4em 'Helvetica Neue', Helvetica, 'Microsoft Yahei', Arial, sans-serif;
+    }
+    ul {
+      list-style: none;
+    }</style><body><div id=app></div><script src=/webchat/static/jquery/jquery-2.2.3.min.js></script><script src=/webchat/static/robotsdk.js></script><script src=/webchat/static/nov.min.js></script><script src=/webchat/static/cubeim/index.js></script><script src=/webchat/static/webim.js></script><script src=/webchat/static/cubeim/index.js></script><script src="/webchat/static/qq-face/js/jquery.emoji.js?v=1"></script><script>function sendQuestion(text){
+        console.log(text)
+      }</script><link rel=stylesheet href="https://m1.lefile.cn/myStatic/slidingVerification/css/jquery.slider.css?v=1520692823591"><script src="https://m1.lefile.cn/??myStatic/slidingVerification/js/aes.js,myStatic/slidingVerification/js/jquery.slider.js,myStatic/slidingVerification/js/uc.js?v=3"></script><script src=https://m4.lefile.cn/lenovo_passport/latest/js/pp.rr.min.js></script><script type=text/javascript src="https://webapi.amap.com/maps?v=1.4.15&key=4e21bd35cacd33fb19b86cd0d6de3239"></script><script>var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?53cc6d3dba9e7a3a72825cd18af128a4";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();</script><script>window.passport = passport
+      window.AMap = AMap
+      // if ('addEventListener' in document) {
+      //     document.addEventListener('DOMContentLoaded', function() {
+      //         FastClick.attach(document.body);
+      //     }, false);
+      // }</script><script type=text/javascript src=/webchat/static/js/manifest.856f1bcaee201700973d.js></script><script type=text/javascript src=/webchat/static/js/vendor.46fcbba98de304433196.js></script><script type=text/javascript src=/webchat/static/js/app.772510865881b29b4c03.js></script></body></html>
