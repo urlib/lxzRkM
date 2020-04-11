@@ -1,0 +1,320 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>CAFIS BlueGate　｜　CAFIS　＜加盟店様向け＞</title>
+<meta name="description" content="カード決済ならBlueGate。簡単、スピーディでカスタマイズも可能なNTTデータのカード決済サービス。安心と信頼でEコマース、通販に最適です。" />
+<meta name="keywords" content="カード決済, クレジット決済, クレジットカード, 決済, 決済システム, 決済代行, ネット決済" />
+<meta name="robots" content="INDEX, FOLLOW" />
+<meta name="author" content="NTTDATA" />
+<meta name="copyright" content="&copy; NTTDATA. 2014 All Rights Reserved." />
+<link rel="stylesheet" type="text/css" href="/css/reset.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/css/common.css" media="all" />
+<link rel="stylesheet" type="text/css" href="../css/common.css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/cafis_bluegate.css" media="all" />
+<link rel="shortcut icon" href="/img_cmn/favicon.ico" type="image/x-icon" />
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/js/IE9.js"></script>
+<![endif]-->
+<script type="text/javascript" src="/js/rollover.js"></script>
+</head>
+<body>
+<div id="header">
+	<div class="header_topbar">
+		<div class="inner">
+			<span class="customer_serv">CAFIS利用中のお客様専用サービス</span>
+			<a href="https://www.cafis.jp/member/main.htm" target="_blank" class="link_member"><span>CAFIS/CDS お客様専用ページ</span></a>
+			<a href="/manual_login/" target="_blank" class="link_manual"><span>CAFIS Arch/INFOX取扱説明書ダウンロード</span></a>
+			<a href="/cafis_arch_aboutportal/" class="link_portal"><span>Arch加盟店ポータル</span></a>
+		</div>
+	</div>
+	<div class="header_body">
+
+		<div class="inner">
+			<h1><a href="/"><img src="/img_cmn/header_logo.jpg" alt="CAFIS" width="129" height="49" /></a></h1>
+			<p class="hd_logoImg"><a href="https://www.nttdata.com/jp/ja/" target="_blank"><img src="/img_cmn/header_logo_ntt.gif" alt="NTT DATA"></a></p>
+			<p><a href="https://solution.cafis.jp/contact/">お問い合わせ</a></p>
+
+
+			<ul>
+				<li class="has_sub">
+					<a href="/">CAFIS総合</a>
+					<div class="sub_nav" id="cafis_nav">
+						<div class="sub_inner">
+							<ul>
+								<li>
+									<p><a href="/about/">About CAFIS</a></p>
+									<a href="/about/">CAFISブランドメッセージ</a>
+									<a href="/about/about.php">CAFISとは</a>
+									<a href="/about/cafistory.php">CAFIS HISTORY</a>
+								</li>
+								<li>
+									<p><a href="/message/">お客様へのメッセージ</a></p>
+									<a href="/message/">カード＆ペイメント事業部</a>
+									<a href="/message/paygent.php">株式会社ペイジェント</a>
+									<a href="/message/global.php">グローバルペイメント<br />＆サービス事業部</a>
+									<a href="/message/organization.php">組織図</a>
+								</li>
+								<li>
+									<p><a href="/service/case/">お客様導入事例</a></p>
+									<a href="/service/case/">一覧を見る</a>
+								</li>
+								<li>
+									<p><a href="/service/all_service.php">サービスブランド一覧</a></p>
+									<a href="/service/all_service.php">一覧を見る</a>
+								</li>
+								<li>
+									<p><a href="/global/">CAFISグローバル展開</a></p>
+									<a href="/global/apn.php">日本企業として<br />初めてAPN加盟承認</a>
+									<a href="https://www.nttdata-gps.com/about-us" target="_blank">APAC地域における<br />ペイメント事業<br /><span style="font-size: 10px;">(海外英文サイトへリンク)</span></a>
+								</li>
+							</ul>
+							<p>
+								<a href="/news_topics/list.php">新着情報 / ニュース</a>
+								<a href="/download/">資料ダウンロード</a>
+							</p>
+						</div>
+					</div>
+				</li><li class="current">					<a href="/merchant/">加盟店さま</a><li>					<a href="/card/">カード会社さま</a><li>					<a href="/bank/">金融機関さま</a>
+				</li><li class="has_sub">					<a href="/recommend_point/tcpip.php">システム</a>
+					<div class="sub_nav" id="sys_nav">
+						<div class="sub_inner">
+							<a href="/recommend_point/tcpip.php">接続方式（システム部の方へ）</a>
+							<a href="/recommend_point/security.php">セキュリティの強化</a>
+							<a href="/recommend_point/bcp.php">BCP（信頼性の強化）</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+	<div class="bg_filter"></div>
+</div><div class="contents">
+	<div class="main_ttl">
+		<div class="inner">
+			<h2>キャッシュレス決済を導入したい</h2>
+		</div>
+	</div>
+
+
+	<div class="main_area">
+<h4 class="logo_area"><span>ECサイト向け決済サービス<br /></span>CAFIS BlueGate</h4>		<div class="inner_box">
+			<div class="content">
+				<h5>概要</h5>
+				<p>CAFIS BlueGateはインターネット電子商取引（EC）ビジネスに必要な決済機能をワンストップでご提供するサービスです。<br />
+					クレジットカードの決済情報の中継や売上データの作成・伝送（オーソリ・売上）など、業務効率をアップする付加機能をご提供するとともに、面倒な決済サーバの運用をアウトソーシングすることで加盟店様の負担を大幅に軽減いたします。<br />
+					3Dセキュアやセキュリティコードといった本人認証機能はもちろん、カード番号をお預かりすることなどにより（オプション）、よりセキュアなEC取引を実現いたします。
+				</p>
+			</div>
+			
+			
+			<div class="content">
+				<h5>代表的な構成図</h5>
+				<img src="img/cafis_bluegate_01.gif" alt="代表的な構成図" width="800" height="347" />
+			</div>
+
+
+			<div class="content merit_1">
+				<h5>機能一覧</h5>
+
+				<p class="ttl">ワンクリックオプションサービス(カード情報預かりあり）</p>
+				<p>ワンクリックオプションサービス(カード情報預かりあり)は、IDとパスワードを入力いただくことで、カード情報を入力せずに購入できるスキームを、ASPサービスで簡単・安全に実現することができるサービスです。<br />
+					登録されたユーザの、2回目以降の購入でカード情報の入力が必要なくなるため、利便性が大幅に向上します。<br />
+					NTTデータのセキュリティに最大限配慮した環境で、ユーザのカード情報を大切にお預かりしますので、加盟店様のセキュリティリスクを大幅に軽減することが可能です。
+				</p>
+
+				<p class="ttl merit_space">CAFIS BlueGateはApple Payオプションサービスに対応。より便利なネットショッピングを実現</p>
+				<p><img src="img/cafis_bluegate_applepay.gif" alt="Pay" width="84" height="52" class="pic_right" />
+Apple Payのオンライン決済は、iPhone, iPad, Macにあらかじめ設定しておいたクレジットカードや配送先情報を使って、アプリやウェブサイトでお買い物ができる支払い方法です。</p>
+				<p>ユーザーはクレジットカードをお持ちのApple製デバイスに追加しておくことで、お買い物時は、カード番号・ 有効期限・セキュリティコードなどを入力することなく、Touch IDまたはFace IDでの認証だけで、簡単にお支払いができます。<br />
+また、クレジットカード番号はトークン化した状態で中継しますので、加盟店様ではクレジットカード情報を取り扱う必要がございません。</p>
+				<p><span>CAFIS BlueGate Apple Payオプションサービス</span>は、日本円（JPY）でのご利用が可能です。またご導入にあたっては、加盟店様にて <a href="https://developer.apple.com/jp/" target="_blank">Apple Developer Program</a> へのお申し込みと、Apple Developer Program ポータルからの設定や申請が必要になります。申請時に取得した証明書はBlueGateへ登録いただく必要がございます。</p>
+
+				<p class="notice_block">
+Apple Payを利用するにはiOS 10.1以降が必要です。<br />
+Apple Payに対応しているデバイスについては <a href="https://support.apple.com/ja-jp/KM207105" target="_blank">https://support.apple.com/ja-jp/KM207105</a> をご覧ください。<br />
+Apple、Appleのロゴ、Apple Pay、Apple Watch、iPad、iPhone、Mac、SafariはApple Inc.の商標です。<br />
+iPhoneの商標は、アイホン株式会社のライセンスにもとづき使用されています。<br />
+Apple Payの詳細は（<a href="http://www.apple.com/jp/apple-pay/" target="_blank">http://www.apple.com/jp/apple-pay/</a>）をご確認ください。
+				</p>
+
+
+<!--GooglePay-->
+<!--参考：https://support.google.com/pay/merchants/answer/6288970?hl=ja&ref_topic=7105427 -->
+<!--参考img src="https://pay.google.com/about/static/images/logos/google-pay-logo.svg -->
+
+<p class="ttl merit_space">Google Pay&trade; オプションサービスも利用可能。購入手続きをより簡単かつスピーディに。</p>
+<p><img src="img/gpay_mark.png" alt="Pay" width="84" height="54" class="pic_right" />
+
+Google Pay&trade; では、Googleアカウントに保存されている情報を活用し、アプリやウェブサイトでお買い物が可能です。</p>
+<p>ユーザはGoogleアカウントに登録されているクレジットカードから、お支払いにご利用いただくカードを選択いただくだけで、スピーディに決済できます。<br>
+そのため、アプリでもウェブサイトでも、素早くお買い物が完了できます。クレジットカード番号は（Googleにて）暗号化した状態で中継致しますので、加盟店様ではカード情報を取り扱う必要がございません。 </p>
+
+<p><span>CAFIS BlueGate Google Payオプションサービス</span>は、日本円（JPY）でのご利用が可能です。またご導入にあたっては、加盟店様にて
+<a href="https://pay.google.com/intl/ja_jp/about/business/" target="_blank">Google</a> へのアカウント登録やGoogle Pay APIの利用申請・設定が必要になります。</p>
+
+			</div>
+
+			<div class="content">
+				<h5>本人認証</h5>
+				<ul class="list_2">
+					<li>
+						<h6>3Dセキュア</h6>
+						<p>
+							3Dセキュアは、VISAインターナショナルが開発したネットのクレジット決済を安全に行うための認証の仕組みです。カード番号の認証だけでなく、カード会員ご本人の認証も同時に行い、なりすましなどの不正取引を防ぐことができます。BlueGateなら、ECサイト運営者様側での特別な開発負担なしでご利用が可能です。VISAはもちろん、MasterCard、JCB、AMEXも採用する先進の取引方式です。
+						</p>
+					</li>
+
+					<li>
+						<h6>セキュリティコード</h6>
+						<p>BlueGateでは、券面認証機能として「セキュリティコード（CVV2、CVC2、CID）」に対応しております。</p>
+						<p class="t_notice">※セキュリティコードは、カード番号とは別に、カード券面に印刷されており、注文しようとするユーザが、カード券面を保持していることを確認する機能を持ちます。</p>
+					</li>
+				</ul>
+			</div>
+
+
+			<div class="content">
+				<h5>導入メリット</h5>
+				<ul class="list_2" id="merit">
+					<li>
+						<h6>決済サーバの構築・運用にかかわるコストを<br />大幅に削減</h6>
+						<p>
+							BlueGateはASPサービスのため、自社での決済システム構築、運用、管理は必要ありません。お客様側で決済サーバを構築することなしに短期間でオンライン・クレジットカード決済サービスを利用することが可能です。
+						</p>
+					</li>
+
+					<li>
+						<h6>安心のセキュリティ対策</h6>
+						<p>
+							BlueGateでは,ユーザに安心してシステムをご利用いただけるよう、システム運用の世界基準で『<a href="/recommend_point/security.php#isms">ISMS</a>』の認定を受けセンター運営を行っております。<br />
+							また、国際カードブランドが推奨する、セキュリティ対策基準『<a href="/recommend_point/security.php#pci_dss">PCI DSS</a>』、セキュリティプログラム『AIS』にも準拠しておりますので、信頼性の高い、サービスの提供が可能です。
+						</p>
+					</li>
+				</ul>
+			</div>
+
+			<div class="content">
+				<h5>導入実績</h5>
+				<p>大手EC通販会社様、アパレル会社様、ガス事業者様、水道事業者様、通信事業者様を中心に多くのご利用実績がございます。</p>
+			</div>
+
+			<div class="content">
+				<h5>インターフェイス</h5>
+				<p>BlueGateは、お客さまの現在のビジネス環境やニーズに合わせてお選び頂けるインターフェース・ラインアップをご用意しています。大規模なトランザクションをスピーディーに実現するタイプから、インターネットに接続できる端末が1台あればすぐに利用可能なタイプまで、幅広くお選び頂けます。</p>
+				<img src="img/cafis_bluegate_02.gif" alt="インターフェイス" width="800" height="804" />
+			</div>
+
+			<div class="content">
+				<h5>関連サービス</h5>
+				<ul class="list_0">
+					<li class="li_dark">
+						<span>●</span>「<a href="mcp.php">多通貨決済サービス（MCP）</a>」のご利用により、加盟店様が海外向けECサイトにて商品を販売する際に、商品を購入する海外のお客様の自国通貨にて商品のご案内およびクレジット決済をすることが可能となります。
+					</li>
+					<li>
+						<span>●</span>「<a href="credit.php">クレジット収納代行サービス</a>」と併用いただくことで、月々の利用料や会費等の継続的に発生する料金のクレジット決済が可能となります。
+					</li>
+				</ul>
+			</div>
+
+			<div class="content">
+				<h5>導入スケジュール</h5>
+				<p>標準的なスケジュールは下記の通りです。詳細はお問い合わせください。</p>
+				<img src="img/cafis_bluegate_03.gif" alt="導入スケジュール" width="800" height="610" />
+			</div>
+
+<div class="content">
+	<div class="btn_center">
+		<a href="index_cashless.php">> 「キャッシュレス決済を導入したい」に戻る</a>
+	</div>
+</div>
+		</div>
+	</div>
+</div>
+
+<div id="footer">
+	<div class="page_top">
+		<a href="#header" onclick="$('body, html').animate({ scrollTop: 0 }, 700);return false;"></a>
+	</div>
+	<div class="footer_body">
+		<div>
+			<ul>
+				<li class="l_list">
+					<h3><a href="/">CAFIS総合</a></h3>
+					<ul>
+						<li><a href="/about/">CAFISブランドメッセージ</a></li>
+						<li><a href="/about/about.php">CAFISとは</a></li>
+						<li><a href="/message/">お客様へのメッセージ</a></li>
+						<li><a href="/service/case/">お客様導入事例</a></li>
+						<li><a href="/service/all_service.php">サービスブランド一覧</a></li>
+						<li><a href="/global/">CAFISグローバル展開</a></li>
+					</ul>
+
+					<h3 class="lower"><span>システム</span></h3>
+					<ul class="lower">
+						<li><a href="/recommend_point/tcpip.php">接続方式（システム部の方へ）</a></li>
+						<li><a href="/recommend_point/security.php">セキュリティの強化</a></li>
+						<li><a href="/recommend_point/bcp.php">信頼性の強化</a></li>
+					</ul>
+
+				</li>
+				<li class="l_list">
+					<h3><a href="/merchant/">加盟店さま</a></h3>
+					<ul>
+						<li><a href="/merchant/purpose/index_cashless.php">キャッシュレス決済を導入したい</a></li>
+						<li><a href="/merchant/purpose/index_receipt.php">収納サービスを充実させたい</a></li>
+						<li><a href="/merchant/purpose/index_attract_send.php">集客・送客を強化したい</a></li>
+						<li><a href="/merchant/purpose/index_efficient.php">店舗業務の効率をアップしたい</a></li>
+						<li><a href="/merchant/purpose/index_security.php">セキュリティを強化したい</a></li>
+					</ul>
+
+					<h3 class="lower_2"><span><a href="/card/">カード会社さま</a></span></h3>
+					<ul class="lower_2">
+						<li><a href="/card/index.php#new_service">サービスのご案内</a></li>
+					</ul>
+
+					<h3 class="lower_2"><span><a href="/bank/">金融機関さま</a></span></h3>
+					<ul class="lower_2">
+						<li><a href="/bank/index.php#new_service">サービスのご案内</a></li>
+					</ul>
+				</li>
+
+				<li>
+					<h3><span>特設サイト</span></h3>
+					<ul>
+						<li><a href="/paygent/">CAFIS × PAYGENT</a></li>
+						<li><a href="/code_gateway/">コード決済ゲートウェイ</a></li>
+						<li><a href="/cafis_pitt/">CAFIS Pitt</a></li>
+						<li><a href="/cafis_arch/">CAFIS Arch</a></li>
+						<li><a href="/payment_marketing/">Payment X Marketing</a></li>
+						<li><a href="/koukin_pf/">公金決済プラットフォーム</a></li>
+					</ul>
+				</li>
+
+				<li class="s_list">
+					<ul>
+						<li><a href="/news_topics/list.php">ニュース</a></li>
+						<li><a href="/download/">資料ダウンロード</a></li>
+						<li><a href="/contact/">お問い合わせ</a></li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+	<div class="footer_bottom">
+		<div>
+			<ul>
+				<li><a href="/disclaimer/">免責事項</a></li>
+				<li><a href="/privacypolicy/">プライバシーポリシー</a></li>
+				<li><a href="/sitemap/">サイトマップ</a></li>
+				<li><a href="/termsofuse/">サイトのご利用条件</a></li>
+			</ul>
+			<a href="http://www.nttdata.com/jp/ja/" target="_blank"><img src="/img_cmn/footer_logo.gif" alt="NTT DATA Global IT Innovator" width="136" height="36" /></a>
+			<p>Copyright © 2019 NTT DATA Corporation</p>
+		</div>
+	</div>
+</div></body>
+</html>
