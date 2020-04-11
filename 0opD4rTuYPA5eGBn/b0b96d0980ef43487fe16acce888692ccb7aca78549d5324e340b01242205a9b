@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>ThinkPad社区_ThinkPad官方论坛_ThinkPad电脑交流平台</title>
+    <meta name="keywords" content="ThinkPad社区,ThinkPad官方论坛,ThinkPad电脑交流平台,ThinkPad报价,参数" />
+    <meta name="description" content="ThinkPad社区涵盖ThinkPad、Thinkplus、ThinkVision设备，了解产品报价、参数、配置、图片等信息，就来联想ThinkPad社区。" />
+    <meta http-equiv="Cache-Control" content="no-transform"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="stylesheet" href="//img1cdn.clubstatic.lenovo.com.cn/pc3/css/club_v4/pc/common.css?b0e1knhbloxikl0c"/>
+    <link rel="stylesheet" href="//img1cdn.clubstatic.lenovo.com.cn/pc3/css/club_v4/pc/ThinkPad/ThinkPad.css?b0e1knhbloxikl0c"/>
+    <link rel="stylesheet" href="//img1cdn.clubstatic.lenovo.com.cn/pc3/css/club_v4/pc/plate_recommend.css?b0e1knhbloxikl0c"/>
+    <link rel="stylesheet" href="//img1cdn.clubstatic.lenovo.com.cn/pc3/css/club_v4/pc/footer.css?b0e1knhbloxikl0c"/>
+    <link rel="stylesheet" href="https://m1.lefile.cn/myStatic/slidingVerification/css/jquery.slider.css?v=1520492823591 "/>
+    <link rel="stylesheet" type="text/css" id="diy_common" href="https://js1cdn.clubstatic.lenovo.com.cn/thinkpc/css/headfoot.css?version=D8E" />
+    <script type="text/javascript" src="https://js1cdn.clubstatic.lenovo.com.cn/pc3/js/lib/jquery-1.8.3.min.js?version=50c21bf2e8b739df"></script>
+    <script type="text/javascript" src="https://js1cdn.clubstatic.lenovo.com.cn/pc3/js/lib/jquery.cookie.js?version=50c21bf2e8b739df"></script>
+    <script type="text/javascript" src="https://m1.lefile.cn/myStatic/slidingVerification/js/aes.js"></script>
+    <script type="text/javascript" src="https://m1.lefile.cn/myStatic/slidingVerification/js/jquery.slider.js "></script>
+    <script type="text/javascript" src="https://m1.lefile.cn/myStatic/slidingVerification/js/uc.js "></script>
+    <script type="text/javascript" src="https://m2.lefile.cn/lenovo_passport/latest/js/pp.rr.min.js"></script>
+    <script src="//js1cdn.clubstatic.lenovo.com.cn/pc3/js/club_v4/pc/thinkpad_header.js?b0e1knhbloxikl0c" type="text/javascript"></script>
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?b48f243be13ae7f09791067ba4262f25";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-110299082-1', 'auto', {'userId': ''});
+        ga('require', 'ec');
+        ga(function(tracker) {
+            var clientId = tracker.get('clientId');
+            ga('set', 'dimension1', clientId); });
+        ga('set', 'dimension2', '');
+        ga('set', 'dimension3', '');
+        ga('send', 'pageview');
+    </script>
+    <script type="text/javascript">
+        var CONFIGS = {
+            "lenovoid":'',
+            "club_pc_fid":'',
+            "pc_child_id":'think'
+        }
+        var _trackData = _trackData || [];
+    </script>
+</head>
+<body >
+
+         <!-- header -->
+    <div class="header">
+        <div class="headerBox">
+            <div class="headerLeft">
+                <ul>
+                    <li><a class="logo" href="https://www.thinkpad.com/index.html"><img src="//js1cdn.clubstatic.lenovo.com.cn/thinkpc/images/headfoot/pc_landlogo.png"></a></li>
+                    <li><a target="_blank" href="https://www.thinkpad.com/index.html">首页</a></li>
+                    <li class="productCenter"><a href="https://www.thinkpad.com/product/series/1.html">产品中心</a>
+                        <div class="headerOver" id="headerOver" style="display: none;">
+                        <div class="main">
+                            <div class="mainBox">
+                                <img src="//js1cdn.clubstatic.lenovo.com.cn/thinkpc/images/headfoot/1.png" class="sjx">
+                                <div class="imgList">
+                                                <span class="first cjSpan">
+                <img src="https://img2cdn.clubstatic.lenovo.com.cn/pic/10239768276649/0" class="cjImg">
+                <img  src="//js1cdn.clubstatic.lenovo.com.cn/thinkpc/images/headfoot/3.png" class="borderImg" style="display: none;">
+                <table style="display: none;">
+                    <tr><td><a target='_blank' href='https://www.thinkpad.com/product/478'>X390</a></td></tr>
+                </table>
+            </span>            <span class="cjSpan">
+                <img src="https://img2cdn.clubstatic.lenovo.com.cn/pic/10239770308274/0" class="cjImg">
+                <img  src="//js1cdn.clubstatic.lenovo.com.cn/thinkpc/images/headfoot/3.png" class="borderImg" style="display: none;">
+                <table style="display: none;">
+                    <tr><td><a target='_blank' href='https://www.thinkpad.com/product/475'>T490</a></td></tr>
+                </table>
+            </span>            <span class="cjSpan">
+                <img src="https://img2cdn.clubstatic.lenovo.com.cn/pic/10239771733911/0" class="cjImg">
+                <img  src="//js1cdn.clubstatic.lenovo.com.cn/thinkpc/images/headfoot/3.png" class="borderImg" style="display: none;">
+                <table style="display: none;">
+                    <tr><td><a target='_blank' href='https://www.thinkpad.com/product/491.html'>X1 Carbon 2019</a></td></tr>
+                </table>
+            </span>            <span class="cjSpan">
+                <img src="https://img2cdn.clubstatic.lenovo.com.cn/pic/10239773075367/0" class="cjImg">
+                <img  src="//js1cdn.clubstatic.lenovo.com.cn/thinkpc/images/headfoot/3.png" class="borderImg" style="display: none;">
+                <table style="display: none;">
+                    <tr><td><a target='_blank' href='https://www.thinkpad.com/product/439'>X1 隐士</a></td></tr>
+                </table>
+            </span>            <span class="cjSpan">
+                <img src="https://img2cdn.clubstatic.lenovo.com.cn/pic/10239774918987/0" class="cjImg">
+                <img  src="//js1cdn.clubstatic.lenovo.com.cn/thinkpc/images/headfoot/3.png" class="borderImg" style="display: none;">
+                <table style="display: none;">
+                    <tr><td><a target='_blank' href='https://www.thinkpad.com/product/415'>P52s</a></td></tr>
+                </table>
+            </span>
+                                    <div style="clear: both"></div>
+                                </div>
+                                <div class="titleList">
+                                    <span class='titleName name1'><a target='_blank' href='https://www.thinkpad.com/product/series/1.html' class='name1'>ThinkPad</a><img class='name1' src='//js1cdn.clubstatic.lenovo.com.cn/thinkpc/images/headfoot/2.png' ></span><span class='titleName name2'><a target='_blank' href='https://www.thinkpad.com/product/thinkplus/1.html' class='name2'>thinkplus</a><img class='name2' src='//js1cdn.clubstatic.lenovo.com.cn/thinkpc/images/headfoot/2.png' style='display: none'></span><span class='titleName name3'><a target='_blank' href='https://www.thinkpad.com/product/series/3.html' class='name3'>ThinkCentre</a><img class='name3' src='//js1cdn.clubstatic.lenovo.com.cn/thinkpc/images/headfoot/2.png' style='display: none'></span><span class='titleName name4'><a target='_blank' href='https://www.thinkpad.com/product/series/4.html' class='name4'>ThinkVision</a><img class='name4' src='//js1cdn.clubstatic.lenovo.com.cn/thinkpc/images/headfoot/2.png' style='display: none'></span><span class='titleName name5'><a target='_blank' href='https://www.thinkpad.com/product/series/2.html' class='name5'>ThinkLife</a><img class='name5' src='//js1cdn.clubstatic.lenovo.com.cn/thinkpc/images/headfoot/2.png' style='display: none'></span><span class='titleName name6'><a target='_blank' href='' class='name6'>ThinkBook</a><img class='name6' src='//js1cdn.clubstatic.lenovo.com.cn/thinkpc/images/headfoot/2.png' style='display: none'></span>
+                                    <div style="clear: both"></div>
+                                </div>
+                                <div class='contentList ul_9' id='name1' ><ul style="min-width:70px;width:auto;"><li class='title'><a target='_blank' href='https://www.thinkpad.com/product/series/33.html'>X1</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/505.html'>X1Carbon 2019 LTE版 十代酷睿</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/506.html'>X1Carbon 2019 WIFI 十代酷睿</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/507.html'>X1 Yoga 2019 十代酷睿</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/495.html'>X1 隐士 2019</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/491.html'>X1 Carbon 2019 LTE版</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/493.html'>X1 Carbon 2019 Wifi版</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/492.html'>X1 Yoga 2019</a></li><li class='link'><a target='_blank' href='https://www.thinkpad.com/product/history/33/1.html'>更多></a></li></ul><ul style="min-width:70px;width:auto;"><li class='title'><a target='_blank' href='https://www.thinkpad.com/product/series/34.html'>T</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/508'>T490 十代酷睿</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/475'>T490</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/476'>T490S</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/477'>T590</a></li><li class='link'><a target='_blank' href='https://www.thinkpad.com/product/history/34/1.html'>更多></a></li></ul><ul style="min-width:70px;width:auto;"><li class='title'><a target='_blank' href='https://www.thinkpad.com/product/series/36.html'>X</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/503.html'>X390 4G 十代酷睿</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/502.html'>X395</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/486'>X390 Yoga</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/474'>X390 WiFi版</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/478'>X390 4G版</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/394.html'>X280</a></li><li class='link'><a target='_blank' href='https://www.thinkpad.com/product/history/36/1.html'>更多></a></li></ul><ul style="min-width:70px;width:auto;"><li class='title'><a target='_blank' href='https://www.thinkpad.com/product/series/38.html'>S</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/522.html'>S3 2020</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/509.html'>S2 2020 银色</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/510.html'>S2 Yoga银色 2020</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/511.html'>S2 Yoga 银色 2019</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/484.html'>S2 2019 银色</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/485.html'>S2 2019 黑色</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/451.html'>S3 钛度灰</a></li><li class='link'><a target='_blank' href='https://www.thinkpad.com/product/history/38/1.html'>更多></a></li></ul><ul style="min-width:70px;width:auto;"><li class='title'><a target='_blank' href='https://www.thinkpad.com/product/series/39.html'>E</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/514.html'>E15</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/512.html'>E14 黑色</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/513.html'>E14银色</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/515.html'>E495</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/516.html'>E595</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/471.html'>E590</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/472.html'>E590银色版</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/452.html'>E490</a></li><li class='link'><a target='_blank' href='https://www.thinkpad.com/product/history/39/51.html'>更多></a></li></ul><ul style="min-width:70px;width:auto;"><li class='title'><a target='_blank' href='https://www.thinkpad.com/product/series/35.html'>P</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/500.html'>P43s</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/499.html'>P53s</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/498.html'>P53</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/497.html'>P73</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/496.html'>P1 隐士 2019</a></li><li class='link'><a target='_blank' href='https://www.thinkpad.com/product/history/35/1.html'>更多></a></li></ul><ul style="min-width:70px;width:auto;"><li class='title'><a target='_blank' href='https://www.thinkpad.com/product/series/71.html'>A</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/443.html'>A285</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/444.html'>A485</a></li><li class='link'><a target='_blank' href='https://www.thinkpad.com/product/385.html'>更多></a></li></ul><ul style="min-width:70px;width:auto;"><li class='title'><a target='_blank' href='https://www.thinkpad.com/product/series/72.html'>R</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/517.html'>R14</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/473.html'>R490</a></li><li class='link'><a target='_blank' href='https://www.thinkpad.com/product/388.html'>更多></a></li></ul><ul style="min-width:70px;width:auto;"><li class='title'><a target='_blank' href='https://www.thinkpad.com/product/series/37.html'>L</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/418.html'>L380</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/419.html'>L380 Yoga</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/416.html'>L480</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/417.html'>L580</a></li><li class='link'><a target='_blank' href='https://www.thinkpad.com/product/history/37/1.html'>更多></a></li></ul><div style="clear: both"></div></div><div class='contentList ul_12' id='name2' style='display:none;'><ul ><li class='title'><a target='_blank' href='https://www.thinkpad.com/thinkplus'>口红电源</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/446'>口红电源(极夜黑)</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/456'>口红电源(雅典白)</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/457'>口红电源(热力红)</a></li></ul><ul ><li class='title'><a target='_blank' href='https://www.thinkpad.com/thinkplus'>登机箱</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/469'>thinkplus万向轮登机箱</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/482'>thinkplus远行者金属款登机箱</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/483'>thinkplus远行者PC款登机箱</a></li></ul><ul ><li class='title'><a target='_blank' href='https://www.thinkpad.com/product/447'>智能插线板</a></li></ul><ul ><li class='title'><a target='_blank' href='https://www.thinkpad.com/product/458'>thinkplus 指纹优盘 FU100 </a></li></ul><ul ><li class='title'><a target='_blank' href='https://www.thinkpad.com/product/459'>thinkplus Pods One蓝牙运动耳机 </a></li></ul><ul ><li class='title'><a target='_blank' href='https://www.thinkpad.com/product/461'>thinkplus 超薄 SSD US100 </a></li></ul><ul ><li class='title'><a target='_blank' href='https://www.thinkpad.com/product/466'>thinkplus桌面型空气净化器KJ-532 </a></li></ul><ul ><li class='title'><a target='_blank' href='https://www.thinkpad.com/product/480'>thinkplus随身充CTA18</a></li></ul><ul ><li class='title'><a target='_blank' href='https://www.thinkpad.com/product/488'>thinkplus AC-800智能网关</a></li></ul><ul ><li class='title'><a target='_blank' href='https://www.thinkpad.com/product/489'>thinkplus AP-502无线AP</a></li></ul><ul ><li class='title'><a target='_blank' href='https://www.thinkpad.com/product/490'>thinkplus GW-224P POE交换机</a></li></ul><ul ><li class='title'><a target='_blank' href='https://www.thinkpad.com/product/494'>thinkplus自然光谱台灯智雅版</a></li></ul><div style="clear: both"></div></div><div class='contentList ul_2' id='name3' style='display:none;'><ul ><li class='title'><a target='_blank' href='http://www.thinkworld.com.cn/product/series/3.html'>一体机</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/487'>E96z</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/410.html'>E95z</a></li><li class='link'><a target='_blank' href='https://www.thinkpad.com/product/history/15/1.html'>更多></a></li></ul><ul ><li class='title'><a target='_blank' href='http://www.thinkworld.com.cn/product/series/3.html'>台式机</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/436.html'>E76</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/437.html'>E76s</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/438.html'>E96</a></li><li class='link'><a target='_blank' href='https://www.thinkpad.com/product/history/14/1.html'>更多></a></li></ul><div style="clear: both"></div></div><div class='contentList ul_4' id='name4' style='display:none;'><ul ><li class='title'><a target='_blank' href='https://www.thinkpad.com/product/series/4'>X</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/73'>X24-20</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/426'>X24i</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/427'>X24q</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/428'>X27q</a></li><li class='link'><a target='_blank' href='https://www.thinkpad.com/product/history/67/1'>更多></a></li></ul><ul ><li class='title'><a target='_blank' href='https://www.thinkpad.com/product/series/4'>T</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/422'>T22v</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/423'>T24m</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/424'>T24v</a></li><li class='link'><a target='_blank' href='https://www.thinkpad.com/product/history/66/65.html'>更多></a></li></ul><ul ><li class='title'><a target='_blank' href='http://www.thinkworld.com.cn/product/series/4.html'>P</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/421'>P27u</a></li></ul><ul ><li class='title'><a target='_blank' href='http://www.thinkworld.com.cn/product/series/4.html'>Y</a></li><li ><a target='_blank' href='https://www.thinkpad.com/product/425'>Y25f</a></li></ul><div style="clear: both"></div></div><div class='contentList ul_7' id='name5' style='display:none;'><ul ><li class='title'><a target='_blank' href='https://www.thinkpad.com/product/partslist/52/1'>电源/电池</a></li></ul><ul ><li class='title'><a target='_blank' href='https://www.thinkpad.com/product/partslist/53/1'>存储/读取</a></li></ul><ul ><li class='title'><a target='_blank' href='https://www.thinkpad.com/product/partslist/54/1'>多媒体</a></li></ul><ul ><li class='title'><a target='_blank' href='https://www.thinkpad.com/product/partslist/55/1'>扩展/转接线</a></li></ul><ul ><li class='title'><a target='_blank' href='https://www.thinkpad.com/product/partslist/56/1'>黑科技</a></li></ul><ul ><li class='title'><a target='_blank' href='https://www.thinkpad.com/product/partslist/57/1'>电脑包</a></li></ul><ul ><li class='title'><a target='_blank' href='https://www.thinkpad.com/product/partslist/58/1'>键鼠</a></li></ul><div style="clear: both"></div></div><div class='contentList ul_4' id='name6' style='display:none;'><ul ><li class='title'><a target='_blank' href='https://www.thinkpad.com/product/518.html'>ThinkBook13s</a></li></ul><ul ><li class='title'><a target='_blank' href='https://www.thinkpad.com/product/519.html'>ThinkBook14 </a></li></ul><ul ><li class='title'><a target='_blank' href='https://www.thinkpad.com/product/520.html'>ThinkBook14s</a></li></ul><ul ><li class='title'><a target='_blank' href='https://www.thinkpad.com/product/521.html'>ThinkBook15</a></li></ul><div style="clear: both"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    </li>
+                    <li><a target="_blank" href="http://thinkpad.lenovo.com.cn/">官方商城</a></li>
+                    <li><a target="_blank" href="http://think.lenovo.com.cn/">服务与支持</a></li>
+                    <li><a target="_blank" href="https://club.lenovo.com.cn/">社区</a></li>
+                    <div style="clear: both"></div>
+                </ul>
+            </div>
+            <div class="headerRight">
+                <input id="head_keyword" type="text" value=""/>
+                <div id="head_search_btn">
+	<img src="//img1cdn.clubstatic.lenovo.com.cn/pc3/images/page_public/page_pub_header/magnifie.png">
+</div><div class="add_right-avatar">
+    <ul id="login-center-box" class="user-op-bar clearfix" style="display: block;">
+        <li class="pub_header_right_hide"><a href="javascript:void(0);" onclick="passport.show();">登录</a></li>
+        <li class="pub_header_right_hide header_margin">|</li>
+        <li class="pub_header_right_hide"><a href="javascript:regpassport();" latag="latag_pc_common_register_button_1">注册</a></li>
+    </ul>
+</div>;
+            </div>
+            <div style="clear: both"></div>
+        </div>
+    </div>
+    
+    <!-- header end-->
+
+    
+        
+            
+            
+            
+        
+    
+
+
+
+<div class="w1200 clearfix">
+    <!--slide start-->
+    <div class="sub_plate_focus commonSlide" id="slideBox">
+        <!--图片轮播-->
+        <div class="bd">
+            <a class="sub_plate_focus_prev prev" href="javascript:;"><img src="//img1cdn.clubstatic.lenovo.com.cn/pc3/images/club_v4/pc/plate/banner_left_btn.png" alt=""></a>
+            <ul>
+                                    <li>
+                        <div class="focus_ad">
+                            <h3 class="focus_ad_title">春风十里不如你--Show出合影赢好礼~</h3>
+                            <span class="focus_ad_subtitle"></span>
+                            <p class="focus_ad_text">都说春天是最美好的季节~
+因为春暖花开、因为万物复苏，
+在刚刚过去的世界首台笔记本电脑诞生纪念日后，
+小迷妹就特别好奇大家所拥有的第一台Think设备是什么？
+赶紧晒出你和Ta的合影吧~
+让我们一起回忆初拥Ta时的美好，
+毕竟，春风十里也抵不过你幸福的微笑……</p>
+                            <a href="https://bbs.thinkpad.com/thread-5773232-1-1.html" class="focus_ad_more">More</a>
+                        </div>
+                        <a target="_blank" title="联想" href="https://bbs.thinkpad.com/thread-5773232-1-1.html"  target="_blank"><img src="//img2cdn.clubstatic.lenovo.com.cn/pic/18183563541573/0"></a>
+                    </li>
+                                    <li>
+                        <div class="focus_ad">
+                            <h3 class="focus_ad_title">ThinkPad S2 2020系列试用开启！</h3>
+                            <span class="focus_ad_subtitle"></span>
+                            <p class="focus_ad_text">你是传说中拥有众多粉丝的KOL吗?
+你是ThinkPad的拥趸，资深小黑粉吗？
+你是久闻ThinkPad格调，想一试性能的素人吗？
+
+ThinkPad S2 2020系列试用计划来啦！！
+免费试用，免费试用，免费试用！
+重要的事情说三遍！</p>
+                            <a href="https://bbs.thinkpad.com/thread-5765125-1-1.html" class="focus_ad_more">More</a>
+                        </div>
+                        <a target="_blank" title="联想" href="https://bbs.thinkpad.com/thread-5765125-1-1.html"  target="_blank"><img src="//img2cdn.clubstatic.lenovo.com.cn/pic/17991408735019/0"></a>
+                    </li>
+                                    <li>
+                        <div class="focus_ad">
+                            <h3 class="focus_ad_title">会议室的“大脑”，thinkplus智能会议一体机</h3>
+                            <span class="focus_ad_subtitle"></span>
+                            <p class="focus_ad_text">说起企业办公环境，相信最必不可少的就是开会了。会议的目的，在于将近期要做的事定成量化的、有条理性的，并分配到与会人员中。而对于大企业，尤其是跨多个国内省份甚至是跨国公司，一间会议室中可能并不能包含所有有关此次会议的人员，这时，一台会议系统设备则显得尤为重要。
+而联想thinkplus智能周边品牌则针对这个场景，打造了适合于企业会议场景中会议会话的智能设备——智能会议一体机。</p>
+                            <a href="https://bbs.thinkpad.com/thread-5682241-1-1.html" class="focus_ad_more">More</a>
+                        </div>
+                        <a target="_blank" title="联想" href="https://bbs.thinkpad.com/thread-5682241-1-1.html"  target="_blank"><img src="//img2cdn.clubstatic.lenovo.com.cn/pic/17637121245502/0"></a>
+                    </li>
+                                    <li>
+                        <div class="focus_ad">
+                            <h3 class="focus_ad_title">关于社区平台延保兑换功能调整的公告</h3>
+                            <span class="focus_ad_subtitle"></span>
+                            <p class="focus_ad_text">因业务调整，自2020年4月1日起，社区签到等入口所获得得延保券天数不再对Think产品适用。详细点击链接。</p>
+                            <a href="https://club.lenovo.com.cn/thread-5701119-1-1.html" class="focus_ad_more">More</a>
+                        </div>
+                        <a target="_blank" title="联想" href="https://club.lenovo.com.cn/thread-5701119-1-1.html"  target="_blank"><img src="//img2cdn.clubstatic.lenovo.com.cn/pic/17990978276271/0"></a>
+                    </li>
+                                    <li>
+                        <div class="focus_ad">
+                            <h3 class="focus_ad_title">Lenovo Quick Fix系列工具</h3>
+                            <span class="focus_ad_subtitle"></span>
+                            <p class="focus_ad_text">Lenovo Quick Fix，旨在为用户一键运行解决常见问题，提高常见故障问题的解决率。</p>
+                            <a href="https://club.lenovo.com.cn/thread-4652078-1-1.html" class="focus_ad_more">More</a>
+                        </div>
+                        <a target="_blank" title="联想" href="https://club.lenovo.com.cn/thread-4652078-1-1.html"  target="_blank"><img src="//img2cdn.clubstatic.lenovo.com.cn/pic/16376063215115/0"></a>
+                    </li>
+                            </ul>
+            <a class="sub_plate_focus_next next" href="javascript:;"><img src="//img1cdn.clubstatic.lenovo.com.cn/pc3/images/club_v4/pc/plate/banner_right_btn.png" alt=""></a>
+        </div>
+        <div class="hd">
+            <ul>
+                                                            <li class="on"></li>
+                                                                                <li class=""></li>
+                                                                                <li class=""></li>
+                                                                                <li class=""></li>
+                                                                                <li class=""></li>
+                                                </ul>
+        </div>
+    </div>
+    <!--slide end-->
+
+    <!--sub_plate_scroll start-->
+                    <!--sub_plate_scroll start-->
+<div class="sub_plate_scroll_outer">
+    <a href="javascript:;" class="sub_plate_left"></a>
+    <div id="sub_plate_scroll" class="sub_plate_scroll">
+        <div class="sub_plate_scroll_inner">
+         <ul>
+                                                  <dl class="sub_plate_list">
+                        <dt>
+                            <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/14691637352662/0" alt="">
+                        </dt>
+                        <dd>
+                            <h2><a href="/forum-1388-1.html"  target="_blank">ThinkPad</a></h2>
+                            <p>主题：5995  帖数：96662</p>
+                        </dd>
+                    </dl>
+                                                     <dl class="sub_plate_list">
+                        <dt>
+                            <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/15128737395668/0" alt="">
+                        </dt>
+                        <dd>
+                            <h2><a href="/forum-1554-1.html"  target="_blank">ThinkBook</a></h2>
+                            <p>主题：105  帖数：117436</p>
+                        </dd>
+                    </dl>
+                                                     <dl class="sub_plate_list">
+                        <dt>
+                            <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/14691644522115/0" alt="">
+                        </dt>
+                        <dd>
+                            <h2><a href="/forum-1533-1.html"  target="_blank">thinkplus</a></h2>
+                            <p>主题：149  帖数：6360</p>
+                        </dd>
+                    </dl>
+                                                     <dl class="sub_plate_list">
+                        <dt>
+                            <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/14691655761654/0" alt="">
+                        </dt>
+                        <dd>
+                            <h2><a href="/forum-1518-1.html"  target="_blank">ThinkVision</a></h2>
+                            <p>主题：135  帖数：42305</p>
+                        </dd>
+                    </dl>
+                               </ul>
+           <ul>
+                                                                                                                </ul>
+        </div>
+    </div>
+    <a href="javascript:;" class="sub_plate_right"></a>
+</div>
+<!--sub_plate_scroll end-->                <!--sub_plate_scroll end-->
+            <!--帖子-->
+        <div class="plate_main">
+    <div class="plate_box">
+        <div class="plate_box_top">
+
+            <ul class="plate_sort">
+                <li><a href="#" class="active">版块主题</a></li>
+            </ul>
+            
+        </div>
+        <div class="plate_theme_main clearfix" >
+            
+                            <dl class="forum_list">
+                    <dt class="forum_avatar"><a href="space-uid-24407498.html"  target="_blank"><img src="https://i.app.lefile.cn/uc_server/data/avatar/00158/49407/08766/4OQUP/86786_profilehead.jpg?t=1584940709358"></a></dt>
+                    <dd class="forum_info">
+                        <h3 class="forum_info_top">
+                            <a href="/thread-5768311-1-1.html" target="_blank" class="forum_info_title">X1的固态硬盘不应该是最高端的吗？</a>
+                            
+                        </h3>
+                        <ul class="forum_pic_list clearfix">
+                                                    </ul>
+                        <div class="forum_info_foot">
+                            <p class="fl">
+                                <a href="/space-uid-24407498.html" target="_blank">hszt71</a>
+                                |
+                                <span>2020-04-05</span> |
+                                <a href="/forum-1388-1.html" target="_blank">ThinkPad</a> |
+                                <span>27分钟前</span>
+                            </p>
+                            <div class="fr">
+                                <a class="plate_see_btn" href="javascript:;"><i class="plate_see_icon"></i>342</a></span>
+                                <a class="plate_message_btn" href="javascript:;"><i class="plate_message_icon"></i>3</a>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+                        <dl class="forum_list">
+                    <dt class="forum_avatar"><a href="space-uid-24332145.html"  target="_blank"><img src="https://i.app.lefile.cn/head/picdefault1477559405444/sdefault1477559405444.png?t=1477559406103"></a></dt>
+                    <dd class="forum_info">
+                        <h3 class="forum_info_top">
+                            <a href="/thread-5677767-1-1.html" target="_blank" class="forum_info_title">X1 Carbon 2019 4k屏 京东方屏幕用了PWM调光，而且屏幕泛红</a>
+                            
+                        </h3>
+                        <ul class="forum_pic_list clearfix">
+                                                                                    <li><a href="/thread-5677767-1-1.html"  target="_blank">
+                                    <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/17161516089633/300"/>
+                                </a></li>
+                                                                                    <li><a href="/thread-5677767-1-1.html"  target="_blank">
+                                    <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/17139732555936/300"/>
+                                </a></li>
+                                                                                    <li><a href="/thread-5677767-1-1.html"  target="_blank">
+                                    <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/17139690368562/300"/>
+                                </a></li>
+                                                    </ul>
+                        <div class="forum_info_foot">
+                            <p class="fl">
+                                <a href="/space-uid-24332145.html" target="_blank">wuluo174</a>
+                                |
+                                <span>2020-01-07</span> |
+                                <a href="/forum-1388-1.html" target="_blank">ThinkPad</a> |
+                                <span>29分钟前</span>
+                            </p>
+                            <div class="fr">
+                                <a class="plate_see_btn" href="javascript:;"><i class="plate_see_icon"></i>1906</a></span>
+                                <a class="plate_message_btn" href="javascript:;"><i class="plate_message_icon"></i>11</a>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+                        <dl class="forum_list">
+                    <dt class="forum_avatar"><a href="space-uid-24316651.html"  target="_blank"><img src="https://i.app.lefile.cn/uc_server/data/avatar/00157/49097/63480/X4H6L/14937_profilehead.jpg?t=1574909763730"></a></dt>
+                    <dd class="forum_info">
+                        <h3 class="forum_info_top">
+                            <a href="/thread-5768910-1-1.html" target="_blank" class="forum_info_title">新品试用计划你说了算！</a>
+                            
+                        </h3>
+                        <ul class="forum_pic_list clearfix">
+                                                    </ul>
+                        <div class="forum_info_foot">
+                            <p class="fl">
+                                <a href="/space-uid-24316651.html" target="_blank">Think小迷妹</a>
+                                |
+                                <span>2020-04-07</span> |
+                                <a href="/forum-1388-1.html" target="_blank">ThinkPad</a> |
+                                <span>34分钟前</span>
+                            </p>
+                            <div class="fr">
+                                <a class="plate_see_btn" href="javascript:;"><i class="plate_see_icon"></i>492</a></span>
+                                <a class="plate_message_btn" href="javascript:;"><i class="plate_message_icon"></i>11</a>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+                        <dl class="forum_list">
+                    <dt class="forum_avatar"><a href="space-uid-23062692.html"  target="_blank"><img src="https://i.app.lefile.cn/head/picdefault1477559405444/sdefault1477559405444.png?t=1477559406103"></a></dt>
+                    <dd class="forum_info">
+                        <h3 class="forum_info_top">
+                            <a href="/thread-5766471-1-1.html" target="_blank" class="forum_info_title">T480 WIN10专业版 1909（18363.657)录入指纹无法登录</a>
+                            
+                        </h3>
+                        <ul class="forum_pic_list clearfix">
+                                                                                    <li><a href="/thread-5766471-1-1.html"  target="_blank">
+                                    <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/18060121916496/300"/>
+                                </a></li>
+                                                    </ul>
+                        <div class="forum_info_foot">
+                            <p class="fl">
+                                <a href="/space-uid-23062692.html" target="_blank">育哥</a>
+                                |
+                                <span>2020-03-30</span> |
+                                <a href="/forum-1388-1.html" target="_blank">ThinkPad</a> |
+                                <span>55分钟前</span>
+                            </p>
+                            <div class="fr">
+                                <a class="plate_see_btn" href="javascript:;"><i class="plate_see_icon"></i>183</a></span>
+                                <a class="plate_message_btn" href="javascript:;"><i class="plate_message_icon"></i>3</a>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+                        <dl class="forum_list">
+                    <dt class="forum_avatar"><a href="space-uid-20659965.html"  target="_blank"><img src="https://i.app.lefile.cn/uc_server/data/avatar/00158/61787/67141/4L63T/68883_profilehead.jpg"></a></dt>
+                    <dd class="forum_info">
+                        <h3 class="forum_info_top">
+                            <a href="/thread-5769039-1-1.html" target="_blank" class="forum_info_title">千元不到，照样撑得起门面，打造高端精英范儿！</a>
+                            
+                        </h3>
+                        <ul class="forum_pic_list clearfix">
+                                                                                    <li><a href="/thread-5769039-1-1.html"  target="_blank">
+                                    <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/18158849816418/300"/>
+                                </a></li>
+                                                                                    <li><a href="/thread-5769039-1-1.html"  target="_blank">
+                                    <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/18158844796298/300"/>
+                                </a></li>
+                                                                                    <li><a href="/thread-5769039-1-1.html"  target="_blank">
+                                    <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/18158840003161/300"/>
+                                </a></li>
+                                                    </ul>
+                        <div class="forum_info_foot">
+                            <p class="fl">
+                                <a href="/space-uid-20659965.html" target="_blank">等风来的DaYu</a>
+                                |
+                                <span>2020-04-08</span> |
+                                <a href="/forum-1518-1.html" target="_blank">ThinkVision</a> |
+                                <span>1小时前</span>
+                            </p>
+                            <div class="fr">
+                                <a class="plate_see_btn" href="javascript:;"><i class="plate_see_icon"></i>1173</a></span>
+                                <a class="plate_message_btn" href="javascript:;"><i class="plate_message_icon"></i>23</a>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+                        <dl class="forum_list">
+                    <dt class="forum_avatar"><a href="space-uid-20218679.html"  target="_blank"><img src="https://i.app.lefile.cn/uc_server/data/avatar/00000/00001/00150/28692_profilehead.jpg"></a></dt>
+                    <dd class="forum_info">
+                        <h3 class="forum_info_top">
+                            <a href="/thread-5759477-1-1.html" target="_blank" class="forum_info_title">thinkpadx1Carbon-2019电脑这段时间频繁闪屏</a>
+                            
+                        </h3>
+                        <ul class="forum_pic_list clearfix">
+                                                    </ul>
+                        <div class="forum_info_foot">
+                            <p class="fl">
+                                <a href="/space-uid-20218679.html" target="_blank">时光中的舞蹈</a>
+                                |
+                                <span>2020-03-05</span> |
+                                <a href="/forum-1388-1.html" target="_blank">ThinkPad</a> |
+                                <span>2小时前</span>
+                            </p>
+                            <div class="fr">
+                                <a class="plate_see_btn" href="javascript:;"><i class="plate_see_icon"></i>557</a></span>
+                                <a class="plate_message_btn" href="javascript:;"><i class="plate_message_icon"></i>9</a>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+                        <dl class="forum_list">
+                    <dt class="forum_avatar"><a href="space-uid-24316651.html"  target="_blank"><img src="https://i.app.lefile.cn/uc_server/data/avatar/00157/49097/63480/X4H6L/14937_profilehead.jpg?t=1574909763730"></a></dt>
+                    <dd class="forum_info">
+                        <h3 class="forum_info_top">
+                            <a href="/thread-5773232-1-1.html" target="_blank" class="forum_info_title">春风十里不如你--Show出合影赢好礼~</a>
+                            
+                        </h3>
+                        <ul class="forum_pic_list clearfix">
+                                                                                    <li><a href="/thread-5773232-1-1.html"  target="_blank">
+                                    <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/18185415634261/300"/>
+                                </a></li>
+                                                    </ul>
+                        <div class="forum_info_foot">
+                            <p class="fl">
+                                <a href="/space-uid-24316651.html" target="_blank">Think小迷妹</a>
+                                |
+                                <span>2020-04-10</span> |
+                                <a href="/forum-1388-1.html" target="_blank">ThinkPad</a> |
+                                <span>3小时前</span>
+                            </p>
+                            <div class="fr">
+                                <a class="plate_see_btn" href="javascript:;"><i class="plate_see_icon"></i>377</a></span>
+                                <a class="plate_message_btn" href="javascript:;"><i class="plate_message_icon"></i>7</a>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+                        <dl class="forum_list">
+                    <dt class="forum_avatar"><a href="space-uid-20220128.html"  target="_blank"><img src="https://i.app.lefile.cn/uc_server/data/avatar/00000/00001/00009/88902_profilehead.jpg"></a></dt>
+                    <dd class="forum_info">
+                        <h3 class="forum_info_top">
+                            <a href="/thread-4761791-1-1.html" target="_blank" class="forum_info_title">ThinkPad E570黑苹果macOS Mojave10.14.3完美运行（2019.2.10更新）</a>
+                            
+                        </h3>
+                        <ul class="forum_pic_list clearfix">
+                                                                                    <li><a href="/thread-4761791-1-1.html"  target="_blank">
+                                    <img src="//img2cdn.clubstatic.lenovo.com.cn/data/attachment/forum/201810/10/213443zfvfmwwcncc9fggy.png"/>
+                                </a></li>
+                                                                                    <li><a href="/thread-4761791-1-1.html"  target="_blank">
+                                    <img src="//img2cdn.clubstatic.lenovo.com.cn/data/attachment/forum/201810/10/213428xunr77mqkxluu8qm.png"/>
+                                </a></li>
+                                                                                    <li><a href="/thread-4761791-1-1.html"  target="_blank">
+                                    <img src="//img2cdn.clubstatic.lenovo.com.cn/data/attachment/forum/201810/10/213423wuufeybkecz1fffs.png"/>
+                                </a></li>
+                                                    </ul>
+                        <div class="forum_info_foot">
+                            <p class="fl">
+                                <a href="/space-uid-20220128.html" target="_blank">咪达唑仑</a>
+                                |
+                                <span>2018-10-10</span> |
+                                <a href="/forum-1388-1.html" target="_blank">ThinkPad</a> |
+                                <span>6小时前</span>
+                            </p>
+                            <div class="fr">
+                                <a class="plate_see_btn" href="javascript:;"><i class="plate_see_icon"></i>113442</a></span>
+                                <a class="plate_message_btn" href="javascript:;"><i class="plate_message_icon"></i>650</a>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+                        <dl class="forum_list">
+                    <dt class="forum_avatar"><a href="space-uid-21111533.html"  target="_blank"><img src="https://i.app.lefile.cn/uc_server/data/avatar/00000/00001/01265/13042_profilehead.jpg"></a></dt>
+                    <dd class="forum_info">
+                        <h3 class="forum_info_top">
+                            <a href="/thread-5635478-1-1.html" target="_blank" class="forum_info_title">thinkpad T480使用1年感受。</a>
+                            
+                        </h3>
+                        <ul class="forum_pic_list clearfix">
+                                                                                    <li><a href="/thread-5635478-1-1.html"  target="_blank">
+                                    <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/15272467646311/300"/>
+                                </a></li>
+                                                                                    <li><a href="/thread-5635478-1-1.html"  target="_blank">
+                                    <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/15272467634670/300"/>
+                                </a></li>
+                                                                                    <li><a href="/thread-5635478-1-1.html"  target="_blank">
+                                    <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/15272467580413/300"/>
+                                </a></li>
+                                                    </ul>
+                        <div class="forum_info_foot">
+                            <p class="fl">
+                                <a href="/space-uid-21111533.html" target="_blank">唯妙唯悦</a>
+                                |
+                                <span>2019-07-22</span> |
+                                <a href="/forum-1388-1.html" target="_blank">ThinkPad</a> |
+                                <span>9小时前</span>
+                            </p>
+                            <div class="fr">
+                                <a class="plate_see_btn" href="javascript:;"><i class="plate_see_icon"></i>8030</a></span>
+                                <a class="plate_message_btn" href="javascript:;"><i class="plate_message_icon"></i>21</a>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+                        <dl class="forum_list">
+                    <dt class="forum_avatar"><a href="space-uid-24299242.html"  target="_blank"><img src="https://i.app.lefile.cn/head/picdefault1477559405444/sdefault1477559405444.png?t=1477559406103"></a></dt>
+                    <dd class="forum_info">
+                        <h3 class="forum_info_top">
+                            <a href="/thread-5668666-1-1.html" target="_blank" class="forum_info_title">T490开机2101错误，集合维权</a>
+                            
+                        </h3>
+                        <ul class="forum_pic_list clearfix">
+                                                    </ul>
+                        <div class="forum_info_foot">
+                            <p class="fl">
+                                <a href="/space-uid-24299242.html" target="_blank">lenovo51591053</a>
+                                |
+                                <span>2019-11-19</span> |
+                                <a href="/forum-1388-1.html" target="_blank">ThinkPad</a> |
+                                <span>9小时前</span>
+                            </p>
+                            <div class="fr">
+                                <a class="plate_see_btn" href="javascript:;"><i class="plate_see_icon"></i>6012</a></span>
+                                <a class="plate_message_btn" href="javascript:;"><i class="plate_message_icon"></i>65</a>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+                        <dl class="forum_list">
+                    <dt class="forum_avatar"><a href="space-uid-20279372.html"  target="_blank"><img src="https://i.app.lefile.cn/head/picdefault1477559405444/sdefault1477559405444.png?t=1477559406103"></a></dt>
+                    <dd class="forum_info">
+                        <h3 class="forum_info_top">
+                            <a href="/thread-5765259-1-1.html" target="_blank" class="forum_info_title">T480使用一年半电池损耗91%</a>
+                            
+                        </h3>
+                        <ul class="forum_pic_list clearfix">
+                                                                                    <li><a href="/thread-5765259-1-1.html"  target="_blank">
+                                    <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/17991077084775/300"/>
+                                </a></li>
+                                                    </ul>
+                        <div class="forum_info_foot">
+                            <p class="fl">
+                                <a href="/space-uid-20279372.html" target="_blank">181****7432_1_1</a>
+                                |
+                                <span>2020-03-24</span> |
+                                <a href="/forum-1388-1.html" target="_blank">ThinkPad</a> |
+                                <span>9小时前</span>
+                            </p>
+                            <div class="fr">
+                                <a class="plate_see_btn" href="javascript:;"><i class="plate_see_icon"></i>271</a></span>
+                                <a class="plate_message_btn" href="javascript:;"><i class="plate_message_icon"></i>4</a>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+                        <dl class="forum_list">
+                    <dt class="forum_avatar"><a href="space-uid-24360740.html"  target="_blank"><img src="https://i.app.lefile.cn/head/picdefault1477559405444/sdefault1477559405444.png?t=1477559406103"></a></dt>
+                    <dd class="forum_info">
+                        <h3 class="forum_info_top">
+                            <a href="/thread-5767694-1-1.html" target="_blank" class="forum_info_title">t495更新BIOS到1.20之后电源指示灯变成红的了</a>
+                            
+                        </h3>
+                        <ul class="forum_pic_list clearfix">
+                                                    </ul>
+                        <div class="forum_info_foot">
+                            <p class="fl">
+                                <a href="/space-uid-24360740.html" target="_blank">lenrecall</a>
+                                |
+                                <span>2020-04-04</span> |
+                                <a href="/forum-1388-1.html" target="_blank">ThinkPad</a> |
+                                <span>15小时前</span>
+                            </p>
+                            <div class="fr">
+                                <a class="plate_see_btn" href="javascript:;"><i class="plate_see_icon"></i>145</a></span>
+                                <a class="plate_message_btn" href="javascript:;"><i class="plate_message_icon"></i>2</a>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+                        <dl class="forum_list">
+                    <dt class="forum_avatar"><a href="space-uid-24219741.html"  target="_blank"><img src="https://i.app.lefile.cn/head/picdefault1477559405444/sdefault1477559405444.png?t=1477559406103"></a></dt>
+                    <dd class="forum_info">
+                        <h3 class="forum_info_top">
+                            <a href="/thread-5660640-1-1.html" target="_blank" class="forum_info_title">【晒单】高性价比小黑 NEW S2 2019</a>
+                            
+                        </h3>
+                        <ul class="forum_pic_list clearfix">
+                                                                                    <li><a href="/thread-5660640-1-1.html"  target="_blank">
+                                    <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/16224848997842/300"/>
+                                </a></li>
+                                                                                    <li><a href="/thread-5660640-1-1.html"  target="_blank">
+                                    <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/16224849018640/300"/>
+                                </a></li>
+                                                                                    <li><a href="/thread-5660640-1-1.html"  target="_blank">
+                                    <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/16224755362740/300"/>
+                                </a></li>
+                                                    </ul>
+                        <div class="forum_info_foot">
+                            <p class="fl">
+                                <a href="/space-uid-24219741.html" target="_blank">lenovo50216966</a>
+                                |
+                                <span>2019-10-16</span> |
+                                <a href="/forum-1388-1.html" target="_blank">ThinkPad</a> |
+                                <span>17小时前</span>
+                            </p>
+                            <div class="fr">
+                                <a class="plate_see_btn" href="javascript:;"><i class="plate_see_icon"></i>901</a></span>
+                                <a class="plate_message_btn" href="javascript:;"><i class="plate_message_icon"></i>5</a>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+                        <dl class="forum_list">
+                    <dt class="forum_avatar"><a href="space-uid-23897662.html"  target="_blank"><img src="https://i.app.lefile.cn/head/picdefault1477559405444/sdefault1477559405444.png?t=1477559406103"></a></dt>
+                    <dd class="forum_info">
+                        <h3 class="forum_info_top">
+                            <a href="/thread-5628752-1-1.html" target="_blank" class="forum_info_title">E490息屏20分钟后无法唤醒</a>
+                            
+                        </h3>
+                        <ul class="forum_pic_list clearfix">
+                                                    </ul>
+                        <div class="forum_info_foot">
+                            <p class="fl">
+                                <a href="/space-uid-23897662.html" target="_blank">李明刚</a>
+                                |
+                                <span>2019-06-26</span> |
+                                <a href="/forum-1388-1.html" target="_blank">ThinkPad</a> |
+                                <span>18小时前</span>
+                            </p>
+                            <div class="fr">
+                                <a class="plate_see_btn" href="javascript:;"><i class="plate_see_icon"></i>15732</a></span>
+                                <a class="plate_message_btn" href="javascript:;"><i class="plate_message_icon"></i>34</a>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+                        <dl class="forum_list">
+                    <dt class="forum_avatar"><a href="space-uid-21282930.html"  target="_blank"><img src="https://i.app.lefile.cn/head/picdefault1477559405444/sdefault1477559405444.png?t=1477559406103"></a></dt>
+                    <dd class="forum_info">
+                        <h3 class="forum_info_top">
+                            <a href="/thread-5773361-1-1.html" target="_blank" class="forum_info_title">thinkpad L480 CPU锁屏了？</a>
+                            
+                        </h3>
+                        <ul class="forum_pic_list clearfix">
+                                                                                    <li><a href="/thread-5773361-1-1.html"  target="_blank">
+                                    <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/18183375802897/300"/>
+                                </a></li>
+                                                    </ul>
+                        <div class="forum_info_foot">
+                            <p class="fl">
+                                <a href="/space-uid-21282930.html" target="_blank">139****1077_46</a>
+                                |
+                                <span>2020-04-10</span> |
+                                <a href="/forum-1388-1.html" target="_blank">ThinkPad</a> |
+                                <span>20小时前</span>
+                            </p>
+                            <div class="fr">
+                                <a class="plate_see_btn" href="javascript:;"><i class="plate_see_icon"></i>101</a></span>
+                                <a class="plate_message_btn" href="javascript:;"><i class="plate_message_icon"></i>0</a>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+        
+        <!--pages-->
+            <div>
+                <div id="pages"><ul class="pagination" role="navigation">
+        
+                    <li class="page-item disabled" aria-disabled="true" aria-label="« Previous">
+                <span class="page-link" aria-hidden="true">上一页</span>
+            </li>
+        
+        
+                    
+            
+            
+                                                                        <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+                                                                                <li class="page-item"><a class="page-link" href="https://club.lenovo.com.cn/think?page=2">2</a></li>
+                                                                                <li class="page-item"><a class="page-link" href="https://club.lenovo.com.cn/think?page=3">3</a></li>
+                                                                                <li class="page-item"><a class="page-link" href="https://club.lenovo.com.cn/think?page=4">4</a></li>
+                                                                                <li class="page-item"><a class="page-link" href="https://club.lenovo.com.cn/think?page=5">5</a></li>
+                                                                                <li class="page-item"><a class="page-link" href="https://club.lenovo.com.cn/think?page=6">6</a></li>
+                                                                    
+                            <li class="page-item disabled" aria-disabled="true"><span class="page-link">...</span></li>
+            
+            
+                                
+            
+            
+                                                                        <li class="page-item"><a class="page-link" href="https://club.lenovo.com.cn/think?page=418">418</a></li>
+                                                                                <li class="page-item"><a class="page-link" href="https://club.lenovo.com.cn/think?page=419">419</a></li>
+                                                        
+        
+                    <li class="page-item">
+                <a class="page-link" href="https://club.lenovo.com.cn/think?page=2" rel="next" aria-label="Next »">下一页</a>
+            </li>
+            </ul>
+</div>
+            </div>
+            <!--pages end-->
+        </div>
+    </div>
+</div>        <!--帖子end-->
+    <div class="plate_sideBar">
+        <!--SignIn-->
+                    <div class="SignInBox clearfix">
+           <div class="date">
+               <span class="week">星期六</span>
+               <span class="dates">2020-04-11</span>
+           </div>
+            <a class="signIn signInImg" href="https://club.lenovo.com.cn/signlist/" target="_blank">
+                签到
+            </a>
+   </div>                    <div class="QRcode clearfix">
+            <img src="//img1cdn.clubstatic.lenovo.com.cn/pc3/images/club_v4/pc/plate/lenovo_qrcode.png" alt="二维码App" class="r2wm">
+            <div class="QRcodetext">
+                <p class="shaoma">扫码下载&nbsp;&nbsp;联想APP</p>
+                <p class="yanbaotext">每日签到免费领延保</p>
+            </div>
+</div>                    <div class="Models clearfix">
+      <div class="modelsTitle">
+          推荐用户
+      </div>
+      <div class="modelsMian clearfix">
+          <ul class="recommendImg">
+                                                      <li>
+                          <a href="/home.html?mod=space&uid=3008724" target="_blank"><img class="recommend_avatar" src="https://i.app.lefile.cn/uc_server/data/avatar/00000/00001/00071/06220_profilehead.jpg" alt=""></a>
+                          <div class="listText">
+                              <a class="listTextTitle" href="/home.php?mod=space&uid=3008724">汤圆团子</a>
+                              <p class="listTextTxt">来自山东的用户，爱分享，摄影，擅长自拍。
+                              </p></div>
+                      </li>
+                                        <li>
+                          <a href="/home.html?mod=space&uid=13176783" target="_blank"><img class="recommend_avatar" src="https://i.app.lefile.cn/uc_server/data/avatar/00000/00001/00778/46756_profilehead.jpg" alt=""></a>
+                          <div class="listText">
+                              <a class="listTextTitle" href="/home.php?mod=space&uid=13176783">花晨月夕</a>
+                              <p class="listTextTxt">随手拍摄影团队优秀摄影师，爱好运动，摄影，
+                              </p></div>
+                      </li>
+                                        <li>
+                          <a href="/home.html?mod=space&uid=4199637" target="_blank"><img class="recommend_avatar" src="https://i.app.lefile.cn/uc_server/data/avatar/00000/00001/00020/22231_profilehead.jpg" alt=""></a>
+                          <div class="listText">
+                              <a class="listTextTitle" href="/home.php?mod=space&uid=4199637">离火</a>
+                              <p class="listTextTxt">来自湖南的用户，热爱摄影，喜欢旅行。
+                              </p></div>
+                      </li>
+                                          </ul>
+      </div>
+  </div>                    <div class="Models clearfix">
+            <div class="modelsTitle">
+                扫一扫
+            </div>
+            <div class="modelsMian">
+                <div class="scan">
+                    <img src="//img1cdn.clubstatic.lenovo.com.cn/pc3/images/club_v4/pc/plate/sys.png" alt="扫一扫" class="scan_code">
+                    <span class="scan_text">激活领取专项福利</span>
+                </div>
+            </div>
+        </div>                <!--Model end-->
+    </div>
+</div>
+<link rel="stylesheet" href="//img1cdn.clubstatic.lenovo.com.cn/pc3/css/club_v4/pc/returntop.css?b0e1knhbloxikl0c"/>
+<link rel="stylesheet" href="//img1cdn.clubstatic.lenovo.com.cn/pc3/css/club_v4/pc/newpost.css?b0e1knhbloxikl0c"/>
+
+<script type="text/javascript">
+    var $CONFIG = {};
+    $CONFIG.forumList = '{"1108":{"fid":1108,"fup":0,"name":"Lenovo\u7535\u8111","children":[{"fid":1172,"fup":1108,"name":"\u5c0f\u65b0\u7b14\u8bb0\u672c"},{"fid":1219,"fup":1108,"name":"\u62ef\u6551\u8005\u7b14\u8bb0\u672c"},{"fid":1583,"fup":1108,"name":"\u626c\u5929\u7b14\u8bb0\u672c"},{"fid":1213,"fup":1108,"name":"YOGA\u7b14\u8bb0\u672c"},{"fid":1545,"fup":1108,"name":"YOGA Book"},{"fid":1425,"fup":1108,"name":"MIIX\u4e8c\u5408\u4e00\u7b14\u8bb0\u672c"},{"fid":1361,"fup":1108,"name":"\u5176\u4ed6\u7cfb\u5217\u7b14\u8bb0\u672c"},{"fid":1144,"fup":1108,"name":"\u8054\u60f3\u53f0\u5f0f\u673a"},{"fid":1349,"fup":1108,"name":"\u8054\u60f3\u5e73\u677f"},{"fid":1476,"fup":1108,"name":"\u5546\u7528\u7535\u8111"},{"fid":1434,"fup":1108,"name":"\u8054\u60f3\u7535\u8111\u7ba1\u5bb6"},{"fid":1586,"fup":1108,"name":"\u8054\u60f3\u8f6f\u4ef6\u5546\u5e97"}]},"1535":{"fid":1535,"fup":0,"name":"ThinkPad","children":[{"fid":1388,"fup":1535,"name":"ThinkPad"},{"fid":1554,"fup":1535,"name":"ThinkBook"},{"fid":1533,"fup":1535,"name":"thinkplus"},{"fid":1518,"fup":1535,"name":"ThinkVision"}]},"1065":{"fid":1065,"fup":0,"name":"Lenovo \u624b\u673a","children":[{"fid":1540,"fup":1065,"name":"Lenovo Z6 Pro"},{"fid":1550,"fup":1065,"name":"Lenovo Z6"},{"fid":1547,"fup":1065,"name":"Lenovo Z6 \u9752\u6625\u7248"},{"fid":1537,"fup":1065,"name":"Lenovo Z5s"},{"fid":1536,"fup":1065,"name":"Lenovo Z5 Pro"},{"fid":1490,"fup":1065,"name":"Lenovo Z5"},{"fid":1485,"fup":1065,"name":"Lenovo S \u7cfb\u5217"},{"fid":1483,"fup":1065,"name":"Lenovo K \u7cfb\u5217"},{"fid":1374,"fup":1065,"name":"Lenovo P \u7cfb\u5217"},{"fid":1514,"fup":1065,"name":"Lenovo A \u7cfb\u5217"},{"fid":1546,"fup":1065,"name":"\u62ef\u6551\u8005\u7535\u7ade\u624b\u673a"},{"fid":1426,"fup":1065,"name":"ZUK Z2"},{"fid":1457,"fup":1065,"name":"ZUK Z2 Pro"},{"fid":1447,"fup":1065,"name":"ZUK Edge"},{"fid":1446,"fup":1065,"name":"ZUK Z1"},{"fid":1347,"fup":1065,"name":"\u66f4\u591a\u673a\u578b"},{"fid":1448,"fup":1065,"name":"\u5e94\u7528\u5206\u4eab"},{"fid":1541,"fup":1065,"name":"ZUI \u4e13\u533a"},{"fid":1584,"fup":1065,"name":"Lenovo One"},{"fid":1567,"fup":1065,"name":"\u53cd\u9988\u4e2d\u5fc3"},{"fid":1587,"fup":1065,"name":"\u4e50\u8bed\u97f3"}]},"1350":{"fid":1350,"fup":0,"name":"Motorola","children":[{"fid":1351,"fup":1350,"name":"Moto \u7ecf\u5178\u7cfb\u5217"},{"fid":1516,"fup":1350,"name":"Moto P \u7cfb\u5217"},{"fid":1515,"fup":1350,"name":"Moto E \u7cfb\u5217"},{"fid":1427,"fup":1350,"name":"Moto Z \u7cfb\u5217"},{"fid":1451,"fup":1350,"name":"Moto Z\u00b2 \u7cfb\u5217"},{"fid":1393,"fup":1350,"name":"Moto 360 \u624b\u8868"},{"fid":1421,"fup":1350,"name":"Moto G \u7cfb\u5217"},{"fid":1464,"fup":1350,"name":"Moto Mods \u5f00\u53d1\u8005"},{"fid":1420,"fup":1350,"name":"Moto X \u7cfb\u5217"},{"fid":1504,"fup":1350,"name":"Moto Z\u00b3 \u7cfb\u5217"},{"fid":1588,"fup":1350,"name":"Moto Razr \u7cfb\u5217"}]},"1087":{"fid":1087,"fup":0,"name":"\u667a\u80fd\u4ea7\u54c1","children":[{"fid":1527,"fup":1087,"name":"\u667a\u80fd\u626b\u5730\u673a\u5668\u4eba"},{"fid":1530,"fup":1087,"name":"\u667a\u80fd\u6307\u7eb9\u9501"},{"fid":1528,"fup":1087,"name":"\u4f53\u8102\u79e4"},{"fid":1574,"fup":1087,"name":"\u667a\u80fd\u6444\u50cf\u673a"},{"fid":1575,"fup":1087,"name":"\u4e2a\u4eba\u5b58\u50a8"},{"fid":1576,"fup":1087,"name":"\u97f3\u9891\u4ea7\u54c1"},{"fid":1531,"fup":1087,"name":"\u5fae\u578b\u6295\u5f71"},{"fid":1529,"fup":1087,"name":"\u667a\u80fd\u7a7f\u6234"},{"fid":1589,"fup":1087,"name":"\u667a\u9009\u751f\u6d3b"},{"fid":1577,"fup":1087,"name":"\u66f4\u591a\u4ea7\u54c1"}]},"1359":{"fid":1359,"fup":0,"name":"\u8054\u840c\u5bb6\u56ed","children":[{"fid":692,"fup":1359,"name":"\u968f\u624b\u62cd"},{"fid":1539,"fup":1359,"name":"\u8054\u840c\u79d1\u6280"},{"fid":1362,"fup":1359,"name":"\u8054\u840c\u6f2b\u8bdd"},{"fid":1363,"fup":1359,"name":"\u8054\u60f3\u62db\u8058"},{"fid":1364,"fup":1359,"name":"\u7ad9\u52a1\u53cd\u9988"},{"fid":1544,"fup":1359,"name":"\u60f3\u4e50\u9001"},{"fid":1461,"fup":1359,"name":"\u7cbe\u82f1\u6c47"},{"fid":1395,"fup":1359,"name":"\u8f6f\u4ef6\u53ca\u670d\u52a1"},{"fid":1431,"fup":1359,"name":"\u540c\u57ce\u8054\u840c"},{"fid":1484,"fup":1359,"name":"\u8054\u60f3\u4f1a\u5458"},{"fid":1538,"fup":1359,"name":"\u6e38\u620f\u73a9\u5bb6"},{"fid":1555,"fup":1359,"name":"\u4f01\u4e1a\u590d\u5de5\u8282"}]},"1517":{"fid":1517,"fup":0,"name":"\u793e\u533a\u7ad9\u52a1","children":[{"fid":1415,"fup":1517,"name":"\u6444\u5f71\u7ec4"},{"fid":1416,"fup":1517,"name":"\u8363\u8a89\u4f17\u6d4b"},{"fid":1470,"fup":1517,"name":"\u4e3b\u9898\u5320\u5e08"},{"fid":1442,"fup":1517,"name":"\u539f\u521b\u8fbe\u4eba"},{"fid":1444,"fup":1517,"name":"\u8054\u60f3\u5973\u751f"},{"fid":1469,"fup":1517,"name":"\u6e38\u4fa0\u9152\u9986"},{"fid":1365,"fup":1517,"name":"\u7248\u4e3b\u4e4b\u5bb6"}]},"1506":{"fid":1506,"fup":0,"name":"\u8054\u60f3\u5185\u6d4b","children":[{"fid":1526,"fup":1506,"name":"Lenovo Z5 Pro\u5185\u6d4b"},{"fid":1509,"fup":1506,"name":"Lenovo Z5 \u5185\u6d4b"},{"fid":1505,"fup":1506,"name":"ZUK Z2 \u5185\u6d4b"},{"fid":1512,"fup":1506,"name":"Lenovo S5 \u5185\u6d4b"},{"fid":1534,"fup":1506,"name":"Lenovo Z5s\u5185\u6d4b"},{"fid":1508,"fup":1506,"name":"ZUK Edge \u5185\u6d4b"},{"fid":1519,"fup":1506,"name":"Lenovo S5 Pro\u5185\u6d4b"},{"fid":1520,"fup":1506,"name":"Lenovo K5 Pro\u5185\u6d4b"},{"fid":1507,"fup":1506,"name":"ZUK Z2 Pro \u5185\u6d4b"},{"fid":1548,"fup":1506,"name":"Lenovo Z6 Pro\u5185\u6d4b"}]}}';
+</script>
+
+<!--发新帖弹层-->
+<div class="newpost_mark_wrap" style="display:none">
+    <div class="newpost_markbox">
+        <h1>发新帖 <span><img src="//img1cdn.clubstatic.lenovo.com.cn/pc3/images/masklayer/newpost_markerror.png?version=50c21bf2e8b740po" alt="" id="closeplate"/></span></h1>
+        <ul>
+            <li><a href="javascript:void(0);">社区首页</a></li>
+        </ul>
+        <div class="clear" style="clear:both"></div>
+        <div class="newpost_markbox_inall">
+            <div class="newpost_markbox_inallone">
+                <ol id="firstclass">
+                                            <li><a href="javascript:void(0);" id="1108">Lenovo电脑<img src="//img1cdn.clubstatic.lenovo.com.cn/pc3/images/club_v4/pc/newpost_inallonebtn.png" alt=""/></a></li>
+                                            <li><a href="javascript:void(0);" id="1535">ThinkPad<img src="//img1cdn.clubstatic.lenovo.com.cn/pc3/images/club_v4/pc/newpost_inallonebtn.png" alt=""/></a></li>
+                                            <li><a href="javascript:void(0);" id="1065">Lenovo 手机<img src="//img1cdn.clubstatic.lenovo.com.cn/pc3/images/club_v4/pc/newpost_inallonebtn.png" alt=""/></a></li>
+                                            <li><a href="javascript:void(0);" id="1350">Motorola<img src="//img1cdn.clubstatic.lenovo.com.cn/pc3/images/club_v4/pc/newpost_inallonebtn.png" alt=""/></a></li>
+                                            <li><a href="javascript:void(0);" id="1087">智能产品<img src="//img1cdn.clubstatic.lenovo.com.cn/pc3/images/club_v4/pc/newpost_inallonebtn.png" alt=""/></a></li>
+                                            <li><a href="javascript:void(0);" id="1359">联萌家园<img src="//img1cdn.clubstatic.lenovo.com.cn/pc3/images/club_v4/pc/newpost_inallonebtn.png" alt=""/></a></li>
+                                            <li><a href="javascript:void(0);" id="1517">社区站务<img src="//img1cdn.clubstatic.lenovo.com.cn/pc3/images/club_v4/pc/newpost_inallonebtn.png" alt=""/></a></li>
+                                            <li><a href="javascript:void(0);" id="1506">联想内测<img src="//img1cdn.clubstatic.lenovo.com.cn/pc3/images/club_v4/pc/newpost_inallonebtn.png" alt=""/></a></li>
+                                    </ol>
+            </div>
+            <div class="newpost_markbox_inallone">
+                <ol id="secondclass">
+                </ol>
+            </div>
+        </div>
+        <div class="newpost_markbox_btn">
+            <span><a href="javascript:void (0);" target="_blank">发新帖</a></span>
+        </div>
+    </div>
+</div>
+<!--end-->
+
+<!--浮标-->
+<div class="take_toptopbox1">
+    <div class="pcx_toptop1">
+        <p></p>
+        <div class="taketop_box1">
+            <ul>
+                <li class="taketop_li4"><a id="publish" href="javascript:void(0);" target="_black"></a></li>
+                <!-- <li class="taketop_li2"><a href="/thread-4236259-1-1.html" target="_black"></a></li>
+                <li class="taketop_li3"><a href="/thread-1781687-1-1.html" target="_black"></a></li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+<!--end-->
+<!--返回顶部-->
+<div class="take_toptopbox Offscreen" id="ScrollToTop">
+    <div class="pcx_toptop">
+        <p></p>
+        <div class="taketop_box">
+            <b></b>
+            <!-- < img src="images/newtake/to_top.png" class="to_top"/>-->
+            <!-- < img src="images/newtake/to_tophover.png" class="to_tophover"/>-->
+        </div>
+    </div>
+</div>
+<!--end-->
+<script type="text/javascript">
+    passport.init({"ticket":"5e9b6d3d-4500-47fc-b32b-f2b4a1230fd3","login":loginsuccess,"logout":logoutsuccess});
+    jQuery(function(){
+        action = window.location.pathname;
+        jQuery.cookie('st_source_url', action);
+    })
+    function loginsuccess() {
+        //登陆成功数据录入
+        jQuery.ajax({
+            type: "GET",
+            cache: false,
+            dataType: 'json',
+            url: '//v4.club.lenovo.com.cn/checkCerpregPassport',
+            data: "cerpregpassport="+jQuery.cookie('cerpreg-passport'),
+            success: function(data){
+                if (typeof(data) == 'undefined') {
+                    var data = {
+                        'status': 'error'
+                    };
+                }
+                if (data.status == 'ok') {
+                    window.location = 'https://club.lenovo.com.cn'+action;
+                } else if (data.status == 'new') {
+                    window.location = 'https://club.lenovo.com.cn';
+                } else if (data.status == 'error') {
+                    //alert('st error');
+                    //window.history.go(0);
+                }
+            }
+        })
+    }
+    //退出登录
+    function logoutsuccess() {
+        window.location = "https://club.lenovo.com.cn"+action;
+    }
+    //注册
+    function regpassport(){
+        window.location = "https://reg.lenovo.com.cn/auth/v1/regist?ru=https://club.lenovo.com.cn"+action+"&ticket=5e9b6d3d-4500-47fc-b32b-f2b4a1230fd3";
+    }
+</script>
+<script src="//js1cdn.clubstatic.lenovo.com.cn/pc3/js/club_v4/pc/lib/sea.js?b0e1knhbloxikl0c"></script>
+<script src="//js1cdn.clubstatic.lenovo.com.cn/pc3/js/club_v4/pc/sea_config.js?b0e1knhbloxikl0c"></script>
+<script type="text/javascript" src="//js1cdn.clubstatic.lenovo.com.cn/pc3/js/club_v4/pc/pages/subclub.js?b0e1knhbloxikl0c"></script>
+<script type="text/javascript" src="//js1cdn.clubstatic.lenovo.com.cn/pc3/js/club_v4/pc/returntop.js?b0e1knhbloxikl0c"></script>
+<div class="clear" style="clear: both"></div>
+	<!--公共底部-->
+	<div class="pub_footer">
+		<div class="pub_footer_top">
+			<a href="http://appserver.lenovo.com.cn/About/index.aspx" title="关于联想" target="_blank">  关于联想</a>
+			<span class="">|</span>
+			<a href="http://appserver.lenovo.com.cn/Public/public_bottom/contact.shtml" title="联系我们" target="_blank">  联系我们</a>
+			<span class="">|</span>
+			<a href="http://www.lenovocareers.com/chi/index.html" title="工作机会" target="_blank">  工作机会</a>
+			<span class="">|</span>
+			<a href="http://appserver.lenovo.com.cn/About/news_center.aspx" title="新闻中心" target="_blank">  新闻中心</a>
+			<span class="">|</span>
+			<a href="http://appserver.lenovo.com.cn/LenovoMap/LenovoMap_Direct.aspx?intcmp=MAP20140730_1" title="销售网点" target="_blank">销售网点</a>
+			<span class="">|</span>
+			<a href="http://support1.lenovo.com.cn/lenovo/wsi/station/servicestation/default.aspx?intcmp=MAP20140730_2" title="服务网点" target="_blank"> 服务网点</a>
+			<span class="">|</span>
+			<a href="javascript:void(0);" title="举报邮箱：lenovoclub@lenovo.com" target="_blank"> 举报邮箱：lenovoclub@lenovo.com</a>
+		</div>
+		<div class="pub_footer_bottom">
+			<span>版权所有：1998-2020 联想集团</span>
+			<span class="">|</span>
+			<a href="http://appserver.lenovo.com.cn/Public/public_bottom/legal.shtml" title="法律公告" target="_blank">法律公告</a>
+			<span class="">|</span>
+			<a href="http://appserver.lenovo.com.cn/Public/public_bottom/privacy.shtml" title="隐私保护" target="_blank">隐私保护</a>
+			<span class="">|</span>
+			<a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备11035381号</a>
+			<span class="">|</span>
+			<span>京公网安备110108007970号</span>
+		</div>
+	</div>
+	<!--end-->
+	<script>
+		(function(){
+			var bp = document.createElement('script');
+			var curProtocol = window.location.protocol.split(':')[0];
+			if (curProtocol === 'https') {
+				bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+			}
+			else {
+				bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+			}
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(bp, s);
+		})();
+	</script>
+	<script language="JavaScript"> var _la_lenovo_website = '10000008';//社区站 </script>
+	<script src="https://pcjs	1.clubstatic.lenovo.com.cn/s/la/la_v2020041108.min.js" type="text/javascript"></script>
+	</body>
+</html>
