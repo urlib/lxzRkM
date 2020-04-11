@@ -1,0 +1,4392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="lp-version" content="v6.7.185-cp7">
+      <!--fedf9c7e-a82a-4e08-9f5f-6ca8734cebbd a-->
+<title>DotDashPay - Intelligent Digital Wallet Platform</title>
+<meta name="keywords" content="digital wallet, digital, wallet, platform, digital wallet platform, mobile wallets, google pay, apple pay, digital wallet experiences, apple pay pass, google pay cards, mobile wallet loyalty, smart coupons, smart loyalty, event tickets, mobile tickets, mobile coupons">
+<meta name="description" content="DotDashPay is a digital wallet platform that brands use to create digital experiences and connect with their customers.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="/cdn-cgi/apps/head/bKMQVKXHyaZ2sY3USOiSzowObm8.js"></script><style class="ub-default-font" type="text/css">
+.lp-pom-root .lp-pom-text p,
+.lp-pom-root .cke-text p {
+  font-family:Arial,sans-serif;
+  font-weight:400;
+  font-style:normal;
+  font-size:14px;
+  line-height:17px;
+}
+.lp-pom-root .lp-pom-text.nlh p,
+.lp-pom-root .cke-text.nlh p { line-height:22px; }
+</style>
+<style title="page-styles" type="text/css" data-page-type="main_desktop">
+body { color:#5d6b8f; }
+a {
+  color:#261E9A;
+  text-decoration:none;
+}
+#lp-pom-text-9 {
+  left:46px;
+  top:144px;
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  z-index:2;
+  width:415px;
+  height:134px;
+  position:absolute;
+}
+#lp-pom-text-10 {
+  left:46px;
+  top:299px;
+  display:block;
+  background:rgba(0,0,0,0);
+  -pie-background:rgba(0,0,0,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  z-index:1;
+  width:455px;
+  height:78px;
+  position:absolute;
+}
+#lp-pom-text-87 {
+  left:46px;
+  top:2859px;
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  z-index:9;
+  width:186px;
+  height:54px;
+  position:absolute;
+}
+#lp-pom-button-188 {
+  left:780px;
+  top:43px;
+  display:block;
+  border-style:solid;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:40px;
+  z-index:3;
+  width:140px;
+  height:38px;
+  position:absolute;
+  background:rgba(0,1,65,1);
+  -pie-background:rgba(0,1,65,1);
+  box-shadow:none;
+  text-shadow:none;
+  color:#ffffff;
+  border-width:1px;
+  border-color:#DDDDDD;
+  font-size:11px;
+  line-height:13px;
+  font-weight:700;
+  font-family:Montserrat;
+  font-style:normal;
+  text-align:center;
+  background-repeat:no-repeat;
+}
+#lp-pom-root {
+  display:block;
+  background:rgba(255,255,255,1);
+  -pie-background:rgba(255,255,255,1);
+  border-style:none;
+  margin:auto;
+  padding-top:0px;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  min-width:940px;
+  height:2983px;
+}
+#lp-pom-block-8 {
+  display:block;
+  background:rgba(48,35,174,1);
+  background-image:url(//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/95f00707-artboard-1-2x-50.jpg);
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+  background-position:center top;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  -ms-behavior:url(//d9hhrg4mnvzow.cloudfront.net/backgroundsize.min.htc);
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/backgroundsize.min.htc);
+  border-style:none;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:0px;
+  border-radius:0px;
+  width:100%;
+  height:721px;
+  position:relative;
+}
+#lp-pom-button-881 {
+  display:block;
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:5px;
+  left:687px;
+  top:43px;
+  z-index:11;
+  width:75px;
+  height:35px;
+  position:absolute;
+  background:rgba(200,109,215,0);
+  -pie-background:rgba(200,109,215,0);
+  box-shadow:none;
+  text-shadow:none;
+  color:#ffffff;
+  border-width:undefinedpx;
+  border-color:#undefined;
+  font-size:14px;
+  line-height:17px;
+  font-weight:500;
+  font-family:Montserrat;
+  font-style:normal;
+  text-align:center;
+  background-repeat:no-repeat;
+}
+#lp-pom-button-964 {
+  display:block;
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:47px;
+  left:46px;
+  top:407px;
+  z-index:12;
+  width:228px;
+  height:41px;
+  position:absolute;
+  background:rgba(153,47,170,1);
+  -pie-background:rgba(153,47,170,1);
+  box-shadow:none;
+  text-shadow:none;
+  color:#ffffff;
+  border-width:undefinedpx;
+  border-color:#undefined;
+  font-size:14px;
+  line-height:17px;
+  font-weight:500;
+  font-family:Montserrat;
+  font-style:normal;
+  text-align:center;
+  background-repeat:no-repeat;
+}
+#lp-pom-image-967 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  left:46px;
+  top:43px;
+  z-index:13;
+  position:absolute;
+}
+#lp-pom-text-968 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:50px;
+  top:476px;
+  z-index:84;
+  width:93px;
+  height:22px;
+  position:absolute;
+}
+#lp-pom-image-969 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  left:124px;
+  top:473px;
+  z-index:82;
+  position:absolute;
+}
+#lp-pom-text-972 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:172px;
+  top:476px;
+  z-index:85;
+  width:20px;
+  height:22px;
+  position:absolute;
+}
+#lp-pom-image-973 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  left:188px;
+  top:473px;
+  z-index:83;
+  position:absolute;
+}
+#lp-pom-image-1078 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  left:613px;
+  top:126px;
+  z-index:29;
+  position:absolute;
+}
+#lp-pom-image-1079 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  left:630px;
+  top:185px;
+  z-index:30;
+  position:absolute;
+}
+#lp-pom-block-640 {
+  display:block;
+  background:rgba(255,255,255,1);
+  -pie-background:rgba(255,255,255,1);
+  border-style:none;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:0px;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  width:100%;
+  height:370px;
+  position:relative;
+}
+#lp-pom-text-1086 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:142px;
+  top:763px;
+  z-index:32;
+  width:656px;
+  height:22px;
+  position:absolute;
+}
+#lp-pom-text-1087 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:56px;
+  top:985px;
+  z-index:33;
+  width:379px;
+  height:88px;
+  position:absolute;
+}
+#lp-pom-image-1088 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  left:56px;
+  top:822px;
+  z-index:34;
+  position:absolute;
+}
+#lp-pom-image-1089 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  left:484px;
+  top:827px;
+  z-index:35;
+  position:absolute;
+}
+#lp-pom-text-1090 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:500px;
+  top:985px;
+  z-index:36;
+  width:404px;
+  height:66px;
+  position:absolute;
+}
+#lp-pom-block-1091 {
+  display:none;
+  background:rgba(234,234,234,1);
+  -pie-background:rgba(234,234,234,1);
+  border-style:none;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:0px;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  width:100%;
+  height:205px;
+  position:relative;
+}
+#lp-pom-text-997 {
+  display:none;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:58px;
+  top:1157px;
+  z-index:37;
+  width:99px;
+  height:23px;
+  position:absolute;
+}
+#lp-pom-text-998 {
+  display:none;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:58px;
+  top:1186px;
+  z-index:38;
+  width:207px;
+  height:66px;
+  position:absolute;
+}
+#lp-pom-text-999 {
+  display:none;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:152px;
+  top:1157px;
+  z-index:44;
+  width:134px;
+  height:22px;
+  position:absolute;
+}
+#lp-pom-image-1000 {
+  display:none;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  left:264px;
+  top:1152px;
+  z-index:39;
+  position:absolute;
+}
+#lp-pom-text-1002 {
+  display:none;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:547px;
+  top:1157px;
+  z-index:41;
+  width:152px;
+  height:23px;
+  position:absolute;
+}
+#lp-pom-text-1003 {
+  display:none;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:699px;
+  top:1157px;
+  z-index:43;
+  width:57px;
+  height:22px;
+  position:absolute;
+}
+#lp-pom-text-1004 {
+  display:none;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:440px;
+  top:1186px;
+  z-index:40;
+  width:316px;
+  height:66px;
+  position:absolute;
+}
+#lp-pom-image-1017 {
+  display:none;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  left:777px;
+  top:1137px;
+  z-index:42;
+  position:absolute;
+}
+#lp-pom-block-1106 {
+  display:block;
+  background:rgba(255,255,255,1);
+  -pie-background:rgba(255,255,255,1);
+  border-style:double none double none;
+  border-width:3px;
+  border-color:#cacaca;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:0px;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  width:100%;
+  height:938px;
+  position:relative;
+}
+#lp-pom-text-1107 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:142px;
+  top:1131px;
+  z-index:57;
+  width:656px;
+  height:22px;
+  position:absolute;
+}
+#lp-pom-text-1108 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:83px;
+  top:1173px;
+  z-index:58;
+  width:807px;
+  height:44px;
+  position:absolute;
+}
+#lp-pom-image-1109 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  left:56px;
+  top:1251px;
+  z-index:59;
+  position:absolute;
+}
+#lp-pom-text-1110 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:233px;
+  top:1297px;
+  z-index:60;
+  width:201px;
+  height:22px;
+  position:absolute;
+}
+#lp-pom-text-1111 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:233px;
+  top:1319px;
+  z-index:61;
+  width:446px;
+  height:44px;
+  position:absolute;
+}
+#lp-pom-image-1125 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  left:56px;
+  top:1507px;
+  z-index:62;
+  position:absolute;
+}
+#lp-pom-text-1126 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:233px;
+  top:1576px;
+  z-index:63;
+  width:487px;
+  height:44px;
+  position:absolute;
+}
+#lp-pom-text-1127 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:233px;
+  top:1553px;
+  z-index:64;
+  width:201px;
+  height:22px;
+  position:absolute;
+}
+#lp-pom-text-1133 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:243px;
+  top:1440px;
+  z-index:65;
+  width:469px;
+  height:44px;
+  position:absolute;
+}
+#lp-pom-text-1134 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:568px;
+  top:1418px;
+  z-index:66;
+  width:147px;
+  height:22px;
+  position:absolute;
+}
+#lp-pom-image-1135 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  left:737px;
+  top:1375px;
+  z-index:67;
+  position:absolute;
+}
+#lp-pom-text-1145 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:578px;
+  top:1692px;
+  z-index:68;
+  width:127px;
+  height:22px;
+  position:absolute;
+}
+#lp-pom-text-1146 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:264px;
+  top:1714px;
+  z-index:69;
+  width:462px;
+  height:44px;
+  position:absolute;
+}
+#lp-pom-image-1147 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  left:730px;
+  top:1649px;
+  z-index:70;
+  position:absolute;
+}
+#lp-pom-box-1148 {
+  display:block;
+  background:rgba(229,229,229,1);
+  -pie-background:rgba(229,229,229,1);
+  border-style:solid;
+  border-width:6px;
+  border-color:#b5b5b5;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:115px;
+  top:1887px;
+  z-index:71;
+  width:338px;
+  height:100px;
+  position:absolute;
+}
+#lp-pom-image-1150 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  left:14px;
+  top:12px;
+  z-index:72;
+  position:absolute;
+}
+#lp-pom-text-1153 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:120px;
+  top:17px;
+  z-index:73;
+  width:148px;
+  height:22px;
+  position:absolute;
+}
+#lp-pom-text-1154 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:119px;
+  top:39px;
+  z-index:74;
+  width:221px;
+  height:44px;
+  position:absolute;
+}
+#lp-pom-text-1152 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:0px;
+  top:1840px;
+  z-index:75;
+  width:940px;
+  height:22px;
+  position:absolute;
+}
+#lp-pom-box-1162 {
+  display:block;
+  background:rgba(229,229,229,1);
+  -pie-background:rgba(229,229,229,1);
+  border-style:solid;
+  border-width:6px;
+  border-color:#B5B5B5;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:511px;
+  top:1887px;
+  z-index:76;
+  width:338px;
+  height:100px;
+  position:absolute;
+}
+#lp-pom-image-1163 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  left:14px;
+  top:12px;
+  z-index:77;
+  position:absolute;
+}
+#lp-pom-text-1164 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:120px;
+  top:17px;
+  z-index:78;
+  width:148px;
+  height:22px;
+  position:absolute;
+}
+#lp-pom-text-1165 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:119px;
+  top:39px;
+  z-index:79;
+  width:221px;
+  height:44px;
+  position:absolute;
+}
+#lp-pom-block-1043 {
+  display:block;
+  background:rgba(255,255,255,1);
+  -pie-background:rgba(255,255,255,1);
+  border-style:none;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:0px;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  width:100%;
+  height:518px;
+  position:relative;
+}
+#lp-pom-image-1053 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  left:59px;
+  top:2182px;
+  z-index:20;
+  position:absolute;
+}
+#lp-pom-image-1054 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  left:287px;
+  top:2182px;
+  z-index:21;
+  position:absolute;
+}
+#lp-pom-image-1055 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  left:517px;
+  top:2182px;
+  z-index:22;
+  position:absolute;
+}
+#lp-pom-image-1056 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  left:736px;
+  top:2182px;
+  z-index:23;
+  position:absolute;
+}
+#lp-pom-text-1058 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:147px;
+  top:2077px;
+  z-index:24;
+  width:646px;
+  height:22px;
+  position:absolute;
+}
+#lp-pom-text-1060 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:28px;
+  top:2405px;
+  z-index:25;
+  width:205px;
+  height:110px;
+  position:absolute;
+}
+#lp-pom-text-1061 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:256px;
+  top:2405px;
+  z-index:26;
+  width:205px;
+  height:88px;
+  position:absolute;
+}
+#lp-pom-text-1062 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:486px;
+  top:2405px;
+  z-index:27;
+  width:205px;
+  height:110px;
+  position:absolute;
+}
+#lp-pom-text-1063 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:705px;
+  top:2405px;
+  z-index:28;
+  width:205px;
+  height:110px;
+  position:absolute;
+}
+#lp-pom-text-1080 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:165px;
+  top:2112px;
+  z-index:31;
+  width:643px;
+  height:44px;
+  position:absolute;
+}
+#lp-pom-block-1045 {
+  display:block;
+  background:rgba(105,224,134,1);
+  -pie-background:rgba(105,224,134,1);
+  border-style:none;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:0px;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  width:100%;
+  height:201px;
+  position:relative;
+}
+#lp-pom-text-1048 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:320px;
+  top:2587px;
+  z-index:80;
+  width:300px;
+  height:22px;
+  position:absolute;
+}
+#lp-pom-text-1049 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:264px;
+  top:2624px;
+  z-index:19;
+  width:411px;
+  height:44px;
+  position:absolute;
+}
+#lp-pom-button-1050 {
+  display:block;
+  border-style:solid;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:18px;
+  left:395px;
+  top:2684px;
+  z-index:81;
+  width:148px;
+  height:36px;
+  position:absolute;
+  background:rgba(73,73,73,1);
+  -pie-background:rgba(73,73,73,1);
+  box-shadow:none;
+  text-shadow:none;
+  color:#ffffff;
+  border-width:1px;
+  border-color:#ffffff;
+  font-size:14px;
+  line-height:17px;
+  font-weight:500;
+  font-family:Montserrat;
+  font-style:normal;
+  text-align:center;
+  background-repeat:no-repeat;
+}
+#lp-pom-block-1033 {
+  display:none;
+  background:rgba(255,255,255,1);
+  -pie-background:rgba(255,255,255,1);
+  border-style:none;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:0px;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  width:100%;
+  height:407px;
+  position:relative;
+}
+#lp-pom-box-641 {
+  display:none;
+  background:rgba(255,255,255,1);
+  -pie-background:rgba(255,255,255,1);
+  border-style:none none none none;
+  border-width:undefinedpx;
+  border-color:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:3px;
+  left:0px;
+  top:2882px;
+  z-index:45;
+  width:940px;
+  height:229px;
+  position:absolute;
+}
+#lp-pom-text-709 {
+  display:none;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:50px;
+  top:121px;
+  z-index:47;
+  width:222px;
+  height:26px;
+  position:absolute;
+}
+#lp-pom-text-710 {
+  display:none;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:50px;
+  top:152px;
+  z-index:51;
+  width:216px;
+  height:66px;
+  position:absolute;
+}
+#lp-pom-text-716 {
+  display:none;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:349px;
+  top:152px;
+  z-index:49;
+  width:241px;
+  height:66px;
+  position:absolute;
+}
+#lp-pom-text-717 {
+  display:none;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:349px;
+  top:121px;
+  z-index:50;
+  width:216px;
+  height:26px;
+  position:absolute;
+}
+#lp-pom-text-721 {
+  display:none;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:650px;
+  top:121px;
+  z-index:48;
+  width:260px;
+  height:26px;
+  position:absolute;
+}
+#lp-pom-text-722 {
+  display:none;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:655px;
+  top:152px;
+  z-index:46;
+  width:240px;
+  height:88px;
+  position:absolute;
+}
+#lp-pom-image-886 {
+  display:none;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  left:105px;
+  top:26px;
+  z-index:52;
+  position:absolute;
+}
+#lp-pom-image-887 {
+  display:none;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  left:402px;
+  top:26px;
+  z-index:53;
+  position:absolute;
+}
+#lp-pom-image-893 {
+  display:none;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  left:722px;
+  top:26px;
+  z-index:54;
+  position:absolute;
+}
+#lp-pom-text-978 {
+  display:none;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:142px;
+  top:2791px;
+  z-index:55;
+  width:656px;
+  height:22px;
+  position:absolute;
+}
+#lp-pom-text-980 {
+  display:none;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:144px;
+  top:2829px;
+  z-index:56;
+  width:651px;
+  height:44px;
+  position:absolute;
+}
+#lp-pom-block-648 {
+  display:none;
+  background:rgba(255,255,255,0);
+  background-image:url(//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/84ca16b9-artboard-2-2x-50.jpg);
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+  background-position:center center;
+  border-style:none;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:0px;
+  border-radius:0px;
+  width:100%;
+  height:258px;
+  position:relative;
+}
+#lp-pom-text-957 {
+  display:none;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:48px;
+  top:2805px;
+  z-index:15;
+  width:535px;
+  height:22px;
+  position:absolute;
+}
+#lp-pom-button-958 {
+  display:none;
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:18px;
+  left:203px;
+  top:2939px;
+  z-index:17;
+  width:203px;
+  height:38px;
+  position:absolute;
+  background:rgba(153,47,170,1);
+  -pie-background:rgba(153,47,170,1);
+  box-shadow:none;
+  text-shadow:none;
+  color:#ffffff;
+  border-width:undefinedpx;
+  border-color:#undefined;
+  font-size:14px;
+  line-height:17px;
+  font-weight:500;
+  font-family:Montserrat;
+  font-style:normal;
+  text-align:center;
+  background-repeat:no-repeat;
+}
+#lp-pom-text-959 {
+  display:none;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:48px;
+  top:2843px;
+  z-index:16;
+  width:514px;
+  height:66px;
+  position:absolute;
+}
+#lp-pom-image-960 {
+  display:none;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  left:583px;
+  top:2769px;
+  z-index:14;
+  position:absolute;
+}
+#lp-pom-block-82 {
+  display:block;
+  background:rgba(255,255,255,1);
+  -pie-background:rgba(255,255,255,1);
+  border-style:solid none none none;
+  border-width:2px;
+  border-color:#E6E6E6;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:0px;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  width:100%;
+  height:227px;
+  position:relative;
+}
+#lp-pom-text-539 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:46px;
+  top:2837px;
+  z-index:10;
+  width:135px;
+  height:22px;
+  position:absolute;
+}
+#lp-pom-text-540 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:640px;
+  top:2920px;
+  z-index:4;
+  width:290px;
+  height:20px;
+  position:absolute;
+}
+#lp-pom-text-544 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:377px;
+  top:2835px;
+  z-index:8;
+  width:131px;
+  height:22px;
+  position:absolute;
+}
+#lp-pom-text-545 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:377px;
+  top:2874px;
+  z-index:7;
+  width:75px;
+  height:60px;
+  position:absolute;
+}
+#lp-pom-text-549 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:640px;
+  top:2835px;
+  z-index:6;
+  width:84px;
+  height:22px;
+  position:absolute;
+}
+#lp-pom-text-550 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  left:640px;
+  top:2874px;
+  z-index:5;
+  width:281px;
+  height:32px;
+  position:absolute;
+}
+#lp-pom-image-1024 {
+  display:block;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  left:46px;
+  top:2785px;
+  z-index:18;
+  position:absolute;
+}
+#lp-pom-root .lp-positioned-content {
+  top:0px;
+  width:940px;
+  margin-left:-470px;
+}
+#lp-pom-block-8 .lp-pom-block-content {
+  margin-left:auto;
+  margin-right:auto;
+  width:940px;
+  height:721px;
+}
+#lp-pom-block-640 .lp-pom-block-content {
+  margin-left:auto;
+  margin-right:auto;
+  width:940px;
+  height:370px;
+}
+#lp-pom-block-1091 .lp-pom-block-content {
+  margin-left:auto;
+  margin-right:auto;
+  width:940px;
+  height:205px;
+}
+#lp-pom-block-1106 .lp-pom-block-content {
+  margin-left:auto;
+  margin-right:auto;
+  width:940px;
+  height:938px;
+}
+#lp-pom-block-1043 .lp-pom-block-content {
+  margin-left:auto;
+  margin-right:auto;
+  width:940px;
+  height:518px;
+}
+#lp-pom-button-188:hover {
+  background:rgba(245,245,245,1);
+  -pie-background:rgba(245,245,245,1);
+  box-shadow:none;
+  color:#3023AE;
+  border-style:solid;
+  border-width:1px;
+  border-color:#ffffff;
+}
+#lp-pom-button-188:active {
+  background:rgba(0,1,59,1);
+  -pie-background:rgba(0,1,59,1);
+  box-shadow:none;
+  color:#ffffff;
+}
+#lp-pom-button-188 .label { margin-top:-7px; }
+#lp-pom-block-1045 .lp-pom-block-content {
+  margin-left:auto;
+  margin-right:auto;
+  width:940px;
+  height:201px;
+}
+#lp-pom-block-1033 .lp-pom-block-content {
+  margin-left:auto;
+  margin-right:auto;
+  width:940px;
+  height:407px;
+}
+#lp-pom-block-648 .lp-pom-block-content {
+  margin-left:auto;
+  margin-right:auto;
+  width:940px;
+  height:258px;
+}
+#lp-pom-block-82 .lp-pom-block-content {
+  margin-left:auto;
+  margin-right:auto;
+  width:940px;
+  height:227px;
+}
+#lp-pom-button-881:hover {
+  background:rgba(185,83,204,0.49);
+  -pie-background:rgba(185,83,204,0.49);
+  box-shadow:none;
+  color:#e7d5f2;
+}
+#lp-pom-button-881:active {
+  background:rgba(141,99,99,0.75);
+  -pie-background:rgba(141,99,99,0.75);
+  box-shadow:none;
+  color:#ffffff;
+}
+#lp-pom-button-881 .label { margin-top:-9px; }
+#lp-pom-image-886 .lp-pom-image-container {
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  width:78px;
+  height:78px;
+}
+#lp-pom-image-886 .lp-pom-image-container img {
+  width:78px;
+  height:78px;
+}
+#lp-pom-image-887 .lp-pom-image-container {
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  width:77px;
+  height:77px;
+}
+#lp-pom-image-887 .lp-pom-image-container img {
+  width:77px;
+  height:77px;
+}
+#lp-pom-image-893 .lp-pom-image-container {
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  width:81px;
+  height:81px;
+}
+#lp-pom-image-893 .lp-pom-image-container img {
+  width:81px;
+  height:81px;
+}
+#lp-pom-button-958:hover {
+  background:rgba(185,83,204,0);
+  -pie-background:rgba(185,83,204,0);
+  box-shadow:none;
+  color:#e7d5f2;
+}
+#lp-pom-button-958:active {
+  background:rgba(132,30,153,1);
+  -pie-background:rgba(132,30,153,1);
+  box-shadow:none;
+  color:#ffffff;
+}
+#lp-pom-button-958 .label { margin-top:0px; }
+#lp-pom-image-960 .lp-pom-image-container {
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  width:326px;
+  height:218px;
+}
+#lp-pom-image-960 .lp-pom-image-container img {
+  width:326px;
+  height:218px;
+}
+#lp-pom-button-964:hover {
+  background:rgba(166,83,204,1);
+  -pie-background:rgba(166,83,204,1);
+  box-shadow:none;
+  color:#e7d5f2;
+}
+#lp-pom-button-964:active {
+  background:rgba(132,30,153,1);
+  -pie-background:rgba(132,30,153,1);
+  box-shadow:none;
+  color:#ffffff;
+}
+#lp-pom-button-964 .label { margin-top:-9px; }
+#lp-pom-image-967 .lp-pom-image-container {
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  width:212px;
+  height:37px;
+}
+#lp-pom-image-967 .lp-pom-image-container img {
+  width:212px;
+  height:37px;
+}
+#lp-pom-image-969 .lp-pom-image-container {
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  width:43px;
+  height:27px;
+}
+#lp-pom-image-969 .lp-pom-image-container img {
+  width:43px;
+  height:27px;
+}
+#lp-pom-image-973 .lp-pom-image-container {
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  width:45px;
+  height:26px;
+}
+#lp-pom-image-973 .lp-pom-image-container img {
+  width:45px;
+  height:26px;
+}
+#lp-pom-image-1000 .lp-pom-image-container {
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  width:146px;
+  height:103px;
+}
+#lp-pom-image-1000 .lp-pom-image-container img {
+  width:146px;
+  height:103px;
+}
+#lp-pom-image-1017 .lp-pom-image-container {
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  width:112px;
+  height:112px;
+}
+#lp-pom-image-1017 .lp-pom-image-container img {
+  width:112px;
+  height:112px;
+}
+#lp-pom-image-1024 .lp-pom-image-container {
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  width:199px;
+  height:35px;
+}
+#lp-pom-image-1024 .lp-pom-image-container img {
+  width:199px;
+  height:35px;
+}
+#lp-pom-button-1050:hover {
+  background:rgba(98,98,98,1);
+  -pie-background:rgba(98,98,98,1);
+  box-shadow:none;
+  color:#ffffff;
+}
+#lp-pom-button-1050:active {
+  background:rgba(66,46,46,1);
+  -pie-background:rgba(66,46,46,1);
+  box-shadow:none;
+  color:#ffffff;
+}
+#lp-pom-button-1050 .label { margin-top:-9px; }
+#lp-pom-image-1053 .lp-pom-image-container {
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  width:144px;
+  height:200px;
+}
+#lp-pom-image-1053 .lp-pom-image-container img {
+  width:144px;
+  height:200px;
+}
+#lp-pom-image-1054 .lp-pom-image-container {
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  width:144px;
+  height:200px;
+}
+#lp-pom-image-1054 .lp-pom-image-container img {
+  width:144px;
+  height:200px;
+}
+#lp-pom-image-1055 .lp-pom-image-container {
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  width:144px;
+  height:200px;
+}
+#lp-pom-image-1055 .lp-pom-image-container img {
+  width:144px;
+  height:200px;
+}
+#lp-pom-image-1056 .lp-pom-image-container {
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  width:144px;
+  height:200px;
+}
+#lp-pom-image-1056 .lp-pom-image-container img {
+  width:144px;
+  height:200px;
+}
+#lp-pom-image-1078 .lp-pom-image-container {
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  width:287px;
+  height:521px;
+}
+#lp-pom-image-1078 .lp-pom-image-container img {
+  width:287px;
+  height:521px;
+}
+#lp-pom-image-1079 .lp-pom-image-container {
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  width:249px;
+  height:410px;
+}
+#lp-pom-image-1079 .lp-pom-image-container img {
+  width:249px;
+  height:410px;
+}
+#lp-pom-image-1088 .lp-pom-image-container {
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  width:364px;
+  height:144px;
+}
+#lp-pom-image-1088 .lp-pom-image-container img {
+  width:364px;
+  height:144px;
+}
+#lp-pom-image-1089 .lp-pom-image-container {
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  width:420px;
+  height:134px;
+}
+#lp-pom-image-1089 .lp-pom-image-container img {
+  width:420px;
+  height:134px;
+}
+#lp-pom-image-1109 .lp-pom-image-container {
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  width:157px;
+  height:157px;
+}
+#lp-pom-image-1109 .lp-pom-image-container img {
+  width:157px;
+  height:157px;
+}
+#lp-pom-image-1125 .lp-pom-image-container {
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  width:157px;
+  height:157px;
+}
+#lp-pom-image-1125 .lp-pom-image-container img {
+  width:157px;
+  height:157px;
+}
+#lp-pom-image-1135 .lp-pom-image-container {
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  width:157px;
+  height:157px;
+}
+#lp-pom-image-1135 .lp-pom-image-container img {
+  width:157px;
+  height:157px;
+}
+#lp-pom-image-1147 .lp-pom-image-container {
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  width:157px;
+  height:157px;
+}
+#lp-pom-image-1147 .lp-pom-image-container img {
+  width:157px;
+  height:157px;
+}
+#lp-pom-image-1150 .lp-pom-image-container {
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  width:92px;
+  height:72px;
+}
+#lp-pom-image-1150 .lp-pom-image-container img {
+  width:92px;
+  height:72px;
+}
+#lp-pom-image-1163 .lp-pom-image-container {
+  border-style:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  border-radius:0px;
+  width:96px;
+  height:75px;
+}
+#lp-pom-image-1163 .lp-pom-image-container img {
+  width:96px;
+  height:75px;
+}
+#lp-pom-root-color-overlay {
+  position:absolute;
+  background:none;
+  top:0;
+  width:100%;
+  height:2983px;
+  min-height:100%;
+}
+#lp-pom-block-8-color-overlay {
+  position:absolute;
+  background:none;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  height:721px;
+  width:100%;
+}
+#lp-pom-block-640-color-overlay {
+  position:absolute;
+  background:none;
+  height:370px;
+  width:100%;
+}
+#lp-pom-block-1091-color-overlay {
+  position:absolute;
+  background:none;
+  height:205px;
+  width:100%;
+}
+#lp-pom-block-1106-color-overlay {
+  position:absolute;
+  background:none;
+  height:938px;
+  width:100%;
+}
+#lp-pom-block-1043-color-overlay {
+  position:absolute;
+  background:none;
+  height:518px;
+  width:100%;
+}
+#lp-pom-block-1045-color-overlay {
+  position:absolute;
+  background:none;
+  height:201px;
+  width:100%;
+}
+#lp-pom-block-1033-color-overlay {
+  position:absolute;
+  background:none;
+  height:407px;
+  width:100%;
+}
+#lp-pom-block-648-color-overlay {
+  position:absolute;
+  background:rgba(255,255,255,0);
+  -pie-background:rgba(255,255,255,0);
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  height:258px;
+  width:100%;
+}
+#lp-pom-block-82-color-overlay {
+  position:absolute;
+  background:none;
+  height:227px;
+  width:100%;
+}
+#lp-pom-box-641-color-overlay {
+  position:absolute;
+  background:none;
+  border-radius:3px;
+  behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+  height:229px;
+  width:940px;
+}
+#lp-pom-box-1148-color-overlay {
+  position:absolute;
+  background:none;
+  height:100px;
+  width:338px;
+}
+#lp-pom-box-1162-color-overlay {
+  position:absolute;
+  background:none;
+  height:100px;
+  width:338px;
+}
+</style>
+<style title="page-styles" type="text/css" data-page-type="main_mobile">
+@media only screen and (max-width:600px) {
+  #lp-pom-root {
+    display:block;
+    background:rgba(238,238,238,0);
+    background-image:url(//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/eca24d7e-artboard-mobile-2x-50.jpg);
+    background-repeat:no-repeat;
+    background-position:left center;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    -ms-behavior:url(//d9hhrg4mnvzow.cloudfront.net/backgroundsize.min.htc);
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/backgroundsize.min.htc);
+    border-style:none;
+    margin:auto;
+    padding-top:0px;
+    border-radius:0px;
+    min-width:320px;
+    height:3456px;
+  }
+  #lp-pom-block-8 {
+    display:block;
+    background:rgba(48,35,174,1);
+    background-image:url(//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/84ca16b9-artboard-2-2x-50.jpg);
+    background-repeat:no-repeat;
+    background-position:left top;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    -ms-behavior:url(//d9hhrg4mnvzow.cloudfront.net/backgroundsize.min.htc);
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/backgroundsize.min.htc);
+    border-style:none;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:0px;
+    border-radius:0px;
+    width:100%;
+    height:376px;
+    position:relative;
+  }
+  #lp-pom-text-9 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:19px;
+    top:104px;
+    z-index:2;
+    width:358px;
+    height:134px;
+    transform:scale(0.5);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.5);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-text-10 {
+    display:block;
+    background:rgba(0,0,0,0);
+    -pie-background:rgba(0,0,0,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:19px;
+    top:190px;
+    z-index:1;
+    width:324px;
+    height:104px;
+    transform:scale(0.5);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.5);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-button-188 {
+    display:none;
+    border-style:solid;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:40px;
+    left:780px;
+    top:43px;
+    z-index:3;
+    width:98px;
+    height:53px;
+    position:absolute;
+    background:rgba(0,1,65,1);
+    -pie-background:rgba(0,1,65,1);
+    box-shadow:none;
+    text-shadow:none;
+    color:#ffffff;
+    border-width:1px;
+    border-color:#DDDDDD;
+    font-size:11px;
+    line-height:13px;
+    font-weight:700;
+    font-family:Montserrat;
+    font-style:normal;
+    text-align:center;
+    background-repeat:no-repeat;
+  }
+  #lp-pom-button-881 {
+    display:none;
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:5px;
+    left:128px;
+    top:84px;
+    z-index:11;
+    width:85px;
+    height:55px;
+    position:absolute;
+    background:rgba(200,109,215,0);
+    -pie-background:rgba(200,109,215,0);
+    box-shadow:none;
+    text-shadow:none;
+    color:#ffffff;
+    border-width:undefinedpx;
+    border-color:#undefined;
+    font-size:14px;
+    line-height:17px;
+    font-weight:500;
+    font-family:Montserrat;
+    font-style:normal;
+    text-align:center;
+    background-repeat:no-repeat;
+  }
+  #lp-pom-button-964 {
+    display:block;
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:47px;
+    left:19px;
+    top:263px;
+    z-index:12;
+    width:121px;
+    height:31px;
+    position:absolute;
+    background:rgba(153,47,170,1);
+    -pie-background:rgba(153,47,170,1);
+    box-shadow:none;
+    text-shadow:none;
+    color:#ffffff;
+    border-width:undefinedpx;
+    border-color:#undefined;
+    font-size:9px;
+    line-height:11px;
+    font-weight:500;
+    font-family:Montserrat;
+    font-style:normal;
+    text-align:center;
+    background-repeat:no-repeat;
+  }
+  #lp-pom-image-967 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    left:19px;
+    top:39px;
+    z-index:13;
+    position:absolute;
+  }
+  #lp-pom-text-968 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:20px;
+    top:314px;
+    z-index:84;
+    width:93px;
+    height:22px;
+    transform:scale(0.7);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.7);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-image-969 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    left:72px;
+    top:311px;
+    z-index:82;
+    position:absolute;
+  }
+  #lp-pom-text-972 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:114px;
+    top:311px;
+    z-index:85;
+    width:20px;
+    height:22px;
+    position:absolute;
+  }
+  #lp-pom-image-973 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    left:130px;
+    top:311px;
+    z-index:83;
+    position:absolute;
+  }
+  #lp-pom-image-1078 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    left:209px;
+    top:94px;
+    z-index:29;
+    position:absolute;
+  }
+  #lp-pom-image-1079 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    left:214px;
+    top:113px;
+    z-index:30;
+    position:absolute;
+  }
+  #lp-pom-block-640 {
+    display:block;
+    background:rgba(255,255,255,1);
+    -pie-background:rgba(255,255,255,1);
+    border-style:none;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:0px;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    width:100%;
+    height:380px;
+    position:relative;
+  }
+  #lp-pom-text-1086 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:0px;
+    top:404px;
+    z-index:32;
+    width:455px;
+    height:22px;
+    transform:scale(0.7);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.7);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-text-1087 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:21px;
+    top:547px;
+    z-index:33;
+    width:403px;
+    height:66px;
+    transform:scale(0.69);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.69);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-image-1088 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    left:31px;
+    top:435px;
+    z-index:34;
+    position:absolute;
+  }
+  #lp-pom-image-1089 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    left:28px;
+    top:604px;
+    z-index:35;
+    position:absolute;
+  }
+  #lp-pom-text-1090 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:21px;
+    top:695px;
+    z-index:36;
+    width:404px;
+    height:66px;
+    transform:scale(0.7);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.7);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-block-1091 {
+    display:none;
+    background:rgba(234,234,234,1);
+    -pie-background:rgba(234,234,234,1);
+    border-style:none;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:0px;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    width:100%;
+    height:205px;
+    position:relative;
+  }
+  #lp-pom-text-997 {
+    display:none;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:58px;
+    top:822px;
+    z-index:37;
+    width:99px;
+    height:23px;
+    position:absolute;
+  }
+  #lp-pom-text-998 {
+    display:none;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:61px;
+    top:829px;
+    z-index:38;
+    width:207px;
+    height:66px;
+    position:absolute;
+  }
+  #lp-pom-text-999 {
+    display:none;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:10px;
+    top:766px;
+    z-index:44;
+    width:134px;
+    height:22px;
+    position:absolute;
+  }
+  #lp-pom-image-1000 {
+    display:none;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    left:264px;
+    top:817px;
+    z-index:39;
+    position:absolute;
+  }
+  #lp-pom-text-1002 {
+    display:none;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:547px;
+    top:822px;
+    z-index:41;
+    width:152px;
+    height:23px;
+    position:absolute;
+  }
+  #lp-pom-text-1003 {
+    display:none;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:20px;
+    top:776px;
+    z-index:43;
+    width:57px;
+    height:22px;
+    position:absolute;
+  }
+  #lp-pom-text-1004 {
+    display:none;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:71px;
+    top:839px;
+    z-index:40;
+    width:316px;
+    height:66px;
+    position:absolute;
+  }
+  #lp-pom-image-1017 {
+    display:none;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    left:777px;
+    top:802px;
+    z-index:42;
+    position:absolute;
+  }
+  #lp-pom-block-1106 {
+    display:block;
+    background:rgba(255,255,255,1);
+    -pie-background:rgba(255,255,255,1);
+    border-style:double none double none;
+    border-width:3px;
+    border-color:#cacaca;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:0px;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    width:100%;
+    height:956px;
+    position:relative;
+  }
+  #lp-pom-text-1107 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:2px;
+    top:786px;
+    z-index:57;
+    width:456px;
+    height:22px;
+    transform:scale(0.69);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.69);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-text-1108 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:30px;
+    top:813px;
+    z-index:58;
+    width:389px;
+    height:110px;
+    transform:scale(0.68);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.68);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-image-1109 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    left:20px;
+    top:904px;
+    z-index:59;
+    position:absolute;
+  }
+  #lp-pom-text-1110 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:119px;
+    top:921px;
+    z-index:60;
+    width:201px;
+    height:22px;
+    transform:scale(0.8);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.8);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-text-1111 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:119px;
+    top:941px;
+    z-index:61;
+    width:267px;
+    height:66px;
+    transform:scale(0.7);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.7);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-image-1125 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    left:20px;
+    top:1152px;
+    z-index:62;
+    position:absolute;
+  }
+  #lp-pom-text-1126 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:119px;
+    top:1191px;
+    z-index:63;
+    width:267px;
+    height:88px;
+    transform:scale(0.7);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.7);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-text-1127 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:119px;
+    top:1169px;
+    z-index:64;
+    width:201px;
+    height:22px;
+    transform:scale(0.8);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.8);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-text-1133 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:119px;
+    top:1061px;
+    z-index:65;
+    width:267px;
+    height:88px;
+    transform:scale(0.7);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.7);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-text-1134 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:119px;
+    top:1039px;
+    z-index:66;
+    width:147px;
+    height:22px;
+    transform:scale(0.8);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.8);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-image-1135 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    left:20px;
+    top:1027px;
+    z-index:67;
+    position:absolute;
+  }
+  #lp-pom-text-1145 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:119px;
+    top:1291px;
+    z-index:68;
+    width:127px;
+    height:22px;
+    transform:scale(0.8);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.8);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-text-1146 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:119px;
+    top:1313px;
+    z-index:69;
+    width:267px;
+    height:66px;
+    transform:scale(0.7);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.7);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-image-1147 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    left:20px;
+    top:1275px;
+    z-index:70;
+    position:absolute;
+  }
+  #lp-pom-box-1148 {
+    display:block;
+    background:rgba(229,229,229,1);
+    -pie-background:rgba(229,229,229,1);
+    border-style:solid;
+    border-width:6px;
+    border-color:#b5b5b5;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:30px;
+    top:1453px;
+    z-index:71;
+    width:242px;
+    height:96px;
+    position:absolute;
+  }
+  #lp-pom-image-1150 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    left:11px;
+    top:16px;
+    z-index:72;
+    position:absolute;
+  }
+  #lp-pom-text-1153 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:100px;
+    top:22px;
+    z-index:73;
+    width:148px;
+    height:22px;
+    transform:scale(0.82);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.82);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-text-1154 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:100px;
+    top:44px;
+    z-index:74;
+    width:195px;
+    height:44px;
+    transform:scale(0.7);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.7);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-text-1152 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:47px;
+    top:1400px;
+    z-index:75;
+    width:300px;
+    height:44px;
+    transform:scale(0.75);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.75);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-box-1162 {
+    display:block;
+    background:rgba(229,229,229,1);
+    -pie-background:rgba(229,229,229,1);
+    border-style:solid;
+    border-width:6px;
+    border-color:#B5B5B5;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:30px;
+    top:1581px;
+    z-index:76;
+    width:242px;
+    height:94px;
+    position:absolute;
+  }
+  #lp-pom-image-1163 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    left:12px;
+    top:16px;
+    z-index:77;
+    position:absolute;
+  }
+  #lp-pom-text-1164 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:105px;
+    top:22px;
+    z-index:78;
+    width:148px;
+    height:22px;
+    transform:scale(0.8);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.8);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-text-1165 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:105px;
+    top:44px;
+    z-index:79;
+    width:184px;
+    height:44px;
+    transform:scale(0.7);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.7);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-block-1043 {
+    display:block;
+    background:rgba(255,255,255,1);
+    -pie-background:rgba(255,255,255,1);
+    border-style:none;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:0px;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    width:100%;
+    height:1124px;
+    position:relative;
+  }
+  #lp-pom-image-1053 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    left:104px;
+    top:1842px;
+    z-index:20;
+    position:absolute;
+  }
+  #lp-pom-image-1054 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    left:104px;
+    top:2081px;
+    z-index:21;
+    position:absolute;
+  }
+  #lp-pom-image-1055 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    left:104px;
+    top:2318px;
+    z-index:22;
+    position:absolute;
+  }
+  #lp-pom-image-1056 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    left:104px;
+    top:2578px;
+    z-index:23;
+    position:absolute;
+  }
+  #lp-pom-text-1058 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:3px;
+    top:1742px;
+    z-index:24;
+    width:441px;
+    height:22px;
+    transform:scale(0.71);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.71);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-text-1060 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:44px;
+    top:2002px;
+    z-index:25;
+    width:298px;
+    height:66px;
+    transform:scale(0.78);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.78);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-text-1061 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:43px;
+    top:2245px;
+    z-index:26;
+    width:299px;
+    height:66px;
+    transform:scale(0.78);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.78);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-text-1062 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:57px;
+    top:2486px;
+    z-index:27;
+    width:263px;
+    height:88px;
+    transform:scale(0.78);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.78);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-text-1063 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:57px;
+    top:2749px;
+    z-index:28;
+    width:257px;
+    height:88px;
+    transform:scale(0.78);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.78);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-text-1080 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:11px;
+    top:1770px;
+    z-index:31;
+    width:425px;
+    height:66px;
+    transform:scale(0.7);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.7);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-text-87 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:20px;
+    top:3110px;
+    z-index:9;
+    width:200px;
+    height:54px;
+    position:absolute;
+  }
+  #lp-pom-block-1045 {
+    display:block;
+    background:rgba(105,224,134,1);
+    -pie-background:rgba(105,224,134,1);
+    border-style:none;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:0px;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    width:100%;
+    height:171px;
+    position:relative;
+  }
+  #lp-pom-text-1048 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:40px;
+    top:2874px;
+    z-index:80;
+    width:300px;
+    height:22px;
+    transform:scale(0.8);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.8);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-text-1049 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:31px;
+    top:2903px;
+    z-index:19;
+    width:384px;
+    height:44px;
+    transform:scale(0.7);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.7);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-button-1050 {
+    display:block;
+    border-style:solid;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:18px;
+    left:96px;
+    top:2951px;
+    z-index:81;
+    width:126px;
+    height:32px;
+    position:absolute;
+    background:rgba(73,73,73,1);
+    -pie-background:rgba(73,73,73,1);
+    box-shadow:none;
+    text-shadow:none;
+    color:#ffffff;
+    border-width:1px;
+    border-color:#ffffff;
+    font-size:12px;
+    line-height:14px;
+    font-weight:500;
+    font-family:Montserrat;
+    font-style:normal;
+    text-align:center;
+    background-repeat:no-repeat;
+  }
+  #lp-pom-block-1033 {
+    display:none;
+    background:rgba(255,255,255,1);
+    -pie-background:rgba(255,255,255,1);
+    border-style:none;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:0px;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    width:100%;
+    height:407px;
+    position:relative;
+  }
+  #lp-pom-box-641 {
+    display:none;
+    background:rgba(255,255,255,1);
+    -pie-background:rgba(255,255,255,1);
+    border-style:none none none none;
+    border-width:undefinedpx;
+    border-color:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:3px;
+    left:17px;
+    top:3891px;
+    z-index:45;
+    width:280px;
+    height:750px;
+    position:absolute;
+  }
+  #lp-pom-text-709 {
+    display:none;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:20px;
+    top:148px;
+    z-index:47;
+    width:224px;
+    height:26px;
+    transform:scale(0.9);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.9);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-text-710 {
+    display:none;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:20px;
+    top:201px;
+    z-index:51;
+    width:273px;
+    height:66px;
+    transform:scale(0.9);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.9);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-text-716 {
+    display:none;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:20px;
+    top:412px;
+    z-index:49;
+    width:260px;
+    height:66px;
+    transform:scale(0.9);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.9);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-text-717 {
+    display:none;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:20px;
+    top:351px;
+    z-index:50;
+    width:204px;
+    height:26px;
+    transform:scale(0.9);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.9);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-text-721 {
+    display:none;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:20px;
+    top:580px;
+    z-index:48;
+    width:184px;
+    height:52px;
+    transform:scale(0.9);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.9);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-text-722 {
+    display:none;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:20px;
+    top:635px;
+    z-index:46;
+    width:260px;
+    height:88px;
+    transform:scale(0.9);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.9);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-image-886 {
+    display:none;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    left:20px;
+    top:86px;
+    z-index:52;
+    position:absolute;
+  }
+  #lp-pom-image-887 {
+    display:none;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    left:20px;
+    top:289px;
+    z-index:53;
+    position:absolute;
+  }
+  #lp-pom-image-893 {
+    display:none;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    left:20px;
+    top:520px;
+    z-index:54;
+    position:absolute;
+  }
+  #lp-pom-text-978 {
+    display:none;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:142px;
+    top:3050px;
+    z-index:55;
+    width:656px;
+    height:22px;
+    position:absolute;
+  }
+  #lp-pom-text-980 {
+    display:none;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:245px;
+    top:3068px;
+    z-index:56;
+    width:651px;
+    height:44px;
+    position:absolute;
+  }
+  #lp-pom-block-648 {
+    display:none;
+    background:rgba(255,255,255,0);
+    background-image:url(//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/84ca16b9-artboard-2-2x-50.jpg);
+    background-repeat:no-repeat;
+    background-position:center center;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    -ms-behavior:url(//d9hhrg4mnvzow.cloudfront.net/backgroundsize.min.htc);
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/backgroundsize.min.htc);
+    border-style:none;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:0px;
+    border-radius:0px;
+    width:100%;
+    height:2054px;
+    position:relative;
+  }
+  #lp-pom-text-957 {
+    display:none;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:36px;
+    top:4678px;
+    z-index:15;
+    width:262px;
+    height:66px;
+    transform:scale(0.76);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.76);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-button-958 {
+    display:none;
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:18px;
+    left:76px;
+    top:5006px;
+    z-index:17;
+    width:203px;
+    height:38px;
+    position:absolute;
+    background:rgba(153,47,170,1);
+    -pie-background:rgba(153,47,170,1);
+    box-shadow:none;
+    text-shadow:none;
+    color:#ffffff;
+    border-width:undefinedpx;
+    border-color:#undefined;
+    font-size:14px;
+    line-height:17px;
+    font-weight:500;
+    font-family:Montserrat;
+    font-style:normal;
+    text-align:center;
+    background-repeat:no-repeat;
+  }
+  #lp-pom-text-959 {
+    display:none;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:36px;
+    top:4738px;
+    z-index:16;
+    width:284px;
+    height:132px;
+    transform:scale(0.81);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.81);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-image-960 {
+    display:none;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    left:31px;
+    top:4820px;
+    z-index:14;
+    position:absolute;
+  }
+  #lp-pom-block-82 {
+    display:block;
+    background:rgba(255,255,255,1);
+    -pie-background:rgba(255,255,255,1);
+    border-style:solid none none none;
+    border-width:2px;
+    border-color:#E6E6E6;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:0px;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    width:100%;
+    height:441px;
+    position:relative;
+  }
+  #lp-pom-text-539 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:20px;
+    top:3105px;
+    z-index:10;
+    width:167px;
+    height:22px;
+    position:absolute;
+  }
+  #lp-pom-text-540 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:20px;
+    top:3416px;
+    z-index:4;
+    width:294px;
+    height:20px;
+    transform:scale(0.96);
+    transform-origin:0 0;
+    -webkit-transform:scale(0.96);
+    -webkit-transform-origin:0 0;
+    position:absolute;
+  }
+  #lp-pom-text-544 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:20px;
+    top:3200px;
+    z-index:8;
+    width:131px;
+    height:22px;
+    position:absolute;
+  }
+  #lp-pom-text-545 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:20px;
+    top:3227px;
+    z-index:7;
+    width:66px;
+    height:60px;
+    position:absolute;
+  }
+  #lp-pom-text-549 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:20px;
+    top:3309px;
+    z-index:6;
+    width:84px;
+    height:22px;
+    position:absolute;
+  }
+  #lp-pom-text-550 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    left:20px;
+    top:3347px;
+    z-index:5;
+    width:249px;
+    height:48px;
+    position:absolute;
+  }
+  #lp-pom-image-1024 {
+    display:block;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    left:46px;
+    top:3044px;
+    z-index:18;
+    position:absolute;
+  }
+  body { color:#5d6b8f; }
+  a {
+    color:#261E9A;
+    text-decoration:none;
+  }
+  #lp-pom-root .lp-positioned-content {
+    top:0px;
+    width:320px;
+    margin-left:-160px;
+  }
+  #lp-pom-block-8 .lp-pom-block-content {
+    margin-left:auto;
+    margin-right:auto;
+    width:320px;
+    height:376px;
+  }
+  #lp-pom-block-640 .lp-pom-block-content {
+    margin-left:auto;
+    margin-right:auto;
+    width:320px;
+    height:380px;
+  }
+  #lp-pom-block-1091 .lp-pom-block-content {
+    margin-left:auto;
+    margin-right:auto;
+    width:320px;
+    height:205px;
+  }
+  #lp-pom-block-1106 .lp-pom-block-content {
+    margin-left:auto;
+    margin-right:auto;
+    width:320px;
+    height:956px;
+  }
+  #lp-pom-block-1043 .lp-pom-block-content {
+    margin-left:auto;
+    margin-right:auto;
+    width:320px;
+    height:1124px;
+  }
+  #lp-pom-button-188:hover {
+    background:rgba(245,245,245,1);
+    -pie-background:rgba(245,245,245,1);
+    box-shadow:none;
+    color:#3023AE;
+    border-style:solid;
+    border-width:1px;
+    border-color:#ffffff;
+  }
+  #lp-pom-button-188:active {
+    background:rgba(0,1,59,1);
+    -pie-background:rgba(0,1,59,1);
+    box-shadow:none;
+    color:#ffffff;
+  }
+  #lp-pom-button-188 .label { margin-top:0px; }
+  #lp-pom-block-1045 .lp-pom-block-content {
+    margin-left:auto;
+    margin-right:auto;
+    width:320px;
+    height:171px;
+  }
+  #lp-pom-block-1033 .lp-pom-block-content {
+    margin-left:auto;
+    margin-right:auto;
+    width:320px;
+    height:407px;
+  }
+  #lp-pom-block-648 .lp-pom-block-content {
+    margin-left:auto;
+    margin-right:auto;
+    width:320px;
+    height:2054px;
+  }
+  #lp-pom-block-82 .lp-pom-block-content {
+    margin-left:auto;
+    margin-right:auto;
+    width:320px;
+    height:441px;
+  }
+  #lp-pom-button-881:hover {
+    background:rgba(185,83,204,0.49);
+    -pie-background:rgba(185,83,204,0.49);
+    box-shadow:none;
+    color:#e7d5f2;
+  }
+  #lp-pom-button-881:active {
+    background:rgba(141,99,99,0.75);
+    -pie-background:rgba(141,99,99,0.75);
+    box-shadow:none;
+    color:#ffffff;
+  }
+  #lp-pom-button-881 .label { margin-top:0px; }
+  #lp-pom-image-886 .lp-pom-image-container {
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    width:48px;
+    height:47px;
+  }
+  #lp-pom-image-886 .lp-pom-image-container img {
+    width:48px;
+    height:47px;
+  }
+  #lp-pom-image-887 .lp-pom-image-container {
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    width:49px;
+    height:49px;
+  }
+  #lp-pom-image-887 .lp-pom-image-container img {
+    width:49px;
+    height:49px;
+  }
+  #lp-pom-image-893 .lp-pom-image-container {
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    width:50px;
+    height:50px;
+  }
+  #lp-pom-image-893 .lp-pom-image-container img {
+    width:50px;
+    height:50px;
+  }
+  #lp-pom-button-958:hover {
+    background:rgba(185,83,204,0);
+    -pie-background:rgba(185,83,204,0);
+    box-shadow:none;
+    color:#e7d5f2;
+  }
+  #lp-pom-button-958:active {
+    background:rgba(132,30,153,1);
+    -pie-background:rgba(132,30,153,1);
+    box-shadow:none;
+    color:#ffffff;
+  }
+  #lp-pom-button-958 .label { margin-top:0px; }
+  #lp-pom-image-960 .lp-pom-image-container {
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    width:243px;
+    height:163px;
+  }
+  #lp-pom-image-960 .lp-pom-image-container img {
+    width:243px;
+    height:163px;
+  }
+  #lp-pom-button-964:hover {
+    background:rgba(166,83,204,1);
+    -pie-background:rgba(166,83,204,1);
+    box-shadow:none;
+    color:#e7d5f2;
+  }
+  #lp-pom-button-964:active {
+    background:rgba(132,30,153,1);
+    -pie-background:rgba(132,30,153,1);
+    box-shadow:none;
+    color:#ffffff;
+  }
+  #lp-pom-button-964 .label { margin-top:-6px; }
+  #lp-pom-image-967 .lp-pom-image-container {
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    width:171px;
+    height:30px;
+  }
+  #lp-pom-image-967 .lp-pom-image-container img {
+    width:171px;
+    height:30px;
+  }
+  #lp-pom-image-969 .lp-pom-image-container {
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    width:35px;
+    height:22px;
+  }
+  #lp-pom-image-969 .lp-pom-image-container img {
+    width:35px;
+    height:22px;
+  }
+  #lp-pom-image-973 .lp-pom-image-container {
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    width:36px;
+    height:22px;
+  }
+  #lp-pom-image-973 .lp-pom-image-container img {
+    width:36px;
+    height:22px;
+  }
+  #lp-pom-image-1000 .lp-pom-image-container {
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    width:146px;
+    height:103px;
+  }
+  #lp-pom-image-1000 .lp-pom-image-container img {
+    width:146px;
+    height:103px;
+  }
+  #lp-pom-image-1017 .lp-pom-image-container {
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    width:112px;
+    height:112px;
+  }
+  #lp-pom-image-1017 .lp-pom-image-container img {
+    width:112px;
+    height:112px;
+  }
+  #lp-pom-image-1024 .lp-pom-image-container {
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    width:199px;
+    height:35px;
+  }
+  #lp-pom-image-1024 .lp-pom-image-container img {
+    width:199px;
+    height:35px;
+  }
+  #lp-pom-button-1050:hover {
+    background:rgba(98,98,98,1);
+    -pie-background:rgba(98,98,98,1);
+    box-shadow:none;
+    color:#ffffff;
+  }
+  #lp-pom-button-1050:active {
+    background:rgba(66,46,46,1);
+    -pie-background:rgba(66,46,46,1);
+    box-shadow:none;
+    color:#ffffff;
+  }
+  #lp-pom-button-1050 .label { margin-top:-7px; }
+  #lp-pom-image-1053 .lp-pom-image-container {
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    width:112px;
+    height:155px;
+  }
+  #lp-pom-image-1053 .lp-pom-image-container img {
+    width:112px;
+    height:155px;
+  }
+  #lp-pom-image-1054 .lp-pom-image-container {
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    width:112px;
+    height:155px;
+  }
+  #lp-pom-image-1054 .lp-pom-image-container img {
+    width:112px;
+    height:155px;
+  }
+  #lp-pom-image-1055 .lp-pom-image-container {
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    width:112px;
+    height:155px;
+  }
+  #lp-pom-image-1055 .lp-pom-image-container img {
+    width:112px;
+    height:155px;
+  }
+  #lp-pom-image-1056 .lp-pom-image-container {
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    width:112px;
+    height:155px;
+  }
+  #lp-pom-image-1056 .lp-pom-image-container img {
+    width:112px;
+    height:155px;
+  }
+  #lp-pom-image-1078 .lp-pom-image-container {
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    width:89px;
+    height:163px;
+  }
+  #lp-pom-image-1078 .lp-pom-image-container img {
+    width:89px;
+    height:163px;
+  }
+  #lp-pom-image-1079 .lp-pom-image-container {
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    width:79px;
+    height:130px;
+  }
+  #lp-pom-image-1079 .lp-pom-image-container img {
+    width:79px;
+    height:130px;
+  }
+  #lp-pom-image-1088 .lp-pom-image-container {
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    width:250px;
+    height:99px;
+  }
+  #lp-pom-image-1088 .lp-pom-image-container img {
+    width:250px;
+    height:99px;
+  }
+  #lp-pom-image-1089 .lp-pom-image-container {
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    width:264px;
+    height:85px;
+  }
+  #lp-pom-image-1089 .lp-pom-image-container img {
+    width:264px;
+    height:85px;
+  }
+  #lp-pom-image-1109 .lp-pom-image-container {
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    width:90px;
+    height:90px;
+  }
+  #lp-pom-image-1109 .lp-pom-image-container img {
+    width:90px;
+    height:90px;
+  }
+  #lp-pom-image-1125 .lp-pom-image-container {
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    width:90px;
+    height:90px;
+  }
+  #lp-pom-image-1125 .lp-pom-image-container img {
+    width:90px;
+    height:90px;
+  }
+  #lp-pom-image-1135 .lp-pom-image-container {
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    width:90px;
+    height:90px;
+  }
+  #lp-pom-image-1135 .lp-pom-image-container img {
+    width:90px;
+    height:90px;
+  }
+  #lp-pom-image-1147 .lp-pom-image-container {
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    width:90px;
+    height:90px;
+  }
+  #lp-pom-image-1147 .lp-pom-image-container img {
+    width:90px;
+    height:90px;
+  }
+  #lp-pom-image-1150 .lp-pom-image-container {
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    width:80px;
+    height:63px;
+  }
+  #lp-pom-image-1150 .lp-pom-image-container img {
+    width:80px;
+    height:63px;
+  }
+  #lp-pom-image-1163 .lp-pom-image-container {
+    border-style:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    border-radius:0px;
+    width:82px;
+    height:64px;
+  }
+  #lp-pom-image-1163 .lp-pom-image-container img {
+    width:82px;
+    height:64px;
+  }
+  #lp-pom-root-color-overlay {
+    position:absolute;
+    background:rgba(238,238,238,0);
+    -pie-background:rgba(238,238,238,0);
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    top:0;
+    width:100%;
+    height:3456px;
+    min-height:100%;
+  }
+  #lp-pom-block-8-color-overlay {
+    position:absolute;
+    background:none;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    height:376px;
+    width:100%;
+  }
+  #lp-pom-block-640-color-overlay {
+    position:absolute;
+    background:none;
+    height:380px;
+    width:100%;
+  }
+  #lp-pom-block-1091-color-overlay {
+    position:absolute;
+    background:none;
+    height:205px;
+    width:100%;
+  }
+  #lp-pom-block-1106-color-overlay {
+    position:absolute;
+    background:none;
+    height:956px;
+    width:100%;
+  }
+  #lp-pom-block-1043-color-overlay {
+    position:absolute;
+    background:none;
+    height:1124px;
+    width:100%;
+  }
+  #lp-pom-block-1045-color-overlay {
+    position:absolute;
+    background:none;
+    height:171px;
+    width:100%;
+  }
+  #lp-pom-block-1033-color-overlay {
+    position:absolute;
+    background:none;
+    height:407px;
+    width:100%;
+  }
+  #lp-pom-block-648-color-overlay {
+    position:absolute;
+    background:rgba(255,255,255,0);
+    -pie-background:rgba(255,255,255,0);
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    height:2054px;
+    width:100%;
+  }
+  #lp-pom-block-82-color-overlay {
+    position:absolute;
+    background:none;
+    height:441px;
+    width:100%;
+  }
+  #lp-pom-box-641-color-overlay {
+    position:absolute;
+    background:none;
+    border-radius:3px;
+    behavior:url(//d9hhrg4mnvzow.cloudfront.net/PIE.htc);
+    height:750px;
+    width:280px;
+  }
+  #lp-pom-box-1148-color-overlay {
+    position:absolute;
+    background:none;
+    height:96px;
+    width:242px;
+  }
+  #lp-pom-box-1162-color-overlay {
+    position:absolute;
+    background:none;
+    height:94px;
+    width:242px;
+  }
+}
+</style>
+<!-- lp:insertions start head -->
+<link href="//builder-assets.unbounce.com/published/page-defaults-b3a2f21.z.css" rel="stylesheet" media="screen" type="text/css" />
+
+<meta property='og:title' content='DotDashPay - Intelligent Digital Wallet Platform'/>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+<link href="//builder-assets.unbounce.com/published/jquery.ubpoverlay-45e86c0.z.css" rel="stylesheet" media="screen" type="text/css" />
+
+<script src="//builder-assets.unbounce.com/published/jquery.ubpoverlay-d9900bb.z.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="//d2xxq4ijfwetlm.cloudfront.net/m/lp-webapp/api/unbounce.js"></script>
+<script type="text/javascript">
+window.ub.page.id = "fedf9c7e-a82a-4e08-9f5f-6ca8734cebbd";
+window.ub.page.variantId = "a";
+window.ub.page.usedAs = "main";
+window.ub.page.name = "DotDashPay - Homepage";
+window.ub.page.url = "http://app.dotdashpay.com/";
+window.ub.page.dimensions = {"desktop":{"height":2983,"width":940},"mobile":{"height":3456,"width":320},"mobileMaxWidth":600};
+</script>
+<script type="text/javascript">
+var lp = lp || {};
+lp.jQuery = jQuery.noConflict( true );
+</script>
+
+<script src="//builder-assets.unbounce.com/modules/lp-block/public/main-90cd9cc.z.js" type="text/javascript"></script>
+<script src="//builder-assets.unbounce.com/published/matchMedia-ba7af92.z.js" type="text/javascript"></script>
+<script src="//builder-assets.unbounce.com/modules/lp-text/public/main-e1f2690.z.js" type="text/javascript"></script>
+<script src="//builder-assets.unbounce.com/modules/lp-button/public/main-2fabf90.z.js" type="text/javascript"></script>
+<script src="//builder-assets.unbounce.com/modules/lp-image/public/main-b5aeb46.z.js" type="text/javascript"></script>
+
+<link href="//builder-assets.unbounce.com/published/lightbox-976bdb7.z.css" rel="stylesheet" media="screen" type="text/css" id="lightbox-stylesheet"/>
+
+<script src="//builder-assets.unbounce.com/published/lightbox-7b668e6.z.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+  window.lp.lightbox.registerLightbox('#lp-pom-button-964', {"desktop":{"height":540,"width":842},"mobile":{"height":510,"width":322}})
+  window.lp.lightbox.registerLightbox('#lp-pom-button-1050', {"desktop":{"height":540,"width":842},"mobile":{"height":510,"width":322}})
+</script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+<link rel="icon" type="image/x-icon" href="https://dotdashpay.com/favicon/favicon-32x32.png" />
+
+<meta property="og:image" content="http://i.imgur.com/7fV2jwT.jpg" />
+<meta property="og:url" content="https://dotdashpay.com" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="DotDashPay is a digital wallet platform that brands use to create digital experiences and connect with their customers." />
+<meta property="fb:app_id" content="N/A" />
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-61275924-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-61275924-3');
+</script>
+<script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+<script>
+lp = lp || {};
+lp.webFontLoad = {
+  google: {
+    families: ['Montserrat:700,500,600,900,regular','Raleway:700,300,regular,600,900,100,800,500']
+  },
+  active: function() {
+   if(lp && lp.text && typeof lp.text.fixTextHeights === "function")  {
+     lp.text.runTextFixes(true)
+   }
+  }
+};
+window.WebFont.load(lp.webFontLoad);
+</script>
+<script type="text/javascript">
+lp.jQuery(function(){
+  // Remove convertable closedAt=0 URL param
+  var query = '?' + window.location.search
+    .replace('?', '')
+    .split('&')
+    .filter(function(param){
+       return param.indexOf('closedAt=0') < 0
+     })
+    .join('&');
+  if ( ! query) { return; }
+  lp.jQuery(["#lp-pom-button-964","#lp-pom-button-1050"]).each(function(i, id) {
+    var $element = lp.jQuery(id);
+    $element.each(function(i, elem){
+      var parser = document.createElement('a');
+      parser.href = lp.jQuery(elem).attr('href');
+      var search = parser.search.replace('?', '');
+      if (search === '') {
+        parser.search = query
+      } else {
+        var currentSearchArray = query.replace('?', '').split('&');
+        parser.search = search.split('&').concat(currentSearchArray)
+          .filter(function(item,index,self){return index == self.indexOf(item)})
+          .join('&');
+      }
+      lp.jQuery(elem).attr('href', parser.href);
+    });
+  });
+});
+</script>
+<!--[if IE 7]>
+<script>
+(function() {
+  var sheet = document.styleSheets[1];
+  var rules = sheet.rules;
+  var rule;
+  var index = -1;
+  for (var i=0, l=rules.length; i<l; i++){
+    rule = rules[i];
+    if (rule.selectorText.toLowerCase() == 'div.lp-pom-root .lp-pom-text span') {
+      index = i;
+      break;
+    }
+  }
+  if (index > -1) {
+    sheet.removeRule(index);
+    sheet.addRule('div.lp-pom-root .lp-pom-text span', 'line-height:inherit');
+  }
+})();
+</script>
+<![endif]-->
+
+<script src="//builder-assets.unbounce.com/published/ub-browser-879f873.z.js" type="text/javascript"></script>
+
+<!-- lp:insertions end head -->
+
+<!-- Global site tag (gtag.js) - Google Ads: 823813598 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-823813598"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-823813598');
+</script>
+
+
+</head>
+<body class="lp-pom-body ">
+<!-- lp:insertions start body:before -->
+<!-- lp:insertions end body:before -->
+
+<div class="lp-element lp-pom-root" id="lp-pom-root">
+<div id="lp-pom-root-color-overlay"></div>
+<div class="lp-positioned-content">
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-9">
+<h1 style="line-height: 32px;">
+<span style="font-size: 43px; font-family: Raleway; font-weight: 700; font-style: normal; color: rgb(255, 255, 255);">Build Intelligent&nbsp;</span>
+</h1>
+<h1 style="line-height: 32px;">
+<span style="font-size: 43px;"><span style="color: rgb(255, 255, 255);"><span style="font-style: normal;"><span style="font-weight: 700;"><span style="font-family: Raleway;">Digital&nbsp;</span></span><span style="font-weight: 700;"><span style="font-family: Raleway;">Wallet</span></span></span></span></span>
+</h1>
+<h1 style="line-height: 32px;">
+<span style="font-size: 43px; font-family: Raleway; font-weight: 700; font-style: normal; color: rgb(255, 255, 255);">Experiences</span>
+</h1>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-10">
+<p style="line-height: 26px;">
+<span style="font-family: Raleway; font-weight: 300; font-style: normal; font-size: 24px; color: rgb(255, 255, 255);">Connect to your customers through their native digital wallet to increase sales and brand satisfaction.&nbsp;</span>
+</p>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-87">
+<p style="line-height: 18px;">
+<span style="font-family: Raleway; font-weight: 300; font-style: normal; font-size: 12px; color: rgb(145, 147, 150);">
+<br>315 Sutter Street, Flr 3</span><span style="font-style: normal;"><span style="font-weight: 300;"><span style="font-family: Raleway;"><br></span></span></span><span style="font-family: Raleway; font-weight: 300; font-style: normal; font-size: 12px; color: rgb(145, 147, 150);">San Francisco, CA 94108</span>
+</p>
+</div>
+<a class="lp-element lp-pom-button" id="lp-pom-button-188" href="clkn/https/app.dotdashpay.com/login" target="_self"><span class="label">LOGIN</span></a>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-539">
+<p>
+<span style="font-family: Montserrat; font-weight: 600; font-style: normal; font-size: 12px;">SAN FRANCISCO</span>
+</p>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-540">
+<p style="line-height: 20px;">
+<span style="font-family: Raleway; font-weight: 300; font-style: normal; font-size: 10px; color: rgb(145, 147, 150);">&copy; 2018 DotDashPay - &nbsp;All rights reserved.</span>
+</p>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-544">
+<p>
+<span style="font-family: Montserrat; font-weight: 600; font-style: normal; font-size: 12px;">FOLLOW US ON</span>
+</p>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-545">
+<p style="line-height: 20px;">
+<a data-action="url" data-params="false" href="clkn/http/twitter.com/dotdashpay" target="_self"><span style="font-family: Raleway; font-weight: 300; font-style: normal; font-size: 12px; color: rgb(145, 147, 150);">Twitter<br></span></a><a data-action="url" data-params="false" href="clkn/https/www.facebook.com/dotdashpay" target="_self"><span style="font-family: Raleway; font-weight: 300; font-style: normal; font-size: 12px; color: rgb(145, 147, 150);">Facebook</span></a><span style="font-family: Raleway; font-weight: 300; font-style: normal; font-size: 12px; color: rgb(145, 147, 150);"><br></span><a data-action="url" data-params="false" href="clkn/https/www.linkedin.com/company/dotdashpay/" target="_self"><span style="font-family: Raleway; font-weight: 300; font-style: normal; font-size: 12px; color: rgb(145, 147, 150);">LinkedIn</span></a>
+</p>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-549">
+<p>
+<span style="font-family: Montserrat; font-weight: 600; font-style: normal; font-size: 12px;">ABOUT US</span>
+</p>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-550">
+<p style="line-height: 16px;">
+<span style="font-family: Raleway; font-weight: 300; font-style: normal; font-size: 12px; color: rgb(145, 147, 150);">Since 2015, DotDashPay has built digital wallet technologies that connect brands and consumers. &nbsp;</span>
+</p>
+</div>
+<div class="lp-element lp-pom-box" id="lp-pom-box-641">
+<div id="lp-pom-box-641-color-overlay"></div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-709">
+<h2 style="line-height: 26px;">
+<span style="font-family: Raleway; font-weight: 400; font-style: normal;"><span style="font-size: 20px; color: rgb(38, 30, 154);">Auto-Presentation</span></span>
+</h2>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-710">
+<p style="line-height: 22px;">
+<span style="font-family: Raleway; font-weight: 300; font-style: normal; color: rgb(93, 107, 143); font-size: 14px;">Time + Geo triggers present digital passes at the perfect time &amp; place to increase conversion.</span>
+</p>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-716">
+<p style="line-height: 22px;">
+<span style="font-family: Raleway; font-weight: 300; font-style: normal; color: rgb(93, 107, 143); font-size: 14px;">Notifications and dynamic pass content updates make customers feel engaged and informed.</span>
+</p>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-717">
+<h2 style="line-height: 26px;">
+<span style="font-family: Raleway; font-weight: 400; font-style: normal;"><span style="font-size: 20px; color: rgb(38, 30, 154);">Dynamic Content</span></span>
+</h2>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-721">
+<h2 style="line-height: 26px;">
+<span style="font-family: Raleway; font-weight: 400; font-style: normal;"><span style="font-size: 20px; color: rgb(38, 30, 154);">&nbsp;Connected to Payments</span></span>
+</h2>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-722">
+<p style="line-height: 22px;">
+<span style="font-family: Raleway; font-weight: 300; font-style: normal; color: rgb(93, 107, 143); font-size: 14px;">Link customers to transactions at checkout creating opportunities to understand them and personalize their experiences.</span>
+</p>
+</div>
+<div class="lp-element lp-pom-image" id="lp-pom-image-886">
+<div class="lp-pom-image-container" style="overflow: hidden;">
+<img src="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/transparent.gif" alt="" data-src-desktop-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/6190b75a-auto-present-1-2x_026026026026000000.png" data-src-desktop-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/6190b75a-auto-present-1-2x_04c04c04c04c000000.png" data-src-desktop-3x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/6190b75a-auto-present-1-2x_06i06i06i06i000000.png" data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/6190b75a-auto-present-1-2x_01c01b01c01b000000.png" data-src-mobile-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/6190b75a-auto-present-1-2x_02o02m02o02m000000.png" data-src-mobile-3x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/6190b75a-auto-present-1-2x_04003x04003x000000.png"></div>
+</div>
+<div class="lp-element lp-pom-image" id="lp-pom-image-887">
+<div class="lp-pom-image-container" style="overflow: hidden;">
+<img src="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/transparent.gif" alt="" data-src-desktop-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/6abbdead-dynamic-content-2x_025025025025000000.png" data-src-desktop-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/6abbdead-dynamic-content-2x_04a04a04a04a000000.png" data-src-desktop-3x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/6abbdead-dynamic-content-2x_06f06f06f06f000000.png" data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/6abbdead-dynamic-content-2x_01d01d01d01d000000.png" data-src-mobile-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/6abbdead-dynamic-content-2x_02q02q02q02q000000.png" data-src-mobile-3x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/6abbdead-dynamic-content-2x_043043043043000000.png"></div>
+</div>
+<div class="lp-element lp-pom-image" id="lp-pom-image-893">
+<div class="lp-pom-image-container" style="overflow: hidden;">
+<img src="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/transparent.gif" alt="" data-src-desktop-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/0fa68210-transactions-2x_029029029029000000.png" data-src-desktop-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/0fa68210-transactions-2x_04i04i04i04i000000.png" data-src-desktop-3x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/0fa68210-transactions-2x_06r06r06r06r000000.png" data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/0fa68210-transactions-2x_01e01e01e01e000000.png" data-src-mobile-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/0fa68210-transactions-2x_02s02s02s02s000000.png" data-src-mobile-3x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/0fa68210-transactions-2x_046046046046000000.png"></div>
+</div>
+</div>
+<a class="lp-element lp-pom-button" id="lp-pom-button-881" href="clkn/https/app.dotdashpay.com/about" target="_self"><span class="label">About</span></a>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-957">
+<p>
+<span style="font-family: Raleway; font-weight: 600; font-style: normal; color: rgb(255, 255, 255); font-size: 28px;">Get Started with</span><span style="font-family: Raleway; font-weight: 600; font-style: normal; color: rgb(255, 255, 255); font-size: 24px;">&nbsp;</span><span style="font-family: Raleway; font-weight: 900; font-style: normal; color: rgb(255, 255, 255); font-size: 28px;">Smart Coupons</span>
+</p>
+</div>
+<a class="lp-element lp-pom-button" id="lp-pom-button-958"><span class="label">Create a Smart Coupon</span></a>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-959">
+<p>
+<span style="color: rgb(255, 255, 255); font-family: Raleway;">Smart Coupons are digital coupons with added features. They are update-able, location-aware, and create a direct connection with your customers. &nbsp;They are <strong>54% more effective </strong>than physical coupons. Best of all, they're easy to create!</span>
+</p>
+</div>
+<div class="lp-element lp-pom-image" id="lp-pom-image-960">
+<div class="lp-pom-image-container" style="overflow: hidden;">
+<img src="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/transparent.gif" alt="" data-src-desktop-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/dd4a38f8-asset-2-2x_092062092062000000.png" data-src-desktop-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/dd4a38f8-asset-2-2x_0i40c40i40c4000000.png" data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/dd4a38f8-asset-2-2x_06r04j06r04j000000.png" data-src-mobile-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/dd4a38f8-asset-2-2x_0di0920di092000000.png" data-src-mobile-3x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/dd4a38f8-asset-2-2x_0k90dl0k90dl000000.png"></div>
+</div>
+<a class="lp-element lp-pom-button" id="lp-pom-button-964" href="clkn/rel/a-5-lightbox.html"><span class="label">SCHEDULE A DEMO</span></a>
+<div class="lp-element lp-pom-image" id="lp-pom-image-967">
+<div class="lp-pom-image-container" style="overflow: hidden;">
+<img src="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/transparent.gif" alt="" data-src-desktop-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/69e0ac1f-horizontal-logo-3x_05w01105w011000000.png" data-src-desktop-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/69e0ac1f-horizontal-logo-3x_0bs0220bs022000000.png" data-src-desktop-3x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/69e0ac1f-horizontal-logo-3x_0ho0330ho033000000.png" data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/69e0ac1f-horizontal-logo-3x_04r00u04r00u000000.png" data-src-mobile-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/69e0ac1f-horizontal-logo-3x_09i01o09i01o000000.png" data-src-mobile-3x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/69e0ac1f-horizontal-logo-3x_0e902i0e902i000000.png"></div>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-968">
+<p>
+<span style="font-family: Raleway; font-weight: 100; font-style: normal; color: rgb(255, 255, 255);">Works with&nbsp;</span>
+</p>
+</div>
+<div class="lp-element lp-pom-image" id="lp-pom-image-969">
+<div class="lp-pom-image-container" style="overflow: hidden;">
+<img src="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/transparent.gif" alt="" data-src-desktop-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/7e297f95-apple-pay-icon-3x_01700r01700r000000.png" data-src-desktop-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/7e297f95-apple-pay-icon-3x_02e01i02e01i000000.png" data-src-desktop-3x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/7e297f95-apple-pay-icon-3x_03l02903l029000000.png" data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/7e297f95-apple-pay-icon-3x_00z00m00z00m000000.png" data-src-mobile-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/7e297f95-apple-pay-icon-3x_01y01801y018000000.png" data-src-mobile-3x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/7e297f95-apple-pay-icon-3x_02x01u02x01u000000.png"></div>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-972">
+<p>
+<span style="font-family: Raleway; font-weight: 100; font-style: normal; color: rgb(255, 255, 255);">&amp;</span>
+</p>
+</div>
+<div class="lp-element lp-pom-image" id="lp-pom-image-973">
+<div class="lp-pom-image-container" style="overflow: hidden;">
+<img src="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/transparent.gif" alt="" data-src-desktop-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/c2fec82b-google-pay-icon-3x_01900q01900q000000.png" data-src-desktop-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/c2fec82b-google-pay-icon-3x_02i01g02i01g000000.png" data-src-desktop-3x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/c2fec82b-google-pay-icon-3x_03r02603r026000000.png" data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/c2fec82b-google-pay-icon-3x_01000m01000m000000.png" data-src-mobile-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/c2fec82b-google-pay-icon-3x_020018020018000000.png" data-src-mobile-3x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/c2fec82b-google-pay-icon-3x_03001u03001u000000.png"></div>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-978">
+<p style="text-align: center;">
+<span style="font-family: Raleway; font-weight: 900; font-style: normal; font-size: 24px;">The Power and Intelligence of the Digital Wallet</span>
+</p>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-980">
+<p style="text-align: center;">
+<span style="font-family: Raleway; font-weight: 300; font-style: normal;">Digital wallets are </span><span style="font-family: Raleway; font-weight: 600; font-style: normal;"><strong>digital</strong></span><span style="font-family: Raleway; font-weight: 300; font-style: normal;">. Wallet content is automatically shown at the perfect moment, dynamically updated to provide value to consumers, and gets smarter over time thanks to machine learning.</span>
+</p>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-997">
+<p>
+<span style="font-family: Montserrat; font-weight: 900; font-style: normal; font-size: 48px;">220&nbsp;</span>
+</p>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-998">
+<p>
+<span style="font-family: Montserrat; font-weight: 400; font-style: normal; font-size: 16px;">Number of phones with&nbsp;</span><span style="font-size: 16px;">
+<br>
+<span style="font-family: Montserrat; font-weight: 400; font-style: normal;">digital wallets in&nbsp;</span>
+<br>
+</span><span style="font-family: Montserrat; font-weight: 400; font-style: normal; font-size: 16px;">the US.</span>
+</p>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-999">
+<p>
+<span style="font-family: Raleway; font-weight: 100; font-style: normal;"><span style="font-family: Montserrat; font-weight: 900; font-style: normal; font-size: 28px;">Million</span></span>
+</p>
+</div>
+<div class="lp-element lp-pom-image" id="lp-pom-image-1000">
+<div class="lp-pom-image-container" style="overflow: hidden;">
+<img src="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/transparent.gif" alt="" data-src-desktop-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/b4e4589e-phone-3x_04302v04202v000000.png" data-src-desktop-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/b4e4589e-phone-3x_08605q08405q000000.png" data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/b4e4589e-phone-3x_04302v04202v000000.png" data-src-mobile-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/b4e4589e-phone-3x_08605q08405q000000.png"></div>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-1002">
+<p style="text-align: right;">
+<span style="font-size: 48px; font-family: Montserrat; font-weight: 900; font-style: normal;">43%</span>
+</p>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-1003">
+<p style="text-align: right;">
+<span style="font-family: Raleway; font-weight: 100; font-style: normal;"><span style="font-family: Montserrat; font-weight: 900; font-style: normal; font-size: 28px;">Lift</span></span>
+</p>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-1004">
+<p style="text-align: right;">
+<span style="font-family: Montserrat; font-weight: 400; font-style: normal; font-size: 16px;">Brands see an increase</span>
+<br>
+<span style="font-family: Montserrat; font-weight: 400; font-style: normal; font-size: 16px;">of in-store sales with</span>
+<br>
+<span style="font-family: Montserrat; font-weight: 400; font-style: normal; font-size: 16px;">&nbsp;digital wallets.</span>
+</p>
+</div>
+<div class="lp-element lp-pom-image" id="lp-pom-image-1017">
+<div class="lp-pom-image-container" style="overflow: hidden;">
+<img src="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/transparent.gif" alt="" data-src-desktop-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/502ae289-arrows-3x_034034034034000000.png" data-src-desktop-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/502ae289-arrows-3x_068068068068000000.png" data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/502ae289-arrows-3x_034034034034000000.png" data-src-mobile-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/502ae289-arrows-3x_068068068068000000.png"></div>
+</div>
+<div class="lp-element lp-pom-image" id="lp-pom-image-1024">
+<div class="lp-pom-image-container" style="overflow: hidden;">
+<img src="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/transparent.gif" alt="" data-src-desktop-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/f3ed08ad-horizontal-logo-black-3x_05j00z05j00z000000.png" data-src-desktop-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/f3ed08ad-horizontal-logo-black-3x_0b201y0b201y000000.png" data-src-desktop-3x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/f3ed08ad-horizontal-logo-black-3x_0gl02x0gl02x000000.png" data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/f3ed08ad-horizontal-logo-black-3x_05j00z05j00z000000.png" data-src-mobile-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/f3ed08ad-horizontal-logo-black-3x_0b201y0b201y000000.png" data-src-mobile-3x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/f3ed08ad-horizontal-logo-black-3x_0gl02x0gl02x000000.png"></div>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-1048">
+<p style="text-align: center;">
+<span style="font-family: Raleway; font-weight: 800; font-style: normal; font-size: 28px; color: rgb(255, 255, 255);">Want to Learn More?</span>
+</p>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-1049">
+<p style="text-align: center;">
+<span style="color: rgb(255, 255, 255); font-family: Raleway;"><span style="font-size: 16px;">Reach out to our team to see exactly how the digital wallet can help you connect to your customers.</span></span>
+</p>
+</div>
+<a class="lp-element lp-pom-button" id="lp-pom-button-1050" href="clkn/rel/a-5-lightbox.html"><span class="label">Schedule Demo</span></a>
+<div class="lp-element lp-pom-image" id="lp-pom-image-1053">
+<div class="lp-pom-image-container" style="overflow: hidden;">
+<img src="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/transparent.gif" alt="" data-src-desktop-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/85362411-coupon-with-phone-3x_04005k04005k000000.png" data-src-desktop-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/85362411-coupon-with-phone-3x_0800b40800b4000000.png" data-src-desktop-3x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/85362411-coupon-with-phone-3x_0c00go0c00go000000.png" data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/85362411-coupon-with-phone-3x_03404b03404b000000.png" data-src-mobile-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/85362411-coupon-with-phone-3x_06808m06808m000000.png" data-src-mobile-3x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/85362411-coupon-with-phone-3x_09c0cx09c0cx000000.png"></div>
+</div>
+<div class="lp-element lp-pom-image" id="lp-pom-image-1054">
+<div class="lp-pom-image-container" style="overflow: hidden;">
+<img src="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/transparent.gif" alt="" data-src-desktop-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/3f2e96ef-loyalty-with-phone-3x_04005k04005k000000.png" data-src-desktop-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/3f2e96ef-loyalty-with-phone-3x_0800b40800b4000000.png" data-src-desktop-3x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/3f2e96ef-loyalty-with-phone-3x_0c00go0c00go000000.png" data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/3f2e96ef-loyalty-with-phone-3x_03404b03404b000000.png" data-src-mobile-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/3f2e96ef-loyalty-with-phone-3x_06808m06808m000000.png" data-src-mobile-3x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/3f2e96ef-loyalty-with-phone-3x_09c0cx09c0cx000000.png"></div>
+</div>
+<div class="lp-element lp-pom-image" id="lp-pom-image-1055">
+<div class="lp-pom-image-container" style="overflow: hidden;">
+<img src="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/transparent.gif" alt="" data-src-desktop-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/de706c77-tickets-with-phone-3x_04105k04005k000000.png" data-src-desktop-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/de706c77-tickets-with-phone-3x_0820b40800b4000000.png" data-src-desktop-3x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/de706c77-tickets-with-phone-3x_0c30go0c00go000000.png" data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/de706c77-tickets-with-phone-3x_03504b03404b000000.png" data-src-mobile-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/de706c77-tickets-with-phone-3x_06a08m06808m000000.png" data-src-mobile-3x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/de706c77-tickets-with-phone-3x_09f0cx09c0cx000000.png"></div>
+</div>
+<div class="lp-element lp-pom-image" id="lp-pom-image-1056">
+<div class="lp-pom-image-container" style="overflow: hidden;">
+<img src="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/transparent.gif" alt="" data-src-desktop-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/7b8f5f13-payment-with-phone-3x_04105k04005k000000.png" data-src-desktop-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/7b8f5f13-payment-with-phone-3x_0820b40800b4000000.png" data-src-desktop-3x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/7b8f5f13-payment-with-phone-3x_0c30go0c00go000000.png" data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/7b8f5f13-payment-with-phone-3x_03504b03404b000000.png" data-src-mobile-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/7b8f5f13-payment-with-phone-3x_06a08m06808m000000.png" data-src-mobile-3x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/7b8f5f13-payment-with-phone-3x_09f0cx09c0cx000000.png"></div>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-1058">
+<p style="text-align: center;">
+<span style="font-family: Raleway; font-weight: 900; font-style: normal; font-size: 24px;">The Flavors of the Digital Wallet</span>
+</p>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-1060">
+<p style="text-align: center;">
+<span style="font-family: Raleway; font-weight: 500; font-style: normal;">Smart Coupons</span><span style="font-family: Raleway; font-weight: 300; font-style: normal;">&nbsp;adapt to the customer. They present themselves at the right time and place with custom messages and dynamic offers.</span>
+</p>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-1061">
+<p style="text-align: center;">
+<span style="font-family: Raleway; font-weight: 500; font-style: normal;">Dynamic loyalty</span><span style="font-family: Raleway; font-weight: 300; font-style: normal;">&nbsp;updates according to customer usage and creates an ongoing connection with them.</span>
+</p>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-1062">
+<p style="text-align: center;">
+<span style="font-family: Raleway; font-weight: 500; font-style: normal;">Digital event tickets</span><span style="font-family: Raleway; font-weight: 300; font-style: normal;">&nbsp;are easy to issue, easy to scan, and give you a way to communicate to your customers before, during, and after any event.</span>
+</p>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-1063">
+<p style="text-align: center;">
+<span style="font-family: Raleway; font-weight: 500; font-style: normal;">Digital wallet payments</span><span style="font-family: Raleway; font-weight: 300; font-style: normal;">&nbsp;tie all of the digital wallet passes back to a payment so you can understand your customers' buying personalities.</span>
+</p>
+</div>
+<div class="lp-element lp-pom-image" id="lp-pom-image-1078">
+<div class="lp-pom-image-container" style="overflow: hidden;">
+<img src="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/transparent.gif" alt="" data-src-desktop-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/a6b8ebb6-phone-no-rounded-2x_07z0eh07z0eh000000.png" data-src-desktop-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/a6b8ebb6-phone-no-rounded-2x_0fy0sy0fy0sy000000.png" data-src-desktop-3x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/a6b8ebb6-phone-no-rounded-2x_0nx17f0nx17f000000.png" data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/a6b8ebb6-phone-no-rounded-2x_02h04j02h04j000000.png" data-src-mobile-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/a6b8ebb6-phone-no-rounded-2x_04y09204y092000000.png" data-src-mobile-3x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/a6b8ebb6-phone-no-rounded-2x_07f0dl07f0dl000000.png"></div>
+</div>
+<div class="lp-element lp-pom-image" id="lp-pom-image-1079">
+<div class="lp-pom-image-container" style="overflow: hidden;">
+<img src="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/transparent.gif" alt="" data-src-desktop-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/11e43d48-screenflow.gif" data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/11e43d48-screenflow.gif"></div>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-1080">
+<p style="text-align: center;">
+<span style="font-family: Raleway; font-weight: 400; font-style: normal; font-size: 16px;">The digital wallet can contain a variety of different pass types. Each type has its own special qualities, but they all create an opportunity to connect to your customers.</span>
+</p>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-1086">
+<p style="text-align: center;">
+<span style="font-family: Raleway; font-weight: 900; font-style: normal; font-size: 24px;">What is the Native Digital Wallet?</span>
+</p>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-1087">
+<p>
+<span style="font-family: Raleway;">Digital Wallets are convenient native applications on consumers' phones that digitize and store rewards cards, event tickets, boarding passes, and of course, credit cards. &nbsp;&nbsp;</span>
+</p>
+</div>
+<div class="lp-element lp-pom-image" id="lp-pom-image-1088">
+<div class="lp-pom-image-container" style="overflow: hidden;">
+<img src="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/transparent.gif" alt="" data-src-desktop-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/6e117e2b-digital-wallets_0a40400a4040000000.png" data-src-desktop-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/6e117e2b-digital-wallets_0k80800k8080000000.png" data-src-desktop-3x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/6e117e2b-digital-wallets_0uc0c00uc0c0000000.png" data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/6e117e2b-digital-wallets_06y02r06y02r000000.png" data-src-mobile-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/6e117e2b-digital-wallets_0dw05i0dw05i000000.png" data-src-mobile-3x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/6e117e2b-digital-wallets_0ku0890ku089000000.png"></div>
+</div>
+<div class="lp-element lp-pom-image" id="lp-pom-image-1089">
+<div class="lp-pom-image-container" style="overflow: hidden;">
+<img src="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/transparent.gif" alt="" data-src-desktop-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/6218d1af-connecting-brands-2x_0bp03r0bo03q000000.png" data-src-desktop-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/6218d1af-connecting-brands-2x_0ne07i0nc07g000000.png" data-src-desktop-3x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/6218d1af-connecting-brands-2x_0z30b90z00b6000000.png" data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/6218d1af-connecting-brands-2x_07d02e07c02d000000.png" data-src-mobile-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/6218d1af-connecting-brands-2x_0eq04s0eo04q000000.png" data-src-mobile-3x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/6218d1af-connecting-brands-2x_0m30760m0073000000.png"></div>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-1090">
+<p>
+<span style="font-family: Raleway;">The cards living in the digital wallet provide a direct connection between consumers and brands via push notifications, geo-fenced alerts, and dynamic updates.</span>
+</p>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-1107">
+<p style="text-align: center;">
+<span style="font-family: Raleway; font-weight: 900; font-style: normal; font-size: 24px;">What is the DotDashPay Platform?</span>
+</p>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-1108">
+<p style="text-align: center;">
+<span style="font-family: Raleway; font-weight: 400; font-style: normal; font-size: 16px;">Our platform is a set of tools that help you create digital wallet experiences. Brands use our robust back-end infrastructure, artificial intelligence, and intuitive dashboards to connect more deeply with their customers. </span>
+</p>
+</div>
+<div class="lp-element lp-pom-image" id="lp-pom-image-1109">
+<div class="lp-pom-image-container" style="overflow: hidden;">
+<img src="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/transparent.gif" alt="" data-src-desktop-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/a57702cb-create-2x_04d04d04d04d000000.png" data-src-desktop-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/a57702cb-create-2x_08q08q08q08q000000.png" data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/a57702cb-create-2x_02i02i02i02i000000.png" data-src-mobile-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/a57702cb-create-2x_050050050050000000.png" data-src-mobile-3x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/a57702cb-create-2x_07i07i07i07i000000.png"></div>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-1110">
+<p>
+<span style="font-family: Raleway; font-weight: 700; font-style: normal; font-size: 24px;">CREATE</span>
+</p>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-1111">
+<p>
+<span style="font-family: Raleway; font-weight: 400; font-style: normal; font-size: 14px;">Create passes of various types using our creation tool. Customize pass contents such as colors, text, and images.</span>
+</p>
+</div>
+<div class="lp-element lp-pom-image" id="lp-pom-image-1125">
+<div class="lp-pom-image-container" style="overflow: hidden;">
+<img src="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/transparent.gif" alt="" data-src-desktop-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/912fd243-engage-2x_04d04d04d04d000000.png" data-src-desktop-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/912fd243-engage-2x_08q08q08q08q000000.png" data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/912fd243-engage-2x_02i02i02i02i000000.png" data-src-mobile-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/912fd243-engage-2x_050050050050000000.png" data-src-mobile-3x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/912fd243-engage-2x_07i07i07i07i000000.png"></div>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-1126">
+<p>
+<span style="font-family: Raleway; font-weight: 400; font-style: normal; font-size: 14px;">Use manual or intelligent triggers to send messages to your customers at the right place and time OR update the passes for relevancy.&nbsp;</span>
+</p>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-1127">
+<p>
+<span style="font-family: Raleway; font-weight: 700; font-style: normal; font-size: 24px;">ENGAGE</span>
+</p>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-1133">
+<p>
+<span style="font-family: Raleway; font-weight: 400; font-style: normal; font-size: 14px;">Send passes to your customers using the methods that make the most sense for your business such as buttons, QR codes, NFC taps, and more.</span>
+</p>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-1134">
+<p>
+<span style="font-family: Raleway; font-weight: 700; font-style: normal; font-size: 24px;">DISTRIBUTE</span>
+</p>
+</div>
+<div class="lp-element lp-pom-image" id="lp-pom-image-1135">
+<div class="lp-pom-image-container" style="overflow: hidden;">
+<img src="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/transparent.gif" alt="" data-src-desktop-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/0d9eb53a-distribute-2x_04d04d04d04d000000.png" data-src-desktop-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/0d9eb53a-distribute-2x_08q08q08q08q000000.png" data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/0d9eb53a-distribute-2x_02i02i02i02i000000.png" data-src-mobile-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/0d9eb53a-distribute-2x_050050050050000000.png" data-src-mobile-3x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/0d9eb53a-distribute-2x_07i07i07i07i000000.png"></div>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-1145">
+<p>
+<span style="font-family: Raleway; font-weight: 700; font-style: normal; font-size: 24px;">ANALYZE</span>
+</p>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-1146">
+<p>
+<span style="font-family: Raleway; font-weight: 400; font-style: normal; font-size: 14px;">Manage your passes and pass campaigns to gain insights about how best to leverage the digital wallet.</span>
+</p>
+</div>
+<div class="lp-element lp-pom-image" id="lp-pom-image-1147">
+<div class="lp-pom-image-container" style="overflow: hidden;">
+<img src="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/transparent.gif" alt="" data-src-desktop-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/2fad986c-analyze-2x_04d04d04d04d000000.png" data-src-desktop-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/2fad986c-analyze-2x_08q08q08q08q000000.png" data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/2fad986c-analyze-2x_02i02i02i02i000000.png" data-src-mobile-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/2fad986c-analyze-2x_050050050050000000.png" data-src-mobile-3x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/2fad986c-analyze-2x_07i07i07i07i000000.png"></div>
+</div>
+<div class="lp-element lp-pom-box" id="lp-pom-box-1148">
+<div id="lp-pom-box-1148-color-overlay"></div>
+<div class="lp-element lp-pom-image" id="lp-pom-image-1150">
+<div class="lp-pom-image-container" style="overflow: hidden;">
+<img src="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/transparent.gif" alt="" data-src-desktop-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/88eadfcf-dashboard-2x_02k02002k020000000.png" data-src-desktop-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/88eadfcf-dashboard-2x_054040054040000000.png" data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/88eadfcf-dashboard-2x_02801r02801r000000.png" data-src-mobile-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/88eadfcf-dashboard-2x_04g03i04g03i000000.png" data-src-mobile-3x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/88eadfcf-dashboard-2x_06o05906o059000000.png"></div>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-1153">
+<p>
+<span style="font-family: Raleway; font-weight: 400; font-style: normal; font-size: 18px;"><strong>Web Dashboards</strong></span>
+</p>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-1154">
+<p>
+<span style="font-family: Raleway; font-weight: 300; font-style: normal; font-size: 14px;">Recommended for Small and Medium-sized businesses</span>
+</p>
+</div>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-1152">
+<p style="text-align: center;">
+<span style="font-family: Raleway; font-weight: 400; font-style: normal; font-size: 18px;"><strong>Use our platform the way that works for you:</strong></span>
+</p>
+</div>
+<div class="lp-element lp-pom-box" id="lp-pom-box-1162">
+<div id="lp-pom-box-1162-color-overlay"></div>
+<div class="lp-element lp-pom-image" id="lp-pom-image-1163">
+<div class="lp-pom-image-container" style="overflow: hidden;">
+<img src="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/transparent.gif" alt="" data-src-desktop-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/16f63435-api-2x_02o02402o023000000.png" data-src-desktop-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/16f63435-api-2x_05c04805c046000000.png" data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/16f63435-api-2x_02a01t02a01s000000.png" data-src-mobile-2x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/16f63435-api-2x_04k03m04k03k000000.png" data-src-mobile-3x="//d9hhrg4mnvzow.cloudfront.net/app.dotdashpay.com/16f63435-api-2x_06u05f06u05c000000.png"></div>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-1164">
+<p>
+<span style="font-family: Raleway; font-weight: 400; font-style: normal; font-size: 18px;"><strong>Platform APIs</strong></span>
+</p>
+</div>
+<div class="lp-element lp-pom-text nlh" id="lp-pom-text-1165">
+<p>
+<span style="font-family: Raleway; font-weight: 300; font-style: normal; font-size: 14px;">Recommended for Large Enterprise Clients</span>
+</p>
+</div>
+</div>
+</div>
+<div class="lp-element lp-pom-block" id="lp-pom-block-8">
+<div id="lp-pom-block-8-color-overlay"></div>
+<div class="lp-pom-block-content"></div>
+</div>
+<div class="lp-element lp-pom-block" id="lp-pom-block-640">
+<div id="lp-pom-block-640-color-overlay"></div>
+<div class="lp-pom-block-content"></div>
+</div>
+<div class="lp-element lp-pom-block" id="lp-pom-block-1091">
+<div id="lp-pom-block-1091-color-overlay"></div>
+<div class="lp-pom-block-content"></div>
+</div>
+<div class="lp-element lp-pom-block" id="lp-pom-block-1106">
+<div id="lp-pom-block-1106-color-overlay"></div>
+<div class="lp-pom-block-content"></div>
+</div>
+<div class="lp-element lp-pom-block" id="lp-pom-block-1043">
+<div id="lp-pom-block-1043-color-overlay"></div>
+<div class="lp-pom-block-content"></div>
+</div>
+<div class="lp-element lp-pom-block" id="lp-pom-block-1045">
+<div id="lp-pom-block-1045-color-overlay"></div>
+<div class="lp-pom-block-content"></div>
+</div>
+<div class="lp-element lp-pom-block" id="lp-pom-block-1033">
+<div id="lp-pom-block-1033-color-overlay"></div>
+<div class="lp-pom-block-content"></div>
+</div>
+<div class="lp-element lp-pom-block" id="lp-pom-block-648">
+<div id="lp-pom-block-648-color-overlay"></div>
+<div class="lp-pom-block-content"></div>
+</div>
+<div class="lp-element lp-pom-block" id="lp-pom-block-82">
+<div id="lp-pom-block-82-color-overlay"></div>
+<div class="lp-pom-block-content"></div>
+</div>
+</div>
+<!-- lp:insertions start body:after -->
+<script type="text/javascript">
+  function updateViewport() {
+    var viewport = document.querySelector('meta[name="viewport"]');
+    if (viewport && window.innerWidth > 600 && window.innerWidth < 1024) {
+      var defaultDeviceWidth = window.innerWidth;
+      var defaultPageWidth = document.getElementById('lp-pom-root').offsetWidth;
+      var calculatedScale = (defaultDeviceWidth / defaultPageWidth);
+      var viewportContent = 'initial-scale=' + calculatedScale + ', user-scalable=yes';
+      if (defaultDeviceWidth >= defaultPageWidth) {
+        viewportContent = 'initial-scale=1.0, ' + 'width=device-width, ' + 'user-scalable=yes';
+      }
+      viewport.content = viewportContent;
+    }
+  }
+  lp.jQuery(document).ready(updateViewport);
+  window.addEventListener('orientationchange', updateViewport);
+</script>
+<script type="text/javascript">
+_linkedin_data_partner_id = "358076";
+</script><script type="text/javascript">
+(function(){var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})();
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=358076&fmt=gif" />
+</noscript>
+<script>
+function disableParallaxOnMobile() {
+  if (navigator.userAgent.match(/(Android|iPod|iPhone|iPad|iemobile|blackberry)/)) {
+    var parallaxEls = lp.jQuery('.lp-pom-root, .lp-pom-block');
+    for (i = 0; i < parallaxEls.length; i++) {
+      var parallaxEl = parallaxEls[i];
+      if (lp.jQuery(parallaxEl).css('background-attachment') === 'fixed') {
+        parallaxEl.style['background-attachment'] = 'scroll';
+      };
+    };
+  }
+}
+
+disableParallaxOnMobile();
+
+window.addEventListener("orientationchange", function() {
+  disableParallaxOnMobile();
+}, false);
+</script>
+
+<script type="text/javascript">Array.prototype.slice
+  .call(document.querySelectorAll('.lp-pom-form form input[name^=ubafs-]'))
+  .forEach(function(input) {
+    input.parentNode.removeChild(input);
+  });
+
+Array.prototype.slice.call(document.querySelectorAll('.lp-pom-form form')).forEach(function(form) {
+  var jevField = document.createElement('input');
+  jevField.type = 'hidden';
+  jevField.name = 'ubafs-jev';
+  jevField.id = jevField.name;
+  jevField.value = JSON.stringify({
+    date: new Date(),
+    agent: navigator.userAgent,
+    screen: {
+      availWidth: screen.availWidth,
+      availHeight: screen.availHeight,
+      width: screen.width,
+      height: screen.height,
+    },
+    window: {
+      innerWidth: window.innerWidth,
+      innerHeight: window.innerHeight,
+    },
+    hasPlugins: 'length' in navigator.plugins && navigator.plugins.length > 0,
+  });
+
+  form.appendChild(jevField);
+});
+</script>
+<!-- lp:insertions end body:after -->
+
+</body>
+
+</html>
