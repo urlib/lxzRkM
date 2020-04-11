@@ -1,0 +1,512 @@
+
+
+<!-- NewGlobalPaymentsInc  -->
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+    
+<meta name="VIcurrentDateTime" content="637221909538941079" />
+<script type="text/javascript" src="/layouts/system/VisitorIdentification.js"></script>
+
+
+    <link href="/presentation/includes/Platform/css/vendors.css?modified=20200306042046" media="all" type="text/css" rel="stylesheet"/>
+    <script src="/Presentation/includes/Platform/js/scripts.min.js?modified=20200306042046" language="javascript" type="text/javascript" ></script>
+
+                <meta property="og:locale" content="en-us" />
+        <title>Google Pay | Global Payments MPOS</title>
+        <meta property="og:title" content="Google Pay | Global Payments MPOS" />
+    <meta property="og:url" content="https://www.globalpaymentsinc.com/accept-payments/in-person/globalmpos/google-pay" />
+        <meta name="twitter:site" content="@GlobalPayInc">
+        <meta name="twitter:title" content="Google Pay | Global Payments MPOS" />
+    <link rel="canonical" href="https://www.globalpaymentsinc.com/accept-payments/in-person/globalmpos/google-pay" />
+    <link href="https://www.globalpaymentsinc.com/accept-payments/in-person/globalmpos/google-pay" rel="alternate" hreflang="en" />
+                <link href="https://www.globalpaymentsinc.com/en-cz/accept-payments/in-person/globalmpos/google-pay" rel="alternate" hreflang="en-CZ" />
+        <meta name="robots" content="NOINDEX, NOFOLLOW" />
+            <script>
+                (function (w, d, s, l, i) {
+                    w[l] = w[l] || [];
+                    w[l].push(
+                        { 'gtm.start': new Date().getTime(), event: 'gtm.js' }
+                    );
+                    var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s),
+                        dl = l !== 'dataLayer' ? '&l=' + l : '';
+                    j.async = true;
+                    j.src =
+                        '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+                    f.parentNode.insertBefore(j, f);
+                })(window, document, 'script', 'dataLayer', 'GTM-W267TW4');
+            </script>
+        <link rel="shortcut icon" type="image/x-icon" href="/-/media/global-payments/images/layout/globalpayments_symbol_rgb.png?modified=20180119175258" /> <link href="/Presentation/includes/Platform/css/main.min.css?modified=20200402014041" media="all" type="text/css" rel="stylesheet"/><link href="/Presentation/includes/GlobalPayments/css/main.min.css?modified=20200306042020" media="all" type="text/css" rel="stylesheet"/><!-- google verification code for google search console. -->
+<meta name="google-site-verification" content="3hEIxm5M9qZaCHdRXXt9-xfY8qMjkqsq_h3q3Jc8Yvo" />
+<meta name="google-site-verification" content="CqUMR7uegNhSiMcUvXZXCCRhTt8iBUnpsdSM6ReUP2c" />
+
+
+
+<!-- Start VWO Async Smartcode -->
+<script type='text/javascript'>
+window._vwo_code = window._vwo_code || (function(){
+var account_id=443080,
+settings_tolerance=2000,
+library_tolerance=2500,
+use_existing_jquery=false,
+is_spa=1,
+hide_element='body',
+
+/* DO NOT EDIT BELOW THIS LINE */
+f=false,d=document,code={use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){
+settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b=hide_element?hide_element+'{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}':'',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&f='+(+is_spa)+'&r='+Math.random());return settings_timer; }};window._vwo_settings_timer = code.init(); return code; }());
+</script>
+<!-- End VWO Async Smartcode -->
+
+
+
+
+<!-- Global site tag (gtag.js) - AdWords: 784997198 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-784997198"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-784997198');
+
+  gtag('event', 'page_view', {
+    'send_to': 'AW-784997198',
+    'user_id': 'replace with value'
+  });
+</script>
+<style>
+.form-group select{background-color:#fff !important;}
+.form-pardot .form-group select{-moz-appearance:none}.pardot-iframe-submission .container [class*=' col-'],.form-message{padding-left:15px;padding-right:15px}
+@media(min-width:768px){.dynamic-form-container form .text-alignment-left,.dynamic-form-container form .text-alignment-right{width:50%}
+}.dynamic-form-container .captcha-center .g-recaptcha,.dynamic-form-container .captcha-center .recaptcha-error{width:304px;margin:0 auto}
+@media(min-width:768px){.dynamic-form-container .captcha-center.col-sm-6 .g-recaptcha{float:right}
+}@media(min-width:768px){.dynamic-form-container .captcha-center.col-sm-6 .recaptcha-error{float:right}
+}.dynamic-form-container .form-group.submit-center{text-align:center}.dynamic-form-container .form-group.col-sm-6.submit-center{text-align:left}
+.dynamic-form-container .form-group.submit-right .submit-1{float:right}.dynamic-form-container .form-group.captcha-right .g-recaptcha,.dynamic-form-container .form-group.captcha-right .recaptcha-error{float:right}
+.dynamic-form-container .form-group.same-row{float:left;padding:0 15px}.dynamic-form-container .form-group.same-row.submit-right,.dynamic-form-container .form-group.same-row.captcha-right{float:right}
+.dynamic-form-container .form-group.same-row.submit-center{text-align:left}.dynamic-form-container .radio label{font-weight:bold}
+.dynamic-form-container .radio input[type="radio"],.dynamic-form-container .radio-inline input[type="radio"]{margin-left:-25px}
+.dynamic-form-container .radio-inline{margin-top:10px !important}
+h2
+{
+font-size: 30px !important;
+}
+</style>
+
+
+    <script src="/Presentation/includes/Platform/js/main.min.js?modified=20200306042046" language="javascript" type="text/javascript" defer></script><script src="/Presentation/includes/Platform/js/header-script.js?modified=20200306042046" language="javascript" type="text/javascript" defer></script>
+
+</head>
+
+
+
+
+<body class="preload " data-auth-user="false">
+    <input id="hdncid" name="hdncid" type="hidden" value="{CCEE96A9-9525-401F-99B0-5CB39B9FB5F5}" />
+<input id="hdnwsid" name="hdnwsid" type="hidden" value="a2a80fe0-35fa-48d1-b9b6-16747fc813a2" /><input id="hdnSearchPageMerchantLink" name="hdnSearchPageMerchantLink" type="hidden" value="/en-us/site-search" />    <input id="hdnlang" name="hdnlang" type="hidden" value="en" />
+    <input id="hdncontextsite" name="hdncontextsite" type="hidden" value="NewGlobalPaymentsInc" />
+    
+     <noscript> <iframe src="//www.googletagmanager.com/ns.html?id=GTM-W267TW4" height="0" width="0" style="display:none;visibility:hidden"></iframe> </noscript>
+
+    <div>
+        
+
+        <input type="hidden" id="hdnSearchPageLink" value="/en-us/site-search" />
+
+
+
+    <header class="container-fluid  overlapping-header hide-search" id="">
+        <div class="header-container container">
+            <div class="fixed-header clearfix">
+                        <div class="logo-column tagline-container col-xs-6 col-sm-8 col-md-6 col-lg-4 hidden-xs hidden-sm hidden-md" itemscope itemtype="http://schema.org/PaymentService">
+<a href="https://www.globalpaymentsinc.com/en-us" itemprop="url" ><img src="/-/media/global-payments/images/shared/globalpayments_wordmark_blue.png?modified=20180405212244&amp;h=26&amp;w=175&amp;la=en&amp;hash=935077B14C77B5A176B8A564A8720943" id="header-logo-desktop" class=" header-logo" itemprop="Logo" alt="Global Payments Logo" /></a>                                                            <span class="header-tagline"><img alt="" src="/-/media/global-payments/images/tagline-newgpn-grey.png?modified=20180919094119" /></span>
+                        </div>
+
+                        <div class="logo-column tagline-container col-xs-6 col-sm-8 col-md-6 col-lg-4 hidden-xs hidden-lg" itemscope itemtype="http://schema.org/PaymentService">
+<a href="https://www.globalpaymentsinc.com/en-us" itemprop="url" ><img src="/-/media/global-payments/images/shared/globalpayments_wordmark_blue.png?modified=20180405212244&amp;h=26&amp;w=175&amp;la=en&amp;hash=935077B14C77B5A176B8A564A8720943" id="header-logo-desktop" class=" header-logo" itemprop="Logo" alt="Global Payments Logo" /></a>                                                            <span class="header-tagline"> <img alt="" src="/-/media/global-payments/images/tagline-newgpn-grey.png?modified=20180919094119" /></span>
+                        </div>
+                                        <div class="logo-column tagline-container col-xs-6 col-sm-8 col-md-6 col-lg-4 hidden-sm hidden-md hidden-lg" itemscope itemtype="http://schema.org/PaymentService">
+<a href="https://www.globalpaymentsinc.com/en-us" itemprop="url" ><img src="/-/media/global-payments/images/shared/globalpayments_wordmark_blue.png?modified=20180405212244&amp;h=26&amp;w=175&amp;la=en&amp;hash=935077B14C77B5A176B8A564A8720943" id="header-logo-mobile" class=" header-logo" itemprop="Logo" alt="Global Payments Logo" /></a>                                                            <span class="header-tagline">  <img alt="" src="/-/media/global-payments/images/tagline-newgpn-grey.png?modified=20180919094119" /></span>
+                        </div>
+                
+                    <div class="menu-column col-xs-6 col-sm-4 col-md-6 col-lg-8">
+
+
+
+                        <ul id="main-menu">
+
+
+
+
+    <li>
+            </li>
+
+                            
+                            <li id="hamburger-mobile">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-mobile-collapse" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </li>
+                        </ul>
+
+                    </div>
+                
+                
+                
+
+                
+                <div class="menu-column col-xs-6 col-sm-4 col-md-6 col-lg-8  hidden-xs hidden-lg hidden-sm hidden-md">
+                    <ul id="main-menu">
+
+
+
+
+    <li>
+            </li>
+
+                    </ul>
+                </div>
+            </div>
+
+                <ul class="collapse" id="main-menu-mobile-collapse">
+
+
+
+
+
+                    <li>
+                        <div class="searchbox-container col-xs-12 hidden-sm hidden-md hidden-lg">
+                            <label for="txtSearchBox" style="display: none;"> Text Search Box:</label>
+                            <input id="txtSearchBox" type="text" placeholder="" />
+                            <button class="btn-mobile-search">
+                                <span class="mobile-search-icon"></span>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+        </div>
+
+        <!-- Rendering Brand Secondary logo (symbol) on all headers -->
+
+        <!-- End -->
+
+
+        <div class="clearfix"></div>
+
+
+    </header>
+        <div class="overlapping-header-spacer"></div>
+
+        <!-- Placeholder for content -->
+        
+
+    <div herorotationtime="15000" class="hero-slider container-fluid " id="" style="border-bottom:0px Solid ;">
+        <ul class="heroslider slider-large ">
+
+
+
+<li class="hero-slide-item " style="background-image: url('/-/media/global-payments/globalmpos/istock-883852326.jpg?modified=20180717194913');">
+        <section class="container">
+
+            <div class="hero-overlay dark-theme alignment-center">
+                <div class="overlay-inner">
+
+<h1>Google Pay </h1>
+
+                                            <div class="column-copy">
+                            <h4>Enable a faster, more convenient shopping experience with Global Payments and Google Pay</h4>
+                        </div>
+                                            <div class="cta-container">
+
+
+<a href="#information" class="google-event-tracker btn btn-default btn-lg alignment-center" data-event-category="Regular Button" data-event-label="/en-us/accept-payments/in-person/globalmpos/google-pay | Learn More | 44e79455-c50e-4da2-9564-9ea3d19aefab" data-event-action="click" data-event-value="" >        <span>
+            <span class="">
+                Learn More
+            </span>
+
+            
+            
+
+            
+            
+
+        </span>
+</a>
+                        </div>
+                </div>
+            </div>
+        </section>
+</li>        </ul>
+    </div>
+
+
+
+<div class="two-column-content container-fluid " id="">
+    <div class="dark-theme  clearfix theme-container padding-top-content padding-bottom-content" >
+        <div class="two-column-inner-content container container-70-30">
+
+                        <div class="mobile-clone col-xs-12 image-content hidden-lg hidden-md hidden-sm">
+
+            </div>
+                <div class="left-content col-xs-12 image-content">
+                    
+
+
+
+<div class="inner-content " style="margin-top:0px">
+    <div class="body-content-image" style="background-image: ; 0px; padding: 0px;">
+        
+    </div>
+    <div class="body-content-container">
+        <div class="right-container">
+                <div class="column-copy">
+                    <p>The Google Pay API is an online payment method that lets your customers use the cards they&rsquo;ve saved to their Google Account to pay quickly and easily in your apps and on your websites. By clicking the Buy with Google Pay button, customers can choose a payment method saved in their Google Account and finish checkout as quickly as they can click.&nbsp;</p>
+<h3>Turns consideration into conversion </h3>
+<p>Checkout is simple and fast, reducing basket abandonment and increasing customer satisfaction. Customers pay as quickly as they can click, making it easier to buy in-app and on Chrome with a mobile device.</p>
+<h3>Improves customer choice </h3>
+<p>Millions of people already use Google. And with this new payment platform, it&rsquo;s even easier for them to pay you &ndash; on sites, in apps and in stores &ndash; opening up your business for more business. </p>
+<h3>It&rsquo;s encrypted and secure</h3>
+<p>Google Pay protects payment information with multiple layers of security, using one of the world&rsquo;s most advanced security infrastructures to help keep all account information safe. </p>
+                </div>
+                                </div>
+
+    </div>
+</div>
+                    
+                </div>
+                            <div class="right-content col-xs-12 image-content">
+                    
+
+
+
+<div class="inner-content " style="margin-top:0px">
+    <div class="body-content-image" style="background-image: ; 80px; padding: 80px;">
+        <img src="/-/media/global-payments/globalmpos/googlepaylogomarkwshapergb580x350px2x.png?modified=20180731064329&amp;h=701&amp;w=1160&amp;la=en&amp;hash=F1C9048C93A1348D3EBF240863C2416D" alt="Gpay" />
+    </div>
+    <div class="body-content-container">
+        <div class="right-container">
+                                </div>
+
+    </div>
+</div>
+                    
+                </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="generic-container-fluid container-fluid " id="information">
+    <div class="" >
+        <div class="generic-content-container container padding-top-content padding-bottom-content ">
+            <h1><a name="information" id="information">More Information</a></h1>
+For more information about a specific region and how to deploy, please select the region link below:<br />
+<ul>
+    <li><a href="https://developer.realexpayments.com/#!/ecommerce/digital-wallets/google-pay" target="_blank">Canada</a></li>
+    <li><a href="https://www.globalpaymentsinc.com/cs-cz/google/google-pay" target="_blank">Czech Republic</a></li>
+    <li><a href="https://www.globalpaymentsinc.com/cs-cz/google/google-pay" target="_blank">Romania</a></li>
+    <li><a href="https://www.globalpaymentsinc.com/cs-cz/google/google-pay" target="_blank">Slovakia</a></li>
+    <li><a href="https://developer.realexpayments.com/#!/ecommerce/digital-wallets/google-pay" target="_blank">United Kingdom</a></li>
+    <li><a href="https://developer.realexpayments.com/#!/ecommerce/digital-wallets/google-pay" target="_blank">United States</a></li>
+</ul>
+<br />
+        </div>
+    </div>
+</div>
+
+        
+
+
+
+    <div class="footer clearfix" id="">
+        <div class="footer-inner-container container">
+                <div class="footer-content clearfix">
+                                    <div class="logo-container col-xs-12 footer-column " itemscope itemtype="http://schema.org/PaymentService">
+                                        
+<a href="https://www.globalpaymentsinc.com/en-us" itemprop="url" ><img src="/-/media/global-payments/images/shared/globalpayments_wordmark_rev.png?modified=20180205185716&amp;h=32&amp;w=215&amp;la=en&amp;hash=EBA4499ED1039087E420ADA62F8B779B" itemprop="Logo" alt="Global Payments logo reversed" /></a>
+
+                                    </div>
+                                <div class="link-section col-xs-12 footer-column " itemscope itemtype="http://schema.org/PaymentService">
+                                    
+
+
+
+
+
+<h4>
+<a href="https://www.globalpaymentsinc.com/en-us/terms-of-use" >Terms of Use</a></h4>
+
+                                </div>
+                                <div class="link-section col-xs-12 footer-column " itemscope itemtype="http://schema.org/PaymentService">
+                                    
+
+
+
+
+
+<h4>
+<a href="https://www.globalpaymentsinc.com/en-us/privacy-statement" >Privacy Statement</a></h4>
+
+                                </div>
+                                <div class="link-section col-xs-12 footer-column " itemscope itemtype="http://schema.org/PaymentService">
+                                    
+
+
+
+
+
+<h4>
+<a href="https://www.globalpaymentsinc.com/en-us/company" >Company</a></h4>
+
+                                </div>
+                                <div class="link-section col-xs-12 footer-column " itemscope itemtype="http://schema.org/PaymentService">
+                                    
+
+
+
+
+
+
+
+    <h4 class="social-heading">
+Social    </h4>
+
+
+    <ul class="footer-social-links">
+                <li>
+<a href="https://www.facebook.com/GlobalPaymentsInc" rel="noopener noreferrer" target="_blank" itemprop="sameAs" ><img src="/-/media/global-payments/images/layout/footer/facebook_active.png?modified=20160921154530&amp;h=30&amp;w=30&amp;la=en&amp;hash=68FB7A93F2CA782F33A8CAB4A8703727" class="normal-image" alt="" /><img src="/-/media/global-payments/images/layout/footer/facebook.png?modified=20180911082312&amp;h=30&amp;w=30&amp;la=en&amp;hash=6963415F8004B177C8E05D5F85CD0CC0" class="hover-image" alt="SocialFB" /></a>
+
+                </li>
+                <li>
+<a href="https://twitter.com/GlobalPayInc" rel="noopener noreferrer" target="_blank" itemprop="sameAs" ><img src="/-/media/global-payments/images/layout/footer/twitter_active.png?modified=20160921154538&amp;h=30&amp;w=30&amp;la=en&amp;hash=62FE11D12777CC615511B2DC4E472C29" class="normal-image" alt="" /><img src="/-/media/global-payments/images/layout/footer/twitter.png?modified=20160920110410&amp;h=30&amp;w=30&amp;la=en&amp;hash=78118233A97BFE9180B68EB980EB8B8A" class="hover-image" alt="" /></a>
+
+                </li>
+                <li>
+<a href="https://www.youtube.com/channel/UCg9HiItBheBjWJcOBE8q9HQ" rel="noopener noreferrer" target="_blank" itemprop="sameAs" ><img src="/-/media/global-payments/images/layout/footer/youtube_active.png?modified=20160921154542&amp;h=30&amp;w=30&amp;la=en&amp;hash=0CAD3A15D58BA42E9246A928EF1C718E" class="normal-image" alt="" /><img src="/-/media/global-payments/images/layout/footer/youtube.png?modified=20160920110414&amp;h=30&amp;w=30&amp;la=en&amp;hash=A0D4C524654E3695131A2C7B88EA82EC" class="hover-image" alt="" /></a>
+
+                </li>
+                <li>
+<a href="https://www.linkedin.com/company/global-payments" rel="noopener noreferrer" target="_blank" itemprop="sameAs" ><img src="/-/media/global-payments/images/layout/footer/linkedin_active.png?modified=20161215231714&amp;h=30&amp;w=30&amp;la=en&amp;hash=7FE63F64B39389E5134733541920FE7B" class="normal-image" alt="LinkedIn" /><img src="/-/media/global-payments/images/layout/footer/linkedin.png?modified=20161215231659&amp;h=30&amp;w=30&amp;la=en&amp;hash=37566B3917AE662E79E089515D3505E1" class="hover-image" alt="LinkedIn" /></a>
+
+                </li>
+    </ul>
+
+                                </div>
+                </div>
+                                <div class="footer-bottom-content col-xs-12">
+                        <div class="footer-bottom-inner-content">
+                            <p>Global Payments Direct, Inc. is a registered ISO of Wells Fargo Bank, N.A., Concord, CA. <br />
+Global Payments Direct, Inc is a registered ISO of BMO Harris Bank N.A.<br />
+&copy; 2019 Global Payments Inc. All rights reserved. </p>
+
+                        </div>
+                    </div>
+
+            
+
+        </div>
+
+        
+
+        
+    </div>
+
+
+
+    </div>
+
+    <script src="/Presentation/includes/Platform/js/jquery-migrate-1.2.1.min.js?modified=20200306042046" language="javascript" type="text/javascript" ></script><script src="/Presentation/includes/Platform/js/jquery-ui.min.js?modified=20200306042046" language="javascript" type="text/javascript" ></script><script src="/Presentation/includes/Platform/js/bootstrap.min.js?modified=20200306042046" language="javascript" type="text/javascript" ></script><script src="/Presentation/includes/Platform/js/bootstrap-select.min.js?modified=20200306042046" language="javascript" type="text/javascript" ></script><script src="/Presentation/includes/Platform/js/awesomplete.min.js?modified=20200306042046" language="javascript" type="text/javascript" ></script><script src="/Presentation/includes/Platform/js/ion.rangeSlider.min.js?modified=20200306042046" language="javascript" type="text/javascript" ></script>
+
+    <script>
+        var $ = jQuery.noConflict();
+    </script>
+    <!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1711885822462948'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" 
+src="https://www.facebook.com/tr?id=1711885822462948&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+
+<script>
+window.onerror = function stoperror() { return true; };
+</script>
+
+
+<!-- Pardot Website Tracking Code -->
+<script type="text/javascript">
+piAId = '318471';
+piCId = '1045';
+piHostname = 'pi.pardot.com';
+
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+</script>
+<!-- Pardot Website Tracking Code -->
+
+
+
+<!-- Pingdom RUM Code -->
+<script src="//rum-static.pingdom.net/pa-58f8a86c85c96fc1ba50ab50.js" async></script>
+
+
+
+    <script src='https://www.google.com/recaptcha/api.js?onload=recaptchaInitCallback&render=explicit' async defer></script>
+    <script>
+        function recaptchaInitCallback() {
+            for (var i = 0; i < document.forms.length; i++) {
+                var $f = $(document.forms[i]);
+                var $c = $f.find('.g-recaptcha');
+                var c;
+                if ($c.length > 0) {
+                    c = $c[0];
+                    var recaptchaId = grecaptcha.render(c, { 'sitekey': $c.data('sitekey') });
+                    $f.data('recaptcha-id', recaptchaId);
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
