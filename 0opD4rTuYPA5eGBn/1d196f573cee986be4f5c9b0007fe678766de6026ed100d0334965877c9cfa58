@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://woocommerce.wordpress.com/xmlrpc.php">
+
+<title>WooCommerce Admin v0.14.0 &#8211; Develop WooCommerce</title>
+<link rel='dns-prefetch' href='//s1.wp.com' />
+<link rel='dns-prefetch' href='//s2.wp.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//wordpress.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Develop WooCommerce &raquo; Feed" href="https://woocommerce.wordpress.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Develop WooCommerce &raquo; Comments Feed" href="https://woocommerce.wordpress.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Develop WooCommerce &raquo; WooCommerce Admin v0.14.0 Comments Feed" href="https://woocommerce.wordpress.com/2019/07/02/woocommerce-admin-v0-14-0/feed/" />
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+			<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s0.wp.com\/wp-includes\/js\/wp-emoji-release.min.js?m=1582709031h&ver=5.4"}};
+			/*! This file is auto-generated */
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='all-css-0-1' href='https://s1.wp.com/_static/??-eJylU+1OwzAMfCHSrNtg4wfiWfphgrd8KXFW+va4TYfKYB1iqlTFju8uuuRk50XjLIElaZLwOim0UXa+cUZEgxr6i6poYnyQM9gZ85a0FhEJBLRIaNXEJneb5xV/W8ksxlnZYqRp/YNsdoYAuiJohXeRLqolmMYjRHkA8lVzFGN19cgqcVlDULwTQO6KXVHKOqFuZa3dCK9DFXoZqdfwB5oRNVOvepdIqIDtfylCNVgZb8Bve8+0KpuXFfItnBC6O0jhxPOMS5Za19k5869bd0id/SA0oNFCVrnsXhVo3ORrWaxXRSnGJ5058kaRDR4v/45jZoc1887NuOwuvd/hJXLf+IqGCcNKFWgwPLYE67BVwDnhkWktCD6WIWOs69oHiFHw32Aygt5ZazFhQ3SHy81JGwS/dTIUpXWEjI5fix+cWUr6VHNqrXJDAOZhezUv5eP+abvel5vV4RMCo7x0?cssminify=yes' type='text/css' media='all' />
+<style id='wp-block-library-inline-css'>
+.has-text-align-justify {
+	text-align:justify;
+}
+</style>
+<link crossorigin="anonymous" rel='stylesheet' id='lingonberry-fonts-css'  href='https://fonts.googleapis.com/css?family=Lato%3A400%2C400italic%2C700%2C700italic%7CRaleway%3A400%2C500%2C600&#038;subset=latin%2Clatin-ext' media='all' />
+<link rel='stylesheet' id='all-css-2-1' href='https://s0.wp.com/_static/??-eJx9Ue0KwjAMfCFr1Pn5Q3yWtsaumjWl6RDf3gwnKsLIj+Tg7npH4Z6N51QxVagtdiiQewcUU+DksJQHxORB6oPQ3LPnbu5FZvAl63qTqQ8xCQRkQ+xtjZx+gLmQjWVKWtARBz0DKOsLTomsH8ydLZ/rj/7mXnoiI7GiwXOsajy6wK45LHTWEIidVc7QVbSyJvfgyKbbVIbMUl/1QFpbhgLjnlIJ+6hvaUf+BX+i8Vfad76BcOqOy81+u17tl83i+gTrTagB?cssminify=yes' type='text/css' media='all' />
+<style id='jetpack-global-styles-frontend-style-inline-css'>
+:root { --font-headings: unset; --font-base: unset; --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}
+</style>
+<script>
+var related_posts_js_options = {"post_heading":"h4"};
+</script>
+<script type='text/javascript' src='https://s2.wp.com/_static/??-eJx9jMEOwjAMQ3+IruzABgfEt4wtVKmatDSNpv39ggSXHZAsWbae7dfikOekC4iPprdC3b7WRTn5f4AjDHVq0BHyD54zN+D2YSk/MYFTgToF6+zolY8cqStJA7L4CsnOFleytEOy1YPu/WXsb+dxGK5xB1+BRFU='></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://woocommerce.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress.com" />
+<link rel="canonical" href="https://woocommerce.wordpress.com/2019/07/02/woocommerce-admin-v0-14-0/" />
+<link rel='shortlink' href='https://wp.me/p6wtcw-1vk' />
+	<style>
+		@font-face {
+			font-family: Recoleta;
+			src: url('https://s1.wp.com/i/fonts/recoleta/400.woff2')
+		}
+	</style>
+	<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/?format=json&amp;url=https%3A%2F%2Fwoocommerce.wordpress.com%2F2019%2F07%2F02%2Fwoocommerce-admin-v0-14-0%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/?format=xml&amp;url=https%3A%2F%2Fwoocommerce.wordpress.com%2F2019%2F07%2F02%2Fwoocommerce-admin-v0-14-0%2F&amp;for=wpcom-auto-discovery" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="WooCommerce Admin v0.14.0" />
+<meta property="og:url" content="https://woocommerce.wordpress.com/2019/07/02/woocommerce-admin-v0-14-0/" />
+<meta property="og:description" content="We are happy to announce the availability of a new build of the WooCommerce Admin feature plugin! If this is the first time you have heard about WooCommerce Admin, it is a new JavaScript-driven int…" />
+<meta property="article:published_time" content="2019-07-02T02:58:07+00:00" />
+<meta property="article:modified_time" content="2019-07-02T02:58:07+00:00" />
+<meta property="og:site_name" content="Develop WooCommerce" />
+<meta property="og:image" content="https://woocommerce.files.wordpress.com/2019/07/custom-table-columns.png" />
+<meta property="og:image:width" content="542" />
+<meta property="og:image:height" content="331" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:creator" content="@woocommerce" />
+<meta name="twitter:site" content="@woocommerce" />
+<meta name="twitter:text:title" content="WooCommerce Admin v0.14.0" />
+<meta name="twitter:card" content="summary" />
+<meta property="fb:app_id" content="249643311490" />
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom" />
+<meta name="twitter:app:name:iphone" content="WordPress" />
+<meta name="twitter:app:id:iphone" content="335703880" />
+<meta name="twitter:app:name:ipad" content="WordPress" />
+<meta name="twitter:app:id:ipad" content="335703880" />
+<meta name="twitter:app:name:googleplay" content="WordPress" />
+<meta name="twitter:app:id:googleplay" content="org.wordpress.android" />
+<meta name="twitter:app:url:iphone" content="wordpress://viewpost?blogId=96396764&amp;postId=5786" />
+<meta name="twitter:app:url:ipad" content="wordpress://viewpost?blogId=96396764&amp;postId=5786" />
+<meta name="twitter:app:url:googleplay" content="wordpress://viewpost?blogId=96396764&amp;postId=5786" />
+
+<!-- End Jetpack Open Graph Tags -->
+<link rel="shortcut icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/84d6d0013fea0508f9db89e5b0ab64d9?s=32" sizes="16x16" />
+<link rel="icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/84d6d0013fea0508f9db89e5b0ab64d9?s=32" sizes="16x16" />
+<link rel="apple-touch-icon" href="https://secure.gravatar.com/blavatar/84d6d0013fea0508f9db89e5b0ab64d9?s=114" />
+<link rel='openid.server' href='https://woocommerce.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='https://woocommerce.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="https://woocommerce.wordpress.com/osd.xml" title="Develop WooCommerce" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com" />
+<meta name="application-name" content="Develop WooCommerce" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="The official WooCommerce development blog" /><meta name="msapplication-task" content="name=Subscribe;action-uri=https://woocommerce.wordpress.com/feed/;icon-uri=https://secure.gravatar.com/blavatar/84d6d0013fea0508f9db89e5b0ab64d9?s=16" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=https://s1.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=https://s1.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=https://s1.wp.com/i/favicon.ico" /><meta name="description" content="We are happy to announce the availability of a new build of the WooCommerce Admin feature plugin! If this is the first time you have heard about WooCommerce Admin, it is a new JavaScript-driven interface for managing your WooCommerce stores that is focusing on creating new and improved reports, and a dashboard to monitor all&hellip;" />
+<link rel="amphtml" href="https://woocommerce.wordpress.com/2019/07/02/woocommerce-admin-v0-14-0/amp/"><style type="text/css" id="custom-colors-css">@media screen and (max-width:770px){.blog-menu ul{background:transparent !important}}button:hover,.content .button:hover,button:focus,.content .button:focus,button:active,.content .button:active{color:#fff}.post-bubbles a:hover,.post-bubbles a:focus,.header,.header a,.header .site-title a{color:#fff}.post-navigation a:hover,.posts-navigation a:hover,.post-navigation a:focus,.posts-navigation a:focus,#infinite-handle span:hover{color:#fff}a#cancel-comment-reply-link:hover,.comment-actions a:hover,a#cancel-comment-reply-link:focus,.comment-actions a:focus{color:#fff}button,.button{background-color:#fff}body>.site-navigation,.format-link .content-inner,.nav-toggle,.nav-toggle:hover,.nav-toggle:focus,.nav-toggle:active{color:#fff}.format-link .post-content p,.format-link .post-content blockquote,.format-link .post-content blockquote cite{color:#fff}.blog-menu a,.blog-menu a:visited,.blog-menu li a:hover,.blog-menu li a:focus{color:#fff}.blog-menu>.menu-item-has-children>a:after{border-top-color:#fff}.blog-menu ul>.menu-item-has-children>a:after{border-left-color:#fff}.nav-toggle .bar,.nav-toggle.active .bar{background-color:#fff}.site-navigation .search-form #s{color:#fff}.post-navigation a,.posts-navigation a,.post-navigation a:visited,.posts-navigation a:visited{color:#fff}.content input#s:focus,.footer input#s:focus{color:#fff}.post-bubbles a,#infinite-handle span{color:#666}#infinite-footer,#infinite-footer .blog-info a,#infinite-footer .blog-credits a,.page-title{color:#666}.credits,.credits a,.credits a:visited{color:#666}.page-title span{color:#666}.format-link .post-meta,.format-link .post-meta a,.format-link .post-meta a:visited,.format-link .post-cat-tags{color:#9b9b9b}.format-quote .post-meta,.format-quote .post-meta a,.format-quote .post-meta a:visited,.format-quote .post-cat-tags{color:#9b9b9b}.format-link .content-inner,.format-quote .content-inner,.format-link .sd-title,.format-quote .sd-title{color:#9b9b9b}.format-quote h3.sd-title,.format-quote div.sharedaddy h3.sd-title,.format-quote div#jp-relatedposts h3.jp-relatedposts-headline{color:#9b9b9b}.format-link h3.sd-title,.format-link div.sharedaddy h3.sd-title,.format-link div#jp-relatedposts h3.jp-relatedposts-headline{color:#9b9b9b}.content:before{background-color:#ddd}.content:before{background-color:rgba(221,221,221,.2)}div.sharedaddy h3.sd-title::before{border-color:#ddd}div.sharedaddy h3.sd-title::before{border-color:rgba(221,221,221,.2)}.format-link .sep,.format-quote .sep{color:#ddd}.format-link .sep,.format-quote .sep{color:rgba(221,221,221,.2)}body,#infinite-footer{background-color:#f1f1f1}.post-bubbles a,#infinite-handle span{background-color:#e5e5e5}button:hover,.content .button:hover,button:focus,.content .button:focus,button:active,.content .button:active{background-color:#a46497}.header,.post-bubbles a:hover,.post-bubbles a:focus{background-color:#a46497}a#cancel-comment-reply-link:hover,.comment-actions a:hover,a#cancel-comment-reply-link:focus,.comment-actions a:focus{background-color:#a46497}.post-navigation a:hover,.posts-navigation a:hover,.post-navigation a:focus,.posts-navigation a:focus,#infinite-handle span:hover{background-color:#a46497}a,a:visited,a:hover,a:focus,a:active,.post-meta a:hover,.post-meta a:focus,.post-title a:focus,.post-title a:hover{color:#97588a}.format-link a,.format-link a:visited,.format-link a:active,.format-link a:hover,.format-link a:focus,.format-link .post-meta a:hover,.format-link .post-meta a:focus,.format-link .post-title a:focus,.format-link .post-title a:hover{color:#bb8bb1}.format-quote a,.format-quote a:visited,.format-quote a:active,.format-quote a:hover,.format-quote a:focus,.format-quote .post-meta a:hover,.format-quote .post-meta a:focus,.format-quote .post-title a:focus,.format-quote .post-title a:hover{color:#bb8bb1}.credits a:hover,.credits a:focus{color:#8d5381}button,.content .button{background-color:#303030}.header .site-title a:hover,.header .site-title a:focus{color:#fff}.blog-menu li a:hover,.blog-menu li a:focus,.blog-menu ul{background-color:#232323}.post-navigation{background-color:#303030}.header .site-logo.noimg:hover{background-color:#303030}.content input#s:focus,.footer input#s:focus{background-color:#303030}.content input#s:focus,.footer input#s:focus{border-color:#303030}.post-navigation a,.posts-navigation a{background-color:#232323}body>.site-navigation,.format-link .content-inner,.format-quote .content-inner,.nav-toggle.active,.nav-toggle,.nav-toggle:hover,.nav-toggle:focus,.nav-toggle:active{background-color:#303030}.format-link .content-inner:before,.format-link .content-inner:after{border-right-color:#303030}.format-quote .content-inner:before,.format-quote .content-inner:after{border-right-color:#303030}.site-navigation a{border-color:#232323}.format-quote .post-title a,.format-quote .post-title a:visited{color:#9b9b9b}.format-link .post-title a,.format-link .post-title a:visited{color:#9b9b9b}</style>
+		<link rel="stylesheet" id="custom-css-css" type="text/css" href="https://s0.wp.com/?custom-css=1&#038;csblog=6wtcw&#038;cscache=6&#038;csrev=12" />
+		</head>
+
+<body class="post-template-default single single-post postid-5786 single-format-standard customizer-styles-applied group-blog has-site-logo highlander-enabled highlander-light custom-colors">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<nav id="site-navigation" class="site-navigation" role="navigation">
+		<div class="navigation-inner section-inner clear">
+			<ul class="blog-menu"><li id="menu-item-237" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-237"><a href="https://github.com/woocommerce/woocommerce">GitHub</a></li>
+<li id="menu-item-238" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-238"><a href="https://woocommerceslack.herokuapp.com/">Slack Group</a></li>
+<li id="menu-item-239" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-239"><a href="https://docs.woocommerce.com/">Support</a></li>
+<li id="menu-item-374" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-374"><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">API</a></li>
+</ul>
+			<form role="search" method="get" class="search-form" action="https://woocommerce.wordpress.com/">
+	<!-- <label> -->
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" value="Type and press enter" onfocus="if(this.value=='Type and press enter')this.value='';" onblur="if(this.value=='')this.value='';" name="s" id="s" />
+	<!-- </label>  -->
+	<input type="submit" id="searchsubmit" value="Search" class="button hidden">
+</form>
+
+		</div><!--.navigation-inner section-inner-->
+	</nav><!-- #site-navigation -->
+
+	<div class="header section">
+		<div class="header-inner section-inner">
+		
+			<a href="https://woocommerce.wordpress.com/" class="site-logo-link" rel="home" itemprop="url"><img width="200" height="200" src="https://woocommerce.files.wordpress.com/2015/07/nfozhinr.png?w=200&amp;h=200&amp;crop=1" class="site-logo attachment-lingonberry-logo" alt="" data-size="lingonberry-logo" itemprop="logo" srcset="https://woocommerce.files.wordpress.com/2015/07/nfozhinr.png?w=200&amp;h=200&amp;crop=1 200w, https://woocommerce.files.wordpress.com/2015/07/nfozhinr.png 400w, https://woocommerce.files.wordpress.com/2015/07/nfozhinr.png?w=150&amp;h=150&amp;crop=1 150w, https://woocommerce.files.wordpress.com/2015/07/nfozhinr.png?w=300&amp;h=300&amp;crop=1 300w" sizes="(max-width: 200px) 100vw, 200px" data-attachment-id="241" data-permalink="https://woocommerce.wordpress.com/?attachment_id=241" data-orig-file="https://woocommerce.files.wordpress.com/2015/07/nfozhinr.png" data-orig-size="400,400" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="nFoZhINR" data-image-description="" data-medium-file="https://woocommerce.files.wordpress.com/2015/07/nfozhinr.png?w=300" data-large-file="https://woocommerce.files.wordpress.com/2015/07/nfozhinr.png?w=400" /></a>
+		
+			<div class="site-branding">
+				<h1 class="site-title"><a href="https://woocommerce.wordpress.com/" title="Develop WooCommerce" rel="home">Develop WooCommerce</a></h1>
+				<h2 class="site-description">The official WooCommerce development blog</h2>
+			</div>
+
+			<button class="nav-toggle" title="Menu">
+				<div class="bar"></div>
+				<span class="screen-reader-text">Menu</span>
+			</button><!-- .nav-toggle -->
+
+		</div><!-- .header-inner section-inner -->
+	</div><!-- .header section -->
+
+	<div id="content" class="site-content">
+
+<div class="content section-inner">
+	<div id="post-5786" class="post-5786 post type-post status-publish format-standard hentry category-wc-admin tag-2147061 tag-3340679 tag-3723712 tag-3506396 tag-2228084 tag-3328741 tag-2365715 tag-2519941 tag-4820262 tag-2254598 tag-2019011 tag-239232 tag-3374980 tag-1835084 tag-3464656 tag-3348326 tag-2872898 tag-3359430 tag-3309061 tag-3448587 tag-core">
+				<div class="posts clear">
+
+			
+	<div class="post-bubbles">
+
+		<a href="https://woocommerce.wordpress.com/2019/07/02/woocommerce-admin-v0-14-0/" class="format-bubble" title="WooCommerce Admin v0.14.0"><span class="screen-reader-text">WooCommerce Admin v0.14.0 &mdash; July 2, 2019</span></a>
+
+	</div><!-- .post-bubbles -->
+<!-- Calls out post bubbles-->
+
+<article class="content-inner" id="post-5786" class="post-5786 post type-post status-publish format-standard hentry category-wc-admin tag-2147061 tag-3340679 tag-3723712 tag-3506396 tag-2228084 tag-3328741 tag-2365715 tag-2519941 tag-4820262 tag-2254598 tag-2019011 tag-239232 tag-3374980 tag-1835084 tag-3464656 tag-3348326 tag-2872898 tag-3359430 tag-3309061 tag-3448587 tag-core">
+	<div class="post-header">
+
+							<!-- Calls out featured image with optional caption-->
+		
+			<h2 class="post-title"><a href="https://woocommerce.wordpress.com/2019/07/02/woocommerce-admin-v0-14-0/" rel="bookmark">WooCommerce Admin v0.14.0</a></h2>
+		
+			<div class="post-meta"><span class="posted-on"><a href="https://woocommerce.wordpress.com/2019/07/02/woocommerce-admin-v0-14-0/" title="3:58 am" rel="bookmark"><time class="entry-date published" datetime="2019-07-02T03:58:07+01:00">July 2, 2019</time></a></span><span class="byline"><span class="sep">/</span><span class="author vcard"><a class="url fn n" href="https://woocommerce.wordpress.com/author/timmydcrawford/" title="View all posts by Timmy Crawford">Timmy Crawford</a></span></span></div><!-- Calls out author and date-->
+
+			</div><!-- .post-header -->
+
+			<div class="post-content">
+			
+<p>We are happy to announce the availability of a new build of the <a href="https://wordpress.org/plugins/woocommerce-admin/">WooCommerce Admin feature plugin</a>! If this is the first time you have heard about WooCommerce Admin, it is a new JavaScript-driven interface for managing your WooCommerce stores that is focusing on creating new and improved reports, and a dashboard to monitor all the important key metrics of your site.</p>
+
+
+
+<span id="more-5786"></span>
+
+
+
+<p>You can download version v0.14.0 in the <a href="https://wordpress.org/plugins/woocommerce-admin/">plugin repository</a> or via GitHub <a href="https://github.com/woocommerce/wc-admin/releases/tag/v0.14.0">right here</a>. If you do test out the plugin, and have some feedback – please do open an issue in the&nbsp;<a href="https://github.com/woocommerce/woocommerce-admin/issues/new/choose">GitHub repository</a>, or reach out to us in the #core channel on WooCommerce slack.</p>
+
+
+
+<h2>🎉 200k+ Active Installs</h2>
+
+
+
+<p>First off, I wanted to say thank you for everyone who has installed WooCommerce Admin. This past week we passed the 200k install milestone on the WordPress Plugin Repository. We value all the feedback being given too ( the good and the critical ) so thanks for your time in testing, and reaching out with bug reports, feedback, and feature requests.</p>
+
+
+
+<h2>New Extensibility Option / Example</h2>
+
+
+
+<p>As part of this latest release, we have added in another extensibility option to WooCommerce Admin &#8211; the ability to add table columns to any report.</p>
+
+
+
+<figure class="wp-block-image"><img data-attachment-id="5787" data-permalink="https://woocommerce.wordpress.com/custom-table-columns/" data-orig-file="https://woocommerce.files.wordpress.com/2019/07/custom-table-columns.png" data-orig-size="542,331" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="custom-table-columns" data-image-description="" data-medium-file="https://woocommerce.files.wordpress.com/2019/07/custom-table-columns.png?w=300" data-large-file="https://woocommerce.files.wordpress.com/2019/07/custom-table-columns.png?w=542" src="https://woocommerce.files.wordpress.com/2019/07/custom-table-columns.png" alt="" class="wp-image-5787" /><figcaption>See how to add ID and Rating to the Products report!</figcaption></figure>
+
+
+
+<p>This is the third example plugin that is available for the tinkering in our <a href="https://github.com/woocommerce/woocommerce-admin/tree/master/docs/examples/extensions">examples directory in the project</a>. Using the npm command <code>npm run example -- --ext=table-column</code> will install the example code as a plugin on your test environment. This new example code will show you how to add columns, and modify the REST API response to include the data used in the table.</p>
+
+
+
+<p>If you have an idea on how you would like to extend WooCommerce Admin, be sure to let us know!</p>
+
+
+
+<h2>Changelog</h2>
+
+
+
+<p>The balance of the release was focused on fixing bugs and optimizing WooCommerce Admin.</p>
+
+
+
+<div class="wp-block-jetpack-markdown"><ul>
+<li>Dev: Action Scheduler: fix potential endless sync #2425</li>
+<li>Dev: Fix Activity Panel being overlapped by editor toolbar #2446 (Activity Panel)</li>
+<li>Bug: add match=any support for advanced orders table filter #2228</li>
+<li>Dev: update tested to version in plugin repo readme.txt #2443</li>
+<li>Fix: PHP errors on missing refund orders during import. #2464 (Analytics)</li>
+<li>Dev: Allow keyboard interaction in Stock Activity Panel form #2447 (Accessibility, Activity Panel)</li>
+<li>Dev: Activity Panels: Add track event when panels are opened. #2498 (Build)</li>
+<li>Dev: Add wp-api-fetch script to dependencies #2460</li>
+<li>Dev: Remove the &quot;wpClosedMenu&quot; page setting #2441 (Build)</li>
+<li>Enhancement: Report Tables: Add example extension #2440 (Build, Components, Extensibility, Packages)</li>
+<li>Fix: fix type in readme changelog for 0.13.0 #2457 (Documentation)</li>
+<li>Tweak: Add test to catch missing version updates. #2424 (Build)</li>
+<li>Dev: Fix revenue and orders charts using the wrong endpoint in the Dashboard #2417 (Dashboard)</li>
+<li>Fix: handle internal <code>rest_do_request()</code> error conditions. #2423 (Dashboard)</li>
+<li>Dev: Fix conflicts with WordPress.com toolbar #2431 (Activity Panel)</li>
+<li>Task: Remove test menu from Orders panel #2438 (Activity Panel)</li>
+<li>Dev: Table queries: remove befor/after from no interval endpoints #2422</li>
+<li>Tweak: Reduce style dependencies on WP core, avoid errantly including WP core&#8217;s Google Fonts. #2432 (Components)</li>
+<li>Dev: Update Dashboard Charts naming and order #2429 (Dashboard)</li>
+<li>Bug: Fix search bar in Orders page not being tapable on mobile #2384</li>
+</ul>
+</div>
+
+
+
+<h2>Thank You, and What&#8217;s Next?</h2>
+
+
+
+<p>First a big <strong>THANK YOU</strong> to everyone that has downloaded a release to test, and also to those of you who have reported bugs. Your input is extremely valuable to us, so please keep testing and let us know if we can help!</p>
+
+
+
+<p>The team is primarily focused on bug fixes, and some REST API enhancements. If you would like to see more details about what we are working on, please visit our <a href="https://github.com/orgs/woocommerce/projects/2">project board on GitHub</a>.</p>
+
+
+
+<p>The next release of WooCommerce Admin is slated for Wednesday, July 10.</p>
+<div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-96396764-5786-5e917f515c295' data-src='//widgets.wp.com/likes/index.html?ver=20190321#blog_id=96396764&amp;post_id=5786&amp;origin=woocommerce.wordpress.com&amp;obj_id=96396764-5786-5e917f515c295' data-name='like-post-frame-96396764-5786-5e917f515c295'><h3 class='sd-title'>Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
+<div id='jp-relatedposts' class='jp-relatedposts' >
+	
+</div></div>					</div><!-- .entry-content -->
+	
+				<div class="post-cat-tags">
+		<span class="post-categories">Categories: <a href="https://woocommerce.wordpress.com/category/wc-admin/" rel="category tag">wc-admin</a></span><span class="post-tags">Tags: <a href="https://woocommerce.wordpress.com/tag/2228/" rel="tag">2228</a>, <a href="https://woocommerce.wordpress.com/tag/2384/" rel="tag">2384</a>, <a href="https://woocommerce.wordpress.com/tag/2417/" rel="tag">2417</a>, <a href="https://woocommerce.wordpress.com/tag/2422/" rel="tag">2422</a>, <a href="https://woocommerce.wordpress.com/tag/2423/" rel="tag">2423</a>, <a href="https://woocommerce.wordpress.com/tag/2424/" rel="tag">2424</a>, <a href="https://woocommerce.wordpress.com/tag/2425/" rel="tag">2425</a>, <a href="https://woocommerce.wordpress.com/tag/2429/" rel="tag">2429</a>, <a href="https://woocommerce.wordpress.com/tag/2431/" rel="tag">2431</a>, <a href="https://woocommerce.wordpress.com/tag/2432/" rel="tag">2432</a>, <a href="https://woocommerce.wordpress.com/tag/2438/" rel="tag">2438</a>, <a href="https://woocommerce.wordpress.com/tag/2440/" rel="tag">2440</a>, <a href="https://woocommerce.wordpress.com/tag/2441/" rel="tag">2441</a>, <a href="https://woocommerce.wordpress.com/tag/2443/" rel="tag">2443</a>, <a href="https://woocommerce.wordpress.com/tag/2446/" rel="tag">2446</a>, <a href="https://woocommerce.wordpress.com/tag/2447/" rel="tag">2447</a>, <a href="https://woocommerce.wordpress.com/tag/2457/" rel="tag">2457</a>, <a href="https://woocommerce.wordpress.com/tag/2460/" rel="tag">2460</a>, <a href="https://woocommerce.wordpress.com/tag/2464/" rel="tag">2464</a>, <a href="https://woocommerce.wordpress.com/tag/2498/" rel="tag">2498</a>, <a href="https://woocommerce.wordpress.com/tag/core/" rel="tag">Core</a></span>	</div>
+	
+</article><!-- .content-inner -->
+
+			
+	<nav class="navigation post-navigation" role="navigation" aria-label="Posts">
+		<h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="https://woocommerce.wordpress.com/2019/06/27/dev-chat-28-notes/" rel="prev">Dev Chat #28&nbsp;Notes</a></div><div class="nav-next"><a href="https://woocommerce.wordpress.com/2019/07/02/new-minimum-requirements-in-woocommerce-3-7/" rel="next">New minimum requirements in WooCommerce&nbsp;3.7</a></div></div>
+	</nav>
+			
+<div class="comments" id="comments-section">
+	
+			<h2 class="comments-title">
+				One thought on &ldquo;<span>WooCommerce Admin v0.14.0</span>&rdquo;			</h2><!-- .comments-title -->
+
+			<ol class="commentlist">
+			
+	<li class="comment byuser comment-author-daigo75 even thread-even depth-1 highlander-comment" id="li-comment-5896">
+		<div id="comment-5896" class="comment">
+			<div class="comment-meta comment-author vcard">
+					<img alt='' src='https://1.gravatar.com/avatar/70057bdbec61dbb08310303a447c5efc?s=32&#038;d=retro&#038;r=G' class='avatar avatar-32' height='32' width='32' />
+					<div class="comment-meta-content">
+					<cite class="fn"><a href='http://dev.pathtoenlightenment.net' rel='external nofollow ugc' class='url'>diego.zanella</a> </cite>
+					<p><a href="https://woocommerce.wordpress.com/2019/07/02/woocommerce-admin-v0-14-0/#comment-5896">
+						<time datetime="2019-07-02T09:40:42+01:00">
+							July 2, 2019 &mdash; 9:40 am						</time>
+					</a></p>
+
+				</div><!-- .comment-metadata-content -->
+
+				
+				<div class="comment-actions">
+
+					
+					
+				</div> <!-- /comment-actions -->
+
+				<div class="clear"></div>
+
+
+			</div><!-- .comment-meta comment-author vcard -->
+
+			<div class="comment-content">
+				<p>That&#8217;s really good progress. I would love to see a way to extend the UI, such as adding filters and options to generate reports, as well as a way to alter the queries that produce the reports themselves, like I&#8217;m doing now with the &#8220;default&#8221; sales reports. 🙂</p>
+<p id="comment-like-5896" data-liked=comment-not-liked class="comment-likes comment-not-liked"><a href="https://woocommerce.wordpress.com/2019/07/02/woocommerce-admin-v0-14-0/?like_comment=5896&#038;_wpnonce=8bd02c4107" class="comment-like-link needs-login" rel="nofollow" data-blog="96396764"><span>Like</span></a><span id="comment-like-count-5896" class="comment-like-feedback">Liked by <a href="#" class="view-likers" data-like-count="1">1 person</a></span></p>
+			</div><!-- .comment-content -->
+
+
+
+	</li><!-- #comment-## -->
+
+			</ol><!-- .commentlist -->
+
+				<div class="pingbacks">
+
+					<div class="pingbacks-inner">
+
+						<h3 class="pingbacks-title">
+							0 Pingbacks						</h3><!-- .pingbacks-title -->
+
+						<ol class="pingbacklist">
+													</ol><!-- .pingbacklist -->
+
+					</div><!-- .pingbacks-inner -->
+
+				</div><!-- .pingbacks -->
+
+			
+	
+					<p class="no-comments">Comments are closed.</p>
+		
+		
+</div><!-- #comments-section -->
+
+				</div><!--posts-->
+	</div><!--.post-->
+</div><!-- .content section-inner -->
+
+
+	</div><!-- #content -->
+
+	<div class="footer section">
+	<div class="footer-inner section-inner">
+	<!-- Calls out three columns of footer widgets. See functions.php-->
+		<div id="footer-widgets" class="widget-area three">
+			<div id="secondary" class="widget-area" role="complementary">
+									<div id="sidebar-one">
+						<div id="blog_subscription-5" class="widgets widget_blog_subscription jetpack_subscription_widget"><div class="widget-content"><h3 class="widget-title"><label for="subscribe-field">Follow Blog via Email</label></h3>
+            <form action="https://subscribe.wordpress.com" method="post" accept-charset="utf-8"
+                  id="subscribe-blog">
+									<p>Enter your email address to follow this blog and receive notifications of new posts by email.</p>
+                    <p><input type="text" name="email" style="width: 95%; padding: 1px 10px"
+                              placeholder="Enter your email address" value=""
+                              id="subscribe-field"/></p>
+				
+                <p>
+                    <input type="hidden" name="action" value="subscribe"/>
+                    <input type="hidden" name="blog_id" value="96396764"/>
+                    <input type="hidden" name="source" value="https://woocommerce.wordpress.com/2019/07/02/woocommerce-admin-v0-14-0/"/>
+                    <input type="hidden" name="sub-type" value="widget"/>
+                    <input type="hidden" name="redirect_fragment" value="blog_subscription-5"/>
+					<input type="hidden" id="_wpnonce" name="_wpnonce" value="3e92c8d65c" />                    <button type="submit"
+	                    		                	                >
+	                    Follow                    </button>
+                </p>
+            </form>
+			
+</div></div><div id="follow_button_widget-6" class="widgets widget_follow_button_widget"><div class="widget-content">
+		<a class="wordpress-follow-button" href="https://woocommerce.wordpress.com" data-blog="96396764" data-lang="en" data-show-follower-count="true">Follow Develop WooCommerce on WordPress.com</a>
+		<script type="text/javascript">(function(d){var f = d.getElementsByTagName('SCRIPT')[0], p = d.createElement('SCRIPT');p.type = 'text/javascript';p.async = true;p.src = '//widgets.wp.com/platform.js';f.parentNode.insertBefore(p,f);}(document));</script>
+
+		</div></div>					</div><!-- #sidebar-one -->
+				
+									<div id="sidebar-two">
+						<div id="text-3" class="widgets widget_text"><div class="widget-content"><h3 class="widget-title">About</h3>			<div class="textwidget"><p>This is the official blog for WooCommerce development. Here you can keep track of everything that is happening with the plugin, including development decisions and scoping of future versions.</p>
+<p><a href="https://woocommerce.wordpress.com/about/" class="button">Rules/Guidelines</a></p>
+</div>
+		</div></div>					</div><!-- #sidebar-two -->
+				
+							</div><!-- #secondary -->
+		</div><!-- #footer-widgets -->
+	</div><!-- .footer-inner section-inner -->
+</div><!-- .footer section -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="credits section">
+			<div class="credits-inner section-inner">
+				<a href="https://wordpress.com/?ref=footer_blog" rel="nofollow">Blog at WordPress.com.</a>
+				
+							</div><!-- .credits-inner section-inner -->
+		</div><!-- .scredits section -->
+	</footer><!-- #colophon -->
+
+<!--  -->
+			<!-- A8C Analytics [start] -->
+			<script type="text/javascript">
+				( function() {
+					'use strict';
+
+					var setupAnalytics = function() {
+						var $ = window.jQuery;
+						if ( ! $ ) return; // No jQuery.
+
+						window.a8cAnalyticsConfig = {"cookieBanner":{"text":"Our websites and dashboards use cookies. By continuing, you agree to their use. <a target=\"_blank\" href=\"https:\/\/automattic.com\/cookies\">Learn more<\/a>, including how to control cookies.","buttonText":"Got It!","cookieName":"sensitive_pixel_option","skipBanner":false,"cssZIndex":50001,"cookieDomain":"wordpress.com"},"fireAnalyticsOptions":[]};
+					};
+
+					if ( window.defQueue && defQueue.isLOHP && defQueue.isLOHP === 2020 ) {
+						defQueue.items.push( setupAnalytics );
+					} else {
+						setupAnalytics();
+					}
+				} )();
+			</script>
+
+			
+<script type="text/javascript">
+	$document = jQuery( window.document );
+	$document.on( 'a8c-analytics:loaded', function() {
+		'use strict';
+
+		var kit = window.a8cAnalytics.kit;
+
+		if ( kit.doNotTrack() ) {
+			return;
+		}
+
+		function fireGoogleAnalytics() {
+			kit.loadGoogleAnalytics();
+			ga( 'create', 'UA-10673494-34', 'auto' );
+
+			ga( 'set', 'transport', 'function' === typeof navigator.sendBeacon ? 'beacon' : 'xhr' );
+			ga( 'set', 'anonymizeIp', true );
+
+			ga( 'send', 'pageview' );
+		}
+
+		// ------- Fire Normal Pixels -------
+
+				fireGoogleAnalytics();
+
+		// ------- Fire Sensitive Pixels -------
+
+		/* none for now
+		$document.on( 'a8c-analytics:fire-sensitive-pixels', function() {
+		} );
+		*/
+	} );
+</script>
+
+			<script type="text/javascript">
+				( function() {
+					'use strict';
+
+					var setupAnalytics = function() {
+						var $ = window.jQuery;
+						if ( ! $ ) return; // No jQuery.
+
+													$.ajax( {
+								async: true,
+								cache: true,
+								dataType: 'script',
+								url: "https:\/\/s1.wp.com\/wp-content\/mu-plugins\/a8c-analytics\/a8c-analytics.js?v=1586367077",
+							} );
+											};
+
+					if ( window.defQueue && defQueue.isLOHP && defQueue.isLOHP === 2020 ) {
+						defQueue.items.push( setupAnalytics );
+					} else {
+						setupAnalytics();
+					}
+				} )();
+			</script>
+			<!-- A8C Analytics [end] -->
+		<script src='//0.gravatar.com/js/gprofiles.js?ver=202015y'></script>
+<script>
+var WPGroHo = {"my_hash":""};
+</script>
+<script type='text/javascript' src='https://s1.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1380573781h'></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+
+			if (typeof Gravatar === "undefined"){
+				return;
+			}
+
+			if ( typeof Gravatar.init !== "function" ) {
+				return;
+			}			
+
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	<div class="grofile-hash-map-70057bdbec61dbb08310303a447c5efc">
+	</div>
+	</div>
+
+	<div id="carousel-reblog-box">
+		<form action="#" name="carousel-reblog">
+			<textarea id="carousel-reblog-content" name="carousel-reblog-content" placeholder="Add your thoughts here... (optional)"></textarea>
+			<label for="carousel-reblog-to-blog-id" id="carousel-reblog-lblogid">Post to</label>
+			<select name="carousel-reblog-to-blog-id" id="carousel-reblog-to-blog-id">
+						</select>
+
+			<div class="submit">
+				<span class="canceltext"><a href="#" class="cancel">Cancel</a></span>
+				<input type="submit" name="carousel-reblog-submit" class="button" id="carousel-reblog-submit" value="Reblog Post" />
+				<input type="hidden" id="carousel-reblog-blog-id" value="96396764" />
+				<input type="hidden" id="carousel-reblog-blog-url" value="https://woocommerce.wordpress.com" />
+				<input type="hidden" id="carousel-reblog-blog-title" value="Develop WooCommerce" />
+				<input type="hidden" id="carousel-reblog-post-url" value="" />
+				<input type="hidden" id="carousel-reblog-post-title" value="" />
+			</div>
+
+			<input type="hidden" id="_wpnonce" name="_wpnonce" value="1c297dce10" /><input type="hidden" name="_wp_http_referer" value="/2019/07/02/woocommerce-admin-v0-14-0/" />		</form>
+
+		<div class="arrow"></div>
+	</div>
+<link rel='stylesheet' id='all-css-0-2' href='https://s0.wp.com/_static/??/wp-content/plugins/gutenberg-blocks/jetpack-layout-grid/blocks/front.css,/wp-content/mu-plugins/carousel/jetpack-carousel.css?m=1583834955j&cssminify=yes' type='text/css' media='all' />
+<script>
+var comment_like_text = {"loading":"Loading..."};
+</script>
+<script>
+var actionbardata = {"siteID":"96396764","siteName":"Develop WooCommerce","siteURL":"http:\/\/woocommerce.wordpress.com","icon":"<img alt='' src='https:\/\/secure.gravatar.com\/blavatar\/84d6d0013fea0508f9db89e5b0ab64d9?s=50&d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png' class='avatar avatar-50' height='50' width='50' \/>","canManageOptions":"","canCustomizeSite":"","isFollowing":"","themeSlug":"pub\/lingonberry","signupURL":"https:\/\/wordpress.com\/start\/","loginURL":"https:\/\/wordpress.com\/log-in?redirect_to=https%3A%2F%2Fwoocommerce.wordpress.com%2F2019%2F07%2F02%2Fwoocommerce-admin-v0-14-0%2F&signup_flow=account","themeURL":"https:\/\/wordpress.com\/theme\/lingonberry\/","xhrURL":"https:\/\/woocommerce.wordpress.com\/wp-admin\/admin-ajax.php","nonce":"85fe1fa95b","isSingular":"1","isFolded":"","isLoggedIn":"","isMobile":"","subscribeNonce":"<input type=\"hidden\" id=\"_wpnonce\" name=\"_wpnonce\" value=\"3e92c8d65c\" \/>","referer":"https:\/\/woocommerce.wordpress.com\/2019\/07\/02\/woocommerce-admin-v0-14-0\/","canFollow":"1","feedID":"36396555","statusMessage":"","customizeLink":"https:\/\/woocommerce.wordpress.com\/wp-admin\/customize.php?url=https%3A%2F%2Fwoocommerce.wordpress.com%2F2019%2F07%2F02%2Fwoocommerce-admin-v0-14-0%2F","postID":"5786","shortlink":"https:\/\/wp.me\/p6wtcw-1vk","canEditPost":"","editLink":"https:\/\/wordpress.com\/post\/woocommerce.wordpress.com\/5786","statsLink":"https:\/\/wordpress.com\/stats\/post\/5786\/woocommerce.wordpress.com","i18n":{"view":"View site","follow":"Follow","following":"Following","edit":"Edit","login":"Log in","signup":"Sign up","customize":"Customize","report":"Report this content","themeInfo":"Get theme: Lingonberry","shortlink":"Copy shortlink","copied":"Copied","followedText":"New posts from this site will now appear in your <a href=\"https:\/\/wordpress.com\/read\">Reader<\/a>","foldBar":"Collapse this bar","unfoldBar":"Expand this bar","editSubs":"Manage subscriptions","viewReader":"View site in Reader","viewReadPost":"View post in Reader","subscribe":"Sign me up","enterEmail":"Enter your email address","followers":"Join 30,023 other followers","alreadyUser":"Already have a WordPress.com account? <a href=\"https:\/\/wordpress.com\/log-in?redirect_to=https%3A%2F%2Fwoocommerce.wordpress.com%2F2019%2F07%2F02%2Fwoocommerce-admin-v0-14-0%2F&signup_flow=account\">Log in now.<\/a>","stats":"Stats"}};
+</script>
+<script>
+var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_in":"","lang":"en","ajaxurl":"https:\/\/woocommerce.wordpress.com\/wp-admin\/admin-ajax.php","nonce":"dd8748d4b0","display_exif":"1","display_geo":"1","single_image_gallery":"1","single_image_gallery_media_file":"","background_color":"black","comment":"Comment","post_comment":"Post Comment","write_comment":"Write a Comment...","loading_comments":"Loading Comments...","download_original":"View full size <span class=\"photo-size\">{0}<span class=\"photo-size-times\">\u00d7<\/span>{1}<\/span>","no_comment_text":"Please be sure to submit some text with your comment.","no_comment_email":"Please provide an email address to comment.","no_comment_author":"Please provide your name to comment.","comment_post_error":"Sorry, but there was an error posting your comment. Please try again later.","comment_approved":"Your comment was approved.","comment_unapproved":"Your comment is in moderation.","camera":"Camera","aperture":"Aperture","shutter_speed":"Shutter Speed","focal_length":"Focal Length","copyright":"Copyright","comment_registration":"0","require_name_email":"1","login_url":"https:\/\/woocommerce.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fwoocommerce.wordpress.com%2F2019%2F07%2F02%2Fwoocommerce-admin-v0-14-0%2F","blog_id":"96396764","meta_data":["camera","aperture","shutter_speed","focal_length","copyright"],"local_comments_commenting_as":"<fieldset><label for=\"email\">Email (Required)<\/label> <input type=\"text\" name=\"email\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-email-field\" \/><\/fieldset><fieldset><label for=\"author\">Name (Required)<\/label> <input type=\"text\" name=\"author\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-author-field\" \/><\/fieldset><fieldset><label for=\"url\">Website<\/label> <input type=\"text\" name=\"url\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-url-field\" \/><\/fieldset>","reblog":"Reblog","reblogged":"Reblogged","reblog_add_thoughts":"Add your thoughts here... (optional)","reblogging":"Reblogging...","post_reblog":"Post Reblog","stats_query_args":"blog=96396764&v=wpcom&tz=1&user_id=0&subd=woocommerce","is_public":"1","reblog_enabled":""};
+</script>
+<script type='text/javascript' src='https://s0.wp.com/_static/??-eJydU1tywyAMvFAJSZO26UenZ8FYdmRjoAjspqevXMep43j6yPCBZiXtrMQiOy+0sxFslBXJHFrU4N9XFd3Jy5R3FBsgUiWMWbTapBzoqxMpyhZs7kKf8s4cCzRm1aCdk3mTSrQki2SMIIwgIMeIthRDRj5tn9d8dlK7pnF24B7iBWHVW4JwPF0rtC1C92tZBdErXYsAhB8wL2+SGEUarHlAbkpwUDY3EG4fJzOOQd4jCQ51fVragt6JgH5uhsQgpOoVZZI69D+pvmq6AG6fANqeRLtkY+46expjhs7p4wHYONKnjLXb0tkMQv8SJEvjMmX+Xk81eh7B1qJwOpEo8MqpkyWonM0nMhVkoyhC4Ei4lrmw9+wZ+ydDDOybqxVOm3RE1sxN52jpw5D//hlT/NKn06qld1bBJQIjRz+PAPe8Ni+bh/3j7n6/2a6rTyOtdTE='></script>
+<script type='text/javascript'>
+( 'fetch' in window ) || document.write( '<script src="https://s0.wp.com/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?m=1573572739h&#038;ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="https://s1.wp.com/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?m=1540208548h&#038;ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://s0.wp.com/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?m=1585663916h&#038;ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://s2.wp.com/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?m=1585663916h&#038;ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://s1.wp.com/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?m=1550600082h&#038;ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://s2.wp.com/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?m=1540208548h&#038;ver=2.0.2"></scr' + 'ipt>' );
+</script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script>		<iframe src='https://widgets.wp.com/likes/master.html?ver=20190321#ver=20190321' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+		<div id='likes-other-gravatars'><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+<script src="//stats.wp.com/w.js?61" type="text/javascript" async defer></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'96396764','blog_tz':'1','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'96396764','v':'wpcom','tz':'1','user_id':'0','post':'5786','subd':'woocommerce'}]);
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1lSiYrZXhzUkM5fD1uTDNLUGt6QzVbd3FKb3Q4aWxFU0VMK3ppSU9RRkVyRmw/bFF4N29ZdnF3Lnxoc0xRaWorQ09SJS14UzNlbj9xNTEsMWpEXXhteC81MkJbV2VOVE0zQUJFTlFOL3VddXExbCVOXT05PUYmPzEwSVlNP0dEVDdwV3ZsZFslYzQ4aGhRLG52UnwlV0NYQ0NWeUpmbG9UR09Ndi1oTngtYVJmYkwvd1lvOV9FemkvUCY2VmhLSnJBNiZFdFQ4XzJySEpIekhmU21SZ214NnZXPTd2TEtrcjBkY0d4c1czeGhdOW81LlhKc0Z0P2czcVtfaFZjaE9aXVclNyxBOFg2LnlvZFd0MmI9aUdDUWs5U09GQj1kfHY3K1ZILjd+Zz8mfGlWbzhTWkRwdmhvZXM0OHpCJXRTPTJ5T1duOUZ+ZHpZOCZHTHEyQWFJTHM='}]);
+_stq.push([ 'clickTrackerInit', '96396764', '5786' ]);
+	</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
+</body>
+</html>
