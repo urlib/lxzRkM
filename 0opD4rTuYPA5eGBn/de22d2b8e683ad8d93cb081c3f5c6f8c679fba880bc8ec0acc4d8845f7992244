@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://woocommerce.wordpress.com/xmlrpc.php">
+
+<title>Storefront 2.5.5 release notes &#8211; Develop WooCommerce</title>
+<link rel='dns-prefetch' href='//s1.wp.com' />
+<link rel='dns-prefetch' href='//s2.wp.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//wordpress.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Develop WooCommerce &raquo; Feed" href="https://woocommerce.wordpress.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Develop WooCommerce &raquo; Comments Feed" href="https://woocommerce.wordpress.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Develop WooCommerce &raquo; Storefront 2.5.5 release&nbsp;notes Comments Feed" href="https://woocommerce.wordpress.com/2020/02/28/storefront-2-5-5-release-notes/feed/" />
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+			<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s0.wp.com\/wp-includes\/js\/wp-emoji-release.min.js?m=1582709031h&ver=5.4"}};
+			/*! This file is auto-generated */
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='all-css-0-1' href='https://s1.wp.com/_static/??-eJylU+1OwzAMfCHSrNtg4wfiWfphgrd8KXFW+va4TYfKYB1iqlTFju8uuuRk50XjLIElaZLwOim0UXa+cUZEgxr6i6poYnyQM9gZ85a0FhEJBLRIaNXEJneb5xV/W8ksxlnZYqRp/YNsdoYAuiJohXeRLqolmMYjRHkA8lVzFGN19cgqcVlDULwTQO6KXVHKOqFuZa3dCK9DFXoZqdfwB5oRNVOvepdIqIDtfylCNVgZb8Bve8+0KpuXFfItnBC6O0jhxPOMS5Za19k5869bd0id/SA0oNFCVrnsXhVo3ORrWaxXRSnGJ5058kaRDR4v/45jZoc1887NuOwuvd/hJXLf+IqGCcNKFWgwPLYE67BVwDnhkWktCD6WIWOs69oHiFHw32Aygt5ZazFhQ3SHy81JGwS/dTIUpXWEjI5fix+cWUr6VHNqrXJDAOZhezUv5eP+abvel5vV4RMCo7x0?cssminify=yes' type='text/css' media='all' />
+<style id='wp-block-library-inline-css'>
+.has-text-align-justify {
+	text-align:justify;
+}
+</style>
+<link crossorigin="anonymous" rel='stylesheet' id='lingonberry-fonts-css'  href='https://fonts.googleapis.com/css?family=Lato%3A400%2C400italic%2C700%2C700italic%7CRaleway%3A400%2C500%2C600&#038;subset=latin%2Clatin-ext' media='all' />
+<link rel='stylesheet' id='all-css-2-1' href='https://s0.wp.com/_static/??-eJx9Ue0KwjAMfCFr1Pn5Q3yWtsaumjWl6RDf3gwnKsLIj+Tg7npH4Z6N51QxVagtdiiQewcUU+DksJQHxORB6oPQ3LPnbu5FZvAl63qTqQ8xCQRkQ+xtjZx+gLmQjWVKWtARBz0DKOsLTomsH8ydLZ/rj/7mXnoiI7GiwXOsajy6wK45LHTWEIidVc7QVbSyJvfgyKbbVIbMUl/1QFpbhgLjnlIJ+6hvaUf+BX+i8Vfad76BcOqOy81+u17tl83i+gTrTagB?cssminify=yes' type='text/css' media='all' />
+<style id='jetpack-global-styles-frontend-style-inline-css'>
+:root { --font-headings: unset; --font-base: unset; --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}
+</style>
+<script>
+var related_posts_js_options = {"post_heading":"h4"};
+</script>
+<script type='text/javascript' src='https://s2.wp.com/_static/??-eJx9jMEOwjAMQ3+IruzABgfEt4wtVKmatDSNpv39ggSXHZAsWbae7dfikOekC4iPprdC3b7WRTn5f4AjDHVq0BHyD54zN+D2YSk/MYFTgToF6+zolY8cqStJA7L4CsnOFleytEOy1YPu/WXsb+dxGK5xB1+BRFU='></script>
+<link rel='stylesheet' id='all-css-0-2' href='https://s0.wp.com/wp-content/mu-plugins/highlander-comments/style.css?m=1530132353h&cssminify=yes' type='text/css' media='all' />
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='https://s2.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563h&#038;ver=20110606' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://woocommerce.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress.com" />
+<link rel="canonical" href="https://woocommerce.wordpress.com/2020/02/28/storefront-2-5-5-release-notes/" />
+<link rel='shortlink' href='https://wp.me/p6wtcw-1E6' />
+	<style>
+		@font-face {
+			font-family: Recoleta;
+			src: url('https://s1.wp.com/i/fonts/recoleta/400.woff2')
+		}
+	</style>
+	<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/?format=json&amp;url=https%3A%2F%2Fwoocommerce.wordpress.com%2F2020%2F02%2F28%2Fstorefront-2-5-5-release-notes%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/?format=xml&amp;url=https%3A%2F%2Fwoocommerce.wordpress.com%2F2020%2F02%2F28%2Fstorefront-2-5-5-release-notes%2F&amp;for=wpcom-auto-discovery" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Storefront 2.5.5 release notes" />
+<meta property="og:url" content="https://woocommerce.wordpress.com/2020/02/28/storefront-2-5-5-release-notes/" />
+<meta property="og:description" content="Storefront 2.5.5 has been tagged&nbsp;for release and uploaded to WordPress.org. Here’s what’s changed (pulled directly from the changelog): * Fix &#8211; Blocks: Fix vertical alignment of left/rig…" />
+<meta property="article:published_time" content="2020-02-28T08:50:22+00:00" />
+<meta property="article:modified_time" content="2020-02-28T08:50:22+00:00" />
+<meta property="og:site_name" content="Develop WooCommerce" />
+<meta property="og:image" content="https://woocommerce.files.wordpress.com/2020/02/storefront-2-5-5.jpg?w=1200" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="300" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:creator" content="@woocommerce" />
+<meta name="twitter:site" content="@woocommerce" />
+<meta name="twitter:text:title" content="Storefront 2.5.5 release&nbsp;notes" />
+<meta name="twitter:image" content="https://woocommerce.files.wordpress.com/2020/02/storefront-2-5-5.jpg?w=640" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="fb:app_id" content="249643311490" />
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom" />
+<meta name="twitter:app:name:iphone" content="WordPress" />
+<meta name="twitter:app:id:iphone" content="335703880" />
+<meta name="twitter:app:name:ipad" content="WordPress" />
+<meta name="twitter:app:id:ipad" content="335703880" />
+<meta name="twitter:app:name:googleplay" content="WordPress" />
+<meta name="twitter:app:id:googleplay" content="org.wordpress.android" />
+<meta name="twitter:app:url:iphone" content="wordpress://viewpost?blogId=96396764&amp;postId=6330" />
+<meta name="twitter:app:url:ipad" content="wordpress://viewpost?blogId=96396764&amp;postId=6330" />
+<meta name="twitter:app:url:googleplay" content="wordpress://viewpost?blogId=96396764&amp;postId=6330" />
+
+<!-- End Jetpack Open Graph Tags -->
+<link rel="shortcut icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/84d6d0013fea0508f9db89e5b0ab64d9?s=32" sizes="16x16" />
+<link rel="icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/84d6d0013fea0508f9db89e5b0ab64d9?s=32" sizes="16x16" />
+<link rel="apple-touch-icon" href="https://secure.gravatar.com/blavatar/84d6d0013fea0508f9db89e5b0ab64d9?s=114" />
+<link rel='openid.server' href='https://woocommerce.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='https://woocommerce.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="https://woocommerce.wordpress.com/osd.xml" title="Develop WooCommerce" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com" />
+<meta name="application-name" content="Develop WooCommerce" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="The official WooCommerce development blog" /><meta name="msapplication-task" content="name=Subscribe;action-uri=https://woocommerce.wordpress.com/feed/;icon-uri=https://secure.gravatar.com/blavatar/84d6d0013fea0508f9db89e5b0ab64d9?s=16" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=https://s1.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=https://s1.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=https://s1.wp.com/i/favicon.ico" /><meta name="description" content="Storefront 2.5.5 has been tagged&nbsp;for release and uploaded to WordPress.org. Here’s what’s changed (pulled directly from the changelog): * Fix - Blocks: Fix vertical alignment of left/right aligned image blocks. * Fix - Blocks: Correct center alignment of product image in Top Rated Products block with small number of columns. * Fix - Blocks: Improve&hellip;" />
+<link rel="amphtml" href="https://woocommerce.wordpress.com/2020/02/28/storefront-2-5-5-release-notes/amp/"><style type="text/css" id="custom-colors-css">@media screen and (max-width:770px){.blog-menu ul{background:transparent !important}}button:hover,.content .button:hover,button:focus,.content .button:focus,button:active,.content .button:active{color:#fff}.post-bubbles a:hover,.post-bubbles a:focus,.header,.header a,.header .site-title a{color:#fff}.post-navigation a:hover,.posts-navigation a:hover,.post-navigation a:focus,.posts-navigation a:focus,#infinite-handle span:hover{color:#fff}a#cancel-comment-reply-link:hover,.comment-actions a:hover,a#cancel-comment-reply-link:focus,.comment-actions a:focus{color:#fff}button,.button{background-color:#fff}body>.site-navigation,.format-link .content-inner,.nav-toggle,.nav-toggle:hover,.nav-toggle:focus,.nav-toggle:active{color:#fff}.format-link .post-content p,.format-link .post-content blockquote,.format-link .post-content blockquote cite{color:#fff}.blog-menu a,.blog-menu a:visited,.blog-menu li a:hover,.blog-menu li a:focus{color:#fff}.blog-menu>.menu-item-has-children>a:after{border-top-color:#fff}.blog-menu ul>.menu-item-has-children>a:after{border-left-color:#fff}.nav-toggle .bar,.nav-toggle.active .bar{background-color:#fff}.site-navigation .search-form #s{color:#fff}.post-navigation a,.posts-navigation a,.post-navigation a:visited,.posts-navigation a:visited{color:#fff}.content input#s:focus,.footer input#s:focus{color:#fff}.post-bubbles a,#infinite-handle span{color:#666}#infinite-footer,#infinite-footer .blog-info a,#infinite-footer .blog-credits a,.page-title{color:#666}.credits,.credits a,.credits a:visited{color:#666}.page-title span{color:#666}.format-link .post-meta,.format-link .post-meta a,.format-link .post-meta a:visited,.format-link .post-cat-tags{color:#9b9b9b}.format-quote .post-meta,.format-quote .post-meta a,.format-quote .post-meta a:visited,.format-quote .post-cat-tags{color:#9b9b9b}.format-link .content-inner,.format-quote .content-inner,.format-link .sd-title,.format-quote .sd-title{color:#9b9b9b}.format-quote h3.sd-title,.format-quote div.sharedaddy h3.sd-title,.format-quote div#jp-relatedposts h3.jp-relatedposts-headline{color:#9b9b9b}.format-link h3.sd-title,.format-link div.sharedaddy h3.sd-title,.format-link div#jp-relatedposts h3.jp-relatedposts-headline{color:#9b9b9b}.content:before{background-color:#ddd}.content:before{background-color:rgba(221,221,221,.2)}div.sharedaddy h3.sd-title::before{border-color:#ddd}div.sharedaddy h3.sd-title::before{border-color:rgba(221,221,221,.2)}.format-link .sep,.format-quote .sep{color:#ddd}.format-link .sep,.format-quote .sep{color:rgba(221,221,221,.2)}body,#infinite-footer{background-color:#f1f1f1}.post-bubbles a,#infinite-handle span{background-color:#e5e5e5}button:hover,.content .button:hover,button:focus,.content .button:focus,button:active,.content .button:active{background-color:#a46497}.header,.post-bubbles a:hover,.post-bubbles a:focus{background-color:#a46497}a#cancel-comment-reply-link:hover,.comment-actions a:hover,a#cancel-comment-reply-link:focus,.comment-actions a:focus{background-color:#a46497}.post-navigation a:hover,.posts-navigation a:hover,.post-navigation a:focus,.posts-navigation a:focus,#infinite-handle span:hover{background-color:#a46497}a,a:visited,a:hover,a:focus,a:active,.post-meta a:hover,.post-meta a:focus,.post-title a:focus,.post-title a:hover{color:#97588a}.format-link a,.format-link a:visited,.format-link a:active,.format-link a:hover,.format-link a:focus,.format-link .post-meta a:hover,.format-link .post-meta a:focus,.format-link .post-title a:focus,.format-link .post-title a:hover{color:#bb8bb1}.format-quote a,.format-quote a:visited,.format-quote a:active,.format-quote a:hover,.format-quote a:focus,.format-quote .post-meta a:hover,.format-quote .post-meta a:focus,.format-quote .post-title a:focus,.format-quote .post-title a:hover{color:#bb8bb1}.credits a:hover,.credits a:focus{color:#8d5381}button,.content .button{background-color:#303030}.header .site-title a:hover,.header .site-title a:focus{color:#fff}.blog-menu li a:hover,.blog-menu li a:focus,.blog-menu ul{background-color:#232323}.post-navigation{background-color:#303030}.header .site-logo.noimg:hover{background-color:#303030}.content input#s:focus,.footer input#s:focus{background-color:#303030}.content input#s:focus,.footer input#s:focus{border-color:#303030}.post-navigation a,.posts-navigation a{background-color:#232323}body>.site-navigation,.format-link .content-inner,.format-quote .content-inner,.nav-toggle.active,.nav-toggle,.nav-toggle:hover,.nav-toggle:focus,.nav-toggle:active{background-color:#303030}.format-link .content-inner:before,.format-link .content-inner:after{border-right-color:#303030}.format-quote .content-inner:before,.format-quote .content-inner:after{border-right-color:#303030}.site-navigation a{border-color:#232323}.format-quote .post-title a,.format-quote .post-title a:visited{color:#9b9b9b}.format-link .post-title a,.format-link .post-title a:visited{color:#9b9b9b}</style>
+		<link rel="stylesheet" id="custom-css-css" type="text/css" href="https://s0.wp.com/?custom-css=1&#038;csblog=6wtcw&#038;cscache=6&#038;csrev=12" />
+		</head>
+
+<body class="post-template-default single single-post postid-6330 single-format-standard customizer-styles-applied group-blog has-site-logo highlander-enabled highlander-light custom-colors">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<nav id="site-navigation" class="site-navigation" role="navigation">
+		<div class="navigation-inner section-inner clear">
+			<ul class="blog-menu"><li id="menu-item-237" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-237"><a href="https://github.com/woocommerce/woocommerce">GitHub</a></li>
+<li id="menu-item-238" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-238"><a href="https://woocommerceslack.herokuapp.com/">Slack Group</a></li>
+<li id="menu-item-239" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-239"><a href="https://docs.woocommerce.com/">Support</a></li>
+<li id="menu-item-374" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-374"><a href="https://woocommerce.github.io/woocommerce-rest-api-docs/">API</a></li>
+</ul>
+			<form role="search" method="get" class="search-form" action="https://woocommerce.wordpress.com/">
+	<!-- <label> -->
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" value="Type and press enter" onfocus="if(this.value=='Type and press enter')this.value='';" onblur="if(this.value=='')this.value='';" name="s" id="s" />
+	<!-- </label>  -->
+	<input type="submit" id="searchsubmit" value="Search" class="button hidden">
+</form>
+
+		</div><!--.navigation-inner section-inner-->
+	</nav><!-- #site-navigation -->
+
+	<div class="header section">
+		<div class="header-inner section-inner">
+		
+			<a href="https://woocommerce.wordpress.com/" class="site-logo-link" rel="home" itemprop="url"><img width="200" height="200" src="https://woocommerce.files.wordpress.com/2015/07/nfozhinr.png?w=200&amp;h=200&amp;crop=1" class="site-logo attachment-lingonberry-logo" alt="" data-size="lingonberry-logo" itemprop="logo" srcset="https://woocommerce.files.wordpress.com/2015/07/nfozhinr.png?w=200&amp;h=200&amp;crop=1 200w, https://woocommerce.files.wordpress.com/2015/07/nfozhinr.png 400w, https://woocommerce.files.wordpress.com/2015/07/nfozhinr.png?w=150&amp;h=150&amp;crop=1 150w, https://woocommerce.files.wordpress.com/2015/07/nfozhinr.png?w=300&amp;h=300&amp;crop=1 300w" sizes="(max-width: 200px) 100vw, 200px" data-attachment-id="241" data-permalink="https://woocommerce.wordpress.com/?attachment_id=241" data-orig-file="https://woocommerce.files.wordpress.com/2015/07/nfozhinr.png" data-orig-size="400,400" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="nFoZhINR" data-image-description="" data-medium-file="https://woocommerce.files.wordpress.com/2015/07/nfozhinr.png?w=300" data-large-file="https://woocommerce.files.wordpress.com/2015/07/nfozhinr.png?w=400" /></a>
+		
+			<div class="site-branding">
+				<h1 class="site-title"><a href="https://woocommerce.wordpress.com/" title="Develop WooCommerce" rel="home">Develop WooCommerce</a></h1>
+				<h2 class="site-description">The official WooCommerce development blog</h2>
+			</div>
+
+			<button class="nav-toggle" title="Menu">
+				<div class="bar"></div>
+				<span class="screen-reader-text">Menu</span>
+			</button><!-- .nav-toggle -->
+
+		</div><!-- .header-inner section-inner -->
+	</div><!-- .header section -->
+
+	<div id="content" class="site-content">
+
+<div class="content section-inner">
+	<div id="post-6330" class="post-6330 post type-post status-publish format-standard has-post-thumbnail hentry category-storefront">
+				<div class="posts clear">
+
+			
+	<div class="post-bubbles">
+
+		<a href="https://woocommerce.wordpress.com/2020/02/28/storefront-2-5-5-release-notes/" class="format-bubble" title="Storefront 2.5.5 release&nbsp;notes"><span class="screen-reader-text">Storefront 2.5.5 release&nbsp;notes &mdash; February 28, 2020</span></a>
+
+	</div><!-- .post-bubbles -->
+<!-- Calls out post bubbles-->
+
+<article class="content-inner" id="post-6330" class="post-6330 post type-post status-publish format-standard has-post-thumbnail hentry category-storefront">
+	<div class="post-header">
+
+							
+			<div class="featured-media">
+
+				<a href="https://woocommerce.wordpress.com/2020/02/28/storefront-2-5-5-release-notes/" rel="bookmark" title="Storefront 2.5.5 release&nbsp;notes">
+					<img width="712" height="178" src="https://woocommerce.files.wordpress.com/2020/02/storefront-2-5-5.jpg?w=712" class="attachment-lingonberry-post-image size-lingonberry-post-image wp-post-image" alt="" srcset="https://woocommerce.files.wordpress.com/2020/02/storefront-2-5-5.jpg?w=712 712w, https://woocommerce.files.wordpress.com/2020/02/storefront-2-5-5.jpg 1424w, https://woocommerce.files.wordpress.com/2020/02/storefront-2-5-5.jpg?w=150 150w, https://woocommerce.files.wordpress.com/2020/02/storefront-2-5-5.jpg?w=300 300w, https://woocommerce.files.wordpress.com/2020/02/storefront-2-5-5.jpg?w=768 768w, https://woocommerce.files.wordpress.com/2020/02/storefront-2-5-5.jpg?w=1024 1024w" sizes="(max-width: 712px) 100vw, 712px" data-attachment-id="6332" data-permalink="https://woocommerce.wordpress.com/2020/02/28/storefront-2-5-5-release-notes/storefront-2-5-5/" data-orig-file="https://woocommerce.files.wordpress.com/2020/02/storefront-2-5-5.jpg" data-orig-size="1424,356" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="storefront-2-5-5" data-image-description="" data-medium-file="https://woocommerce.files.wordpress.com/2020/02/storefront-2-5-5.jpg?w=300" data-large-file="https://woocommerce.files.wordpress.com/2020/02/storefront-2-5-5.jpg?w=712" />									</a>
+
+			</div> <!-- /featured-media -->
+
+		<!-- Calls out featured image with optional caption-->
+		
+			<h2 class="post-title"><a href="https://woocommerce.wordpress.com/2020/02/28/storefront-2-5-5-release-notes/" rel="bookmark">Storefront 2.5.5 release&nbsp;notes</a></h2>
+		
+			<div class="post-meta"><span class="posted-on"><a href="https://woocommerce.wordpress.com/2020/02/28/storefront-2-5-5-release-notes/" title="8:50 am" rel="bookmark"><time class="entry-date published" datetime="2020-02-28T08:50:22+00:00">February 28, 2020</time></a></span><span class="byline"><span class="sep">/</span><span class="author vcard"><a class="url fn n" href="https://woocommerce.wordpress.com/author/haszari/" title="View all posts by Rua Haszard">Rua Haszard</a></span></span></div><!-- Calls out author and date-->
+
+			</div><!-- .post-header -->
+
+			<div class="post-content">
+			
+<p>Storefront 2.5.5 has been <a href="https://github.com/woocommerce/storefront/releases/tag/version%2F2.5.5">tagged</a>&nbsp;for release and uploaded to WordPress.org.</p>
+
+
+
+<p>Here’s what’s changed (pulled directly from the <a href="https://github.com/woocommerce/storefront/releases/tag/version%2F2.5.5">changelog</a>):</p>
+
+
+
+<pre class="wp-block-preformatted">* Fix - Blocks: Fix vertical alignment of left/right aligned image blocks.
+* Fix - Blocks: Correct center alignment of product image in  Top Rated Products block with small number of columns.
+* Fix - Blocks: Improve margins between floated embed/image block and list block.
+* Fix - Customizer: Ensure headings and links in the footer use colors set in Customizer.</pre>
+
+
+
+<p><a href="https://wordpress.org/themes/storefront/">Download the latest release of Storefront</a> here or venture over to Dashboard → Updates to update your theme from WordPress.</p>
+
+
+
+<p>As usual, if you spot any other issues, <a href="https://github.com/woocommerce/storefront">please log them in detail on Github</a>.</p>
+
+
+
+<p>&nbsp;</p>
+<div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-facebook"><a rel="nofollow noopener noreferrer" data-shared="sharing-facebook-6330" class="share-facebook sd-button share-icon" href="https://woocommerce.wordpress.com/2020/02/28/storefront-2-5-5-release-notes/?share=facebook" target="_blank" title="Click to share on Facebook"><span>Facebook</span></a></li><li class="share-linkedin"><a rel="nofollow noopener noreferrer" data-shared="sharing-linkedin-6330" class="share-linkedin sd-button share-icon" href="https://woocommerce.wordpress.com/2020/02/28/storefront-2-5-5-release-notes/?share=linkedin" target="_blank" title="Click to share on LinkedIn"><span>LinkedIn</span></a></li><li class="share-reddit"><a rel="nofollow noopener noreferrer" data-shared="" class="share-reddit sd-button share-icon" href="https://woocommerce.wordpress.com/2020/02/28/storefront-2-5-5-release-notes/?share=reddit" target="_blank" title="Click to share on Reddit"><span>Reddit</span></a></li><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-6330" class="share-twitter sd-button share-icon" href="https://woocommerce.wordpress.com/2020/02/28/storefront-2-5-5-release-notes/?share=twitter" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-96396764-6330-5e9176f2e411b' data-src='//widgets.wp.com/likes/index.html?ver=20190321#blog_id=96396764&amp;post_id=6330&amp;origin=woocommerce.wordpress.com&amp;obj_id=96396764-6330-5e9176f2e411b' data-name='like-post-frame-96396764-6330-5e9176f2e411b'><h3 class='sd-title'>Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
+<div id='jp-relatedposts' class='jp-relatedposts' >
+	
+</div></div>					</div><!-- .entry-content -->
+	
+				<div class="post-cat-tags">
+		<span class="post-categories">Categories: <a href="https://woocommerce.wordpress.com/tag/storefront/" rel="category tag">Storefront</a></span>	</div>
+	
+</article><!-- .content-inner -->
+
+			
+	<nav class="navigation post-navigation" role="navigation" aria-label="Posts">
+		<h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="https://woocommerce.wordpress.com/2020/02/27/integrating-the-new-woocommerce-navigation-bar/" rel="prev">Integrating The New WooCommerce Navigation&nbsp;Bar</a></div><div class="nav-next"><a href="https://woocommerce.wordpress.com/2020/03/04/woocommerce-3-9-3-fix-release/" rel="next">WooCommerce 3.9.3 Fix&nbsp;Release</a></div></div>
+	</nav>
+			
+<div class="comments" id="comments-section">
+	
+		
+			<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2020/02/28/storefront-2-5-5-release-notes/#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://woocommerce.wordpress.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><input type="hidden" id="highlander_comment_nonce" name="highlander_comment_nonce" value="522b8af42e" /><input type="hidden" name="_wp_http_referer" value="/2020/02/28/storefront-2-5-5-release-notes/" />
+<input type="hidden" name="hc_post_as" id="hc_post_as" value="guest" />
+
+<div class="comment-form-field comment-textarea">
+	<label for="comment">Enter your comment here...</label>
+	<div id="comment-form-comment"><textarea id="comment" name="comment" title="Enter your comment here..."></textarea></div>
+</div>
+
+<div id="comment-form-identity">
+	<div id="comment-form-nascar">
+		<p>Fill in your details below or click an icon to log in:</p>
+		<ul>
+			<li class="selected" style="display:none;">
+				<a href="#comment-form-guest" id="postas-guest" class="nascar-signin-link"
+                   title="Login via Guest">
+									</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:WordPress.com" id="postas-wordpress" class="nascar-signin-link"
+                   title="Login via WordPress.com">
+					<svg xmlns="http://www.w3.org/2000/svg" role="presentation" viewBox="0 0 24 24" ><rect x="0" fill="none" width="24" height="24"/><g><path fill="#0087be" d="M12.158 12.786l-2.698 7.84c.806.236 1.657.365 2.54.365 1.047 0 2.05-.18 2.986-.51-.024-.037-.046-.078-.065-.123l-2.762-7.57zM3.008 12c0 3.56 2.07 6.634 5.068 8.092L3.788 8.342c-.5 1.117-.78 2.354-.78 3.658zm15.06-.454c0-1.112-.398-1.88-.74-2.48-.456-.74-.883-1.368-.883-2.11 0-.825.627-1.595 1.51-1.595.04 0 .078.006.116.008-1.598-1.464-3.73-2.36-6.07-2.36-3.14 0-5.904 1.613-7.512 4.053.21.008.41.012.58.012.94 0 2.395-.114 2.395-.114.484-.028.54.684.057.74 0 0-.487.058-1.03.086l3.275 9.74 1.968-5.902-1.4-3.838c-.485-.028-.944-.085-.944-.085-.486-.03-.43-.77.056-.742 0 0 1.484.114 2.368.114.94 0 2.397-.114 2.397-.114.486-.028.543.684.058.74 0 0-.488.058-1.03.086l3.25 9.665.897-2.997c.456-1.17.684-2.137.684-2.907zm1.82-3.86c.04.286.06.593.06.924 0 .912-.17 1.938-.683 3.22l-2.746 7.94c2.672-1.558 4.47-4.454 4.47-7.77 0-1.564-.4-3.033-1.1-4.314zM12 22C6.486 22 2 17.514 2 12S6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></g></svg>				</a>
+			</li>
+			<li>
+			<iframe id="googleplus-sign-in" name="googleplus-sign-in" src="https://public-api.wordpress.com/connect/?googleplus-sign-in=https%3A%2F%2Fwoocommerce.wordpress.com&#038;color_scheme=light" width="24" height="24" scrolling="no" allowtransparency="true" seamless="seamless" frameborder="0"></iframe>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Twitter" id="postas-twitter" class="nascar-signin-link"
+                   title="Login via Twitter">
+					<svg xmlns="http://www.w3.org/2000/svg" role="presentation" viewBox="0 0 24 24" ><rect x="0" fill="none" width="24" height="24"/><g><path fill="#1DA1F2" d="M22.23 5.924c-.736.326-1.527.547-2.357.646.847-.508 1.498-1.312 1.804-2.27-.793.47-1.67.812-2.606.996C18.325 4.498 17.258 4 16.078 4c-2.266 0-4.103 1.837-4.103 4.103 0 .322.036.635.106.935-3.41-.17-6.433-1.804-8.457-4.287-.353.607-.556 1.312-.556 2.064 0 1.424.724 2.68 1.825 3.415-.673-.022-1.305-.207-1.86-.514v.052c0 1.988 1.415 3.647 3.293 4.023-.344.095-.707.145-1.08.145-.265 0-.522-.026-.773-.074.522 1.63 2.038 2.817 3.833 2.85-1.404 1.1-3.174 1.757-5.096 1.757-.332 0-.66-.02-.98-.057 1.816 1.164 3.973 1.843 6.29 1.843 7.547 0 11.675-6.252 11.675-11.675 0-.178-.004-.355-.012-.53.802-.578 1.497-1.3 2.047-2.124z"/></g></svg>				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Facebook" id="postas-facebook" class="nascar-signin-link"
+                   title="Login via Facebook">
+					<svg xmlns="http://www.w3.org/2000/svg" role="presentation" viewBox="0 0 24 24" ><rect x="0" fill="none" width="24" height="24"/><g><path fill="#3B5998" d="M20.007 3H3.993C3.445 3 3 3.445 3 3.993v16.013c0 .55.445.994.993.994h8.62v-6.97H10.27V11.31h2.346V9.31c0-2.325 1.42-3.59 3.494-3.59.993 0 1.847.073 2.096.106v2.43h-1.438c-1.128 0-1.346.537-1.346 1.324v1.734h2.69l-.35 2.717h-2.34V21h4.587c.548 0 .993-.445.993-.993V3.993c0-.548-.445-.993-.993-.993z"/></g></svg>				</a>
+			</li>
+		</ul>
+	</div>
+
+	<div id="comment-form-guest" class="comment-form-service selected">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+<a href="https://gravatar.com/site/signup/" target="_blank">				<img src="https://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=retro&amp;forcedefault=y&amp;r=G" alt="Gravatar" width="25" class="no-grav" />
+</a>			</div>
+
+				<div class="comment-form-fields">
+				<div class="comment-form-field comment-form-email">
+					<label for="email">Email <span class="required">(required)</span> <span class="nopublish">(Address never made public)</span></label>
+					<div class="comment-form-input"><input id="email" name="email" type="email" value="" /></div>
+				</div>
+				<div class="comment-form-field comment-form-author">
+					<label for="author">Name <span class="required">(required)</span></label>
+					<div class="comment-form-input"><input id="author" name="author" type="text" value="" /></div>
+				</div>
+				<div class="comment-form-field comment-form-url">
+					<label for="url">Website</label>
+					<div class="comment-form-input"><input id="url" name="url" type="url" value="" /></div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	<div id="comment-form-wordpress" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="https://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=retro&amp;forcedefault=y&amp;r=G" alt="WordPress.com Logo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="wp_avatar" id="wordpress-avatar" class="comment-meta-wordpress" value="" />
+				<input type="hidden" name="wp_user_id" id="wordpress-user_id" class="comment-meta-wordpress" value="" />
+				<input type="hidden" name="wp_access_token" id="wordpress-access_token" class="comment-meta-wordpress" value="" />
+						<p class="comment-form-posting-as pa-wordpress">
+			<strong></strong>
+			You are commenting using your WordPress.com account.			<span class="comment-form-log-out">
+				(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'wordpress' );">Log&nbsp;Out</a>&nbsp;/&nbsp;
+				<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)
+			</span>
+			<span class="pa-icon"><svg xmlns="http://www.w3.org/2000/svg" role="presentation" viewBox="0 0 24 24" ><rect x="0" fill="none" width="24" height="24"/><g><path fill="#0087be" d="M12.158 12.786l-2.698 7.84c.806.236 1.657.365 2.54.365 1.047 0 2.05-.18 2.986-.51-.024-.037-.046-.078-.065-.123l-2.762-7.57zM3.008 12c0 3.56 2.07 6.634 5.068 8.092L3.788 8.342c-.5 1.117-.78 2.354-.78 3.658zm15.06-.454c0-1.112-.398-1.88-.74-2.48-.456-.74-.883-1.368-.883-2.11 0-.825.627-1.595 1.51-1.595.04 0 .078.006.116.008-1.598-1.464-3.73-2.36-6.07-2.36-3.14 0-5.904 1.613-7.512 4.053.21.008.41.012.58.012.94 0 2.395-.114 2.395-.114.484-.028.54.684.057.74 0 0-.487.058-1.03.086l3.275 9.74 1.968-5.902-1.4-3.838c-.485-.028-.944-.085-.944-.085-.486-.03-.43-.77.056-.742 0 0 1.484.114 2.368.114.94 0 2.397-.114 2.397-.114.486-.028.543.684.058.74 0 0-.488.058-1.03.086l3.25 9.665.897-2.997c.456-1.17.684-2.137.684-2.907zm1.82-3.86c.04.286.06.593.06.924 0 .912-.17 1.938-.683 3.22l-2.746 7.94c2.672-1.558 4.47-4.454 4.47-7.77 0-1.564-.4-3.033-1.1-4.314zM12 22C6.486 22 2 17.514 2 12S6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></g></svg></span>
+		</p>
+					</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-googleplus" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="https://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=retro&amp;forcedefault=y&amp;r=G" alt="Google photo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="googleplus_avatar" id="googleplus-avatar" class="comment-meta-googleplus" value="" />
+				<input type="hidden" name="googleplus_user_id" id="googleplus-user_id" class="comment-meta-googleplus" value="" />
+				<input type="hidden" name="googleplus_access_token" id="googleplus-access_token" class="comment-meta-googleplus" value="" />
+						<p class="comment-form-posting-as pa-googleplus">
+			<strong></strong>
+			You are commenting using your Google account.			<span class="comment-form-log-out">
+				(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'googleplus' );">Log&nbsp;Out</a>&nbsp;/&nbsp;
+				<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)
+			</span>
+			<span class="pa-icon"><svg xmlns="http://www.w3.org/2000/svg" role="presentation" x="0px" y="0px" viewBox="0 0 60 60" ><path fill="#519bf7" d="M56.3,30c0,-1.6 -0.2,-3.4 -0.6,-5h-3.1H42.2H30v10.6h14.8C44,39.3 42,42 39.1,43.9l8.8,6.8C53,46 56.3,39 56.3,30z" /><path fill="#3db366" d="M30,57.5c6.7,0 13.1,-2.4 17.9,-6.8l-8.8,-6.8c-2.5,1.6 -5.6,2.4 -9.1,2.4c-7.2,0 -13.3,-4.7 -15.4,-11.2l-9.3,7.1C9.8,51.3 19.1,57.5 30,57.5z" /><path fill="#fdc600" d="M5.3,42.2l9.3,-7.1c-0.5,-1.6 -0.8,-3.3 -0.8,-5.1s0.3,-3.5 0.8,-5.1l-9.3,-7.1C3.5,21.5 2.5,25.6 2.5,30S3.5,38.5 5.3,42.2z" /><path fill="#f15b44" d="M40.1,17.4l8,-8C43.3,5.1 37,2.5 30,2.5C19.1,2.5 9.8,8.7 5.3,17.8l9.3,7.1c2.1,-6.5 8.2,-11.1 15.4,-11.1C33.9,13.7 37.4,15.1 40.1,17.4z" /></svg></span>
+		</p>
+					</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-twitter" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="https://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=retro&amp;forcedefault=y&amp;r=G" alt="Twitter picture" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="twitter_avatar" id="twitter-avatar" class="comment-meta-twitter" value="" />
+				<input type="hidden" name="twitter_user_id" id="twitter-user_id" class="comment-meta-twitter" value="" />
+				<input type="hidden" name="twitter_access_token" id="twitter-access_token" class="comment-meta-twitter" value="" />
+						<p class="comment-form-posting-as pa-twitter">
+			<strong></strong>
+			You are commenting using your Twitter account.			<span class="comment-form-log-out">
+				(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'twitter' );">Log&nbsp;Out</a>&nbsp;/&nbsp;
+				<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)
+			</span>
+			<span class="pa-icon"><svg xmlns="http://www.w3.org/2000/svg" role="presentation" viewBox="0 0 24 24" ><rect x="0" fill="none" width="24" height="24"/><g><path fill="#1DA1F2" d="M22.23 5.924c-.736.326-1.527.547-2.357.646.847-.508 1.498-1.312 1.804-2.27-.793.47-1.67.812-2.606.996C18.325 4.498 17.258 4 16.078 4c-2.266 0-4.103 1.837-4.103 4.103 0 .322.036.635.106.935-3.41-.17-6.433-1.804-8.457-4.287-.353.607-.556 1.312-.556 2.064 0 1.424.724 2.68 1.825 3.415-.673-.022-1.305-.207-1.86-.514v.052c0 1.988 1.415 3.647 3.293 4.023-.344.095-.707.145-1.08.145-.265 0-.522-.026-.773-.074.522 1.63 2.038 2.817 3.833 2.85-1.404 1.1-3.174 1.757-5.096 1.757-.332 0-.66-.02-.98-.057 1.816 1.164 3.973 1.843 6.29 1.843 7.547 0 11.675-6.252 11.675-11.675 0-.178-.004-.355-.012-.53.802-.578 1.497-1.3 2.047-2.124z"/></g></svg></span>
+		</p>
+					</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-facebook" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="https://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=retro&amp;forcedefault=y&amp;r=G" alt="Facebook photo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="fb_avatar" id="facebook-avatar" class="comment-meta-facebook" value="" />
+				<input type="hidden" name="fb_user_id" id="facebook-user_id" class="comment-meta-facebook" value="" />
+				<input type="hidden" name="fb_access_token" id="facebook-access_token" class="comment-meta-facebook" value="" />
+						<p class="comment-form-posting-as pa-facebook">
+			<strong></strong>
+			You are commenting using your Facebook account.			<span class="comment-form-log-out">
+				(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'facebook' );">Log&nbsp;Out</a>&nbsp;/&nbsp;
+				<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)
+			</span>
+			<span class="pa-icon"><svg xmlns="http://www.w3.org/2000/svg" role="presentation" viewBox="0 0 24 24" ><rect x="0" fill="none" width="24" height="24"/><g><path fill="#3B5998" d="M20.007 3H3.993C3.445 3 3 3.445 3 3.993v16.013c0 .55.445.994.993.994h8.62v-6.97H10.27V11.31h2.346V9.31c0-2.325 1.42-3.59 3.494-3.59.993 0 1.847.073 2.096.106v2.43h-1.438c-1.128 0-1.346.537-1.346 1.324v1.734h2.69l-.35 2.717h-2.34V21h4.587c.548 0 .993-.445.993-.993V3.993c0-.548-.445-.993-.993-.993z"/></g></svg></span>
+		</p>
+					</div>
+	
+		</div>
+	</div>
+
+
+	<div id="comment-form-load-service" class="comment-form-service">
+		<div class="comment-form-posting-as-cancel"><a href="javascript:HighlanderComments.cancelExternalWindow();">Cancel</a></div>
+		<p>Connecting to %s</p>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+var highlander_expando_javascript = function(){
+	var input = document.createElement( 'input' ),
+	    comment = jQuery( '#comment' );
+
+	if ( 'placeholder' in input ) {
+		comment.attr( 'placeholder', jQuery( '.comment-textarea label' ).remove().text() );
+	}
+
+	// Expando Mode: start small, then auto-resize on first click + text length
+	jQuery( '#comment-form-identity' ).hide();
+	jQuery( '#comment-form-subscribe' ).hide();
+	jQuery( '#commentform .form-submit' ).hide();
+
+	comment.css( { 'height':'10px' } ).one( 'focus', function() {
+		var timer = setInterval( HighlanderComments.resizeCallback, 10 )
+		jQuery( this ).animate( { 'height': HighlanderComments.initialHeight } ).delay( 100 ).queue( function(n) { clearInterval( timer ); HighlanderComments.resizeCallback(); n(); } );
+		jQuery( '#comment-form-identity' ).slideDown();
+		jQuery( '#comment-form-subscribe' ).slideDown();
+		jQuery( '#commentform .form-submit' ).slideDown();
+	});
+}
+jQuery(document).ready( highlander_expando_javascript );
+</script>
+
+<div id="comment-form-subscribe">
+	<p class="comment-subscription-form"><input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;"/> <label class="subscribe-label" id="subscribe-label" for="subscribe" style="display: inline;">Notify me of new comments via email.</label></p><p class="post-subscription-form"><input type="checkbox" name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto;"/> <label class="subscribe-label" id="subscribe-blog-label" for="subscribe_blog"  style="display: inline;">Notify me of new posts via email.</label></p></div>
+
+
+
+
+<p class="form-submit"><input name="submit" type="submit" id="comment-submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='6330' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="9222c2ef31" /></p>
+<input type="hidden" name="genseq" value="1586591474" />
+<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="174"/></p></form>	</div><!-- #respond -->
+	<div style="clear: both"></div><p class="akismet_comment_form_privacy_notice">This site uses Akismet to reduce spam. <a href="https://akismet.com/privacy/" target="_blank" rel="nofollow noopener">Learn how your comment data is processed</a>.</p>
+</div><!-- #comments-section -->
+
+				</div><!--posts-->
+	</div><!--.post-->
+</div><!-- .content section-inner -->
+
+
+	</div><!-- #content -->
+
+	<div class="footer section">
+	<div class="footer-inner section-inner">
+	<!-- Calls out three columns of footer widgets. See functions.php-->
+		<div id="footer-widgets" class="widget-area three">
+			<div id="secondary" class="widget-area" role="complementary">
+									<div id="sidebar-one">
+						<div id="blog_subscription-5" class="widgets widget_blog_subscription jetpack_subscription_widget"><div class="widget-content"><h3 class="widget-title"><label for="subscribe-field">Follow Blog via Email</label></h3>
+            <form action="https://subscribe.wordpress.com" method="post" accept-charset="utf-8"
+                  id="subscribe-blog">
+									<p>Enter your email address to follow this blog and receive notifications of new posts by email.</p>
+                    <p><input type="text" name="email" style="width: 95%; padding: 1px 10px"
+                              placeholder="Enter your email address" value=""
+                              id="subscribe-field"/></p>
+				
+                <p>
+                    <input type="hidden" name="action" value="subscribe"/>
+                    <input type="hidden" name="blog_id" value="96396764"/>
+                    <input type="hidden" name="source" value="https://woocommerce.wordpress.com/2020/02/28/storefront-2-5-5-release-notes/"/>
+                    <input type="hidden" name="sub-type" value="widget"/>
+                    <input type="hidden" name="redirect_fragment" value="blog_subscription-5"/>
+					<input type="hidden" id="_wpnonce" name="_wpnonce" value="3e92c8d65c" />                    <button type="submit"
+	                    		                	                >
+	                    Follow                    </button>
+                </p>
+            </form>
+			
+</div></div><div id="follow_button_widget-6" class="widgets widget_follow_button_widget"><div class="widget-content">
+		<a class="wordpress-follow-button" href="https://woocommerce.wordpress.com" data-blog="96396764" data-lang="en" data-show-follower-count="true">Follow Develop WooCommerce on WordPress.com</a>
+		<script type="text/javascript">(function(d){var f = d.getElementsByTagName('SCRIPT')[0], p = d.createElement('SCRIPT');p.type = 'text/javascript';p.async = true;p.src = '//widgets.wp.com/platform.js';f.parentNode.insertBefore(p,f);}(document));</script>
+
+		</div></div>					</div><!-- #sidebar-one -->
+				
+									<div id="sidebar-two">
+						<div id="text-3" class="widgets widget_text"><div class="widget-content"><h3 class="widget-title">About</h3>			<div class="textwidget"><p>This is the official blog for WooCommerce development. Here you can keep track of everything that is happening with the plugin, including development decisions and scoping of future versions.</p>
+<p><a href="https://woocommerce.wordpress.com/about/" class="button">Rules/Guidelines</a></p>
+</div>
+		</div></div>					</div><!-- #sidebar-two -->
+				
+							</div><!-- #secondary -->
+		</div><!-- #footer-widgets -->
+	</div><!-- .footer-inner section-inner -->
+</div><!-- .footer section -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="credits section">
+			<div class="credits-inner section-inner">
+				<a href="https://wordpress.com/?ref=footer_blog" rel="nofollow">Blog at WordPress.com.</a>
+				
+							</div><!-- .credits-inner section-inner -->
+		</div><!-- .scredits section -->
+	</footer><!-- #colophon -->
+
+<!--  -->
+			<!-- A8C Analytics [start] -->
+			<script type="text/javascript">
+				( function() {
+					'use strict';
+
+					var setupAnalytics = function() {
+						var $ = window.jQuery;
+						if ( ! $ ) return; // No jQuery.
+
+						window.a8cAnalyticsConfig = {"cookieBanner":{"text":"Our websites and dashboards use cookies. By continuing, you agree to their use. <a target=\"_blank\" href=\"https:\/\/automattic.com\/cookies\">Learn more<\/a>, including how to control cookies.","buttonText":"Got It!","cookieName":"sensitive_pixel_option","skipBanner":false,"cssZIndex":50001,"cookieDomain":"wordpress.com"},"fireAnalyticsOptions":[]};
+					};
+
+					if ( window.defQueue && defQueue.isLOHP && defQueue.isLOHP === 2020 ) {
+						defQueue.items.push( setupAnalytics );
+					} else {
+						setupAnalytics();
+					}
+				} )();
+			</script>
+
+			
+<script type="text/javascript">
+	$document = jQuery( window.document );
+	$document.on( 'a8c-analytics:loaded', function() {
+		'use strict';
+
+		var kit = window.a8cAnalytics.kit;
+
+		if ( kit.doNotTrack() ) {
+			return;
+		}
+
+		function fireGoogleAnalytics() {
+			kit.loadGoogleAnalytics();
+			ga( 'create', 'UA-10673494-34', 'auto' );
+
+			ga( 'set', 'transport', 'function' === typeof navigator.sendBeacon ? 'beacon' : 'xhr' );
+			ga( 'set', 'anonymizeIp', true );
+
+			ga( 'send', 'pageview' );
+		}
+
+		// ------- Fire Normal Pixels -------
+
+				fireGoogleAnalytics();
+
+		// ------- Fire Sensitive Pixels -------
+
+		/* none for now
+		$document.on( 'a8c-analytics:fire-sensitive-pixels', function() {
+		} );
+		*/
+	} );
+</script>
+
+			<script type="text/javascript">
+				( function() {
+					'use strict';
+
+					var setupAnalytics = function() {
+						var $ = window.jQuery;
+						if ( ! $ ) return; // No jQuery.
+
+													$.ajax( {
+								async: true,
+								cache: true,
+								dataType: 'script',
+								url: "https:\/\/s1.wp.com\/wp-content\/mu-plugins\/a8c-analytics\/a8c-analytics.js?v=1586367077",
+							} );
+											};
+
+					if ( window.defQueue && defQueue.isLOHP && defQueue.isLOHP === 2020 ) {
+						defQueue.items.push( setupAnalytics );
+					} else {
+						setupAnalytics();
+					}
+				} )();
+			</script>
+			<!-- A8C Analytics [end] -->
+		<script src='//0.gravatar.com/js/gprofiles.js?ver=202015y'></script>
+<script>
+var WPGroHo = {"my_hash":""};
+</script>
+<script type='text/javascript' src='https://s1.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1380573781h'></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+
+			if (typeof Gravatar === "undefined"){
+				return;
+			}
+
+			if ( typeof Gravatar.init !== "function" ) {
+				return;
+			}			
+
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	</div>
+<script>
+var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"https:\/\/woocommerce.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"https:\/\/woocommerce.wordpress.com\/wp-login.php?action=logout&_wpnonce=75c5990740","homeURL":"https:\/\/woocommerce.wordpress.com\/","postID":"6330","gravDefault":"retro","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"","userIsLoggedIn":"","isJetpack":"","text_direction":"ltr"};
+</script>
+<script type='text/javascript' src='https://s0.wp.com/_static/??/wp-content/js/jquery/jquery.autoresize.js,/wp-content/mu-plugins/highlander-comments/script.js?m=1573483029j'></script>
+
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/woocommerce.wordpress.com\/2020\/02\/28\/storefront-2-5-5-release-notes\/":6330};
+	</script>
+				<link rel='stylesheet' id='all-css-0-3' href='https://s2.wp.com/wp-content/plugins/gutenberg-blocks/jetpack-layout-grid/blocks/front.css?m=1583834955h&cssminify=yes' type='text/css' media='all' />
+<script>
+var comment_like_text = {"loading":"Loading..."};
+</script>
+<script>
+var actionbardata = {"siteID":"96396764","siteName":"Develop WooCommerce","siteURL":"http:\/\/woocommerce.wordpress.com","icon":"<img alt='' src='https:\/\/secure.gravatar.com\/blavatar\/84d6d0013fea0508f9db89e5b0ab64d9?s=50&d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png' class='avatar avatar-50' height='50' width='50' \/>","canManageOptions":"","canCustomizeSite":"","isFollowing":"","themeSlug":"pub\/lingonberry","signupURL":"https:\/\/wordpress.com\/start\/","loginURL":"https:\/\/wordpress.com\/log-in?redirect_to=https%3A%2F%2Fwoocommerce.wordpress.com%2F2020%2F02%2F28%2Fstorefront-2-5-5-release-notes%2F&signup_flow=account","themeURL":"https:\/\/wordpress.com\/theme\/lingonberry\/","xhrURL":"https:\/\/woocommerce.wordpress.com\/wp-admin\/admin-ajax.php","nonce":"85fe1fa95b","isSingular":"1","isFolded":"","isLoggedIn":"","isMobile":"","subscribeNonce":"<input type=\"hidden\" id=\"_wpnonce\" name=\"_wpnonce\" value=\"3e92c8d65c\" \/>","referer":"https:\/\/woocommerce.wordpress.com\/2020\/02\/28\/storefront-2-5-5-release-notes\/","canFollow":"1","feedID":"36396555","statusMessage":"","customizeLink":"https:\/\/woocommerce.wordpress.com\/wp-admin\/customize.php?url=https%3A%2F%2Fwoocommerce.wordpress.com%2F2020%2F02%2F28%2Fstorefront-2-5-5-release-notes%2F","postID":"6330","shortlink":"https:\/\/wp.me\/p6wtcw-1E6","canEditPost":"","editLink":"https:\/\/wordpress.com\/post\/woocommerce.wordpress.com\/6330","statsLink":"https:\/\/wordpress.com\/stats\/post\/6330\/woocommerce.wordpress.com","i18n":{"view":"View site","follow":"Follow","following":"Following","edit":"Edit","login":"Log in","signup":"Sign up","customize":"Customize","report":"Report this content","themeInfo":"Get theme: Lingonberry","shortlink":"Copy shortlink","copied":"Copied","followedText":"New posts from this site will now appear in your <a href=\"https:\/\/wordpress.com\/read\">Reader<\/a>","foldBar":"Collapse this bar","unfoldBar":"Expand this bar","editSubs":"Manage subscriptions","viewReader":"View site in Reader","viewReadPost":"View post in Reader","subscribe":"Sign me up","enterEmail":"Enter your email address","followers":"Join 30,023 other followers","alreadyUser":"Already have a WordPress.com account? <a href=\"https:\/\/wordpress.com\/log-in?redirect_to=https%3A%2F%2Fwoocommerce.wordpress.com%2F2020%2F02%2F28%2Fstorefront-2-5-5-release-notes%2F&signup_flow=account\">Log in now.<\/a>","stats":"Stats"}};
+</script>
+<script>
+var sharing_js_options = {"lang":"en","counts":"1","is_stats_active":"1"};
+</script>
+<script type='text/javascript' src='https://s2.wp.com/_static/??-eJydUltSwzAMvBCuW1qgfDAchXEcJVXiF5adtJwehTadPjIFOv6wRtKud2XJPgjtXQKXZEOyhA41hO2soQd5XgqekgUiVcNYRadNLoF+kEhJduBKH4dS8GZXoTEzi+6SLJhcoyNZZWMEYQIBJSZ0tdhX5Mvydc5nJbW31rs99z6eENZ8Zoi7wzVD1yH0v7Y1kILSrYhA+AWX7TaLUaTBlg0yKMNGudJAvN9OYTwneY4kONTtYWgTek8EDL45JfZCmkFRIanHcEv1Fegscb8D6AYS7bNLpe/dwcZF9pI+bYAXR4ZcsHZXe1dAHH6CZG18oczf+6nFwBZcKyqvM4kKt1O7OJqNEMxuagNPJqVKrotCRWkVJYgcCd/xgziQHXP/ZEiRl+tqzqcgnZCNMegY3epukSwksZzN5Qc7lZWP9kb/sGOiMgqjpI2KPMTxZtC7fVs8rZ9Xj+vFct58A075fUo='></script>
+<script type='text/javascript'>
+( 'fetch' in window ) || document.write( '<script src="https://s0.wp.com/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?m=1573572739h&#038;ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="https://s1.wp.com/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?m=1540208548h&#038;ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://s0.wp.com/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?m=1585663916h&#038;ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://s2.wp.com/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?m=1585663916h&#038;ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://s1.wp.com/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?m=1550600082h&#038;ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://s2.wp.com/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?m=1540208548h&#038;ver=2.0.2"></scr' + 'ipt>' );
+</script>
+<script type='text/javascript'>
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-facebook', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-linkedin', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomlinkedin', 'menubar=1,resizable=1,width=580,height=450' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-twitter', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+</script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script>		<iframe src='https://widgets.wp.com/likes/master.html?ver=20190321#ver=20190321' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+		<div id='likes-other-gravatars'><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+<script src="//stats.wp.com/w.js?61" type="text/javascript" async defer></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'96396764','blog_tz':'1','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'96396764','v':'wpcom','tz':'1','user_id':'0','post':'6330','subd':'woocommerce'}]);
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1lSiYrZXhzUkM5fD1uTDNLUGt6QzVbd3FKb3Q4aWxFU0VMK3ppSU9RRkVyRmw/bFF4N29ZdnF3Lnxoc0xRaWorQ09SJS14UzNlbj9xNTEsMWpEXXhteC81MkJbV2VOVE0zQUJFTlFOL3VddXExbCVOXT05PUYmPzEwSVlNP0dEVDdwV3ZsZFslYzQ4aGhRLDBwenVYRis5PSU/X0NuMkRjSzhtZ242JWgmV0s0RyttSkN8UkJmWTJ5RURyeVVzK0JLPSs4cmNSaFsuU3M0XW5VTFY/Yit5YjZOV1ZCTk5oaFFLVlF2MS52WndSUjBfNzB0aXB8XUVbUU4rVHxSP3xNbm98Tjctak55VEVFPzQzbTM5SW85RltMY1gxZDNva0V+RWM4anlJSH52TT1qcUdlYUFadVUuXTNsRUIueX4lYTVZb2dDU0RPLj1Rcj8sYUU0NHRrdmZs'}]);
+_stq.push([ 'clickTrackerInit', '96396764', '6330' ]);
+	</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
+</body>
+</html>
