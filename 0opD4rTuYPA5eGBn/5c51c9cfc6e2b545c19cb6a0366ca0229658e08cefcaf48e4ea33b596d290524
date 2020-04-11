@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="renderer" content="webkit">
+	<title>Tencent Ads</title>
+	<meta http-equiv="Content-Security-Policy" content="script-src *.qq.com *.tencent.com *.gtimg.cn *.gtimg.com *.google-analytics.com 'unsafe-inline' 'unsafe-eval';frame-src *.qq.com *.tencent.com *.gtimg.cn *.gtimg.com; font-src *.gtimg.cn *.qq.com *.tencent.com">
+	<link rel="shortcut icon" href="//e.qq.com/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://qzonestyle.gtimg.cn/open_proj/gdt_gw/tsa/css/tsa.css">
+    <style type="text/css">
+        .footer .footer-bd .footer-info .footer-brand {
+            margin: 31px 0 !important;
+            width: 272px !important;
+            height: 78px !important;
+            background: url(//i.gtimg.cn/qzone/biz/gdt/portal/styles/images/tsa/footer_logo.png) no-repeat !important;
+            background-image: -webkit-image-set(url(//i.gtimg.cn/qzone/biz/gdt/portal/styles/images/tsa/footer_logo.png) 1x,url(//i.gtimg.cn/qzone/biz/gdt/portal/styles/images/tsa/footer_logo@2x.png) 2x) !important;
+            background-size: 272px 78px !important;
+        }
+        .navbar .navbar-brand-logo {
+            width: 161px !important;
+            height: 47px !important;
+            text-indent: -9999px !important;
+            overflow: hidden !important;
+            text-align: left !important;
+            display: block !important;
+            background-image: url(//i.gtimg.cn/qzone/biz/gdt/portal/styles/images/tsa/logo.png) !important;
+            background-image: -webkit-image-set(url(//i.gtimg.cn/qzone/biz/gdt/portal/styles/images/tsa/logo.png) 1x,url(//i.gtimg.cn/qzone/biz/gdt/portal/styles/images/tsa/logo@2x.png) 2x) !important;
+
+        }
+        .navbar.navbar-transparent .navbar-brand-logo {
+            background: url(//i.gtimg.cn/qzone/biz/gdt/portal/styles/images/tsa/logo_invert.png) no-repeat !important;
+            background-image: -webkit-image-set(url(//i.gtimg.cn/qzone/biz/gdt/portal/styles/images/tsa/logo_invert.png) 1x,url(//i.gtimg.cn/qzone/biz/gdt/portal/styles/images/tsa/logo_invert@2x.png) 2x) !important;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar navbar-transparent">
+	<div class="container">
+		<div class="navbar-hd">
+			<h1 class="navbar-brand"><a class="navbar-brand-logo" href="http://ads.tencent.com/">Tencent Ads</a></h1>
+		</div>
+		<div class="navbar-bd">
+			<div class="navbar-quicklinks">
+				<ul class="nav nav-quicklinks">
+					<li class="nav-item">
+						<a class="quicklink quicklink-adsense" href="//e.qq.com/ads" target="_blank">
+							<svg><rect x="0" y="0" width="120" height="42" fill="none"></rect></svg>
+							我要投放广告
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="quicklink quicklink-selloff" href="//e.qq.com/dev/index.html" target="_blank">
+							<svg><rect x="0" y="0" width="120" height="42" fill="none"></rect></svg>
+							我要变现流量
+						</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#">程序化购买 <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li class="dropdown-menu-item">
+								<a href="http://exchange.qq.com/" target="_blank">腾讯程序化广告交易平台</a>
+							</li>
+							<li class="dropdown-menu-item">
+								<a href="//de.qq.com/" target="_blank">广点通数据管理平台</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="feature swiper-container">
+        <div class="feature-wrapper swiper-wrapper">
+            <div class="feature-item swiper-slide">
+                <div class="feature-heros">
+                    <div class="feature-hero-content">
+                        <div class="hero-text">
+                            <div class="hero-frame"></div>
+                            <h2 style="font-size:70px;">赋能商业，始终于人</h2>
+                            <p><span>承载覆盖8亿受众的微信、QQ、QQ空间等领先社交平台，及QQ浏览器、</span></p>
+                            <p><span>应用宝、第三方应用等丰富广告场景。帮助广告主实现精准用户触达和</span></p>
+                            <p><span>多样用户互动，助力品牌与商业目标的实现。</span></p>
+                        </div>
+                    </div>
+                    <div class="feature-hero-cover"></div>
+                    <div class="feature-hero-video">
+                    </div>
+                    <a href="javascript:;" class="feature-arrow">
+                        <svg><rect x="0" y="0" width="50" height="49" fill="none"></rect></svg>
+                        向下滚动
+                    </a>
+                </div>
+            </div>
+            <div class="feature-item swiper-slide">
+                <div class="feature-advantage">
+                    <div class="feature-intro">
+                        <div class="feature-intro-inner">
+                            <h2 class="feature-intro-title">核心优势</h2>
+                            <p class="feature-intro-subtitle">我们为您提供的能力</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-advantage-bd">
+                        <a class="advantage-item" href="//e.qq.com/tech/#tech1">
+                            <div class="advantage-cover advantage-cover1"></div>
+                            <div class="advantage-info">
+                                <div class="advantage-content">
+                                    <div class="advantage-no">01</div>
+                                    <h2>精准锁定目标受众</h2>
+                                    <p>基于腾讯及合作网站数据挖掘，为您提供数十个维度标签体系和人群拓展功能，帮您快速锁定、拓展受众群体</p>
+                                    <span class="advantage-link">
+                                        <svg><rect x="0" y="0" width="200" height="54" fill="none"></rect></svg>
+                                        了解详情
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="advantage-item" href="//e.qq.com/resources/">
+                            <div class="advantage-cover advantage-cover2"></div>
+                            <div class="advantage-info">
+                                <div class="advantage-content">
+                                    <div class="advantage-no">02</div>
+                                    <h2>多样场景互动沟通</h2>
+                                    <p>· 腾讯广告有效触达8亿受众人群<br>
+                                    · 多产品使用场景覆盖24小时行为热链<br>
+                                    · PC、手机、平板电脑设备间无缝衔接</p>
+                                    <span class="advantage-link">
+                                        <svg><rect x="0" y="0" width="200" height="54" fill="none"></rect></svg>
+                                        了解详情
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="advantage-item" href="//e.qq.com/tech/#tech4">
+                            <div class="advantage-cover advantage-cover3"></div>
+                            <div class="advantage-info">
+                                <div class="advantage-content">
+                                    <div class="advantage-no">03</div>
+                                    <h2>自动优化广告效果</h2>
+                                    <p>根据推广目标和成本需求，自动计算、匹配最佳的广告出现场景，将广告展示给最有可能转化的受众，并利用实际转化数据为您定制化优化广告效果</p>
+                                    <span class="advantage-link">
+                                        <svg><rect x="0" y="0" width="200" height="54" fill="none"></rect></svg>
+                                        了解详情
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-item swiper-slide">
+                <div class="feature-ecology">
+                    <div class="feature-intro">
+                        <div class="feature-intro-inner">
+                            <h2 class="feature-intro-title">程序化购买</h2>
+                            <p class="feature-intro-subtitle">我们将先进技术能力应用于社交广告</p>
+                            <p class="feature-intro-subtitle">为您提供程序化广告交易和数据管理服务</p>
+                        </div>
+                    </div>
+                    <div class="feature-ecology-bd">
+                        <a class="ecology-item ecology-adx" data-ecology="adx" href="http://exchange.qq.com/" target="_blank">
+                            <div class="ecology-cover ecology-cover-adx"></div>
+                            <div class="ecology-info">
+                                <div class="ecology-no">01</div>
+                                <h2 class="ecology-title">腾讯程序化广告交易平台</h2>
+                                <p class="ecology-subtitle">TENCENT AD EXCHANGE</p>
+                                <p class="ecology-content">融合腾讯内外部优质流量，支持原生、视频、动态创意等广告形态及多种采买模式，兼具跨屏频控等差异化优势，与国内外知名DSP 合作提供高效的广告投放服务。</p>
+                                <span class="ecology-link">
+                                    <svg><rect x="0" y="0" width="200" height="54" fill="none"></rect></svg>
+                                    了解详情
+                                </span>
+                            </div>
+                        </a>
+                        <a class="ecology-item ecology-dmp" data-ecology="dmp" href="//de.qq.com/" target="_blank">
+                            <div class="ecology-cover ecology-cover-dmp"></div>
+                            <div class="ecology-info">
+                                <div class="ecology-no">02</div>
+                                <h2 class="ecology-title">数据管理平台</h2>
+                                <p class="ecology-subtitle">DATA MANAGEMENT PLATFORM</p>
+                                <p class="ecology-content">致力于成为大数据的连接器，依托腾讯丰富的数据和广点通强大的技术，助您实现人群洞察、潜客召回、新客拓展等营销诉求，最大化数据价值，提升营销效果。</p>
+                                <span class="ecology-link">
+                                    <svg><rect x="0" y="0" width="200" height="54" fill="none"></rect></svg>
+                                    了解详情
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-item swiper-slide">
+                <div class="feature-case">
+                    <div class="feature-intro">
+                        <div class="feature-intro-inner">
+                            <h2 class="feature-intro-title">成功案例</h2>
+                            <p class="feature-intro-subtitle">我们已经帮助数百行业企业实现营销目标</p>
+                            <p class="feature-intro-desc">为您提供营销投放、咨询、策划和技术对接等多重服务，推广业务汇集全国及海外</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-cases-bd">
+                        <a href="//e.qq.com/success/3396?showtype=2" class="case-item">
+                            <span class="case-cover" style="background-image: url(//qzonestyle.gtimg.cn/open_proj/gdt_gw/tsa/images/index/case1.jpg);"></span>
+                            <span class="case-brand">戴尔</span>
+                            <span class="case-title"><i>用H5互动拉近用户</i></span>
+                        </a>
+                        <a href="//e.qq.com/success/3408?showtype=2" class="case-item">
+                            <span class="case-cover" style="background-image: url(//qzonestyle.gtimg.cn/open_proj/gdt_gw/tsa/images/index/case2.jpg);"></span>
+                            <span class="case-brand">蘑菇街</span>
+                            <span class="case-title"><i>推广“专车”直达，唤醒静默用户</i></span>
+                        </a>
+                        <a href="//e.qq.com/success/3410?showtype=2" class="case-item">
+                            <span class="case-cover" style="background-image: url(//qzonestyle.gtimg.cn/open_proj/gdt_gw/tsa/images/index/case3.jpg);"></span>
+                            <span class="case-brand">喜马拉雅</span>
+                            <span class="case-title"><i>精准定向＋直达链接</i></span>
+                        </a>
+                        <a href="//e.qq.com/success/3415?showtype=2" class="case-item">
+                            <span class="case-cover" style="background-image: url(//qzonestyle.gtimg.cn/open_proj/gdt_gw/tsa/images/index/case4.jpg);"></span>
+                            <span class="case-brand">斯柯达</span>
+                            <span class="case-title"><i>汽配微商城的生意经</i></span>
+                        </a>
+                        <a href="//e.qq.com/success/3424?showtype=2" class="case-item">
+                            <span class="case-cover" style="background-image: url(//qzonestyle.gtimg.cn/open_proj/gdt_gw/tsa/images/index/case5.jpg);"></span>
+                            <span class="case-brand">全民超神</span>
+                            <span class="case-title"><i>竞技手游快速获取目标用户</i></span>
+                        </a>
+                        <a href="//e.qq.com/success/3400?showtype=2" class="case-item">
+                            <span class="case-cover" style="background-image: url(//qzonestyle.gtimg.cn/open_proj/gdt_gw/tsa/images/index/case6.jpg);"></span>
+                            <span class="case-brand">威露士</span>
+                            <span class="case-title"><i>利用“最佳人群组合“突围</i></span>
+                        </a>
+                        <a href="//e.qq.com/success/3413?showtype=2" class="case-item">
+                            <span class="case-cover" style="background-image: url(//qzonestyle.gtimg.cn/open_proj/gdt_gw/tsa/images/index/case7.jpg);"></span>
+                            <span class="case-brand">李维斯</span>
+                            <span class="case-title"><i>零售商突围：线上引流线下消费</i></span>
+                        </a>
+                        <a href="//e.qq.com/success/" class="case-item case-more">
+                            <span>查看全部成功案例</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-item swiper-slide">
+                <div class="feature-startup ">
+    <div class="feature-startup-bd">
+        <div class="startup-adsense"></div>
+        <div class="startup-selloff"></div>
+        <h2 class="startup-title">马上开始使用</h2>
+        <div class="startup-action">
+            <a class="startup-action-adsense" href="//e.qq.com/index.shtml" target="_blank">
+                <svg><rect x="0" y="0" width="200" height="64" fill="none"></rect></svg>
+                我要投放广告
+            </a>
+            <a class="startup-action-selloff" href="https://e.qq.com/dev/index.html" target="_blank">
+                <svg><rect x="0" y="0" width="200" height="64" fill="none"></rect></svg>
+                我要变现流量
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="footer-bd">
+        <div class="container">
+            <div class="footer-info">
+                <div class="footer-brand"></div>
+            </div>
+
+            <div class="footer-links">
+                <dl>
+                    <dt>我们的服务</dt>
+                    <dd><a href="//e.qq.com/index.shtml">腾讯广告营销平台</a></dd>
+                    <dd><a href="https://e.qq.com/dev/index.html">腾讯广告联盟</a></dd>
+                    <dd><a href="//de.qq.com/">广点通数据管理平台</a></dd>
+                    <dd><a href="http://exchange.qq.com/">腾讯程序化广告交易平台</a></dd>
+                </dl>
+
+         <!--        <dl>
+                    <dt>学习与支持</dt>
+                    <dd><a href="//e.qq.com/learn/">帮助中心</a></dd>
+                    <dd><a href="//e.qq.com/learn/">在线学习</a></dd>
+                </dl> -->
+
+                <dl>
+                    <dt>联系我们</dt>
+                    <dd><a>电话客服：400-0617813</a></dd>
+                    <dd><a>电子邮箱：pre_sales@ads.tencent.com</a></dd>
+                </dl>
+
+                <dl>
+                    <dt>关注我们</dt>
+                    <dd>
+                        <a class="qrcode-link" href="javascript:;">
+                            微信订阅号
+                            <span class="qrcode-img">
+                                <img src="//qzonestyle.gtimg.cn/open_proj/gdt_gw/tsa/images/faq/qrcode-1.png" alt="微信订阅号">
+                            </span>
+                        </a>
+                    </dd>
+                    <dd>
+                        <a class="qrcode-link" href="javascript:;">
+                            微信服务平台
+                            <span class="qrcode-img">
+                                <img src="//qzonestyle.gtimg.cn/open_proj/gdt_gw/tsa/images/faq/qrcode-2.png" alt="微信服务平台">
+                            </span>
+                        </a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="footer-ft">
+        <div class="container">
+            <div class="footer-nav">
+                <ul class="nav nav-footer">
+                    <li class="nav-item"><a href="//www.tencent.com/"  rel="nofollow">关于腾讯</a></li>
+                    <li class="nav-item"><a href="//www.tencent.com/index_e.shtml"  rel="nofollow">About Tencent</a></li>
+                    <li class="nav-item"><a href="http://www.qq.com/contract.shtml"  rel="nofollow">服务条款</a></li>
+                    <li class="nav-item"><a href="//e.qq.com/optout.html"  rel="nofollow">隐私权保护</a></li>
+                    <li class="nav-item"><a href="//hr.tencent.com/">腾讯招聘</a></li>
+                    <li class="nav-item"><a href="http://www.qq.com/copyright.shtml"  rel="nofollow">版权保护投诉指引</a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright">Copyright &copy; 1998 - 2020 Tencent Inc. All Rights Reserved. 腾讯公司 版权所有</div>
+        </div>
+    </div>
+</div>
+
+</div>
+        </div>
+        <div class="feature-pagination swiper-pagination"></div>
+    </div>
+
+<!--[if lt IE 9]>
+<script src="//qzonestyle.gtimg.cn/open_proj/gdt_gw/tsa/js/vendor/IE9.js"></script>
+<![endif]-->
+<script src="https://i.gtimg.cn/qzone/biz/comm/requirejs/require.js"></script>
+<script>
+	require.config({
+			baseUrl : 'https://qzonestyle.gtimg.cn/open_proj/gdt_gw/tsa/',
+			paths : {
+				'js' : 'js',
+				'swiper' : 'js/vendor/idangerous.swiper.min'
+			},
+			shim : {
+				'swiper' : ['js/vendor/jquery.min'],
+				'js/common' : ['js/vendor/jquery.min', 'swiper'],
+			}
+		});
+</script>
+<script>require(['js/common'], function(){});</script>
+<script src="//tajs.qq.com/stats?sId=55882941" charset="UTF-8"></script>
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-77095637-1', 'auto');
+ga('send', 'pageview');</script>
+<script type="text/javascript" src="//qzs.qq.com/qzone/biz/gdt/portal/js/libs/tajsqqcom/gdtphp.js" charset="UTF-8"></script>
+<script>
+var _mtac = {};
+(function() {
+    var mta = document.createElement("script");
+    mta.src = "//pingjs.qq.com/h5/stats.js?v2.0.2";
+    mta.setAttribute("name", "MTAH5");
+    mta.setAttribute("sid", "500574456");
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(mta, s);
+})();
+</script>
+</body>
+</html>
+
