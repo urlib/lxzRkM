@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Windcave | Google Pay&trade; | EFTPOS | Payment Gateway | Online Credit &amp; Debit Card Processing </title>
+    <meta name="viewport" content="width = device-width, initial-scale=1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="style/css.css?q=1" type="text/css"/>
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon"/>
+    <meta name="description" content="Windcave now brings to you, Google Pay. </br>Empower Customers by providing a frictionless checkout experience in Android Apps or on your website using Google Pay. Your customers will experience a checkout experience that is not only convenient but also simple to use. You the merchant can expect fewer abandoned payments and enhanced levels of customer satisfaction that will not only encourage customer retention but promote further customer acquisition."/>
+    <meta name="keywords" content="eftpos, payment gateway, online payment, ecommerce, integrated EFTPOS, IP EFTPOS, online payments, credit card processing, e-commerce, shopping cart, payment gateway, Point of Sale POS solutions, payment solutions"/>
+    <script src="style/js.js"></script>
+  </head>
+  <body>
+    <div class="css_mast">
+      <ul class="css_mast_ul" >
+        <li>
+          <div class="css_mast_image">
+            <a href="https://www.windcave.com" class="logo">Windcave</a>
+          </div>
+        </li>
+          <li>
+          <form id="search_form" action="search">
+            <div class="css_search_form" >
+            <input class="css_search_text" placeholder="Search" name="search" value="" title="Search"/>
+            <input class="css_search_button" type="submit" value="Search"/>
+            </div>
+            </form>
+          </li>
+      </ul>
+        <div class="css_main_nav">
+          <ul>
+            <li class="css_main_nav_item" ><a href="home"><img src='/image/home-mobile-img.png' class='NavBarImage' alt="Windcave"/></a></li>
+            <li class="css_main_nav_item" ><a href="merchant-ecommerce-pxpay"><img src='/image/arrow-left-nav-v1.png' class='NavBarImage' alt="Windcave"/></a></li>
+            <li class="css_main_nav_item" ><a href="sitemap">SiteMap</a></li>
+          <li><a href="https://sec.windcave.com/pxmi3/logon">Login</a></li>
+          <li><a target="_blank" href="https://sec.windcave.com/pxmi3/signup">Sign Up</a></li>
+          <li><a href="https://sec.windcave.com/pxmi3/enquiry">Enquire</a></li>
+          <li><a href="http://status.windcave.com/">System Status</a></li>
+          </ul>
+        </div>
+    </div>
+      <div class="css_main">
+        <div class='css_tiles_div'>
+          <section class='tiles   '>
+          <div class="css_tile_summary_text">
+            <p><br></p>
+            <p><div style="width: 400px;"></p>
+            <p><img class="img-responsive" src="/Image/GooglePayBanner.png" alt="Google Pay" title="Google Pay" style="position: relative; left: 516px; height: 107px;"/></p>
+            <p></div></p>
+            <p><h4>Windcave now brings to you, Google Pay&trade;</h4></p>
+            <p>Empower Customers by providing a frictionless checkout experience in Android Apps or on your website using Google Pay. Your customers will experience a checkout experience that is not only convenient but also simple to use. You the merchant can expect fewer abandoned payments and enhanced levels of customer satisfaction that will not only encourage customer retention but promote further customer acquisition.</p>
+            <p><img class="img-responsive" src="/Image/hero-merchant.jpg" alt="" title="" /></p>
+            <p><h4>Ultimate convenience with the ability for customers to store multiple credit and/or debit cards in their Google account. With Windcave app and web integration is made easy.</h4></p>
+          </div>
+          </section>
+          <section class='tiles   '>
+          <div class="css_tile_summary_text">
+              <div class='row'>
+                <div class='tile-sm-2'>
+                  <div class='section-content'>
+                  <p></p>
+                  <p><img class="img-responsive" src="/Image/GooglePayExamplePlayStore.png" alt="Google Pay Payment" title="Google Pay Payment" /></p>
+                  <p></p>
+                  </div>
+                </div>
+                <div class='tile-lg-2'>
+                  <div class='section-content'>
+                  <p></p>
+                  <p><text></p>
+                  <p><h4>Provide a native mobile app customer experience with Google Pay for Android and or web</h4></p>
+                  <p>With ecommerce booming, more and more shoppers are taking to their phones and laptops when it is time to make purchases. Using Google Pay, you can accept customer payments in apps or via your ecommerce site; you can even integrate directly into your existing Hosted Payment Page! For technical information , please refer to the <a href="../developer-ecommerce-google-pay">Google Pay integration guide</a>.</p>
+                  <p></text></p>
+                  <p></p>
+                  </div>
+                </div>
+                <div class='clear'>
+                </div>
+              </div>
+          </div>
+          </section>
+        </div>
+      </div>
+    <footer class="footer"></footer>
+    </body>
+  </html>
