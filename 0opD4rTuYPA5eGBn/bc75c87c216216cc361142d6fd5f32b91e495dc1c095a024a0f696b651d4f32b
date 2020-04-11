@@ -1,0 +1,1785 @@
+<!DOCTYPE html>
+<html pageId='0000000000' pageUuid='0f23a854-9edb-4e47-8d40-71e0a1a436c2'>
+<head>
+<title>
+	联想手机官方商城
+</title>
+<meta name="keywords" content="联想商城 手机/通讯 联想手机" />
+<meta name="description" content="联想手机官方商城首页" />
+<meta http-equiv="pragram" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache, must-revalidate">
+<script src="//m2.lefile.cn/global/js/jquery-1.8.3.min.js"></script>
+<link rel="stylesheet" href="//m1.lefile.cn/myStatic/slidingVerification/css/jquery.slider.css?v=1520492823591">
+<script type="text/javascript" src="//m1.lefile.cn/??myStatic/slidingVerification/js/aes.js,myStatic/slidingVerification/js/jquery.slider.js,myStatic/slidingVerification/js/uc.js?v=2"></script>
+
+<script src="//m2.lefile.cn/??lenovo_passport/1.4.20/js/pp.rr.min.js"></script>
+
+
+<script src="//m1.lefile.cn/lenovo_cms/js/componentRender.js"></script>
+<script src="//m1.lefile.cn/lenovo_cms/js/cms_common.js"></script>
+<script src="//m2.lefile.cn/gl/0.1.16/js/juicer-min.lenovo-plugin-need.loadjs.unslider.lazy.asynLoadInc.min.56786a60.js"></script>
+<!-- Google Analytics -->
+<script>
+	try{
+		var ga_userId="";
+		if(window.passport&&window.passport.cookie){
+			ga_userId = passport.cookie.lenovoId;
+		}
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-110299082-1', 'auto', {'userId': ga_userId});
+			ga('require', 'ec'); 
+			ga(function(tracker) {   
+			var clientId = tracker.get('clientId');
+			ga('set', 'dimension1', clientId); });
+			ga('set', 'dimension2', ga_userId);  
+			ga('set', 'dimension3', '');
+	        ga('require', 'linker');
+	        ga('linker:autoLink', ['lenovo.com.cn','lenovo.cn','lenovovip.com.cn','lenovo.com']);
+	        ga('set', 'transport', 'beacon');
+	        ga('send', 'pageview');
+	}catch(e){ }
+</script>
+<!-- End Google Analytics -->
+<link rel="stylesheet" href="//m1.lefile.cn/lenovo_cms/css/common.css"/>
+<style>
+<!--  -->
+		<!--  -->
+			body {
+					background-color:#f5f5f5
+			}
+		<!--  -->
+<!--  -->
+</style>
+<link rel="stylesheet" href="//m7.lefile.cn/version/batch/cjid.css?id=10cb4fb13a12a218162ed1d9ee230e3b,1a742f943291af470216bce06ce763e7,9140d362fdda3791697635831f6f19c2,a7559c9c66460ff64d38edecbd57f6fa,bf722ab7f1fad2d5a5302c1cf362e18e,"/>
+</head>
+<body>
+<script type="text/javascript">
+    var axel = Math.random() + "";
+    var a = axel * 10000000000000;
+    document.write('<iframe src="//6895322.fls.doubleclick.net/activityi;src=6895322;type=1124v0;cat=01-pc0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=1;num=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+</script>
+<link rel="stylesheet" href="//m7.lefile.cn/version/batch/cjid.css?id=10cb4fb13a12a218162ed1d9ee230e3b,7a2ee9c856ed5c4444bd58d282c577bc,"/>
+<script type="text/javascript" src="//m6.lefile.cn/version/batch/cjid.js?id=76161118869fd22abb327420f3097ea1,1b2e99f810291876a76ea20502920b01,"></script>
+<div pageId='' pageUuid='03a43c26-56d2-43a8-b89a-378dfe727abe' type="0">
+	<div layoutId='e6018c80-2af4-4d14-83d4-a0103bdeff99' id="03178a2f-9297-4d3f-bca1-6308f2017d91" order="0" layoutUuid='03178a2f-9297-4d3f-bca1-6308f2017d91' type='2' cssPath='' jsPath=''>
+    <style>
+    </style>
+    <div class="cms_currency_layout cms_background_layout_03178a2f-9297-4d3f-bca1-6308f2017d91  " order='1' tplConfig dischargeComponent floorname="">
+        <div componentId='11ae77bb-9914-4336-89e7-9dba391939bf' componentUuid='618fdf5a-a65f-4e72-adae-2c67efe98513' type="3" componentAddSrc="css" >
+    <link rel="stylesheet" href="https://m1.lefile.cn/myStatic/slidingVerification/css/jquery.slider.2.css"/>
+    <script src="https://m1.lefile.cn/??myStatic/slidingVerification/js/aes.js,myStatic/slidingVerification/js/jquery.slider.2.js,myStatic/slidingVerification/js/uc2.js"></script>
+
+<script src="https://m1.lefile.cn/??lenovo_passport/1.5.0/js/pp.rr2.min.js"> </script>
+    <div class="header_2018 clear_rx">
+        <div id="lenovo_logo">
+            <a href="http://www.lenovo.com.cn" target="_parent" latag="latag_pc_logo">
+                <img src="https://p1.lefile.cn/product/adminweb/2018/12/13/2d4534f6-29f3-4a05-8e68-97d9904c7bd2.png" alt="lenovo.com.cn">
+            </a>
+        </div>
+        <div class="header_nav">
+            <div class="content">
+                <ul class="ul_nav">
+                    <li class="lis">
+                        <a href="https://www.lenovo.com.cn/"  target="_blank"    latag="latag_pc_顶部导航__0_https://www.lenovo.com.cn/_联想首页">联想首页</a>
+
+                    </li>
+                    <li class="lis">
+                        <a href="https://shop.lenovo.com.cn"  target="_parent"    latag="latag_pc_顶部导航__1_https://shop.lenovo.com.cn_商城">商城</a>
+
+                    </li>
+                    <li class="lis">
+                        <a href="https://brand.lenovo.com.cn/"  target="_blank"    latag="latag_pc_顶部导航__2_https://brand.lenovo.com.cn/_品牌">品牌</a>
+
+                    </li>
+                    <li class="lis">
+                        <a href="https://newsupport.lenovo.com.cn/"  target="_blank"    latag="latag_pc_顶部导航__3_https://newsupport.lenovo.com.cn/_服务">服务</a>
+
+                    </li>
+                    <li class="lis">
+                        <a href="https://club.lenovo.com.cn/"  target="_blank"    latag="latag_pc_顶部导航__4_https://club.lenovo.com.cn/_社区">社区</a>
+
+                    </li>
+                    <li class="lis">
+                        <a href="https://mall.lenovo.com.cn/"  target="_blank"    latag="latag_pc_顶部导航__5_https://mall.lenovo.com.cn/_门店">门店</a>
+
+                    </li>
+                    <li class="lis app_down">
+                        <span style=" color:#E1140A;">下载app</span>
+                        <img src="https://p3.lefile.cn/product/adminweb/2019/12/09/c8fe3fb3-6f42-43b6-b2c5-177d8b18d258.png" alt="" srcset="">
+                    </li>
+                </ul>
+                <div class="ur_r_html">
+                    <div class="ul_r_2018">
+                        <div class="hd-login-regist">
+                            <a href="https://reg.lenovo.com.cn/auth/v1/regist" class="regist_btn_plat" target="_blank" latag="latag_pc_header_login_注册">注册</a>
+
+                            <i class="vertical-line"></i>
+                            <a href="javascript:;" class="login"  latag="latag_pc_header_login_登陆">登录</a>
+
+                            <i id="head_bubble"   latag="latag_pc_header_新人气泡_注册">
+                                <a href="https://reg.lenovo.com.cn/auth/v1/regist" class="regist_btn_plat" target="_blank" latag="latag_pc_header_login_注册">
+                                    注册送188元大礼包
+                                    <img src="https://p2.lefile.cn/product/adminweb/2019/01/18/fbd80d7a-1078-42cd-9558-53e374aada77.png" style="position: absolute;right: 7px;top: 8px;">
+                                </a>
+                            </i>
+                        </div>
+                        <div class="hd-login-show">
+                            <ul>
+                                <li class="user">
+                                    <span class="userName"> </span>
+                                    <img  class="userLeve" src="https://p3.lefile.cn/product/adminweb/2019/01/22/f1d4b5d5-b229-4bb5-93f4-7f0e64b274fe.png" alt="">
+                                    <div class="myCenter">
+                                        <div class="top clear_rx">
+                                            <a href="https://i.lenovo.com.cn/info/userinfo.jhtml?sts=e40e7004-4c8a-4963-8564-31271a8337d8"  target="_blank" latag="latag_pc_header_mycenter_个人信息_https://i.lenovo.com.cn/info/userinfo.jhtml?sts=e40e7004-4c8a-4963-8564-31271a8337d8">
+                                                <img class="uer_img" src="https://i.app.lefile.cn/sdefault1477559405444.png" alt="">
+                                            </a>
+                                            <div class="user_id">
+                                                <a href="https://i.lenovo.com.cn/info/userinfo.jhtml?sts=e40e7004-4c8a-4963-8564-31271a8337d8"  target="_blank" latag="latag_pc_header_mycenter_个人信息_https://i.lenovo.com.cn/info/userinfo.jhtml?sts=e40e7004-4c8a-4963-8564-31271a8337d8">
+                                                    <p class="noName"></p>
+                                                </a>
+                                                <a href="https://i.lenovo.com.cn/growth/levelRghtPage.jhtml?sts=e40e7004-4c8a-4963-8564-31271a8337d8"  target="_blank" latag="latag_pc_header_mycenter_等级权益_https://i.lenovo.com.cn/growth/levelRghtPage.jhtml?sts=e40e7004-4c8a-4963-8564-31271a8337d8">
+                                                    <p><span class="user_vp">普通会员 </span><img class="img_vp" src=""
+                                                                                              alt=""></p>
+                                                </a>
+                                            </div>
+
+                                            <a href="javascript:;"  target="_parent" class="logout" latag="latag_pc_header_mycenter_login_退出登陆">退出登录</a>
+                                        </div>
+                                        <div class="mid clear_rx">
+                                            <ul>
+                                                <li>
+                                                    <a href="https://i.lenovo.com.cn/ledou/list.jhtml?sts=e40e7004-4c8a-4963-8564-31271a8337d8"  target="_blank"  latag="latag_pc_header_mycenter_我的乐豆_https://i.lenovo.com.cn/ledou/list.jhtml?sts=e40e7004-4c8a-4963-8564-31271a8337d8" >
+                                                        <h3 class="userledou">暂无数据</h3>
+                                                        <span>乐豆</span>
+                                                    </a>
+
+                                                </li>
+                                                <li>
+                                                    <a href="https://buy.lenovo.com.cn/lenovo/saleCoupons.jhtm"  target="_blank" latag="latag_pc_header_mycenter_我的优惠券_https://buy.lenovo.com.cn/lenovo/saleCoupons.jhtm">
+                                                        <h3 class="usercoupon">暂无数据</h3>
+                                                        <span>优惠券</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://shop.lenovo.com.cn/consumptionPoint/list.html"  target="_blank" latag="latag_pc_header_mycenter_我的积分_https://shop.lenovo.com.cn/consumptionPoint/list.html" >
+                                                        <h3 class="userScore">暂无数据</h3>
+                                                        <span>消费积分</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://i.lenovo.com.cn/growth/index.jhtml?sts=e40e7004-4c8a-4963-8564-31271a8337d8"  target="_blank" latag="latag_pc_header_mycenter_成长值_https://i.lenovo.com.cn/growth/index.jhtml?sts=e40e7004-4c8a-4963-8564-31271a8337d8">
+                                                        <h3 class="userGrowth">暂无数据</h3>
+                                                        <span>成长值</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="bottom">
+                                            <ul>
+                                                <li>
+                                                    <a href="https://buy.lenovo.com.cn/center/orderlist.jhtm?merchantId=1"  target="_blank"  latag="latag_pc_header_mycenter_我的订单_https://buy.lenovo.com.cn/center/orderlist.jhtm?merchantId=1">
+                                                        <img src="https://p3.lefile.cn/product/adminweb/2018/12/29/208ff503-1712-463c-a7a2-6abe09ac064e.png" alt="">
+                                                        <span>我的订单</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://i.lenovo.com.cn/memberInfo/v2/center.jhtml?sts=e40e7004-4c8a-4963-8564-31271a8337d8"  target="_blank" latag="latag_pc_header_mycenter_会员中心_https://i.lenovo.com.cn/memberInfo/v2/center.jhtml?sts=e40e7004-4c8a-4963-8564-31271a8337d8">
+                                                        <img src="https://p4.lefile.cn/product/adminweb/2018/12/29/d3da30f6-cd3e-4120-8db2-712c95ba4fff.png" alt="">
+                                                        <span>会员中心</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://club.lenovo.com.cn/home.php?mod=space"  target="_blank" latag="latag_pc_header_mycenter_我的社区_https://club.lenovo.com.cn/space-uid-12724977.html" >
+                                                        <img src="https://p2.lefile.cn/product/adminweb/2018/12/29/1e768e9d-2fd2-46d0-8f52-f2f388f71620.png" alt="" >
+                                                        <span>我的社区</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://newsupport.lenovo.com.cn/"  target="_blank" latag="latag_pc_header_mycenter_我的服务_https://newsupport.lenovo.com.cn/" >
+                                                        <img src=" https://p3.lefile.cn/product/adminweb/2018/12/29/36f85303-ab0d-4ef6-a48b-6bd8594f7068.png" alt="">
+                                                        <span>我的服务</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="msg_heaer">
+                                    <img src="https://p2.lefile.cn/product/adminweb/2019/01/03/be5b01b9-8948-42c1-8a82-6c4872a62e21.png" alt="">
+                                </li>
+
+                                <li class="car">
+                                    <a href="https://buy.lenovo.com.cn/getcart.jhtm"  target="_blank"  latag="latag_pc_header_mycenter_购物车_https://buy.lenovo.com.cn/getcart.jhtm" >
+                                        <img src="https://p2.lefile.cn/product/adminweb/2019/01/18/9f0e8935-982b-4ca9-8772-28da55bd3c5e.png" alt="">
+                                        <span class="top_cart_count"></span>
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                        <div class="phone">
+                            <img src="https://p1.lefile.cn/product/adminweb/2019/01/18/c8f87ce8-1e14-4bb3-854e-f86af0f07072.png" alt="">
+                            <div class="phone_hov">
+                                <ul>
+
+                                    <li style=" border-bottom: 1px solid #efefef">
+                                        <div>
+                                            <img src="https://p2.lefile.cn/product/adminweb/2019/01/21/cb6cb783-ef71-4248-9996-3602a7906600.jpg" alt="">
+                                            <span class="title">联想客户端 <span class="name">下载即享 <br>188元新人礼</span></span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="header_box">
+            <ul class="ul">
+
+                    <li class="lis">
+                        <a href="https://shop.lenovo.com.cn/page/newarrival/xpzx.html" class="ass"   target="_blank" latag="latag_pc_二级导航__1_https://shop.lenovo.com.cn/page/newarrival/xpzx.html_新品发布" >新品发布</a>
+                    </li>
+
+                    <li class="lis">
+                        <a href="https://shop.lenovo.com.cn/page/srdz/index.html" class="ass"   target="_blank" latag="latag_pc_二级导航__2_https://shop.lenovo.com.cn/page/srdz/index.html_私人定制" >私人定制</a>
+                    </li>
+
+                    <li class="lis">
+                        <a href="https://shop.lenovo.com.cn/c2c/new/c2c_center.html" class="ass"   target="_blank" latag="latag_pc_二级导航__3_https://shop.lenovo.com.cn/c2c/new/c2c_center.html_合伙人" >合伙人</a>
+                    </li>
+
+                    <li class="lis">
+                        <a href="https://shop.lenovo.com.cn/page/oldfornew/oldfornew.html" class="ass"   target="_blank" latag="latag_pc_二级导航__4_https://shop.lenovo.com.cn/page/oldfornew/oldfornew.html_以旧换新" >以旧换新</a>
+                    </li>
+
+                    <li class="lis">
+                        <a href="https://activity.lenovo.com.cn/sales/gugong.html?pmf_group=in-push&amp;pmf_medium=scdh&amp;pmf_source=Z00012420T000" class="ass"   target="_blank" latag="latag_pc_二级导航__5_https://activity.lenovo.com.cn/sales/gugong.html?pmf_group=in-push&amp;pmf_medium=scdh&amp;pmf_source=Z00012420T000_大美故宫" >大美故宫</a>
+                    </li>
+
+                    <li class="lis">
+                        <a href="https://shop.lenovo.com.cn/stryout/tryhtml/index.html" class="ass"   target="_blank" latag="latag_pc_二级导航__6_https://shop.lenovo.com.cn/stryout/tryhtml/index.html_0元试用" >0元试用</a>
+                    </li>
+
+                    <li class="lis">
+                        <a href="https://shop.lenovo.com.cn/page/jf/jfsc.html" class="ass"   target="_blank" latag="latag_pc_二级导航__7_https://shop.lenovo.com.cn/page/jf/jfsc.html_积分商城" >积分商城</a>
+                    </li>
+
+                    <li class="lis">
+                        <a href="https://shop.lenovo.com.cn/qyg.html" class="ass"   target="_blank" latag="latag_pc_二级导航__8_https://shop.lenovo.com.cn/qyg.html_企业购" >企业购</a>
+                    </li>
+
+            </ul>
+            <div class="ul_r_box"></div>
+            <!-- 搜索 -->
+            <div class="search_btn">
+                <img src="https://p4.lefile.cn/product/adminweb/2018/12/29/f26ff743-3f82-4072-b27a-193f0e9ad675.png" alt="">
+            </div>
+            <div class="search">
+                <div class="logo_text">
+                    <div class="search_box think_search_header">
+                        <div style="display: none">
+                            <object id="plugin0" type="application/x-rloader">
+                                <param name="onload" value="pluginLoaded" />
+                            </object>
+                            <a href="http://support.lenovo.com.cn/lenovo/wsi/Modules/NewDrive.aspx" target="_blank" id="btn_open_driver_win" style="display: none;"></a>
+                        </div>
+
+                        <div class="search_input_bg"></div>
+                        <a tag='searchButton' class="serch_box_img" latag="latag_pc_search_confirm"><span></span></a>
+                        <input type="text" latag="latag_pc_search_keyword" />
+                        <i id="remove_keyword"></i>
+                        <ul class="resou_keyword">
+                        </ul>
+                        <div id="suggestContainer"></div>
+                    </div>
+
+                </div>
+                <div class="search_colse">
+                    <img src="https://p3.lefile.cn/product/adminweb/2018/12/29/dc5504f9-d4f7-4aea-b3ff-6a6bda557f8c.png" alt="">
+                </div>
+            </div>
+        </div>
+        <script src="//m2.lefile.cn/lenovo_pc_search_common/js/lenovo_search_header.min.js"> </script>
+
+
+    </div>
+    <div class="hold_header"></div>
+
+    <!--右侧导航栏-->
+    <div class="sort">
+        <div class="sort-list">
+            <ul>
+                <li class="firstLevel" style="display: block">
+                    <a href="javascript:;" class="sort-list-item" target="" latag="latag_pc_右侧导航_一级菜单_0_null_热线">
+                        <img src="//p4.lefile.cn/fes/cms/2020/02/21/ff0w0gh8csqt5bge80ry5ml86ku29z865084.png" alt="">
+                    </a>
+                    <a href="javascript:;" class="sort-list-item" target="" style="display: none;" latag="latag_pc_右侧导航_一级菜单_0_null_热线">
+                        <img src="//p4.lefile.cn/fes/cms/2020/02/21/xj5385rvoe8faxspi7o411x9jsxlob188755.png" alt="" >
+                    </a>
+                    <ul class="list">
+                        <a class="pop-img1" href="javascript:;" style="display: inline;" target="" latag="latag_pc_右侧导航_二级菜单_0_null_消费服务热线">
+                            <img src="//p4.lefile.cn/fes/cms/2020/02/21/xviyf2ikktw05yttjeieza4isgbuvk762438.png" alt="">
+                        </a>
+                        <a class="pop-img2" href="javascript:;" style="display: none;" target="" latag="latag_pc_右侧导航_二级菜单_0_null_消费服务热线">
+                            <img src="//p1.lefile.cn/fes/cms/2020/02/21/irruuo2svhr67vepdigmnko32nppyw328696.png" alt="">
+                        </a>
+                    </ul>
+                </li>
+                <li class="firstLevel" style="display: block">
+                    <a href="https://srv.lenovo.com.cn/home/index.do?sd=1" class="sort-list-item" target="" latag="latag_pc_右侧导航_一级菜单_1_https://srv.lenovo.com.cn/home/index.do?sd=1_咨询">
+                        <img src="//p2.lefile.cn/fes/cms/2020/02/21/totssmb3o8jre371uvi0t8nqzsk6xr906384.png" alt="">
+                    </a>
+                    <a href="https://srv.lenovo.com.cn/home/index.do?sd=1" class="sort-list-item" target="" style="display: none;" latag="latag_pc_右侧导航_一级菜单_1_https://srv.lenovo.com.cn/home/index.do?sd=1_咨询">
+                        <img src="//p2.lefile.cn/fes/cms/2020/02/21/t4empwrv6dtg02fw2yoky5t0uwqts7415366.png" alt="" >
+                    </a>
+                    <ul class="list">
+                        <a class="pop-img1" href="https://srv.lenovo.com.cn/home/index.do?sd=1" style="display: inline;" target="" latag="latag_pc_右侧导航_二级菜单_0_https://srv.lenovo.com.cn/home/index.do?sd=1_售前咨询">
+                            <img src="//p4.lefile.cn/fes/cms/2020/02/21/6zfw0enh85qjfwru0w9ccvdoaicvd2605968.png" alt="">
+                        </a>
+                        <a class="pop-img2" href="https://srv.lenovo.com.cn/home/index.do?sd=1" style="display: none;" target="" latag="latag_pc_右侧导航_二级菜单_0_https://srv.lenovo.com.cn/home/index.do?sd=1_售前咨询">
+                            <img src="//p4.lefile.cn/fes/cms/2020/02/21/ima8opzz04vzdhcpljh01tld063idz439628.png" alt="">
+                        </a>
+                    </ul>
+                </li>
+                <li class="firstLevel" style="display: block">
+                    <a href="https://mall.lenovo.com.cn" class="sort-list-item" target="" latag="latag_pc_右侧导航_一级菜单_2_https://mall.lenovo.com.cn_门店">
+                        <img src="//p3.lefile.cn/fes/cms/2020/02/21/yz0vrnil45t7ywklc9aso1azz2lg4n819485.png" alt="">
+                    </a>
+                    <a href="https://mall.lenovo.com.cn" class="sort-list-item" target="" style="display: none;" latag="latag_pc_右侧导航_一级菜单_2_https://mall.lenovo.com.cn_门店">
+                        <img src="//p4.lefile.cn/fes/cms/2020/02/21/auivk5c3kmxy9c78p4qaxonhkaelx3624822.png" alt="" >
+                    </a>
+                    <ul class="list">
+                    </ul>
+                </li>
+                <li class="firstLevel" style="display: block">
+                    <a href="https://c.lenovo.com.cn/tucao/lenovo/tucao.html" class="sort-list-item" target="" latag="latag_pc_右侧导航_一级菜单_3_https://c.lenovo.com.cn/tucao/lenovo/tucao.html_吐槽">
+                        <img src="//p2.lefile.cn/fes/cms/2020/02/21/bouuhncipsz2g0tl39isq9pans2c4s839564.png" alt="">
+                    </a>
+                    <a href="https://c.lenovo.com.cn/tucao/lenovo/tucao.html" class="sort-list-item" target="" style="display: none;" latag="latag_pc_右侧导航_一级菜单_3_https://c.lenovo.com.cn/tucao/lenovo/tucao.html_吐槽">
+                        <img src="//p4.lefile.cn/fes/cms/2020/02/21/lmdpfpd9veva84nrx17tt2iinykye9347318.png" alt="" >
+                    </a>
+                    <ul class="list">
+                    </ul>
+                </li>
+                <li class="firstLevel" style="display: block">
+                    <a href="javascript:;" class="sort-list-item" target="" latag="latag_pc_右侧导航_一级菜单_4_null_APP专享">
+                        <img src="//p1.lefile.cn/fes/cms/2020/02/21/67xvz6pb7um0yvcwagmk968qmp7mk0776973.png" alt="">
+                    </a>
+                    <a href="javascript:;" class="sort-list-item" target="" style="display: none;" latag="latag_pc_右侧导航_一级菜单_4_null_APP专享">
+                        <img src="//p3.lefile.cn/fes/cms/2020/02/21/r5ct09nrprhlsgvct3uuefcretjfua116929.png" alt="" >
+                    </a>
+                    <ul class="list">
+                        <a class="pop-img1" href="javascript:;" style="display: inline;" target="" latag="latag_pc_右侧导航_二级菜单_0_null_APP专享">
+                            <img src="//p1.lefile.cn/fes/cms/2020/02/21/nuiwgw0jza8eu1z4jrxowgb8c8oivv161889.png" alt="">
+                        </a>
+                        <a class="pop-img2" href="javascript:;" style="display: none;" target="" latag="latag_pc_右侧导航_二级菜单_0_null_APP专享">
+                            <img src="//p1.lefile.cn/fes/cms/2020/02/21/qf8qj59pgwcuzqr9e6kt0tnly5fpgj180917.png" alt="">
+                        </a>
+                    </ul>
+                </li>
+                <li class="firstLevel" style="display: block">
+                    <a href="https://activity.lenovo.com.cn/member/registered.html" class="sort-list-item" target="" latag="latag_pc_右侧导航_一级菜单_5_https://activity.lenovo.com.cn/member/registered.html_注册好礼">
+                        <img src="//p4.lefile.cn/fes/cms/2020/02/21/htq7ni4wft2x6fx9l4abx6imk57asl590424.png" alt="">
+                    </a>
+                    <a href="https://activity.lenovo.com.cn/member/registered.html" class="sort-list-item" target="" style="display: none;" latag="latag_pc_右侧导航_一级菜单_5_https://activity.lenovo.com.cn/member/registered.html_注册好礼">
+                        <img src="//p4.lefile.cn/fes/cms/2020/02/21/9gsplvnjhhlef7xuwvq0mk75km82sn037679.png" alt="" >
+                    </a>
+                    <ul class="list">
+                        <a class="pop-img1" href="https://activity.lenovo.com.cn/member/registered.html" style="display: inline;" target="" latag="latag_pc_右侧导航_二级菜单_0_https://activity.lenovo.com.cn/member/registered.html_注册好礼">
+                            <img src="//p4.lefile.cn/fes/cms/2020/02/21/odv06hkesq9i5wxl0m7ty2ng0m23hm182753.png" alt="">
+                        </a>
+                        <a class="pop-img2" href="https://activity.lenovo.com.cn/member/registered.html" style="display: none;" target="" latag="latag_pc_右侧导航_二级菜单_0_https://activity.lenovo.com.cn/member/registered.html_注册好礼">
+                            <img src="//p1.lefile.cn/fes/cms/2020/02/21/co8lmhocl5a8309mdgj4jfohpjss6x554026.png" alt="">
+                        </a>
+                    </ul>
+                </li>
+                <li class="firstLevel" id="goTop">
+                    <a href="javascript:;" class="sort-list-item">
+                        <img src="https://p3.lefile.cn/product/adminweb/2020/02/12/c8ade3e1-724d-45e1-8d40-7d4b51ad6cec.png" alt="">
+                    </a>
+                    <a href="javascript:;" class="sort-list-item" style="display: none;">
+                        <img src="https://p3.lefile.cn/product/adminweb/2020/02/12/9e4d19d9-cf6b-4970-a506-f792a2f1106a.png" alt="" >
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div style="text-align:center;clear:both">
+    </div>
+
+    <script src="//m1.lefile.cn/la/la.cookie.no.leid.getcookie.201903.js"></script>
+
+
+</div>
+    </div>
+</div>
+</div>
+
+
+  
+	<div layoutId='e6018c80-2af4-4d14-83d4-a0103bdeff99' id="b7eb5033-6fbb-4076-b3fe-e899051a7072" order="0" layoutUuid='b7eb5033-6fbb-4076-b3fe-e899051a7072' type='2' cssPath='' jsPath=''>
+    <style>
+        
+        .cms_background_layout_b7eb5033-6fbb-4076-b3fe-e899051a7072{background-color:#ffffff!important;}
+        
+        .cms_background_layout_b7eb5033-6fbb-4076-b3fe-e899051a7072{background-image:url(//p2.lefile.cn/fes/cms/2020/04/11/x4sc2t7arcxi4zey3k5k793eltom2e512897.jpg);
+            background-position-x: center;
+            background-position-y: top;
+            background-repeat: no-repeat;
+            width: 100% !important;
+            height:889px!important;
+        }
+    </style>
+    <div class="cms_currency_layout cms_background_layout_b7eb5033-6fbb-4076-b3fe-e899051a7072  cms_currency_layout" order='1' tplConfig dischargeComponent floorname="">
+        
+    </div>
+</div>
+	<div layoutId='e6018c80-2af4-4d14-83d4-a0103bdeff99' id="a59b62a7-0ac9-4f49-a254-6de936800636" order="1" layoutUuid='a59b62a7-0ac9-4f49-a254-6de936800636' type='2' cssPath='' jsPath=''>
+    <style>
+        
+        .cms_background_layout_a59b62a7-0ac9-4f49-a254-6de936800636{background-color:#ffffff!important;}
+        
+        .cms_background_layout_a59b62a7-0ac9-4f49-a254-6de936800636{background-image:url(//p2.lefile.cn/fes/cms/2020/02/22/e30vvi2a89cujfrqe5uvo90j9e9fc2802268.jpg);
+            background-position-x: center;
+            background-position-y: top;
+            background-repeat: no-repeat;
+            width: 100% !important;
+            height:200px!important;
+        }
+    </style>
+    <div class="cms_currency_layout cms_background_layout_a59b62a7-0ac9-4f49-a254-6de936800636  cms_currency_layout" order='1' tplConfig dischargeComponent floorname="">
+        <div componentId='b955aced-62bc-4c3e-a61e-1c5308b9c48b' componentUuid='878738b2-f44b-4730-a9f3-802828648990' type="3" style="height: 100%;">
+    <div class="cms_draggable_href_component_Body">
+        <style>
+            .cms_draggable_href_component_878738b2-f44b-4730-a9f3-802828648990_0 {
+                height:100px ;
+                width:200px ;
+            }
+            .cms_draggable_href_component_878738b2-f44b-4730-a9f3-802828648990_0 {
+                height:180px ;
+                width:1040px ;
+                left:-588px;
+                top:4px;
+            }
+        </style>
+        <div class="cms_draggable_href_component cms_draggable_href_component_878738b2-f44b-4730-a9f3-802828648990_0" style="height:180px;width:1040px ;left:-588px;top:4px;" draggableComponent>
+            <a
+
+            target="_blank"
+            href="https://activity.lenovo.com.cn/xiaofei/zhuanshu/jiyouzhaomu.html"
+
+            latag="latag_pc_null_0_https://activity.lenovo.com.cn/xiaofei/zhuanshu/jiyouzhaomu.html_null">
+            <span>0</span>
+            <div style="font-size:15px;text-align:center;">https://activity.lenovo.com.cn/xiaofei/zhuanshu/jiyouzhaomu.html</div>
+        </a>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+	<div layoutId='350bc9d0-92c1-4069-ad0a-7cc27b2f7721' layoutUuid='0d49fa58-a06e-4aab-9ffc-c01125ed320a' order='2' type='2' cssPath='' jsPath=''>
+    <style>
+
+         .Selection_banner_20180516_0d49fa58-a06e-4aab-9ffc-c01125ed320a{background-color:#f5f5f5!important;}
+         .Selection_banner{width: 1200px;margin: 0 auto;overflow: hidden;}
+         .Selection_banner .Selection_banner_ul>li{float: left;}
+         .Selection_banner .Selection_banner_ul .Selection_banner_layul>li{height: 72px;width: 100%;}
+   
+    </style>
+    <div class="Selection_banner_20180516_0d49fa58-a06e-4aab-9ffc-c01125ed320a" floorname="">
+            <div class="Selection_banner">
+        <ul class="Selection_banner_ul clearfix">
+        <li  style="width: 280px;" >
+            <ul class="Selection_banner_layul">
+                <li order="1" dischargeComponent> <div componentId='1af88e8d-f01e-4dda-a4e9-03a7913cf513' componentUuid='d76fde7d-a5a9-463b-b0da-61648ac0ac12' type="3"  tplConfig>
+        <style>
+        .banner_lis{height: 72px;width: 100%;box-sizing: border-box;padding: 10px 10px 10px 19px;border-bottom: 1px solid #ccc;border-left: 1px solid #ccc;}
+        .banner_lis:hover{border-left: 3px solid red; padding-left: 17px;background: #fafafa;}
+        .banner_lis .left{float: left;height: 33px;width: 33px;margin-top: 10px;}
+         .banner_lis .right{float: right;width: 180px;}
+         .banner_lis .right h2{color: red;font-size: 14px;font-weight: 600}
+         .banner_lis .right ul li{float: left;margin-right: 4px;}
+        </style>
+               
+            
+                <div class="banner_lis">
+                <div class="right" style="color: ;"> <h2>新品手机</h2>
+                <ul>
+                    <li><a href="https://activity.lenovo.com.cn/xiaofei/phone/z6overview.html"  latag="latag_pc__0_https://activity.lenovo.com.cn/xiaofei/phone/z6overview.html">Z6 | </a></li>
+                    <li><a href="https://activity.lenovo.com.cn/xiaofei/phone/z6qingchunoverview.html"  latag="latag_pc__1_https://activity.lenovo.com.cn/xiaofei/phone/z6qingchunoverview.html">Z6 青春版 | </a></li>
+                    <li><a href="https://activity.lenovo.com.cn/xiaofei/phone/z6prooverview.html"  latag="latag_pc__2_https://activity.lenovo.com.cn/xiaofei/phone/z6prooverview.html">Z6 Pro</a></li>
+                </ul>
+            </div>
+            </div>
+    </div></li>
+                <li order="3" dischargeComponent> <div componentId='1af88e8d-f01e-4dda-a4e9-03a7913cf513' componentUuid='b252f29e-b746-451b-a7b6-1e8e6b643f9a' type="3"  tplConfig>
+        <style>
+        .banner_lis{height: 72px;width: 100%;box-sizing: border-box;padding: 10px 10px 10px 19px;border-bottom: 1px solid #ccc;border-left: 1px solid #ccc;}
+        .banner_lis:hover{border-left: 3px solid red; padding-left: 17px;background: #fafafa;}
+        .banner_lis .left{float: left;height: 33px;width: 33px;margin-top: 10px;}
+         .banner_lis .right{float: right;width: 180px;}
+         .banner_lis .right h2{color: red;font-size: 14px;font-weight: 600}
+         .banner_lis .right ul li{float: left;margin-right: 4px;}
+        </style>
+               
+            
+                <div class="banner_lis">
+                <div class="right" style="color: ;"> <h2>爆款热销</h2>
+                <ul>
+                    <li><a href="https://activity.lenovo.com.cn/activity/moto/introduce/lenovoz5/html/overview/index.html"  latag="latag_pc__0_https://activity.lenovo.com.cn/activity/moto/introduce/lenovoz5/html/overview/index.html">Z5 |</a></li>
+                    <li><a href="https://activity.lenovo.com.cn/activity/moto/introduce/lenovok5pro/html/overview/index.html"  latag="latag_pc__1_https://activity.lenovo.com.cn/activity/moto/introduce/lenovok5pro/html/overview/index.html">K5 Pro</a></li>
+                </ul>
+            </div>
+            </div>
+    </div></li>
+                <li order="4" dischargeComponent> <div componentId='1af88e8d-f01e-4dda-a4e9-03a7913cf513' componentUuid='530f62cd-5568-4c2e-b1a1-44b980cdada9' type="3"  tplConfig>
+        <style>
+        .banner_lis{height: 72px;width: 100%;box-sizing: border-box;padding: 10px 10px 10px 19px;border-bottom: 1px solid #ccc;border-left: 1px solid #ccc;}
+        .banner_lis:hover{border-left: 3px solid red; padding-left: 17px;background: #fafafa;}
+        .banner_lis .left{float: left;height: 33px;width: 33px;margin-top: 10px;}
+         .banner_lis .right{float: right;width: 180px;}
+         .banner_lis .right h2{color: red;font-size: 14px;font-weight: 600}
+         .banner_lis .right ul li{float: left;margin-right: 4px;}
+        </style>
+               
+            
+                <div class="banner_lis">
+                <div class="right" style="color: ;"> <h2>旗舰手机</h2>
+                <ul>
+                    <li><a href="https://activity.lenovo.com.cn/xiaofei/phone/z6prooverview.html"  latag="latag_pc__0_https://activity.lenovo.com.cn/xiaofei/phone/z6prooverview.html">Z6 Pro</a></li>
+                </ul>
+            </div>
+            </div>
+    </div></li>
+                <li order="5" dischargeComponent> <div componentId='1af88e8d-f01e-4dda-a4e9-03a7913cf513' componentUuid='6f02712b-7201-410c-a8df-9c5f1f1b8477' type="3"  tplConfig>
+        <style>
+        .banner_lis{height: 72px;width: 100%;box-sizing: border-box;padding: 10px 10px 10px 19px;border-bottom: 1px solid #ccc;border-left: 1px solid #ccc;}
+        .banner_lis:hover{border-left: 3px solid red; padding-left: 17px;background: #fafafa;}
+        .banner_lis .left{float: left;height: 33px;width: 33px;margin-top: 10px;}
+         .banner_lis .right{float: right;width: 180px;}
+         .banner_lis .right h2{color: red;font-size: 14px;font-weight: 600}
+         .banner_lis .right ul li{float: left;margin-right: 4px;}
+        </style>
+               
+            
+                <div class="banner_lis">
+                <div class="right" style="color: ;"> <h2>联想手机</h2>
+                <ul>
+                    <li><a href="https://activity.lenovo.com.cn/xiaofei/phone/s5prooverview.html"  latag="latag_pc__0_https://activity.lenovo.com.cn/xiaofei/phone/s5prooverview.html">S5 Pro  |</a></li>
+                    <li><a href="https://activity.lenovo.com.cn/xiaofei/phone/z5soverview.html"  latag="latag_pc__1_https://activity.lenovo.com.cn/xiaofei/phone/z5soverview.html">Z5s </a></li>
+                </ul>
+            </div>
+            </div>
+    </div></li>
+                <li order="6" dischargeComponent> <div componentId='1af88e8d-f01e-4dda-a4e9-03a7913cf513' componentUuid='b2bef851-3b21-44e6-9673-fc8224695a0e' type="3"  tplConfig>
+        <style>
+        .banner_lis{height: 72px;width: 100%;box-sizing: border-box;padding: 10px 10px 10px 19px;border-bottom: 1px solid #ccc;border-left: 1px solid #ccc;}
+        .banner_lis:hover{border-left: 3px solid red; padding-left: 17px;background: #fafafa;}
+        .banner_lis .left{float: left;height: 33px;width: 33px;margin-top: 10px;}
+         .banner_lis .right{float: right;width: 180px;}
+         .banner_lis .right h2{color: red;font-size: 14px;font-weight: 600}
+         .banner_lis .right ul li{float: left;margin-right: 4px;}
+        </style>
+               
+            
+                <div class="banner_lis">
+                <div class="right" style="color: ;"> <h2>moto手机</h2>
+                <ul>
+                    <li><a href="https://item.lenovo.com.cn/product/1005106.html"  latag="latag_pc__0_https://item.lenovo.com.cn/product/1005106.html">p50 |</a></li>
+                    <li><a href="https://www.motorola.com.cn/motop30note/overview/index.html"  latag="latag_pc__1_https://www.motorola.com.cn/motop30note/overview/index.html">p30 note</a></li>
+                </ul>
+            </div>
+            </div>
+    </div></li>
+                <li order="7" dischargeComponent> <div componentId='1af88e8d-f01e-4dda-a4e9-03a7913cf513' componentUuid='ec692e78-3963-4321-ba9a-452e8856960c' type="3"  tplConfig>
+        <style>
+        .banner_lis{height: 72px;width: 100%;box-sizing: border-box;padding: 10px 10px 10px 19px;border-bottom: 1px solid #ccc;border-left: 1px solid #ccc;}
+        .banner_lis:hover{border-left: 3px solid red; padding-left: 17px;background: #fafafa;}
+        .banner_lis .left{float: left;height: 33px;width: 33px;margin-top: 10px;}
+         .banner_lis .right{float: right;width: 180px;}
+         .banner_lis .right h2{color: red;font-size: 14px;font-weight: 600}
+         .banner_lis .right ul li{float: left;margin-right: 4px;}
+        </style>
+               
+            
+                <div class="banner_lis">
+                <div class="right" style="color: ;"> <h2>精品配件</h2>
+                <ul>
+                    <li><a href="https://item.lenovo.com.cn/product/1002831.html"  latag="latag_pc__0_https://item.lenovo.com.cn/product/1002831.html">Watch S |</a></li>
+                    <li><a href="https://item.lenovo.com.cn/product/1002960.html"  latag="latag_pc__1_https://item.lenovo.com.cn/product/1002960.html">Watch X |</a></li>
+                </ul>
+            </div>
+            </div>
+    </div></li>
+            </ul>
+           
+        </li>
+       <li style="width: 920px;overflow: hidden;position: relative;" order="2" dischargeComponent >
+             
+<div componentId='3b417788-bda4-461f-8384-6175849785a5' componentUuid='03174857-db74-4c70-93d3-1ceca7cb63d2' class="cms_slides_component" type='3' componentRender="slides">
+        <div id="xiaoxin_div">
+            <ul id="ul1">
+                <li class="nohid">
+                    <a target="_blank" href="https://item.lenovo.com.cn/product/1005043.html" latag="latag_pc_0_轮播图">
+                        <div style="height:434px !important;background:url('//p1.lefile.cn/fes/cms/2020/03/10/of9yqwyhos38z9nlicd4km12b3muo9639780.jpg') center no-repeat "></div>
+                    </a>
+                </li>
+            </ul>
+            <span class="btnLeft" style="display: none;"></span>
+            <span class="btnRight" style="display: none;"></span>
+            <div class="lubo_dots">
+                <ul id="dot_ul">
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    
+       </li>
+    </ul>
+    </div>
+</div>
+</div>
+	<div layoutId='cedc1d88-2ebb-4e7b-89cb-5f7976cb9c88' layoutUuid='973ea832-739d-4373-b724-a0e57f741962' order='3' class="cms_tab_goods_layout" type='2' cssPath='' jsPath='' componentRender="tabslide">
+        <link rel="stylesheet" href="//m1.lefile.cn/lenovo_cms/css/thinkchannel.css?ts=111"/>
+    <style>
+
+        .cms_backImage_layout_973ea832-739d-4373-b724-a0e57f741962{background-color:#f5f5f5!important;}
+
+        .cms_backImage_layout_973ea832-739d-4373-b724-a0e57f741962{background-image:url(//p1.lefile.cn/fes/cms/2019/06/20/r2pdn44ggc9e5l51mnlje7t7268g3f413343.jpg);
+            background-position-x: center;
+            background-position-y: top;
+            background-repeat: no-repeat;
+            width: 100% !important;
+            height:110px!important;
+        }
+        .new_star_hot201803232020 .hot_pro .hot_pro_head .hot_pro_head_hot .fl{color: black;font-weight: 800;font-size: 18px;}
+        .new_star_hot201803232020 .hot_pro .hot_pro_head .hot_pro_head_hot .cur{color: #e60012;}
+    </style>
+    <div class="cms_backImage_layout_973ea832-739d-4373-b724-a0e57f741962 " floorname="">
+        <div class="new_star_hot201803232020">
+            <div class="hot_pro ">
+                <div class="clearfix hot_pro_head">
+                    <p class="fl hot_pro_title" style="color: #000">明星单品</p>
+                    <ul class="fr hot_pro_head_hot">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+	<div layoutId='63a5db8c-aa68-4b5f-b963-62308a9b2c45' layoutUuid='39330734-40ff-498a-86fd-dd6365d076fd' order='4' type='2' cssPath='' jsPath=''>
+        <style>
+             .Selection_channel_20180516{width: 1200px; margin: 0 auto;}
+            .Selection_channel_20180516 .Selection_channel_ul>li{float: left;height: 166px;}
+            .Selection_channel_20180516 .Selection_channel_ul .lis:hover{box-shadow: 0 15px 30px rgba(0,0,0, .1);transition: all .2s linear; transform: translate3d(0,-2px,0);-webkit-transform:translate3d(0,-2px,0);}
+        </style>
+        <div class="Selection_channel_20180516_39330734-40ff-498a-86fd-dd6365d076fd" floorname="">
+            <div class="Selection_channel_20180516">
+                <ul class="Selection_channel_ul clearfix">
+                    <li class="lis Selection_assembly" style="width: 233px;" order="1" dischargeComponent>
+                        <div componentId='384f1cc9-eda0-4f26-ae86-815fcfc0a677' componentUuid='9e5e9ceb-a471-48ae-a03f-f466f26c5a82' type="3" componentRender="bottomfix">
+        <style>
+            .Selection_channel_20180516 .Selection_channel_nav{width: 233px;height: 166px;;}
+           .Selection_channel_20180516 .Selection_channel_nav>li{float: left; height: 83px;;width: 77.5px;}
+        .Selection_channel_20180516 .Selection_channel_nav>li img{width: 100%;height: 100%;}
+        .Selection_channel_20180516 .Selection_channel_nav>li>a{display: block;width: 100%;height: 100%;}
+        .Selection_channel_20180516 .Selection_channel_nav>li img:hover{box-shadow: 0 15px 30px rgba(0,0,0, .1);transition: all .2s linear; transform: translate3d(0,-2px,0);-webkit-transform:translate3d(0,-2px,0)}
+
+
+            
+            </style>
+           <ul class="Selection_channel_nav">
+                <li><a href="https://item.lenovo.com.cn/product/1004472.html" target="_blank"  latag="latag_pc__https://item.lenovo.com.cn/product/1004472.html_0"><img src="//p4.lefile.cn/fes/cms/2019/06/19/4js6x0jtungwpw13a8mbe96ovimo29935834.jpg" alt=""></a></li>
+           
+                 <li><a href="#9d2bb1aa-5c0b-40f6-acab-ab734c92c767"  latag="latag_pc__1_9d2bb1aa-5c0b-40f6-acab-ab734c92c767"><img src="//p4.lefile.cn/fes/cms/2019/06/19/ykvxio1wp3ywuls18tpa16pfc2q4wn579449.jpg" alt=""></a></li>
+           
+                 <li><a href="#0d5ca160-5506-45e3-b9ef-24a7616633bf"  latag="latag_pc__2_0d5ca160-5506-45e3-b9ef-24a7616633bf"><img src="//p2.lefile.cn/fes/cms/2019/06/19/rj3fi3cxpvyxo5p419bp22hb4a5xz4255137.jpg" alt=""></a></li>
+           
+                 <li><a href="#3d0341f4-47a4-447a-84d5-c268deb4d9bf"  latag="latag_pc__3_3d0341f4-47a4-447a-84d5-c268deb4d9bf"><img src="//p1.lefile.cn/fes/cms/2019/06/19/fq28qk61i5k670y9c8hsaafcri482u876166.jpg" alt=""></a></li>
+           
+                <li><a href="https://shop.lenovo.com.cn/zcode/index.html" target="_blank"  latag="latag_pc__https://shop.lenovo.com.cn/zcode/index.html_4"><img src="//p3.lefile.cn/fes/cms/2019/06/19/b0u9ep12orvz160omyhj5ejtwvfm7t501901.jpg" alt=""></a></li>
+           
+                <li><a href="https://www.zui.com/" target="_blank"  latag="latag_pc__https://www.zui.com/_5"><img src="//p2.lefile.cn/fes/cms/2019/06/19/az11dpsmih0p0m1880yhcwf00nil2w088554.jpg" alt=""></a></li>
+           
+            </ul>
+       
+       </div>
+                    </li>
+                    <li class="Selection_assembly" style="width: 967px;" order="2" dischargeComponent >
+                            <div componentId='a4509fa5-1bb1-47f7-b1b1-15a640b6ee89' componentUuid='4539e0de-af17-4e44-84f5-5c6dcfed3a70' type="3" componentRender="bottomfix">
+    <style>
+        .Selection_channel_20180516 .Selection_channel_assembly{width: 967px;height: 166px; }
+        .Selection_channel_20180516 .Selection_channel_assembly>li{float: left;width: 312px; float: right;height: 166px;background-size: 100%;margin-left: 10px;}
+        .Selection_channel_20180516 .Selection_channel_assembly>li img{width: 100%;height: 100%;}
+        .Selection_channel_20180516 .Selection_channel_assembly>li:hover{box-shadow: 0 15px 30px rgba(0,0,0, .1);transition: all .2s linear; transform: translate3d(0,-2px,0);-webkit-transform:translate3d(0,-2px,0);}
+        
+        </style>
+       <ul class="Selection_channel_assembly">
+            <li><a href="https://item.lenovo.com.cn/product/1003636.html" target="_blank"  latag="latag_pc__https://item.lenovo.com.cn/product/1003636.html_0"><img src="//p3.lefile.cn/fes/cms/2020/02/22/8bkccvz75xl8oq6f8h7a57x5prz1i2090881.jpg" alt=""></a></li>
+       
+            <li><a href="https://activity.lenovo.com.cn/xiaofei/zhuanshu/motorazr.html" target="_blank"  latag="latag_pc__https://activity.lenovo.com.cn/xiaofei/zhuanshu/motorazr.html_1"><img src="//p2.lefile.cn/fes/cms/2020/02/22/nkktl89kiw1ml4g73fu448d4e99kvr387273.jpg" alt=""></a></li>
+       
+            <li><a href="https://item.lenovo.com.cn/product/1005043.html" target="_blank"  latag="latag_pc__https://item.lenovo.com.cn/product/1005043.html_2"><img src="//p1.lefile.cn/fes/cms/2020/03/10/1l1z5bmuiwr6raf5x921vrrbv186rr492095.jpg" alt=""></a></li>
+       
+        </ul>
+   
+   </div>
+                    </li>
+                </ul>  
+             </div>
+        </div>
+    </div>
+    
+	<div layoutId='cedc1d88-2ebb-4e7b-89cb-5f7976cb9c88' layoutUuid='c7111953-ac96-4b4d-9744-4c085e8a60ff' order='5' class="cms_tab_goods_layout" type='2' cssPath='' jsPath='' componentRender="tabslide">
+        <link rel="stylesheet" href="//m1.lefile.cn/lenovo_cms/css/thinkchannel.css?ts=111"/>
+    <style>
+
+        .cms_backImage_layout_c7111953-ac96-4b4d-9744-4c085e8a60ff{background-color:#ffffff!important;}
+
+        .cms_backImage_layout_c7111953-ac96-4b4d-9744-4c085e8a60ff{background-image:url(//p1.lefile.cn/fes/cms/2019/06/20/ll5p9vqmsm127hdc1k0ip0dzmlzkyv792596.jpg);
+            background-position-x: center;
+            background-position-y: top;
+            background-repeat: no-repeat;
+            width: 100% !important;
+            height:100px!important;
+        }
+        .new_star_hot201803232020 .hot_pro .hot_pro_head .hot_pro_head_hot .fl{color: black;font-weight: 800;font-size: 18px;}
+        .new_star_hot201803232020 .hot_pro .hot_pro_head .hot_pro_head_hot .cur{color: #e60012;}
+    </style>
+    <div class="cms_backImage_layout_c7111953-ac96-4b4d-9744-4c085e8a60ff " floorname="">
+        <div class="new_star_hot201803232020">
+            <div class="hot_pro ">
+                <div class="clearfix hot_pro_head">
+                    <p class="fl hot_pro_title" style="color: #000">联想手机</p>
+                    <ul class="fr hot_pro_head_hot">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+	<div layoutId='e6018c80-2af4-4d14-83d4-a0103bdeff99' id="4e94c1e0-cb3a-4c40-a338-a18369140d71" order="6" layoutUuid='4e94c1e0-cb3a-4c40-a338-a18369140d71' type='2' cssPath='' jsPath=''>
+    <style>
+    </style>
+    <div class="cms_currency_layout cms_background_layout_4e94c1e0-cb3a-4c40-a338-a18369140d71  " order='1' tplConfig dischargeComponent floorname="">
+        <div componentId='777a8cee-0b96-4c85-8077-6c160251163b' componentUuid='43f60ec9-dd87-4aa4-86da-6cc5f61d17a8' type="3">
+        <style>
+.cms_css_43f60ec9-dd87-4aa4-86da-6cc5f61d17a8{padding-top:px;}
+ .Selection_channel_20180423{width: 1200px;margin: 0 auto; height: 700px; padding: 10px 0px;}
+.Selection_channel_20180423>h2{text-align: left;font-weight:200;color:#333;line-height: 58px;font-size: 22px;}
+.Selection_channel_20180423 .Selection_channel_main .mainleft{float: left;width: 234px;height: 620px;}
+.Selection_channel_20180423 .Selection_channel_main .mainleft a{display: inline-block;transition: all .1s linear;}
+.Selection_channel_20180423 .Selection_channel_main .mainleft a:hover{box-shadow: 0 15px 30px rgba(0,0,0, .1);transition: all .2s linear; transform: translate3d(0,-2px,0);-webkit-transform:translate3d(0,-2px,0);  }
+.Selection_channel_20180423 .Selection_channel_main .mainleft a img{ width: 234px; height: 609px;margin-top: 10px;}
+.Selection_channel_20180423 .Selection_channel_main .mainright{float: left;width: 966px;height: 620px;}
+.Selection_channel_20180423 .Selection_channel_main .mainright ul li{width: 231px;margin-left: 10px;float: left;;transition: all .1s linear;height: 300px;margin-top: 10px;position: relative;background: #fff;}
+.Selection_channel_20180423 .Selection_channel_main .mainright ul li:hover{box-shadow: 0 15px 30px rgba(0,0,0, .1);transition: all .2s linear; transform: translate3d(0,-2px,0);-webkit-transform:translate3d(0,-2px,0);}
+.Selection_channel_20180423 .Selection_channel_main .mainright ul li .figure-img{width: 100%;height: 150px;width: 234px;box-sizing: border-box;padding:0 42px ;margin-bottom: 18px;margin-top: 30px}
+.Selection_channel_20180423 .Selection_channel_main .mainright ul li .figure-img img{width: 150px; height: 150px;}
+.Selection_channel_20180423 .Selection_channel_main .mainright ul li .title{width: 214px;text-align: center;margin: 0 auto;}
+.Selection_channel_20180423 .Selection_channel_main .mainright ul li .title p{overflow: hidden;text-overflow:ellipsis;white-space: nowrap;margin: 10px 10px 10px}
+.Selection_channel_20180423 .Selection_channel_main .mainright ul li .title h3{overflow: hidden;text-overflow:ellipsis;white-space: nowrap;color: #333;font-weight: 200;font-size: 14px;}
+.Selection_channel_20180423 .Selection_channel_main .mainright ul li .title .price{color: #ff6700; position: absolute;bottom: 12px;width: 194px;}
+        </style>
+        <div class="Selection_channel_20180423">
+            <h2></h2>
+            <div class="Selection_channel_main clearfix">
+                <div class="mainleft">  
+                <a href="https://item.lenovo.com.cn/product/1005043.html" target="_blank"  latag="latag_pc__0_https://item.lenovo.com.cn/product/1005043.html">
+                        <img src="//p3.lefile.cn/fes/cms/2020/02/22/v1zx3cembmekvzj882s6h7rvg5y6mv585828.jpg" style="height: 610px;"alt=""></a>
+                </div>
+                <div class="mainright">
+                        <ul class="clearfix">              
+                        <li><a 
+                            target="_blank" href="https://item.lenovo.com.cn/product/1006344.html" latag="latag_pc__0_1006344_联想Z6 Pro 5G版 8GB+256GB 深蓝色">
+                               <div class="figure-img"><img src="//p2.lefile.cn/product/adminweb/2019/11/14/JO0HF6WqRryi5TEbfYXEZuKWY-2669.jpg" alt=""></div>
+                               <div class="title">
+                                   <h3> 联想Z6 Pro 5G版 8GB+256GB 深蓝色</h3>
+                                   <p>5G全网通|4800万AI四摄|PC级液冷散热2.0|4000mAh电竞级AI续航|UFS 3.0高速闪存</p>
+                                   <p class="price"><span>￥</span ><span gcode="1006344">3299</span></p>
+                               </div>
+                           </a></li>
+                        <li><a 
+                            target="_blank" href="https://item.lenovo.com.cn/product/1004480.html" latag="latag_pc__1_1004480_联想Z6 Pro 8GB+128GB 蓝色">
+                               <div class="figure-img"><img src="//p3.lefile.cn/product/adminweb/2019/04/23/BGBTXLKilqdkx5O1uWTzAt5Eo-9812.jpg" alt=""></div>
+                               <div class="title">
+                                   <h3> 联想Z6 Pro 8GB+128GB 蓝色</h3>
+                                   <p>超级视频AI四摄 | 骁龙855旗舰处理器 | PC级液冷散热 | 4000mAh电竞级续航 | 破茧而生 HYPER VIDEO</p>
+                                   <p class="price"><span>￥</span ><span gcode="1004480">2299</span></p>
+                               </div>
+                           </a></li>
+                        <li><a 
+                            target="_blank" href="https://item.lenovo.com.cn/product/1003938.html" latag="latag_pc__2_1003938_联想Z5s 6GB+128GB 蜜恋橘">
+                               <div class="figure-img"><img src="//p3.lefile.cn/product/adminweb/2018/12/18/h014pGU4rINYyAOc3njtymdX1-5293.jpg" alt=""></div>
+                               <div class="title">
+                                   <h3> 联想Z5s 6GB+128GB 蜜恋橘</h3>
+                                   <p>骁龙710处理器 | 后置AI变焦三摄 | 92.6%屏占比水滴屏 | 靓彩渐变玻璃机身</p>
+                                   <p class="price"><span>￥</span ><span gcode="1003938">1148</span></p>
+                               </div>
+                           </a></li>
+                        <li><a 
+                            target="_blank" href="https://item.lenovo.com.cn/product/1005043.html" latag="latag_pc__3_1005043_联想Z6 8GB+128GB 蓝色">
+                               <div class="figure-img"><img src="//p2.lefile.cn/product/adminweb/2019/07/03/zeivMnQ9kPoQSZLnrChfiwIbS-2798.jpg" alt=""></div>
+                               <div class="title">
+                                   <h3> 联想Z6 8GB+128GB 蓝色</h3>
+                                   <p>第六代屏幕光电指纹 | 高通骁龙730处理器 | 4000mAh电竞级续航 | 6.39英寸OLED全面屏</p>
+                                   <p class="price"><span>￥</span ><span gcode="1005043">1699</span></p>
+                               </div>
+                           </a></li>
+                        <li><a 
+                            target="_blank" href="https://item.lenovo.com.cn/product/1003636.html" latag="latag_pc__4_1003636_联想S5 Pro GT 4GB+64GB 纯臻金">
+                               <div class="figure-img"><img src="//p4.lefile.cn/product/adminweb/2019/06/15/dRbdg0B5wBszIqzDIyCKRlsIX-2398.jpg" alt=""></div>
+                               <div class="title">
+                                   <h3> 联想S5 Pro GT 4GB+64GB 纯臻金</h3>
+                                   <p>偶像级自拍 | 前后2000万AI四摄丨深度相机光学变焦丨零光感人脸解锁</p>
+                                   <p class="price"><span>￥</span ><span gcode="1003636">1048</span></p>
+                               </div>
+                           </a></li>
+                        <li><a 
+                            target="_blank" href="https://item.lenovo.com.cn/product/1004388.html" latag="latag_pc__5_1004388_联想Z6 Pro 6GB+128GB 黑色">
+                               <div class="figure-img"><img src="//p2.lefile.cn/product/adminweb/2019/04/23/FtIjAOLJL3kOPtIVJuY7bybKQ-8410.jpg" alt=""></div>
+                               <div class="title">
+                                   <h3> 联想Z6 Pro 6GB+128GB 黑色</h3>
+                                   <p>超级视频AI四摄 | 骁龙855旗舰处理器 | PC级液冷散热 | 4000mAh电竞级续航 | 破茧而生 HYPER VIDEO</p>
+                                   <p class="price"><span>￥</span ><span gcode="1004388">2099.00</span></p>
+                               </div>
+                           </a></li>
+                        <li><a 
+                            target="_blank" href="https://item.lenovo.com.cn/product/1003036.html" latag="latag_pc__6_1003036_联想Z5 Pro 6GB+64GB 陶瓷黑">
+                               <div class="figure-img"><img src="//p3.lefile.cn/product/adminweb/2018/11/01/dWfYDv7hLoEMszuAkzFwzDKxF-8345.jpg" alt=""></div>
+                               <div class="title">
+                                   <h3> 联想Z5 Pro 6GB+64GB 陶瓷黑</h3>
+                                   <p>划时代旗舰 | 95.06%超级屏占比 | 第五代光电屏下指纹 | 2400万AI四摄 | 双螺旋滑轨</p>
+                                   <p class="price"><span>￥</span ><span gcode="1003036">1298</span></p>
+                               </div>
+                           </a></li>
+                        <li><a 
+                            target="_blank" href="https://item.lenovo.com.cn/product/1005106.html" latag="latag_pc__7_1005106_motorola p50 6GB+128GB 琥珀咖">
+                               <div class="figure-img"><img src="//p4.lefile.cn/product/adminweb/2019/07/11/ajIBnFIlIIBr8KKY70URdzKip-7834.jpg" alt=""></div>
+                               <div class="title">
+                                   <h3> motorola p50 6GB+128GB 琥珀咖</h3>
+                                   <p>影院级超清屏幕 | 4800万实力夜拍 | 四曲面玻璃温润握感</p>
+                                   <p class="price"><span>￥</span ><span gcode="1005106">2299</span></p>
+                               </div>
+                           </a></li>
+                    </ul>
+                    </div>
+            </div>
+            </div>
+  
+    </div>
+    </div>
+</div>
+	<div layoutId='cedc1d88-2ebb-4e7b-89cb-5f7976cb9c88' layoutUuid='9d89d5be-56df-4abf-9736-10c05daa64c6' order='7' class="cms_tab_goods_layout" type='2' cssPath='' jsPath='' componentRender="tabslide">
+        <link rel="stylesheet" href="//m1.lefile.cn/lenovo_cms/css/thinkchannel.css?ts=111"/>
+    <style>
+
+        .cms_backImage_layout_9d89d5be-56df-4abf-9736-10c05daa64c6{background-color:#f5f5f5!important;}
+        .new_star_hot201803232020 .hot_pro .hot_pro_head .hot_pro_head_hot .fl{color: black;font-weight: 800;font-size: 18px;}
+        .new_star_hot201803232020 .hot_pro .hot_pro_head .hot_pro_head_hot .cur{color: #e60012;}
+    </style>
+    <div class="cms_backImage_layout_9d89d5be-56df-4abf-9736-10c05daa64c6 " floorname="">
+        <div class="new_star_hot201803232020">
+            <div class="hot_pro ">
+                <div class="clearfix hot_pro_head">
+                    <p class="fl hot_pro_title" style="color: #000">视频专区</p>
+                    <ul class="fr hot_pro_head_hot">
+                        <li class="fl" tag="first"  latag="">Z6 Pro</li>
+                        <li class="fl" tag="second"  latag="">Z5 Pro GT</li>
+                        <li class="fl" tag="third"  latag="">Z5s</li>
+                        <li class="fl" tag="fourth"  latag="">Z5</li>
+                        <li class="fl" tag="fifth"  latag="">S5 Pro GT</li>
+                        <li class="fl" tag="sixth" latag="">ZUI</li>
+                    </ul>
+                </div>
+                <div class="hot_pro_container" tag="first" style="overflow: hidden;" order="1" dischargeComponent>
+                    <div componentId='0997f00b-bf5e-4423-a0e6-9049dfcf4860' componentUuid='f5ffc703-958e-43f8-8be8-6924312c5654' type="3" componentAddSrc="true">
+    <div class="industry clearfix">
+            <div class="industry-title">联想手机官方商城首页</div>
+        <div class="industry-box">
+            <div class="video-box"><video src="https://image.motorola.com.cn/upload/manager/video/20190423/1556011455.mp4" controls="controls"></video></div>
+            <div class="industry-text">
+                    <p>联想Z6 Pro，&quot;Vlog新体验，HYPER VIDEO破茧而生
+突破传统手机的桎梏，HYPER VIDEO超级视频技术横空出世，以新准则为标杆，为大众创造一个颠覆的新视界。双景Vlog*，在拍视频的同时看到自己的影像。拿起联想Z6 Pro，一录精彩，每一个人都是Vlogger。&quot;</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+                </div>
+                <div class="hot_pro_container" tag="second" style="overflow: hidden;display:none" order="2" dischargeComponent>
+                    <div componentId='0997f00b-bf5e-4423-a0e6-9049dfcf4860' componentUuid='f9c590d2-f0a1-480c-ab5d-da8a4be1218d' type="3" componentAddSrc="true">
+    <div class="industry clearfix">
+            <div class="industry-title">联想手机官方商城首页</div>
+        <div class="industry-box">
+            <div class="video-box"><video src="https://image.motorola.com.cn/upload/manager/video/20181219/1545207751.mp4" controls="controls"></video></div>
+            <div class="industry-text">
+                    <p>联想Z5 Pro GT，&quot;全面屏的革新，骁龙855真旗舰处理器
+联想Z5 Pro GT搭载全新一代骁龙855旗舰处理器，骁龙855处理器基于7nm制程工艺，旨在应对极端数据需求和复杂应用，同时降低功耗，拥有令人难以置信的速度和性能。6.39英寸三星AMOLED无刘海悬浮全面屏，将前置摄像头隐藏在屏幕之下，拒绝刘海遮挡，还原一个更全面的世界。采用G3曲率四曲面玻璃机身，“全息美学”，从联想Z5 Pro GT开始。&quot;</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+                </div>
+                <div class="hot_pro_container" tag="third" style="overflow: hidden;display:none" order="3" dischargeComponent>
+                    <div componentId='0997f00b-bf5e-4423-a0e6-9049dfcf4860' componentUuid='22f94bd7-4dca-4020-ba34-2f421726bf3d' type="3" componentAddSrc="true">
+    <div class="industry clearfix">
+            <div class="industry-title">联想手机官方商城首页</div>
+        <div class="industry-box">
+            <div class="video-box"><video src="https://image.motorola.com.cn/upload/manager/video/20181220/1545293372.mp4" controls="controls"></video></div>
+            <div class="industry-text">
+                    <p>联想Z5s，&quot;靓彩诱惑 · 怦然心动
+用一滴水珠打破夜的静谧，联想Z5s的设计灵感来源于生活中的细节，以其独特的视角呈现工艺中的镜花水月，6.3英寸水滴屏以其92.6%的高屏占比*，给你一个更加全面的视界。生活，需要色彩的点缀。黑夜，需要星空的点缀。美，需要你的点缀。星空灰、蜜恋橘、钛晶蓝，三色炫彩，所见即所爱。&quot;</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+                </div>
+                <div class="hot_pro_container" tag="fourth" style="overflow: hidden;display:none" order="4" dischargeComponent>
+                    <div componentId='0997f00b-bf5e-4423-a0e6-9049dfcf4860' componentUuid='08a5413e-3707-42c5-8277-c64804ac1924' type="3" componentAddSrc="true">
+    <div class="industry clearfix">
+            <div class="industry-title">联想手机官方商城首页</div>
+        <div class="industry-box">
+            <div class="video-box"><video src="https://image.motorola.com.cn/upload/manager/video/20180605/1528194457.mp4" controls="controls"></video></div>
+            <div class="industry-text">
+                    <p>联想Z5，&quot;全面进化 极简之美
+2.5D康宁幻彩炫光玻璃“镶嵌”于金属中框，能看到的是惊艳且简约的全面屏，看不到的是丰富的工艺程序。设计美感，就是艺术本身。双面2.5D幻彩炫光玻璃机身设计，使玻璃与金属的衔接处平滑过渡，形成其现代化的机身设计，让手掌感受到机身的细腻。&quot;</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+                </div>
+                <div class="hot_pro_container" tag="fifth" style="overflow: hidden;display:none" order="5" dischargeComponent>
+                    <div componentId='0997f00b-bf5e-4423-a0e6-9049dfcf4860' componentUuid='ec95a7f1-4490-463d-bd78-4d4735353cc0' type="3" componentAddSrc="true">
+    <div class="industry clearfix">
+            <div class="industry-title">联想手机官方商城首页</div>
+        <div class="industry-box">
+            <div class="video-box"><video src="https://image.motorola.com.cn/upload/manager/video/20181018/1539855587.mp4" controls="controls"></video></div>
+            <div class="industry-text">
+                    <p>联想S5 Pro GT，&quot;超然脱俗，偶像级自拍
+联想S5 Pro搭载前后2000万*AI四摄，基于2倍光学变焦相机，研发出联想全场景超画质的成像方案，都为更清晰、更细腻的画质服务，四摄智慧拍照，从美一刻开始。金属机身手感细腻且坚固耐用，与边缘弧度悄然融合，浑然天成。多一道CNC工序多一份养眼。纯臻金、冰魄蓝、晶耀黑三种配色，青春多彩，由此焕发。&quot;</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+                </div>
+                <div class="hot_pro_container" tag="sixth" style="overflow: hidden;display:none" order="6" dischargeComponent>
+                    <div componentId='0997f00b-bf5e-4423-a0e6-9049dfcf4860' componentUuid='d9a9d85e-be16-49f7-8e42-74ac664ce0e5' type="3" componentAddSrc="true">
+    <div class="industry clearfix">
+            <div class="industry-title">联想手机官方商城首页</div>
+        <div class="industry-box">
+            <div class="video-box"><video src="http://image.motorola.com.cn/zui_shop_v1/images/video/11.mp4" controls="controls"></video></div>
+            <div class="industry-text">
+                    <p>联想ZUI系统，&quot;极智轻快，探索张力弧下的全面屏美学体验
+ZUI11 延续一贯以来简单、好看的设计原则，以“全面屏”为设计核心、全新升级天气、U健康、相机等应用打造轻快、流畅、聚焦的系统UI体验。&quot;</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<link rel="stylesheet" href="//m7.lefile.cn/version/css/10cb4fb13a12a218162ed1d9ee230e3b.css"/>
+
+<div pageId='' pageUuid='7c00968a-0021-4707-afe0-03109833994e' type="0">
+	<div layoutId='e6018c80-2af4-4d14-83d4-a0103bdeff99' id="07057d8a-7da3-4619-b921-b0f838fc441c" order="0" layoutUuid='07057d8a-7da3-4619-b921-b0f838fc441c' type='2' cssPath='' jsPath=''>
+    <style>
+    </style>
+    <div class="cms_currency_layout cms_background_layout_07057d8a-7da3-4619-b921-b0f838fc441c  " order='1' tplConfig dischargeComponent floorname="">
+        <div componentId='2052d71e-66f7-4009-a34a-c23083d6221b' componentUuid='39db23e4-7320-41fe-a16e-4c71e58292e6' type="3" tplConfig  >
+
+
+
+
+
+<style>
+    #Services-list {
+        background: #fff;
+        height: 199px
+    }
+
+    #Services-list .ns_w {
+        width: 1200px;
+        margin: 0 auto;
+        height: 199px
+    }
+
+    #Services-list li {
+        float: left;
+        text-indent: -99999px;
+        height: 0
+    }
+
+    #footer {
+        background: #fff;
+        color: #000;
+        width: 1200px;
+        margin: 0 auto 20px
+    }
+
+    #footer a {
+        color: #6f7170;
+        font-size: 12px
+    }
+
+    #footer a:hover {
+        color: #555
+    }
+
+    #footer a i {
+        color: #000
+    }
+
+    #footer .ns_p2 {
+        padding-top: 10px;
+        height: 130px
+    }
+
+    #footer .ns_p2 .ns_w {
+        padding-bottom: 30px
+    }
+
+    #footer .ns_p2 dl {
+        float: left;
+        height: 140px;
+        position: relative;
+        padding-right: 143px
+    }
+
+    #footer .ns_p2 dt a {
+        font-size: 14px;
+        color: #000
+    }
+
+    #footer .ns_p2 dt {
+        line-height: 30px;
+        position: relative
+    }
+
+    #footer .ns_p2 dd a {
+        display: block;
+        line-height: 22px;
+        color: #555;
+        font-size: 12px
+    }
+
+    #footer .ns_p2 dd #bank_btn {
+        height: 40px
+    }
+
+    #footer .ns_p2 dd a:hover {
+        color: #000
+    }
+
+    #footer .ns_p2 .ns_bank {
+        position: absolute;
+        top: 101px;
+        left: -60px;
+        width: 110px;
+        padding: 0 30px;
+        background: #fff;
+        border: 1px solid #c4c4c4;
+        z-index: 56;
+        display: none
+    }
+
+    #footer .ns_p2 .ns_bank li a {
+        display: block;
+        border-bottom: 1px solid #c4c4c4;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        color: #434343
+    }
+
+    #footer .ns_p2 .ns_bank li a:hover {
+        color: #d53127
+    }
+
+    #footer .ns_p2 .ns_bank .jt_top {
+        display: inline-block;
+        width: 16px;
+        height: 7px;
+        background: url(icons/jt_top.png);
+        position: absolute;
+        left: 50%;
+        top: -7px;
+        margin-left: -8px
+    }
+
+    .ns_p4 {
+        text-align: center
+    }
+
+    .ns_p4 .ns_w {
+        padding-top: 25px;
+        position: relative
+    }
+
+    .ns_p4 .ns_footer_line {
+        padding: 4px 0;
+        color: #6f7170;
+        font-size: 12px
+    }
+
+    .ns_p4 .ns_footer_line span {
+        margin: 0 8px;
+        color: #6f7170
+    }
+
+    .ns_p4 .ns_footer_line em {
+        width: 10px;
+        height: 13px;
+        margin-right: 5px;
+        position: relative;
+        top: 2px
+    }
+
+    .gj_img,
+    .gq_box {
+        position: absolute;
+        right: 0;
+        z-index: 55
+    }
+
+    .ns_p4 .ns_footer_line .icon_addr1 {
+        background-position: -234px -3px
+    }
+
+    .ns_p4 .ns_footer_line .icon_addr2 {
+        background-position: -248px -3px
+    }
+
+    .gj_img {
+        text-align: right;
+        top: 160px
+    }
+
+    .gq_box {
+        display: none;
+        width: 153px;
+        height: 380px;
+        background: #fff;
+        border: 1px solid #858585;
+        bottom: 22px;
+        overflow-y: auto;
+        overflow-x: hidden
+    }
+
+    .gq_box ul li {
+        text-align: left;
+        margin: 4px
+    }
+
+    .usepng {
+        display: inline-block;
+        background-image: url(/shoppc/c/css/icons/icons_sprit.png);
+        background-repeat: no-repeat
+    }
+
+    .foot_rz {
+        width: 112px;
+        height: 41px;
+        background-position: -196px -150px
+    }
+
+    .ns_box {
+        background: #f5f5f5;
+        padding-bottom: 20px
+    }
+
+    .ns_box a {
+        color: #6f7170;
+        font-size: 12px
+    }
+
+    .ns_box a:hover {
+        color: #555
+    }
+
+    #b_bit {
+        width: 123px;
+        height: 19px;
+        background: url(/shoppc/c/css/icons/icons_sprit.png) -72px -320px
+    }
+
+    .floor_label,
+    .myicon {
+        background-image: url(/shoppc/c/css/icons/icons_sprit.png)
+    }
+
+    .floor_item .pro_img img {
+        position: relative;
+        left: 0;
+        top: 0
+    }
+
+
+    .myicon {
+        display: inline-block;
+        background-repeat: no-repeat
+    }
+
+    .clearfix:after {
+        display: block;
+        clear: both;
+        height: 0;
+        visibility: hidden;
+        font-size: 0;
+        line-height: 0;
+        content: ""
+    }
+
+    .clearfix {
+        zoom: 1
+    }
+
+    .fl {
+        float: left
+    }
+
+    .fr {
+        float: right
+    }
+
+    .all_countries {
+        position: absolute;
+        display: none;
+        width: 184px;
+        height: 210px;
+        background: #fff;
+        border: 1px solid #858585;
+        bottom: 24px;
+        left: 0px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        z-index: 55;
+    }
+
+    .all_countries ul li {
+        text-align: left;
+        margin: 4px;
+    }
+
+    #cn_img {
+        width: 186px;
+        height: 24px;
+        background: url(//p1.lefile.cn/product/adminweb/2018/05/17/dc95e9d6-bef7-4f4b-8b03-e6c3deeaa5a7.jpg);
+    }
+
+    .select_country {
+        margin: 60px 0 10px;
+        font-size: 16px;
+        line-height: 16px;
+        color: #ccc;
+        position: absolute;
+        left: 95px;
+        bottom: 3px;
+    }
+
+    .footer {
+        background-color: #FBFBFB;
+        width: 100%;
+        color: #ccc;
+    }
+
+    .footer * {
+        box-sizing: content-box;
+    }
+
+    .footer a {
+        color: #757575;
+    }
+
+    .foot_top {
+        width: 1200px;
+        margin: auto;
+       padding: 70px 0 70px 76px;
+        position: relative;
+    }
+
+    /*.foot_top >li { width:240px;text-align: left}*/
+    .about_lenovo,
+    .shop_lenovo,
+    .service_lenovo {
+        width: 152px;
+    }
+
+    .lenovo_website_group {
+        width: 152px;
+    }
+
+    .social_platform {
+           width: 223px;
+    border-left: 1px solid #ccc;
+    padding-left: 58px;
+    margin-left: 5px;
+    }
+
+    .foot_top>li>h6 {
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 18px;
+        color: #ccc
+    }
+
+    .foot_top li>a {
+        display: block;
+        font-size: 13px;
+        line-height: 13px;
+        margin-bottom: 12px;
+    }
+
+    .foot_bot {
+        border-top: 1px solid #424141;
+        background: #272727;
+    }
+
+    .foot_bot_con {
+        width: 1200px;
+        margin: auto;
+        font-size: 12px;
+        line-height: 46px;
+    }
+
+    .foot_bot_con a {
+        font-size: 12px;
+        line-height: 46px;
+    }
+
+    .foot_bot_left span,
+    .foot_bot_right span {
+        margin: 0 6px;
+    }
+
+    .foot_top_title {
+        font-size: 16px !important;
+        line-height: 16px !important;
+        margin-bottom: 18px !important;
+        font-weight: 600 !important;
+        color: #424242 !important;
+    }
+
+    .countries_version {
+        position: absolute;
+        left: 226px;
+        bottom: 10px;
+    }
+
+    .darkwchat {
+        width: 37px;
+        height: 36px;
+        background: url(//m1.lefile.cn/lenovo_pc_platform/0.1.0/images/platform_icons_sprits.png) -8px -190px;
+    }
+
+    .lightwchat {
+        display: none;
+        width: 37px;
+        height: 36px;
+        background: url(//m1.lefile.cn/lenovo_pc_platform/0.1.0/images/platform_icons_sprits.png) -8px -238px;
+    }
+
+    .wchat:hover .darkwchat {
+        display: none
+    }
+
+    .wchat:hover .lightwchat {
+        display: block;
+    }
+
+    .darkqqzone {
+        width: 37px;
+        height: 36px;
+        background: url(//m1.lefile.cn/lenovo_pc_platform/0.1.0/images/platform_icons_sprits.png) -63px -190px;
+    }
+
+    .lightqqzone {
+        display: none;
+        width: 37px;
+        height: 36px;
+        background: url(//m1.lefile.cn/lenovo_pc_platform/0.1.0/images/platform_icons_sprits.png) -63px -238px;
+    }
+
+    .qqzone:hover .darkqqzone {
+        display: none
+    }
+
+    .qqzone:hover .lightqqzone {
+        display: block;
+    }
+
+    .darkweibo {
+        width: 37px;
+        height: 36px;
+        background: url(//m1.lefile.cn/lenovo_pc_platform/0.1.0/images/platform_icons_sprits.png) -119px -190px;
+    }
+
+    .lightweibo {
+        display: none;
+        width: 37px;
+        height: 36px;
+        background: url(//m1.lefile.cn/lenovo_pc_platform/0.1.0/images/platform_icons_sprits.png) -119px -238px;
+    }
+
+    .weibo:hover .darkweibo {
+        display: none
+    }
+
+    .weibo:hover .lightweibo {
+        display: block;
+    }
+
+    .dark_tieba {
+        width: 74px;
+        height: 22px;
+        background: url(//m1.lefile.cn/lenovo_pc_platform/0.1.0/images/platform_icons_sprits.png) -119px -129px;
+        margin-top: -2px;
+    }
+
+    .light_tieba {
+        display: none;
+        width: 74px;
+        height: 22px;
+        background: url(//m1.lefile.cn/lenovo_pc_platform/0.1.0/images/platform_icons_sprits.png) -119px -155px;
+        margin-top: -2px;
+    }
+
+    .tieba:hover .dark_tieba {
+        display: none
+    }
+
+    .tieba:hover .light_tieba {
+        display: block
+    }
+
+    .tieba {
+        margin-top: -2px
+    }
+
+    .dark_weibo_icon {
+        width: 82px;
+        height: 20px;
+        background: url(//m1.lefile.cn/lenovo_pc_platform/0.1.0/images/platform_icons_sprits.png) -8px -132px
+    }
+
+    .light_weibo_icon {
+        display: none;
+        width: 82px;
+        height: 20px;
+        background: url(//m1.lefile.cn/lenovo_pc_platform/0.1.0/images/platform_icons_sprits.png) -8px -158px
+    }
+
+    .weibo_icon:hover .dark_weibo_icon {
+        display: none
+    }
+
+    .weibo_icon:hover .light_weibo_icon {
+        display: block
+    }
+
+    .weibo_icon {
+        margin: 0 20px 0 5px
+    }
+
+    .dark_fun_icon {
+        width: 37px;
+        height: 36px;
+        background: url(//m1.lefile.cn/lenovo_pc_platform/0.1.0/images/platform_icons_sprits.png) -176px -190px
+    }
+
+    .light_fun_icon {
+        display: none;
+        width: 37px;
+        height: 36px;
+        background: url(//m1.lefile.cn/lenovo_pc_platform/0.1.0/images/platform_icons_sprits.png) -176px -238px
+    }
+
+    .fun_icon:hover .dark_fun_icon {
+        display: none
+    }
+
+    .fun_icon:hover .light_fun_icon {
+        display: block;
+    }
+
+    .weibo_text,
+    .fun_text {
+        vertical-align: top;
+        line-height: 24px;
+        font-size: 15px;
+    }
+
+    .manager_weibo {
+        margin: 6px 30px 6px 5px;
+    }
+
+    .social_plat {
+        margin: 2px 0 10px
+    }
+
+    .social_plat li {
+        margin: 6px 7px 6px 4px;
+    }
+
+    .social_plat li a:hover {
+        transform: rotate(360deg)
+    }
+
+    .social_plat li a {
+        transition: all 0.3s
+    }
+
+    .interst_tride {
+        margin: 6px 0;
+    }
+
+    .social_plat li a {
+        margin-bottom: 0 !important;
+    }
+
+    .foot_bot .foot_bot_left span {
+        display: inline-block !important
+    }
+
+    .foot_bot .foot_bot_right span {
+        display: inline-block !important
+    }
+
+    .shop_footer_mid {
+        width: 100%;
+        background-color: #fff;
+        padding-bottom: 10px
+    }
+
+    .footer .all_countries li a {
+        color: #000
+    }
+
+    .footer .all_countries li a:hover {
+        color: #e2231a
+    }
+
+    .foot_bot .foot_bot_con {
+        color: #757575;
+    }
+
+    .kef_phone h3 {
+        font-size: 20px;
+        letter-spacing: 0;
+        text-align: left;
+        color: #E1140A;
+    }
+
+    .kef_phone span {
+        font-size: 12px;
+        color: #757575;
+        letter-spacing: 0;
+        text-align: left;
+        line-height: 25px;
+    }
+
+
+    .kef_phone .kef_a {
+        background: url(https://p4.lefile.cn/product/adminweb/2019/08/19/23575141-fd1c-4488-b3a0-08ee2e7d0f8a.png);
+        display: inline-block;
+        width: 139px;
+        height: 36px;
+
+    }
+    .kef_phone .kef_a:hover{
+          background: url(https://p2.lefile.cn/product/adminweb/2019/08/19/9c4222cb-8022-4a90-8264-dd1f294de6cd.png);
+            display: inline-block;
+        width: 139px;
+        height: 36px;
+    }
+</style>
+<div class="shop_footer">
+    <div class="ns_Services-list ns_fixClear" id="Services-list">
+        <div class="ns_w">
+            <img width="1200" height="199" src="https://p2.lefile.cn/product/adminweb/2019/08/19/8359a28f-9cce-463d-aaf5-b3c7148872f7.png"
+                _src="https://p2.lefile.cn/product/adminweb/2019/08/19/8359a28f-9cce-463d-aaf5-b3c7148872f7.png" class="lazy_img"
+            />
+        </div>
+    </div>
+    <!--服务列表-->
+    <!--页脚-->
+    <div class="shop_footer_mid">
+
+        <!--联系我们 http://appserver.lenovo.com.cn/Public/public_bottom/contact.shtml-->
+    </div>
+</div>
+
+<div class="footer">
+    <ul class="foot_top clearfix">
+        <li class="fl shop_lenovo">
+            <a class="foot_top_title">购物指南</a>
+            <a target="_blank" href="//shop.lenovo.com.cn/help/service-provider-information.html" rel="nofollow">
+                服务商信息
+            </a>
+            <a target="_blank" href="//shop.lenovo.com.cn/help/order-processing.html" rel="nofollow">
+                购买流程
+            </a>
+            <a target="_blank" href="//shop.lenovo.com.cn/help/registration-login.html" rel="nofollow">
+                注册登录
+            </a>
+        </li>
+        <li class="fl service_lenovo">
+            <a class="foot_top_title">配送方式</a>
+            <a target="_blank" href="//shop.lenovo.com.cn/help/sales-and-distribution-methods.html" rel="nofollow">
+                配送方式
+            </a>
+            <a target="_blank" href="//shop.lenovo.com.cn/help/distribution-information.html" rel="nofollow">
+                配送方式信息
+            </a>
+            <a target="_blank" href="//shop.lenovo.com.cn/help/sign-principle.html" rel="nofollow">
+                签收原则
+            </a>
+            <a target="_blank" href="//shop.lenovo.com.cn/help/logistics-query.html" rel="nofollow">
+                物流查询
+            </a>
+
+        </li>
+        <li class="fl lenovo_website_group">
+            <a class="foot_top_title">支付方式</a>
+
+            <a target="_blank" href="//shop.lenovo.com.cn/help/bank_fq.html" rel="nofollow">
+                分期支付
+            </a>
+            <a target="_blank" href="//shop.lenovo.com.cn/help/payments.html" rel="nofollow">
+                支付方式
+            </a>
+            <a target="_blank" href="//shop.lenovo.com.cn/help/question-of-payment.html" rel="nofollow">
+                支付问题
+            </a> </li>
+        <li class="fl lenovo_website_group">
+            <a class="foot_top_title">
+                订单信息
+            </a>
+
+            <a target="_blank" href="//shop.lenovo.com.cn/help/order-information.html" rel="nofollow">
+                订单信息
+            </a>
+            <a target="_blank" href="//shop.lenovo.com.cn/help/orders-invoices-other.html" rel="nofollow">
+                发票信息
+            </a>
+            <a target="_blank" href="//shop.lenovo.com.cn/help/question-of-payment.html" rel="nofollow">
+                支付问题
+            </a>
+        </li>
+        <li class="fl lenovo_website_group">
+            <a class="foot_top_title">
+                售后服务
+            </a>
+
+            <a target="_blank" href="//shop.lenovo.com.cn/help/after-sales-lenovo.html" rel="nofollow">
+                售后服务总则
+            </a>
+            <a target="_blank" href="http://robot.lenovo.com.cn/lenovo/?channel=H325B" rel="nofollow">
+                24小时在线客服
+            </a>
+            <a target="_blank" href="https://newsupport.lenovo.com.cn/?fromsource=guanwangbottom" rel="nofollow">
+                联想服务入口
+             </a>
+	     <a target="_blank" href="https://iknow.lenovo.com.cn/" rel="nofollow">
+                热门解决方案
+             </a>
+	     <a target="_blank" href="https://iknow.lenovo.com.cn/detail/dc_172545.html" rel="nofollow">
+                Lenovo Quick Fix工具
+             </a>
+            </li>
+        <li class="fl lenovo_website_group">
+            <a class="foot_top_title">
+                其他说明
+            </a>
+
+            <a target="_blank" href="//shop.lenovo.com.cn/help/service-commitment.html" rel="nofollow">
+                服务承诺
+            </a>
+            <a target="_blank" href="//shop.lenovo.com.cn/help/account-security.html" rel="nofollow">
+                账户安全
+            </a>
+            <a target="_blank" href="http://www.lenovocare.com.cn/default.aspx" rel="nofollow">
+                手机产品购买须知
+            </a>
+            <a style="cursor: pointer;" id="bank_btn" href="//shop.lenovo.com.cn/help/environmentInfo/xywkgk1.html" rel="nofollow">环境信息</a>
+        </li>
+        <li class="fl social_platform">
+
+            <div class="kef_phone">
+                <h3>400-990-8888转4</h3>
+                <span>周一到周日 9:00-21:00</span>
+                <a href="https://srv.lenovo.com.cn/home/index.do?sd=1" class="kef_a" target="_blank" latag="latag_pc_common_bottommost_在线客服__https://srv.lenovo.com.cn/home/index.do?sd=1">
+
+                </a>
+            </div>
+
+        </li>
+    </ul>
+    <div class="foot_bot">
+        <div class="foot_bot_con clearfix">
+            <div class="foot_bot_left fl">
+                版权所有：1998-2019 联想集团
+                <span>|</span><a href="https://shop.lenovo.com.cn/investor/html/legal.html" title="法律公告" target="_blank"
+                    latag="latag_pc_common_bottommost_legal" rel="nofollow">法律公告</a>
+                <span>|</span><a href="https://privacy.lenovo.com.cn/products/c877820f58396ef6.html" title="隐私权政策" target="_blank"
+                    latag="latag_pc_common_bottommost_privacy" rel="nofollow">隐私权政策</a>
+                <span>|</span><a href="https://www.lenovo.com.cn/public/security/security.html" title="产品安全" target="_blank"
+                    latag="latag_pc_common_bottommost_safe" rel="nofollow">产品安全</a>
+            </div>
+            <div class="foot_bot_right fr">
+                <a href="http://www.miibeian.gov.cn/" target="_blank" rel="nofollow" latag="latag_pc_common_bottommost_miibeian">京ICP备11035381</a>
+                <span>|</span><i style="font-style:normal;">京公网安备110108007970号</i>
+                <span>|</span><a href="https://p2.lefile.cn/product/adminweb/2019/07/09/4e555443-93b5-46d5-984f-7d5b06ea2967.jpg"
+                    title="营业执照" target="_blank" latag="latag_pc_common_bottommost_license">营业执照:91110108700000458B</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+     
+     </div>
+    </div>
+</div>
+</div>
+
+
+ 
+</body>
+<script type="text/javascript" src="//m6.lefile.cn/version/batch/cjid.js?id=58c0510c0df210edccef5b08d18a6071,6713159c36f07414c0394215b4d7f925,"></script>
+<script src="//m1.lefile.cn/la/la.min.js?v20160602" ></script>
+<script src="//m1.lefile.cn/lenovo_cms/js/qrcode.js"></script>
+<script>
+setTimeout(function(){
+	if($("body").find("a[href=tocode]").length>0){
+        var qrcodeH =$("body").find("a[href=tocode]").get(0);
+       function creatQrcode(rcode){
+        var qrcode = new QRCode( qrcodeH, {
+            width : 150,
+            height : 150
+        });
+        qrcode.clear();
+        qrcode.makeCode(rcode);
+        $("body").find("a[href=tocode]").attr("href","javascript:void(0);")
+       }    
+       creatQrcode(window.location.href);}
+
+},100)
+</script>
+</html>
