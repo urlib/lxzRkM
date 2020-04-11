@@ -1,0 +1,808 @@
+<!doctype html>
+<html class="no-js" xml:lang="ru" lang="ru">
+<head>
+
+	<!-- Google Tag Manager -->
+
+	<script data-skip-moving="true">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5LK77P');</script>
+
+	<!-- End Google Tag Manager -->
+    <title>Google Pay для простой и безопасной оплаты смартфоном</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta property="og:image" content="https://www.uniteller.ru/local/templates/index/img/logo.jpg" />
+<meta name="google-site-verification" content="VbgeheFQw2721vkO19Tfesb-RsxEZGF82Imgkrtb4iE" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="description" content="Google Pay предоставляет все удобства для оплаты на сайтах в мобильных приложениях, в магазинах и сохраняет данные ваших покупателей в полной безопасности." />
+<script type="text/javascript" data-skip-moving="true">(function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':[],'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'120'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}else{w.frameRequestFail = f;}return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();})(window, document);</script>
+
+
+<link href="/bitrix/js/main/core/css/core.css?15647485613963" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/local/templates/index/css/font-awesome.css?157677902633881" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/local/templates/index/css/jquery.ui.css?157677902515736" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/local/templates/index/css/jquery.fancybox.css?15767790264325" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/local/templates/index/css/jquery.fancybox-buttons.css?15767790262443" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/local/templates/index/css/jquery.fancybox-thumbs.css?1576779025770" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/local/templates/index/css/jquery.mCustomScrollbar.css?157677902547169" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/local/templates/index/css/remodal.css?1576779023893" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/local/templates/index/css/remodal-default-theme.css?15767790234316" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/local/templates/index/css/selectbox.css?15767790235370" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/local/templates/index/css/main.css?1586354654207908" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/local/templates/index/styles.css?15861851827770" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/local/templates/index/template_styles.css?1586185182902" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<script type="text/javascript">if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','SERVER_TZ_OFFSET':'10800','SITE_ID':'s1','SITE_DIR':'/'});</script>
+
+
+<script type="text/javascript" src="/bitrix/js/main/core/core.js?1564748561122263"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_db.js?156474856117880"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_ajax.js?156474856136424"></script>
+<script type="text/javascript" src="/bitrix/js/main/json/json2.min.js?15647485613467"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_ls.js?156474856110430"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_fx.js?156474856116888"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_frame_cache.js?156474856117555"></script>
+
+
+<script type="text/javascript" src="/local/templates/index/js/lang_ru.js?1564748582341"></script>
+<script type="text/javascript" src="/local/templates/index/js/jquery.min.js?156474858295786"></script>
+<script type="text/javascript" src="/local/templates/index/js/slick.min.js?156474858241564"></script>
+<script type="text/javascript" src="/local/templates/index/js/jquery.ui.min.js?1564748582226806"></script>
+<script type="text/javascript" src="/local/templates/index/js/jquery.validate.min.js?156474858222691"></script>
+<script type="text/javascript" src="/local/templates/index/js/jquery.maskedinput.min.js?15647485824112"></script>
+<script type="text/javascript" src="/local/templates/index/js/jquery.fancybox.js?156474858222448"></script>
+<script type="text/javascript" src="/local/templates/index/js/jquery.fancybox-media.js?15647485821961"></script>
+<script type="text/javascript" src="/local/templates/index/js/jquery.fancybox-thumbs.js?15647485821705"></script>
+<script type="text/javascript" src="/local/templates/index/js/jquery.mCustomScrollbar.js?156474858240093"></script>
+<script type="text/javascript" src="/local/templates/index/js/modernizr-custom.js?15647485821304"></script>
+<script type="text/javascript" src="/local/templates/index/js/selectbox.js?156474858225185"></script>
+<script type="text/javascript" src="/local/templates/index/js/remodal.min.js?15647485827528"></script>
+<script type="text/javascript" src="/local/templates/index/js/main.js?15675141407497"></script>
+<script type="text/javascript" src="/local/templates/index/js/parallax.js?1564748582943"></script>
+<script type="text/javascript" src="/local/templates/index/js/metrix.js?1564748582726"></script>
+<script type="text/javascript" src="/local/templates/index/js/init.js?15647485829987"></script>
+<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "d6a8315c96170e6bf947c1bb8b3cc6ba"]); _ba.push(["host", "www.uniteller.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+    
+    <meta name="yandex-verification" content="835fdd3465d60c34" />
+    	<script data-skip-moving="true">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ 
+  ga('create', 'UA-47874124-1', 'auto');
+  ga('send', 'pageview');
+ 
+</script><script type="text/javascript">
+var __cs = __cs || [];
+__cs.push(["setCsAccount", "xIVu5sBnoyZGFkRhgGCCIelEnzmneZyM"]);
+</script>
+<script type="text/javascript" async src="https://app.uiscom.ru/static/cs.min.js"></script>
+
+<meta name="mailru-verification" content="113075d3d64a08df" />
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(24986216, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+        trackHash:true
+   });
+</script>
+<noscript>
+<img src="https://mc.yandex.ru/watch/24986216" style="position:absolute; left:-9999px;" alt="" /></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LK77P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<meta name="yandex-verification" content="60e75ee4a01fb07e" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KDGSZDM');</script>
+<!-- End Google Tag Manager -->
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '541428896511584');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=541428896511584&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+</head>
+<body class="">
+<div class="main-container ">
+    <header class="main-header main-header_without-decor">
+        <div class="container">
+            <div class="main-header__inside">
+                <div class="b-logo">
+                    <a href="/" class="logo" title="Uniteller">Uniteller</a>
+                </div>
+				<div class="b-navigation">
+                    
+<nav class="main-nav">
+	<ul itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+					<li itemprop="name"><a itemprop="url" href="/about/">О компании</a></li>
+					<li itemprop="name"><a itemprop="url" href="/services/">Сервисы</a></li>
+					<li itemprop="name"><a itemprop="url" href="/tarify/">Тарифы</a></li>
+					<li itemprop="name"><a itemprop="url" href="/help/">Документация</a></li>
+					<li itemprop="name"><a itemprop="url" href="/fz-54/">54-ФЗ</a></li>
+			</ul>
+</nav>
+
+
+
+					<a href="/connect/" class="btn btn_connect">Подключиться</a>
+				</div>
+                <div class="main-header-details">
+                    <div class="support-call">
+                        <div class="support-call__link">
+                            <a href="tel:88001001960" class="link-call">
+                                <i class="icn icn_call"></i>
+                                <span class="link-call__text-mb">Звонок</span>
+                                <span class="link-call__text-dt">8 800 100-19-60</span>
+                            </a>
+                        </div>
+                        <div class="support-call__hint">
+                            круглосуточная техподдержка                        </div>
+						 <div class="support-call_zv"><a href="" class="btn btn_info btn_info-sm btn_obr back-call">Обратный звонок</a></div>
+                    </div>
+                </div>
+				<div class="b-auth-block">
+                    <div class="b-auth">
+                        <a href="https://lk.uniteller.ru/" target="_blank" class="btn btn_info btn_info-sm">Вход</a>
+                    </div>
+					<div class="b-lang">
+	<div class="switcher-lang">
+		<div class="switcher-lang__current">
+			RU		</div>
+		<div class="switcher-lang__options">
+			<ul>
+									<li><a href="/en/">EN</a></li>
+							</ul>
+		</div>
+	</div>
+</div>				</div>
+                <div class="b-burger">
+                    <div class="btn-burger">
+                        <i class="icn icn_burger"></i>
+                    </div>
+                    <div class="b-nav-dropdown">
+						
+<nav class="main-nav">
+	<ul itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+					<li itemprop="name"><a itemprop="url" href="/about/">О компании</a></li>
+					<li itemprop="name"><a itemprop="url" href="/services/">Сервисы</a></li>
+					<li itemprop="name"><a itemprop="url" href="/tarify/">Тарифы</a></li>
+					<li itemprop="name"><a itemprop="url" href="/help/">Документация</a></li>
+					<li itemprop="name"><a itemprop="url" href="/fz-54/">54-ФЗ</a></li>
+			</ul>
+</nav>
+
+
+
+                        <div class="b-nav-dropdown__add-nav">
+                            <div class="b-nav-dropdown__add-nav-col">
+                                <div class="add-nav-icns">
+                                    <ul>
+                                        <li><a href="#" class="back-call"><span class="add-nav-icns__icon"><i class="icn icn_feedback-call"></i></span>Обратный звонок</a></li>
+                                        <li><a href="/about/contacts/#form"><span class="add-nav-icns__icon"><i class="icn icn_write-letter"></i></span>Написать нам</a></li>
+                                        <li><a href="/sitemap/"><span class="add-nav-icns__icon"><i class="icn icn_map-site"></i></span>Карта сайта</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="b-nav-dropdown__add-nav-col">
+                                <div class="b-auth">
+                                    <a href="https://lk.uniteller.ru/" target="_blank" class="btn btn_info btn_info-sm">Вход</a>
+                                </div>
+                                                            </div>
+                        </div>
+<script src="https://my.hellobar.com/80155b1fefef74c8200c8406533528f97930d39a.js" type="text/javascript" charset="utf-8" async="async"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KDGSZDM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <div class="main-content">
+		<div class="intro-container-holder">
+	<div class="container">
+		<div class="intro-container">
+			 <section class="intro-unit">
+						<div class="b-intro b-intro_align-bottom">
+							<h1 class="b-intro__title">
+								 Оплата через Google Pay
+							</h1>
+							<div class="b-intro__body">
+								 Простая и безопасная оплата покупок вашим смартфоном Android c картами банка.
+							</div>
+						</div>
+			 </section>
+		</div>
+	</div>
+	<div class="breadcrumbs">
+		<div class="container">
+			<ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
+				<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"> <a itemprop="item" href="/"><span itemprop="name">Главная</span></a> </li>
+				<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"> <a itemprop="item" href="/services/"> <span itemprop="name">Сервисы</span> </a> </li>
+			</ul>
+		</div>
+	</div>
+	<div class="intro-unit__photo parallax-block">
+ 			<img src="/local/templates/index/css/../img/tmp/google-pay-intro-mob.jpg" class="intro-unit__photo-mob" alt=""> 
+ 			<img src="/local/templates/index/css/../img/tmp/google-pay-intro-desk.jpg" class="intro-unit__photo-desk" alt="">
+	</div>
+</div>
+<div class="s-content s-content_pb-lg">
+	<div class="container">
+		<div class="c-section-title">
+			<div class="s-title s-title_wider">
+				Google Pay — быстрый и простой способ оплаты на сайтах в мобильных приложениях, в магазинах. 
+			</div>
+		</div>
+		<div class="s-content__intro-text">
+			Google Pay предоставляет все удобства для оплаты и сохраняет данные покупателя в безопасности. Приложение Google Pay можно установить на устройствах, поддерживающих бесконтактную технологию и работающих на операционной системе Android версии 4.4. (KitKat) и выше.
+		</div>
+		<div class="b-benefits b-benefits_cols-3">
+			<div class="benefit-unit" id="bx_1878455859_532">
+				<div class="benefit-unit__icon">
+ 					<i class="icn" style="background-image: url('/local/templates/index/css/../img/icons/icn-google-pay1.png');width: 115px; height: 107px; background-size: contain;"></i>
+				</div>
+				<div class="benefit-unit__body">
+					Накопление миль, бонусная программа, спецпредложения — с Google pay™ вы можете пользоваться любыми привилегиями вашей карты
+				</div>
+			</div>
+			<div class="benefit-unit" id="bx_1878455859_533">
+				<div class="benefit-unit__icon">
+ 					<i class="icn" style="background-image: url('/local/templates/index/css/../img/icons/icn-google-pay2.png');width: 95px; height: 107px; background-size: contain;"></i>
+				</div>
+				<div class="benefit-unit__body">
+					С Google pay™ реквизиты вашей карты надежно защищены: при оплате используются не фактические данные карты, а цифровой аналоговый номер
+				</div>
+			</div>
+			<div class="benefit-unit" id="bx_1878455859_534">
+				<div class="benefit-unit__icon">
+ 					<i class="icn" style="background-image: url('/local/templates/index/css/../img/icons/icn-google-pay3.png');width: 102px; height: 107px; background-size: contain;"></i>
+				</div>
+				<div class="benefit-unit__body">
+					В случае утери или кражи смартфона Удаленное управление Google pay™ позволит изменить пароль, удалить данные или заблокировать устройство 
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="s-content s-content_pt-lg s-content_pb-lg s-content_colored">
+	<div class="container">
+		<div class="wrap-img-content wrap-img-content_gpay">
+			<div class="b-desc-col">
+				<div class="c-section-title">
+					<div class="s-title text-left s-title_wider">
+						Оплата покупок смартфоном
+					</div>
+				</div>
+				<p>
+ 					Расплачиваясь Google pay™ в приложениях и онлайн, вы не тратите время на регистрацию: ввод данных вашей карты не требуется. Где бы вы ни совершали покупки — в любимом приложении или интернете — просто выберите опцию расплатиться с Google pay™ и вы не потеряете ни минуты.
+				</p>
+			</div>
+			<div class="img-desc-col">
+ 				<img src="/local/templates/index/css/../img/tmp/img-google-pay-phone.png" alt="">
+			</div>
+		</div>
+	</div>
+</div>
+<div class="s-content">
+	<div class="container">
+		<div class="c-section-title">
+			<div class="s-title">
+				Просто использовать			
+			</div>
+		</div>
+		<div class="acquiring-steps acquiring-steps_reset-mb acquiring-steps_isolated">
+			<div class="acquiring-steps__unit" id="bx_651765591_286">
+				<div class="acquiring-steps__photo">
+					<div class="acquiring-steps__photo-insider no-num">
+						<img src="/local/templates/index/css/../img/tmp/img-simple-use1.jpg" alt="">				
+					</div>
+				</div>
+				<div class="acquiring-steps__body">
+					<div class="b-title">
+						Установите приложение		
+					</div>
+					<div class="bullet-list">
+						Установите приложение <a href="#">Google Pay</a> или активируйте в приложении вашего банка.
+					</div>
+				</div>
+			</div>
+			<div class="acquiring-steps__unit" id="bx_651765591_288">
+				<div class="acquiring-steps__photo">
+					<div class="acquiring-steps__photo-insider no-num">
+						<img src="/local/templates/index/css/../img/tmp/img-simple-use2.jpg" alt="">				
+					</div>
+				</div>
+				<div class="acquiring-steps__body">
+					<div class="b-title">
+						Добавьте карту			
+					</div>
+					<div class="bullet-list">
+						Добавьте в приложение вашу карту одного из банков, поддерживающих Google Pay.
+					</div>
+				</div>
+			</div>
+			<div class="acquiring-steps__unit" id="bx_651765591_287">
+				<div class="acquiring-steps__photo">
+					<div class="acquiring-steps__photo-insider no-num">
+						<img src="/local/templates/index/css/../img/tmp/img-simple-use3.jpg" alt="">				
+					</div>
+				</div>
+				<div class="acquiring-steps__body">
+					<div class="b-title">
+						Пользуйтесь!		
+					</div>
+					<div class="bullet-list">
+						Ваша карта добавлена и подтверждена в приложении Google Pay. Теперь вы готовы к покупкам!		
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="s-content">
+	<div class="container">
+		<div class="c-section-title">
+			<div class="s-title">
+				Просто платить	
+			</div>
+		</div>
+		<div class="acquiring-steps acquiring-steps_reset-mb acquiring-steps_isolated">
+			<div class="acquiring-steps__unit" id="bx_651765591_286">
+				<div class="acquiring-steps__photo">
+					<div class="acquiring-steps__photo-insider no-num">
+						<img src="/local/templates/index/css/../img/tmp/img-simple-pay1.jpg" alt="">				
+					</div>
+				</div>
+				<div class="acquiring-steps__body">
+					<div class="bullet-list">
+						Оплачивайте через Google Pay в любом браузере для персонального компьютера или мобильного устройства, а также в мобильном приложении
+					</div>
+				</div>
+			</div>
+			<div class="acquiring-steps__unit" id="bx_651765591_288">
+				<div class="acquiring-steps__photo">
+					<div class="acquiring-steps__photo-insider no-num">
+						<img src="/local/templates/index/css/../img/tmp/img-simple-pay2.jpg" alt="">				
+					</div>
+				</div>
+				<div class="acquiring-steps__body">
+					<div class="bullet-list">
+						При оформлении заказа на сайте найдите кнопку покупки Google Pay
+					</div>
+				</div>
+			</div>
+			<div class="acquiring-steps__unit" id="bx_651765591_287">
+				<div class="acquiring-steps__photo">
+					<div class="acquiring-steps__photo-insider no-num">
+						<img src="/local/templates/index/css/../img/tmp/img-simple-pay3.jpg" alt="">				
+					</div>
+				</div>
+				<div class="acquiring-steps__body">
+					<div class="bullet-list">
+						<p>
+							Подтвердите платеж своим отпечатком пальца или PIN-кодом приложения.
+						</p>
+						<p>
+							Стоимость покупки спишется со счета банковской карты и информация о платеже отразится в истории транзакций
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="footer">
+    <div class="footer-navs">
+        <div class="container">
+
+	        
+	<div class="footer-main-nav footer-main-nav__click">
+		<div class="footer-title footer-main-nav__title">
+			<a href="/about/">О компании</a>
+		</div>
+					<nav class="footer-main-nav__list">
+				<ul>
+											<li><a href="/about/history/">История развития</a></li>
+											<li><a href="/about/advantages/">Преимущества</a></li>
+											<li><a href="/about/clients/">Наши клиенты</a></li>
+											<li><a href="/about/reviews/">Отзывы</a></li>
+											<li><a href="/about/certificates/">Сертификаты</a></li>
+											<li><a href="/about/press-center/">Пресс-центр</a></li>
+											<li><a href="/about/contacts/">Контакты</a></li>
+									</ul>
+			</nav>
+			</div>
+	<div class="footer-main-nav footer-main-nav__click">
+		<div class="footer-title footer-main-nav__title">
+			<a href="/services/">Сервисы</a>
+		</div>
+					<nav class="footer-main-nav__list">
+				<ul>
+											<li><a href="/services/internet-acquiring/">Интернет-эквайринг</a></li>
+											<li><a href="/services/acquiring-dlya-biznesa/">Эквайринг для бизнеса</a></li>
+											<li><a href="/services/selfservice/">Системы самообслуживания</a></li>
+											<li><a href="/services/solutions/">Платежные решения</a></li>
+											<li><a href="/services/special/">Специальные предложения</a></li>
+											<li><a href="/fz-54/">Облачные кассы 54-ФЗ</a></li>
+									</ul>
+			</nav>
+			</div>
+	<div class="footer-main-nav footer-main-nav__click">
+		<div class="footer-title footer-main-nav__title">
+			<a href="/tarify/">Тарифы</a>
+		</div>
+			</div>
+	<div class="footer-main-nav footer-main-nav__click">
+		<div class="footer-title footer-main-nav__title">
+			<a href="/help/">Документация</a>
+		</div>
+					<nav class="footer-main-nav__list">
+				<ul>
+											<li><a href="/help/how-to-connect/">Как подключиться</a></li>
+											<li><a href="/help/cards/">Договор на приём карт</a></li>
+											<li><a href="/help/site-requirements/">Требования к сайту</a></li>
+											<li><a href="/help/the-contract-for-fiscal/">Договор по фискализации</a></li>
+											<li><a href="/help/the-contract-is-selfservice/">Договор по самообслуживанию</a></li>
+									</ul>
+			</nav>
+			</div>
+
+
+
+
+
+
+
+            <div class="footer-main-nav">
+                <div class="footer-title footer-main-nav__title">
+	                <a href="/connect/">ПОДКЛЮЧИТЬСЯ</a>
+                </div>
+            </div>
+            <div class="footer-main-nav contacts-column">
+                <div class="footer-title footer-main-nav__title">
+	                <a href="/about/contacts/">КОНТАКТЫ</a>
+                </div>
+                <div class="b-contacts">
+                    <div class="b-contacts-phone">
+                        <div class="b-contacts-phone__number">
+                            <a href="tel:8 800 100-19-60">8 800 100-19-60</a>
+                            <div class="b-contacts-btns__btn">
+                                <a href="#" class="back-call">Обратный звонок</a>
+                            </div>
+                        </div>
+                        <div class="b-contacts-phone__hint">
+                            Круглосуточная техподдержка	                        <br>Звонок по России бесплатный                        </div>
+                    </div>
+                    <div class="b-contacts-btns">
+                        <div class="b-contacts-btns__table">
+                            <div class="b-contacts-btns__mailto">
+                                <a href="mailto:info@uniteller.ru">info@uniteller.ru</a>
+                            </div>
+                            <div class="b-contacts-btns__socials">
+                                <div class="socials-btns">
+	                                <!--noindex-->
+<a rel="nofollow" target="_blank" href="http://vk.com/uniteller"><i class="fa fa-vk"></i></a>
+<a rel="nofollow" target="_blank" href="http://www.facebook.com/Uniteller"><i class="fa fa-facebook"></i></a>
+<a rel="nofollow" target="_blank" href="http://twitter.com/UnitellerRu"><i class="fa fa-twitter"></i></a>
+<!--/noindex-->                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="additional-logos">
+                        <a href="http://sk.ru/news/"  rel="nofollow" target="_blank" class="b-add-logo"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="main-footer__l">
+                <div class="copyright">
+                    &copy; 2008 - 2020  Uniteller — Процессинговый центр. Интернет-эквайринг                </div>
+                <div class="cards">
+	                <img src="/local/templates/index/img/cards/card-mir.png" alt=""> <img src="/local/templates/index/img/cards/card-visa.png" alt=""> <img alt="MC_icon_small.png" src="/upload/medialibrary/671/MC_icon_small.png"> <img src="/local/templates/index/img/cards/card-amex.png" alt=""> <img src="/local/templates/index/img/cards/card-diners.png" alt=""> <img src="/local/templates/index/img/cards/card-jcb.png" alt=""> <img src="/local/templates/index/img/cards/card-unionpay.png" alt="">&nbsp;<img alt="iP_icon_small.png" src="/upload/medialibrary/c5f/iP_icon_small.png"><img alt="SP_icon_small.png" src="/upload/medialibrary/f48/SP_icon_small.png">&nbsp;<img width="46" alt="masterpas_01_icom_small.png" src="/upload/medialibrary/8b9/masterpas_01_icom_small.png" height="30">                </div>
+            </div>
+            <div class="main-footer__r">
+                <nav class="footer-add-nav">
+                    <ul>
+						<li>
+	                                                <a href="/en/">English version</a>
+	                                            	<a href="/sitemap/">Карта сайта</a>
+						</li>
+                        <li><a href="/privacy-policy/">Политика конфиденциальности</a></li>
+                    </ul>
+                </nav>
+                <div class="developers">
+                    Создание сайта – <a href="http://funkymonkey.ru/"   rel="nofollow"  target="_blank">Funky Monkey</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+</div>
+
+<div class="control-panel">
+    <header class="main-header">
+        <div class="container">
+            <div class="main-header__inside">
+                <div class="b-logo">
+                    <a href="/" class="logo" title="Uniteller">Uniteller</a>
+                </div>
+                <div class="b-navigation">
+					<!--noindex-->
+                    <form action="/search/" class="f-search">
+                        <input type="text" name="q" placeholder="Поиск" >
+                        <button type="submit"><i class="icn"></i></button>
+                    </form>
+					<!--/noindex-->
+                </div>
+                <div class="main-header-details">
+
+                    <div class="b-lang">
+                        <div class="lang-version">Русская версия</div>
+                    </div>
+                </div>
+                <div class="b-burger">
+                    <div class="btn-burger btn-burger_close">
+                        <i class="icn icn_burger"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="control-panel__navigations">
+        <div class="footer-navs">
+            <div class="container">
+                <div class="control-panel__cols">
+	                			<div class="control-panel__col">
+			<div class="footer-main-nav footer-main-nav__click">
+				<div class="footer-title footer-main-nav__title">
+					<a href="/about/">О компании</a>
+				</div>
+									<nav class="footer-main-nav__list">
+						<ul>
+															<li><a href="/about/history/">История развития</a></li>
+															<li><a href="/about/advantages/">Преимущества</a></li>
+															<li><a href="/about/clients/">Наши клиенты</a></li>
+															<li><a href="/about/reviews/">Отзывы</a></li>
+															<li><a href="/about/certificates/">Сертификаты</a></li>
+															<li><a href="/about/press-center/">Пресс-центр</a></li>
+															<li><a href="/about/contacts/">Контакты</a></li>
+													</ul>
+					</nav>
+							</div>
+		</div>
+	
+			<div class="control-panel__col control-panel__col-double">
+			<div class="footer-main-nav footer-main-nav__click">
+				<div class="footer-title footer-main-nav__title">
+					<a href="/services/">Сервисы</a>
+				</div>
+									<nav class="footer-main-nav__list">
+						<ul class="list-col">
+															<li>
+									<a href="/services/internet-acquiring/">Интернет-эквайринг</a>
+																	</li>
+															<li>
+									<a href="/services/acquiring-dlya-biznesa/">Эквайринг для бизнеса</a>
+																	</li>
+															<li>
+									<a href="/services/selfservice/">Системы самообслуживания</a>
+																			<ul>
+																							<li><a href="/services/selfservice/avtomaticheskie-azs/">Автоматические АЗС</a></li>
+																							<li><a href="/services/selfservice/parkomaty/">Платные парковки</a></li>
+																							<li><a href="/services/selfservice/platezhnye-terminaly/">Платежные терминалы</a></li>
+																							<li><a href="/services/selfservice/biletnye-terminaly/">Билетные терминалы</a></li>
+																					</ul>
+																	</li>
+															<li>
+									<a href="/services/solutions/">Платежные решения</a>
+																			<ul>
+																							<li><a href="/services/solutions/uniemv/">uniEMV</a></li>
+																							<li><a href="/services/solutions/unipayment/">uniPayment</a></li>
+																							<li><a href="/services/solutions/mobilnyy-ekvayring/">Мобильный эквайринг</a></li>
+																							<li><a href="/services/solutions/torgovyy-ekvayring/">Торговый эквайринг</a></li>
+																					</ul>
+																	</li>
+															<li>
+									<a href="/services/special/">Специальные предложения</a>
+																			<ul>
+																							<li><a href="/services/special/avia-i-turizm/">Авиа и туризм</a></li>
+																							<li><a href="/services/special/zhkkh/">ЖКХ</a></li>
+																							<li><a href="/services/special/transport-toplivnye-karty/">Транспорт</a></li>
+																							<li><a href="/services/special/gosudarstvennye-portaly/">Государственные порталы</a></li>
+																							<li><a href="/services/special/banki-i-platezhnye-sistemy/">Банки и платежные системы</a></li>
+																					</ul>
+																	</li>
+													</ul>
+						<ul class="list-col">
+							<li>
+								<span></span>
+								<ul>
+																	</ul>
+							</li>
+						</ul>
+					</nav>
+							</div>
+		</div>
+	
+	
+		<div class="control-panel__col">
+			<div class="footer-main-nav footer-main-nav__click">
+				<div class="footer-title footer-main-nav__title">
+					<a href="/tarify/">Тарифы</a>
+				</div>
+							</div>
+		</div>
+	
+	
+		<div class="control-panel__col">
+			<div class="footer-main-nav footer-main-nav__click">
+				<div class="footer-title footer-main-nav__title">
+					<a href="/help/">Документация</a>
+				</div>
+									<nav class="footer-main-nav__list">
+						<ul>
+															<li><a href="/help/how-to-connect/">Как подключиться</a></li>
+															<li><a href="/help/cards/">Договор на приём карт</a></li>
+															<li><a href="/help/site-requirements/">Требования к сайту</a></li>
+															<li><a href="/help/the-contract-for-fiscal/">Договор по фискализации</a></li>
+															<li><a href="/help/the-contract-is-selfservice/">Договор по самообслуживанию</a></li>
+													</ul>
+					</nav>
+							</div>
+		</div>
+	
+                    <div class="control-panel__col">
+                        <div class="footer-main-nav">
+                            <div class="footer-title footer-main-nav__title">
+                                <a href="/connect/">ПОДКЛЮЧИТЬСЯ</a>
+                            </div>
+                        </div>
+                        <div class="footer-main-nav contacts-column">
+                            <div class="footer-title footer-main-nav__title">
+                                <a href="/about/contacts/">КОНТАКТЫ</a>
+                            </div>
+                            <div class="b-contacts">
+                                <div class="b-contacts-phone">
+                                    <div class="b-contacts-phone__number">
+                                        <a href="tel:88001001960">8 800 100-19-60</a>
+                                    </div>
+                                    <div class="b-contacts-phone__hint">
+                                        Круглосуточная техподдержка                                        <br>Звонок по России бесплатный                                    </div>
+                                </div>
+                                <div class="b-contacts-btns">
+                                    <div class="b-contacts-btns__table">
+                                        <div class="b-contacts-btns__btn">
+                                            <a href="#" class="back-call">Обратный звонок</a>
+                                        </div>
+                                        <div class="b-contacts-btns__socials">
+                                            <div class="socials-btns">
+	                                            <!--noindex-->
+<a rel="nofollow" target="_blank" href="http://vk.com/uniteller"><i class="fa fa-vk"></i></a>
+<a rel="nofollow" target="_blank" href="http://www.facebook.com/Uniteller"><i class="fa fa-facebook"></i></a>
+<a rel="nofollow" target="_blank" href="http://twitter.com/UnitellerRu"><i class="fa fa-twitter"></i></a>
+<!--/noindex-->                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="additional-logos">
+                                    <div class="b-add-logo">
+                                        <img src="/local/templates/index/img/sc_logo_rus_skolkovo.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Yandex.Metrika counter -->
+<script data-skip-moving="true" type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter24986216 = new Ya.Metrika({
+                    id:24986216,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+ 
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+ 
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/24986216" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter --><!-- BEGIN JIVOSITE CODE {literal} -->
+<script data-skip-moving="true" type='text/javascript'>
+(function(){ var widget_id = 'DO1YP59qFY';var d=document;var w=window;function l(){
+var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+<!-- {/literal} END JIVOSITE CODE --><div id="modal-back-call" class="remodal" data-remodal-id="modal-back-call" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+	<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+	<div class="remodal-body">
+		<h2>Обратный звонок</h2>
+		<div class="f-feedback">
+			<form action="#" class="ajax-form">
+				<input type="hidden" name="form_text_51" value="/google-pay/"/>
+				<input type="hidden" name="WEB_FORM_ID" value="5">
+				<div class="user-data">
+	<input name="u_email" value=""><br>
+	<input name="u_login" value=""><br>
+	<input name="u_comment" value="fabcaa97871555b68aa095335975e613">
+</div>				<div class="b-form__holder">
+					<div class="form">
+						<div class="b-form__field b-form__field-col">
+							<input value="" required name="form_text_44" placeholder="Имя и фамилия" type="text">
+						</div>
+						<div class="b-form__field b-form__field-col field-mask field-mask_default">
+							<input value="" required name="form_text_45" placeholder="Номер телефона" type="tel">
+						</div>
+					</div>
+					<div class="b-form__field b-form__field-btn b-form__field-btn-center">
+						<button type="submit" class="btn btn_action btn_block">Перезвонить мне</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div id="modal-message" class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+	<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+	<div class="remodal-body">
+		<h2 class="modal-title"></h2>
+		<div class="msg-success-order">
+			<div class="msg-success-order__icon">
+				<i class="icn icn_success-order"></i>
+			</div>
+			<div class="msg-success-order__body modal-text"></div>
+		</div>
+	</div>
+</div><link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic&display=swap" type="text/css"  rel="stylesheet" />
+</body>
+<link rel="stylesheet" href="https://cdn.envybox.io/widget/cbk.css">
+<script type="text/javascript" src="https://cdn.envybox.io/widget/cbk.js?wcb_code=deec9eaed20fe20a1c94702a232fc4f7" charset="UTF-8" async></script>
+</html><!--59b7fc91422bb46563f2e8d6fea6ecc8-->
