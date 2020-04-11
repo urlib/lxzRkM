@@ -1,0 +1,9 @@
+
+
+<script>
+window.onload=function()
+{
+window.location='http://support1.lenovo.com.cn/lenovo/wsi/WSBX/Lenovo/ForTechnicalSupport.aspx';
+}
+</script>
+
