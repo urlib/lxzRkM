@@ -1,0 +1,4761 @@
+<!doctype html>
+<html       lang="zh-CN"      dir="ltr">
+  <head>
+    <meta name="google-signin-client-id" content="721724668570-nbkv1cfusk7kk4eni4pjvepaus73b13t.apps.googleusercontent.com">
+    <meta name="google-signin-scope" content="profile email">
+    <meta property="og:site_name" content="Google Developers">
+    <meta property="og:type" content="website">
+    
+          <meta name="theme-color" content="#1a73e8">
+    
+    <meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="/_pwa/developers/manifest.json"
+          crossorigin="use-credentials">
+    <link rel="preconnect" href="//www.gstatic.cn" crossorigin>
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.googleapis.com" crossorigin>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons">
+        <link rel="stylesheet" href="https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/developers/css/app.css">
+    <noscript>
+      <link rel="stylesheet" href="https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/developers/css/ce_bundle.css">
+    </noscript>
+    <link rel="shortcut icon" href="https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/developers/images/favicon.png">
+    <link rel="apple-touch-icon" href="https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/developers/images/touchicon-180.png"><link rel="canonical" href="https://developers.google.cn/pay/api?hl=zh-cn">      
+<title>Google Pay API &nbsp;|&nbsp; Google Developers</title>
+
+<meta property="og:title" content="Google Pay API &nbsp;|&nbsp; Google Developers">
+  <meta name="description" content="优化您的用户的结算体验。">
+  <meta property="og:description" content="优化您的用户的结算体验。">
+
+  
+  <meta property="og:url" content="https://developers.google.cn/pay/api?hl=zh-cn">
+
+  <meta property="og:image" content="https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/developers/images/opengraph/google-blue.png">
+  <meta property="og:image:secure_url" content="https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/developers/images/opengraph/google-blue.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:locale" content="zh_cn">
+  <meta name="twitter:card" content="summary_large_image">
+
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Google Pay",
+      "item": "https://developers.google.cn/pay"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Google Pay for Payments",
+      "item": "https://developers.google.cn/pay/api"
+    }]
+  }
+  </script>
+
+
+
+
+    </head>
+  <body type="landing"
+        theme="google-blue"
+        class=""
+        
+        layout="full"
+        block-apix                pending>
+    <devsite-progress type="indeterminate" id="app-progress"></devsite-progress>
+    <section class="devsite-wrapper"><devsite-header>
+      
+
+
+
+
+
+
+
+<div class="devsite-header--inner">
+  <div class="devsite-top-logo-row-wrapper-wrapper">
+    <div class="devsite-top-logo-row-wrapper">
+      <div class="devsite-top-logo-row">
+        <button type="button" id="devsite-hamburger-menu"
+          class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+          data-category="Site-Wide Custom Events"
+          data-label="Navigation menu button"
+          visually-hidden
+          aria-label="Open menu">
+        </button>
+        <div class="devsite-product-name-wrapper">
+      
+  
+  <span class="devsite-product-name">
+    <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             devsite-has-google-wordmark">
+                                  <a href="/pay"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Upper Header"
+              data-value="1"
+          >
+              <h1 class="devsite-product-name"><svg class="devsite-google-wordmark"
+       xmlns="http://www.w3.org/2000/svg"
+       viewBox="0 0 148 48">
+    <title>Google</title>
+    <path class="devsite-google-wordmark-svg-path" d="M19.58,37.65c-9.87,0-18.17-8.04-18.17-17.91c0-9.87,8.3-17.91,18.17-17.91c5.46,0,9.35,2.14,12.27,4.94l-3.45,3.45c-2.1-1.97-4.93-3.49-8.82-3.49c-7.21,0-12.84,5.81-12.84,13.02c0,7.21,5.64,13.02,12.84,13.02c4.67,0,7.34-1.88,9.04-3.58c1.4-1.4,2.32-3.41,2.66-6.16H19.58v-4.89h16.47c0.18,0.87,0.26,1.92,0.26,3.06c0,3.67-1.01,8.21-4.24,11.44C28.93,35.9,24.91,37.65,19.58,37.65z M61.78,26.12c0,6.64-5.1,11.53-11.36,11.53s-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53S61.78,19.43,61.78,26.12z M56.8,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C53.84,33.11,56.8,30.22,56.8,26.12z M87.25,26.12c0,6.64-5.1,11.53-11.36,11.53c-6.26,0-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53C82.15,14.59,87.25,19.43,87.25,26.12zM82.28,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C79.32,33.11,82.28,30.22,82.28,26.12z M112.09,15.29v20.7c0,8.52-5.02,12.01-10.96,12.01c-5.59,0-8.95-3.76-10.22-6.81l4.41-1.83c0.79,1.88,2.71,4.1,5.81,4.1c3.8,0,6.16-2.36,6.16-6.77v-1.66h-0.18c-1.14,1.4-3.32,2.62-6.07,2.62c-5.76,0-11.05-5.02-11.05-11.49c0-6.51,5.28-11.57,11.05-11.57c2.75,0,4.93,1.22,6.07,2.58h0.18v-1.88H112.09z M107.64,26.16c0-4.06-2.71-7.03-6.16-7.03c-3.49,0-6.42,2.97-6.42,7.03c0,4.02,2.93,6.94,6.42,6.94C104.93,33.11,107.64,30.18,107.64,26.16z M120.97,3.06v33.89h-5.07V3.06H120.97z M140.89,29.92l3.93,2.62c-1.27,1.88-4.32,5.11-9.61,5.11c-6.55,0-11.28-5.07-11.28-11.53c0-6.86,4.77-11.53,10.71-11.53c5.98,0,8.91,4.76,9.87,7.34l0.52,1.31l-15.42,6.38c1.18,2.31,3.01,3.49,5.59,3.49C137.79,33.11,139.58,31.84,140.89,29.92zM128.79,25.77l10.31-4.28c-0.57-1.44-2.27-2.45-4.28-2.45C132.24,19.04,128.66,21.31,128.79,25.77z"/>
+  </svg>Pay</h1>        
+  </a>
+              </li>
+  </ul>
+  </span>
+</div>
+        <div class="devsite-top-logo-row-middle">
+          <div class="devsite-header-upper-tabs">
+                            <devsite-tabs class="upper-tabs">
+    <div class="devsite-tabs-wrapper">
+                        <tab  >
+            <a href="/pay"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="概览"
+           data-category="Overview"
+        data-label="navTopMenu"
+        data-action="tabClick"
+   >
+  概览
+</a>
+
+          </tab>
+                                <tab dropdown
+        active        >
+  <a href="/pay/api"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="付款"
+   aria-label="付款, selected"         data-category="Payments"
+        data-label="navTopMenu"
+        data-action="tabClick"
+   >
+  付款
+</a>
+  <a href="#"
+     aria-haspopup="true"
+     aria-expanded="false"
+     aria-label="Toggle menu"
+     role="button"
+     track-type="globalNav"
+     track-metadata-position="nav"
+     track-metadata-eventdetail="nav"
+     track-name="付款"
+            data-category="Payments"
+            data-label="navTopMenu"
+            data-action="tabClick"
+          class="devsite-tabs-dropdown-toggle devsite-icon devsite-icon-arrow-drop-down"></a>
+
+  <div class="devsite-tabs-dropdown" aria-hidden="true" aria-label="submenu">
+        <div class="devsite-tabs-dropdown-content">
+              <div class="devsite-tabs-dropdown-column
+                    ">
+                      <ul class="devsite-tabs-dropdown-section
+                       ">
+                              <li class="devsite-nav-title" tooltip> </li>
+                                                          <li class="devsite-nav-item">
+                  <a href="/pay/api/android/overview"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/pay/api/android/overview"
+                     tooltip
+                                                           data-action="dropdownClick"
+                                         data-category="android"
+                                         data-label="navTopMenu"
+                                      >
+                    
+                    <div class="devsite-nav-item-title">
+                      Android
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/pay/api/web/overview"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/pay/api/web/overview"
+                     tooltip
+                                                           data-action="dropdownClick"
+                                         data-category="web"
+                                         data-label="navTopMenu"
+                                      >
+                    
+                    <div class="devsite-nav-item-title">
+                      Web
+                    </div>
+                                      </a>
+                </li>
+                          </ul>
+                  </div>
+          </div>
+  </div>
+</tab>
+                                <tab dropdown
+                >
+  <a href="/pay/passes"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="卡券"
+           data-category="passes"
+        data-label="navTopMenu"
+        data-action="tabClick"
+   >
+  卡券
+</a>
+  <a href="#"
+     aria-haspopup="true"
+     aria-expanded="false"
+     aria-label="Toggle menu"
+     role="button"
+     track-type="globalNav"
+     track-metadata-position="nav"
+     track-metadata-eventdetail="nav"
+     track-name="卡券"
+            data-category="passes"
+            data-label="navTopMenu"
+            data-action="tabClick"
+          class="devsite-tabs-dropdown-toggle devsite-icon devsite-icon-arrow-drop-down"></a>
+
+  <div class="devsite-tabs-dropdown" aria-hidden="true" aria-label="submenu">
+        <div class="devsite-tabs-dropdown-content">
+              <div class="devsite-tabs-dropdown-column
+                    ">
+                      <ul class="devsite-tabs-dropdown-section
+                       ">
+                              <li class="devsite-nav-title" tooltip> </li>
+                                                          <li class="devsite-nav-item">
+                  <a href="/pay/passes/guides/pass-verticals/boarding-passes/overview"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/pay/passes/guides/pass-verticals/boarding-passes/overview"
+                     tooltip
+                                                           data-action="dropdownClick"
+                                         data-category="boarding-passes"
+                                         data-label="navTopMenu"
+                                      >
+                    
+                    <div class="devsite-nav-item-title">
+                      登机牌
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/pay/passes/guides/pass-verticals/event-tickets/overview"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/pay/passes/guides/pass-verticals/event-tickets/overview"
+                     tooltip
+                                                           data-action="dropdownClick"
+                                         data-category="event-tickets"
+                                         data-label="navTopMenu"
+                                      >
+                    
+                    <div class="devsite-nav-item-title">
+                      活动门票
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/pay/passes/guides/pass-verticals/loyalty/overview"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/pay/passes/guides/pass-verticals/loyalty/overview"
+                     tooltip
+                                                           data-action="dropdownClick"
+                                         data-category="loyalty-cards"
+                                         data-label="navTopMenu"
+                                      >
+                    
+                    <div class="devsite-nav-item-title">
+                      会员卡
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/pay/passes/guides/pass-verticals/gift-cards/overview"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/pay/passes/guides/pass-verticals/gift-cards/overview"
+                     tooltip
+                                                           data-category="gift-cards"
+                                         data-action="dropdownClick"
+                                         data-label="navTopMenu"
+                                      >
+                    
+                    <div class="devsite-nav-item-title">
+                      礼品卡
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/pay/passes/guides/pass-verticals/offers/overview"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/pay/passes/guides/pass-verticals/offers/overview"
+                     tooltip
+                                                           data-action="dropdownClick"
+                                         data-category="offers"
+                                         data-label="navTopMenu"
+                                      >
+                    
+                    <div class="devsite-nav-item-title">
+                      优惠
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/pay/passes/guides/pass-verticals/transit-passes/overview"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/pay/passes/guides/pass-verticals/transit-passes/overview"
+                     tooltip
+                                                           data-action="dropdownClick"
+                                         data-category="transit"
+                                         data-label="navTopMenu"
+                                      >
+                    
+                    <div class="devsite-nav-item-title">
+                      公交卡
+                    </div>
+                                      </a>
+                </li>
+                          </ul>
+                  </div>
+          </div>
+  </div>
+</tab>
+                                <tab dropdown
+                >
+  <a href="/pay/india/api"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="印度"
+           data-category="India"
+        data-label="navTopMenu"
+        data-action="tabClick"
+   >
+  印度
+</a>
+  <a href="#"
+     aria-haspopup="true"
+     aria-expanded="false"
+     aria-label="Toggle menu"
+     role="button"
+     track-type="globalNav"
+     track-metadata-position="nav"
+     track-metadata-eventdetail="nav"
+     track-name="印度"
+            data-category="India"
+            data-label="navTopMenu"
+            data-action="tabClick"
+          class="devsite-tabs-dropdown-toggle devsite-icon devsite-icon-arrow-drop-down"></a>
+
+  <div class="devsite-tabs-dropdown" aria-hidden="true" aria-label="submenu">
+        <div class="devsite-tabs-dropdown-content">
+              <div class="devsite-tabs-dropdown-column
+                    ">
+                      <ul class="devsite-tabs-dropdown-section
+                       ">
+                              <li class="devsite-nav-title" tooltip> </li>
+                                                          <li class="devsite-nav-item">
+                  <a href="/pay/india/api/android/overview"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/pay/india/api/android/overview"
+                     tooltip
+                                                           data-action="dropdownClick"
+                                         data-category="android-india"
+                                         data-label="navTopMenu"
+                                      >
+                    
+                    <div class="devsite-nav-item-title">
+                      Android
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/pay/india/api/web/intro"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/pay/india/api/web/intro"
+                     tooltip
+                                                           data-category="web-india"
+                                         data-action="dropdownClick"
+                                         data-label="navTopMenu"
+                                      >
+                    
+                    <div class="devsite-nav-item-title">
+                      Web
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/pay/india/api/otherapis/omnichannel/overview"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/pay/india/api/otherapis/omnichannel/overview"
+                     tooltip
+                                                           data-action="dropdownClick"
+                                         data-category="omnichannel-india"
+                                         data-label="navTopMenu"
+                                      >
+                    
+                    <div class="devsite-nav-item-title">
+                      全渠道
+                    </div>
+                                      </a>
+                </li>
+                          </ul>
+                  </div>
+          </div>
+  </div>
+</tab>
+                                <tab  >
+            <a href="/pay/transit"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="开放式公交"
+           data-category="open-loop-transit"
+        data-label="navTopMenu"
+        data-action="tabClick"
+   >
+  开放式公交
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/pay/spot"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="spot平台"
+           data-category="spot-platform"
+        data-label="navTopMenu"
+        data-action="tabClick"
+   >
+  Spot 平台
+</a>
+
+          </tab>
+                  </div>
+  </devsite-tabs>
+
+
+                       </div>
+          <devsite-search
+            enable-suggestions
+              project-name="Google Pay API"    tenant-name="Google Developers"                >
+  <form class="devsite-search-form" action="https://developers.google.cn/s/results" method="GET">
+    <div class="devsite-search-container">
+      <div class="devsite-searchbox">
+                <input placeholder="搜索"
+          type="text"
+          class="devsite-search-field devsite-search-query"
+          name="q"
+          value=""
+          autocomplete="off"
+                    aria-label="搜索框">
+        <div class="devsite-search-image material-icons" aria-hidden="true"></div>
+      </div>
+      <button type="button"
+              search-open
+              class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+              aria-label="Open search box"></button>
+    </div>
+  </form>
+  <button type="button"
+          search-close
+          class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+          aria-label="Close search box"></button>
+</devsite-search>
+
+        </div>
+
+        
+        <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+    <select class="devsite-language-selector-select"
+            name="language"
+            track-name="click"
+            track-type="languageSelector">
+                <option>Language</option>
+              <option value="id"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="id"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Bahasa Indonesia
+      </option>
+          <option value="de"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="de"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Deutsch
+      </option>
+          <option value="en"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="en"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        English
+      </option>
+          <option value="es"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="es"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Español
+      </option>
+          <option value="fr"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="fr"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Français
+      </option>
+          <option value="pl"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="pl"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Polski
+      </option>
+          <option value="pt_br"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="pt_br"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Português – Brasil
+      </option>
+          <option value="ru"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="ru"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Русский
+      </option>
+          <option value="zh_cn"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="zh_cn"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 简体
+      </option>
+          <option value="zh_tw"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="zh_tw"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 繁體
+      </option>
+          <option value="ja"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="ja"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        日本語
+      </option>
+          <option value="ko"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="ko"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        한국어
+      </option>
+        </select>
+  </devsite-select>
+</devsite-language-selector>
+
+
+        
+              </div>    </div>  </div>
+  <div class="devsite-collapsible-section
+          devsite-header-no-lower-tabs
+    ">
+    <div class="devsite-header-background">
+                        <div class="devsite-product-id-row"
+           >
+            <div class="devsite-product-description-row">
+                                                <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                    <a href="/pay/api"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Lower Header"
+              data-value="1"
+          >
+            Google Pay for Payments
+      
+  </a>
+        </li>
+  </ul>
+                                                              <div class="devsite-product-description">优化您的用户的结算体验。</div>
+  
+                          </div>
+                                                                      <div class="devsite-product-button-row">
+      <a href="/pay/api/faq"
+      class="button
+      "
+            >常见问题解答</a>    <a href="https://pay.google.com/business/console"
+      class="button external
+      "
+            >与支持团队联系</a></div>
+                                    </div>
+                                  </div>  </div></div>
+  
+
+  </devsite-header>      <devsite-book-nav scrollbars hidden>
+                  
+
+
+
+
+
+<nav class="devsite-book-nav devsite-nav nocontent">
+  <div class="devsite-mobile-header">
+    <button type="button"
+            id="devsite-close-nav"
+            class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+            data-category="Site-Wide Custom Events"
+            data-label="Close navigation"
+            aria-label="Close navigation">
+    </button>
+    <div class="devsite-product-name-wrapper">
+      
+          <span class="devsite-product-name">
+        <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             devsite-has-google-wordmark">
+                                  <a href="/pay"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Upper Header"
+              data-value="1"
+          >
+              <h1 class="devsite-product-name"><svg class="devsite-google-wordmark"
+       xmlns="http://www.w3.org/2000/svg"
+       viewBox="0 0 148 48">
+    <title>Google</title>
+    <path class="devsite-google-wordmark-svg-path" d="M19.58,37.65c-9.87,0-18.17-8.04-18.17-17.91c0-9.87,8.3-17.91,18.17-17.91c5.46,0,9.35,2.14,12.27,4.94l-3.45,3.45c-2.1-1.97-4.93-3.49-8.82-3.49c-7.21,0-12.84,5.81-12.84,13.02c0,7.21,5.64,13.02,12.84,13.02c4.67,0,7.34-1.88,9.04-3.58c1.4-1.4,2.32-3.41,2.66-6.16H19.58v-4.89h16.47c0.18,0.87,0.26,1.92,0.26,3.06c0,3.67-1.01,8.21-4.24,11.44C28.93,35.9,24.91,37.65,19.58,37.65z M61.78,26.12c0,6.64-5.1,11.53-11.36,11.53s-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53S61.78,19.43,61.78,26.12z M56.8,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C53.84,33.11,56.8,30.22,56.8,26.12z M87.25,26.12c0,6.64-5.1,11.53-11.36,11.53c-6.26,0-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53C82.15,14.59,87.25,19.43,87.25,26.12zM82.28,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C79.32,33.11,82.28,30.22,82.28,26.12z M112.09,15.29v20.7c0,8.52-5.02,12.01-10.96,12.01c-5.59,0-8.95-3.76-10.22-6.81l4.41-1.83c0.79,1.88,2.71,4.1,5.81,4.1c3.8,0,6.16-2.36,6.16-6.77v-1.66h-0.18c-1.14,1.4-3.32,2.62-6.07,2.62c-5.76,0-11.05-5.02-11.05-11.49c0-6.51,5.28-11.57,11.05-11.57c2.75,0,4.93,1.22,6.07,2.58h0.18v-1.88H112.09z M107.64,26.16c0-4.06-2.71-7.03-6.16-7.03c-3.49,0-6.42,2.97-6.42,7.03c0,4.02,2.93,6.94,6.42,6.94C104.93,33.11,107.64,30.18,107.64,26.16z M120.97,3.06v33.89h-5.07V3.06H120.97z M140.89,29.92l3.93,2.62c-1.27,1.88-4.32,5.11-9.61,5.11c-6.55,0-11.28-5.07-11.28-11.53c0-6.86,4.77-11.53,10.71-11.53c5.98,0,8.91,4.76,9.87,7.34l0.52,1.31l-15.42,6.38c1.18,2.31,3.01,3.49,5.59,3.49C137.79,33.11,139.58,31.84,140.89,29.92zM128.79,25.77l10.31-4.28c-0.57-1.44-2.27-2.45-4.28-2.45C132.24,19.04,128.66,21.31,128.79,25.77z"/>
+  </svg>Pay</h1>        
+  </a>
+              </li>
+  </ul>
+      </span>
+    
+</div>  </div>
+
+  <div class="devsite-book-nav-wrapper">
+    <div class="devsite-mobile-nav-top">
+              <ul class="devsite-nav-list">
+                      <li class="devsite-nav-item">
+                  <a href="/pay"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 概览"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="概览">
+      <span class="devsite-nav-text" tooltip >
+      概览
+   </span>
+        </a>
+  
+                                        </li>
+                      <li class="devsite-nav-item">
+                  <a href="/pay/api"
+           class="devsite-nav-title gc-analytics-event
+                            devsite-nav-active"
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 付款"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="付款">
+      <span class="devsite-nav-text" tooltip >
+      付款
+   </span>
+        </a>
+  
+                              <ul class="devsite-nav-responsive-tabs devsite-nav-has-menu">
+                  <li class="devsite-nav-item">
+    <span
+           class="devsite-nav-title"
+       tooltip
+        >
+      <span class="devsite-nav-text" tooltip menu="付款">
+      More
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          menu="付款">
+    </span>
+        </span>
+  </li>
+
+                </ul>
+                                        </li>
+                      <li class="devsite-nav-item">
+                  <a href="/pay/passes"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 卡券"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="卡券">
+      <span class="devsite-nav-text" tooltip >
+      卡券
+   </span>
+        </a>
+  
+                              <ul class="devsite-nav-responsive-tabs devsite-nav-has-menu">
+                  <li class="devsite-nav-item">
+    <span
+           class="devsite-nav-title"
+       tooltip
+        >
+      <span class="devsite-nav-text" tooltip menu="卡券">
+      More
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          menu="卡券">
+    </span>
+        </span>
+  </li>
+
+                </ul>
+                                        </li>
+                      <li class="devsite-nav-item">
+                  <a href="/pay/india/api"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 印度"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="印度">
+      <span class="devsite-nav-text" tooltip >
+      印度
+   </span>
+        </a>
+  
+                              <ul class="devsite-nav-responsive-tabs devsite-nav-has-menu">
+                  <li class="devsite-nav-item">
+    <span
+           class="devsite-nav-title"
+       tooltip
+        >
+      <span class="devsite-nav-text" tooltip menu="印度">
+      More
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          menu="印度">
+    </span>
+        </span>
+  </li>
+
+                </ul>
+                                        </li>
+                      <li class="devsite-nav-item">
+                  <a href="/pay/transit"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 开放式公交"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="开放式公交">
+      <span class="devsite-nav-text" tooltip >
+      开放式公交
+   </span>
+        </a>
+  
+                                        </li>
+                      <li class="devsite-nav-item">
+                  <a href="/pay/spot"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Spot 平台"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="spot平台">
+      <span class="devsite-nav-text" tooltip >
+      Spot 平台
+   </span>
+        </a>
+  
+                                        </li>
+                    
+                  </ul>
+          </div>
+          <div class="devsite-mobile-nav-bottom">
+                                                                          <ul class="devsite-nav-list" menu="付款" hidden>
+                                                                            <li class="devsite-nav-item devsite-nav-heading">
+    <span
+           class="devsite-nav-title"
+       tooltip
+        >
+      <span class="devsite-nav-text" tooltip >
+       
+   </span>
+        </span>
+  </li>
+
+                                                              <li class="devsite-nav-item">
+    <a href="/pay/api/android/overview"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Android"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="android">
+      <span class="devsite-nav-text" tooltip >
+      Android
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/pay/api/web/overview"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Web"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="web">
+      <span class="devsite-nav-text" tooltip >
+      Web
+   </span>
+        </a>
+  </li>
+
+                                                                    </ul>
+                                                <ul class="devsite-nav-list" menu="卡券" hidden>
+                                                                            <li class="devsite-nav-item devsite-nav-heading">
+    <span
+           class="devsite-nav-title"
+       tooltip
+        >
+      <span class="devsite-nav-text" tooltip >
+       
+   </span>
+        </span>
+  </li>
+
+                                                              <li class="devsite-nav-item">
+    <a href="/pay/passes/guides/pass-verticals/boarding-passes/overview"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 登机牌"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="登机牌">
+      <span class="devsite-nav-text" tooltip >
+      登机牌
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/pay/passes/guides/pass-verticals/event-tickets/overview"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 活动门票"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="活动门票">
+      <span class="devsite-nav-text" tooltip >
+      活动门票
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/pay/passes/guides/pass-verticals/loyalty/overview"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 会员卡"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="会员卡">
+      <span class="devsite-nav-text" tooltip >
+      会员卡
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/pay/passes/guides/pass-verticals/gift-cards/overview"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 礼品卡"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="礼品卡">
+      <span class="devsite-nav-text" tooltip >
+      礼品卡
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/pay/passes/guides/pass-verticals/offers/overview"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 优惠"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="优惠">
+      <span class="devsite-nav-text" tooltip >
+      优惠
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/pay/passes/guides/pass-verticals/transit-passes/overview"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 公交卡"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="公交卡">
+      <span class="devsite-nav-text" tooltip >
+      公交卡
+   </span>
+        </a>
+  </li>
+
+                                                                    </ul>
+                                                <ul class="devsite-nav-list" menu="印度" hidden>
+                                                                            <li class="devsite-nav-item devsite-nav-heading">
+    <span
+           class="devsite-nav-title"
+       tooltip
+        >
+      <span class="devsite-nav-text" tooltip >
+       
+   </span>
+        </span>
+  </li>
+
+                                                              <li class="devsite-nav-item">
+    <a href="/pay/india/api/android/overview"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Android"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="android">
+      <span class="devsite-nav-text" tooltip >
+      Android
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/pay/india/api/web/intro"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Web"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="web">
+      <span class="devsite-nav-text" tooltip >
+      Web
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/pay/india/api/otherapis/omnichannel/overview"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 全渠道"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="全渠道">
+      <span class="devsite-nav-text" tooltip >
+      全渠道
+   </span>
+        </a>
+  </li>
+
+                                                                    </ul>
+                                                                                </div>
+      </div>
+</nav>
+              </devsite-book-nav>
+      <section id="gc-wrapper">
+        <main role="main" class="devsite-main-content"
+                        >
+          <devsite-toc class="devsite-nav"
+            disabled></devsite-toc>
+          <devsite-content>
+                          
+
+<article class="devsite-article">
+  <article class="devsite-article-inner">        
+    <div class="devsite-article-meta">
+      <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                    <a href="/"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="1"
+          >
+            首页
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/products"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="2"
+          >
+            产品
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/pay"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="3"
+          >
+            Google Pay
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/pay/api"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="4"
+          >
+            Google Pay for Payments
+      
+  </a>
+        </li>
+  </ul>
+          </div>
+
+        
+    <devsite-toc class="devsite-nav" devsite-toc-embedded
+                 disabled>
+    </devsite-toc>
+
+    <div class="devsite-article-body clearfix
+              devsite-no-page-title
+      ">
+
+                <section class="devsite-landing-row devsite-landing-row-1-up devsite-landing-row-50 devsite-landing-row-large-headings devsite-landing-row-marquee"
+           
+           >
+
+      
+    
+      <div class="devsite-landing-row-group">
+              <div class="devsite-landing-row-item"
+     
+     >
+
+  
+    <div class="devsite-landing-row-item-media
+            ">
+      <figure class="devsite-landing-row-item-image">
+          <img alt=""
+       src="/pay/images/Mod1-Pay_API_Pay-D2x.png"
+       srcset="https://developers.google.cn/pay/images/Mod1-Pay_API_Pay-D2x_36.png 36w,https://developers.google.cn/pay/images/Mod1-Pay_API_Pay-D2x_48.png 48w,https://developers.google.cn/pay/images/Mod1-Pay_API_Pay-D2x_72.png 72w,https://developers.google.cn/pay/images/Mod1-Pay_API_Pay-D2x_96.png 96w,https://developers.google.cn/pay/images/Mod1-Pay_API_Pay-D2x_480.png 480w,https://developers.google.cn/pay/images/Mod1-Pay_API_Pay-D2x_720.png 720w,https://developers.google.cn/pay/images/Mod1-Pay_API_Pay-D2x_856.png 856w,https://developers.google.cn/pay/images/Mod1-Pay_API_Pay-D2x_960.png 960w,https://developers.google.cn/pay/images/Mod1-Pay_API_Pay-D2x_1440.png 1440w,https://developers.google.cn/pay/images/Mod1-Pay_API_Pay-D2x_1920.png 1920w,https://developers.google.cn/pay/images/Mod1-Pay_API_Pay-D2x_2880.png 2880w"
+       sizes="(max-width: 600px) 100vw, (max-width: 840px) 50vw, 708px">
+  
+  </figure>
+  </div>
+
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+                    <h3 id="">
+      在您的应用或网站中打造顺畅的付款体验</h3>
+    
+    
+
+                  <div class="devsite-landing-row-item-description-content">
+            <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" /><p>借助 Google Pay，您的客户只需按下按钮即可使用保存在其 Google 帐号中的付款方式完成付款。</p><a class="button button-with-icon" href="https://www.youtube.com/watch?v=rP_UAPcIG4I" target="_blank"><img class="material-icons" src="/pay/images/video-icon.png" translate="no"/>观看视频</a><p><b>阅读开发者文档</b></p>
+
+          </div>
+        
+        
+                  <div class="devsite-landing-row-item-buttons">
+      <a href="/pay/api/android/overview"
+      class="button
+      "
+            >Android</a>    <a href="/pay/api/web/overview"
+      class="button
+      "
+            >Web</a></div>
+              </div>
+    </div>
+      
+</div>
+            </div>
+    
+  
+  </section>
+  <section class="devsite-landing-row devsite-landing-row-3-up"
+               background="grey"
+  
+           >
+
+      
+    
+      <div class="devsite-landing-row-group">
+              <div class="devsite-landing-row-item devsite-landing-row-item-no-media"
+     
+     >
+
+  
+    
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+                    <h3 id="">
+      轻松结算</h3>
+    
+    
+
+                  <div class="devsite-landing-row-item-description-content">
+            保存数百万张卡的千百万用户只需按一下按钮即可付款。
+          </div>
+        
+        
+              </div>
+    </div>
+      
+</div>
+              <div class="devsite-landing-row-item devsite-landing-row-item-no-media"
+     
+     >
+
+  
+    
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+                    <h3 id="">
+      增强的安全性</h3>
+    
+    
+
+                  <div class="devsite-landing-row-item-description-content">
+            客户付款数据会进行端到端加密，并从 Google 服务器发送到您的付款处理方。
+          </div>
+        
+        
+              </div>
+    </div>
+      
+</div>
+              <div class="devsite-landing-row-item devsite-landing-row-item-no-media"
+     
+     >
+
+  
+    
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+                    <h3 id="">
+      轻松的集成</h3>
+    
+    
+
+                  <div class="devsite-landing-row-item-description-content">
+            Google Pay 可与您现有的付款处理堆栈配合使用，只需几行代码即可实现。
+          </div>
+        
+        
+              </div>
+    </div>
+      
+</div>
+            </div>
+    
+  
+  </section>
+  <section class="devsite-landing-row devsite-landing-row-3-up devsite-landing-row-cards devsite-landing-row-header-centered"
+           
+           >
+
+          <header class="devsite-landing-row-header">
+            <div class="devsite-landing-row-header-text">
+
+                    <h2 id="">
+      久经实践检验的成效</h2>
+    
+    
+
+              </div>
+      
+          </header>
+    
+    
+      <div class="devsite-landing-row-group">
+              <div class="devsite-landing-row-item"
+     
+     >
+
+  
+    <div class="devsite-landing-row-item-media
+            ">
+      <figure class="devsite-landing-row-item-image">
+          <img alt=""
+       src="/pay/api/images/landing/stubhub2x.png"
+       srcset="https://developers.google.cn/pay/api/images/landing/stubhub2x_36.png 36w,https://developers.google.cn/pay/api/images/landing/stubhub2x_48.png 48w,https://developers.google.cn/pay/api/images/landing/stubhub2x_72.png 72w,https://developers.google.cn/pay/api/images/landing/stubhub2x_96.png 96w,https://developers.google.cn/pay/api/images/landing/stubhub2x_480.png 480w,https://developers.google.cn/pay/api/images/landing/stubhub2x_720.png 720w,https://developers.google.cn/pay/api/images/landing/stubhub2x_856.png 856w,https://developers.google.cn/pay/api/images/landing/stubhub2x_960.png 960w,https://developers.google.cn/pay/api/images/landing/stubhub2x_1440.png 1440w,https://developers.google.cn/pay/api/images/landing/stubhub2x_1920.png 1920w,https://developers.google.cn/pay/api/images/landing/stubhub2x_2880.png 2880w"
+       sizes="(max-width: 840px) 50vw, 464px">
+  
+  </figure>
+  </div>
+
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+        
+
+                  <div class="devsite-landing-row-item-description-content">
+            <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />使用 Google Pay 完成付款的唯一身份用户数<b>增加了 7 倍</b>。
+          </div>
+        
+        
+              </div>
+    </div>
+      
+</div>
+              <div class="devsite-landing-row-item"
+     
+     >
+
+  
+    <div class="devsite-landing-row-item-media
+            ">
+      <figure class="devsite-landing-row-item-image">
+          <img alt=""
+       src="/pay/api/images/landing/airbnb2x.png"
+       srcset="https://developers.google.cn/pay/api/images/landing/airbnb2x_36.png 36w,https://developers.google.cn/pay/api/images/landing/airbnb2x_48.png 48w,https://developers.google.cn/pay/api/images/landing/airbnb2x_72.png 72w,https://developers.google.cn/pay/api/images/landing/airbnb2x_96.png 96w,https://developers.google.cn/pay/api/images/landing/airbnb2x_480.png 480w,https://developers.google.cn/pay/api/images/landing/airbnb2x_720.png 720w,https://developers.google.cn/pay/api/images/landing/airbnb2x_856.png 856w,https://developers.google.cn/pay/api/images/landing/airbnb2x_960.png 960w,https://developers.google.cn/pay/api/images/landing/airbnb2x_1440.png 1440w,https://developers.google.cn/pay/api/images/landing/airbnb2x_1920.png 1920w,https://developers.google.cn/pay/api/images/landing/airbnb2x_2880.png 2880w"
+       sizes="(max-width: 840px) 50vw, 464px">
+  
+  </figure>
+  </div>
+
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+        
+
+                  <div class="devsite-landing-row-item-description-content">
+            <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />Google Pay 促成的平均每日交易量<b>增长了 11 倍</b>。
+          </div>
+        
+        
+              </div>
+    </div>
+      
+</div>
+              <div class="devsite-landing-row-item"
+     
+     >
+
+  
+    <div class="devsite-landing-row-item-media
+            ">
+      <figure class="devsite-landing-row-item-image">
+          <img alt=""
+       src="/pay/api/images/landing/hotel-tonight2x.png"
+       srcset="https://developers.google.cn/pay/api/images/landing/hotel-tonight2x_36.png 36w,https://developers.google.cn/pay/api/images/landing/hotel-tonight2x_48.png 48w,https://developers.google.cn/pay/api/images/landing/hotel-tonight2x_72.png 72w,https://developers.google.cn/pay/api/images/landing/hotel-tonight2x_96.png 96w,https://developers.google.cn/pay/api/images/landing/hotel-tonight2x_480.png 480w,https://developers.google.cn/pay/api/images/landing/hotel-tonight2x_720.png 720w,https://developers.google.cn/pay/api/images/landing/hotel-tonight2x_856.png 856w,https://developers.google.cn/pay/api/images/landing/hotel-tonight2x_960.png 960w,https://developers.google.cn/pay/api/images/landing/hotel-tonight2x_1440.png 1440w,https://developers.google.cn/pay/api/images/landing/hotel-tonight2x_1920.png 1920w,https://developers.google.cn/pay/api/images/landing/hotel-tonight2x_2880.png 2880w"
+       sizes="(max-width: 840px) 50vw, 464px">
+  
+  </figure>
+  </div>
+
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+        
+
+                  <div class="devsite-landing-row-item-description-content">
+            <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />使用 Google Pay，用户完成预订流程的可能性<b>提高了 65%</b>。
+          </div>
+        
+        
+              </div>
+    </div>
+      
+</div>
+            </div>
+    
+  
+  </section>
+  <section class="devsite-landing-row devsite-landing-row-2-up devsite-landing-row-cards devsite-landing-row-header-centered devsite-landing-row-100"
+               background="grey"
+  
+           >
+
+          <header class="devsite-landing-row-header">
+            <div class="devsite-landing-row-header-text">
+
+                    <h2 id="">
+      合作处理方</h2>
+    
+    
+
+                  <div class="devsite-landing-row-description">
+            我们与世界各地的众多 Payments 服务提供商 (PSP) 合作，以简化 Google Pay 集成。
+          </div>
+              </div>
+      
+          </header>
+    
+    
+      <div class="devsite-landing-row-group">
+              <div class="devsite-landing-row-item devsite-landing-row-item-centered devsite-landing-row-item-no-media"
+     
+     >
+
+  
+    
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+                    <h3 id="">
+      商家</h3>
+    
+    
+
+                  <div class="devsite-landing-row-item-description-content">
+            <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />请立即向您的 PSP 咨询 Google Pay 事宜。如果此处没有显示您的 PSP，请<a href="https://docs.google.com/forms/d/e/1FAIpQLSdLmj6fFfsi340p00u39--o20O9XyA8NTrnDUy-Y--if7ZQdg/viewform">填写通知申请</a>，以便在您的 PSP 可提供服务时通知您。
+          </div>
+        
+        
+              </div>
+    </div>
+      
+</div>
+              <div class="devsite-landing-row-item devsite-landing-row-item-centered devsite-landing-row-item-no-media"
+     
+     >
+
+  
+    
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+                    <h3 id="psp">
+      PSP</h3>
+    
+    
+
+                  <div class="devsite-landing-row-item-description-content">
+            <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />立即支持 Google Pay 作为 PSP。如果您想以 PSP 的身份向商家提供 Google Pay，请<a href="https://services.google.com/fb/forms/googlepayapigatewaypaymentprocessorinterestform/">填写入驻申请</a>。
+          </div>
+        
+        
+              </div>
+    </div>
+      
+</div>
+            </div>
+    
+  
+  </section>
+  <section class="devsite-landing-row devsite-landing-row-4-up"
+               background="grey"
+  
+           >
+
+      
+    
+      <div class="devsite-landing-row-group">
+              <div class="devsite-landing-row-item devsite-landing-row-item-no-media"
+     
+     >
+
+  
+    
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+        
+
+        
+                  <ul class="devsite-landing-row-item-list">
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://developer.2c2p.com/docs/googlepay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://developer.2c2p.com/docs/googlepay">
+        <h4 id="2c2p">
+      2C2P</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://docs.aciworldwide.com/tutorials/mobile-sdk/google-pay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://docs.aciworldwide.com/tutorials/mobile-sdk/google-pay">
+        <h4 id="aci">
+      ACI</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://docs.adyen.com/developers/payment-methods/google-pay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://docs.adyen.com/developers/payment-methods/google-pay">
+        <h4 id="adyen">
+      Adyen</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://pay.alfabank.ru/ecommerce/instructions/merchantManual/pages/index/integration_schemes.html#oplata_s_ispolzovaniem_google_pay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://pay.alfabank.ru/ecommerce/instructions/merchantManual/pages/index/integration_schemes.html#oplata_s_ispolzovaniem_google_pay">
+        <h4 id="alfa-bank">
+      Alfa-Bank</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://appex.ru/integration/detail.php?ID=59947">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://appex.ru/integration/detail.php?ID=59947">
+        <h4 id="appex">
+      APPEX</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://www.assist.ru/o-podklyuchenii/docs/files/TokenPayeng.pdf">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://www.assist.ru/o-podklyuchenii/docs/files/TokenPayeng.pdf">
+        <h4 id="assist">
+      Assist</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://developer.authorize.net/api/reference/features/in-app.html#Google_Pay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://developer.authorize.net/api/reference/features/in-app.html#Google_Pay">
+        <h4 id="authorizenet">
+      Authorize.Net</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://gpay.best2pay.net/">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://gpay.best2pay.net/">
+        <h4 id="best2pay">
+      Best2Pay</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://www.bisys.ru/doc/shop-api/?shell#gpay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://www.bisys.ru/doc/shop-api/?shell#gpay">
+        <h4 id="">
+      结算系统</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://solution.cafis.jp/merchant/purpose/cafis_bluegate.php">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://solution.cafis.jp/merchant/purpose/cafis_bluegate.php">
+        <h4 id="bluegate-nttdata">
+      BlueGate (NTTData)</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://bluemedia.pl/developers/google-pay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://bluemedia.pl/developers/google-pay">
+        <h4 id="blue-media">
+      Blue Media</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://developers.bluesnap.com/docs/google-pay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://developers.bluesnap.com/docs/google-pay">
+        <h4 id="bluesnap">
+      BlueSnap</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://www.braintreepayments.com/features/google-pay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://www.braintreepayments.com/features/google-pay">
+        <h4 id="braintree">
+      Braintree</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://braspag.github.io/manual/google-pay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://braspag.github.io/manual/google-pay">
+        <h4 id="braspag">
+      Braspag</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://support.cardconnect.com/google-pay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://support.cardconnect.com/google-pay">
+        <h4 id="cardconnect">
+      CardConnect</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://www.cathaybk.com.tw/">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://www.cathaybk.com.tw/">
+        <h4 id="cathay-united-bank">
+      Cathay United Bank</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://secure.paymentech.com/devcenter/products">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://secure.paymentech.com/devcenter/products">
+        <h4 id="chase-paymentech">
+      Chase Paymentech</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://docs.checkout.com/docs/google-pay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://docs.checkout.com/docs/google-pay">
+        <h4 id="checkoutcom">
+      Checkout.com</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://cloudpayments.ru/wiki/integration/products/googlepay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://cloudpayments.ru/wiki/integration/products/googlepay">
+        <h4 id="cloudpayments">
+      CloudPayments</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://www.computop.com/us/solutions/online-payments/e-wallets/google-pay/">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://www.computop.com/us/solutions/online-payments/e-wallets/google-pay/">
+        <h4 id="computop">
+      Computop</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://www.cybersource.com/developers/integration_methods/google_pay/">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://www.cybersource.com/developers/integration_methods/google_pay/">
+        <h4 id="cybersource">
+      Cybersource</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://www.datatrans.ch/showcase/authorisation/google-pay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://www.datatrans.ch/showcase/authorisation/google-pay">
+        <h4 id="datatrans">
+      Datatrans</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://docs.dlocal.com/guides/google-pay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://docs.dlocal.com/guides/google-pay">
+        <h4 id="dlocal">
+      dLocal</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://www.dotpay.pl/developer/doc/google-pay/en/">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://www.dotpay.pl/developer/doc/google-pay/en/">
+        <h4 id="dotpay">
+      Dotpay</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://esitef-homologacao.softwareexpress.com.br/api/docs/ing/googlepay/">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://esitef-homologacao.softwareexpress.com.br/api/docs/ing/googlepay/">
+        <h4 id="e-sitef-software-express">
+      e-SiTef - Software Express</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://cdn.easypay.ua/docs/googlepay.pdf">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://cdn.easypay.ua/docs/googlepay.pdf">
+        <h4 id="easypay">
+      EasyPay</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                      </ul>
+        
+              </div>
+    </div>
+      
+</div>
+              <div class="devsite-landing-row-item devsite-landing-row-item-no-media"
+     
+     >
+
+  
+    
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+        
+
+        
+                  <ul class="devsite-landing-row-item-list">
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://business.ebanx.com/google-pay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://business.ebanx.com/google-pay">
+        <h4 id="ebanx">
+      EBANX</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://paytest.ecard.pl/static/html/en/Google-Pay.html">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://paytest.ecard.pl/static/html/en/Google-Pay.html">
+        <h4 id="ecard">
+      eCard</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://e-ghl.com/googlepay-registration">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://e-ghl.com/googlepay-registration">
+        <h4 id="eghl">
+      eGHL</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://docs.cloudpayments.io/docs/google-pay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://docs.cloudpayments.io/docs/google-pay">
+        <h4 id="fat-zebra">
+      Fat Zebra</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://github.com/payeezy/google_pay/blob/master/guide/FirstDataGooglePayIntegrationGuide201802.pdf">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://github.com/payeezy/google_pay/blob/master/guide/FirstDataGooglePayIntegrationGuide201802.pdf">
+        <h4 id="first-data">
+      First Data</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://docs.fondy.eu/docs/page/google-pay/">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://docs.fondy.eu/docs/page/google-pay/">
+        <h4 id="fondy">
+      Fondy</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://docs.gestpay.it/soap/alternative-payments/google-pay/">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://docs.gestpay.it/soap/alternative-payments/google-pay/">
+        <h4 id="gestpay">
+      Gestpay</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://www.globalpaymentsinc.com/en/accept-payments/in-person/globalmpos/google-pay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://www.globalpaymentsinc.com/en/accept-payments/in-person/globalmpos/google-pay">
+        <h4 id="global-payments">
+      Global Payments</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://www.gmo-pg.com/service/mulpay/google-pay/">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://www.gmo-pg.com/service/mulpay/google-pay/">
+        <h4 id="gmo-payment-gateway">
+      GMO Payment Gateway</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://help.gopay.com/cs/tema/integrace-platebni-brany/funkcionality-platebni-brany/jak-spustit-google-pay-na-platebni-brane">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://help.gopay.com/cs/tema/integrace-platebni-brany/funkcionality-platebni-brany/jak-spustit-google-pay-na-platebni-brane">
+        <h4 id="gopay">
+      GoPay</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://www.hitrustpay.com.tw/page_gpay.html">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://www.hitrustpay.com.tw/page_gpay.html">
+        <h4 id="hitrust">
+      HiTrust</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://api-googlepay.ipay.ua/doc#step-one">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://api-googlepay.ipay.ua/doc#step-one">
+        <h4 id="ipayua">
+      iPay.ua</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://www.ipay88.com/">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://www.ipay88.com/">
+        <h4 id="ipay88">
+      iPay88</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://www.iqmetrix.com/lp/mobile-payment-technology">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://www.iqmetrix.com/lp/mobile-payment-technology">
+        <h4 id="iqmetrix">
+      iQmetrix</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+      
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+                  <h4 id="judopay">
+      Judopay</h4>
+    
+    
+
+      
+          </div>
+  </div>
+
+  
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://www.kineox.com/google-pay/">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://www.kineox.com/google-pay/">
+        <h4 id="kineox">
+      Kineox</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://tst2.logpay.de/atlas/documents/lpy-atlas-v2.0_wallet-api-b2c_googlepay_EN.html">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://tst2.logpay.de/atlas/documents/lpy-atlas-v2.0_wallet-api-b2c_googlepay_EN.html">
+        <h4 id="logpay">
+      LogPay</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://lyra.com/fr/google-pay/">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://lyra.com/fr/google-pay/">
+        <h4 id="lyra">
+      Lyra</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://na.gateway.mastercard.com/api/documentation/integrationGuidelines/supportedFeatures/pickPaymentMethod/devicePayments/GooglePay.html">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://na.gateway.mastercard.com/api/documentation/integrationGuidelines/supportedFeatures/pickPaymentMethod/devicePayments/GooglePay.html">
+        <h4 id="mastercard-payment-gateway-services">
+      Mastercard Payment Gateway Services</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://mobi-corp.ru/googlepay/">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://mobi-corp.ru/googlepay/">
+        <h4 id="mobimoney">
+      MOBI.Money</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://developer.moneris.com/Documentation/NA/E-Commerce%20Solutions/Google%20Pay/Overview">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://developer.moneris.com/Documentation/NA/E-Commerce%20Solutions/Google%20Pay/Overview">
+        <h4 id="moneris">
+      Moneris</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://money.mail.ru/oferta/googlepay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://money.mail.ru/oferta/googlepay">
+        <h4 id="moneymailru">
+      Money.Mail.Ru</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="http://multicarta.ru/internet-ekvayring/google-pay/">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="http://multicarta.ru/internet-ekvayring/google-pay/">
+        <h4 id="multicarta">
+      Multicarta</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://docs.mundipagg.com/docs/google-pay-tm">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://docs.mundipagg.com/docs/google-pay-tm">
+        <h4 id="mundipagg">
+      Mundipagg</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="http://www.mycheck.io/google-pay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="http://www.mycheck.io/google-pay">
+        <h4 id="mycheck">
+      MyCheck</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://www.nccc.com.tw">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://www.nccc.com.tw">
+        <h4 id="nccc">
+      NCCC</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                      </ul>
+        
+              </div>
+    </div>
+      
+</div>
+              <div class="devsite-landing-row-item devsite-landing-row-item-no-media"
+     
+     >
+
+  
+    
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+        
+
+        
+                  <ul class="devsite-landing-row-item-list">
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://www.spgateway.com/website/Page/content/download_api">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://www.spgateway.com/website/Page/content/download_api">
+        <h4 id="newebpay-stpath">
+      Newebpay（原为 STPath）</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://ecommerce.nexi.it/specifiche-tecniche/pagamentosemplice/altrimetodipagamento/googlepay.html">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://ecommerce.nexi.it/specifiche-tecniche/pagamentosemplice/altrimetodipagamento/googlepay.html">
+        <h4 id="nexi">
+      Nexi</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://support.nmi.com/hc/en-gb/articles/360012639192-Google-Pay-with-ChipDNA-Direct">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://support.nmi.com/hc/en-gb/articles/360012639192-Google-Pay-with-ChipDNA-Direct">
+        <h4 id="nmi">
+      NMI</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://docs.noonpayments.com/payment-api/google-pay/introduction">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://docs.noonpayments.com/payment-api/google-pay/introduction">
+        <h4 id="">
+      中午付款</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://helpdesk.nuvei.com/doku.php?id=developer:api_specification">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://helpdesk.nuvei.com/doku.php?id=developer:api_specification">
+        <h4 id="nuvei">
+      Nuvei</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://www.oceanpayment.com/">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://www.oceanpayment.com/">
+        <h4 id="oceanpayment">
+      Oceanpayment</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://paragonsolutions.com/wp-content/uploads/2019/08/google-pay-setup-v1.0.pdf">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://paragonsolutions.com/wp-content/uploads/2019/08/google-pay-setup-v1.0.pdf">
+        <h4 id="paragon">
+      Paragon 付款解决方案</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://service.payanyway.ru/info/w/ru/public/w/partnership/developers/googlepay.html">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://service.payanyway.ru/info/w/ru/public/w/partnership/developers/googlepay.html">
+        <h4 id="payanyway">
+      PayAnyWay</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://www.paygent.co.jp/service/googlepay/">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://www.paygent.co.jp/service/googlepay/">
+        <h4 id="paygent">
+      Paygent</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://devzone.paylane.com/api-guide/google-pay/">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://devzone.paylane.com/api-guide/google-pay/">
+        <h4 id="paylane">
+      PayLane</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://payler.com/docs/googlepay.html">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://payler.com/docs/googlepay.html">
+        <h4 id="payler">
+      Payler</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://payline.atlassian.net/wiki/spaces/DT/pages/1471512869/Google+Pay+EN">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://payline.atlassian.net/wiki/spaces/DT/pages/1471512869/Google+Pay+EN">
+        <h4 id="payline-monext">
+      Payline (Monext)</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="http://docs.dev.paymark.nz/click/#paymark-hosted-standard-payment">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="http://docs.dev.paymark.nz/click/#paymark-hosted-standard-payment">
+        <h4 id="paymark">
+      Paymark</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://docs.paymentwall.com/payment-method/google-pay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://docs.paymentwall.com/payment-method/google-pay">
+        <h4 id="paymentwall">
+      Paymentwall</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://paymetric.info/xiassist/google-pay-overview.html">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://paymetric.info/xiassist/google-pay-overview.html">
+        <h4 id="paymetric">
+      Paymetric</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://developers.payonline.ru/googlepay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://developers.payonline.ru/googlepay">
+        <h4 id="payonline">
+      PayOnline</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://developer.paysafe.com/en/sdks/mobile/android/introduction-to-google-pay/">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://developer.paysafe.com/en/sdks/mobile/android/introduction-to-google-pay/">
+        <h4 id="paysafe">
+      Paysafe</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="http://payture.com/google-pay/">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="http://payture.com/google-pay/">
+        <h4 id="payture">
+      Payture</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="http://developers.payu.com/en/google_pay.html">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="http://developers.payu.com/en/google_pay.html">
+        <h4 id="payu">
+      PayU</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://payumobile.gitbook.io/sdk-integration/android/google-pay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://payumobile.gitbook.io/sdk-integration/android/google-pay">
+        <h4 id="payu-india">
+      PayU India</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://docs.portmone.com.ua/docs/GPay/">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://docs.portmone.com.ua/docs/GPay/">
+        <h4 id="portmone">
+      Portmone</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://docs.przelewy24.pl/Google_Pay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://docs.przelewy24.pl/Google_Pay">
+        <h4 id="przelewy24">
+      Przelewy24</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://merchant.razer.com/">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://merchant.razer.com/">
+        <h4 id="razer-merchant-services">
+      Razer Merchant Services</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://developer.rbk.money/docs/payments/googlepay/">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://developer.rbk.money/docs/payments/googlepay/">
+        <h4 id="rbkmoney">
+      RBK.money</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="http://rbspayment.ru/accepting-payments-via-google-pay/">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="http://rbspayment.ru/accepting-payments-via-google-pay/">
+        <h4 id="rbs">
+      RBS</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://pagosonline.redsys.es/googlePay.html">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://pagosonline.redsys.es/googlePay.html">
+        <h4 id="redsys">
+      Redsys</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                      </ul>
+        
+              </div>
+    </div>
+      
+</div>
+              <div class="devsite-landing-row-item devsite-landing-row-item-no-media"
+     
+     >
+
+  
+    
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+        
+
+        
+                  <ul class="devsite-landing-row-item-list">
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://securepayments.sberbank.ru/wiki/doku.php/integration:googlepay:start">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://securepayments.sberbank.ru/wiki/doku.php/integration:googlepay:start">
+        <h4 id="sberbank">
+      Sberbank</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://sandbox.sipay.es/docm/google/en/">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://sandbox.sipay.es/docm/google/en/">
+        <h4 id="sipay">
+      Sipay</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://www.sbpayment.jp/service/asp/google_pay/">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://www.sbpayment.jp/service/asp/google_pay/">
+        <h4 id="softbank-payment-service">
+      Softbank Payment Service</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://solidgate.atlassian.net/wiki/spaces/API/pages/404619347/Google%2BPay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://solidgate.atlassian.net/wiki/spaces/API/pages/404619347/Google%2BPay">
+        <h4 id="solid">
+      Solid</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://www.sonypaymentservices.jp/consider/Google-pay/">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://www.sonypaymentservices.jp/consider/Google-pay/">
+        <h4 id="sony-payment-services">
+      Sony Payment Services</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://docs.spreedly.com/guides/google-pay/">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://docs.spreedly.com/guides/google-pay/">
+        <h4 id="spreedly">
+      Spreedly</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://docs.connect.squareup.com/payments/sqpaymentform/digitalwallet/googlepay-setup">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://docs.connect.squareup.com/payments/sqpaymentform/digitalwallet/googlepay-setup">
+        <h4 id="square">
+      Square</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://stripe.com/docs/google-pay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://stripe.com/docs/google-pay">
+        <h4 id="stripe">
+      Stripe</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://www.esafe.com.tw/GooglePay.html">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://www.esafe.com.tw/GooglePay.html">
+        <h4 id="suntech">
+      Suntech</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://www.tappaysdk.com/google-pay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://www.tappaysdk.com/google-pay">
+        <h4 id="tappay">
+      TapPay</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://oplata.tinkoff.ru/solution/methods/googlepay/">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://oplata.tinkoff.ru/solution/methods/googlepay/">
+        <h4 id="tinkoff">
+      Tinkoff</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://doc.mapcard.pro/12/scenarii-podklyucheniya/google-pay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://doc.mapcard.pro/12/scenarii-podklyucheniya/google-pay">
+        <h4 id="themap">
+      theMAP</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://tpay.com/platnosci-karta/googlepay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://tpay.com/platnosci-karta/googlepay">
+        <h4 id="tpaycom">
+      TPay.com</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://cdn.tranzzo.com/tranzzo-api/index.html#google-pay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://cdn.tranzzo.com/tranzzo-api/index.html#google-pay">
+        <h4 id="tranzzo">
+      Tranzzo</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://www.uniteller.ru/google-pay/">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://www.uniteller.ru/google-pay/">
+        <h4 id="uniteller">
+      Uniteller</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://developer.vantiv.com/community/mobile/google/google-pay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://developer.vantiv.com/community/mobile/google/google-pay">
+        <h4 id="vantiv">
+      Vantiv</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://www.veritrans.co.jp/payment/googlepay.html">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://www.veritrans.co.jp/payment/googlepay.html">
+        <h4 id="veritrans">
+      Veritrans</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://www.vindicia.com/cashbox-and-google-pay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://www.vindicia.com/cashbox-and-google-pay">
+        <h4 id="vindicia">
+      Vindicia</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://help.wayforpay.com/display/knowledgewfp/Payment+method+Google+Pay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://help.wayforpay.com/display/knowledgewfp/Payment+method+Google+Pay">
+        <h4 id="wayforpay">
+      WayForPay</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://www.windcave.com/merchant-ecommerce-google-pay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://www.windcave.com/merchant-ecommerce-google-pay">
+        <h4 id="windcave">
+      Windcave</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://doc.wirecard.com/GooglePay_Main.html">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://doc.wirecard.com/GooglePay_Main.html">
+        <h4 id="wirecard-elastic-engine">
+      Wirecard (Elastic Engine)</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://docs.worldnettps.com/doku.php?id=developer:api_specification:xml_payment_features_googlepay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://docs.worldnettps.com/doku.php?id=developer:api_specification:xml_payment_features_googlepay">
+        <h4 id="worldnet">
+      Worldnet</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://beta.developer.worldpay.com/docs/wpg/mobilewallets/googlepay">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://beta.developer.worldpay.com/docs/wpg/mobilewallets/googlepay">
+        <h4 id="worldpay">
+      Worldpay</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                          <li class="devsite-landing-row-item-list-item">
+  
+    <a href="https://kassa.yandex.ru/integration-mobile/">
+    
+  <div class="devsite-landing-row-item-list-item-content"
+       >
+
+    
+
+    <div class="devsite-landing-row-item-list-item-description">
+            <a href="https://kassa.yandex.ru/integration-mobile/">
+        <h4 id="yandexcheckout">
+      Yandex.Checkout</h4>
+    
+  </a>
+    
+
+      
+          </div>
+  </div>
+
+  
+  </a>
+  
+  </li>
+                      </ul>
+        
+              </div>
+    </div>
+      
+</div>
+            </div>
+    
+  
+  </section>
+  <section class="devsite-landing-row devsite-landing-row-4-up devsite-landing-row-header-centered devsite-landing-row-logos devsite-landing-row-no-image-background"
+           
+           >
+
+          <header class="devsite-landing-row-header">
+            <div class="devsite-landing-row-header-text">
+
+                    <h2 id="">
+      合作电子商务平台</h2>
+    
+    
+
+                  <div class="devsite-landing-row-description">
+            我们将继续与顶级电子商务平台建立合作伙伴关系，以帮助您轻松集成 Google Pay。
+          </div>
+              </div>
+      
+          </header>
+    
+    
+      <div class="devsite-landing-row-group">
+              <div class="devsite-landing-row-item devsite-landing-row-item-no-description"
+     
+     >
+
+  
+    <div class="devsite-landing-row-item-media
+            ">
+      <figure class="devsite-landing-row-item-image">
+    <a href="https://help.shopify.com/en/manual/payments/accelerated-checkouts/google-pay">
+        <img alt=""
+       src="/pay/api/images/landing/shopify-logo2x.png"
+       srcset="https://developers.google.cn/pay/api/images/landing/shopify-logo2x_36.png 36w,https://developers.google.cn/pay/api/images/landing/shopify-logo2x_48.png 48w,https://developers.google.cn/pay/api/images/landing/shopify-logo2x_72.png 72w,https://developers.google.cn/pay/api/images/landing/shopify-logo2x_96.png 96w,https://developers.google.cn/pay/api/images/landing/shopify-logo2x_480.png 480w,https://developers.google.cn/pay/api/images/landing/shopify-logo2x_720.png 720w,https://developers.google.cn/pay/api/images/landing/shopify-logo2x_856.png 856w,https://developers.google.cn/pay/api/images/landing/shopify-logo2x_960.png 960w,https://developers.google.cn/pay/api/images/landing/shopify-logo2x_1440.png 1440w,https://developers.google.cn/pay/api/images/landing/shopify-logo2x_1920.png 1920w,https://developers.google.cn/pay/api/images/landing/shopify-logo2x_2880.png 2880w"
+       sizes="(max-width: 600px) 50vw, (max-width: 840px) 25vw, 342px">
+  
+  </a>
+  </figure>
+  </div>
+
+
+      
+</div>
+              <div class="devsite-landing-row-item devsite-landing-row-item-no-description"
+     
+     >
+
+  
+    <div class="devsite-landing-row-item-media
+            ">
+      <figure class="devsite-landing-row-item-image">
+    <a href="https://magento.com/blog/magento-news/magento-introduces-magento-payments">
+        <img alt=""
+       src="/pay/api/images/landing/magento-logo2x.png"
+       srcset="https://developers.google.cn/pay/api/images/landing/magento-logo2x_36.png 36w,https://developers.google.cn/pay/api/images/landing/magento-logo2x_48.png 48w,https://developers.google.cn/pay/api/images/landing/magento-logo2x_72.png 72w,https://developers.google.cn/pay/api/images/landing/magento-logo2x_96.png 96w,https://developers.google.cn/pay/api/images/landing/magento-logo2x_480.png 480w,https://developers.google.cn/pay/api/images/landing/magento-logo2x_720.png 720w,https://developers.google.cn/pay/api/images/landing/magento-logo2x_856.png 856w,https://developers.google.cn/pay/api/images/landing/magento-logo2x_960.png 960w,https://developers.google.cn/pay/api/images/landing/magento-logo2x_1440.png 1440w,https://developers.google.cn/pay/api/images/landing/magento-logo2x_1920.png 1920w,https://developers.google.cn/pay/api/images/landing/magento-logo2x_2880.png 2880w"
+       sizes="(max-width: 600px) 50vw, (max-width: 840px) 25vw, 342px">
+  
+  </a>
+  </figure>
+  </div>
+
+
+      
+</div>
+              <div class="devsite-landing-row-item devsite-landing-row-item-no-description"
+     
+     >
+
+  
+    <div class="devsite-landing-row-item-media
+            ">
+      <figure class="devsite-landing-row-item-image">
+    <a href="https://support.bigcommerce.com/s/article/Connecting-with-Google-Pay">
+        <img alt=""
+       src="/pay/api/images/landing/big-commerce-logo2x.png"
+       srcset="https://developers.google.cn/pay/api/images/landing/big-commerce-logo2x_36.png 36w,https://developers.google.cn/pay/api/images/landing/big-commerce-logo2x_48.png 48w,https://developers.google.cn/pay/api/images/landing/big-commerce-logo2x_72.png 72w,https://developers.google.cn/pay/api/images/landing/big-commerce-logo2x_96.png 96w,https://developers.google.cn/pay/api/images/landing/big-commerce-logo2x_480.png 480w,https://developers.google.cn/pay/api/images/landing/big-commerce-logo2x_720.png 720w,https://developers.google.cn/pay/api/images/landing/big-commerce-logo2x_856.png 856w,https://developers.google.cn/pay/api/images/landing/big-commerce-logo2x_960.png 960w,https://developers.google.cn/pay/api/images/landing/big-commerce-logo2x_1440.png 1440w,https://developers.google.cn/pay/api/images/landing/big-commerce-logo2x_1920.png 1920w,https://developers.google.cn/pay/api/images/landing/big-commerce-logo2x_2880.png 2880w"
+       sizes="(max-width: 600px) 50vw, (max-width: 840px) 25vw, 342px">
+  
+  </a>
+  </figure>
+  </div>
+
+
+      
+</div>
+              <div class="devsite-landing-row-item devsite-landing-row-item-hidden devsite-landing-row-item-no-description devsite-landing-row-item-no-media"
+     
+     >
+
+  
+    
+
+      
+</div>
+            </div>
+    
+  
+  </section>
+  <section class="devsite-landing-row devsite-landing-row-4-up devsite-landing-row-header-centered devsite-landing-row-logos devsite-landing-row-no-image-background"
+           
+           >
+
+      
+    
+      <div class="devsite-landing-row-group">
+              <div class="devsite-landing-row-item devsite-landing-row-item-no-description"
+     
+     >
+
+  
+    <div class="devsite-landing-row-item-media
+            ">
+      <figure class="devsite-landing-row-item-image">
+    <a href="https://woocommerce.com/">
+        <img alt=""
+       src="/pay/api/images/landing/woo-commerce-logo2x.png"
+       srcset="https://developers.google.cn/pay/api/images/landing/woo-commerce-logo2x_36.png 36w,https://developers.google.cn/pay/api/images/landing/woo-commerce-logo2x_48.png 48w,https://developers.google.cn/pay/api/images/landing/woo-commerce-logo2x_72.png 72w,https://developers.google.cn/pay/api/images/landing/woo-commerce-logo2x_96.png 96w,https://developers.google.cn/pay/api/images/landing/woo-commerce-logo2x_480.png 480w,https://developers.google.cn/pay/api/images/landing/woo-commerce-logo2x_720.png 720w,https://developers.google.cn/pay/api/images/landing/woo-commerce-logo2x_856.png 856w,https://developers.google.cn/pay/api/images/landing/woo-commerce-logo2x_960.png 960w,https://developers.google.cn/pay/api/images/landing/woo-commerce-logo2x_1440.png 1440w,https://developers.google.cn/pay/api/images/landing/woo-commerce-logo2x_1920.png 1920w,https://developers.google.cn/pay/api/images/landing/woo-commerce-logo2x_2880.png 2880w"
+       sizes="(max-width: 600px) 50vw, (max-width: 840px) 25vw, 342px">
+  
+  </a>
+  </figure>
+  </div>
+
+
+      
+</div>
+              <div class="devsite-landing-row-item devsite-landing-row-item-no-description"
+     
+     >
+
+  
+    <div class="devsite-landing-row-item-media
+            ">
+      <figure class="devsite-landing-row-item-image">
+    <a href="https://opencart.com/">
+        <img alt=""
+       src="/pay/api/images/landing/opencart-logo2x.png"
+       srcset="https://developers.google.cn/pay/api/images/landing/opencart-logo2x_36.png 36w,https://developers.google.cn/pay/api/images/landing/opencart-logo2x_48.png 48w,https://developers.google.cn/pay/api/images/landing/opencart-logo2x_72.png 72w,https://developers.google.cn/pay/api/images/landing/opencart-logo2x_96.png 96w,https://developers.google.cn/pay/api/images/landing/opencart-logo2x_480.png 480w,https://developers.google.cn/pay/api/images/landing/opencart-logo2x_720.png 720w,https://developers.google.cn/pay/api/images/landing/opencart-logo2x_856.png 856w,https://developers.google.cn/pay/api/images/landing/opencart-logo2x_960.png 960w,https://developers.google.cn/pay/api/images/landing/opencart-logo2x_1440.png 1440w,https://developers.google.cn/pay/api/images/landing/opencart-logo2x_1920.png 1920w,https://developers.google.cn/pay/api/images/landing/opencart-logo2x_2880.png 2880w"
+       sizes="(max-width: 600px) 50vw, (max-width: 840px) 25vw, 342px">
+  
+  </a>
+  </figure>
+  </div>
+
+
+      
+</div>
+              <div class="devsite-landing-row-item devsite-landing-row-item-hidden devsite-landing-row-item-no-description devsite-landing-row-item-no-media"
+     
+     >
+
+  
+    
+
+      
+</div>
+              <div class="devsite-landing-row-item devsite-landing-row-item-hidden devsite-landing-row-item-no-description devsite-landing-row-item-no-media"
+     
+     >
+
+  
+    
+
+      
+</div>
+            </div>
+    
+  
+  </section>
+  <section class="devsite-landing-row devsite-landing-row-1-up devsite-landing-row-cta"
+           
+           >
+
+      
+    
+      <div class="devsite-landing-row-group">
+              <div class="devsite-landing-row-item devsite-landing-row-item-no-media"
+     
+     >
+
+  
+    
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+                    <h3 id="">
+      在列表中找不到您的处理方？</h3>
+    
+    
+
+                  <div class="devsite-landing-row-item-description-content">
+            填写我们的 Google 表单，我们会在您的处理方可提供服务后回复您。
+          </div>
+        
+        
+                  <div class="devsite-landing-row-item-buttons">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdLmj6fFfsi340p00u39--o20O9XyA8NTrnDUy-Y--if7ZQdg/viewform"
+      class="button
+      "
+            >通知我们</a></div>
+              </div>
+    </div>
+      
+</div>
+            </div>
+    
+  
+  </section>
+
+          </div>
+
+    
+    
+          </article>
+</article>
+
+
+
+
+                      </devsite-content>
+        </main>
+        <devsite-footer-promos class="devsite-footer">
+                      
+                  </devsite-footer-promos>
+        <devsite-footer-linkboxes class="devsite-footer">
+                      <nav class="devsite-footer-linkboxes nocontent">
+    <ul class="devsite-footer-linkboxes-list">
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">产品信息</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://payments.developers.google.com/terms/aup"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 1)"           >
+            使用限制政策
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://payments.developers.google.com/terms/sellertos"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 2)"           >
+            服务条款
+          </a>
+        </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">计划</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="//www.womentechmakers.com"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 1)"           >
+            Women Techmakers
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/community/gbg"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 2)"           >
+            Google Business Groups
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/community/gdg"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 3)"           >
+            Google Developer Groups
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/community/experts"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 4)"           >
+            Google Developers Experts
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/community/launchpad"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 5)"           >
+            Launchpad
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/community/dsc"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 6)"           >
+            Developer Student Clubs
+          </a>
+        </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">开发者控制台</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="//console.developers.google.com"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 1)"           >
+            Google API Console
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//console.cloud.google.com"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 2)"           >
+            Google Cloud Platform Console
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//play.google.com/apps/publish"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 3)"           >
+            Google Play 管理中心
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//console.firebase.google.com"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 4)"           >
+            Firebase Console
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//console.actions.google.com"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 5)"           >
+            Actions on Google Console
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//cast.google.com/publish"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 6)"           >
+            Cast SDK Developer Console
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//chrome.google.com/webstore/developer/dashboard"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 7)"           >
+            Chrome Web Store Dashboard
+          </a>
+        </li>
+              </ul>
+    </li>
+      </ul>
+  </nav>
+                  </devsite-footer-linkboxes>
+        <devsite-footer-utility class="devsite-footer">
+                      
+<div class="devsite-footer-utility nocontent">
+    <nav class="devsite-footer-sites">
+    <a href="https://developers.google.cn/"
+       class="devsite-footer-sites-logo-link gc-analytics-event"
+       data-category="Site-Wide Custom Events"
+       data-label="Footer Google Developers Link">
+      <img class="devsite-footer-sites-logo"
+           src="/_static/images/lockup-developers.svg"
+           alt="Google Developers">
+    </a>
+    <ul class="devsite-footer-sites-list">
+            <li class="devsite-footer-sites-item">
+        <a href="//developer.android.google.cn"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Android Link"
+                  >
+          Android
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//developer.chrome.com/home"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Chrome Link"
+                  >
+          Chrome
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//firebase.google.cn"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Firebase Link"
+                  >
+          Firebase
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//cloud.google.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Google Cloud Platform Link"
+                  >
+          Google Cloud Platform
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="/products"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer All products Link"
+                  >
+          所有产品
+        </a>
+      </li>
+          </ul>
+  </nav>
+  
+  <nav class="devsite-footer-utility-links">
+        <ul class="devsite-footer-utility-list">
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="/terms/site-terms"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Terms link"
+         >
+          条款
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//policies.google.cn/privacy"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Privacy link"
+         >
+          隐私权政策
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 devsite-footer-utility-button">
+                <span class="devsite-footer-utility-description">订阅 Google Developers 简报</span>
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//services.google.com/fb/forms/googledevelopersnewsletter/?utm_medium=referral&amp;utm_source=google-products&amp;utm_team=googledevs&amp;utm_campaign=201611-newsletter-launch"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Subscribe link"
+         >
+          订阅
+        </a>
+              </li>
+          </ul>
+    
+    <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+    <select class="devsite-language-selector-select"
+            name="language"
+            track-name="click"
+            track-type="languageSelector">
+                <option>Language</option>
+              <option value="id"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="id"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Bahasa Indonesia
+      </option>
+          <option value="de"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="de"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Deutsch
+      </option>
+          <option value="en"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="en"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        English
+      </option>
+          <option value="es"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="es"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Español
+      </option>
+          <option value="fr"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="fr"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Français
+      </option>
+          <option value="pl"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="pl"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Polski
+      </option>
+          <option value="pt_br"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="pt_br"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Português – Brasil
+      </option>
+          <option value="ru"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="ru"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Русский
+      </option>
+          <option value="zh_cn"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="zh_cn"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 简体
+      </option>
+          <option value="zh_tw"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="zh_tw"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 繁體
+      </option>
+          <option value="ja"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="ja"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        日本語
+      </option>
+          <option value="ko"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="ko"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        한국어
+      </option>
+        </select>
+  </devsite-select>
+</devsite-language-selector>
+
+  </nav>
+</div>
+                  </devsite-footer-utility>
+      </section></section>
+    <devsite-sitemask></devsite-sitemask>
+    <devsite-snackbar                   ></devsite-snackbar>    <devsite-tooltip blocked-link></devsite-tooltip>
+    <devsite-heading-link></devsite-heading-link>
+    <devsite-analytics>
+              <script type="application/json" analytics>[{"metrics": {}, "dimensions": {"dimension6": "zh-cn", "dimension4": "Google Pay API", "dimension5": "zh-cn", "dimension3": false, "dimension1": "Signed out", "dimension8": null}, "gaid": "UA-24532603-11"}, {"metrics": {}, "dimensions": {"dimension6": "zh-cn", "dimension4": "Google Pay API", "dimension5": "zh-cn", "dimension3": false, "dimension1": "Signed out", "dimension8": null}, "gaid": "UA-22847105-24"}]</script>
+<script type="application/json" gtm>{}</script>
+          </devsite-analytics>
+        <script>
+    (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
+    t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
+    E.parentNode.insertBefore(t,E);})(window, document, 'script',
+    'https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/js/app_loader.js', '[1,"zh_cn",null,"/js/devsite_app.js","https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda","https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/developers","https://google-developers.gonglchuangl.net",1,null,["/_pwa/developers/manifest.json","/_static/images/video-placeholder.svg","https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/developers/images/favicon.png","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons"],1]')
+  </script>  </body>
+</html>
