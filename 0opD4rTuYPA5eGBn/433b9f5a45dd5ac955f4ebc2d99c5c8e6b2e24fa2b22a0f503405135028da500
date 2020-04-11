@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+
+<!--[if !IE]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<!--[if IE 6 ]><html lang="en-US" class="ie ie6"><![endif]-->
+<!--[if IE 7 ]><html lang="en-US" class="ie ie7"><![endif]-->
+<!--[if IE 8 ]><html lang="en-US" class="ie ie8"><![endif]-->
+<head profile="http://www.w3.org/2005/10/profile">
+  <base href="https://www.paymark.co.nz/"><!--[if lte IE 6]></base><![endif]-->
+  <title>Online EFTPOS Autopay &raquo; Paymark</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="generator" content="SilverStripe - http://silverstripe.org" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+
+  <meta property="og:image" content="https://www.paymark.co.nz/assets/Uploads/_resampled/FillWzYwMCw2MDBd/Click-Banner-Mobile-1.gif" />
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TJMHN9');</script>
+  <!-- End Google Tag Manager -->
+
+    <!-- Hotjar Tracking Code for https://www.paymark.co.nz/ -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:1338608,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+  
+
+  <!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <link href="themes/paymark/dist/styles.css?v=1.45" rel="stylesheet">
+
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window,document,'script', 'https://connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', '2369409283344638');
+        fbq('track', 'PageView');
+    </script>
+
+    <noscript>
+        <img height="1" width="1" src="https://www.facebook.com/tr?id=2369409283344638&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+  
+  <link rel="manifest" href="themes/paymark/manifest.json">
+  <link rel="icon" type="image/png" href="themes/paymark/dist/img/icons/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="themes/paymark/dist/img/touch-icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="themes/paymark/dist/img/touch-icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="themes/paymark/dist/img/touch-icons/apple-touch-icon-180x180.png">
+  <link rel="mask-icon" href="themes/paymark/dist/img/icons/logo-paymark-vertical.svg" color="#292540">
+  <meta name="theme-color" content="#292540">
+<style type="text/css">
+  .hero {
+    background-image: url("/assets/Uploads/Click-Banner-Mobile-1.gif");
+  }
+
+  @media (min-width: 320px) {
+    .hero {
+      background-image: url("/assets/Uploads/Click-Banner-Mobile-1.gif");
+    }
+  }
+
+  @media (min-width: 768px) {
+    .hero {
+      background-image: url("/assets/Uploads/_resampled/ScaleWidthWzE1MzZd/Click-Page-Banner-Desktop-1.jpg");
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .hero {
+      background-image: url("/assets/Uploads/_resampled/ScaleWidthWzE3OTld/Click-Page-Banner-Desktop-1.jpg");
+    }
+  }
+
+  @media (min-width: 1199px) {
+    .hero {
+      background-image: url("/assets/Uploads/Click-Page-Banner-Desktop-1.jpg");
+    }
+  }
+</style>
+</head>
+
+
+<body class="Page">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJMHN9"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+  <section class="site-announcements">
+    
+      <div class="site-announcement site-announcement--info hidden" role="alert">
+        <div class="row ">
+          <div class="col12">
+            <div class="site-announcement--container">
+              <div class="site-announcement--padding">
+                <div class="site-announcement--hash" data-value="b1d5781111d84f7b3fe45a0852e59758cd7a87e5"></div>
+
+                <div class="site-announcement--content">
+                  
+
+                  <div class="site-announcement--wysiwyg-content">
+                    <p><span>This site uses cookies. If you continue without updating your browser’s settings, we’ll assume you’re happy to receive all cookies. Our privacy policy can be found<span class="Apple-converted-space"> </span><a href="our-fine-print/"><span>here</span></a>.</span></p>
+                  </div>
+
+                  
+
+                </div>
+
+                <span class="site-announcement--close">
+                <a class="site-announcement--close--link" href="/online-eftpos-autopay#" title="Close">Close</a>
+              </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+  </section>
+
+
+
+
+
+<header class="header hero" role="banner">
+    <nav class="primary navbar">
+  <div class="container">
+    <div class="col8 col1--md">
+      <ul class="navbar--logo row">
+        <li class="current">
+          <a href="https://www.paymark.co.nz/">
+            
+              <img
+                class="brand navbar--logo"
+                rel="home"
+                src="/assets/Uploads/Paymark-Ingenico-white.svg"
+                alt="Paymark logo"
+              >
+            
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="navdesktop--pages col8 push1--md">
+      <ul class="navdesktop">
+        
+          <li class="link navdesktop--item">
+            <a href="/products/eftpos/" title="Products"><span>Products</span></a>
+            
+              <ul class="navdesktop--sub">
+                
+                  <li class="link navdesktop--sub__item">
+                    <a class="link" href="/products/eftpos/">EFTPOS</a>
+                  </li>
+                
+                  <li class="link navdesktop--sub__item">
+                    <a class="link" href="/products/online-eftpos/">Online EFTPOS</a>
+                  </li>
+                
+                  <li class="link navdesktop--sub__item">
+                    <a class="link" href="/products/click/">Click eCommerce</a>
+                  </li>
+                
+                  <li class="link navdesktop--sub__item">
+                    <a class="link" href="/products/insights/">Paymark Insights</a>
+                  </li>
+                
+                  <li class="link navdesktop--sub__item">
+                    <a class="link" href="/products/corporate-insight/">Corporate Insights</a>
+                  </li>
+                
+              </ul>
+            
+          </li>
+        
+          <li class="link navdesktop--item">
+            <a href="/future/" title="OPEN"><span>OPEN</span></a>
+            
+          </li>
+        
+          <li class="link navdesktop--item">
+            <a href="/blog/" title="Blog"><span>Blog</span></a>
+            
+          </li>
+        
+          <li class="link navdesktop--item">
+            <a href="/support/" title="Support"><span>Support</span></a>
+            
+              <ul class="navdesktop--sub">
+                
+                  <li class="link navdesktop--sub__item">
+                    <a class="link" href="/support/terminals-and-technology/">Important Terminal Information</a>
+                  </li>
+                
+                  <li class="link navdesktop--sub__item">
+                    <a class="link" href="/support/">Overview</a>
+                  </li>
+                
+                  <li class="link navdesktop--sub__item">
+                    <a class="link" href="/support/finda/">Find a . . . </a>
+                  </li>
+                
+                  <li class="link navdesktop--sub__item">
+                    <a class="link" href="https://terminalchecker.paymark.co.nz/">Terminal Checker</a>
+                  </li>
+                
+                  <li class="link navdesktop--sub__item">
+                    <a class="link" href="/support/mypaymark/">MyPaymark</a>
+                  </li>
+                
+              </ul>
+            
+          </li>
+        
+          <li class="link navdesktop--item">
+            <a href="/about/" title="About"><span>About</span></a>
+            
+              <ul class="navdesktop--sub">
+                
+                  <li class="link navdesktop--sub__item">
+                    <a class="link" href="/about/">Overview</a>
+                  </li>
+                
+                  <li class="link navdesktop--sub__item">
+                    <a class="link" href="/about/our-story/">Our Story</a>
+                  </li>
+                
+                  <li class="link navdesktop--sub__item">
+                    <a class="link" href="/about/team/">Our Leadership Team</a>
+                  </li>
+                
+                  <li class="link navdesktop--sub__item">
+                    <a class="link" href="/about/media-releases/">Media Releases</a>
+                  </li>
+                
+                  <li class="link navdesktop--sub__item">
+                    <a class="link" href="/about/news/">News</a>
+                  </li>
+                
+              </ul>
+            
+          </li>
+        
+          <li class="link navdesktop--item">
+            <a href="/careers/" title="Careers"><span>Careers</span></a>
+            
+          </li>
+        
+          <li class="link navdesktop--item">
+            <a href="/contact/" title="Contact"><span>Contact</span></a>
+            
+          </li>
+        
+        
+        </ul>
+        </div>
+
+        <div class="navdesktop--pages col2">
+          <ul>
+            <li class="navdesktop--item navdesktop--item__has-arrow navdesktop--item__aligned-right navdesktop--login">
+              <a href="/online-eftpos-autopay#" onclick="return false;">Log In</a>
+                <ul class="navdesktop--sub">
+                  
+                    <li class="navdesktop--sub__item">
+                      <a href="https://insights.paymark.co.nz/" title="Paymark Insights" target="_blank" rel="nofollow">Paymark Insights</a>
+                    </li>
+                  
+                    <li class="navdesktop--sub__item">
+                      <a href="https://transtrack.paymark.co.nz/" title="Transtrack" target="_blank" rel="nofollow">Transtrack</a>
+                    </li>
+                  
+                    <li class="navdesktop--sub__item">
+                      <a href="https://client.paymarkclick.co.nz/" title="Click" target="_blank" rel="nofollow">Click</a>
+                    </li>
+                  
+                    <li class="navdesktop--sub__item">
+                      <a href="https://oe.paymark.co.nz/" title="Online EFTPOS" target="_blank" rel="nofollow">Online EFTPOS</a>
+                    </li>
+                  
+                    <li class="navdesktop--sub__item">
+                      <a href="https://mypaymark.co.nz" title="MyPaymark" target="_blank" rel="nofollow">MyPaymark</a>
+                    </li>
+                  
+                    <li class="navdesktop--sub__item">
+                      <a href="https://paymark-community.force.com/reseller/s/" title="Reseller Portal" target="_blank" rel="nofollow">Reseller Portal</a>
+                    </li>
+                  
+                </ul>
+            </li>
+            <li class="navdesktop--search-item"><a href="/online-eftpos-autopay#" class="search-toggle"><img src="themes/paymark/dist/img/icons/icon-search.svg" alt="close"></a></li>
+        
+          </ul>
+
+        </div>
+    <!-- Desktop navbar end -->
+
+    <div class="col4 mobile-menu">
+    <a href="/online-eftpos-autopay#" class="search-toggle nav-mobile-search"><img src="themes/paymark/dist/img/icons/icon-search.svg" alt="close"></a>
+    <a href="/online-eftpos-autopay#" class="js-show-mobile-menu nav-mobile-menu">MENU</a>
+</div>
+
+<!-- Mobile Navbar -->
+<div id="js-mobile-menu" class="nav-mobile nav-mobile--hidden">
+  <span class="js-hide-mobile-menu nav-mobile--close">
+    <img src="themes/paymark/dist/img/icons/icon-close.svg" alt="close">
+  </span>
+
+  <ul>
+    
+      <li class="nav-mobile--item link">
+        <a
+          title="Products"
+          
+            data-menu="Products"
+          
+        >Products</a>
+      </li>
+    
+      <li class="nav-mobile--item link">
+        <a
+          title="OPEN"
+          
+            href="/future/"
+          
+        >OPEN</a>
+      </li>
+    
+      <li class="nav-mobile--item link">
+        <a
+          title="Blog"
+          
+            href="/blog/"
+          
+        >Blog</a>
+      </li>
+    
+      <li class="nav-mobile--item link">
+        <a
+          title="Support"
+          
+            data-menu="Support"
+          
+        >Support</a>
+      </li>
+    
+      <li class="nav-mobile--item link">
+        <a
+          title="About"
+          
+            data-menu="About"
+          
+        >About</a>
+      </li>
+    
+      <li class="nav-mobile--item link">
+        <a
+          title="Careers"
+          
+            href="/careers/"
+          
+        >Careers</a>
+      </li>
+    
+      <li class="nav-mobile--item link">
+        <a
+          title="Contact"
+          
+            href="/contact/"
+          
+        >Contact</a>
+      </li>
+    
+    
+      
+        <li class="nav-mobile--item nav-mobile--divider ">
+          <a
+            href="https://insights.paymark.co.nz/"
+            title="Paymark Insights"
+             target="_blank" rel="nofollow"
+          >
+            Paymark Insights log in
+          </a>
+        </li>
+      
+        <li class="nav-mobile--item ">
+          <a
+            href="https://transtrack.paymark.co.nz/"
+            title="Transtrack"
+             target="_blank" rel="nofollow"
+          >
+            Transtrack log in
+          </a>
+        </li>
+      
+        <li class="nav-mobile--item ">
+          <a
+            href="https://client.paymarkclick.co.nz/"
+            title="Click"
+             target="_blank" rel="nofollow"
+          >
+            Click log in
+          </a>
+        </li>
+      
+        <li class="nav-mobile--item ">
+          <a
+            href="https://oe.paymark.co.nz/"
+            title="Online EFTPOS"
+             target="_blank" rel="nofollow"
+          >
+            Online EFTPOS log in
+          </a>
+        </li>
+      
+        <li class="nav-mobile--item ">
+          <a
+            href="https://mypaymark.co.nz"
+            title="MyPaymark"
+             target="_blank" rel="nofollow"
+          >
+            MyPaymark log in
+          </a>
+        </li>
+      
+        <li class="nav-mobile--item ">
+          <a
+            href="https://paymark-community.force.com/reseller/s/"
+            title="Reseller Portal"
+             target="_blank" rel="nofollow"
+          >
+            Reseller Portal log in
+          </a>
+        </li>
+      
+    
+  </ul>
+</div>
+
+
+  
+    <div id="js-mobile-menu-Products" class="nav-mobile nav-mobile--hidden">
+      <span data-menu="Products" class="nav-mobile--close">
+        <img
+          data-menu="Products"
+          src="themes/paymark/dist/img/icons/icon-close.svg"
+          alt="close"
+        >
+      </span>
+      <ul>
+        <li
+          data-menu="Products"
+          class="nav-mobile--item nav-mobile--back"
+        >
+          <img
+            class="back-image"
+            data-menu="Products"
+            src="themes/paymark/dist/img/icons/icon-back.svg"
+            alt="back"
+          >
+          Back
+        </li>
+        
+          <li class="nav-mobile--item link">
+            <a
+              href="/products/eftpos/"
+              title="EFTPOS"
+            >EFTPOS</a>
+          </li>
+        
+          <li class="nav-mobile--item link">
+            <a
+              href="/products/online-eftpos/"
+              title="The future of online payments is here"
+            >Online EFTPOS</a>
+          </li>
+        
+          <li class="nav-mobile--item link">
+            <a
+              href="/products/click/"
+              title="Click eCommerce"
+            >Click eCommerce</a>
+          </li>
+        
+          <li class="nav-mobile--item link">
+            <a
+              href="/products/insights/"
+              title="Keep on top of your business and in front of the competition."
+            >Paymark Insights</a>
+          </li>
+        
+          <li class="nav-mobile--item link">
+            <a
+              href="/products/corporate-insight/"
+              title="Corporate Insights"
+            >Corporate Insights</a>
+          </li>
+        
+      </ul>
+    </div>
+  
+
+  
+
+  
+
+  
+    <div id="js-mobile-menu-Support" class="nav-mobile nav-mobile--hidden">
+      <span data-menu="Support" class="nav-mobile--close">
+        <img
+          data-menu="Support"
+          src="themes/paymark/dist/img/icons/icon-close.svg"
+          alt="close"
+        >
+      </span>
+      <ul>
+        <li
+          data-menu="Support"
+          class="nav-mobile--item nav-mobile--back"
+        >
+          <img
+            class="back-image"
+            data-menu="Support"
+            src="themes/paymark/dist/img/icons/icon-back.svg"
+            alt="back"
+          >
+          Back
+        </li>
+        
+          <li class="nav-mobile--item link">
+            <a
+              href="/support/terminals-and-technology/"
+              title="Important Terminal Information"
+            >Important Terminal Information</a>
+          </li>
+        
+          <li class="nav-mobile--item link">
+            <a
+              href="/support/"
+              title="Overview"
+            >Overview</a>
+          </li>
+        
+          <li class="nav-mobile--item link">
+            <a
+              href="/support/finda/"
+              title="Find a"
+            >Find a . . . </a>
+          </li>
+        
+          <li class="nav-mobile--item link">
+            <a
+              href="https://terminalchecker.paymark.co.nz/"
+              title="Terminal Checker"
+            >Terminal Checker</a>
+          </li>
+        
+          <li class="nav-mobile--item link">
+            <a
+              href="/support/mypaymark/"
+              title="MyPaymark"
+            >MyPaymark</a>
+          </li>
+        
+      </ul>
+    </div>
+  
+
+  
+    <div id="js-mobile-menu-About" class="nav-mobile nav-mobile--hidden">
+      <span data-menu="About" class="nav-mobile--close">
+        <img
+          data-menu="About"
+          src="themes/paymark/dist/img/icons/icon-close.svg"
+          alt="close"
+        >
+      </span>
+      <ul>
+        <li
+          data-menu="About"
+          class="nav-mobile--item nav-mobile--back"
+        >
+          <img
+            class="back-image"
+            data-menu="About"
+            src="themes/paymark/dist/img/icons/icon-back.svg"
+            alt="back"
+          >
+          Back
+        </li>
+        
+          <li class="nav-mobile--item link">
+            <a
+              href="/about/"
+              title="Overview"
+            >Overview</a>
+          </li>
+        
+          <li class="nav-mobile--item link">
+            <a
+              href="/about/our-story/"
+              title="Our Story"
+            >Our Story</a>
+          </li>
+        
+          <li class="nav-mobile--item link">
+            <a
+              href="/about/team/"
+              title="Our Leadership Team"
+            >Our Leadership Team</a>
+          </li>
+        
+          <li class="nav-mobile--item link">
+            <a
+              href="/about/media-releases/"
+              title="Media Releases"
+            >Media Releases</a>
+          </li>
+        
+          <li class="nav-mobile--item link">
+            <a
+              href="/about/news/"
+              title="News"
+            >News</a>
+          </li>
+        
+      </ul>
+    </div>
+  
+
+  
+
+  
+
+
+  </div>
+
+  
+      <div class="search-bar">
+          <div class="container">
+              <div class="row">
+                  <div class="col12">
+                      <div class="form-container"><form id="SearchForm_SearchForm" action="/search/SearchForm" method="get" enctype="application/x-www-form-urlencoded">
+	
+	<p id="SearchForm_SearchForm_error" class="message " style="display: none"></p>
+	
+	<fieldset>
+		
+		<div id="SearchForm_SearchForm_Search_Holder" class="field text nolabel">
+	
+	<div class="middleColumn">
+		<input type="text" name="Search" class="text nolabel" id="SearchForm_SearchForm_Search" placeholder="Search" />
+	</div>
+	
+	
+	
+</div>
+
+		
+		
+		<input type="submit" name="action_results" value="Go" class="action" id="SearchForm_SearchForm_action_results" />
+		
+	</fieldset>
+</form>
+</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+</nav>
+
+
+    
+        <div class="container banner--container">
+  <div class="banner__breadcrumb u-text-center">
+    
+  <a href="/">Home</a>
+
+  
+    
+      <span class="banner__breadcrumb-chevron"></span>
+
+      
+        <span>Online EFTPOS Autopay</span>
+      
+    
+  
+
+
+  </div>
+  <div class="banner-content u-text-center">
+    <div class="row">
+      <div class="col12 col10--md push1--md">
+        <h1 class="banner-content__title u-text-white u-text-uppercase h1--lg">
+          
+            Online EFTPOS Autopay
+          
+        </h1>
+
+        
+
+        
+
+        
+
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+        
+
+    
+
+</header>
+
+
+<div class="main" role="main">
+  
+  <section class="skew ">
+    
+  
+  <div
+    class="skew-cell col12 skew-cell--theme-light skew-cell--background-white"
+    
+  >
+    <div class="row">
+      <div class="skew-cell--content skew-cell--content--ie-fixable element-font--small">
+        <div class="col12">
+          <div class="element ElementText" id="e1363">
+    <div class="skew-cell--elementtext skew-cell--align-left col12 col10--sm col7--md push1--sm">
+  
+    <h2>Overview</h2>
+  
+
+  
+
+  <div class="wysiwyg-content">
+    <p style="text-align: justify;">Online EFTPOS Autopay enables your customer to give you (the merchant) authority to process an Online EFTPOS payment on the customer’s account.  This is analogous to a “saved card”: the customer can initiate a payment using their saved Online EFTPOS details and this is approved if the customer has sufficient funds in their account.  This saves the customer from having to enter their Online EFTPOS details again and go into their banking app to approve the payment.</p><p style="text-align: justify;">If you are considering offering your customers Online EFTPOS Autopay, there are obligations you need to fulfil to ensure your customer’s details are secure.  These obligations are detailed below.</p><h3 style="text-align: justify;">Supported Banks</h3><p style="text-align: justify;">Online EFTPOS Autopay is currently offered through ASB.  Autopay should only be offered to customers using ASB to make their Online EFTPOS payment. </p><h3 style="text-align: justify;">Enabling Autopay</h3><p style="text-align: justify;">You must already offer Online EFTPOS as a payment method to be able to add Autopay.  Adding Online EFTPOS is simple: contact us on <a href="mailto:click@paymark.co.nz">click@paymark.co.nz</a> to get the process started.</p><p style="text-align: justify;">We (Paymark) must approve in writing addition of Autopay to your Online EFTPOS facility.  There are some Autopay <span style="text-decoration: underline;">terms and conditions</span> that you need to accept as part of adding Autopay.  Plus you need to use Autopay as described in this page at all times.</p><p style="text-align: justify;">When enabling Autopay you must comply with the Paymark Click API specification for <a href="http://docs.dev.paymark.nz/click/#payment-token-transaction-processing">using payment tokens</a> and <a href="http://docs.dev.paymark.nz/click/#header-standard-payment-request-data">Online EFTPOS</a>.</p><p style="text-align: justify;">Contact us on <a href="mailto:click@paymark.co.nz">click@paymark.co.nz</a> to discuss adding Autopay.</p><h3 style="text-align: justify;">Using Autopay</h3><p style="text-align: justify;">Online EFTPOS Autopay may be offered to authenticated customers only: your customer must use an account on your website or app that is secured with a login and password.  Guest checkout is not permitted for Online EFTPOS Autopay.</p><p style="text-align: justify;">When your authenticated customer is shown their saved payment methods, if you have an Autopay arrangement for this customer you must show this option.  You should show the bank and the mobile phone number the customer has saved so they can easily identify the Autopay option they want to use.</p><p style="text-align: justify;">An explanation about Autopay must be easily accessible to your customers.  You can use the following explanation:</p><p style="text-align: justify;">“Autopay can be used to pre-approve Online EFTPOS payment requests on websites and apps that you trust with a single click. Don’t worry – you are in full control and can cancel Autopay anytime from within your mobile banking app settings.</p><p style="text-align: justify;">Autopay is currently available for ASB customers.</p><p style="text-align: justify;">To enable Autopay, simply tick the ‘Enable Autopay’ box and confirm the payment in your mobile banking app the first time you make an Online EFTPOS payment on a website or app.</p><p style="text-align: justify;">The next time you pay with Online EFTPOS on that website or app, your payment request will be automatically approved, no need to check your banking app to approve the payment. So as long as you have money in your account, you’ll be one click away from that purchase. Simple!</p><p style="text-align: justify;">To cancel Autopay, just select the website or app from your Online EFTPOS settings and press delete.</p><p style="text-align: justify;">Learn more about Online EFTPOS links to <a href="products/online-eftpos/consumer/">https://www.paymark.co.nz/products/online-eftpos/consumer/</a>.”</p><h3 style="text-align: justify;">Removing Autopay Arrangement</h3><p style="text-align: justify;">The customer can revoke the Autopay arrangement in their banking app at any time.  When we notify you this has happened you must remove any Autopay references from the customer’s account, for example, delete the Paymark Click Autopay payment token.</p><p style="text-align: justify;">The customer must be allowed to revoke their Autopay arrangement via your website or app.  When this happens, you must notify us so the Paymark Click payment token can be removed.</p><h3 style="text-align: justify;">Go-Live Checklist</h3><p style="text-align: justify;">Lastly, please use this checklist to confirm your website /app  meets obligations to enable Autopay:</p><ul><li style="text-align: justify;">You have written permission from Paymark for enabling Autopay.</li>
+<li style="text-align: justify;">Only customers that are logged in and authenticated on your website can enable Autopay.</li>
+<li style="text-align: justify;">Your customers can only enable Autopay for supported banks (currently ASB only).</li>
+<li style="text-align: justify;">An explanation about Autopay is easily accessible for customers from the payment screen (see “What is Autopay”? description).</li>
+<li style="text-align: justify;">Saved Autopay details (bank and mobile phone number) are clearly displayed to the customer on the payment screen if the customer has Autopay set up.</li>
+<li style="text-align: justify;">You must remove the saved Autopay details for a customer for all stores on your website / app when notified by Paymark that the customer has revoked Autopay. (A customer can revoke Autopay at any time via their mobile banking app).</li>
+<li style="text-align: justify;">Your customers are able to revoke Autopay at any time for all your stores via your website / app. When this happens, you must update Paymark so that the Autopay arrangement also gets removed from the customer’s mobile banking app.</li>
+</ul><h3>Watch here:</h3><p><div class="media leftAlone"><iframe width="719" height="404" src="https://www.youtube.com/embed/C8_FL3xooNs?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div></p>
+  </div>
+
+  
+
+</div>
+
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    
+  </section>
+
+</div>
+
+
+  <footer class="footer text-reversed " role="contentinfo">
+    <div class="container">
+      <div class="footer__contact">
+        <div class="row">
+          <div class="media u-text-center col12 col6--sm col4--md push2--md">
+            <img class="media__object u-hidden u-block--lg" src="/assets/Uploads/icon-contact.svg" alt="icon contact">
+            <div class="media__body u-text-center u-text-left--md">
+              <h2 class="footer__contact-title u-text-uppercase">Customer Care Helpdesk</h2>
+              <p class="footer__contact-info">
+                NZ based, 24 hours, 7 days a week
+                <br>
+                <a
+                  class="u-text-blue u-text-white"
+                  href="tel:0800729627"
+                >0800 PAYMARK (0800 729 627)</a>
+                <br>
+                <a
+                  class="u-text-blue"
+                  href="mailto:support@paymark.co.nz"
+                >support@paymark.co.nz</a>
+              </p>
+            </div>
+          </div>
+          <div class="media u-text-center col12 col6--sm col4--md push1--md">
+            <img
+              class="media__object u-hidden u-block--lg"
+              src="/assets/Uploads/icon-headquarters.svg"
+              alt="icon headquarters"
+            >
+            <div class="media__body u-text-center u-text-left--md">
+              <h2 class="footer__contact-title u-text-uppercase">Head Office</h2>
+              <p class="footer__contact-info">
+                Monday - Friday 8.30am - 5pm<br>
+                <a
+                  class="u-text-blue u-text-white"
+                  href="tel:+6493568088"
+                >+64 (9) 356 8088</a>
+                <br>
+                <a
+                  class="u-text-blue"
+                  href="mailto:support@paymark.co.nz"
+                >support@paymark.co.nz</a>
+              </p>
+            </div>
+          </div>
+        </div>
+          <div class="row">
+            <div class="footer__social u-text-center">
+              
+                  <a class="footer__social-twitter" target="_blank" href="https://twitter.com/Paymark">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="24" viewBox="0 0 29 24" version="1.1"><title>icon twitter</title><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-458.000000, -1123.000000)" fill="#FFFFFF"><g transform="translate(48.000000, 118.000000)"><path d="M424.1 1011.4L424.2 1012.4 423.1 1012.3C419.3 1011.8 416 1010.2 413.1 1007.4L411.7 1006 411.4 1007C410.6 1009.3 411.1 1011.7 412.7 1013.3 413.5 1014.2 413.3 1014.3 411.9 1013.8 411.4 1013.6 410.9 1013.5 410.9 1013.5 410.8 1013.7 411.3 1015.6 411.7 1016.4 412.2 1017.4 413.3 1018.5 414.5 1019.1L415.6 1019.6 414.3 1019.6C413.2 1019.6 413.1 1019.6 413.3 1020.1 413.7 1021.4 415.3 1022.9 417.2 1023.5L418.5 1024 417.3 1024.7C415.7 1025.6 413.7 1026.2 411.7 1026.2 410.8 1026.3 410 1026.3 410 1026.4 410 1026.6 412.6 1027.8 414 1028.3 418.5 1029.6 423.8 1029.1 427.8 1026.7 430.6 1025 433.5 1021.7 434.8 1018.5 435.5 1016.8 436.2 1013.6 436.2 1012.1 436.2 1011.2 436.3 1011 437.5 1009.9 438.2 1009.2 438.8 1008.4 438.9 1008.2 439.1 1007.8 439.1 1007.8 438.1 1008.2 436.3 1008.8 436 1008.7 436.9 1007.8 437.6 1007.1 438.3 1005.9 438.3 1005.5 438.3 1005.5 438 1005.6 437.7 1005.7 437.3 1006 436.4 1006.3 435.8 1006.5L434.7 1006.8 433.6 1006.1C433.1 1005.7 432.3 1005.3 431.9 1005.2 430.8 1004.9 429.2 1004.9 428.2 1005.3 425.6 1006.2 423.9 1008.7 424.1 1011.4Z"></path></g></g></g></svg>
+
+                  </a>
+              
+
+              
+                  <a class="footer__social-linkedin" target="_blank" href="https://www.linkedin.com/company/paymark">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" version="1.1"><title>icon linkedin</title><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-521.000000, -1117.000000)" fill="#FFFFFF"><g transform="translate(48.000000, 118.000000)"><g transform="translate(473.000000, 999.000000)"><path d="M7.8 10.7L1 10.7 1 31.1 7.8 31.1 7.8 10.7ZM8.3 4.4C8.2 2.4 6.8 0.9 4.5 0.9 2.2 0.9 0.6 2.4 0.6 4.4 0.6 6.4 2.1 7.9 4.4 7.9L4.4 7.9C6.8 7.9 8.3 6.4 8.3 4.4ZM32.4 19.4C32.4 13.2 29 10.2 24.5 10.2 20.9 10.2 19.3 12.2 18.4 13.6L18.4 10.7 11.6 10.7C11.7 12.6 11.6 31.1 11.6 31.1L18.4 31.1 18.4 19.7C18.4 19.1 18.4 18.5 18.6 18.1 19.1 16.9 20.2 15.6 22.1 15.6 24.6 15.6 25.6 17.5 25.6 20.2L25.6 31.1 32.4 31.1 32.4 19.4Z"></path></g></g></g></g></svg>
+
+                  </a>
+              
+
+              
+                  <a class="footer__social-facebook" target="_blank" href="https://www.facebook.com/PaymarkNZ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="29" viewBox="0 0 24 29"><title>icon facebook</title>
+    <path fill="#FFFFFF" d="M8.4,9.7H4.8v4.8h3.6V29h6V14.5h4.4l0.4-4.8h-4.8v-2c0-1.2,0.2-1.6,1.3-1.6h3.5V0h-4.6c-4.3,0-6.3,1.9-6.3,5.6
+	V9.7z"/>
+</svg>
+                  </a>
+              
+
+              
+                  <a class="footer__social-youtube" target="_blank" href="https://www.youtube.com/channel/UCMC_QqkNYzFmel6WwObHisQ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="41" height="29" viewBox="0 0 41 29" version="1.1"><title>icon youtube</title><g>
+    <path fill="#FFFFFF" d="M40.8,6.3c0,0-0.4-2.8-1.6-4.1c-1.6-1.6-3.3-1.7-4.1-1.7C29.3,0,20.6,0,20.6,0h0c0,0-8.7,0-14.4,0.4
+				C5.4,0.5,3.6,0.5,2.1,2.2C0.8,3.4,0.4,6.3,0.4,6.3S0,9.6,0,12.9v3.1c0,3.3,0.4,6.7,0.4,6.7s0.4,2.8,1.6,4.1
+				c1.6,1.6,3.6,1.6,4.5,1.8c3.3,0.3,14,0.4,14,0.4s8.7,0,14.4-0.4c0.8-0.1,2.6-0.1,4.1-1.7c1.2-1.3,1.6-4.1,1.6-4.1
+				s0.4-3.3,0.4-6.7v-3.1C41.2,9.6,40.8,6.3,40.8,6.3z M16.4,19.8V8.3l11.1,5.8L16.4,19.8z"/>
+</g></svg>
+
+                  </a>
+              
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="js-footer" class="footer__menu u-mT-md">
+        <div class="row">
+          
+            
+              <div data-js-name="Products" class="footer__section u-text-center--sm col12 col4--sm">
+                <h4 class="footer__list-title">Products</h4>
+                <ul class="footer__list isHidden">
+                  
+                    <li class="footer__list-item">
+                      <a
+                        href="/products/eftpos/"
+                        title=""
+                        
+                      >EFTPOS</a>
+                    </li>
+                  
+                    <li class="footer__list-item">
+                      <a
+                        href="/"
+                        title=""
+                        
+                      >Paymark Insights</a>
+                    </li>
+                  
+                    <li class="footer__list-item">
+                      <a
+                        href="/products/click/"
+                        title=""
+                        
+                      >Click Ecommerce</a>
+                    </li>
+                  
+                    <li class="footer__list-item">
+                      <a
+                        href="/"
+                        title=""
+                        
+                      >Online EFTPOS</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div data-js-name="Existing customers" class="footer__section u-text-center--sm col12 col4--sm">
+                <h4 class="footer__list-title">Existing customers</h4>
+                <ul class="footer__list isHidden">
+                  
+                    <li class="footer__list-item">
+                      <a
+                        href="https://insights.paymark.co.nz/"
+                        title=""
+                        
+                      >Paymark Insights Login</a>
+                    </li>
+                  
+                    <li class="footer__list-item">
+                      <a
+                        href="https://secure.paymarkclick.co.nz/client"
+                        title=""
+                        
+                      >Click Login</a>
+                    </li>
+                  
+                    <li class="footer__list-item">
+                      <a
+                        href="https://reports.paymark.co.nz/"
+                        title=""
+                        
+                      >Market Reporting Login</a>
+                    </li>
+                  
+                    <li class="footer__list-item">
+                      <a
+                        href="/support/"
+                        title=""
+                        
+                      >Support Centre</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+              <div data-js-name="About Us" class="footer__section u-text-center--sm col12 col4--sm">
+                <h4 class="footer__list-title">About Us</h4>
+                <ul class="footer__list isHidden">
+                  
+                    <li class="footer__list-item">
+                      <a
+                        href="/"
+                        title=""
+                        
+                      >Overview</a>
+                    </li>
+                  
+                    <li class="footer__list-item">
+                      <a
+                        href="/about/our-story/"
+                        title=""
+                        
+                      >Our Story</a>
+                    </li>
+                  
+                    <li class="footer__list-item">
+                      <a
+                        href="/about/team/"
+                        title=""
+                        
+                      >Our Leadership Team</a>
+                    </li>
+                  
+                    <li class="footer__list-item">
+                      <a
+                        href="/careers/"
+                        title=""
+                        
+                      >Careers</a>
+                    </li>
+                  
+                    <li class="footer__list-item">
+                      <a
+                        href="/about/media-releases/"
+                        title=""
+                        
+                      >Media Releases</a>
+                    </li>
+                  
+                    <li class="footer__list-item">
+                      <a
+                        href="/about/news/"
+                        title=""
+                        
+                      >News</a>
+                    </li>
+                  
+                </ul>
+              </div>
+            
+          
+        </div>
+        <div class="footer-legal u-text-center">
+          <div class="row">
+            <div class="col12 col6--sm push3--sm">
+              
+                <span class="footer-legal__item">&copy; Paymark 2020</span>
+              
+              
+              
+                <span class="footer-legal__item">
+                  <a
+                    href="/our-fine-print/"
+                    title=""
+                    
+                  >Our Fine Print</a>
+                </span>
+              
+            </div>
+          </div>
+        </div>
+        <div class="footer-logo u-text-center">
+          
+              <img src="/assets/Uploads/Paymark-Ingenico-white.svg" alt="Paymark logo">
+          
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+<script src="//unpkg.com/@lottiefiles/lottie-player@0.2.0/dist/lottie-player.js"></script>
+<script type="text/javascript" src="themes/paymark/dist/main.js?v=1.12"></script>
+<script type="text/javascript" src="themes/paymark/dist/video.js?v=1.12"></script>
+
+
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b22e48e94377bb0" async="async"></script>
+
+
+
+
+
+  
+</body>
+</html>
