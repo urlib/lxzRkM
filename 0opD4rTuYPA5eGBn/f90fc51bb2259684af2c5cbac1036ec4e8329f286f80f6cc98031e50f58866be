@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en-US" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+<head>
+<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"5477028e84",applicationID:"151484236"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#96588a"/>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://woocommerce.com/xmlrpc.php">
+<script src="https://use.typekit.net/ivy2obh.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<title>USPS Shipping Method - WooCommerce</title>
+<script>window._wca = window._wca || [];</script>
+
+<!-- This site is optimized with the Yoast SEO Premium plugin v12.8 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Get shipping rates from the USPS API which handles both domestic and international parcels."/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<link rel="canonical" href="https://woocommerce.com/products/usps-shipping-method/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="product" />
+<meta property="og:title" content="USPS Shipping Method - WooCommerce" />
+<meta property="og:description" content="Get shipping rates from the USPS API which handles both domestic and international parcels." />
+<meta property="og:url" content="https://woocommerce.com/products/usps-shipping-method/" />
+<meta property="og:site_name" content="WooCommerce" />
+<meta property="og:image" content="https://woocommerce.com/wp-content/uploads/2013/01/usps-box-packing-settings.png?w=620" />
+<meta property="og:image:secure_url" content="https://woocommerce.com/wp-content/uploads/2013/01/usps-box-packing-settings.png?w=620" />
+<meta property="product:price:amount" content="79"/>
+<meta property="product:price:currency" content="USD"/>
+<meta property="product:availability" content="instock"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Get shipping rates from the USPS API which handles both domestic and international parcels." />
+<meta name="twitter:title" content="USPS Shipping Method - WooCommerce" />
+<meta name="twitter:site" content="@woocommerce" />
+<meta name="twitter:image" content="https://woocommerce.com/wp-content/uploads/2013/01/usps-box-packing-settings.png?w=620" />
+<meta name="twitter:creator" content="@warrenholmes" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://woocommerce.com/#website","url":"https://woocommerce.com/","name":"WooCommerce","description":"The most customizable eCommerce platform for building your online business. Get started today for free.","potentialAction":{"@type":"SearchAction","target":"https://woocommerce.com/search/?q={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"ImageObject","@id":"https://woocommerce.com/products/usps-shipping-method/#primaryimage","url":"https://woocommerce.com/wp-content/uploads/2013/01/usps-box-packing-settings.png?w=620"},{"@type":"ItemPage","@id":"https://woocommerce.com/products/usps-shipping-method/#webpage","url":"https://woocommerce.com/products/usps-shipping-method/","inLanguage":"en-US","name":"USPS Shipping Method - WooCommerce","isPartOf":{"@id":"https://woocommerce.com/#website"},"primaryImageOfPage":{"@id":"https://woocommerce.com/products/usps-shipping-method/#primaryimage"},"datePublished":"2013-01-28T14:11:29+00:00","dateModified":"2020-03-30T03:33:52+00:00","description":"Get shipping rates from the USPS API which handles both domestic and international parcels."}]}</script>
+<!-- / Yoast SEO Premium plugin. -->
+
+<link rel='dns-prefetch' href='//stats.wp.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="WooCommerce &raquo; Feed" href="https://woocommerce.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="WooCommerce &raquo; Comments Feed" href="https://woocommerce.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="WooCommerce &raquo; USPS Shipping Method Comments Feed" href="https://woocommerce.com/products/usps-shipping-method/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/woocommerce.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.4"}};
+			/*! This file is auto-generated */
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='all-css-0' href='https://woocommerce.com/_static/??-eJydVNFuwyAM/KFRtElV+zLtWwi4iVXAEZhm+fu5SVO1U9qKvgVzdxz4HD30CqP1xUHWNmftMLNuPNmj8tgkk0adefSwCRg3AvjQwrAUGSLr3pcWY9YDkaUQIFnQvbFH08JdUU2CWTcFvbvo/dfiDsLMuvEgnuZtdSBiSKsuXjA7MK6O2UEi1ZgY62ieWlJtotLXsELxjIohMwaKaHwNOcKQPbC8jMrYxrqTs5dWvcMrfU/pnZa8eUuGX1ZWAJDAVRMxSByrWF0CEJAvIS7YGr6DE3jq1e0AgEOm9bdahsh6lHYwKR4AWDWjfDszBkmvNjkDzwM6TU9+qDIZGawcrJbSnOR8qV5WT62siFiiI4LkNIX7xfMfw6yRyBXLKsEJJbDLbQI5PIwSoxTeE7iWDWNsH7/JvcgJoqN0FTmkCe1esJfQi2njz706Q27asoI6K/6E78/tfrv/2m33uz+bxA/u' type='text/css' media='all' />
+<style id='wp-block-library-inline-css'>
+.has-text-align-justify{text-align:justify;}
+</style>
+<style id='woocommerce-inline-inline-css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='all-css-2' href='https://woocommerce.com/_static/??-eJyVUVlSwzAMvRCuWNqZ/jCcJZVVYuptLDmht8dZCKFjIPxZ9tv0DH1UGLyQF4g2vxrP0IfA1mhK0DCTMCAznC29T7e7Mt7BVh7L1dJvFAzOUUJSMQWdUVRHXofEa5EeY6fOaSRrNUryomk82qxpQuqGW1NceOeM/5dtos5Qz8P8be/ZtWSoQZdUVT+X1aflG0ls8AKuSJT0YM2FfmpHWnI0pgRtWOCUvS6wmsMK+kfTWDZeNpgUbzoeANOD4jYkwaBXNVc6nMwXUdtcQxYlVCLPwjdfteUfqtFUPH01vaHlgTWfB/iLe344HA/Hx/v90/4D0wggkw==' type='text/css' media='all' />
+<script src='https://woocommerce.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script src='https://woocommerce.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script src='https://woocommerce.com/wp-content/plugins/wccom-refer/assets/js/refer.js?ver=5.4'></script>
+<script>
+var newsletterSignupBlock = {"nonce":"2338ac2449"};
+</script>
+<script src='https://woocommerce.com/wp-content/themes/woo/dist/blocks/newsletter-signup.min.js?ver=5.4'></script>
+<script>
+var slackSignupBlock = {"nonce":"2338ac2449"};
+</script>
+<script src='https://woocommerce.com/wp-content/themes/woo/dist/blocks/slack-signup.min.js?ver=5.4'></script>
+<script>
+var WooCommerceAbTestConfig = {"config":{"philly-homepage-us-test":{"datestamp":"20200203","logged_out":true,"suspended":false,"allocations":{"old_homepage":1,"new_homepage":1}},"aw_abandoned_cart_test_1":{"datestamp":"20200221","logged_out":true,"suspended":false,"allocations":{"email_sent":1,"no_email_sent":1}}}};
+</script>
+<script src='https://woocommerce.com/wp-content/plugins/dist/wccom-plugins/ab-test/ab-test.min.js?ver=5.4'></script>
+<script src='https://woocommerce.com/wp-content/plugins/dist/wccom-plugins/banners/wccom-banners.min.js?ver=5.4'></script>
+<script src='https://woocommerce.com/wp-content/plugins/dist/wccom-plugins/cookie-terms/cookie-terms.min.js?ver=5.4'></script>
+<script src='https://woocommerce.com/wp-content/plugins/dist/wccom-plugins/gutenberg-geo/gutenberg-geo.min.js?ver=5.4'></script>
+<script src='https://woocommerce.com/wp-content/plugins/dist/wccom-plugins/gutenberg-tracks/gutenberg-tracks.min.js?ver=5.4'></script>
+<script src='https://woocommerce.com/wp-content/plugins/wccom-product-reviews/include/../assets/track-add-review.js?ver=5.4'></script>
+<script src='https://woocommerce.com/wp-content/plugins/wccom-product-reviews/include/../assets/modify-form.js?ver=5.4'></script>
+<script src='https://woocommerce.com/wp-content/plugins/wccom-product-vendors/include/../assets/registration-form.js?ver=5.4'></script>
+<script src='https://woocommerce.com/wp-content/plugins/wccom-support-modal/client/assets/js/wccom-support-modal.js?ver=5.4'></script>
+<script>
+var jquery_blockui_params = {"productName":"USPS Shipping Method","productCategory":"woocommerce","is_admin":""};
+</script>
+<script src='https://woocommerce.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70'></script>
+<script>
+var js_cookie_params = {"productName":"USPS Shipping Method","productCategory":"woocommerce","is_admin":""};
+</script>
+<script src='https://woocommerce.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4'></script>
+<script>
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","productName":"USPS Shipping Method","productCategory":"woocommerce","is_admin":""};
+</script>
+<script src='https://woocommerce.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=4.0.0'></script>
+<script src='https://woocommerce.com/wp-content/plugins/woothemes-gtm-integration/assets/js/interactions.js?ver=1.1.1'></script>
+<script src='https://woocommerce.com/wp-includes/js/underscore.min.js?ver=1.8.3'></script>
+<script>
+var wteVars = {"ajaxurl":"https:\/\/woocommerce.com\/wp-admin\/admin-ajax.php"};
+</script>
+<script src='https://woocommerce.com/wp-content/plugins/woothemes-tracks/js/tracks-events.js?ver=5.4'></script>
+<script>
+var wcpv_registration_local = {"ajaxurl":"https:\/\/woocommerce.com\/wp-admin\/admin-ajax.php","ajaxRegistrationNonce":"522b85729c","success":"Your request has been submitted.  You will be contacted shortly."};
+</script>
+<script src='https://woocommerce.com/wp-content/plugins/woocommerce-product-vendors/assets/js/wcpv-frontend-scripts.min.js?ver=2.1.18'></script>
+<script src='https://woocommerce.com/wp-content/plugins/woocommerce/assets/js/jquery-tiptip/jquery.tipTip.min.js?ver=4.0.0'></script>
+<script>
+var wc_product_reviews_pro = {"is_user_logged_in":"","user_id":"0","comment_registration":"","product_id":"18657","ajax_url":"https:\/\/woocommerce.com\/wp-admin\/admin-ajax.php","nonce":"59ecc74716","comment_type":null,"file_size_max":"1073741824","i18n":{"loading":"Loading...","attach_a_photo":"Attach a photo","attach_a_video":"Attach a video","attach_photo_url":"Rather attach photo from another website?","attach_photo_file":"Rather attach photo from your computer?","attach_video_url":"Rather attach video from another website?","attach_video_file":"Rather attach video from your computer?","flag_failed":"Could not flag contribution. Please try again later.","subscribe_failed":"An error occurred. Your request could not be processed.","vote_failed":"Could not cast your vote. Please try again later.","comment_karma":"%1$d out of %2$d people found this helpful","error_attach_file":"Please attach a file.","error_required":"This is a required field.","error_too_short":"Please enter at least %d words.","error_too_long":"Please enter less than %d words.","error_file_not_allowed":"Only jpg, png, gif, bmp and tiff files, please","error_file_size_max":"File is too large. Size must be less than 1 GB.","error_login_signup":"An error occurred, please try again.","remove_attachment":"Remove Attachment","review_update_confirmation":"Hold up -- it looks like you've already left a review for this product. You can update your existing review instead.\n\nPlease click \"OK\" to send a confirmation email to update your existing review, or \"Cancel\" to go back."}};
+</script>
+<script src='https://woocommerce.com/wp-content/plugins/woocommerce-product-reviews-pro/assets/js/frontend/wc-product-reviews-pro-frontend.min.js?ver=1.11.0'></script>
+<script async src='https://stats.wp.com/s-202015.js'></script>
+<script src='https://woocommerce.com/wp-content/themes/woo/dist/bundle.min.js?ver=5.4'></script>
+<script src='https://woocommerce.com/wp-content/plugins/wccom-plugins/automatewoo-tracks//js/index.js?ver=5.4'></script>
+<script src='https://woocommerce.com/wp-content/plugins/woothemes-wooexperts/assets/js/wooexperts-frontend.js?ver=1.1.0'></script>
+<script src='https://woocommerce.com/wp-content/plugins/woothemes-product-layout-test/assets/scripts.js?ver=1.1.3'></script>
+<link rel='https://api.w.org/' href='https://woocommerce.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://woocommerce.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://woocommerce.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.4" />
+<meta name="generator" content="WooCommerce 4.0.0" />
+<link rel='shortlink' href='https://woocommerce.com/?p=18657' />
+<link rel="alternate" type="application/json+oembed" href="https://woocommerce.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwoocommerce.com%2Fproducts%2Fusps-shipping-method%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://woocommerce.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwoocommerce.com%2Fproducts%2Fusps-shipping-method%2F&#038;format=xml" />
+
+<link rel='dns-prefetch' href='//widgets.wp.com'/>
+<link rel='dns-prefetch' href='//s0.wp.com'/>
+<link rel='dns-prefetch' href='//0.gravatar.com'/>
+<link rel='dns-prefetch' href='//1.gravatar.com'/>
+<link rel='dns-prefetch' href='//2.gravatar.com'/>
+<link rel='dns-prefetch' href='//jetpack.wordpress.com'/>
+<link rel='dns-prefetch' href='//s1.wp.com'/>
+<link rel='dns-prefetch' href='//s2.wp.com'/>
+<link rel='dns-prefetch' href='//public-api.wordpress.com'/>
+<link rel='dns-prefetch' href='//v0.wordpress.com'/>
+<style type='text/css'>img#wpstats{display:none}</style>	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<link rel="icon" href="https://woocommerce.com/wp-content/uploads/2016/07/cropped-cropped-cropped-favicon.png?w=32" sizes="32x32" />
+<link rel="icon" href="https://woocommerce.com/wp-content/uploads/2016/07/cropped-cropped-cropped-favicon.png?w=192" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://woocommerce.com/wp-content/uploads/2016/07/cropped-cropped-cropped-favicon.png?w=180" />
+<meta name="msapplication-TileImage" content="https://woocommerce.com/wp-content/uploads/2016/07/cropped-cropped-cropped-favicon.png?w=270" />
+</head>
+
+<body class="product-template-default single single-product postid-18657 theme-woomattic woocommerce woocommerce-page woocommerce-no-js extension feature-2 group-blog woocommerce-active">
+	<div
+	class="support-modal__container"
+	id="wccom-support-modal">
+	<div class="support-modal__wrapper">
+		<button
+		class="support-modal__close-button"
+			id="wccom-support-modal-close">
+			<i aria-hidden="true" class="fa fa-times"></i>
+		</button>
+		<div class="support-modal__question" id="wccom-support-question">
+	<div
+		class="support-modal__header">
+		<h1>
+			Contact
+			WooCommerce			for
+			USPS Shipping Method			support
+		</h1>
+		<p>
+			WooCommerce			is ready to help you get the answers you need.
+		</p>
+	</div>
+	<form class="support-modal__body" action="PUT YOUR ACTION HERE" method="post">
+		<label for="question">What do you need help with?</label>
+		<p>
+			Be as specific as possible - let us know what you expected, what's
+			happening instead, and when you noticed this. The more detail you,
+			provide the faster we can help.
+		</p>
+		<textarea name="question" rows="8" cols="80"></textarea>
+		<label for="website">Which website do you need help with?</label>
+		<input type="text" name="website" value=""></input>
+		<!-- <label for="screenshots">Have Screenshots?</label>
+		<p>
+			Share images of the problem, so we can better assist you.
+		</p> -->
+		<p class="support-modal__question-reply">
+			Replies will be sent to you at
+			<strong>
+							</strong>
+		</p>
+	</form>
+	<div class="support-modal__footer">
+		<input
+			class="wccom-component__button support-modal__cancel"
+			secondary
+			type="submit"
+			value="Cancel" />
+		<input
+			class="wccom-component__button"
+			type="submit"
+			value="Send Message" />
+	</div>
+</div>
+		<div class="support-modal__question" id="wccom-support-thank-you">
+	<div
+		class="support-modal__header">
+		<h1>
+			Thanks for contacting
+			WooCommerce		</h1>
+		<p>
+			WooCommerce			will reply to your questions about
+			Get extension name			shortly.
+		</p>
+	</div>
+	<div class="support-modal__body">
+		<p class="support-modal__question-reply">
+			While you wait, check out these handy resources:
+		</p>
+		<ul>
+			<li></li>
+		</ul>
+	</div>
+	<div class="support-modal__footer">
+		<input
+			class="wccom-component__button support-modal__cancel"
+			secondary
+			type="submit"
+			value="Close" />
+	</div>
+</div>
+		<div class="support-modal__feedback-thank-you">Thank you for your feedback!</div>
+<div class="support-modal__feedback" id="wccom-support-feedback">
+	<div
+		class="support-modal__header">
+		<h1>
+			Feedback for
+			WooCommerce		</h1>
+		<p>
+			We appreciate your feedback about your support experience with
+			WooCommerce,
+			developers of
+			USPS Shipping Method.
+			This helps us maintain high standards on the WooMarketplace, and
+			helps WooCommerce improve.
+		</p>
+	</div>
+
+	<div class="support-modal__feedback-header">
+		<div class="support-modal__feedback-type">
+			<button
+				data-name="type"
+				data-value="happy"
+				type="button"
+				name="button">
+				<i
+					data-name="type"
+					data-value="happy"
+					aria-hidden="true"
+					aria-label="Happy"
+					class="fa fa-smile-o">
+				</i>
+			</button>
+			<button
+				data-name="type"
+				data-value="sad"
+				type="button"
+				name="button">
+				<i
+					data-name="type"
+					data-value="sad"
+					aria-hidden="true"
+					aria-label="Sad"
+					class="fa fa-frown-o">
+				</i>
+			</button>
+		</div>
+		<p class="support-modal__feedback-blurb-happy">
+			Glad to hear it went well with
+			WooCommerce.
+			Tell us more.
+		</p>
+		<p class="support-modal__feedback-blurb-sad">
+			Sorry to hear that. Can you tell us more?
+		</p>
+	</div>
+	<div class="support-modal__feedback-body">
+		<div id="wccom-support-feedback-start"></div>
+		<div
+			class="support-modal__feedback-contacted support-modal__feedback-hidden"
+			id="wccom-support-feedback-contacted">
+			<p>
+				Did WooCommerce get back to
+				you?
+			</p>
+			<input
+				data-name="contacted"
+				data-value="yes"
+				type="radio"
+				id="contacted-1"
+				name="contacted"
+				value="days">
+			<label
+				data-name="contacted"
+				data-value="yes"
+				for="contacted-1">
+				Yes
+			</label>
+			<input
+				data-name="contacted"
+				data-value="no"
+				type="radio"
+				id="contacted-2"
+				name="contacted"
+				value="days">
+			<label
+				data-name="contacted"
+				data-value="no"
+				for="contacted-2">
+				No
+			</label>
+		</div>
+		<div
+			class="support-modal__feedback-timelength support-modal__feedback-hidden"
+			id="wccom-support-feedback-timelength">
+			<p>
+				How long did it take for you to hear back from
+				WooCommerce			</p>
+			<input
+				data-name="timelength"
+				data-value="hours"
+				type="radio"
+				id="howlong-1"
+				name="howlong"
+				value="hours">
+			<label
+				data-name="timelength"
+				data-value="hours"
+				for="howlong-1">
+				A few hours
+			</label>
+			<input
+				data-name="timelength"
+				data-value="day"
+				type="radio"
+				id="howlong-2"
+				name="howlong"
+				value="day">
+			<label
+				data-name="timelength"
+				data-value="day"
+				for="howlong-2">
+				A day
+			</label>
+			<input
+				data-name="timelength"
+				data-value="days"
+				type="radio"
+				id="howlong-3"
+				name="howlong"
+				value="days">
+			<label
+				data-name="timelength"
+				data-value="days"
+				for="howlong-3">
+				A few days
+			</label>
+		</div>
+		<div
+			class="support-modal__feedback-resolved support-modal__feedback-hidden"
+			id="wccom-support-feedback-resolved">
+			<p>
+				Was your issue resolved?
+			</p>
+			<input
+				data-name="resolved"
+				data-value="yes"
+				type="radio"
+				id="resolved-1"
+				name="resolved"
+				value="yes">
+			<label
+				data-name="resolved"
+				data-value="yes"
+				for="resolved-1">
+				Yes
+			</label>
+			<input
+				data-name="resolved"
+				data-value="no"
+				type="radio"
+				id="resolved-2"
+				name="resolved"
+				value="no">
+			<label
+				data-name="resolved"
+				data-value="no"
+				for="resolved-2">
+				No
+			</label>
+		</div>
+		<div
+			class="support-modal__feedback-takelook support-modal__feedback-hidden"
+			id="wccom-support-feedback-takelook">
+			<p>
+				Sorry to hear that. Would you like our team to take a look at
+				your issue?
+			</p>
+			<input
+				data-name="takelook"
+				data-value="yes"
+				type="radio"
+				id="takelook-1"
+				name="takelook"
+				value="yes">
+			<label
+				data-name="takelook"
+				data-value="yes"
+				for="takelook-1">
+				Yes
+			</label>
+			<input
+				data-name="takelook"
+				data-value="no"
+				type="radio"
+				id="takelook-2"
+				name="takelook"
+				value="no">
+			<label
+				data-name="takelook"
+				data-value="no"
+				for="takelook-2">
+				No
+			</label>
+		</div>
+		<div
+			class="support-modal__feedback-text-additional support-modal__feedback-hidden"
+			id="wccom-support-feedback-additional">
+			<p>
+				Do you have any additional feeback for
+									us?
+							</p>
+			<textarea
+				cols="80"
+				data-name="text"
+				data-value="additional"
+				name="additional-feedback"
+				rows="8"></textarea>
+		</div>
+		<div
+			class="support-modal__feedback-text-changed support-modal__feedback-hidden"
+			id="wccom-support-feedback-changed">
+			<p>
+				Has anything changed since you first reached out? Is there
+				anything new that you'd like us to know?
+			</p>
+			<textarea
+				cols="80"
+				data-name="text"
+				data-value="changed"
+				name="changed-feedback"
+				rows="8"></textarea>
+		</div>
+		<div
+			class="support-modal__feedback-text-positive support-modal__feedback-hidden"
+			id="wccom-support-feedback-positive">
+			<p>
+				Great! Any additional feedback?
+			</p>
+			<textarea
+				cols="80"
+				data-name="text"
+				data-value="positive"
+				name="positive-feedback"
+				rows="8"></textarea>
+		</div>
+	</div>
+	<div
+		class="support-modal__feedback-submit support-modal__feedback-hidden"
+		id="wccom-support-feedback-submit">
+		<button
+			class="wccom-component__button"
+			id="wccom-support-feedback-submit-button"
+			name="button"
+			type="button">
+			Send Feedback
+		</button>
+	</div>
+</div>
+	</div>
+</div>
+<script>dataLayer = JSON.parse( decodeURIComponent( "%5B%7B%22environment_Identifier%22%3A%22dev%22%2C%22settings_ga_id%22%3A%22UA-25052016-1%22%2C%22page_pageName%22%3A%22%5C%2Fplugins%5C%2Fwoocommerce%5C%2Fextensions%5C%2Fextension-detail%5C%2FUSPS%20Shipping%20Method%22%2C%22page_pageCategory%22%3A%22woocommerce%22%2C%22page_httpResponseCode%22%3A200%2C%22user_status%22%3A%22logged-out%22%2C%22user_ID%22%3A%2259ffb817cebe2455407c550cff2b3b0e%22%2C%22page_productName%22%3A%22USPS%20Shipping%20Method%22%2C%22page_productCategory%22%3A%22woocommerce%22%2C%22page_productType%22%3A%22paid%20product%22%2C%22page_productSKU%22%3A%22WOO436%22%2C%22page_productDatePublished%22%3A%22January%2028%2C%202013%22%2C%22page_productPrice1%22%3A%2279.00%22%2C%22page_productPrice2%22%3A%2299.00%22%2C%22page_productPrice3%22%3A%22199.00%22%7D%5D" ) );</script>		<!-- Google Tag Manager Container -->
+		<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-W64W8Q" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W64W8Q');</script>
+		<!-- End Google Tag Manager Container -->
+		<div id="page" class="hfeed site">
+	
+	<header id="masthead" class="site-header" >
+
+		<div id="menu" class="header-menu">
+
+			<div class="col-full">
+
+							<div class="site-branding">
+				<a class="site-logo" href="https://woocommerce.com">
+					<img width="180" src="https://woocommerce.com/wp-content/themes/woo/images/logo-woocommerce@2x.png" alt="WooCommerce" />
+				</a>
+				<h1 class="site-title"><a href="https://woocommerce.com/" rel="home">WooCommerce</a></h1>
+									<p class="site-description">The most customizable eCommerce platform for building your online business. Get started today for free.</p>
+							</div>
+					<nav
+			id="site-navigation"
+			class="main-navigation"
+			aria-label="Primary Navigation">
+			<button class="menu-toggle">
+				Navigation			</button>
+			<div class="primary-navigation"><ul id="menu-main-menu" class="menu"><li id="menu-item-2150986" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2150986"><a href="#" data-tracks="nav_menu_click" data-tracks-url="#" data-tracks-menu="Main Menu">Features</a>
+<ul class="sub-menu">
+	<li id="menu-item-1234350" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1234350"><a href="https://woocommerce.com/features/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/features/" data-tracks-menu="Main Menu">Overview</a></li>
+	<li id="menu-item-5622097" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5622097"><a href="https://woocommerce.com/payments/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/payments/" data-tracks-menu="Main Menu">Payments</a></li>
+	<li id="menu-item-5683416" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5683416"><a href="https://woocommerce.com/products/shipping/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/products/shipping/" data-tracks-menu="Main Menu">Shipping</a></li>
+	<li id="menu-item-2150987" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2150987"><a href="https://woocommerce.com/store-owners/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/store-owners/" data-tracks-menu="Main Menu">For Store Owners</a></li>
+	<li id="menu-item-3762842" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3762842"><a href="https://woocommerce.com/mobile/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/mobile/" data-tracks-menu="Main Menu">Mobile App</a></li>
+	<li id="menu-item-2596736" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2596736"><a href="https://woocommerce.com/enterprise/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/enterprise/" data-tracks-menu="Main Menu">Enterprise</a></li>
+	<li id="menu-item-3665819" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3665819"><a href="#" data-tracks="nav_menu_click" data-tracks-url="#" data-tracks-menu="Main Menu">Guides</a>
+	<ul class="sub-menu">
+		<li id="menu-item-3665830" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3665830"><a href="/guides/ecommerce-for-wordpress-intro/" data-tracks="nav_menu_click" data-tracks-url="/guides/ecommerce-for-wordpress-intro/" data-tracks-menu="Main Menu">Introduction to eCommerce for WordPress</a></li>
+		<li id="menu-item-3934296" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3934296"><a href="https://woocommerce.com/hosting-solutions/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/hosting-solutions/" data-tracks-menu="Main Menu">WooCommerce hosting</a></li>
+		<li id="menu-item-3665843" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3665843"><a href="/guides/new-store/" data-tracks="nav_menu_click" data-tracks-url="/guides/new-store/" data-tracks-menu="Main Menu">New Store Owners</a></li>
+		<li id="menu-item-3665845" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3665845"><a href="/woocommerce-email-marketing/" data-tracks="nav_menu_click" data-tracks-url="/woocommerce-email-marketing/" data-tracks-menu="Main Menu">Email Marketing</a></li>
+		<li id="menu-item-3665836" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3665836"><a href="/gdpr/" data-tracks="nav_menu_click" data-tracks-url="/gdpr/" data-tracks-menu="Main Menu">GDPR</a></li>
+		<li id="menu-item-3665838" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3665838"><a href="/holiday-tips-archive/" data-tracks="nav_menu_click" data-tracks-url="/holiday-tips-archive/" data-tracks-menu="Main Menu">Holiday Tips</a></li>
+		<li id="menu-item-5332097" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5332097"><a href="https://woocommerce.com/sell-cbd-online/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/sell-cbd-online/" data-tracks-menu="Main Menu">CBD Store Owners</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1033334" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1033334"><a href="https://woocommerce.com/meetups/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/meetups/" data-tracks-menu="Main Menu">Meetups</a></li>
+</ul>
+</li>
+<li id="menu-item-3294799" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3294799"><a href="#" data-tracks="nav_menu_click" data-tracks-url="#" data-tracks-menu="Main Menu">Customers</a>
+<ul class="sub-menu">
+	<li id="menu-item-3294802" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3294802"><a href="https://woocommerce.com/success-stories/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/success-stories/" data-tracks-menu="Main Menu">Success Stories</a></li>
+	<li id="menu-item-1134485" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1134485"><a href="/showcase/" data-tracks="nav_menu_click" data-tracks-url="/showcase/" data-tracks-menu="Main Menu">Showcase</a></li>
+</ul>
+</li>
+<li id="menu-item-1792807" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1792807"><a href="https://woocommerce.com/product-category/woocommerce-extensions/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/" data-tracks-menu="Main Menu">Extensions Store</a>
+<ul class="sub-menu">
+	<li id="menu-item-47967" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat current-product-ancestor current-menu-parent current-product-parent menu-item-47967"><a href="https://woocommerce.com/product-category/woocommerce-extensions/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/" data-tracks-menu="Main Menu">All</a></li>
+	<li id="menu-item-3067158" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3067158"><a href="https://woocommerce.com/product-category/woocommerce-extensions/?orderby=date&#038;paged=1" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/?orderby=date&amp;paged=1" data-tracks-menu="Main Menu">New</a></li>
+	<li id="menu-item-4626631" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat current-product-ancestor current-menu-parent current-product-parent menu-item-4626631"><a href="https://woocommerce.com/product-category/woocommerce-extensions/developed-by-woo/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/developed-by-woo/" data-tracks-menu="Main Menu">Developed by Woo</a></li>
+	<li id="menu-item-2151001" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2151001"><a href="https://woocommerce.com/product-category/woocommerce-extensions/product-extensions/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/product-extensions/" data-tracks-menu="Main Menu">Enhancements</a>
+	<ul class="sub-menu">
+		<li id="menu-item-2498930" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2498930"><a href="https://woocommerce.com/product-category/woocommerce-extensions/product-extensions/checkout-features/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/product-extensions/checkout-features/" data-tracks-menu="Main Menu">Cart and checkout features</a></li>
+		<li id="menu-item-2498931" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2498931"><a href="https://woocommerce.com/product-category/woocommerce-extensions/product-extensions/merchandizing/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/product-extensions/merchandizing/" data-tracks-menu="Main Menu">Merchandizing</a></li>
+		<li id="menu-item-2498933" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2498933"><a href="https://woocommerce.com/product-category/woocommerce-extensions/product-extensions/product-page-features/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/product-extensions/product-page-features/" data-tracks-menu="Main Menu">Product page features</a></li>
+		<li id="menu-item-2498937" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2498937"><a href="https://woocommerce.com/product-category/woocommerce-extensions/product-extensions/search-navigation/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/product-extensions/search-navigation/" data-tracks-menu="Main Menu">Search and navigation</a></li>
+		<li id="menu-item-3636991" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3636991"><a title="International" href="https://woocommerce.com/product-category/woocommerce-extensions/product-extensions/international/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/product-extensions/international/" data-tracks-menu="Main Menu">International</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2151003" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2151003"><a href="https://woocommerce.com/product-category/woocommerce-extensions/marketing-extensions/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/marketing-extensions/" data-tracks-menu="Main Menu">Marketing</a>
+	<ul class="sub-menu">
+		<li id="menu-item-2498938" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2498938"><a href="https://woocommerce.com/product-category/woocommerce-extensions/marketing-extensions/email-marketing-extensions/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/marketing-extensions/email-marketing-extensions/" data-tracks-menu="Main Menu">Email</a></li>
+		<li id="menu-item-3559162" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3559162"><a href="https://woocommerce.com/product-category/woocommerce-extensions/marketing-extensions/multi-channel/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/marketing-extensions/multi-channel/" data-tracks-menu="Main Menu">Multi-channel</a></li>
+		<li id="menu-item-2498940" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2498940"><a href="https://woocommerce.com/product-category/woocommerce-extensions/marketing-extensions/promotions/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/marketing-extensions/promotions/" data-tracks-menu="Main Menu">Promotions</a></li>
+		<li id="menu-item-2498945" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2498945"><a href="https://woocommerce.com/product-category/woocommerce-extensions/marketing-extensions/reporting-extensions/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/marketing-extensions/reporting-extensions/" data-tracks-menu="Main Menu">Reporting</a></li>
+		<li id="menu-item-2498946" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2498946"><a href="https://woocommerce.com/product-category/woocommerce-extensions/marketing-extensions/social/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/marketing-extensions/social/" data-tracks-menu="Main Menu">Social</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2151006" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2151006"><a href="https://woocommerce.com/product-category/woocommerce-extensions/payment-gateways/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/payment-gateways/" data-tracks-menu="Main Menu">Payments</a>
+	<ul class="sub-menu">
+		<li id="menu-item-4710844" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4710844"><a href="https://woocommerce.com/product-category/woocommerce-extensions/payment-gateways/fraud/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/payment-gateways/fraud/" data-tracks-menu="Main Menu">Fraud</a></li>
+		<li id="menu-item-4710845" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4710845"><a href="https://woocommerce.com/product-category/woocommerce-extensions/payment-gateways/in-person-payments/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/payment-gateways/in-person-payments/" data-tracks-menu="Main Menu">In-Person Payments</a></li>
+		<li id="menu-item-2498954" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2498954"><a href="https://woocommerce.com/product-category/woocommerce-extensions/payment-gateways/off-site-payment-gateways/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/payment-gateways/off-site-payment-gateways/" data-tracks-menu="Main Menu">Off-Site</a></li>
+		<li id="menu-item-2498949" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2498949"><a href="https://woocommerce.com/product-category/woocommerce-extensions/payment-gateways/on-site/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/payment-gateways/on-site/" data-tracks-menu="Main Menu">On-Site</a></li>
+		<li id="menu-item-4710846" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4710846"><a href="https://woocommerce.com/product-category/woocommerce-extensions/payment-gateways/pre-orders/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/payment-gateways/pre-orders/" data-tracks-menu="Main Menu">Pre-Orders</a></li>
+		<li id="menu-item-4710847" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4710847"><a href="https://woocommerce.com/product-category/woocommerce-extensions/payment-gateways/subscriptions/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/payment-gateways/subscriptions/" data-tracks-menu="Main Menu">Subscriptions</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2151018" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2151018"><a href="https://woocommerce.com/product-category/woocommerce-extensions/product-type/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/product-type/" data-tracks-menu="Main Menu">Product Type</a></li>
+	<li id="menu-item-2151007" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2151007"><a href="https://woocommerce.com/product-category/woocommerce-extensions/shipping-methods/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/shipping-methods/" data-tracks-menu="Main Menu">Shipping</a>
+	<ul class="sub-menu">
+		<li id="menu-item-2498955" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2498955"><a href="https://woocommerce.com/product-category/woocommerce-extensions/shipping-methods/shipping-carriers/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/shipping-methods/shipping-carriers/" data-tracks-menu="Main Menu">Carriers</a></li>
+		<li id="menu-item-2498957" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2498957"><a href="https://woocommerce.com/product-category/woocommerce-extensions/shipping-methods/delivery-shipping-options/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/shipping-methods/delivery-shipping-options/" data-tracks-menu="Main Menu">Delivery and shipping options</a></li>
+		<li id="menu-item-2498958" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2498958"><a href="https://woocommerce.com/product-category/woocommerce-extensions/shipping-methods/inventory-fulfillment/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/shipping-methods/inventory-fulfillment/" data-tracks-menu="Main Menu">Inventory and fulfillment</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2151009" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2151009"><a href="https://woocommerce.com/product-category/woocommerce-extensions/operations/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/operations/" data-tracks-menu="Main Menu">Store Management</a>
+	<ul class="sub-menu">
+		<li id="menu-item-2498963" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2498963"><a href="https://woocommerce.com/product-category/woocommerce-extensions/operations/accounting-extensions/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/operations/accounting-extensions/" data-tracks-menu="Main Menu">Accounting</a></li>
+		<li id="menu-item-2498964" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2498964"><a href="https://woocommerce.com/product-category/woocommerce-extensions/operations/admin-notifications/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/operations/admin-notifications/" data-tracks-menu="Main Menu">Admin and notifications</a></li>
+		<li id="menu-item-2498966" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2498966"><a href="https://woocommerce.com/product-category/woocommerce-extensions/operations/customer-service/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/operations/customer-service/" data-tracks-menu="Main Menu">Customer service</a></li>
+		<li id="menu-item-2498968" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2498968"><a href="https://woocommerce.com/product-category/woocommerce-extensions/operations/import-export-extensions/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/operations/import-export-extensions/" data-tracks-menu="Main Menu">Import and Export</a></li>
+		<li id="menu-item-2498969" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2498969"><a href="https://woocommerce.com/product-category/woocommerce-extensions/operations/point-of-sale/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/operations/point-of-sale/" data-tracks-menu="Main Menu">Point of sale</a></li>
+		<li id="menu-item-2498970" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2498970"><a href="https://woocommerce.com/product-category/woocommerce-extensions/operations/tax/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/operations/tax/" data-tracks-menu="Main Menu">Tax</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2151014" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2151014"><a href="https://woocommerce.com/product-category/woocommerce-extensions/woocommerce-subscriptions/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/woocommerce-subscriptions/" data-tracks-menu="Main Menu">Subscriptions</a></li>
+</ul>
+</li>
+<li id="menu-item-1820233" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1820233"><a href="https://woocommerce.com/product-category/themes" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/themes" data-tracks-menu="Main Menu">Theme Store</a>
+<ul class="sub-menu">
+	<li id="menu-item-4178654" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4178654"><a href="https://woocommerce.com/product-category/themes" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/themes" data-tracks-menu="Main Menu">All Themes</a></li>
+	<li id="menu-item-3084760" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3084760"><a href="#" data-tracks="nav_menu_click" data-tracks-url="#" data-tracks-menu="Main Menu">Industries</a>
+	<ul class="sub-menu">
+		<li id="menu-item-3084732" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3084732"><a href="https://woocommerce.com/product-category/themes/arts-and-crafts/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/themes/arts-and-crafts/" data-tracks-menu="Main Menu">Arts and Crafts</a></li>
+		<li id="menu-item-3084740" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3084740"><a href="https://woocommerce.com/product-category/themes/bookings-and-accommodation/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/themes/bookings-and-accommodation/" data-tracks-menu="Main Menu">Bookings and Accommodation</a></li>
+		<li id="menu-item-3084743" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3084743"><a href="https://woocommerce.com/product-category/themes/digital-and-audio/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/themes/digital-and-audio/" data-tracks-menu="Main Menu">Digital and Audio</a></li>
+		<li id="menu-item-3084751" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3084751"><a href="https://woocommerce.com/product-category/themes/electronics-and-software/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/themes/electronics-and-software/" data-tracks-menu="Main Menu">Electronics and Software</a></li>
+		<li id="menu-item-3084754" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3084754"><a href="https://woocommerce.com/product-category/themes/fashion-and-apparel/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/themes/fashion-and-apparel/" data-tracks-menu="Main Menu">Fashion and Apparel</a></li>
+		<li id="menu-item-3084741" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3084741"><a href="https://woocommerce.com/product-category/themes/flowers-gifts-and-collectibles/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/themes/flowers-gifts-and-collectibles/" data-tracks-menu="Main Menu">Flowers, Gifts and Collectibles</a></li>
+		<li id="menu-item-3084730" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3084730"><a href="https://woocommerce.com/product-category/themes/food-and-drink/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/themes/food-and-drink/" data-tracks-menu="Main Menu">Food and Drink</a></li>
+		<li id="menu-item-3084746" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3084746"><a href="https://woocommerce.com/product-category/themes/health-and-beauty/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/themes/health-and-beauty/" data-tracks-menu="Main Menu">Health and Beauty</a></li>
+		<li id="menu-item-3084744" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3084744"><a href="https://woocommerce.com/product-category/themes/home-and-furniture/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/themes/home-and-furniture/" data-tracks-menu="Main Menu">Home and Furniture</a></li>
+		<li id="menu-item-3084737" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3084737"><a href="https://woocommerce.com/product-category/themes/pets-and-pet-care/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/themes/pets-and-pet-care/" data-tracks-menu="Main Menu">Pets and Pet Care</a></li>
+		<li id="menu-item-3084753" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3084753"><a href="https://woocommerce.com/product-category/themes/sports-and-recreation/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/themes/sports-and-recreation/" data-tracks-menu="Main Menu">Sports and Recreation</a></li>
+		<li id="menu-item-3084748" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3084748"><a href="https://woocommerce.com/product-category/themes/toys-and-games/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/themes/toys-and-games/" data-tracks-menu="Main Menu">Toys and Games</a></li>
+	</ul>
+</li>
+	<li id="menu-item-4178646" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4178646"><a href="https://woocommerce.com/product-category/themes/storefront-child-theme-themes/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/themes/storefront-child-theme-themes/" data-tracks-menu="Main Menu">Storefront Themes</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1820165" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1820165"><a href="https://woocommerce.com/storefront/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/storefront/" data-tracks-menu="Main Menu">Storefront Framework</a></li>
+		<li id="menu-item-4178648" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4178648"><a href="https://woocommerce.com/product-category/themes/storefront-child-theme-themes/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/themes/storefront-child-theme-themes/" data-tracks-menu="Main Menu">Child Themes</a></li>
+		<li id="menu-item-574031" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-574031"><a href="https://woocommerce.com/product-category/storefront-extensions/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/storefront-extensions/" data-tracks-menu="Main Menu">Customize Storefront</a>
+		<ul class="sub-menu">
+			<li id="menu-item-3084763" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3084763"><a href="https://woocommerce.com/product-category/storefront-extensions/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/storefront-extensions/" data-tracks-menu="Main Menu">Storefront Extensions</a></li>
+			<li id="menu-item-2248185" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-2248185"><a href="https://woocommerce.com/products/storefront-extensions-bundle/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/products/storefront-extensions-bundle/" data-tracks-menu="Main Menu">Storefront Extensions Bundle</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-401271" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-401271"><a href="#" data-tracks="nav_menu_click" data-tracks-url="#" data-tracks-menu="Main Menu">Support</a>
+<ul class="sub-menu">
+	<li id="menu-item-1793432" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1793432"><a href="https://docs.woocommerce.com/" data-tracks="nav_menu_click" data-tracks-url="https://docs.woocommerce.com/" data-tracks-menu="Main Menu">Documentation</a></li>
+	<li id="menu-item-283856" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-283856"><a href="https://www.woocommerce.com/contact-us/" data-tracks="nav_menu_click" data-tracks-url="https://www.woocommerce.com/contact-us/" data-tracks-menu="Main Menu">Contact</a></li>
+	<li id="menu-item-2107222" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2107222"><a href="https://woocommerce.com/customizations/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/customizations/" data-tracks-menu="Main Menu">Customizations</a></li>
+</ul>
+</li>
+<li id="menu-item-5400686" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5400686"><a href="#" data-tracks="nav_menu_click" data-tracks-url="#" data-tracks-menu="Main Menu">Develop</a>
+<ul class="sub-menu">
+	<li id="menu-item-2150988" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2150988"><a href="https://woocommerce.com/developers/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/developers/" data-tracks-menu="Main Menu">For Developers</a></li>
+	<li id="menu-item-2150998" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2150998"><a href="https://woocommerce.com/develop-woocommerce/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/develop-woocommerce/" data-tracks-menu="Main Menu">Develop Extensions</a></li>
+	<li id="menu-item-5400690" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5400690"><a href="https://woocommerce.wordpress.com/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.wordpress.com/" data-tracks-menu="Main Menu">Developer Blog</a></li>
+</ul>
+</li>
+<li id="menu-item-18576" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18576"><a href="/blog/" data-tracks="nav_menu_click" data-tracks-url="/blog/" data-tracks-menu="Main Menu">Blog</a></li>
+</ul></div><div class="handheld-navigation"><ul id="menu-mobile-menu" class="menu"><li id="menu-item-1991085" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1991085"><a href="#" data-tracks="nav_menu_click" data-tracks-url="#" data-tracks-menu="Mobile Menu">Features</a>
+<ul class="sub-menu">
+	<li id="menu-item-2151024" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2151024"><a href="https://woocommerce.com/features/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/features/" data-tracks-menu="Mobile Menu">Overview</a></li>
+	<li id="menu-item-2151025" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2151025"><a href="https://woocommerce.com/store-owners/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/store-owners/" data-tracks-menu="Mobile Menu">For Store Owners</a></li>
+	<li id="menu-item-2151026" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2151026"><a href="https://woocommerce.com/developers/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/developers/" data-tracks-menu="Mobile Menu">For Developers</a></li>
+	<li id="menu-item-3762846" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3762846"><a href="https://woocommerce.com/mobile/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/mobile/" data-tracks-menu="Mobile Menu">Mobile App</a></li>
+	<li id="menu-item-2151027" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2151027"><a href="http://docs.woocommerce.com/documentation/plugins/woocommerce/" data-tracks="nav_menu_click" data-tracks-url="http://docs.woocommerce.com/documentation/plugins/woocommerce/" data-tracks-menu="Mobile Menu">Documentation</a></li>
+	<li id="menu-item-3665814" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3665814"><a href="#" data-tracks="nav_menu_click" data-tracks-url="#" data-tracks-menu="Mobile Menu">Guides</a>
+	<ul class="sub-menu">
+		<li id="menu-item-3665815" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3665815"><a href="/guides/ecommerce-for-wordpress-intro/" data-tracks="nav_menu_click" data-tracks-url="/guides/ecommerce-for-wordpress-intro/" data-tracks-menu="Mobile Menu">Introduction to eCommerce for WordPress</a></li>
+		<li id="menu-item-3934288" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3934288"><a href="https://woocommerce.com/hosting-solutions/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/hosting-solutions/" data-tracks-menu="Mobile Menu">WooCommerce hosting</a></li>
+		<li id="menu-item-3665855" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3665855"><a href="/guides/new-store/" data-tracks="nav_menu_click" data-tracks-url="/guides/new-store/" data-tracks-menu="Mobile Menu">New Store Owners</a></li>
+		<li id="menu-item-3665851" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3665851"><a href="/woocommerce-email-marketing/" data-tracks="nav_menu_click" data-tracks-url="/woocommerce-email-marketing/" data-tracks-menu="Mobile Menu">Email Marketing</a></li>
+		<li id="menu-item-3665852" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3665852"><a href="/gdpr/" data-tracks="nav_menu_click" data-tracks-url="/gdpr/" data-tracks-menu="Mobile Menu">GDPR</a></li>
+		<li id="menu-item-3665850" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3665850"><a href="/holiday-tips-archive/" data-tracks="nav_menu_click" data-tracks-url="/holiday-tips-archive/" data-tracks-menu="Mobile Menu">Holiday Tips</a></li>
+	</ul>
+</li>
+	<li id="menu-item-2151029" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2151029"><a href="https://woocommerce.com/meetups/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/meetups/" data-tracks-menu="Mobile Menu">Meetups</a></li>
+	<li id="menu-item-2151031" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2151031"><a href="https://woocommerce.com/develop-woocommerce/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/develop-woocommerce/" data-tracks-menu="Mobile Menu">Develop Extensions</a></li>
+</ul>
+</li>
+<li id="menu-item-3294804" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3294804"><a href="#" data-tracks="nav_menu_click" data-tracks-url="#" data-tracks-menu="Mobile Menu">Customers</a>
+<ul class="sub-menu">
+	<li id="menu-item-3294806" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3294806"><a href="https://woocommerce.com/success-stories/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/success-stories/" data-tracks-menu="Mobile Menu">Success Stories</a></li>
+	<li id="menu-item-2151030" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2151030"><a href="https://woocommerce.com/showcase/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/showcase/" data-tracks-menu="Mobile Menu">Showcase</a></li>
+</ul>
+</li>
+<li id="menu-item-1991212" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1991212"><a href="https://woocommerce.com/product-category/woocommerce-extensions/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/" data-tracks-menu="Mobile Menu">Extensions Store</a></li>
+<li id="menu-item-1991215" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1991215"><a href="https://woocommerce.com/product-category/themes" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/themes" data-tracks-menu="Mobile Menu">Themes Store</a></li>
+<li id="menu-item-1991237" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1991237"><a href="#" data-tracks="nav_menu_click" data-tracks-url="#" data-tracks-menu="Mobile Menu">Support</a>
+<ul class="sub-menu">
+	<li id="menu-item-1991238" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1991238"><a href="https://docs.woocommerce.com/" data-tracks="nav_menu_click" data-tracks-url="https://docs.woocommerce.com/" data-tracks-menu="Mobile Menu">Documentation</a></li>
+	<li id="menu-item-1991239" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1991239"><a href="https://www.woocommerce.com/my-account/tickets/" data-tracks="nav_menu_click" data-tracks-url="https://www.woocommerce.com/my-account/tickets/" data-tracks-menu="Mobile Menu">Get Support</a></li>
+	<li id="menu-item-3862225" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3862225"><a href="https://woocommerce.com/customizations/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/customizations/" data-tracks-menu="Mobile Menu">Customizations</a></li>
+</ul>
+</li>
+<li id="menu-item-1991244" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1991244"><a href="#" data-tracks="nav_menu_click" data-tracks-url="#" data-tracks-menu="Mobile Menu">Blogs</a>
+<ul class="sub-menu">
+	<li id="menu-item-2462288" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2462288"><a href="https://woocommerce.com/blog/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/blog/" data-tracks-menu="Mobile Menu">Learn WooCommerce</a></li>
+	<li id="menu-item-2462289" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2462289"><a href="https://woocommerce.wordpress.com/?utm_source=mainmenu&#038;utm_campaign=wooblogs&#038;utm_medium=woodotcom" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.wordpress.com/?utm_source=mainmenu&amp;utm_campaign=wooblogs&amp;utm_medium=woodotcom" data-tracks-menu="Mobile Menu">Develop WooCommerce</a></li>
+	<li id="menu-item-3960652" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3960652"><a href="https://woocommerce.com/extensions-updates/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/extensions-updates/" data-tracks-menu="Mobile Menu">Extension Updates</a></li>
+</ul>
+</li>
+<li id="menu-item-1991241" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1991241"><a href="https://woocommerce.com/my-account/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/my-account/" data-tracks-menu="Mobile Menu">Account</a>
+<ul class="sub-menu">
+	<li id="menu-item-3459874" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3459874"><a href="https://woocommerce.com/wp-login.php?action=logout&#038;redirect_to=https%3A%2F%2Fwoocommerce.com" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/wp-login.php?action=logout&amp;redirect_to=https%3A%2F%2Fwoocommerce.com" data-tracks-menu="Mobile Menu">Log out</a></li>
+</ul>
+</li>
+</ul></div>		</nav><!-- #site-navigation -->
+		
+			</div>
+
+		</div>
+
+				<a class="skip-link screen-reader-text" href="#site-navigation">Skip to navigation</a>
+		<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+				<div class="header-menu-right-container">
+							<a
+					class="header-menu-login header-menu-link"
+					title="Login"
+					href="/my-account/">
+					Log In with WordPress.com
+				</a>
+				<a
+					class="header-menu-signup header-menu-button wccom-component-button"
+					id="menuItemSignupButton"
+					title="Get Started"
+					href="/start/?nuxentrysource=signup_menu">
+					Get Started
+				</a>
+						<span class="header-menu-right-divider"></span>
+			<button id="header-search-button" class="header-search-button"></button>
+			<div id="header-search" class="header-search header-search-closed">
+				<button id="header-search-close" class="header-search-close">x</button>
+				<form action="https://woocommerce.com/search">
+						<span class="header-search-icon"></span>
+						<input id="header-search-input" class="field" type="text" name="q" />
+						<button type="submit" id="go">
+							<span>Go</span>
+						</button>
+				</form>
+			</div>
+
+			<a
+				class="header-menu-cart"
+				href="https://woocommerce.com/cart/"
+				title="View your shopping cart">
+							</a>
+
+		</div>
+		
+	</header><!-- #masthead -->
+
+	
+	<!-- Begin elements that stick to top on scroll -->
+<div class="product-new-topbar">
+	<div class="topbar-right">
+			<form class="cart" method="post" enctype="multipart/form-data">
+
+			<div class="checkmark-container">
+				<div class="checkmark">
+					<div class="checkmark__circle"></div>
+					<div class="checkmark__stem"></div>
+					<div class="checkmark__kick"></div>
+				</div>
+			</div>
+
+			<div class="scroll-price">
+				<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>79.00</span>			</div>
+
+		<button type="submit"
+				class="single_add_to_cart_button button alt large wccom-tracks__trackable"
+				data-tracks="cart_added_click"
+				data-tracks-position="top"
+				data-tracks-has_payment_method="no">
+			Add to Cart		</button>
+
+		<input type="hidden" name="licence_type" value="single" />
+		<input type="hidden" name="add-to-cart" value="18657" />
+
+			</form>
+	</div>
+
+	<div class="topbar-left">
+		<h1>USPS Shipping Method</h1>
+		<div class="topbar-developer">
+			Developed by WooCommerce		</div>
+	</div>
+</div>
+
+<!-- Begin elements that stick to bottom on small screen -->
+<div class="product-new-bottombar">
+	<a href="#subscription-options" class="button green large">See Subscription Details</a>
+</div>
+		<div id="main">
+			<div class="col-full">
+			
+					
+			<div class="woocommerce-notices-wrapper"></div><div id="product-18657" class="product type-product post-18657 status-publish first instock product_cat-woocommerce-extensions product_cat-developed-by-woo product_cat-shipping-methods product_cat-shipping-carriers downloadable virtual taxable purchasable product-type-simple">
+
+	
+	<div class="summary entry-summary">
+			</div>
+
+		<div class="fix"></div>
+	<div class="entry entry-content">
+		<div class="product-new-header">
+	<nav class="woocommerce-breadcrumb"><a href="https://woocommerce.com/product-category/woocommerce-extensions/">All Extensions</a>&nbsp;&#47;&nbsp;<a href="https://woocommerce.com/product-category/woocommerce-extensions/shipping-methods/">Shipping</a>&nbsp;&#47;&nbsp;<a href="https://woocommerce.com/product-category/woocommerce-extensions/shipping-methods/shipping-carriers/">Carriers</a>&nbsp;&#47;&nbsp;USPS Shipping Method</nav>	<h1>USPS Shipping Method</h1>
+				Developed by WooCommerce	</div>
+<h1><b>Get real-time rates from the largest shipping network in the US</b></h1>
+<p><span style="font-weight: 400;">Show your customers accurate shipping rates automatically with our integration for USPS,  </span><span style="font-weight: 400;">the largest delivery network in United States.</span></p>
+<p>Your store must use US Dollars for its currency and the United States, US Virgin Islands or Puerto Rico as the base country. It works with inches <code>(in)</code> and pounds <code>(lbs)</code>, but other units can be converted automatically.</p>
+<p>USPS calculates quotes worldwide.</p>
+<table>
+<thead>
+<tr>
+<th>Domestic</th>
+<th>International</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding: 8px;">
+<ul>
+<li>First Class</li>
+<li>Flat Rate</li>
+<li>Priority Mail</li>
+<li>Priority Mail Express</li>
+<li>Standard Post</li>
+<li>Media Mail</li>
+<li>Library Mail</li>
+</ul>
+</td>
+<td style="padding: 8px;">
+<ul>
+<li>First Class Mail® International Letters and Envelopes</li>
+<li>Global Express Guaranteed (GXG)</li>
+<li>Priority Mail International</li>
+<li>Priority Mail International Flat Rate</li>
+<li>International Postcards</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p><b>We recommend using this extension in combination with </b><strong>our free service <a href="https://woocommerce.com/products/shipping/" target="_blank" rel="noopener noreferrer">WooCommerce Shipping</a>, which creates discounted shipping labels right from your WooCommerce dashboard.</strong></p>
+<h3>Other features:</h3>
+<ul>
+<li>Enable/disable, edit the names of, and add costs to services</li>
+<li><strong>Pack items individually</strong> or using the built in <a href="http://docs.woocommerce.com/document/usps-shipping/#box-packing"><strong>box packer</strong></a></li>
+</ul>
+<figure id="attachment_2792014" aria-describedby="caption-attachment-2792014" style="width: 620px" class="wp-caption aligncenter"><a href="https://woocommerce.com/wp-content/uploads/2013/01/usps-box-packing-settings.png"><img class="wp-image-2792014 size-medium" src="https://woocommerce.com/wp-content/uploads/2013/01/usps-box-packing-settings.png?w=620" alt="" width="620" height="104" srcset="https://woocommerce.com/wp-content/uploads/2013/01/usps-box-packing-settings.png 2574w, https://woocommerce.com/wp-content/uploads/2013/01/usps-box-packing-settings.png?resize=620,104 620w, https://woocommerce.com/wp-content/uploads/2013/01/usps-box-packing-settings.png?resize=768,128 768w, https://woocommerce.com/wp-content/uploads/2013/01/usps-box-packing-settings.png?resize=650,109 650w, https://woocommerce.com/wp-content/uploads/2013/01/usps-box-packing-settings.png?resize=1536,257 1536w, https://woocommerce.com/wp-content/uploads/2013/01/usps-box-packing-settings.png?resize=2048,342 2048w, https://woocommerce.com/wp-content/uploads/2013/01/usps-box-packing-settings.png?resize=300,50 300w, https://woocommerce.com/wp-content/uploads/2013/01/usps-box-packing-settings.png?resize=958,160 958w" sizes="(max-width: 620px) 100vw, 620px" /></a><figcaption id="caption-attachment-2792014" class="wp-caption-text">Box Packing Settings</figcaption></figure>
+<div class="woo-sc-box note   ">The box packer is volume based. This provides good results in most cases but are never be as accurate as a real person packing a box (see <a href="http://en.wikipedia.org/wiki/Bin_packing_problem">BIN Packing Problem</a>). Therefore, it is important to understand that packing results are as accurate as possible, and any anomalies should be acceptable.</div>
+	</div>
+	<!-- Begin sidebar -->
+<div class="product-new-sidebar" style="display:none;">
+		
+		
+				<a name="subscription-options">&nbsp;</a>
+
+		<form id="wccom-product-page__cart-form" class="cart" method="post" enctype="multipart/form-data">
+		<div class="checkmark-container">
+			<div class="checkmark">
+				<div class="checkmark__circle"></div>
+				<div class="checkmark__stem"></div>
+				<div class="checkmark__kick"></div>
+			</div>
+		</div>
+
+		<div class="tier-price"
+			data-price="79"
+			data-currency="&#036;">
+			<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>79.00</span>		</div>
+		<div class="billed-annually">billed annually</div>
+
+		<div class="support-policy">
+			<a target="_blank" href="https://woocommerce.com/support-policy/">
+				1 year of updates and support			</a>
+		</div>
+
+		<div class="money-back-guarantee">30-day money-back guarantee</div>
+
+		<input type="hidden" name="licence_type" value="single" />
+		<input type="hidden" name="add-to-cart" value="18657" />
+
+		<p class="wccom-product-page__uk-vat-tax-text">
+			Prices shown in USD and exclude VAT		</p>
+
+		<button
+			id="wccom-product-page__buy-now-button"
+			type="submit"
+			class="single_add_to_cart_button button alt large  wccom-tracks__trackable tier-free-button"
+			name="buy-now-button"
+			data-tracks="cart_added_click"
+			data-tracks-has_payment_method="no"
+			value="Buy Now">
+			Buy Now		</button>
+
+		<button type="submit"
+			class="single_add_to_cart_button button light large wccom-tracks__trackable transparent-button "
+			data-tracks="cart_added_click"
+			data-tracks-position="right"
+			data-tracks-has_payment_method="no">
+			Add to Cart		</button>
+
+		
+	</form>
+
+	
+	
+		<div class="gray-sidebar-widget support-box">
+		<h4>Support</h4>
+		<div class="handled-by">Handled by WooCommerce</div>
+							<div>
+				<a href="https://docs.woocommerce.com/document/usps-shipping-method"
+					class="single_docs_button button light large wccom-tracks__trackable"
+					data-tracks="docs_btn_product_page_click">Documentation</a>
+			</div>
+			<!-- Uncomment to add support modal button to sidebar -->
+			<!-- 				<a
+					class="single_docs_button button light large"
+					href="#"
+					data-extension="usps-shipping-method"
+					id="wccom-support-modal-open-button">
+					Contact Support
+				</a>
+			 -->
+							<div class="get_support_privacy_policy">
+				<a target="_blank" href="https://woocommerce.com/privacy-policy/">
+					WooCommerce's Privacy Policy				</a>
+			</div>
+			</div>
+	
+	<div class="details-box gray-sidebar-widget">
+		<h4 class="details-heading">Details</h4>
+		<table border="0" cellpadding="0" cellspacing="0">
+							<tr>
+					<td>Version</td>
+					<td>4.4.40</td>
+				</tr>
+				<tr>
+					<td>Last&nbsp;Updated</td>
+					<td>
+						2020-04-01												<div><a href="http://dzv365zjfbd8v.cloudfront.net/changelogs/woocommerce-shipping-usps/changelog.txt">Changelog</a></div>
+											</td>
+				</tr>
+						<tr>
+				<td>
+					Category
+				</td>
+				<td>
+					<a href="https://woocommerce.com/product-category/woocommerce-extensions/" rel="tag">WooCommerce Extensions</a>
+<a href="https://woocommerce.com/product-category/woocommerce-extensions/developed-by-woo/" rel="tag">Developed by Woo</a>
+<a href="https://woocommerce.com/product-category/woocommerce-extensions/shipping-methods/" rel="tag">Shipping</a>
+<a href="https://woocommerce.com/product-category/woocommerce-extensions/shipping-methods/shipping-carriers/" rel="tag">Carriers</a>				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+<div class="reviews">
+	<div id="reviews">
+	<a name="reviews-start"></a>
+	<h2 class="contributions-title">Customer reviews</h2>
+				<a href="/sso?product=18657" class="button large">Log In To Add Your Review</a>
+	
+	
+		<div class="wccom-product-ratings__sort-container">
+		<span>Sort reviews by:</span>
+		<form method="get" action="#comments" class="contributions-filter">
+			
+			<p class="form-row " id="comments_filter_field" data-priority=""><span class="woocommerce-input-wrapper"><select name="comments_filter" id="comments_filter" class="select " data-allow_clear="true" data-placeholder="Most helpful">
+							<option value=""  selected='selected'>Most helpful</option><option value="comment_type=review&amp;sort_rating_high=1" >Rating (highest to lowest)</option><option value="comment_type=review&amp;sort_rating_low=1" >Rating (lowest to highest)</option><option value="comment_type=review&amp;sort_newest=1" >Newest</option><option value="comment_type=review&amp;sort_oldest=1" >Oldest</option>
+						</select></span></p>
+			<noscript><button type="submit" class="button">Go</button></noscript>
+		</form>
+	</div>
+	<div id="comments">
+		<div id="contributions-list">
+			<hr>
+
+<div class="contributions-container">
+	
+		<p class="woocommerce-noreviews">
+			We are accepting reviews for this product, and will display them when we get a few more!		</p>
+
+	</div>
+		</div>
+	</div>
+
+	<div class="clear"></div>
+
+		<noscript>
+		<style type="text/css">
+			.contribution-form-wrapper { display: block; }
+		</style>
+	</noscript>
+
+</div>
+</div>
+</div>
+
+
+		
+		</div><!--/.col-full-->
+	</div><!--/#main-->
+	
+	
+
+<!-- #Get Started -->
+<div id="get-woocommerce" class="page-section-get-woocommerce">
+	<div class="col-full">
+		<div class="cta-text">
+			<p>WooCommerce - the <strong>most customizable eCommerce platform</strong> for building <strong>your online business.</strong></p>
+		</div>
+		<div class="cta-btn">
+							<a href="https://woocommerce.com/start/?nuxentrysource=footer_cta" class="wc_button_alt wc-get-started-footer">Get Started</a>
+					</div>
+	</div>
+</div><!-- /#Get Started -->
+
+
+<!-- .page-section-gurantee-checkout -->
+<div id="guarantee" class="page-section-gurantee page-section-gurantee-checkout">
+	<div class="col-full">
+		<div class="guarantee-icon">
+			<ul>
+				<li><i class="fa fa-check-circle fa-3x"></i><span class="nav-text"> 30 day <strong>money back guarantee</a></strong></span></li>
+			</ul>
+		</div>
+		<div class="support-icon">
+			<ul>
+				<li><i class="fa fa-life-ring fa-3x"></i><span class="nav-text"> <strong>Support</strong> teams across the world</span></li>
+			</ul>
+		</div>
+		<div class="secure-icon">
+			<ul>
+				<li><i class="fa fa-lock fa-3x"></i><span class="nav-text"> <strong>Safe &amp; Secure</strong> online payment</span></li>
+			</ul>
+		</div>
+	</div>
+</div><!-- /.page-section-gurantee -->
+
+<!-- .page-section-gurantee -->
+<div id="guarantee" class="page-section-gurantee">
+	<div class="col-full">
+		<div class="guarantee-icon">
+			<ul>
+				<li><i class="fa fa-check-circle fa-3x"></i><span class="nav-text"> 30 day <strong><a href="https://woocommerce.com/refund-policy/">money back guarantee</a></strong></span></li>
+			</ul>
+		</div>
+		<div class="support-icon">
+			<ul>
+				<li><i class="fa fa-life-ring fa-3x"></i><span class="nav-text"> <strong><a href="https://docs.woocommerce.com/">Support</a></strong> teams across the world</span></li>
+			</ul>
+		</div>
+		<div class="secure-icon">
+			<ul>
+				<li><i class="fa fa-lock fa-3x"></i><span class="nav-text"> <strong><a href="https://stripe.com/help/security">Safe &amp; Secure</a></strong> online payment</span></li>
+			</ul>
+		</div>
+	</div>
+</div><!-- /.page-section-gurantee -->
+
+	
+	<footer id="footer" class="site-footer">
+		<div class="col-full">
+
+			
+	<div id="sitemap">
+
+			<div class="block"><h4>Who we are</h4><ul id="menu-footer-1" class="footer-nav"><li id="menu-item-48509" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48509"><a href="/about/" data-tracks="nav_menu_click" data-tracks-url="/about/" data-tracks-menu="Footer 1">About</a></li>
+<li id="menu-item-48515" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48515"><a href="https://automattic.com/about/#filter-name" data-tracks="nav_menu_click" data-tracks-url="https://automattic.com/about/#filter-name" data-tracks-menu="Footer 1">Team</a></li>
+<li id="menu-item-1146787" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1146787"><a href="https://automattic.com/work-with-us/" data-tracks="nav_menu_click" data-tracks-url="https://automattic.com/work-with-us/" data-tracks-menu="Footer 1">Work With Us</a></li>
+<li id="menu-item-385911" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-385911"><a href="https://woocommerce.com/style-guide/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/style-guide/" data-tracks-menu="Footer 1">Style Guide</a></li>
+</ul></div><div class="block"><h4>WooCommerce</h4><ul id="menu-footer-2" class="footer-nav"><li id="menu-item-2151148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2151148"><a href="https://woocommerce.com/features/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/features/" data-tracks-menu="Footer 2">Features</a></li>
+<li id="menu-item-5683460" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5683460"><a href="https://woocommerce.com/payments/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/payments/" data-tracks-menu="Footer 2">Payments</a></li>
+<li id="menu-item-5683461" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5683461"><a href="https://woocommerce.com/products/shipping/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/products/shipping/" data-tracks-menu="Footer 2">Shipping</a></li>
+<li id="menu-item-48548" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat current-product-ancestor current-menu-parent current-product-parent menu-item-48548"><a href="https://woocommerce.com/product-category/woocommerce-extensions/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/woocommerce-extensions/" data-tracks-menu="Footer 2">Extension Store</a></li>
+<li id="menu-item-2151150" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2151150"><a href="https://woocommerce.com/blog/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/blog/" data-tracks-menu="Footer 2">eCommerce blog</a></li>
+<li id="menu-item-2151151" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2151151"><a href="https://woocommerce.wordpress.com/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.wordpress.com/" data-tracks-menu="Footer 2">Development blog</a></li>
+<li id="menu-item-2151154" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2151154"><a href="https://ideas.woocommerce.com/forums/133476-woocommerce" data-tracks="nav_menu_click" data-tracks-url="https://ideas.woocommerce.com/forums/133476-woocommerce" data-tracks-menu="Footer 2">Ideas board</a></li>
+<li id="menu-item-3762849" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3762849"><a href="https://woocommerce.com/mobile/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/mobile/" data-tracks-menu="Footer 2">Mobile App</a></li>
+<li id="menu-item-5364136" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5364136"><a href="https://woocommerce.com/community/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/community/" data-tracks-menu="Footer 2">Community</a></li>
+</ul></div><div class="block"><h4>Other products</h4><ul id="menu-footer-5" class="footer-nav"><li id="menu-item-2151158" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2151158"><a href="https://woocommerce.com/storefront/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/storefront/" data-tracks-menu="Footer 5">Storefront</a></li>
+<li id="menu-item-2151143" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2151143"><a href="https://woocommerce.com/products/wooslider/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/products/wooslider/" data-tracks-menu="Footer 5">WooSlider</a></li>
+<li id="menu-item-2151141" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2151141"><a href="https://woocommerce.com/products/sensei/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/products/sensei/" data-tracks-menu="Footer 5">Sensei</a></li>
+<li id="menu-item-2151142" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2151142"><a href="https://woocommerce.com/product-category/sensei-extensions/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/product-category/sensei-extensions/" data-tracks-menu="Footer 5">Sensei Extensions</a></li>
+</ul></div><div class="block"><h4>Support</h4><ul id="menu-footer-3" class="footer-nav"><li id="menu-item-48579" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48579"><a href="https://docs.woocommerce.com/" data-tracks="nav_menu_click" data-tracks-url="https://docs.woocommerce.com/" data-tracks-menu="Footer 3">Documentation</a></li>
+<li id="menu-item-2703418" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2703418"><a href="https://woocommerce.com/customizations/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/customizations/" data-tracks-menu="Footer 3">Customizations</a></li>
+<li id="menu-item-48617" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48617"><a href="https://woocommerce.com/support-policy/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/support-policy/" data-tracks-menu="Footer 3">Support Policy</a></li>
+<li id="menu-item-385913" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-385913"><a href="https://woocommerce.com/contact-us/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/contact-us/" data-tracks-menu="Footer 3">Contact</a></li>
+</ul></div><div class="block"><h4>We recommend</h4><ul id="menu-footer-4" class="footer-nav"><li id="menu-item-3977629" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3977629"><a href="https://woocommerce.com/experts/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/experts/" data-tracks-menu="Footer 4">WooExperts</a></li>
+<li id="menu-item-219530" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-219530"><a href="https://woocommerce.com/hosting-solutions/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/hosting-solutions/" data-tracks-menu="Footer 4">Hosting Solutions</a></li>
+<li id="menu-item-1845677" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1845677"><a href="https://docs.woocommerce.com/document/frequently-asked-questions/" data-tracks="nav_menu_click" data-tracks-url="https://docs.woocommerce.com/document/frequently-asked-questions/" data-tracks-menu="Footer 4">Pre-sales FAQ</a></li>
+<li id="menu-item-3300924" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3300924"><a href="https://woocommerce.com/success-stories/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/success-stories/" data-tracks-menu="Footer 4">Success Stories</a></li>
+<li id="menu-item-2439936" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2439936"><a href="https://woocommerce.com/design-feedback/" data-tracks="nav_menu_click" data-tracks-url="https://woocommerce.com/design-feedback/" data-tracks-menu="Footer 4">Design Feedback Group</a></li>
+</ul></div>	</div>
+
+	
+		</div><!-- .col-full -->
+
+		<div id="social-legal-auto">
+			<div class="col-full">
+				<div id="social-legal" class="footer-social-legal">
+					<div class="follow-buttons">
+						<a class="twitter" href="http://www.twitter.com/woocommerce" target="blank"><span>Follow us on Twitter</span></a>
+						<a class="facebook" href="http://www.facebook.com/woocommerce" target="blank"><span>Follow Us on Facebook</span></a>
+						<a class="instagram" href="http://www.instagram.com/woocommerce" target="blank"><span>Follow Us on Instagram</span></a>
+						<a class="rss" href="http://feeds.feedburner.com/WooThemes" target="blank"><span>Subscribe to our blog</span></a>
+					</div>
+
+					<p class="copyright">
+						<strong>Copyright WooCommerce 2020</strong><br>
+						<a href="https://woocommerce.com/terms-conditions/">Terms &amp; Conditions</a> <a class="privacy-policy" href="https://automattic.com/privacy/" target="blank">Privacy Policy</a>
+					</p>
+
+					<div class="automattic">
+							<a href="https://www.automattic.com/" target="blank" title="An Automattic company">An Automattic company</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</footer><!-- #colophon -->
+
+	
+</div><!-- #page -->
+
+			<script type="text/javascript">
+				// coupon
+				var $coupon_form = jQuery('.woocommerce-checkout form.woocommerce-form-coupon');
+				var $coupon_info = jQuery('div.woocommerce-form-coupon-toggle > .woocommerce-info');
+				$coupon_info.removeClass('woocommerce-info');
+				var $coupon_toggle = jQuery('.woocommerce-checkout div.woocommerce-form-coupon-toggle');
+				$coupon_toggle.insertAfter('table.woocommerce-checkout-review-order-table');
+				$coupon_form.insertAfter($coupon_toggle);
+
+				// errors
+				jQuery(document).on('checkout_error updated_checkout', function() {
+					jQuery('form.woocommerce-checkout').children('.woocommerce-error').prependTo('#customer_details');
+				});
+
+				// login
+				var $login_notice = jQuery('.woocommerce-checkout a.showlogin').parent('.woocommerce-info');
+				var $login_form = $login_notice.next('form.login');
+				$login_notice.prependTo('#customer_details').addClass('login-notice');
+				$login_form.insertAfter($login_notice);
+				jQuery( document.body ).on( 'click', 'a.showlogin', function() {
+					jQuery( '.create-account' ).toggle();
+				});
+
+				// other notices
+				var $notice = jQuery('.woocommerce-checkout .woocommerce').children('.woocommerce-message');
+				$notice.prependTo('#customer_details');
+			</script>
+						<script type="text/javascript" >
+				jQuery(document).ready( function($) {
+					var data = {
+						'action'		: 'woothemes_tracks_ajax',
+						'event_name' 	: 'page_viewed',
+						'properties'	: {"page":"products\/usps-shipping-method"}					};
+
+					jQuery.post( 'https://woocommerce.com/wp-admin/admin-ajax.php', data, function( response ) {
+					});
+				});
+			</script>			<script type="text/javascript">
+				jQuery("#mailchimp-using-products_field").insertAfter("#billing_email_field");
+			</script>
+						<script type="text/javascript">
+			var $mcGoal = {'settings':{'uuid':'2c1434dc56f9506bf3c3ecd21','dc':'us8'}};
+			(function() {
+			var sp = document.createElement('script'); sp.type = 'text/javascript'; sp.async = true; sp.defer = true;
+			sp.src = ('https:' == document.location.protocol ? 'https://s3.amazonaws.com/downloads.mailchimp.com' : 'http://downloads.mailchimp.com') + '/js/goal.min.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sp, s);
+			})();
+			</script>
+			<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--woo yoast-schema-graph--footer'>{"@context":"https://schema.org","@graph":[{"@type":"Product","@id":"https://woocommerce.com/products/usps-shipping-method/#product","name":"USPS Shipping Method","url":"https://woocommerce.com/products/usps-shipping-method/","description":"Get shipping rates from the USPS API which handles both domestic and international parcels.","sku":"WOO436","offers":[{"@type":"Offer","price":"79.00","priceValidUntil":"2021-12-31","priceSpecification":{"price":"79.00","priceCurrency":"USD","valueAddedTaxIncluded":"false"},"priceCurrency":"USD","availability":"http://schema.org/InStock","url":"https://woocommerce.com/products/usps-shipping-method/","seller":{"@id":"https://woocommerce.com/#organization"},"category":"<a href=\"https://woocommerce.com/product-category/woocommerce-extensions/\" rel=\"tag\">WooCommerce Extensions</a>, <a href=\"https://woocommerce.com/product-category/woocommerce-extensions/developed-by-woo/\" rel=\"tag\">Developed by Woo</a>, <a href=\"https://woocommerce.com/product-category/woocommerce-extensions/shipping-methods/\" rel=\"tag\">Shipping</a>, <a href=\"https://woocommerce.com/product-category/woocommerce-extensions/shipping-methods/shipping-carriers/\" rel=\"tag\">Carriers</a>"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"3.50","reviewCount":0,"bestRating":5},"mainEntityOfPage":{"@id":"https://woocommerce.com/products/usps-shipping-method/#webpage"},"image":{"@type":"ImageObject","@id":"https://woocommerce.com/products/usps-shipping-method/#woocommerceimageplaceholder","url":"https://woocommerce.com/wp-content/plugins/woocommerce/assets/images/placeholder.png"}}]}</script>
+	<script type="text/javascript">
+		var c = document.body.className;
+		c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+		document.body.className = c;
+	</script>
+	<script type="text/javascript" >
+				jQuery(document).ready( function($) {
+					var data = {
+						'action'		: 'woothemes_tracks_ajax',
+						'event_name' 	: 'product_view',
+						'properties'	: {"product_view_product_name":"USPS Shipping Method"}					};
+
+					jQuery.post( 'https://woocommerce.com/wp-admin/admin-ajax.php', data, function( response ) {
+					});
+				});
+			</script>
+			<script>
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/woocommerce.com\/cart\/","is_cart":"","cart_redirect_after_add":"yes","productName":"USPS Shipping Method","productCategory":"woocommerce","is_admin":""};
+</script>
+<script src='https://woocommerce.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=4.0.0'></script>
+<script>
+var wc_single_product_params = {"i18n_required_rating_text":"Please select a rating","review_rating_required":"yes","flexslider":{"rtl":false,"animation":"slide","smoothHeight":true,"directionNav":false,"controlNav":"thumbnails","slideshow":false,"animationSpeed":500,"animationLoop":false,"allowOneSlide":false},"zoom_enabled":"","zoom_options":[],"photoswipe_enabled":"","photoswipe_options":{"shareEl":false,"closeOnScroll":false,"history":false,"hideAnimationDuration":0,"showAnimationDuration":0},"flexslider_enabled":"","productName":"USPS Shipping Method","productCategory":"woocommerce","is_admin":""};
+</script>
+<script src='https://woocommerce.com/wp-content/plugins/woocommerce/assets/js/frontend/single-product.min.js?ver=4.0.0'></script>
+<script>
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_d60a101b26cbaeb2488e5351501e08eb","fragment_name":"wc_fragments_d60a101b26cbaeb2488e5351501e08eb","request_timeout":"5000","productName":"USPS Shipping Method","productCategory":"woocommerce","is_admin":""};
+</script>
+<script src='https://woocommerce.com/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=4.0.0'></script>
+<script>
+		jQuery( 'body' ).bind( 'wc_fragments_refreshed', function() {
+			jQuery( 'body' ).trigger( 'jetpack-lazy-images-load' );
+		} );
+	
+</script>
+<script src='https://woocommerce.com/wp-content/plugins/wccom-plugins/site-search/assets/js/lib/algoliasearch.min.js?ver=5.4'></script>
+<script>
+var wtAlgoliaFrontendParams = {"applicationID":"EWMLW36CPJ","apiKey":"5c96947060b5e467ba415d8300d18057","loading_img":"https:\/\/woocommerce.com\/wp-content\/plugins\/wccom-plugins\/site-search\/assets\/images\/loading.svg","translations":{"results":"results","seconds":"seconds","post":"post","posts":"posts","product":"product","products":"products","doc":"doc","docs":"docs","more":"more","moreResults":"more results","view":"View","sale":"Sale","result":"result","weCouldntFind":"We couldn't find","inThisCategoryShowingAll":"in this category, showing results for all categories","youCantSortIfDescendant":"You can't sort elements if any one is a descendant of another.","woocommerceProductsFound":"WooCommerce products found","resultsFor":"Results for"}};
+</script>
+<script src='https://woocommerce.com/wp-content/plugins/dist/wccom-plugins/site-search/frontend-scripts.min.js?ver=1.0.8'></script>
+<script src='https://woocommerce.com/wp-includes/js/comment-reply.min.js?ver=5.4'></script>
+<script src='https://woocommerce.com/wp-includes/js/wp-embed.min.js?ver=5.4'></script>
+		<script type="text/javascript"
+			src="https://refer.wordpress.com/wp-content/themes/refer-wordpress/assets/js/referrals.min.js"
+			data-vendor="67386" data-endpoint="https://refer.wordpress.com/clicks/"></script>
+		<!-- WooCommerce JavaScript -->
+<script type="text/javascript">
+jQuery(function($) { 
+_wca.push( {
+				'_en': 'woocommerceanalytics_product_view',
+				'blog_id': '113771570',
+				'pi': '18657',
+				'pn': 'USPS Shipping Method',
+				'pc': 'WooCommerce Extensions/Developed by Woo/Shipping/Carriers',
+				'pp': '79',
+				'pt': 'simple',
+				'ui': 'null',
+			} );
+ });
+</script>
+<script type='text/javascript' src='https://stats.wp.com/e-202015.js' async='async' defer='defer'></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:8.3',blog:'113771570',post:'18657',tz:'2',srv:'woocommerce.com'} ]);
+	_stq.push([ 'clickTrackerInit', '113771570', '18657' ]);
+</script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"5477028e84","applicationID":"151484236","transactionName":"Z1ZQbRYEX0JVUU1dX14cc1oQDF5fG0FQWldcVh9JFgpVRFdG","queueTime":0,"applicationTime":385,"atts":"SxFHG14eTB0WUxsOS01O","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
