@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Подключение системы приема платежей с помощью платежных карт для интернет-магазинов и сайтов. Прием оплат банковскими картами Mastercard и Visa.">
+    <title>iPay Google Pay API Documentation – Internet acquiring iPay.ua</title>
+    <link rel="icon" type="image/png" href="/static/img/favicon.png">
+	<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/main.css?v=1565353992">
+</head>
+<body>
+
+<section class="navbar-wr bg-dark-info">
+  <div class="container">
+    <div class="row">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="https://ecom.ipay.ua/" target=_blank>
+          <span class="logo-descr">Internet acquiring</span>
+          <img src="/static/img/logo.png" alt="" class="d-hidden">
+          <img src="/static/img/logo-xs.png" alt="" class="d-visible">
+        </a>
+           
+       
+        <ul class="nav-lang-phone navbar-nav hidden-mob">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                en
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="/doc?lang=ua">ua</a>
+              <a class="dropdown-item" href="/doc?lang=ru">ru</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</section>
+
+<section class="breadcrumb-wr breadcrumb-wr-info">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">Google Pay Integration Guide</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="internet-acquiring-wr">
+  <div class="container"> 
+      <div class="row">
+          <div class="col-lg-3 col-md-12 col-xs-12">
+                <div class="list-info">
+        				 <ul class="list-one">
+                             <li><a href="#step-one" class="link-menu">1. General information</a></li>
+                             <li><a href="#step-two" class="link-menu">2. Integration</a>
+                                 <ul class="list-two">
+                                     <li><a href="#steps-one" class="link-menu">2.1 Connect via iPay page</a></li>
+                                     <li><a href="#steps-two" class="link-menu">2.2 Direct integration via Google Pay API</a>
+                                         <ul class="list-two">
+                                             <li><a href="#link-steps-one" class="link-menu"> 2.2.1 Web integration</a></li>
+                                             <li><a href="#link-steps-two" class="link-menu">2.2.2 Android integration</a></li>
+                                             <li><a href="#link-steps-three" class="link-menu">2.2.3 Configuration</a></li>
+                                             <li><a href="#GooglePayToken" class="link-menu">2.2.4 Google Pay Token</a></li>
+                                         </ul>
+                                     </li>
+                                 </ul>
+                             </li>
+                             <li><a href="#step-three" class="link-menu">3. Payment processing</a></li>
+                                 <ul class="list-two">
+                                     <li><a href="#steps-three" class="link-menu"> 3.1 Configuration</a></li>
+                                     <li><a href="#Sandbox" class="link-menu"> 3.2 Sandbox</a></li>
+                                     <li><a href="#steps-four" class="link-menu">3.3 General structure of the request</a></li>
+                                     <li><a href="#steps-five" class="link-menu">3.4 List of requests</a>
+                                         <ul class="list-two">
+                                             <li><a href="#link-steps-four" class="link-menu"> 3.4.1 PaymentCreate</a></li>
+                                             <li><a href="#PaymentVerify3DS" class="link-menu">3.4.2 PaymentVerify3DS</a></li>
+                                             <li><a href="#link-steps-five" class="link-menu">3.4.3 PaymentSale</a></li>
+                                             <li><a href="#link-steps-six" class="link-menu">3.4.4 PaymentCancel</a></li>
+                                             <li><a href="#link-steps-seven" class="link-menu">3.4.5 StatusRequest</a></li>
+                                         </ul>
+                                     </li>
+                                     <li><a href="#steps-six" class="link-menu">3.5 System errors</a>
+                                     <li><a href="#steps-seven" class="link-menu">3.6 Bank error groups</a>
+                                 </ul>
+
+                         </ul>
+        				</div>
+          </div>
+          <div class="col-lg-9 col-md-12 col-xs-12">
+                   <h2 class="info-title mob-info-title">Google Pay Integration Guide</h2>
+                  <div class="wrap-text-info" id="stepone">
+                      <h3 id="step-one">1. General information</h3>
+                      <p>Google Pay ™ is an instant payment method from Google that allows you to pay with your card easily and quickly, without having to enter payment information for each payment. Card information is stored securely on Google. This method is available for payment on mobile apps on any Android device and when making a payment in Chrome.</p>
+<!--
+                      <p class="text-note">Note: the description below applies to provision of this service directly by displaying the Google Pay lightbox at the website of payment recipient (e-store) or in the mobile application.</p>
+-->
+                  </div>
+                  <div class="wrap-text-info" id="step-two">
+                      <h3>2. Integration</h3>
+                      <p class="list-title" id="steps-one">2.1 Connect via iPay page</p>
+                      <p>With this method of connection, there is no need for additional integrations. The Google Pay button will be displayed on the iPay page.</p>
+                      <p class="list-title" id="steps-two">2.2 Direct integration via Google Pay API</p>
+                      <p class="list-title" id="link-steps-one">2.2.1 Web integration</p>
+                      <p>To connect Google Pay to your website, follow the instructions below:</p>
+                      <p>Documentation: <a href="https://developers.google.com/pay/api/web"> https://developers.google.com/pay/api/web</a></p>
+                      <p>Branding requirements: <a href="https://developers.google.com/pay/api/web/guides/brand-guidelines">https://developers.google.com/pay/api/web/guides/brand-guidelines</a></p>
+                      <p class="list-title" id="link-steps-two">2.2.2 Android integration</p>
+                      <p>To connect Google Pay to your mobile app, follow the instructions below:</p>
+                      <p>Documentation: <a href="https://developers.google.com/pay/api/android"> https://developers.google.com/pay/api/android</a></p>
+                      <p>Branding requirements: <a href="https://developers.google.com/pay/api/android/guides/brand-guidelines">https://developers.google.com/pay/api/android/guides/brand-guidelines</a></p>
+                      <p class="list-title" id="link-steps-three">2.2.3 Configuration</p>
+                      <p>The values of the parameters passed to the <a href="https://developers.google.com/pay/api/web/reference/object#PaymentMethod" target=_blank>PaymentMethod</a> object:</p>
+                      <p>allowedAuthMethods = ["PAN_ONLY", "CRYPTOGRAM_3DS"];<br>
+                          allowedCardNetworks = ['MASTERCARD', 'VISA'];<br>
+                          tokenizationSpecification.type = "PAYMENT_GATEWAY";<br>
+                          tokenizationSpecification.parameters.gateway = "ipayua";<br>
+                          tokenizationSpecification.parameters.gatewayMerchantId = "YOUR_IPAY_MERCHANT_ID".<br><br>
+                          
+                          Client's billing address is not required for iPay Google Pay API requests.
+                      </p>
+                      <p class="list-title" id="GooglePayToken">2.2.4 Google Pay Token</p>
+<p>
+                  In response, Google shall return the PaymentData item, and the field paymentMethodData.tokenizationData.token shall contain a safely encrypted Google Pay Token.<br><br>
+                  An example of Google Pay Token:
+                                    <pre>
+{ 
+   "signature":"MEUCIEJrIcKJjJJMcWHpCKnyh8Y9T6yBWw5eGl7sXpK/3/rZAiEApjQc46NPbUKNOuGqov9yZEgpIl5ZHD/Ud0CJDf6HTAo\u003d",
+   "intermediateSigningKey":{ 
+      "signedKey":"{\"keyValue\":\"MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE4clrDUue7fDXNliISLuov7XE5tPJriFeulNnmRjOwSs+CnfHubUF5nKtUBxxfVjYOEv83IQfVjjFgRH3P00I+A\u003d\u003d\",\"keyExpiration\":\"1566069507000\"}",
+      "signatures":[ 
+         "MEQCIFpxY0DQODL76+01FZbGlYyiogKpOqZYR728rEV7ebZ0AiB4uQesvvP8N05wB7ICt1vsjfYaV8x9ztG/rMvaDkx0iw\u003d\u003d"
+      ]
+   },
+   "protocolVersion":"ECv2",
+   "signedMessage":"{\"encryptedMessage\":\"jooDzaMBCjVrOlf7qelBoHyeMzLcqUdQ09+m8OkSyjqJkdXKDS4mkF9nqlJJyckcW2/bHqSIOng1f4GWntBxsXMvpe6ehWd+9HT3OJ47lGBcs8YDqfJliUljmf5qA9H0MOAdWrKTJffNy9ERkFl8y+kKzloPLJuBWDZvoiM8svfiVEP/OtNuuWWEOIJeEkVOrGkkzk8Q0rdlPl3vLW+uJEXLC2WLQottj3Y46zC74K2mXoAURp8UhlOhnMns+IurumflnpA660EEX/p+eMtB2yzlxMgx61EAwHoWd8kRpJpoWdQo7gTUqgLkzkBSIG33BfGSXDtuPTQwTRrEOPEPsGdGMQ36TcfN4CKP4OOMO7gbXo7SsQ47Xa+44v0lgoxfkpxDq/ucfble3d9DK/4/xu5ROEFPvyBT7GMG3U4yogsPU87HDBzJWoqqxUwx94dtbzr6l5qhXFh9cmbzPJMddEhgnIsA/fdN4VdoYZ4GZ956+94QJYIuZm5PPMhLIcXAzsG19O+9ZqadYcy1mtNNiTEANl/b0YXp2NDP+PQ8yG1PSYh7Onkfig\u003d\u003d\",\"ephemeralPublicKey\":\"BLg164ZqP/aGF9w0o79LD90XEs1oJ+WVflQL2T0CWjyKQmopI76a8KQ7UkF99bnx1ngYUXNSKz7sFht9MnTAXB8\u003d\",\"tag\":\"xdw0JgykkDXzdTGv9dvIjOGcZ9yVXG9TsRun9IwVhuo\u003d\"}"
+}
+                  </pre>
+                  To charge the payment card stored under Google Pay, Google Pay Token value must be encoded with the Base64 function and send to the iPay Google Pay API in <a href="#link-steps-four">PaymentCreate</a> request.
+                  </p>
+                  </div>
+              <div class="wrap-text-info" id="#step-three">
+                  <h3 id="step-three">3. Payment processing</h3>
+                  <p class="list-title" id="steps-three">3.1 Configuration</p>
+                  <p>In order to interact with the iPay Google Pay API, you need to get a login (merchant ID) and sign key.</p>
+                  <p>URL for requests: <a href="https://api-googlepay.ipay.ua">https://api-googlepay.ipay.ua</a></p>
+                  <p>Transmission format: JSON data via HTTP method POST</p>
+                  <p>Encoding: UTF-8</p>
+                  <p>Signature algorithm (sign field in request): <br>
+                      You need to combine the following lines into one: request time (field request.auth.time) and sign key and encrypt it with SHA3-512 algorithm.
+                  </p>
+                  <p class="list-title" id="Sandbox">3.2 Sandbox</p>
+                  <p>The Google Pay payment method is available also under the Sandbox environment, value of <a href="https://developers.google.com/pay/api/web/reference/object#PaymentOptions" target=_blank>PaymentOptions</a> object's property "environment" must be set to "TEST".<br><br>
+                  Sandbox payments are emulated without real card charge.<br><br>
+                  3D Secure is enabled for invoice more than 500 UAH.
+                  </p>
+                  <p class="list-title" id="steps-four">3.3 General structure of the request</p>
+                  <div class="table-responsive">
+                      <table class="table table-bordered">
+                          <tr class="table-title">
+                              <td><strong>Field</strong></td>
+                              <td><strong>Type</strong></td>
+                              <td><strong>Description</strong></td>
+                          </tr>
+                          <tr>
+                              <td>request</td>
+                              <td>object</td>
+                              <td>Request object</td>
+                          </tr>
+                          <tr>
+                              <td>request.auth</td>
+                              <td>object</td>
+                              <td>Authentication object</td>
+                          </tr>
+                          <tr>
+                              <td>request.auth.login</td>
+                              <td>string</td>
+                              <td>Merchant ID</td>
+                          </tr>
+                          <tr>
+                              <td>request.auth.time</td>
+                              <td>string</td>
+                              <td>Request time in Europe/Kiev time zone <br>
+                                  Format: YYYY-MM-DD HH:MM:SS<br>
+                                  Example: 2017-01-01 00:00:00
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>request.auth.sign</td>
+                              <td>string</td>
+                              <td>Request signature</td>
+                          </tr>
+                          <tr>
+                              <td>request.action</td>
+                              <td>string</td>
+                              <td>The name of the request</td>
+                          </tr>
+                          <tr>
+                              <td>request.body</td>
+                              <td>object</td>
+                              <td>The body of the request</td>
+                          </tr>
+                      </table>
+                  </div>
+                  <p class="list-title" >Request example</p>
+                  <div class="highlight">
+                  <pre>
+{
+    "request": {
+        "auth": {
+            "login": "test",
+            "time": "2018-07-09 03:40:37",
+            "sign": "a12a4d5eb7da121bc04d360a5c11fd7be246817f7ac1845b17eb00dc94b74a7cfdced473 ..."
+        },
+        "action": "PaymentCreate",
+        "body": {
+            "msisdn": "380931234567",
+            "invoice": 100,
+            "token": "eyJwYXltZW50RGF0YSI6eyJ2ZXJzaW9uIjoiRUNfdjEiLCJkYXRhIjoiZ3ZNWHDJCIn0= ...",
+            "pmt_desc": "Test payment ",
+            "pmt_info": {
+                "custom_merchant_field": 1234567
+            },
+            "guid": "AD68E7675FE111E79A65005056B960DF"
+        }
+    }
+}
+                  </pre>
+                  </div>
+                  <p class="list-title" id="steps-five">3.4 List of requests</p>
+
+                  <p class="list-title" id="link-steps-four">3.4.1 PaymentCreate</p>
+                  <p class="list-title">Request body structure</p>
+                  <div class="table-responsive">
+                      <table class="table table-bordered">
+                          <tr class="table-title">
+                              <td><strong>Field</strong></td>
+                              <td><strong>Type</strong></td>
+                              <td><strong>Description</strong></td>
+                          </tr>
+                          <tr>
+                              <td><strong>Required fields</strong></td>
+
+                          </tr>
+                          <tr>
+                              <td>invoice</td>
+                              <td>integer</td>
+                              <td>Payment amount, in coins</td>
+                          </tr>
+                          <tr>
+                              <td>token</td>
+                              <td>string</td>
+                              <td>GooglePay Token in JSON format encoded with the Base64 function</td>
+                          </tr>
+                          <tr>
+                              <td>pmt_desc</td>
+                              <td>string</td>
+                              <td>Payment description</td>
+                          </tr>
+                          <tr>
+                              <td>pmt_info</td>
+                              <td>object</td>
+                              <td>Payment information provided by the merchant</td>
+                          </tr>
+                          <tr>
+                              <td><strong>Optional fields</strong></td>
+                          </tr>
+                          <tr>
+                              <td>msisdn</td>
+                              <td>string</td>
+                              <td>Phone number</td>
+                          </tr>
+                          <tr>
+                              <td>guid</td>
+                              <td>string</td>
+                              <td>Request GUID generated by the merchant</td>
+                          </tr>
+                      </table>
+                  </div>
+                  <p class="list-title">Request example</p>
+                  <div class="highlight">
+                  <pre>
+{
+    "request": {
+        "auth": {
+            "login": "test",
+            "time": "2018-07-09 03:40:37",
+            "sign": "a12a4d5eb7da121bc04d360a5c11fd7be246817f7ac1845b17eb00dc94b74a7cfdced473 ..."
+        },
+        "action": "PaymentCreate",
+        "body": {
+            "msisdn": "380931234567",
+            "invoice": 100,
+            "token": "eyJwYXltZW50RGF0YSI6eyJ2ZXJzaW9uIjoiRUNfdjEiLCJkYXRhIjoiZ3ZNWHDJCIn0= ...",
+            "pmt_desc": "Test payment",
+            "pmt_info": {
+                "custom_merchant_field": 1234567
+            },
+            "guid": "AD68E7675FE111E79A65005056B960DF"
+        }
+    }
+}
+</pre>
+                  </div>
+                  <p class="list-title">Response structure</p>
+                  <div class="table-responsive">
+                      <table class="table table-bordered">
+                          <tr class="table-title">
+                              <td><strong>Field</strong></td>
+                              <td><strong>Type</strong></td>
+                              <td><strong>Description</strong></td>
+                          </tr>
+                          <tr>
+                              <td>response</td>
+                              <td>object</td>
+                              <td>Response object</td>
+
+                          </tr>
+                          <tr>
+                              <td>response.pmt_id</td>
+                              <td>integer</td>
+                              <td>iPay payment ID</td>
+                          </tr>
+                          <tr>
+                              <td>response.invoice</td>
+                              <td>integer</td>
+                              <td>Payment amount, in coins</td>
+                          </tr>
+                          <tr>
+                              <td>response.amount</td>
+                              <td>integer</td>
+                              <td>Payment amount (including commission), in coins</td>
+                          </tr>
+                          <tr>
+                              <td>response.pmt_status</td>
+                              <td>integer</td>
+                              <td>Payment status (1 - registered, 4 - unsuccessful, 5 - successful)</td>
+                          </tr>
+                          <tr>
+                              <td>response.card_mask</td>
+                              <td>string</td>
+                              <td>Card mask</td>
+
+                          </tr>
+                          <tr>
+                              <td>response.bank_response</td>
+                              <td>object</td>
+                              <td>Bank response</td>
+                          </tr>
+                          <tr>
+                              <td>response.bank_response.error_group</td>
+                              <td>integer</td>
+                              <td>Bank error group</td>
+                          </tr>
+                      </table>
+                  </div>
+                  <p class="list-title">Response example</p>
+                  <div class="highlight">
+                  <pre>
+{
+    "response": {
+        "pmt_id": 1234567,
+        "invoice": 100,
+        "amount": 100,
+        "pmt_status": 5,
+        "card_mask": "111111******1111",
+        "bank_response": {
+            "error_group": 12
+        }
+    }
+}
+</pre>
+                  </div>
+                  <p class="list-title">Response example (3D Secure)</p>
+                  <div class="highlight">
+                  <pre>
+{
+    "response": {
+        "pmt_id": 1234567,
+        "invoice": 100,
+        "amount": 100,
+        "pmt_status": 1,
+        "security_rate": "3D",
+        "security_data": {
+            "url": "https://example.com/acs",
+            "pareq": "eJxlUttygjAQ\/RXHDzAJIoKzZgbr1MEp3mBa7UsnQkZRucjFol\/fhFKlbV5y9uTs7kk24O5TzscO...",
+            "md": "CmD2M2QzYmItOBJjZS00YWAjLTlhMTctNjRiOWYzNWQyNTFk"
+        },
+        "card_mask": "111111******1111",
+        "bank_response": {
+            "error_group": 12
+        }
+    }
+}
+</pre>
+                  </div>
+                  <p class="list-title" id="PaymentVerify3DS">3.4.2 PaymentVerify3DS</p>
+                  <p class="list-title">Request body structure</p>
+                  <div class="table-responsive">
+                      <table class="table table-bordered">
+                          <tr class="table-title">
+                              <td><strong>Field</strong></td>
+                              <td><strong>Type</strong></td>
+                              <td><strong>Description</strong></td>
+                          </tr>
+                          <tr>
+                              <td><strong>Required fields</strong></td>
+
+                          </tr>
+                          <tr>
+                              <td>pmt_id</td>
+                              <td>integer</td>
+                              <td>iPay payment ID</td>
+                          </tr>
+                          <tr>
+                              <td>pares</td>
+                              <td>integer</td>
+                              <td>PaRes value received from the bank to your TermUrl</td>
+                          </tr>
+                          <tr>
+                              <td>md</td>
+                              <td>string</td>
+                              <td>MD value received from the bank to your TermUrl</td>
+                          </tr>
+                          <tr>
+                              <td><strong>Optional fields</strong></td>
+                          </tr>
+                          <tr>
+                              <td>guid</td>
+                              <td>string</td>
+                              <td>Request GUID generated by the merchant</td>
+                          </tr>
+
+                      </table>
+                  </div>
+                  <p class="list-title">Request example</p>
+                  <div class="highlight">
+                  <pre>
+{
+    "request": {
+        "auth": {
+            "login": "test",
+            "time": "2018-07-09 03:40:37",
+            "sign": "a12a4d5eb7da121bc04d360a5c11fd7be246817f7ac1845b17eb00 ..."
+        },
+        "action": "PaymentVerify3DS",
+        "body": {
+            "pmt_id": 1234567,
+            "pares": "eJxlUttygjAQ\/RXHDzAJIoKzZgbr1MEp3mBa7UsnQkZRucjFol...",
+            "md": "CmD2M2QzYmItOBJjZS00YWAjLTlhMTctNjRiOWYzNWQyNTFk"
+            "guid": "e55f613987964042a92bfc2d4f0d610d"
+        }
+    }
+}
+</pre>
+                  </div>
+                  <p class="list-title">Response structure</p>
+                  <div class="table-responsive">
+                      <table class="table table-bordered">
+                          <tr class="table-title">
+                              <td><strong>Field</strong></td>
+                              <td><strong>Type</strong></td>
+                              <td><strong>Description</strong></td>
+                          </tr>
+                          <tr>
+                              <td>response</td>
+                              <td>object</td>
+                              <td>Response object</td>
+
+                          </tr>
+                          <tr>
+                              <td>response.pmt_id</td>
+                              <td>integer</td>
+                              <td>iPay payment ID</td>
+                          </tr>
+                          <tr>
+                              <td>response.invoice</td>
+                              <td>integer</td>
+                              <td>Payment amount, in coins</td>
+                          </tr>
+                          <tr>
+                              <td>response.amount</td>
+                              <td>integer</td>
+                              <td>Payment amount (including commission), in coins</td>
+                          </tr>
+                          <tr>
+                              <td>response.pmt_status</td>
+                              <td>integer</td>
+                              <td>Payment status (3 - authorized payment, 4 - unsuccessful, 5 - successful)</td>
+                          </tr>
+                          <tr>
+                              <td>response.card_mask</td>
+                              <td>string</td>
+                              <td>Card mask</td>
+
+                          </tr>
+                          <tr>
+                              <td>response.bank_response</td>
+                              <td>object</td>
+                              <td>Bank response</td>
+                          </tr>
+                          <tr>
+                              <td>response.bank_response.error_group</td>
+                              <td>integer</td>
+                              <td>Bank error group</td>
+                          </tr>
+                      </table>
+                  </div>
+                  <p class="list-title">Response example</p>
+                  <div class="highlight">
+                  <pre>
+{
+    "response": {
+        "pmt_id": 1234567,
+        "invoice": 100,
+        "amount": 100,
+        "pmt_status": 5,
+        "card_mask": "111111******1111",
+        "bank_response": {
+            "error_group": null
+        }
+    }
+}
+</pre>
+                  </div>
+
+                  <p class="list-title" id="link-steps-five">3.4.3 PaymentSale</p>
+                  <p class="list-title">Request body structure</p>
+                  <div class="table-responsive">
+                      <table class="table table-bordered">
+                          <tr class="table-title">
+                              <td><strong>Field</strong></td>
+                              <td><strong>Type</strong></td>
+                              <td><strong>Description</strong></td>
+                          </tr>
+                          <tr>
+                              <td><strong>Required fields</strong></td>
+
+                          </tr>
+                          <tr>
+                              <td>pmt_id</td>
+                              <td>integer</td>
+                              <td>iPay payment ID</td>
+                          </tr>
+                          <tr>
+                              <td>invoice</td>
+                              <td>integer</td>
+                              <td>The final purchase amount in coins</td>
+                          </tr>
+                          <tr>
+                              <td><strong>Optional fields</strong></td>
+                          </tr>
+                          <tr>
+                              <td>guid</td>
+                              <td>string</td>
+                              <td>Request GUID generated by the merchant</td>
+                          </tr>
+
+                      </table>
+                  </div>
+                  <p class="list-title">Request example</p>
+                  <div class="highlight">
+                  <pre>
+{
+    "request": {
+        "auth": {
+            "login": "test",
+            "time": "2018-07-09 03:40:37",
+            "sign": "a12a4d5eb7da121bc04d360a5c11fd7be246817f7ac1845b17eb00 ..."
+        },
+        "action": "PaymentSale",
+        "body": {
+            "pmt_id": 1234567,
+            "invoice": 100,
+            "guid": "e55f613987964042a92bfc2d4f0d610d"
+        }
+    }
+}
+</pre>
+                  </div>
+                  <p class="list-title">Response structure</p>
+                  <div class="table-responsive">
+                      <table class="table table-bordered">
+                          <tr class="table-title">
+                              <td><strong>Field</strong></td>
+                              <td><strong>Type</strong></td>
+                              <td><strong>Description</strong></td>
+                          </tr>
+                          <tr>
+                              <td>response</td>
+                              <td>object</td>
+                              <td>Response object</td>
+
+                          </tr>
+                          <tr>
+                              <td>response.pmt_id</td>
+                              <td>integer</td>
+                              <td>iPay payment ID</td>
+                          </tr>
+                          <tr>
+                              <td>response.invoice</td>
+                              <td>integer</td>
+                              <td>Payment amount, in coins</td>
+                          </tr>
+                          <tr>
+                              <td>response.amount</td>
+                              <td>integer</td>
+                              <td>Payment amount (including commission), in coins</td>
+                          </tr>
+                          <tr>
+                              <td>response.pmt_status</td>
+                              <td>integer</td>
+                              <td>Payment status (1 - registered, 4 - unsuccessful, 5 - successful)</td>
+                          </tr>
+                          <tr>
+                              <td>response.card_mask</td>
+                              <td>string</td>
+                              <td>Card mask</td>
+
+                          </tr>
+                          <tr>
+                              <td>response.bank_response</td>
+                              <td>object</td>
+                              <td>Bank response</td>
+                          </tr>
+                          <tr>
+                              <td>response.bank_response.error_group</td>
+                              <td>integer</td>
+                              <td>Bank error group</td>
+                          </tr>
+                      </table>
+                  </div>
+                  <p class="list-title">Response example</p>
+                  <div class="highlight">
+                  <pre>
+{
+    "response": {
+        "pmt_id": 1234567,
+        "invoice": 100,
+        "amount": 100,
+        "pmt_status": 4,
+        "card_mask": "111111******1111",
+        "bank_response": {
+            "error_group": 12
+        }
+    }
+}
+</pre>
+                  </div>
+                  
+                  <p class="list-title" id="link-steps-six">3.4.4 PaymentCancel</p>
+                  <p class="list-title">Request body structure</p>
+                  <div class="table-responsive">
+                      <table class="table table-bordered">
+                          <tr class="table-title">
+                              <td><strong>Field</strong></td>
+                              <td><strong>Type</strong></td>
+                              <td><strong>Description</strong></td>
+                          </tr>
+                          <tr>
+                              <td><strong>Required fields</strong></td>
+                          </tr>
+                          <tr>
+                              <td>pmt_id</td>
+                              <td>integer</td>
+                              <td>iPay payment ID</td>
+                          </tr>
+                          <tr>
+                              <td><strong>Optional fields</strong></td>
+                          </tr>
+                          <tr>
+                              <td>guid</td>
+                              <td>string</td>
+                              <td>Request GUID generated by the merchant</td>
+                          </tr>
+                      </table>
+                  </div>
+                  <p class="list-title">Request example</p>
+                  <div class="highlight">
+                  <pre>
+{
+    "request": {
+        "auth": {
+            "login": "test",
+            "time": "2018-07-09 03:40:37",
+            "sign": "a12a4d5eb7da121bc04d360a5c11fd7be246817f7ac1845b17eb00 ..."
+        },
+        "action": "PaymentCancel",
+        "body": {
+            "pmt_id": 1234567
+        }
+    }
+}
+</pre>
+                  </div>
+                  <p class="list-title">Response structure</p>
+                  <div class="table-responsive">
+                      <table class="table table-bordered">
+                          <tr class="table-title">
+                              <td><strong>Field</strong></td>
+                              <td><strong>Type</strong></td>
+                              <td><strong>Description</strong></td>
+                          </tr>
+                          <tr>
+                              <td>response</td>
+                              <td>object</td>
+                              <td>Response object</td>
+
+                          </tr>
+                          <tr>
+                              <td>response.pmt_id</td>
+                              <td>integer</td>
+                              <td>iPay payment ID</td>
+                          </tr>
+                          <tr>
+                              <td>response.invoice</td>
+                              <td>integer</td>
+                              <td>Payment amount, in coins</td>
+                          </tr>
+                          <tr>
+                              <td>response.amount</td>
+                              <td>integer</td>
+                              <td>Payment amount (including commission), in coins</td>
+                          </tr>
+                          <tr>
+                              <td>response.pmt_status</td>
+                              <td>integer</td>
+                              <td>Payment status (1 - registered, 4 - unsuccessful, 5 - successful)</td>
+                          </tr>
+                          <tr>
+                              <td>response.card_mask</td>
+                              <td>string</td>
+                              <td>Card mask</td>
+
+                          </tr>
+                          <tr>
+                              <td>response.bank_response</td>
+                              <td>object</td>
+                              <td>Bank response</td>
+                          </tr>
+                          <tr>
+                              <td>response.bank_response.error_group</td>
+                              <td>integer</td>
+                              <td>Bank error group</td>
+                          </tr>
+                      </table>
+                  </div>
+                  <p class="list-title">Response example</p>
+                  <div class="highlight">
+                  <pre>
+{
+    "response": {
+        "pmt_id": 1234567,
+        "invoice": 100,
+        "amount": 100,
+        "pmt_status": 9,
+        "card_mask": "111111******1111",
+        "bank_response": {
+            "error_group": 12
+        }
+    }
+}
+</pre>
+                  </div>
+                  <p class="list-title" id="link-steps-seven">3.4.5 StatusRequest</p>
+                  <p class="list-title">Request body structure</p>
+                  <div class="table-responsive">
+                      <table class="table table-bordered">
+                          <tr class="table-title">
+                              <td><strong>Field</strong></td>
+                              <td><strong>Type</strong></td>
+                              <td><strong>Description</strong></td>
+                          </tr>
+                          <tr>
+                              <td><strong>Required fields</strong></td>
+
+                          </tr>
+                          <tr>
+                              <td>guid</td>
+                              <td>string</td>
+                              <td>Merchant request GUID that was passed in previous requests</td>
+                          </tr>
+                      </table>
+                  </div>
+                  <p class="list-title">Request example</p>
+                  <div class="highlight">
+                  <pre>
+{
+    "request": {
+        "auth": {
+            "login": "test",
+            "time": "2019-02-19 10:47:35",
+            "sign": "a468afe066f57e08d2b36dd74c03218f3701b17aba8fa15ebea..."
+        },
+        "action": "StatusRequest",
+        "body": {
+            "guid": "AD68E7675FE111E79A65005056B960DFF"
+        }
+    }
+}
+</pre>
+                  </div>
+                  <p class="list-title">Response structure</p>
+                  <div class="table-responsive">
+                      <table class="table table-bordered">
+                          <tr class="table-title">
+                              <td><strong>Field</strong></td>
+                              <td><strong>Type</strong></td>
+                              <td><strong>Description</strong></td>
+                          </tr>
+                          <tr>
+                              <td>response</td>
+                              <td>array</td>
+                              <td>Response body</td>
+
+                          </tr>
+                          <tr>
+                              <td>response[].action</td>
+                              <td>string</td>
+                              <td>Request name</td>
+                          </tr>
+                          <tr>
+                              <td>response[].msisdn</td>
+                              <td>string</td>
+                              <td>Phone number, 12 digits long (e.g. 380931234567)</td>
+                          </tr>
+                          <tr>
+                              <td>response[].response</td>
+                              <td>string</td>
+                              <td>Response in JSON format</td>
+                          </tr>
+                          <tr>
+                              <td>response[].date</td>
+                              <td>string</td>
+                              <td>Request date</td>
+                          </tr>
+
+                      </table>
+                  </div>
+                  <p class="list-title">Response example</p>
+                  <div class="highlight">
+                  <pre>
+{
+    "response": [
+        {
+            "action": "PaymentCreate",
+            "msisdn": "380931234567",
+            "response": "{\"response\":{\"pmt_id\":\"1234567\",\"invoice\":\"20000\",\"amount\":\"20000\",\"pmt_status\":\"5\",\"card_alias\":\"Test\",\"card_mask\":\"111111********11\",\"msisdn\":\"380931234567\",\"bank_response\":{\"bank_id\":\"31\",\"rc\":\"000\",\"action\":\"\",\"error_group\":null}}}",
+            "date": "2017-01-01 15:47:27"
+        }
+    ]
+}
+</pre>
+                  </div>
+                  <p class="list-title" id="steps-six">3.5 System errors</p>
+                  <p class="list-title">Response structure</p>
+                  <div class="table-responsive">
+                      <table class="table table-bordered">
+                          <tr class="table-title">
+                              <td><strong>Field</strong></td>
+                              <td><strong>Type</strong></td>
+                              <td><strong>Description</strong></td>
+                          </tr>
+                          <tr>
+                              <td>response</td>
+                              <td>object</td>
+                              <td>Response object</td>
+
+                          </tr>
+                          <tr>
+                              <td>response.error</td>
+                              <td>string</td>
+                              <td>The name of the error that occurred</td>
+                          </tr>
+                      </table>
+                  </div>
+                  <p class="list-title">Response example</p>
+                  <div class="highlight">
+                  <pre>
+{
+    "response": {
+        "error": "invalid request structure"
+    }
+}
+</pre>
+                  </div>
+                  <div class="table-responsive">
+                      <table class="table table-bordered">
+                          <tr class="table-title">
+                              <td><strong>Error</strong></td>
+                              <td><strong>Description</strong></td>
+                          </tr>
+                          <tr>
+                              <td>overall error</td>
+                              <td>General error</td>
+                          </tr>
+                          <tr>
+                              <td>invalid request structure</td>
+                              <td>Invalid request structure</td>
+                          </tr>
+                          <tr>
+                              <td>unknown field {field_name}</td>
+                              <td>The request is given a field that is unknown to the system</td>
+                          </tr>
+                          <tr>
+                              <td>invalid pan</td>
+                              <td>Invalid card PAN</td>
+                          </tr>
+                          <tr>
+                              <td>invalid expm</td>
+                              <td>Invalid card expiry month</td>
+                          </tr>
+                          <tr>
+                              <td>invalid expy</td>
+                              <td>Invalid card expiry year</td>
+                          </tr>
+                          <tr>
+                              <td>invalid cvv</td>
+                              <td>Invalid CVV code</td>
+                          </tr>
+                          <tr>
+                              <td>invalid auth</td>
+                              <td>Authentication error</td>
+                          </tr>
+                          <tr>
+                              <td>invalid auth time</td>
+                              <td>Invalid request time</td>
+                          </tr>
+                          <tr>
+                              <td>access denied</td>
+                              <td>Access denied</td>
+                          </tr>
+                      </table>
+                  </div>
+                  <p class="list-title" id="steps-seven">3.6 Bank error groups</p>
+                  <p>If status 4 was received on PaymentCreate or PaymentSale request, the "error_group" field of "bank_response" object contains a bank error group.</p>
+                  <p class="list-title">Response example</p>
+                  <div class="highlight">
+                  <pre>
+{
+    "response": {
+        "pmt_id": 1234567,
+        "invoice": 100,
+        "amount": 100,
+        "pmt_status": 4,
+        "card_mask": "111111******1111",
+        "bank_response": {
+            "error_group": 12
+        }
+    }
+}
+</pre>
+                  </div>
+                  <div class="table-responsive">
+                      <table class="table table-bordered">
+                          <tr class="table-title">
+                              <td><strong>Bank error group</strong></td>
+                              <td><strong>Description</strong></td>
+                          </tr>
+                          <tr>
+                              <td>41</td>
+                              <td>Issuer's refusal</td>
+                          </tr>
+                          <tr>
+                              <td>42</td>
+                              <td>Not enough money</td>
+                          </tr>
+                          <tr>
+                              <td>43</td>
+                              <td>Issuer's limit</td>
+                          </tr>
+                          <tr>
+                              <td>50</td>
+                              <td>Invalid CVV</td>
+                          </tr>
+                          <tr>
+                              <td>51</td>
+                              <td>Verification error (3D Secure)</td>
+                          </tr>
+                          <tr>
+                              <td>52</td>
+                              <td>Connection error</td>
+                          </tr>
+                          <tr>
+                              <td>55</td>
+                              <td>Unknown error</td>
+                          </tr>
+                      </table>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+</section>
+<section class="footer">
+  <div class="footer-bottom">
+    <div class="col-12 text-center">
+        <p>© іPay.ua The limited liability Company "Universal payment solutions"</p>
+    </div>
+  </div>
+</section>
+
+	<script src="/static/js/jquery-3.2.1.slim.min.js"></script>
+	<script src="/static/js/bootstrap.min.js"></script>
+</body>
+</html>{"response":{"error":"overall error"}}
