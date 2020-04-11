@@ -1,0 +1,4726 @@
+<!doctype html>
+<html       lang="en"      dir="ltr">
+  <head>
+    <meta name="google-signin-client-id" content="721724668570-nbkv1cfusk7kk4eni4pjvepaus73b13t.apps.googleusercontent.com">
+    <meta name="google-signin-scope" content="profile email">
+    <meta property="og:site_name" content="Google Developers">
+    <meta property="og:type" content="website">
+    
+          <meta name="theme-color" content="#ffffff">
+    
+    <meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="/_pwa/developers/manifest.json"
+          crossorigin="use-credentials">
+    <link rel="preconnect" href="//www.gstatic.cn" crossorigin>
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.googleapis.com" crossorigin>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons">
+        <link rel="stylesheet" href="https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/developers/css/app.css">
+    <noscript>
+      <link rel="stylesheet" href="https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/developers/css/ce_bundle.css">
+    </noscript>
+    <link rel="shortcut icon" href="https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/developers/images/favicon.png">
+    <link rel="apple-touch-icon" href="https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/developers/images/touchicon-180.png"><link rel="canonical" href="https://developers.google.cn/assistant/console/languages-locales?hl=zh-cn">      
+<title>Languages and locales &nbsp;|&nbsp; Actions console &nbsp;|&nbsp; Google Developers</title>
+
+<meta property="og:title" content="Languages and locales &nbsp;|&nbsp; Actions console &nbsp;|&nbsp; Google Developers">
+
+
+  <meta property="og:url" content="https://developers.google.cn/assistant/console/languages-locales?hl=zh-cn">
+
+  <meta property="og:image" content="https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/developers/images/opengraph/white.png">
+  <meta property="og:image:secure_url" content="https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/developers/images/opengraph/white.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:locale" content="en">
+  <meta name="twitter:card" content="summary_large_image">
+
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Google Assistant",
+      "item": "https://developers.google.cn/assistant"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Actions console",
+      "item": "https://developers.google.cn/assistant/console"
+    },{
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Languages and locales",
+      "item": "https://developers.google.cn/assistant/console/languages-locales"
+    }]
+  }
+  </script>
+
+
+
+  
+
+  
+
+  
+
+
+    </head>
+  <body type="article"
+        theme="white"
+        class=""
+        
+        layout="docs"
+        block-apix                pending>
+    <devsite-progress type="indeterminate" id="app-progress"></devsite-progress>
+    <section class="devsite-wrapper"><devsite-header>
+      
+
+
+
+
+
+
+
+<div class="devsite-header--inner">
+  <div class="devsite-top-logo-row-wrapper-wrapper">
+    <div class="devsite-top-logo-row-wrapper">
+      <div class="devsite-top-logo-row">
+        <button type="button" id="devsite-hamburger-menu"
+          class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+          data-category="Site-Wide Custom Events"
+          data-label="Navigation menu button"
+          visually-hidden
+          aria-label="Open menu">
+        </button>
+        <div class="devsite-product-name-wrapper">
+          <a href="/assistant">
+      <div class="devsite-product-logo-container"
+       
+       >
+      <img class="devsite-product-logo"
+         alt="Google Assistant"
+         src="/assistant/assistant.png"
+         srcset="https://developers.google.cn/assistant/assistant_36.png 36w,https://developers.google.cn/assistant/assistant_48.png 48w,https://developers.google.cn/assistant/assistant_72.png 72w,https://developers.google.cn/assistant/assistant_96.png 96w,https://developers.google.cn/assistant/assistant_480.png 480w,https://developers.google.cn/assistant/assistant_720.png 720w,https://developers.google.cn/assistant/assistant_856.png 856w,https://developers.google.cn/assistant/assistant_960.png 960w,https://developers.google.cn/assistant/assistant_1440.png 1440w,https://developers.google.cn/assistant/assistant_1920.png 1920w,https://developers.google.cn/assistant/assistant_2880.png 2880w"
+         sizes="64px">
+    </div>
+  
+  </a>
+  
+  
+  <span class="devsite-product-name">
+    <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             devsite-has-google-wordmark">
+                                  <a href="/assistant"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Upper Header"
+              data-value="1"
+          >
+              <svg class="devsite-google-wordmark"
+       xmlns="http://www.w3.org/2000/svg"
+       viewBox="0 0 148 48">
+    <title>Google</title>
+    <path class="devsite-google-wordmark-svg-path" d="M19.58,37.65c-9.87,0-18.17-8.04-18.17-17.91c0-9.87,8.3-17.91,18.17-17.91c5.46,0,9.35,2.14,12.27,4.94l-3.45,3.45c-2.1-1.97-4.93-3.49-8.82-3.49c-7.21,0-12.84,5.81-12.84,13.02c0,7.21,5.64,13.02,12.84,13.02c4.67,0,7.34-1.88,9.04-3.58c1.4-1.4,2.32-3.41,2.66-6.16H19.58v-4.89h16.47c0.18,0.87,0.26,1.92,0.26,3.06c0,3.67-1.01,8.21-4.24,11.44C28.93,35.9,24.91,37.65,19.58,37.65z M61.78,26.12c0,6.64-5.1,11.53-11.36,11.53s-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53S61.78,19.43,61.78,26.12z M56.8,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C53.84,33.11,56.8,30.22,56.8,26.12z M87.25,26.12c0,6.64-5.1,11.53-11.36,11.53c-6.26,0-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53C82.15,14.59,87.25,19.43,87.25,26.12zM82.28,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C79.32,33.11,82.28,30.22,82.28,26.12z M112.09,15.29v20.7c0,8.52-5.02,12.01-10.96,12.01c-5.59,0-8.95-3.76-10.22-6.81l4.41-1.83c0.79,1.88,2.71,4.1,5.81,4.1c3.8,0,6.16-2.36,6.16-6.77v-1.66h-0.18c-1.14,1.4-3.32,2.62-6.07,2.62c-5.76,0-11.05-5.02-11.05-11.49c0-6.51,5.28-11.57,11.05-11.57c2.75,0,4.93,1.22,6.07,2.58h0.18v-1.88H112.09z M107.64,26.16c0-4.06-2.71-7.03-6.16-7.03c-3.49,0-6.42,2.97-6.42,7.03c0,4.02,2.93,6.94,6.42,6.94C104.93,33.11,107.64,30.18,107.64,26.16z M120.97,3.06v33.89h-5.07V3.06H120.97z M140.89,29.92l3.93,2.62c-1.27,1.88-4.32,5.11-9.61,5.11c-6.55,0-11.28-5.07-11.28-11.53c0-6.86,4.77-11.53,10.71-11.53c5.98,0,8.91,4.76,9.87,7.34l0.52,1.31l-15.42,6.38c1.18,2.31,3.01,3.49,5.59,3.49C137.79,33.11,139.58,31.84,140.89,29.92zM128.79,25.77l10.31-4.28c-0.57-1.44-2.27-2.45-4.28-2.45C132.24,19.04,128.66,21.31,128.79,25.77z"/>
+  </svg>Assistant        
+  </a>
+              </li>
+  </ul>
+  </span>
+</div>
+        <div class="devsite-top-logo-row-middle">
+          <div class="devsite-header-upper-tabs">
+                            <devsite-tabs class="upper-tabs">
+    <div class="devsite-tabs-wrapper">
+                        <tab dropdown
+                >
+  <a href="/assistant"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="actionsOnGoogle"
+           data-category="Site-Wide Custom Events"
+        data-label="Tab: Actions on Google"
+   >
+  Actions on Google
+</a>
+  <a href="#"
+     aria-haspopup="true"
+     aria-expanded="false"
+     aria-label="Toggle menu"
+     role="button"
+     track-type="globalNav"
+     track-metadata-position="nav"
+     track-metadata-eventdetail="nav"
+     track-name="actionsOnGoogle"
+            data-category="Site-Wide Custom Events"
+            data-label="Tab: Actions on Google"
+          class="devsite-tabs-dropdown-toggle devsite-icon devsite-icon-arrow-drop-down"></a>
+
+  <div class="devsite-tabs-dropdown" aria-hidden="true" aria-label="submenu">
+        <div class="devsite-tabs-dropdown-content">
+              <div class="devsite-tabs-dropdown-column
+                    ">
+                      <ul class="devsite-tabs-dropdown-section
+                       ">
+                              <li class="devsite-nav-title" tooltip>Ways to build</li>
+                                                      </ul>
+                      <ul class="devsite-tabs-dropdown-section
+                       ">
+                                                          <li class="devsite-nav-item">
+                  <a href="/assistant"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Overview
+                    </div>
+                                        <div class="devsite-nav-item-description">
+                      Learn all the ways to build Actions.
+
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/app"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/app"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Extend your mobile app
+                    </div>
+                                        <div class="devsite-nav-item-description">
+                      Provide faster ways for users to access your Android app via the Assistant.
+
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/content"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/content"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Enhance your web presence
+                    </div>
+                                        <div class="devsite-nav-item-description">
+                      Present your content in rich ways for Google Search and the Assistant.
+
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant#connect-your-smart-home-devices"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant#connect-your-smart-home-devices"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Connect your smart home devices
+                    </div>
+                                        <div class="devsite-nav-item-description">
+                      Let users control lights, doors, coffee machines, and many other devices.
+
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/conversational"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/conversational"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Create conversational experiences from scratch
+                    </div>
+                                        <div class="devsite-nav-item-description">
+                      Build voice and visual experiences for smart speakers, displays, and phones.
+
+                    </div>
+                                      </a>
+                </li>
+                          </ul>
+                  </div>
+              <div class="devsite-tabs-dropdown-column
+                    ">
+                      <ul class="devsite-tabs-dropdown-section
+                       ">
+                              <li class="devsite-nav-title" tooltip>Get inspired</li>
+                                                      </ul>
+                      <ul class="devsite-tabs-dropdown-section
+                       ">
+                                                          <li class="devsite-nav-item">
+                  <a href="/assistant/why-build"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/why-build"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Why build
+                    </div>
+                                        <div class="devsite-nav-item-description">
+                      Help users find answers and get things done with the Google Assistant.
+
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/why-build#be-everywhere-your-users-are"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/why-build#be-everywhere-your-users-are"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Reach 1 billion devices
+                    </div>
+                                        <div class="devsite-nav-item-description">
+                      Help users at home, on the go, and in the car—on over 1 billion devices.
+
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="//assistant.google.com/explore/"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="//assistant.google.com/explore/"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Explore all Actions
+                    </div>
+                                        <div class="devsite-nav-item-description">
+                      See what others are building for the Google Assistant.
+
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/directory"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/directory"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Get discovered
+                    </div>
+                                        <div class="devsite-nav-item-description">
+                      Publish your Actions to the Assistant directory.
+
+                    </div>
+                                      </a>
+                </li>
+                          </ul>
+                  </div>
+          </div>
+  </div>
+</tab>
+                                <tab dropdown
+    dropdown-full    active        >
+  <a href="/assistant/docs"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="docs"
+   aria-label="Docs, selected"         data-category="Site-Wide Custom Events"
+        data-label="Tab: Docs"
+   >
+  Docs
+</a>
+  <a href="#"
+     aria-haspopup="true"
+     aria-expanded="false"
+     aria-label="Toggle menu"
+     role="button"
+     track-type="globalNav"
+     track-metadata-position="nav"
+     track-metadata-eventdetail="nav"
+     track-name="docs"
+            data-category="Site-Wide Custom Events"
+            data-label="Tab: Docs"
+          class="devsite-tabs-dropdown-toggle devsite-icon devsite-icon-arrow-drop-down"></a>
+
+  <div class="devsite-tabs-dropdown" aria-hidden="true" aria-label="submenu">
+        <div class="devsite-tabs-dropdown-content">
+              <div class="devsite-tabs-dropdown-column
+                    ">
+                      <ul class="devsite-tabs-dropdown-section
+                       ">
+                              <li class="devsite-nav-title" tooltip>Mobile</li>
+                                                          <li class="devsite-nav-item">
+                  <a href="/assistant/app/overview"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/app/overview"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      App Actions
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/app/slices"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/app/slices"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Android Slices
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/app/assistant-sharing"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/app/assistant-sharing"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Assistant sharing
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/app/read-it"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/app/read-it"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Read It
+                    </div>
+                                      </a>
+                </li>
+                          </ul>
+                      <ul class="devsite-tabs-dropdown-section
+                       ">
+                              <li class="devsite-nav-title" tooltip>Content</li>
+                                                          <li class="devsite-nav-item">
+                  <a href="/assistant/content/overview"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/content/overview"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Schema.org web markup
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/templates"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/templates"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Templates
+                    </div>
+                                      </a>
+                </li>
+                          </ul>
+                  </div>
+              <div class="devsite-tabs-dropdown-column
+                    ">
+                      <ul class="devsite-tabs-dropdown-section
+                       ">
+                              <li class="devsite-nav-title" tooltip>Smart home devices</li>
+                                                          <li class="devsite-nav-item">
+                  <a href="/assistant/smarthome/overview"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/smarthome/overview"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Overview
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/smarthome/concepts/devices-traits"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/smarthome/concepts/devices-traits"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Device types and traits
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/smarthome/concepts/local"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/smarthome/concepts/local"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Local Home SDK
+                    </div>
+                                      </a>
+                </li>
+                          </ul>
+                      <ul class="devsite-tabs-dropdown-section
+                       ">
+                              <li class="devsite-nav-title" tooltip>Experimental devices</li>
+                                                          <li class="devsite-nav-item">
+                  <a href="/assistant/sdk/overview"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/sdk/overview"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Assistant SDK
+                    </div>
+                                      </a>
+                </li>
+                          </ul>
+                  </div>
+              <div class="devsite-tabs-dropdown-column
+                    ">
+                      <ul class="devsite-tabs-dropdown-section
+                       ">
+                              <li class="devsite-nav-title" tooltip>Conversational</li>
+                                                          <li class="devsite-nav-item">
+                  <a href="/assistant/conversational/overview"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/conversational/overview"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Overview
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/actions/design"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/actions/design"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Design
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/actions/dialogflow"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/actions/dialogflow"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Build
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/interactivecanvas"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/interactivecanvas"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Interactive Canvas
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/engagement"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/engagement"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      User engagement
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/transactions"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/transactions"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Transactions
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/identity"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/identity"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Account linking
+                    </div>
+                                      </a>
+                </li>
+                          </ul>
+                  </div>
+              <div class="devsite-tabs-dropdown-column
+                    ">
+                      <ul class="devsite-tabs-dropdown-section
+                       ">
+                              <li class="devsite-nav-title" tooltip>Console</li>
+                                                          <li class="devsite-nav-item">
+                  <a href="/assistant/console"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/console"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Overview
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/console/languages-locales"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/console/languages-locales"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Localization
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/console/analytics"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/console/analytics"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Analytics
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/console/policies/general-policies"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/console/policies/general-policies"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Policies
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="https://actions.google.com/console"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="https://actions.google.com/console"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Go to console
+                    </div>
+                                      </a>
+                </li>
+                          </ul>
+                  </div>
+          </div>
+  </div>
+</tab>
+                                <tab  >
+            <a href="/assistant/community"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="community"
+           data-category="Site-Wide Custom Events"
+        data-label="Tab: Community"
+   >
+  Community
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/assistant/support"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="支持"
+           data-category="Site-Wide Custom Events"
+        data-label="Tab: 支持"
+   >
+  支持
+</a>
+
+          </tab>
+                  </div>
+  </devsite-tabs>
+
+
+                       </div>
+          <devsite-search
+            enable-suggestions
+              project-name="Actions console"    tenant-name="Google Developers"                >
+  <form class="devsite-search-form" action="https://developers.google.cn/s/results" method="GET">
+    <div class="devsite-search-container">
+      <div class="devsite-searchbox">
+                <input placeholder="搜索"
+          type="text"
+          class="devsite-search-field devsite-search-query"
+          name="q"
+          value=""
+          autocomplete="off"
+                    aria-label="搜索框">
+        <div class="devsite-search-image material-icons" aria-hidden="true"></div>
+      </div>
+      <button type="button"
+              search-open
+              class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+              aria-label="Open search box"></button>
+    </div>
+  </form>
+  <button type="button"
+          search-close
+          class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+          aria-label="Close search box"></button>
+</devsite-search>
+
+        </div>
+
+        
+        <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+    <select class="devsite-language-selector-select"
+            name="language"
+            track-name="click"
+            track-type="languageSelector">
+                <option>Language</option>
+              <option value="id"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="id"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Bahasa Indonesia
+      </option>
+          <option value="de"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="de"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Deutsch
+      </option>
+          <option value="en"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="en"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        English
+      </option>
+          <option value="es"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="es"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Español
+      </option>
+          <option value="fr"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="fr"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Français
+      </option>
+          <option value="pt_br"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="pt_br"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Português – Brasil
+      </option>
+          <option value="ru"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="ru"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Русский
+      </option>
+          <option value="zh_cn"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="zh_cn"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 简体
+      </option>
+          <option value="ja"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="ja"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        日本語
+      </option>
+          <option value="ko"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="ko"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        한국어
+      </option>
+        </select>
+  </devsite-select>
+</devsite-language-selector>
+
+
+        
+              </div>    </div>  </div>
+  <div class="devsite-collapsible-section
+          devsite-header-no-lower-tabs
+    ">
+    <div class="devsite-header-background">
+                        <div class="devsite-product-id-row"
+           >
+            <div class="devsite-product-description-row">
+                                                <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                    <a href="/assistant/console"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Lower Header"
+              data-value="1"
+          >
+            Actions console
+      
+  </a>
+        </li>
+  </ul>
+                                                        </div>
+                                                                            </div>
+                                  </div>  </div></div>
+  
+
+  </devsite-header>      <devsite-book-nav scrollbars >
+                  
+
+
+
+
+
+<nav class="devsite-book-nav devsite-nav nocontent">
+  <div class="devsite-mobile-header">
+    <button type="button"
+            id="devsite-close-nav"
+            class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+            data-category="Site-Wide Custom Events"
+            data-label="Close navigation"
+            aria-label="Close navigation">
+    </button>
+    <div class="devsite-product-name-wrapper">
+          <a href="/assistant">
+      <div class="devsite-product-logo-container"
+       
+       >
+      <img class="devsite-product-logo"
+         alt="Google Assistant"
+         src="/assistant/assistant.png"
+         srcset="/assistant/assistant_36.png 36w, /assistant/assistant_48.png 48w, /assistant/assistant_72.png 72w, /assistant/assistant_96.png 96w, /assistant/assistant_480.png 480w, /assistant/assistant_720.png 720w, /assistant/assistant_856.png 856w, /assistant/assistant_960.png 960w, /assistant/assistant_1440.png 1440w, /assistant/assistant_1920.png 1920w, /assistant/assistant_2880.png 2880w"
+         sizes="64px">
+    </div>
+  
+  </a>
+  
+          <span class="devsite-product-name">
+        <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             devsite-has-google-wordmark">
+                                  <a href="/assistant"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Upper Header"
+              data-value="1"
+          >
+              <svg class="devsite-google-wordmark"
+       xmlns="http://www.w3.org/2000/svg"
+       viewBox="0 0 148 48">
+    <title>Google</title>
+    <path class="devsite-google-wordmark-svg-path" d="M19.58,37.65c-9.87,0-18.17-8.04-18.17-17.91c0-9.87,8.3-17.91,18.17-17.91c5.46,0,9.35,2.14,12.27,4.94l-3.45,3.45c-2.1-1.97-4.93-3.49-8.82-3.49c-7.21,0-12.84,5.81-12.84,13.02c0,7.21,5.64,13.02,12.84,13.02c4.67,0,7.34-1.88,9.04-3.58c1.4-1.4,2.32-3.41,2.66-6.16H19.58v-4.89h16.47c0.18,0.87,0.26,1.92,0.26,3.06c0,3.67-1.01,8.21-4.24,11.44C28.93,35.9,24.91,37.65,19.58,37.65z M61.78,26.12c0,6.64-5.1,11.53-11.36,11.53s-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53S61.78,19.43,61.78,26.12z M56.8,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C53.84,33.11,56.8,30.22,56.8,26.12z M87.25,26.12c0,6.64-5.1,11.53-11.36,11.53c-6.26,0-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53C82.15,14.59,87.25,19.43,87.25,26.12zM82.28,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C79.32,33.11,82.28,30.22,82.28,26.12z M112.09,15.29v20.7c0,8.52-5.02,12.01-10.96,12.01c-5.59,0-8.95-3.76-10.22-6.81l4.41-1.83c0.79,1.88,2.71,4.1,5.81,4.1c3.8,0,6.16-2.36,6.16-6.77v-1.66h-0.18c-1.14,1.4-3.32,2.62-6.07,2.62c-5.76,0-11.05-5.02-11.05-11.49c0-6.51,5.28-11.57,11.05-11.57c2.75,0,4.93,1.22,6.07,2.58h0.18v-1.88H112.09z M107.64,26.16c0-4.06-2.71-7.03-6.16-7.03c-3.49,0-6.42,2.97-6.42,7.03c0,4.02,2.93,6.94,6.42,6.94C104.93,33.11,107.64,30.18,107.64,26.16z M120.97,3.06v33.89h-5.07V3.06H120.97z M140.89,29.92l3.93,2.62c-1.27,1.88-4.32,5.11-9.61,5.11c-6.55,0-11.28-5.07-11.28-11.53c0-6.86,4.77-11.53,10.71-11.53c5.98,0,8.91,4.76,9.87,7.34l0.52,1.31l-15.42,6.38c1.18,2.31,3.01,3.49,5.59,3.49C137.79,33.11,139.58,31.84,140.89,29.92zM128.79,25.77l10.31-4.28c-0.57-1.44-2.27-2.45-4.28-2.45C132.24,19.04,128.66,21.31,128.79,25.77z"/>
+  </svg>Assistant        
+  </a>
+              </li>
+  </ul>
+      </span>
+    
+</div>  </div>
+
+  <div class="devsite-book-nav-wrapper">
+    <div class="devsite-mobile-nav-top">
+              <ul class="devsite-nav-list">
+                      <li class="devsite-nav-item">
+                  <a href="/assistant"
+           class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Actions on Google"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="actionsOnGoogle">
+      <span class="devsite-nav-text" tooltip >
+      Actions on Google
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+        </a>
+  
+                              <ul class="devsite-nav-responsive-tabs devsite-nav-has-menu">
+                  <li class="devsite-nav-item">
+    <span
+           class="devsite-nav-title"
+       tooltip
+        >
+      <span class="devsite-nav-text" tooltip menu="Actions on Google">
+      More
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          menu="Actions on Google">
+    </span>
+        </span>
+  </li>
+
+                </ul>
+                                        </li>
+                      <li class="devsite-nav-item">
+                  <a href="/assistant/docs"
+           class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              devsite-nav-active"
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Docs"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="docs">
+      <span class="devsite-nav-text" tooltip >
+      Docs
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+        </a>
+  
+                              <ul class="devsite-nav-responsive-tabs devsite-nav-has-menu">
+                  <li class="devsite-nav-item">
+    <span
+           class="devsite-nav-title"
+       tooltip
+        >
+      <span class="devsite-nav-text" tooltip menu="Docs">
+      More
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          menu="Docs">
+    </span>
+        </span>
+  </li>
+
+                </ul>
+                                        </li>
+                      <li class="devsite-nav-item">
+                  <a href="/assistant/community"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Community"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="community">
+      <span class="devsite-nav-text" tooltip >
+      Community
+   </span>
+        </a>
+  
+                                        </li>
+                      <li class="devsite-nav-item">
+                  <a href="/assistant/support"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 支持"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="支持">
+      <span class="devsite-nav-text" tooltip >
+      支持
+   </span>
+        </a>
+  
+                                        </li>
+                    
+                  </ul>
+          </div>
+          <div class="devsite-mobile-nav-bottom">
+                            <ul class="devsite-nav-list" menu="_book">
+            <li class="devsite-nav-item           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path"><span class="devsite-nav-text" tooltip>Learn</span></div></li>
+  <li class="devsite-nav-item"><a href="/assistant/console"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li>
+  <li class="devsite-nav-item"><a href="/assistant/console/ui"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Console UI</span></a></li>
+  <li class="devsite-nav-item           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path"><span class="devsite-nav-text" tooltip>Build</span></div></li>
+  <li class="devsite-nav-item"><a href="/assistant/console/manage"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Manage projects</span></a></li>
+  <li class="devsite-nav-item"><a href="/assistant/console/simulator"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Simulator</span></a></li>
+  <li class="devsite-nav-item"><a href="/assistant/console/firebase-services"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Firebase services</span></a></li>
+  <li class="devsite-nav-item           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path"><span class="devsite-nav-text" tooltip>Deploy</span></div></li>
+  <li class="devsite-nav-item"><a href="/assistant/console/directory-information"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Directory information</span></a></li>
+  <li class="devsite-nav-item"><a href="/assistant/console/releases"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Releases</span></a></li>
+  <li class="devsite-nav-item"><a href="/assistant/console/publish"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Publish</span></a></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Actions for Families</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/assistant/actions-for-families"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/assistant/actions-for-families/building"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Building an Action</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Policies and terms</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/assistant/console/policies/general-policies"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>General</span></a></li><li class="devsite-nav-item"><a href="/assistant/console/policies/branding-policies"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Branding</span></a></li><li class="devsite-nav-item"><a href="/assistant/console/policies/privacy-policy-guide"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Privacy policy guidance</span></a></li><li class="devsite-nav-item"><a href="/assistant/console/policies/terms-of-service"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Terms of service</span></a></li><li class="devsite-nav-item"><a href="/assistant/console/policies/terms-explanation"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Terms explanation</span></a></li><li class="devsite-nav-item"><a href="/assistant/console/policies/actions-for-families-addendum"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Actions for Families addendum</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path"><span class="devsite-nav-text" tooltip>Grow</span></div></li>
+  <li class="devsite-nav-item"><a href="/assistant/console/brand-verification"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Brand verification</span></a></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Localize</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/assistant/console/languages-locales"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Languages and locales</span></a></li><li class="devsite-nav-item"><a href="/assistant/console/publish-localized"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Publish localized Actions</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Analytics and health</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/assistant/console/analytics"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Analytics</span></a></li><li class="devsite-nav-item"><a href="/assistant/console/health-checks"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Health checks</span></a></li><li class="devsite-nav-item"><a href="/assistant/console/troubleshooting"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Troubleshooting</span></a></li></ul></devsite-expandable-nav></li>
+          </ul>
+                                                    <ul class="devsite-nav-list" menu="Actions on Google" hidden>
+                                                                            <li class="devsite-nav-item devsite-nav-heading">
+    <span
+           class="devsite-nav-title"
+       tooltip
+        >
+      <span class="devsite-nav-text" tooltip >
+      Ways to build
+   </span>
+        </span>
+  </li>
+
+                                                                                                                        <li class="devsite-nav-item">
+    <a href="/assistant"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Overview"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="overview">
+      <span class="devsite-nav-text" tooltip >
+      Overview
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/app"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Extend your mobile app"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="extendYourMobileApp">
+      <span class="devsite-nav-text" tooltip >
+      Extend your mobile app
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/content"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Enhance your web presence"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="enhanceYourWebPresence">
+      <span class="devsite-nav-text" tooltip >
+      Enhance your web presence
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant#connect-your-smart-home-devices"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Connect your smart home devices"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="connectYourSmartHomeDevices">
+      <span class="devsite-nav-text" tooltip >
+      Connect your smart home devices
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/conversational"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Create conversational experiences from scratch"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="createConversationalExperiencesFromScratch">
+      <span class="devsite-nav-text" tooltip >
+      Create conversational experiences from scratch
+   </span>
+        </a>
+  </li>
+
+                                                                                                                  <li class="devsite-nav-item devsite-nav-heading">
+    <span
+           class="devsite-nav-title"
+       tooltip
+        >
+      <span class="devsite-nav-text" tooltip >
+      Get inspired
+   </span>
+        </span>
+  </li>
+
+                                                                                                                        <li class="devsite-nav-item">
+    <a href="/assistant/why-build"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Why build"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="whyBuild">
+      <span class="devsite-nav-text" tooltip >
+      Why build
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/why-build#be-everywhere-your-users-are"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Reach 1 billion devices"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="reach1BillionDevices">
+      <span class="devsite-nav-text" tooltip >
+      Reach 1 billion devices
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="//assistant.google.com/explore/"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Explore all Actions"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="exploreAllActions">
+      <span class="devsite-nav-text" tooltip >
+      Explore all Actions
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/directory"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Get discovered"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="getDiscovered">
+      <span class="devsite-nav-text" tooltip >
+      Get discovered
+   </span>
+        </a>
+  </li>
+
+                                                                    </ul>
+                                                <ul class="devsite-nav-list" menu="Docs" hidden>
+                                                                            <li class="devsite-nav-item devsite-nav-heading">
+    <span
+           class="devsite-nav-title"
+       tooltip
+        >
+      <span class="devsite-nav-text" tooltip >
+      Mobile
+   </span>
+        </span>
+  </li>
+
+                                                              <li class="devsite-nav-item">
+    <a href="/assistant/app/overview"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: App Actions"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="appActions">
+      <span class="devsite-nav-text" tooltip >
+      App Actions
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/app/slices"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Android Slices"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="androidSlices">
+      <span class="devsite-nav-text" tooltip >
+      Android Slices
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/app/assistant-sharing"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Assistant sharing"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="assistantSharing">
+      <span class="devsite-nav-text" tooltip >
+      Assistant sharing
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/app/read-it"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Read It"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="readIt">
+      <span class="devsite-nav-text" tooltip >
+      Read It
+   </span>
+        </a>
+  </li>
+
+                                                                                <li class="devsite-nav-item devsite-nav-heading">
+    <span
+           class="devsite-nav-title"
+       tooltip
+        >
+      <span class="devsite-nav-text" tooltip >
+      Content
+   </span>
+        </span>
+  </li>
+
+                                                              <li class="devsite-nav-item">
+    <a href="/assistant/content/overview"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Schema.org web markup"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="schema.orgWebMarkup">
+      <span class="devsite-nav-text" tooltip >
+      Schema.org web markup
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/templates"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Templates"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="templates">
+      <span class="devsite-nav-text" tooltip >
+      Templates
+   </span>
+        </a>
+  </li>
+
+                                                                                                                  <li class="devsite-nav-item devsite-nav-heading">
+    <span
+           class="devsite-nav-title"
+       tooltip
+        >
+      <span class="devsite-nav-text" tooltip >
+      Smart home devices
+   </span>
+        </span>
+  </li>
+
+                                                              <li class="devsite-nav-item">
+    <a href="/assistant/smarthome/overview"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Overview"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="overview">
+      <span class="devsite-nav-text" tooltip >
+      Overview
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/smarthome/concepts/devices-traits"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Device types and traits"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="deviceTypesAndTraits">
+      <span class="devsite-nav-text" tooltip >
+      Device types and traits
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/smarthome/concepts/local"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Local Home SDK"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="localHomeSdk">
+      <span class="devsite-nav-text" tooltip >
+      Local Home SDK
+   </span>
+        </a>
+  </li>
+
+                                                                                <li class="devsite-nav-item devsite-nav-heading">
+    <span
+           class="devsite-nav-title"
+       tooltip
+        >
+      <span class="devsite-nav-text" tooltip >
+      Experimental devices
+   </span>
+        </span>
+  </li>
+
+                                                              <li class="devsite-nav-item">
+    <a href="/assistant/sdk/overview"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Assistant SDK"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="assistantSdk">
+      <span class="devsite-nav-text" tooltip >
+      Assistant SDK
+   </span>
+        </a>
+  </li>
+
+                                                                                                                  <li class="devsite-nav-item devsite-nav-heading">
+    <span
+           class="devsite-nav-title"
+       tooltip
+        >
+      <span class="devsite-nav-text" tooltip >
+      Conversational
+   </span>
+        </span>
+  </li>
+
+                                                              <li class="devsite-nav-item">
+    <a href="/assistant/conversational/overview"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Overview"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="overview">
+      <span class="devsite-nav-text" tooltip >
+      Overview
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/actions/design"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Design"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="design">
+      <span class="devsite-nav-text" tooltip >
+      Design
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/actions/dialogflow"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Build"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="build">
+      <span class="devsite-nav-text" tooltip >
+      Build
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/interactivecanvas"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Interactive Canvas"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="interactiveCanvas">
+      <span class="devsite-nav-text" tooltip >
+      Interactive Canvas
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/engagement"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: User engagement"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="userEngagement">
+      <span class="devsite-nav-text" tooltip >
+      User engagement
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/transactions"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Transactions"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="transactions">
+      <span class="devsite-nav-text" tooltip >
+      Transactions
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/identity"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Account linking"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="accountLinking">
+      <span class="devsite-nav-text" tooltip >
+      Account linking
+   </span>
+        </a>
+  </li>
+
+                                                                                                                  <li class="devsite-nav-item devsite-nav-heading">
+    <span
+           class="devsite-nav-title"
+       tooltip
+        >
+      <span class="devsite-nav-text" tooltip >
+      Console
+   </span>
+        </span>
+  </li>
+
+                                                              <li class="devsite-nav-item">
+    <a href="/assistant/console"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Overview"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="overview">
+      <span class="devsite-nav-text" tooltip >
+      Overview
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/console/languages-locales"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Localization"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="localization">
+      <span class="devsite-nav-text" tooltip >
+      Localization
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/console/analytics"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Analytics"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="analytics">
+      <span class="devsite-nav-text" tooltip >
+      Analytics
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/console/policies/general-policies"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Policies"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="policies">
+      <span class="devsite-nav-text" tooltip >
+      Policies
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="https://actions.google.com/console"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Go to console"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="goToConsole">
+      <span class="devsite-nav-text" tooltip >
+      Go to console
+   </span>
+        </a>
+  </li>
+
+                                                                    </ul>
+                                                                                </div>
+      </div>
+</nav>
+              </devsite-book-nav>
+      <section id="gc-wrapper">
+        <main role="main" class="devsite-main-content"
+            has-book-nav            has-toc>
+          <devsite-toc class="devsite-nav"
+            ></devsite-toc>
+          <devsite-content>
+                          
+
+<article class="devsite-article">
+  <article class="devsite-article-inner">        
+    <div class="devsite-article-meta">
+      <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                    <a href="/"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="1"
+          >
+            首页
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/products"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="2"
+          >
+            产品
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/assistant"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="3"
+          >
+            Google Assistant
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/assistant/docs"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="4"
+          >
+            Docs
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/assistant/console"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="5"
+          >
+            Actions console
+      
+  </a>
+        </li>
+  </ul>
+               <devsite-page-rating position="header" selected-rating="0" hover-rating-star="0">
+         </devsite-page-rating>
+          </div>
+
+              <h1 class="devsite-page-title">Languages and locales</h1>
+    
+    <devsite-toc class="devsite-nav" devsite-toc-embedded
+                 >
+    </devsite-toc>
+
+    <div class="devsite-article-body clearfix
+      ">
+
+              
+
+
+<p>Actions that you write for the Google Assistant are supported in the following languages with the corresponding locales. By default, your Action:</p>
+
+<ul>
+<li><p>Supports all regions (countries), as long as your users have set their Assistant locale to one of our supported locales.</p>
+<aside class="note"><strong>Note:</strong><span> Locales are constructed using the language set in the Assistant settings and the region set in the device settings. The combination of these needs to form a supported locale. For example, a device set to the BR region and an Assistant device set to en-US results in a en-BR locale, which is not supported by Actions on Google.</span></aside></li>
+<li><p>Uses a TTS voice that corresponds to the user&#39;s Assistant locale. You can override this behavior and choose a specific TTS voice that doesn&#39;t change based on the user&#39;s Assistant locale.</p></li>
+</ul>
+
+<h2 id="high-quality-voices-migration">Migrate to high-quality voices</h2>
+
+<p>Starting March 4, 2019 the Actions on Google platform will support higher quality <a href="https://deepmind.com/blog/wavenet-generative-model-raw-audio/">Wavenet</a> voices for a subset of languages and locales. These voices are rated with a <a href="//en.wikipedia.org/wiki/Mean_opinion_score">mean opinion score (MOS)</a> of greater than 3.6, thus providing listeners with higher voice fidelity.</p>
+
+<p>We automatically apply updated voices if they are available for the voice option used in your project.</p>
+
+<p>If there&#39;s no updated voice for the voice option currently set in your Action, you can switch the voice option by going to <strong>Develop &gt; Invocation</strong> in the Actions console.</p>
+
+<p>For example, we provide only one updated voice (<code translate="no" dir="ltr">Female 1</code>) for Italian. If you set <code translate="no" dir="ltr">Female 1</code> in your project, we automatically change the voice to Wavenet. If you currently have <code translate="no" dir="ltr">Male 1</code>, <code translate="no" dir="ltr">Male 2</code>, or <code translate="no" dir="ltr">Female 2</code> set in your project, you need to switch the voice option to <code translate="no" dir="ltr">Female 1</code> to get an updated voice.</p>
+
+<h2 id="languages_and_locales_2">Languages and locales</h2>
+
+<section class="expandable" id="english">
+  <h3 class="showalways">English</h3>
+  <p>The following locales and voices are supported for the English language:</p>
+  <ul>
+    <li><code translate="no" dir="ltr">`en-AU`</code></li>
+    <li><code translate="no" dir="ltr">`en-CA` (uses `en-US` voices)</code></li>
+    <li><code translate="no" dir="ltr">`en-GB`</code></li>
+    <li><code translate="no" dir="ltr">`en-IN`</code></li>
+    <li><code translate="no" dir="ltr">`en-BE` (uses `en-GB` voices)</code></li>
+    <li><code translate="no" dir="ltr">`en-SG` (uses `en-GB` voices)</code></li>
+    <li><code translate="no" dir="ltr">`en-US`</code></li>
+  </ul>
+  <h4 class="hide-from-toc">Trigger Phrases</h4>
+  <p>Basic verbs to trigger an Action by its name:</p>
+  <ul>
+    <li><em>ask</em></li>
+    <li><em>speak</em></li>
+    <li><em>talk</em></li>
+  </ul>
+  <p>Here are some example phrases that users can say to trigger your Actions:</p>
+  <ul>
+    <li><em>ask $name</em></li>
+    <li><em>ask $name to ...</em></li>
+    <li><em>let me speak to $name</em></li>
+    <li><em>I want to speak to $name</em></li>
+    <li><em>can I speak to $name</em></li>
+    <li><em>speak to $name</em></li>
+    <li><em>let me talk to $name</em></li>
+    <li><em>I want to talk to $name</em></li>
+    <li><em>can I talk to $name</em></li>
+    <li><em>talk to $name</em></li>
+  </ul>
+  <h4 class="hide-from-toc">en-AU TTS voices</h4>
+  <table width="400px" class="orange">
+    <tr>
+      <th>Voice</th>
+      <th>Sample</th>
+    </tr>
+    <tr>
+      <td>Female 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-AU-aua-wavenet-female_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-AU-aua-wavenet-female_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-AU-aua-wavenet-female_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-AU-aub-wavenet-male_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-AU-aub-wavenet-male_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-AU-aub-wavenet-male_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Female 2</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-AU-auc-wavenet-female_2-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-AU-auc-wavenet-female_2-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-AU-auc-wavenet-female_2-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 2</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-AU-aud-wavenet-male_2-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-AU-aud-wavenet-male_2-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-AU-aud-wavenet-male_2-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+  </table>
+  <h4 class="hide-from-toc">en-GB TTS voices</h4>
+  <table width="400px" class="orange">
+    <tr>
+      <th>Voice</th>
+      <th>Sample</th>
+    </tr>
+    <tr>
+      <td>Female 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-GB-gba-wavenet-female_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-GB-gba-wavenet-female_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-GB-gba-wavenet-female_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-GB-gbb-wavenet-male_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-GB-gbb-wavenet-male_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-GB-gbb-wavenet-male_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Female 2</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-GB-gbc-wavenet-female_2-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-GB-gbc-wavenet-female_2-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-GB-gbc-wavenet-female_2-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 2</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-GB-gbd-wavenet-male_2-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-GB-gbd-wavenet-male_2-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-GB-gbd-wavenet-male_2-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+       </td>
+    </tr>
+  </table>
+  <h4 class="hide-from-toc">en-IN TTS voices</h4>
+  <table width="400px" class="orange">
+    <tr>
+      <th>Voice</th>
+      <th>Sample</th>
+    </tr>
+    <tr>
+      <td>Female 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-IN-enc-wavenet-female_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-IN-enc-wavenet-female_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-IN-enc-wavenet-female_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-IN-end-wavenet-male_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-IN-end-wavenet-male_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-IN-end-wavenet-male_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 2</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-IN-ene-wavenet-male_2-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-IN-ene-wavenet-male_2-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-IN-ene-wavenet-male_2-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+  </table>
+  <h4 class="hide-from-toc">en-US TTS voices</h4>
+  <table width="400px" class="orange">
+    <tr>
+      <th>Voice</th>
+      <th>Sample</th>
+    </tr>
+    <tr>
+      <td>Female 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-US-tpc-wavenet-female_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-US-tpc-wavenet-female_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-US-tpc-wavenet-female_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-US-tpa-wavenet-male_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-US-tpa-wavenet-male_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-US-tpa-wavenet-male_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Female 2</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-US-tpe-wavenet-female_2-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-US-tpe-wavenet-female_2-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-US-tpe-wavenet-female_2-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 2</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-US-tpb-wavenet-male_2-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-US-tpb-wavenet-male_2-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/en-US-tpb-wavenet-male_2-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+       </td>
+    </tr>
+  </table>
+</section>
+
+<section class="expandable" id="cantonese">
+  <h3 class="showalways">Cantonese</h3>
+  <p>The following locales and voices are supported for the Cantonese language:</p>
+  <ul>
+    <li><code translate="no" dir="ltr">zh-HK</code></li>
+  </ul>
+  <h4 class="hide-from-toc">Trigger Phrases</h4>
+  <p>Basic verbs to trigger an Action by its name:</p>
+  <ul>
+    <li><em>傾計</em></li>
+    <li><em>講</em></li>
+    <li><em>講嘢</em></li>
+  </ul>
+  <p>Here are some example phrases that users can say to trigger you Actions:</p>
+  <ul>
+    <li><em>我想同$name傾計</em></li>
+    <li><em>我可唔可以同$name講下嘢呀</em></li>
+    <li><em>我有嘢要同$name講</em></li>
+    <li><em>俾我同$name講嘢吖</em></li>
+    <li><em>可唔可以同$name講嘢呀我</em></li>
+    <li><em>我可唔可以同$name講嘢</em></li>
+    <li><em>我想同$name講嘢</em></li>
+  </ul>
+  <h4 class="hide-from-toc">zh-HK TTS voices</h4>
+  <table width="400px" class="orange">
+    <tr>
+      <th>Voice</th>
+      <th>Sample</th>
+    </tr>
+    <tr>
+        <tr>
+      <td>Male 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/zh-HK-JAR-MALE_1-male_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/zh-HK-JAR-MALE_1-male_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/zh-HK-JAR-MALE_1-male_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Female 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/zh-HK-JAR-FEMALE_1-female_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/zh-HK-JAR-FEMALE_1-female_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/zh-HK-JAR-FEMALE_1-female_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="expandable" id="chinese-traditional">
+  <h3 class="showalways">Chinese (Traditional)</h3>
+  <p>The following locales and voices are supported for the Chinese (Traditional) language:</p>
+  <ul>
+    <li><code translate="no" dir="ltr">zh-TW</code></li>
+  </ul>
+  <h4 class="hide-from-toc">Trigger Phrases</h4>
+  <p>Basic verbs to trigger an Action by its name:</p>
+  <ul>
+    <li><em>叫</em></li>
+    <li><em>對話</em></li>
+    <li><em>對談</em></li>
+    <li><em>詢問</em></li>
+    <li><em>說話</em></li>
+    <li><em>講話</em></li>
+  </ul>
+  <p>Here are some example phrases that users can say to trigger your Actions:</p>
+  <ul>
+    <li><em>幫我叫$name</em></li>
+    <li><em>能幫我叫下$name嗎</em></li>
+    <li><em>我想和$name對話</em></li>
+    <li><em>我可以和$name進行對談嗎</em></li>
+    <li><em>詢問$name</em></li>
+    <li><em>我想找$name說話</em></li>
+    <li><em>我要跟$name說話</em></li>
+    <li><em>我要跟$name講話</em></li>
+  </ul>
+  <h4 class="hide-from-toc">zh-TW TTS voices</h4>
+  <table width="400px" class="orange">
+    <tr>
+      <th>Voice</th>
+      <th>Sample</th>
+    </tr>
+    <tr>
+      <td>Male 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/zh-TW-male1-number-genie.wav"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/zh-TW-male1-psychic.wav"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/zh-TW-male1-hotel.wav"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Female 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/zh-TW-female1-number-genie.wav"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/zh-TW-female1-psychic.wav"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/zh-TW-female1-hotel.wav"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="expandable" id="danish">
+  <h3 class="showalways">Danish</h3>
+  <p>The following locales and voices are supported for the Danish language:</p>
+  <ul>
+    <li><code translate="no" dir="ltr">da-DK</code></li>
+  </ul>
+  <h4 class="hide-from-toc">Trigger Phrases</h4>
+  <p>Basic verbs to trigger an Action by its name:</p>
+  <ul>
+    <li><em>snakke</em></li>
+    <li><em>spørg</em></li>
+    <li><em>tal</em></li>
+    <li><em>tale</em></li>
+  </ul>
+  <p>Here are some example phrases that users can say to trigger your Actions:</p>
+  <ul>
+    <li><em>kan jeg snakke med $name</em></li>
+    <li><em>lad mig snakke med $name om ...</em></li>
+    <li><em>spørg $name</em></li>
+    <li><em>spørg $name om ...</em></li>
+    <li><em>tal med $name</em></li>
+    <li><em>tal med $name om ...</em></li>
+    <li><em>jeg vil gerne tale med $name</em></li>
+  </ul>
+  <h4 class="hide-from-toc"> da-DK TTS voices</h4>
+  <table width="400px" class="orange">
+    <tr>
+      <th>Voice</th>
+      <th>Sample</th>
+    </tr>
+    <tr>
+      <td>Female 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/da-DK-kfm-wavenet-female_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/da-DK-kfm-wavenet-female_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/da-DK-kfm-wavenet-female_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/da-DK-kfm-vocoded-male_3-male1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/da-DK-kfm-vocoded-male_3-male1-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/da-DK-kfm-vocoded-male_3-male1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="expandable" id="dutch">
+  <h3 class="showalways">Dutch</h3>
+  <p>The following locales and voices are supported for the Dutch language:</p>
+  <ul>
+    <li><code translate="no" dir="ltr">nl-NL</code></li>
+    <li><code translate="no" dir="ltr">nl-BE</code> (uses <code translate="no" dir="ltr">nl-NL</code> voices)</li>
+  </ul>
+  <h4 class="hide-from-toc">Trigger Phrases</h4>
+  <p>Basic verbs to trigger an Action by its name:</p>
+  <ul>
+    <li><em>praten</em></li>
+    <li><em>spreek</em></li>
+    <li><em>spreken</em></li>
+    <li><em>vraag</em></li>
+    <li><em>vragen</em></li>
+  </ul>
+  <p>Here are some example phrases that users can say to trigger your Actions:</p>
+  <ul>
+    <li><em>ik wil met $name praten</em></li>
+    <li><em>praten met $name</em></li>
+    <li><em>spreek met $name</em></li>
+    <li><em>$name spreken</em></li>
+    <li><em>mag ik $name spreken</em></li>
+    <li><em>vraag $name om ...</em></li>
+    <li><em>$name iets vragen</em></li>
+    <li><em>ik wil $name iets vragen</em></li>
+  </ul>
+  <h4 class="hide-from-toc">nl-NL TTS voices</h4>
+  <table width="400px" class="orange">
+    <tr>
+      <th>Voice</th>
+      <th>Sample</th>
+    </tr>
+    <tr>
+      <td>Female 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/nl-NL-tfb-wavenet-female_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/nl-NL-tfb-wavenet-female_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/nl-NL-tfb-wavenet-female_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Female 2</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/nl-NL-yfr-wavenet-female_2-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/nl-NL-yfr-wavenet-female_2-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/nl-NL-yfr-wavenet-female_2-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/nl-NL-bmh-wavenet-male_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/nl-NL-bmh-wavenet-male_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/nl-NL-bmh-wavenet-male_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 2</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/nl-NL-dma-wavenet-male_2-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/nl-NL-dma-wavenet-male_2-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/nl-NL-dma-wavenet-male_2-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="expandable" id="french">
+  <h3 class="showalways">French</h3>
+  <p>The following locales and voices are supported for the French language:</p>
+  <ul>
+    <li><code translate="no" dir="ltr">fr-FR</code></li>
+    <li><code translate="no" dir="ltr">fr-CA</code></li>
+    <li><code translate="no" dir="ltr">fr-BE</code> (uses <code translate="no" dir="ltr">fr-FR</code> voices)</li>
+  </ul>
+  <h4 class="hide-from-toc">Trigger Phrases</h4>
+  <p>Basic verbs to trigger an Action by its name:</p>
+  <ul>
+    <li><em>connecter</em></li>
+    <li><em>demander</em></li>
+    <li><em>discuter</em></li>
+    <li><em>parler</em></li>
+  </ul>
+  <p>Here are some example phrases that users can say to trigger your Actions:</p>
+  <ul>
+    <li><em>je veux me connecter à $prénom</em></li>
+    <li><em>demande à $prénom de ...</em></li>
+    <li><em>j'aimerais discuter avec $prénom</em></li>
+    <li><em>fais-moi parler avec $prénom</em></li>
+    <li><em>parler avec $prénom pour ...</em></li>
+    <li><em>parler avec $prénom</em></li>
+  </ul>
+  <h4 class="hide-from-toc">fr-FR TTS voices</h4>
+  <table width="400px" class="orange">
+    <tr>
+      <th>Voice</th>
+      <th>Sample</th>
+    </tr>
+    <tr>
+      <td>Female 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/fr-FR-fra-wavenet-female_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/fr-FR-fra-wavenet-female_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/fr-FR-fra-wavenet-female_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/fr-FR-frb-wavenet-male_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/fr-FR-frb-wavenet-male_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/fr-FR-frb-wavenet-male_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Female 2</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/fr-FR-frc-wavenet-female_2-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/fr-FR-frc-wavenet-female_2-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/fr-FR-frc-wavenet-female_2-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 2</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/fr-FR-frd-wavenet-male_2-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/fr-FR-frd-wavenet-male_2-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/fr-FR-frd-wavenet-male_2-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+  </table>
+  <h4 class="hide-from-toc">fr-CA TTS voices</h4>
+  <table width="400px" class="orange">
+    <tr>
+      <th>Voice</th>
+      <th>Sample</th>
+    </tr>
+    <tr>
+    <tr>
+      <td>Female 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/fr-CA-caa-wavenet-female_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/fr-CA-caa-wavenet-female_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/fr-CA-caa-wavenet-female_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/fr-CA-cab-wavenet-male_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/fr-CA-cab-wavenet-male_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/fr-CA-cab-wavenet-male_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Female 2</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/fr-CA-cac-wavenet-female_2-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/fr-CA-cac-wavenet-female_2-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/fr-CA-cac-wavenet-female_2-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 2</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/fr-CA-cad-wavenet-male_2-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/fr-CA-cad-wavenet-male_2-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/fr-CA-cad-wavenet-male_2-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="expandable" id="german">
+  <h3 class="showalways">German</h3>
+  <p>The following locales and voices are supported for the German language:</p>
+  <ul>
+    <li><code translate="no" dir="ltr">de-DE</code></li>
+    <li><code translate="no" dir="ltr">de-AT</code> (uses <code translate="no" dir="ltr">de-DE</code> voices)</li>
+    <li><code translate="no" dir="ltr">de-CH</code> (uses <code translate="no" dir="ltr">de-DE</code> voices)</li>
+    <li><code translate="no" dir="ltr">de-BE</code> (uses <code translate="no" dir="ltr">de-DE</code> voices)</li>
+  </ul>
+  <h4 class="hide-from-toc">Trigger Phrases</h4>
+  <p>Basic verbs to trigger an Action by its name:</p>
+  <ul>
+    <li><em>fragen</em></li>
+    <li><em>reden</em></li>
+    <li><em>sprechen</em></li>
+  </ul>
+  <p>Here are some example phrases that users can say to trigger your Actions:</p>
+  <ul>
+    <li><em>frage $name nach ...</em></li>
+    <li><em>mit $name unterhalten</em></li>
+    <li><em>mit $name quatschen</em></li>
+    <li><em>kann ich mit $name reden</em></li>
+    <li><em>mit $name sprechen</em></li>
+    <li><em>ich will mit $name sprechen</em></li>
+  </ul>
+  <h4 class="hide-from-toc">de-DE TTS Voices</h4>
+  <table width="400px" class="orange">
+    <tr>
+      <th>Voice</th>
+      <th>Sample</th>
+    </tr>
+    <tr>
+      <td>Female 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/de-DE-dea-wavenet-female_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/de-DE-dea-wavenet-female_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/de-DE-dea-wavenet-female_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/de-DE-deb-wavenet-male_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/de-DE-deb-wavenet-male_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/de-DE-deb-wavenet-male_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+       </td>
+      </tr>
+    <tr>
+      <td>Female 2</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/de-DE-dec-wavenet-female_2-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/de-DE-dec-wavenet-female_2-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/de-DE-dec-wavenet-female_2-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 2</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/de-DE-ded-wavenet-male_2-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/de-DE-ded-wavenet-male_2-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/de-DE-ded-wavenet-male_2-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+       </td>
+    </tr>
+  </table>
+</section>
+
+<section class="expandable" id="hindi">
+  <h3 class="showalways">Hindi</h3>
+  <p>The following locales and voices are supported for the Hindi language:</p>
+  <ul>
+    <li><code translate="no" dir="ltr">hi-IN</code></li>
+  </ul>
+  <h4 class="hide-from-toc">Trigger Phrases</h4>
+  <p>Basic verbs to trigger an Action by its name:</p>
+  <ul>
+    <li><em>baat</em></li>
+    <li><em>कनेक्ट</em></li>
+    <li><em>पूछो</em></li>
+    <li><em>बात</em></li>
+  </ul>
+  <p>Here are some example phrases that users can say to trigger your Actions:</p>
+  <ul>
+    <li><em>$name se baat karni hai</em></li>
+    <li><em>kya mai bat kar sakta hun $name se</em></li>
+    <li><em>$name से कनेक्ट करवाओ</em></li>
+    <li><em>$name से कनेक्ट करो</em></li>
+    <li><em>$name से पूछो ...</em></li>
+    <li><em>$name से बात कराओ</em></li>
+    <li><em>मुझे $name से बात करनी है</em></li>
+    <li><em>मेरी बात कराओ $name से</em></li>
+  </ul>
+  <h4 class="hide-from-toc">hi-IN TTS voices</h4>
+  <table width="400px" class="orange">
+    <tr>
+      <th>Voice</th>
+      <th>Sample</th>
+    </tr>
+    <tr>
+      <td>Female 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/hi-IN-cfn-vocoded-female_3-female1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/hi-IN-cfn-vocoded-female_3-female1-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/hi-IN-cfn-vocoded-female_3-female1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/hi-IN-cfn-vocoded-male_1-male1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/hi-IN-cfn-vocoded-male_1-male1-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/hi-IN-cfn-vocoded-male_1-male1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="expandable" id="indonesian">
+  <h3 class="showalways">Indonesian</h3>
+  <p>The following locales and voices are supported for the Indonesian language:</p>
+  <ul>
+    <li><code translate="no" dir="ltr">id-ID</code></li>
+  </ul>
+  <h4 class="hide-from-toc">Trigger Phrases</h4>
+  <p>Basic verbs to trigger an Action by its name:</p>
+  <ul>
+    <li><em>bicara</em></li>
+    <li><em>ngomong</em></li>
+    <li><em>tanya</em></li>
+  </ul>
+  <p>Here are some example phrases that users can say to trigger your Actions:</p>
+  <ul>
+    <li><em>aku mau bicara sama $name</em></li>
+    <li><em>bicara dengan $name</em></li>
+    <li><em>saya ingin berbicara dengan $name</em></li>
+    <li><em>ngomong sama $name</em></li>
+    <li><em>saya mau ngomong dengan $name</em></li>
+    <li><em>ada yang mau saya tanyakan $name</em></li>
+    <li><em>bertanya kepada $name</em></li>
+    <li><em>tanyakan ke $name</em></li>
+  </ul>
+  <h4 class="hide-from-toc">id-ID TTS voices</h4>
+  <table width="400px" class="orange">
+    <tr>
+      <th>Voice</th>
+      <th>Sample</th>
+    </tr>
+    <tr>
+      <td>Female 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/id-ID-idc-wavenet-female_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/id-ID-idc-wavenet-female_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/id-ID-idc-wavenet-female_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/id-ID-ide-wavenet-male_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/id-ID-ide-wavenet-male_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/id-ID-ide-wavenet-male_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 2</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/id-ID-idd-wavenet-male_2-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/id-ID-idd-wavenet-male_2-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/id-ID-idd-wavenet-male_2-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="expandable" id="italian">
+  <h3 class="showalways">Italian</h3>
+  <p>The following locales and voices are supported for the Italian language:</p>
+  <ul>
+    <li><code translate="no" dir="ltr">it-IT</code></li>
+  </ul>
+  <h4 class="hide-from-toc">Trigger Phrases</h4>
+  <p>Basic verbs to trigger an Action by its name:</p>
+  <ul>
+    <li><em>chiedere</em></li>
+    <li><em>domandare</em></li>
+    <li><em>parlare</em></li>
+    <li><em>passare</em></li>
+  </ul>
+  <p>Here are some example phrases that users can say to trigger your Actions:</p>
+  <ul>
+    <li><em>parla con $name</em></li>
+    <li><em>chiedi a $name</em></li>
+    <li><em>voglio chiedere a $name</em></li>
+    <li><em>domanda a $name</em></li>
+    <li><em>fammi parlare con $name</em></li>
+    <li><em>posso parlare con $name</em></li>
+    <li><em>voglio parlare con $name</em></li>
+    <li><em>passami $name</em></li>
+  </ul>
+  <h4 class="hide-from-toc">it-IT TTS voices</h4>
+  <table width="400px" class="orange">
+    <tr>
+      <th>Voice</th>
+      <th>Sample</th>
+    </tr>
+    <tr>
+      <td>Female 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/it-IT-kda-wavenet-female_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/it-IT-kda-wavenet-female_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/it-IT-kda-wavenet-female_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/it-IT-kda-male_1-male1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/it-IT-kda-male_1-male1-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/it-IT-kda-male_1-male1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="expandable" id="japanese">
+  <h3 class="showalways">Japanese</h3>
+  <p>The following locales and voices are supported for the Japanese language:</p>
+  <ul>
+    <li><code translate="no" dir="ltr">ja-JP</code></li>
+  </ul>
+  <h4 class="hide-from-toc">Trigger Phrases</h4>
+  <p>Basic verbs to trigger an Action by its name:</p>
+  <ul>
+    <li><em>話す</em></li>
+    <li><em>つなぐ</em></li>
+    <li><em>会話</em></li>
+    <li><em>繋ぐ</em></li>
+    <li><em>頼む</em></li>
+    <li><em>言う</em></li>
+  </ul>
+  <p>Here are some example phrases that users can say to trigger your Actions:</p>
+  <ul>
+    <li><em>$nameにつないで</em></li>
+    <li><em>$nameと話す</em></li>
+    <li><em>$nameにつなぐ</em></li>
+    <li><em>$nameと会話</em></li>
+    <li><em>$nameに ... 頼みたい</em></li>
+    <li><em>$nameに ... 言う</em></li>
+  </ul>
+  <h4 class="hide-from-toc">ja-JP TTS voices</h4>
+  <table width="400px" class="orange">
+    <tr>
+      <th>Voice</th>
+      <th>Sample</th>
+    </tr>
+    <tr>
+      <td>Female 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ja-JP-htm-wavenet-female_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ja-JP-htm-wavenet-female_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ja-JP-htm-wavenet-female_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Female 2</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ja-JP-jab-wavenet-female_2-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ja-JP-jab-wavenet-female_2-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ja-JP-jab-wavenet-female_2-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ja-JP-jac-wavenet-male_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ja-JP-jac-wavenet-male_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ja-JP-jac-wavenet-male_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 2</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ja-JP-jad-wavenet-male_2-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ja-JP-jad-wavenet-male_2-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ja-JP-jad-wavenet-male_2-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+       </td>
+    </tr>
+  </table>
+</section>
+
+<section class="expandable" id="korean">
+  <h3 class="showalways">Korean</h3>
+  <p>The following locales and voices are supported for the Korean language:</p>
+  <ul>
+    <li><code translate="no" dir="ltr">ko-KR</code></li>
+  </ul>
+  <h4 class="hide-from-toc">Trigger Phrases</h4>
+  <p>Basic verbs to trigger an Action by its name:</p>
+  <ul>
+    <li><em>말하기</em></li>
+    <li><em>얘기할래</em></li>
+    <li><em>말걸기</em></li>
+    <li><em>물어볼래</em></li>
+  </ul>
+  <p>Here are some example phrases that users can say to trigger your Actions:</p>
+  <ul>
+    <li><em>$name한테 말하기</em></li>
+    <li><em>$name(이)랑 말하기</em></li>
+    <li><em>$name(이)랑 얘기할래</em></li>
+    <li><em>$name한테 말걸기</em></li>
+    <li><em>$name한테 물어볼래</em></li>
+    <li><em>$name한테 ... 물어 볼래</em></li>
+  </ul>
+  <h4 class="hide-from-toc">ko-KR TTS voices</h4>
+  <table width="400px" class="orange">
+    <tr>
+      <th>Voice</th>
+      <th>Sample</th>
+    </tr>
+    <tr>
+      <td>Female 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ko-KR-ism-wavenet-female_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ko-KR-ism-wavenet-female_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ko-KR-ism-wavenet-female_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ko-KR-koc-wavenet-male_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ko-KR-koc-wavenet-male_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ko-KR-koc-wavenet-male_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Female 2</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ko-KR-kob-wavenet-female_2-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ko-KR-kob-wavenet-female_2-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ko-KR-kob-wavenet-female_2-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 2</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ko-KR-kod-wavenet-male_2-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ko-KR-kod-wavenet-male_2-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ko-KR-kod-wavenet-male_2-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="expandable" id="norwegian">
+  <h3 class="showalways">Norwegian</h3>
+  <p>The following locales and voices are supported for the Norwegian language:</p>
+  <ul>
+    <li><code translate="no" dir="ltr">no-NO</code></li>
+  </ul>
+  <h4 class="hide-from-toc">Trigger Phrases</h4>
+  <p>Basic verbs to trigger an Action by its name:</p>
+  <ul>
+    <li><em>prate</em></li>
+    <li><em>snakke</em></li>
+    <li><em>spørre</em></li>
+  </ul>
+  <p>Here are some example phrases that users can say to trigger your Actions:</p>
+  <ul>
+    <li><em>jeg vil prate med $name</em></li>
+    <li><em>la meg prate med $name</em></li>
+    <li><em>jeg vil snakke med $name</em></li>
+    <li><em>kan jeg snakke med $name</em></li>
+    <li><em>må snakke med $name</em></li>
+    <li><em>snakk med $name om ...</em></li>
+    <li><em>snakke med $name</em></li>
+    <li><em>spør $name</em></li>
+    <li><em>spørre $name</em></li>
+  </ul>
+  <h4 class="hide-from-toc">no-NO TTS voices</h4>
+  <table width="400px" class="orange">
+    <tr>
+      <th>Voice</th>
+      <th>Sample</th>
+    </tr>
+    <tr>
+      <td>Female 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/no-NO-cfl-wavenet-female_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/no-NO-cfl-wavenet-female_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/no-NO-cfl-wavenet-female_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Female 2</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/no-NO-tfs-wavenet-female_2-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/no-NO-tfs-wavenet-female_2-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/no-NO-tfs-wavenet-female_2-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/no-NO-cmj-wavenet-male_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/no-NO-cmj-wavenet-male_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/no-NO-cmj-wavenet-male_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 2</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/no-NO-tmg-wavenet-male_2-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/no-NO-tmg-wavenet-male_2-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/no-NO-tmg-wavenet-male_2-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="expandable" id="polish">
+  <h3 class="showalways">Polish</h3>
+  <p>The following locales and voices are supported for the Polish language:</p>
+  <ul>
+    <li><code translate="no" dir="ltr">pl-PL</code></li>
+  </ul>
+  <h4 class="hide-from-toc">Trigger Phrases</h4>
+  <p>Basic verbs to trigger an Action by its name:</p>
+  <ul>
+    <li><em>kazać</em></li>
+    <li><em>poprosić</em></li>
+    <li><em>porozmawiać</em></li>
+    <li><em>prosić</em></li>
+    <li><em>przekazać</em></li>
+    <li><em>zadać pytanie</em></li>
+    <li><em>zapytać</em></li>
+  </ul>
+  <p>Here are some example phrases that users can say to trigger your Actions:</p>
+  <ul>
+    <li><em>każ $name ...</em></li>
+    <li><em>poproś $name żeby ...</em></li>
+    <li><em>porozmawiaj z $name</em></li>
+    <li><em>proszę o $name aby ...</em></li>
+    <li><em>przekaż $name żeby ...</em></li>
+    <li><em>zadaj pytanie $name</em></li>
+    <li><em>zapytaj $name</em></li>
+    <li><em>zapytaj $name czy ...</em></li>
+  </ul>
+  <h4 class="hide-from-toc">pl-PL TTS voices</h4>
+  <table width="400px" class="orange">
+    <tr>
+      <th>Voice</th>
+      <th>Sample</th>
+    </tr>
+    <tr>
+      <td>Female 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/pl-PL-zfg-wavenet-female_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/pl-PL-zfg-wavenet-female_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/pl-PL-zfg-wavenet-female_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/pl-PL-jmk-wavenet-male_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/pl-PL-jmk-wavenet-male_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/pl-PL-jmk-wavenet-male_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Female 2</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/pl-PL-afb-wavenet-female_2-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/pl-PL-afb-wavenet-female_2-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/pl-PL-afb-wavenet-female_2-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 2</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/pl-PL-bmg-wavenet-male_2-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/pl-PL-bmg-wavenet-male_2-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/pl-PL-bmg-wavenet-male_2-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="expandable" id="portuguese">
+  <h3 class="showalways">Portuguese</h3>
+  <p>The following locales and voices are supported for the Portuguese language:</p>
+  <ul>
+    <li><code translate="no" dir="ltr">pt-BR</code></li>
+  </ul>
+  <h4 class="hide-from-toc">Trigger Phrases</h4>
+  <p>Basic verbs to trigger an Action by its name:</p>
+  <ul>
+    <li><em>conversar</em></li>
+    <li><em>falar</em></li>
+    <li><em>perguntar</em></li>
+    <li><em>pergunte</em></li>
+  </ul>
+  <p>Here are some example phrases that users can say to trigger your Actions:</p>
+  <ul>
+    <li><em>Falar com $name</em></li>
+    <li><em>conversar com $name</em></li>
+    <li><em>gostaria de conversar com $name</em></li>
+    <li><em>eu quero falar com o $name</em></li>
+    <li><em>falar com $name</em></li>
+    <li><em>me deixe falar com o $name</em></li>
+    <li><em>perguntar pra $name</em></li>
+    <li><em>pergunte ao $name</em></li>
+    <li><em>pergunte para a $name</em></li>
+  </ul>
+  <h4 class="hide-from-toc">pt-BR TTS voices</h4>
+  <table width="400px" class="orange">
+    <tr>
+      <th>Voice</th>
+      <th>Sample</th>
+    </tr>
+    <tr>
+      <td>Female 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/pt-BR-afs-wavenet-female_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/pt-BR-afs-wavenet-female_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/pt-BR-afs-wavenet-female_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/pt-BR-afs-male_3-male1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/pt-BR-afs-male_3-male1-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/pt-BR-afs-male_3-male1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="expandable" id="russian">
+  <h3 class="showalways">Russian</h3>
+  <p>The following locales and voices are supported for the Russian language:</p>
+  <ul>
+    <li><code translate="no" dir="ltr">ru-RU</code></li>
+  </ul>
+  <h4 class="hide-from-toc">Trigger Phrases</h4>
+  <p>Basic verbs to trigger an Action by its name:</p>
+  <ul>
+    <li><em>говорить</em></li>
+    <li><em>поговорить</em></li>
+    <li><em>пообщаться</em></li>
+    <li><em>разговор</em></li>
+    <li><em>спросить</em></li>
+  </ul>
+  <p>Here are some example phrases that users can say to trigger your Actions:</p>
+  <ul>
+    <li><em>Поговорить с $name</em></li>
+    <li><em>Говорить с $name</em></li>
+    <li><em>давай поговорим с $name</em></li>
+    <li><em>Дай мне поговорить с $name</em></li>
+    <li><em>дай поговорить с $name</em></li>
+    <li><em>мне нужно поговорить с $name</em></li>
+    <li><em>Могу я поговорить с $name</em></li>
+    <li><em>я могу поговорить с $name</em></li>
+    <li><em>я хочу поговорить с $name</em></li>
+    <li><em>пообщаться с $name</em></li>
+    <li><em>Хочу пообщаться с приложением $name</em></li>
+    <li><em>начать разговор с $name</em></li>
+    <li><em>хочу кое-что спросить у $name</em></li>
+    <li><em>общаться с $name</em></li>
+    <li><em>общаться с приложением $name</em></li>
+  </ul>
+  <h4 class="hide-from-toc">ru-RU TTS voices</h4>
+  <table width="400px" class="orange">
+    <tr>
+      <th>Voice</th>
+      <th>Sample</th>
+    </tr>
+    <tr>
+      <td>Female 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ru-RU-ruc-wavenet-female_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ru-RU-ruc-wavenet-female_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ru-RU-ruc-wavenet-female_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ru-RU-rud-wavenet-male_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ru-RU-rud-wavenet-male_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ru-RU-rud-wavenet-male_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Female 2</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ru-RU-rue-wavenet-female_2-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ru-RU-rue-wavenet-female_2-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ru-RU-rue-wavenet-female_2-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 2</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ru-RU-ruf-wavenet-male_2-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ru-RU-ruf-wavenet-male_2-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/ru-RU-ruf-wavenet-male_2-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="expandable" id="spanish">
+  <h3 class="showalways">Spanish</h3>
+  <p>The following locales and voices are supported for the Spanish language:</p>
+  <ul>
+    <li><code translate="no" dir="ltr">es-ES</code></li>
+    <li><code translate="no" dir="ltr">es-419</code></li>
+  </ul>
+  <p>In the Actions console, you can localize your Action information and TTS voices for the following locales:</p>
+  <ul>
+    <li>Spanish (Latin America) - es-419</li>
+    <li>Spanish (European) - es-ES</li>
+  </ul>
+  <p>You can further customize logic and responses in your fulfillment, based on the user's Assistant locale setting. The following list describes the possible user locale settings and the corresponding locale codes that you receive in your fulfillment:</p>
+  <ul>
+    <li>Spanish (Latin America) - es-419</li>
+    <li>Spanish (Mexico) - es-MX</li>
+    <li>Spanish (US) - es-US</li>
+    <li>Spanish (European) - es-ES</li>
+  </ul>
+  <aside class="note"><b>Note:</b> The Actions simulator currently only supports <code translate="no" dir="ltr">es-419</code> and <code translate="no" dir="ltr">es-ES</code> locales.</aside>
+  <p>In addition, you can't specify Action information or a specific TTS voice in the console for <code translate="no" dir="ltr">es-MX</code> or <code translate="no" dir="ltr">es-US</code> locales. Any information that you specify in the Actions console for the <code translate="no" dir="ltr">es-419</code> locale also applies to <code translate="no" dir="ltr">es-MX</code> and <code translate="no" dir="ltr">es-US</code> locales. However, you can customize your fulfillment for <code translate="no" dir="ltr">es-MX</code> or <code translate="no" dir="ltr">es-US</code> locales.</p>
+  <h4 class="hide-from-toc">Trigger Phrases</h4>
+  <p>Basic verbs to trigger an Action by its name:</p>
+  <ul>
+    <li><em>contactar</em></li>
+    <li><em>conversación</em></li>
+    <li><em>conversar</em></li>
+    <li><em>hablar</em></li>
+    <li><em>preguntar</em></li>
+  </ul>
+  <p>Here are some example phrases that users can say to trigger your Actions:</p>
+  <ul>
+    <li><em>hablar con $name</em></li>
+    <li><em>contactar con $name</em></li>
+    <li><em>iniciar conversación con $name</em></li>
+    <li><em>quiero iniciar una conversación con $name</em></li>
+    <li><em>conversar con $name</em></li>
+    <li><em>hablar con $name</em></li>
+    <li><em>me gustaría hablar con $name</em></li>
+    <li><em>preguntarle a $name</em></li>
+  </ul>
+  <h4 class="hide-from-toc">es-ES TTS voices</h4>
+  <table width="400px" class="orange">
+    <tr>
+      <th>Voice</th>
+      <th>Sample</th>
+    </tr>
+    <tr>
+      <td>Female 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/es-ES-ana-female_1-female1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/es-ES-ana-female_1-female1-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/es-ES-ana-female_1-female1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/es-ES-ana-male_3-male1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/es-ES-ana-male_3-male1-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/es-ES-ana-male_3-male1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+  </table>
+  <h4 class="hide-from-toc">es-419 TTS voices</h4>
+  <table width="400px" class="orange">
+    <tr>
+      <th>Voice</th>
+      <th>Sample</th>
+    </tr>
+    <tr>
+      <td>Female 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/es-419-US-sfb-female_1-female1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/es-419-US-sfb-female_1-female1-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/es-419-US-sfb-female_1-female1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/es-419-US-sfb-male_2-male1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/es-419-US-sfb-male_2-male1-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/es-419-US-sfb-male_2-male1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="expandable" id="swedish">
+  <h3 class="showalways">Swedish</h3>
+  <p>The following locales and voices are supported for the Swedish language:</p>
+  <ul>
+    <li><code translate="no" dir="ltr">sv-SE</code></li>
+  </ul>
+  <h4 class="hide-from-toc">Trigger Phrases</h4>
+  <p>Basic verbs to trigger an Action by its name:</p>
+  <ul>
+    <li><em>fråga</em></li>
+    <li><em>prata</em></li>
+    <li><em>samtala</em></li>
+    <li><em>snacka</em></li>
+    <li><em>tala</em></li>
+  </ul>
+  <p>Here are some example phrases that users can say to trigger your Actions:</p>
+  <ul>
+    <li><em>fråga $name</em></li>
+    <li><em>jag vill fråga $name</em></li>
+    <li><em>jag vill prata med $name</em></li>
+    <li><em>låt mig prata med $name</em></li>
+    <li><em>prata med $name</em></li>
+    <li><em>samtala med $name</em></li>
+    <li><em>kan jag snacka med $name</em></li>
+    <li><em>snacka med $name och...</em></li>
+    <li><em>får jag tala med $name</em></li>
+  </ul>
+  <h4 class="hide-from-toc">sv-SE TTS voices</h4>
+  <table width="400px" class="orange">
+    <tr>
+      <th>Voice</th>
+      <th>Sample</th>
+    </tr>
+    <tr>
+      <td>Female 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/sv-SE-lfs-wavenet-female_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/sv-SE-lfs-wavenet-female_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/sv-SE-lfs-wavenet-female_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/sv-SE-lfs-male_3-male1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/sv-SE-lfs-male_3-male1-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/sv-SE-lfs-male_3-male1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="expandable" id="thai">
+  <h3 class="showalways">Thai</h3>
+  <p>The following locales and voices are supported for the Thai language:</p>
+  <ul>
+    <li><code translate="no" dir="ltr">th-TH</code></li>
+  </ul>
+  <h4 class="hide-from-toc">Trigger Phrases</h4>
+  <p>Basic verbs to trigger an Action by its name:</p>
+  <ul>
+    <li><em>คุย</em></li>
+    <li><em>แชท</em></li>
+    <li><em>ถาม</em></li>
+    <li><em>พูด</em></li>
+  </ul>
+  <p>Here are some example phrases that users can say to trigger your Actions:</p>
+  <ul>
+    <li><em>ขอคุยกับ $name หน่อย</em></li>
+    <li><em>ขอฉันคุยกับ $name</em></li>
+    <li><em>คุยกับ $name</em></li>
+    <li><em>ขอแชทกับ $name หน่อยสิ</em></li>
+    <li><em>ฉันอยากจะถาม $name</em></li>
+    <li><em>ถาม $name</em></li>
+    <li><em>พูดกับ $name</em></li>
+  </ul>
+  <h4 class="hide-from-toc">th-TH TTS voices</h4>
+  <table width="400px" class="orange">
+    <tr>
+      <th>Voice</th>
+      <th>Sample</th>
+    </tr>
+    <tr>
+      <td>Female 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/th-TH-mol-female_3-female1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/th-TH-mol-female_3-female1-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/th-TH-mol-female_3-female1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/th-TH-mol-male_1-male1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/th-TH-mol-male_1-male1-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/th-TH-mol-male_1-male1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<section class="expandable" id="turkish">
+  <h3 class="showalways">Turkish</h3>
+  <p>The following locales and voices are supported for the Turkish language:</p>
+  <ul>
+    <li><code translate="no" dir="ltr">tr-TR</code></li>
+  </ul>
+  <h4 class="hide-from-toc">Trigger Phrases</h4>
+  <p>Basic verbs to trigger an Action by its name:</p>
+  <ul>
+    <li><em>bağla</em></li>
+    <li><em>bağlanmak istiyorum</em></li>
+    <li><em>çağır</em></li>
+    <li><em>konuş</em></li>
+    <li><em>konuşabilir miyim</em></li>
+    <li><em>konuşmak istiyorum</em></li>
+  </ul>
+  <p>Here are some example phrases that users can say to trigger your Actions:</p>
+  <ul>
+    <li><em>bana $name'i bağla</em></li>
+    <li><em>$name uygulamasına bağlanmak istiyorum</em></li>
+    <li><em>$name'i çağır</em></li>
+    <li><em>$name ile konuş</em></li>
+    <li><em>$name uygulamasıyla konuşabilir miyim</em></li>
+    <li><em>$name uygulaması ile konuşmak istiyorum</em></li>
+  </ul>
+  <h4 class="hide-from-toc">tr-TR TTS voices</h4>
+  <table width="400px" class="orange">
+    <tr>
+      <th>Voice</th>
+      <th>Sample</th>
+    </tr>
+    <tr>
+      <td>Female 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/tr-TR-cfs-wavenet-female_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/tr-TR-cfs-wavenet-female_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/tr-TR-cfs-wavenet-female_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Male 1</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/tr-TR-ama-wavenet-male_1-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/tr-TR-ama-wavenet-male_1-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/tr-TR-ama-wavenet-male_1-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+    <tr>
+      <td>Female 2</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/tr-TR-efu-wavenet-female_2-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/tr-TR-efu-wavenet-female_2-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/tr-TR-efu-wavenet-female_2-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+      <tr>
+      <td>Male 2</td>
+      <td>
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/tr-TR-tmc-wavenet-male_2-hotel.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/tr-TR-tmc-wavenet-male_2-number-genie.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+        <br />
+        <audio controls>
+          <source src="/assistant/downloads/tts-voices/tr-TR-tmc-wavenet-male_2-your-psychic.mp3"
+            type='audio/mp3'>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+      </td>
+    </tr>
+  </table>
+</section>
+
+          </div>
+
+    
+                   <devsite-page-rating position="footer" selected-rating="0" hover-rating-star="0">
+         </devsite-page-rating>
+                   
+          </article>
+</article>
+
+<devsite-content-footer class="nocontent">
+  <p>Except as otherwise noted, the content of this page is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>, and code samples are licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>. For details, see the <a href="https://developers.google.cn/site-policies">Google Developers Site Policies</a>. Java is a registered trademark of Oracle and/or its affiliates.</p>  <p>Last updated 2019-10-18.</p></devsite-content-footer>
+
+
+
+                      </devsite-content>
+        </main>
+        <devsite-footer-promos class="devsite-footer">
+                      
+                  </devsite-footer-promos>
+        <devsite-footer-linkboxes class="devsite-footer">
+                      <nav class="devsite-footer-linkboxes nocontent">
+    <ul class="devsite-footer-linkboxes-list">
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">More Information</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://assistant.google.com"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 1)"           >
+            The Google Assistant
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/assistant/why-build"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 2)"           >
+            Why build for the Assistant?
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://assistant.google.com/explore"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 3)"           >
+            Assistant directory
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/assistant/sdk"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 4)"           >
+            Google Assistant SDK for experimental devices
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/assistant/support"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 5)"           >
+            Support
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/assistant/community"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 6)"           >
+            Community
+          </a>
+        </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">计划</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="//www.womentechmakers.com"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 1)"           >
+            Women Techmakers
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/community/gbg"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 2)"           >
+            Google Business Groups
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/community/gdg"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 3)"           >
+            Google Developer Groups
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/community/experts"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 4)"           >
+            Google Developers Experts
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/community/launchpad"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 5)"           >
+            Launchpad
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/community/dsc"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 6)"           >
+            Developer Student Clubs
+          </a>
+        </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">开发者控制台</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="//console.developers.google.com"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 1)"           >
+            Google API Console
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//console.cloud.google.com"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 2)"           >
+            Google Cloud Platform Console
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//play.google.com/apps/publish"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 3)"           >
+            Google Play 管理中心
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//console.firebase.google.com"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 4)"           >
+            Firebase Console
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//console.actions.google.com"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 5)"           >
+            Actions on Google Console
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//cast.google.com/publish"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 6)"           >
+            Cast SDK Developer Console
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//chrome.google.com/webstore/developer/dashboard"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 7)"           >
+            Chrome Web Store Dashboard
+          </a>
+        </li>
+              </ul>
+    </li>
+      </ul>
+  </nav>
+                  </devsite-footer-linkboxes>
+        <devsite-footer-utility class="devsite-footer">
+                      
+<div class="devsite-footer-utility nocontent">
+    <nav class="devsite-footer-sites">
+    <a href="https://developers.google.cn/"
+       class="devsite-footer-sites-logo-link gc-analytics-event"
+       data-category="Site-Wide Custom Events"
+       data-label="Footer Google Developers Link">
+      <img class="devsite-footer-sites-logo"
+           src="/_static/images/lockup-developers.svg"
+           alt="Google Developers">
+    </a>
+    <ul class="devsite-footer-sites-list">
+            <li class="devsite-footer-sites-item">
+        <a href="//developer.android.google.cn"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Android Link"
+                  >
+          Android
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//developer.chrome.com/home"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Chrome Link"
+                  >
+          Chrome
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//firebase.google.cn"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Firebase Link"
+                  >
+          Firebase
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//cloud.google.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Google Cloud Platform Link"
+                  >
+          Google Cloud Platform
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="/products"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer All products Link"
+                  >
+          所有产品
+        </a>
+      </li>
+          </ul>
+  </nav>
+  
+  <nav class="devsite-footer-utility-links">
+        <ul class="devsite-footer-utility-list">
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="/terms/site-terms"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Terms link"
+         >
+          条款
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//policies.google.cn/privacy"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Privacy link"
+         >
+          隐私权政策
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 devsite-footer-utility-button">
+                <span class="devsite-footer-utility-description">订阅 Google Developers 简报</span>
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//services.google.com/fb/forms/googledevelopersnewsletter/?utm_medium=referral&amp;utm_source=google-products&amp;utm_team=googledevs&amp;utm_campaign=201611-newsletter-launch"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Subscribe link"
+         >
+          订阅
+        </a>
+              </li>
+          </ul>
+    
+    <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+    <select class="devsite-language-selector-select"
+            name="language"
+            track-name="click"
+            track-type="languageSelector">
+                <option>Language</option>
+              <option value="id"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="id"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Bahasa Indonesia
+      </option>
+          <option value="de"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="de"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Deutsch
+      </option>
+          <option value="en"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="en"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        English
+      </option>
+          <option value="es"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="es"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Español
+      </option>
+          <option value="fr"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="fr"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Français
+      </option>
+          <option value="pt_br"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="pt_br"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Português – Brasil
+      </option>
+          <option value="ru"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="ru"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Русский
+      </option>
+          <option value="zh_cn"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="zh_cn"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 简体
+      </option>
+          <option value="ja"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="ja"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        日本語
+      </option>
+          <option value="ko"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="ko"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        한국어
+      </option>
+        </select>
+  </devsite-select>
+</devsite-language-selector>
+
+  </nav>
+</div>
+                  </devsite-footer-utility>
+      </section></section>
+    <devsite-sitemask></devsite-sitemask>
+    <devsite-snackbar                   ></devsite-snackbar>    <devsite-tooltip blocked-link></devsite-tooltip>
+    <devsite-heading-link></devsite-heading-link>
+    <devsite-analytics>
+              <script type="application/json" analytics>[{"metrics": {}, "dimensions": {"dimension6": "en", "dimension4": "Actions console", "dimension5": "zh-cn", "dimension3": false, "dimension1": "Signed out", "dimension8": null}, "gaid": "UA-24532603-11"}, {"metrics": {}, "dimensions": {"dimension6": "en", "dimension4": "Actions console", "dimension5": "zh-cn", "dimension3": false, "dimension1": "Signed out", "dimension8": null}, "gaid": "UA-128680783-1"}]</script>
+<script type="application/json" gtm>{"parameters": {"freeTrialEligibleUser": "False", "language": {"requested": "zh-cn", "served": "en"}, "projectName": "Actions console", "scriptsafe": null, "signedIn": "False", "internalUser": "False"}, "tags": ["GTM-TP5RPLW"]}</script>
+          </devsite-analytics>
+        <script>
+    (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
+    t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
+    E.parentNode.insertBefore(t,E);})(window, document, 'script',
+    'https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/js/app_loader.js', '[1,"zh_cn",null,"/js/devsite_app.js","https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda","https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/developers","https://google-developers.gonglchuangl.net",null,null,["/_pwa/developers/manifest.json","/_static/images/video-placeholder.svg","https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/developers/images/favicon.png","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons"],1]')
+  </script>  </body>
+</html>
