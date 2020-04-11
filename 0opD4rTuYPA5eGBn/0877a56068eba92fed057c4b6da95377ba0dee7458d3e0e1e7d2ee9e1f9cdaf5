@@ -1,0 +1,2603 @@
+<!doctype html>
+<html       lang="en"      dir="ltr">
+  <head>
+    <meta name="google-signin-client-id" content="721724668570-nbkv1cfusk7kk4eni4pjvepaus73b13t.apps.googleusercontent.com">
+    <meta name="google-signin-scope" content="profile email">
+    <meta property="og:site_name" content="Google Developers">
+    <meta property="og:type" content="website">
+    
+          <meta name="theme-color" content="#ffffff">
+    
+    <meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="/_pwa/developers/manifest.json"
+          crossorigin="use-credentials">
+    <link rel="preconnect" href="//www.gstatic.cn" crossorigin>
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.googleapis.com" crossorigin>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons">
+        <link rel="stylesheet" href="https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/developers/css/app.css">
+    <noscript>
+      <link rel="stylesheet" href="https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/developers/css/ce_bundle.css">
+    </noscript>
+    <link rel="shortcut icon" href="https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/developers/images/favicon.png">
+    <link rel="apple-touch-icon" href="https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/developers/images/touchicon-180.png"><link rel="canonical" href="https://developers.google.cn/assistant/actions/localization/fulfillment?hl=zh-cn">      
+<title>Fulfillment &nbsp;|&nbsp; Conversational Actions &nbsp;|&nbsp; Google Developers</title>
+
+<meta property="og:title" content="Fulfillment &nbsp;|&nbsp; Conversational Actions &nbsp;|&nbsp; Google Developers">
+
+
+  <meta property="og:url" content="https://developers.google.cn/assistant/actions/localization/fulfillment?hl=zh-cn">
+
+  <meta property="og:image" content="https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/developers/images/opengraph/white.png">
+  <meta property="og:image:secure_url" content="https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/developers/images/opengraph/white.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:locale" content="en">
+  <meta name="twitter:card" content="summary_large_image">
+
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Google Assistant",
+      "item": "https://developers.google.cn/assistant"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Conversational Actions",
+      "item": "https://developers.google.cn/assistant/conversational"
+    },{
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Fulfillment",
+      "item": "https://developers.google.cn/assistant/actions/localization/fulfillment"
+    }]
+  }
+  </script>
+
+
+
+  
+
+  
+
+  
+
+
+    </head>
+  <body type="article"
+        theme="white"
+        class=""
+        
+        layout="docs"
+        block-apix                pending>
+    <devsite-progress type="indeterminate" id="app-progress"></devsite-progress>
+    <section class="devsite-wrapper"><devsite-header>
+      
+
+
+
+
+
+
+
+<div class="devsite-header--inner">
+  <div class="devsite-top-logo-row-wrapper-wrapper">
+    <div class="devsite-top-logo-row-wrapper">
+      <div class="devsite-top-logo-row">
+        <button type="button" id="devsite-hamburger-menu"
+          class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+          data-category="Site-Wide Custom Events"
+          data-label="Navigation menu button"
+          visually-hidden
+          aria-label="Open menu">
+        </button>
+        <div class="devsite-product-name-wrapper">
+          <a href="/assistant">
+      <div class="devsite-product-logo-container"
+       
+       >
+      <img class="devsite-product-logo"
+         alt="Google Assistant"
+         src="/assistant/assistant.png"
+         srcset="https://developers.google.cn/assistant/assistant_36.png 36w,https://developers.google.cn/assistant/assistant_48.png 48w,https://developers.google.cn/assistant/assistant_72.png 72w,https://developers.google.cn/assistant/assistant_96.png 96w,https://developers.google.cn/assistant/assistant_480.png 480w,https://developers.google.cn/assistant/assistant_720.png 720w,https://developers.google.cn/assistant/assistant_856.png 856w,https://developers.google.cn/assistant/assistant_960.png 960w,https://developers.google.cn/assistant/assistant_1440.png 1440w,https://developers.google.cn/assistant/assistant_1920.png 1920w,https://developers.google.cn/assistant/assistant_2880.png 2880w"
+         sizes="64px">
+    </div>
+  
+  </a>
+  
+  
+  <span class="devsite-product-name">
+    <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             devsite-has-google-wordmark">
+                                  <a href="/assistant"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Upper Header"
+              data-value="1"
+          >
+              <svg class="devsite-google-wordmark"
+       xmlns="http://www.w3.org/2000/svg"
+       viewBox="0 0 148 48">
+    <title>Google</title>
+    <path class="devsite-google-wordmark-svg-path" d="M19.58,37.65c-9.87,0-18.17-8.04-18.17-17.91c0-9.87,8.3-17.91,18.17-17.91c5.46,0,9.35,2.14,12.27,4.94l-3.45,3.45c-2.1-1.97-4.93-3.49-8.82-3.49c-7.21,0-12.84,5.81-12.84,13.02c0,7.21,5.64,13.02,12.84,13.02c4.67,0,7.34-1.88,9.04-3.58c1.4-1.4,2.32-3.41,2.66-6.16H19.58v-4.89h16.47c0.18,0.87,0.26,1.92,0.26,3.06c0,3.67-1.01,8.21-4.24,11.44C28.93,35.9,24.91,37.65,19.58,37.65z M61.78,26.12c0,6.64-5.1,11.53-11.36,11.53s-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53S61.78,19.43,61.78,26.12z M56.8,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C53.84,33.11,56.8,30.22,56.8,26.12z M87.25,26.12c0,6.64-5.1,11.53-11.36,11.53c-6.26,0-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53C82.15,14.59,87.25,19.43,87.25,26.12zM82.28,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C79.32,33.11,82.28,30.22,82.28,26.12z M112.09,15.29v20.7c0,8.52-5.02,12.01-10.96,12.01c-5.59,0-8.95-3.76-10.22-6.81l4.41-1.83c0.79,1.88,2.71,4.1,5.81,4.1c3.8,0,6.16-2.36,6.16-6.77v-1.66h-0.18c-1.14,1.4-3.32,2.62-6.07,2.62c-5.76,0-11.05-5.02-11.05-11.49c0-6.51,5.28-11.57,11.05-11.57c2.75,0,4.93,1.22,6.07,2.58h0.18v-1.88H112.09z M107.64,26.16c0-4.06-2.71-7.03-6.16-7.03c-3.49,0-6.42,2.97-6.42,7.03c0,4.02,2.93,6.94,6.42,6.94C104.93,33.11,107.64,30.18,107.64,26.16z M120.97,3.06v33.89h-5.07V3.06H120.97z M140.89,29.92l3.93,2.62c-1.27,1.88-4.32,5.11-9.61,5.11c-6.55,0-11.28-5.07-11.28-11.53c0-6.86,4.77-11.53,10.71-11.53c5.98,0,8.91,4.76,9.87,7.34l0.52,1.31l-15.42,6.38c1.18,2.31,3.01,3.49,5.59,3.49C137.79,33.11,139.58,31.84,140.89,29.92zM128.79,25.77l10.31-4.28c-0.57-1.44-2.27-2.45-4.28-2.45C132.24,19.04,128.66,21.31,128.79,25.77z"/>
+  </svg>Assistant        
+  </a>
+              </li>
+  </ul>
+  </span>
+</div>
+        <div class="devsite-top-logo-row-middle">
+          <div class="devsite-header-upper-tabs">
+                            <devsite-tabs class="upper-tabs">
+    <div class="devsite-tabs-wrapper">
+                        <tab dropdown
+                >
+  <a href="/assistant"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="actionsOnGoogle"
+           data-category="Site-Wide Custom Events"
+        data-label="Tab: Actions on Google"
+   >
+  Actions on Google
+</a>
+  <a href="#"
+     aria-haspopup="true"
+     aria-expanded="false"
+     aria-label="Toggle menu"
+     role="button"
+     track-type="globalNav"
+     track-metadata-position="nav"
+     track-metadata-eventdetail="nav"
+     track-name="actionsOnGoogle"
+            data-category="Site-Wide Custom Events"
+            data-label="Tab: Actions on Google"
+          class="devsite-tabs-dropdown-toggle devsite-icon devsite-icon-arrow-drop-down"></a>
+
+  <div class="devsite-tabs-dropdown" aria-hidden="true" aria-label="submenu">
+        <div class="devsite-tabs-dropdown-content">
+              <div class="devsite-tabs-dropdown-column
+                    ">
+                      <ul class="devsite-tabs-dropdown-section
+                       ">
+                              <li class="devsite-nav-title" tooltip>Ways to build</li>
+                                                      </ul>
+                      <ul class="devsite-tabs-dropdown-section
+                       ">
+                                                          <li class="devsite-nav-item">
+                  <a href="/assistant"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Overview
+                    </div>
+                                        <div class="devsite-nav-item-description">
+                      Learn all the ways to build Actions.
+
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/app"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/app"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Extend your mobile app
+                    </div>
+                                        <div class="devsite-nav-item-description">
+                      Provide faster ways for users to access your Android app via the Assistant.
+
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/content"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/content"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Enhance your web presence
+                    </div>
+                                        <div class="devsite-nav-item-description">
+                      Present your content in rich ways for Google Search and the Assistant.
+
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant#connect-your-smart-home-devices"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant#connect-your-smart-home-devices"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Connect your smart home devices
+                    </div>
+                                        <div class="devsite-nav-item-description">
+                      Let users control lights, doors, coffee machines, and many other devices.
+
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/conversational"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/conversational"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Create conversational experiences from scratch
+                    </div>
+                                        <div class="devsite-nav-item-description">
+                      Build voice and visual experiences for smart speakers, displays, and phones.
+
+                    </div>
+                                      </a>
+                </li>
+                          </ul>
+                  </div>
+              <div class="devsite-tabs-dropdown-column
+                    ">
+                      <ul class="devsite-tabs-dropdown-section
+                       ">
+                              <li class="devsite-nav-title" tooltip>Get inspired</li>
+                                                      </ul>
+                      <ul class="devsite-tabs-dropdown-section
+                       ">
+                                                          <li class="devsite-nav-item">
+                  <a href="/assistant/why-build"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/why-build"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Why build
+                    </div>
+                                        <div class="devsite-nav-item-description">
+                      Help users find answers and get things done with the Google Assistant.
+
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/why-build#be-everywhere-your-users-are"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/why-build#be-everywhere-your-users-are"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Reach 1 billion devices
+                    </div>
+                                        <div class="devsite-nav-item-description">
+                      Help users at home, on the go, and in the car—on over 1 billion devices.
+
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="//assistant.google.com/explore/"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="//assistant.google.com/explore/"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Explore all Actions
+                    </div>
+                                        <div class="devsite-nav-item-description">
+                      See what others are building for the Google Assistant.
+
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/directory"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/directory"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Get discovered
+                    </div>
+                                        <div class="devsite-nav-item-description">
+                      Publish your Actions to the Assistant directory.
+
+                    </div>
+                                      </a>
+                </li>
+                          </ul>
+                  </div>
+          </div>
+  </div>
+</tab>
+                                <tab dropdown
+    dropdown-full    active        >
+  <a href="/assistant/docs"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="docs"
+   aria-label="Docs, selected"         data-category="Site-Wide Custom Events"
+        data-label="Tab: Docs"
+   >
+  Docs
+</a>
+  <a href="#"
+     aria-haspopup="true"
+     aria-expanded="false"
+     aria-label="Toggle menu"
+     role="button"
+     track-type="globalNav"
+     track-metadata-position="nav"
+     track-metadata-eventdetail="nav"
+     track-name="docs"
+            data-category="Site-Wide Custom Events"
+            data-label="Tab: Docs"
+          class="devsite-tabs-dropdown-toggle devsite-icon devsite-icon-arrow-drop-down"></a>
+
+  <div class="devsite-tabs-dropdown" aria-hidden="true" aria-label="submenu">
+        <div class="devsite-tabs-dropdown-content">
+              <div class="devsite-tabs-dropdown-column
+                    ">
+                      <ul class="devsite-tabs-dropdown-section
+                       ">
+                              <li class="devsite-nav-title" tooltip>Mobile</li>
+                                                          <li class="devsite-nav-item">
+                  <a href="/assistant/app/overview"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/app/overview"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      App Actions
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/app/slices"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/app/slices"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Android Slices
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/app/assistant-sharing"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/app/assistant-sharing"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Assistant sharing
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/app/read-it"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/app/read-it"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Read It
+                    </div>
+                                      </a>
+                </li>
+                          </ul>
+                      <ul class="devsite-tabs-dropdown-section
+                       ">
+                              <li class="devsite-nav-title" tooltip>Content</li>
+                                                          <li class="devsite-nav-item">
+                  <a href="/assistant/content/overview"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/content/overview"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Schema.org web markup
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/templates"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/templates"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Templates
+                    </div>
+                                      </a>
+                </li>
+                          </ul>
+                  </div>
+              <div class="devsite-tabs-dropdown-column
+                    ">
+                      <ul class="devsite-tabs-dropdown-section
+                       ">
+                              <li class="devsite-nav-title" tooltip>Smart home devices</li>
+                                                          <li class="devsite-nav-item">
+                  <a href="/assistant/smarthome/overview"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/smarthome/overview"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Overview
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/smarthome/concepts/devices-traits"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/smarthome/concepts/devices-traits"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Device types and traits
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/smarthome/concepts/local"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/smarthome/concepts/local"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Local Home SDK
+                    </div>
+                                      </a>
+                </li>
+                          </ul>
+                      <ul class="devsite-tabs-dropdown-section
+                       ">
+                              <li class="devsite-nav-title" tooltip>Experimental devices</li>
+                                                          <li class="devsite-nav-item">
+                  <a href="/assistant/sdk/overview"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/sdk/overview"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Assistant SDK
+                    </div>
+                                      </a>
+                </li>
+                          </ul>
+                  </div>
+              <div class="devsite-tabs-dropdown-column
+                    ">
+                      <ul class="devsite-tabs-dropdown-section
+                       ">
+                              <li class="devsite-nav-title" tooltip>Conversational</li>
+                                                          <li class="devsite-nav-item">
+                  <a href="/assistant/conversational/overview"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/conversational/overview"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Overview
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/actions/design"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/actions/design"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Design
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/actions/dialogflow"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/actions/dialogflow"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Build
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/interactivecanvas"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/interactivecanvas"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Interactive Canvas
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/engagement"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/engagement"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      User engagement
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/transactions"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/transactions"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Transactions
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/identity"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/identity"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Account linking
+                    </div>
+                                      </a>
+                </li>
+                          </ul>
+                  </div>
+              <div class="devsite-tabs-dropdown-column
+                    ">
+                      <ul class="devsite-tabs-dropdown-section
+                       ">
+                              <li class="devsite-nav-title" tooltip>Console</li>
+                                                          <li class="devsite-nav-item">
+                  <a href="/assistant/console"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/console"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Overview
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/console/languages-locales"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/console/languages-locales"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Localization
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/console/analytics"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/console/analytics"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Analytics
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/assistant/console/policies/general-policies"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/assistant/console/policies/general-policies"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Policies
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="https://actions.google.com/console"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="https://actions.google.com/console"
+                     tooltip
+                  >
+                    
+                    <div class="devsite-nav-item-title">
+                      Go to console
+                    </div>
+                                      </a>
+                </li>
+                          </ul>
+                  </div>
+          </div>
+  </div>
+</tab>
+                                <tab  >
+            <a href="/assistant/community"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="community"
+           data-category="Site-Wide Custom Events"
+        data-label="Tab: Community"
+   >
+  Community
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/assistant/support"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="支持"
+           data-category="Site-Wide Custom Events"
+        data-label="Tab: 支持"
+   >
+  支持
+</a>
+
+          </tab>
+                  </div>
+  </devsite-tabs>
+
+
+                       </div>
+          <devsite-search
+            enable-suggestions
+              project-name="Conversational Actions"    tenant-name="Google Developers"                >
+  <form class="devsite-search-form" action="https://developers.google.cn/s/results" method="GET">
+    <div class="devsite-search-container">
+      <div class="devsite-searchbox">
+                <input placeholder="搜索"
+          type="text"
+          class="devsite-search-field devsite-search-query"
+          name="q"
+          value=""
+          autocomplete="off"
+                    aria-label="搜索框">
+        <div class="devsite-search-image material-icons" aria-hidden="true"></div>
+      </div>
+      <button type="button"
+              search-open
+              class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+              aria-label="Open search box"></button>
+    </div>
+  </form>
+  <button type="button"
+          search-close
+          class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+          aria-label="Close search box"></button>
+</devsite-search>
+
+        </div>
+
+        
+        <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+    <select class="devsite-language-selector-select"
+            name="language"
+            track-name="click"
+            track-type="languageSelector">
+                <option>Language</option>
+              <option value="id"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="id"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Bahasa Indonesia
+      </option>
+          <option value="de"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="de"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Deutsch
+      </option>
+          <option value="en"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="en"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        English
+      </option>
+          <option value="es"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="es"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Español
+      </option>
+          <option value="fr"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="fr"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Français
+      </option>
+          <option value="pt_br"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="pt_br"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Português – Brasil
+      </option>
+          <option value="ru"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="ru"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Русский
+      </option>
+          <option value="zh_cn"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="zh_cn"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 简体
+      </option>
+          <option value="ja"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="ja"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        日本語
+      </option>
+          <option value="ko"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="ko"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        한국어
+      </option>
+        </select>
+  </devsite-select>
+</devsite-language-selector>
+
+
+        
+              </div>    </div>  </div>
+  <div class="devsite-collapsible-section
+    ">
+    <div class="devsite-header-background">
+                        <div class="devsite-product-id-row"
+           >
+            <div class="devsite-product-description-row">
+                                                <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                    <a href="/assistant/conversational"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Lower Header"
+              data-value="1"
+          >
+            Conversational Actions
+      
+  </a>
+        </li>
+  </ul>
+                                                        </div>
+                                                                            </div>
+                                      <div class="devsite-doc-set-nav-row">
+                                                      <devsite-tabs class="lower-tabs">
+    <div class="devsite-tabs-wrapper">
+                        <tab  active>
+            <a href="/assistant/conversational/overview"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="指南"
+   aria-label="指南, selected"         data-category="Site-Wide Custom Events"
+        data-label="Tab: 指南"
+   >
+  指南
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/assistant/actions/reference/nodejsv2/overview"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="参考"
+           data-category="Site-Wide Custom Events"
+        data-label="Tab: 参考"
+   >
+  参考
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/assistant/conversational/codelabs"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="codelabs"
+           data-category="Site-Wide Custom Events"
+        data-label="Tab: Codelabs"
+   >
+  Codelabs
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/assistant/actions/samples"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="示例"
+           data-category="Site-Wide Custom Events"
+        data-label="Tab: 示例"
+   >
+  示例
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/assistant/actions/glossary"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="glossary"
+           data-category="Site-Wide Custom Events"
+        data-label="Tab: Glossary"
+   >
+  Glossary
+</a>
+
+          </tab>
+                  </div>
+  </devsite-tabs>
+
+
+                            </div>
+          </div>  </div></div>
+  
+
+  </devsite-header>      <devsite-book-nav scrollbars >
+                  
+
+
+
+
+
+<nav class="devsite-book-nav devsite-nav nocontent">
+  <div class="devsite-mobile-header">
+    <button type="button"
+            id="devsite-close-nav"
+            class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+            data-category="Site-Wide Custom Events"
+            data-label="Close navigation"
+            aria-label="Close navigation">
+    </button>
+    <div class="devsite-product-name-wrapper">
+          <a href="/assistant">
+      <div class="devsite-product-logo-container"
+       
+       >
+      <img class="devsite-product-logo"
+         alt="Google Assistant"
+         src="/assistant/assistant.png"
+         srcset="/assistant/assistant_36.png 36w, /assistant/assistant_48.png 48w, /assistant/assistant_72.png 72w, /assistant/assistant_96.png 96w, /assistant/assistant_480.png 480w, /assistant/assistant_720.png 720w, /assistant/assistant_856.png 856w, /assistant/assistant_960.png 960w, /assistant/assistant_1440.png 1440w, /assistant/assistant_1920.png 1920w, /assistant/assistant_2880.png 2880w"
+         sizes="64px">
+    </div>
+  
+  </a>
+  
+          <span class="devsite-product-name">
+        <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             devsite-has-google-wordmark">
+                                  <a href="/assistant"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Upper Header"
+              data-value="1"
+          >
+              <svg class="devsite-google-wordmark"
+       xmlns="http://www.w3.org/2000/svg"
+       viewBox="0 0 148 48">
+    <title>Google</title>
+    <path class="devsite-google-wordmark-svg-path" d="M19.58,37.65c-9.87,0-18.17-8.04-18.17-17.91c0-9.87,8.3-17.91,18.17-17.91c5.46,0,9.35,2.14,12.27,4.94l-3.45,3.45c-2.1-1.97-4.93-3.49-8.82-3.49c-7.21,0-12.84,5.81-12.84,13.02c0,7.21,5.64,13.02,12.84,13.02c4.67,0,7.34-1.88,9.04-3.58c1.4-1.4,2.32-3.41,2.66-6.16H19.58v-4.89h16.47c0.18,0.87,0.26,1.92,0.26,3.06c0,3.67-1.01,8.21-4.24,11.44C28.93,35.9,24.91,37.65,19.58,37.65z M61.78,26.12c0,6.64-5.1,11.53-11.36,11.53s-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53S61.78,19.43,61.78,26.12z M56.8,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C53.84,33.11,56.8,30.22,56.8,26.12z M87.25,26.12c0,6.64-5.1,11.53-11.36,11.53c-6.26,0-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53C82.15,14.59,87.25,19.43,87.25,26.12zM82.28,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C79.32,33.11,82.28,30.22,82.28,26.12z M112.09,15.29v20.7c0,8.52-5.02,12.01-10.96,12.01c-5.59,0-8.95-3.76-10.22-6.81l4.41-1.83c0.79,1.88,2.71,4.1,5.81,4.1c3.8,0,6.16-2.36,6.16-6.77v-1.66h-0.18c-1.14,1.4-3.32,2.62-6.07,2.62c-5.76,0-11.05-5.02-11.05-11.49c0-6.51,5.28-11.57,11.05-11.57c2.75,0,4.93,1.22,6.07,2.58h0.18v-1.88H112.09z M107.64,26.16c0-4.06-2.71-7.03-6.16-7.03c-3.49,0-6.42,2.97-6.42,7.03c0,4.02,2.93,6.94,6.42,6.94C104.93,33.11,107.64,30.18,107.64,26.16z M120.97,3.06v33.89h-5.07V3.06H120.97z M140.89,29.92l3.93,2.62c-1.27,1.88-4.32,5.11-9.61,5.11c-6.55,0-11.28-5.07-11.28-11.53c0-6.86,4.77-11.53,10.71-11.53c5.98,0,8.91,4.76,9.87,7.34l0.52,1.31l-15.42,6.38c1.18,2.31,3.01,3.49,5.59,3.49C137.79,33.11,139.58,31.84,140.89,29.92zM128.79,25.77l10.31-4.28c-0.57-1.44-2.27-2.45-4.28-2.45C132.24,19.04,128.66,21.31,128.79,25.77z"/>
+  </svg>Assistant        
+  </a>
+              </li>
+  </ul>
+      </span>
+    
+</div>  </div>
+
+  <div class="devsite-book-nav-wrapper">
+    <div class="devsite-mobile-nav-top">
+              <ul class="devsite-nav-list">
+                      <li class="devsite-nav-item">
+                  <a href="/assistant"
+           class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Actions on Google"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="actionsOnGoogle">
+      <span class="devsite-nav-text" tooltip >
+      Actions on Google
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+        </a>
+  
+                              <ul class="devsite-nav-responsive-tabs devsite-nav-has-menu">
+                  <li class="devsite-nav-item">
+    <span
+           class="devsite-nav-title"
+       tooltip
+        >
+      <span class="devsite-nav-text" tooltip menu="Actions on Google">
+      More
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          menu="Actions on Google">
+    </span>
+        </span>
+  </li>
+
+                </ul>
+                                        </li>
+                      <li class="devsite-nav-item">
+                  <a href="/assistant/docs"
+           class="devsite-nav-title gc-analytics-event
+                            devsite-nav-active"
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Docs"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="docs">
+      <span class="devsite-nav-text" tooltip >
+      Docs
+   </span>
+        </a>
+  
+                              <ul class="devsite-nav-responsive-tabs devsite-nav-has-menu">
+                  <li class="devsite-nav-item">
+    <span
+           class="devsite-nav-title"
+       tooltip
+        >
+      <span class="devsite-nav-text" tooltip menu="Docs">
+      More
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          menu="Docs">
+    </span>
+        </span>
+  </li>
+
+                </ul>
+                                            <ul class="devsite-nav-responsive-tabs">
+                                                                                                  <li class="devsite-nav-item">
+    <a href="/assistant/conversational/overview"
+           class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              devsite-nav-active"
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 指南"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="指南">
+      <span class="devsite-nav-text" tooltip menu="_book">
+      指南
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          menu="_book">
+    </span>
+        </a>
+  </li>
+
+                                                                                                  <li class="devsite-nav-item">
+    <a href="/assistant/actions/reference/nodejsv2/overview"
+           class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 参考"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="参考">
+      <span class="devsite-nav-text" tooltip menu="_book">
+      参考
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          menu="_book">
+    </span>
+        </a>
+  </li>
+
+                                                                                                  <li class="devsite-nav-item">
+    <a href="/assistant/conversational/codelabs"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Codelabs"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="codelabs">
+      <span class="devsite-nav-text" tooltip >
+      Codelabs
+   </span>
+        </a>
+  </li>
+
+                                                                                                  <li class="devsite-nav-item">
+    <a href="/assistant/actions/samples"
+           class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 示例"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="示例">
+      <span class="devsite-nav-text" tooltip menu="_book">
+      示例
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          menu="_book">
+    </span>
+        </a>
+  </li>
+
+                                                                                                  <li class="devsite-nav-item">
+    <a href="/assistant/actions/glossary"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Glossary"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="glossary">
+      <span class="devsite-nav-text" tooltip >
+      Glossary
+   </span>
+        </a>
+  </li>
+
+                                  </ul>
+                          </li>
+                      <li class="devsite-nav-item">
+                  <a href="/assistant/community"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Community"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="community">
+      <span class="devsite-nav-text" tooltip >
+      Community
+   </span>
+        </a>
+  
+                                        </li>
+                      <li class="devsite-nav-item">
+                  <a href="/assistant/support"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 支持"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="支持">
+      <span class="devsite-nav-text" tooltip >
+      支持
+   </span>
+        </a>
+  
+                                        </li>
+                    
+                  </ul>
+          </div>
+          <div class="devsite-mobile-nav-bottom">
+                            <ul class="devsite-nav-list" menu="_book">
+            <li class="devsite-nav-item           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path"><span class="devsite-nav-text" tooltip>Basics</span></div></li>
+  <li class="devsite-nav-item"><a href="/assistant/conversational/overview"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Intents and invocation</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/assistant/discovery"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/assistant/discovery/built-in-intents"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Built-in intents</span></a></li><li class="devsite-nav-item"><a href="/assistant/discovery/explicit"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Explicit invocation</span></a></li><li class="devsite-nav-item"><a href="/assistant/discovery/implicit"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Implicit invocation</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Fulfillment with Dialogflow</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/assistant/actions/dialogflow"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/assistant/actions/dialogflow/project-agent"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Create a project and Dialogflow agent</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Fulfillment with Actions SDK</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/assistant/actions/actions-sdk"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item"><a href="/assistant/actions/design"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Conversation design</span></a></li>
+  <li class="devsite-nav-item           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path"><span class="devsite-nav-text" tooltip>Build fulfillment</span></div></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Building with Dialogflow</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/assistant/actions/dialogflow/define-actions"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Define Actions</span></a></li><li class="devsite-nav-item"><a href="/assistant/actions/dialogflow/fulfillment"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Build fulfillment</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Building with Actions SDK</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/assistant/actions/actions-sdk/define-actions"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Define Actions</span></a></li><li class="devsite-nav-item"><a href="/assistant/actions/actions-sdk/fulfillment"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Build fulfillment</span></a></li><li class="devsite-nav-item"><a href="/assistant/tools/gactions-cli"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>gactions CLI</span></a></li><li class="devsite-nav-item"><a href="/assistant/actions/actions-sdk/create-a-project"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Upload your Action package</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Responses</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/assistant/conversational/responses"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/assistant/conversational/simple-responses"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Simple responses</span></a></li><li class="devsite-nav-item"><a href="/assistant/actions/reference/ssml"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>SSML</span></a></li><li class="devsite-nav-item"><a href="/assistant/conversational/rich-responses"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Rich responses</span></a></li><li class="devsite-nav-item"><a href="/assistant/conversational/selection-responses"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Visual selection responses</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item"><a href="/assistant/conversational/helpers"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Helpers</span></a></li>
+  <li class="devsite-nav-item"><a href="/assistant/conversational/save-data"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Save data in conversation</span></a></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Exits and fallbacks</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/assistant/conversational/reprompts"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Reprompts</span></a></li><li class="devsite-nav-item"><a href="/assistant/conversational/conversation-exits"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Conversational exits</span></a></li><li class="devsite-nav-item"><a href="/assistant/conversational/tips"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Implementation tips</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item"><a href="/assistant/conversational/surface-capabilities"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Scoping to specific surfaces</span></a></li>
+  <li class="devsite-nav-item"><a href="/assistant/conversational/deploy-fulfillment"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Deploy fulfillment</span></a></li>
+  <li class="devsite-nav-item           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path"><span class="devsite-nav-text" tooltip>Testing</span></div></li>
+  <li class="devsite-nav-item"><a href="/assistant/conversational/testing-best-practices"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Testing best practices</span></a></li>
+  <li class="devsite-nav-item           devsite-nav-external"><a href="/assistant/console/simulator"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Actions simulator overview</span><span class="devsite-nav-icon material-icons"
+          data-icon="external"
+          data-title="外部"
+          aria-hidden="true"></span></a></li>
+  <li class="devsite-nav-item           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path"><span class="devsite-nav-text" tooltip>Deploy and manage</span></div></li>
+  <li class="devsite-nav-item"><a href="/assistant/conversational/checklist"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Pre-launch checklists</span></a></li>
+  <li class="devsite-nav-item"><a href="/assistant/conversational/submit-project"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Submit your project</span></a></li>
+  <li class="devsite-nav-item           devsite-nav-external"><a href="/assistant/console"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Actions console overview</span><span class="devsite-nav-icon material-icons"
+          data-icon="external"
+          data-title="外部"
+          aria-hidden="true"></span></a></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Localization</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/assistant/actions/localization"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/assistant/actions/localization/agents"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Dialogflow agents</span></a></li><li class="devsite-nav-item"><a href="/assistant/actions/localization/action-packages"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Action packages</span></a></li><li class="devsite-nav-item"><a href="/assistant/actions/localization/fulfillment"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Fulfillment</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path"><span class="devsite-nav-text" tooltip>Add more features</span></div></li>
+  <li class="devsite-nav-item"><a href="/assistant/interactivecanvas"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Interactive Canvas</span></a></li>
+  <li class="devsite-nav-item"><a href="/assistant/engagement"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>User engagement</span></a></li>
+  <li class="devsite-nav-item"><a href="/assistant/identity"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Account linking</span></a></li>
+  <li class="devsite-nav-item"><a href="/assistant/transactions"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Transactions</span></a></li>
+          </ul>
+                                                    <ul class="devsite-nav-list" menu="Actions on Google" hidden>
+                                                                            <li class="devsite-nav-item devsite-nav-heading">
+    <span
+           class="devsite-nav-title"
+       tooltip
+        >
+      <span class="devsite-nav-text" tooltip >
+      Ways to build
+   </span>
+        </span>
+  </li>
+
+                                                                                                                        <li class="devsite-nav-item">
+    <a href="/assistant"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Overview"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="overview">
+      <span class="devsite-nav-text" tooltip >
+      Overview
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/app"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Extend your mobile app"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="extendYourMobileApp">
+      <span class="devsite-nav-text" tooltip >
+      Extend your mobile app
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/content"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Enhance your web presence"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="enhanceYourWebPresence">
+      <span class="devsite-nav-text" tooltip >
+      Enhance your web presence
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant#connect-your-smart-home-devices"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Connect your smart home devices"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="connectYourSmartHomeDevices">
+      <span class="devsite-nav-text" tooltip >
+      Connect your smart home devices
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/conversational"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Create conversational experiences from scratch"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="createConversationalExperiencesFromScratch">
+      <span class="devsite-nav-text" tooltip >
+      Create conversational experiences from scratch
+   </span>
+        </a>
+  </li>
+
+                                                                                                                  <li class="devsite-nav-item devsite-nav-heading">
+    <span
+           class="devsite-nav-title"
+       tooltip
+        >
+      <span class="devsite-nav-text" tooltip >
+      Get inspired
+   </span>
+        </span>
+  </li>
+
+                                                                                                                        <li class="devsite-nav-item">
+    <a href="/assistant/why-build"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Why build"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="whyBuild">
+      <span class="devsite-nav-text" tooltip >
+      Why build
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/why-build#be-everywhere-your-users-are"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Reach 1 billion devices"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="reach1BillionDevices">
+      <span class="devsite-nav-text" tooltip >
+      Reach 1 billion devices
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="//assistant.google.com/explore/"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Explore all Actions"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="exploreAllActions">
+      <span class="devsite-nav-text" tooltip >
+      Explore all Actions
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/directory"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Get discovered"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="getDiscovered">
+      <span class="devsite-nav-text" tooltip >
+      Get discovered
+   </span>
+        </a>
+  </li>
+
+                                                                    </ul>
+                                                <ul class="devsite-nav-list" menu="Docs" hidden>
+                                                                            <li class="devsite-nav-item devsite-nav-heading">
+    <span
+           class="devsite-nav-title"
+       tooltip
+        >
+      <span class="devsite-nav-text" tooltip >
+      Mobile
+   </span>
+        </span>
+  </li>
+
+                                                              <li class="devsite-nav-item">
+    <a href="/assistant/app/overview"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: App Actions"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="appActions">
+      <span class="devsite-nav-text" tooltip >
+      App Actions
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/app/slices"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Android Slices"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="androidSlices">
+      <span class="devsite-nav-text" tooltip >
+      Android Slices
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/app/assistant-sharing"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Assistant sharing"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="assistantSharing">
+      <span class="devsite-nav-text" tooltip >
+      Assistant sharing
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/app/read-it"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Read It"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="readIt">
+      <span class="devsite-nav-text" tooltip >
+      Read It
+   </span>
+        </a>
+  </li>
+
+                                                                                <li class="devsite-nav-item devsite-nav-heading">
+    <span
+           class="devsite-nav-title"
+       tooltip
+        >
+      <span class="devsite-nav-text" tooltip >
+      Content
+   </span>
+        </span>
+  </li>
+
+                                                              <li class="devsite-nav-item">
+    <a href="/assistant/content/overview"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Schema.org web markup"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="schema.orgWebMarkup">
+      <span class="devsite-nav-text" tooltip >
+      Schema.org web markup
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/templates"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Templates"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="templates">
+      <span class="devsite-nav-text" tooltip >
+      Templates
+   </span>
+        </a>
+  </li>
+
+                                                                                                                  <li class="devsite-nav-item devsite-nav-heading">
+    <span
+           class="devsite-nav-title"
+       tooltip
+        >
+      <span class="devsite-nav-text" tooltip >
+      Smart home devices
+   </span>
+        </span>
+  </li>
+
+                                                              <li class="devsite-nav-item">
+    <a href="/assistant/smarthome/overview"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Overview"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="overview">
+      <span class="devsite-nav-text" tooltip >
+      Overview
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/smarthome/concepts/devices-traits"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Device types and traits"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="deviceTypesAndTraits">
+      <span class="devsite-nav-text" tooltip >
+      Device types and traits
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/smarthome/concepts/local"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Local Home SDK"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="localHomeSdk">
+      <span class="devsite-nav-text" tooltip >
+      Local Home SDK
+   </span>
+        </a>
+  </li>
+
+                                                                                <li class="devsite-nav-item devsite-nav-heading">
+    <span
+           class="devsite-nav-title"
+       tooltip
+        >
+      <span class="devsite-nav-text" tooltip >
+      Experimental devices
+   </span>
+        </span>
+  </li>
+
+                                                              <li class="devsite-nav-item">
+    <a href="/assistant/sdk/overview"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Assistant SDK"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="assistantSdk">
+      <span class="devsite-nav-text" tooltip >
+      Assistant SDK
+   </span>
+        </a>
+  </li>
+
+                                                                                                                  <li class="devsite-nav-item devsite-nav-heading">
+    <span
+           class="devsite-nav-title"
+       tooltip
+        >
+      <span class="devsite-nav-text" tooltip >
+      Conversational
+   </span>
+        </span>
+  </li>
+
+                                                              <li class="devsite-nav-item">
+    <a href="/assistant/conversational/overview"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Overview"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="overview">
+      <span class="devsite-nav-text" tooltip >
+      Overview
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/actions/design"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Design"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="design">
+      <span class="devsite-nav-text" tooltip >
+      Design
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/actions/dialogflow"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Build"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="build">
+      <span class="devsite-nav-text" tooltip >
+      Build
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/interactivecanvas"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Interactive Canvas"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="interactiveCanvas">
+      <span class="devsite-nav-text" tooltip >
+      Interactive Canvas
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/engagement"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: User engagement"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="userEngagement">
+      <span class="devsite-nav-text" tooltip >
+      User engagement
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/transactions"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Transactions"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="transactions">
+      <span class="devsite-nav-text" tooltip >
+      Transactions
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/identity"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Account linking"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="accountLinking">
+      <span class="devsite-nav-text" tooltip >
+      Account linking
+   </span>
+        </a>
+  </li>
+
+                                                                                                                  <li class="devsite-nav-item devsite-nav-heading">
+    <span
+           class="devsite-nav-title"
+       tooltip
+        >
+      <span class="devsite-nav-text" tooltip >
+      Console
+   </span>
+        </span>
+  </li>
+
+                                                              <li class="devsite-nav-item">
+    <a href="/assistant/console"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Overview"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="overview">
+      <span class="devsite-nav-text" tooltip >
+      Overview
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/console/languages-locales"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Localization"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="localization">
+      <span class="devsite-nav-text" tooltip >
+      Localization
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/console/analytics"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Analytics"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="analytics">
+      <span class="devsite-nav-text" tooltip >
+      Analytics
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/assistant/console/policies/general-policies"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Policies"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="policies">
+      <span class="devsite-nav-text" tooltip >
+      Policies
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="https://actions.google.com/console"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Go to console"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="goToConsole">
+      <span class="devsite-nav-text" tooltip >
+      Go to console
+   </span>
+        </a>
+  </li>
+
+                                                                    </ul>
+                                                                                </div>
+      </div>
+</nav>
+              </devsite-book-nav>
+      <section id="gc-wrapper">
+        <main role="main" class="devsite-main-content"
+            has-book-nav            has-toc>
+          <devsite-toc class="devsite-nav"
+            ></devsite-toc>
+          <devsite-content>
+                          
+
+<article class="devsite-article">
+  <article class="devsite-article-inner">        
+    <div class="devsite-article-meta">
+      <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                    <a href="/"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="1"
+          >
+            首页
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/products"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="2"
+          >
+            产品
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/assistant"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="3"
+          >
+            Google Assistant
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/assistant/docs"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="4"
+          >
+            Docs
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/assistant/conversational"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="5"
+          >
+            Conversational Actions
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/assistant/conversational/overview"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="6"
+          >
+            指南
+      
+  </a>
+        </li>
+  </ul>
+               <devsite-page-rating position="header" selected-rating="0" hover-rating-star="0">
+         </devsite-page-rating>
+          </div>
+
+              <h1 class="devsite-page-title">Fulfillment</h1>
+    
+    <devsite-toc class="devsite-nav" devsite-toc-embedded
+                 >
+    </devsite-toc>
+
+    <div class="devsite-article-body clearfix
+      ">
+
+              
+
+
+<p>Your fulfillment logic can use the locale string it receives in every request to
+cater responses to users. This guide shows you how to use some third-party
+localization libraries within a Cloud Function for Firebase to return
+localized responses.</p>
+
+<h2 id="localization_libraries">Localization libraries</h2>
+
+<p>Here are some helpful libraries to consider to help you
+generate customized responses for specific locales:</p>
+
+<ul>
+<li>General purpose: <a href="//github.com/mashpie/i18n-node" class="external">I18n-node</a> (our
+example code snippets use this library)</li>
+<li>General purpose: <a href="//formatjs.io/" class="external">format.js</a> </li>
+<li>Timezone/time localization: <a href="//momentjs.com/" class="external">moment.js</a> (our
+example code snippets use this library)</li>
+<li>Money/currency: <a href="//numeraljs.com/" class="external">numeral.js</a> </li>
+</ul>
+
+<h2 id="create_localized_responses">Create localized responses</h2>
+
+<p>This section shows you how to create localized string resource files that
+contain localized strings and how to use these resource files in your Cloud
+Function for Firebase fulfillment.</p>
+
+<p>To create localized responses:</p>
+
+<ol>
+<li>In the same directory as your <code translate="no" dir="ltr">package.json</code> and <code translate="no" dir="ltr">index.js</code> files, create
+a <code translate="no" dir="ltr">locales</code> directory for your localized string files. We&#39;ll refer to this
+directory as <code translate="no" dir="ltr">&lt;project-dir&gt;/functions/locales</code>.</li>
+<li><p>Create a resource file that contains localized strings for every locale that
+you want to support. For example, if you want to support <code translate="no" dir="ltr">en-US</code>, <code translate="no" dir="ltr">en-GB</code>,
+and <code translate="no" dir="ltr">de-DE</code> locales with localized welcome and date messages, those files
+might look like this:</p>
+
+<p><strong><code translate="no" dir="ltr">&lt;project-dir&gt;/functions/locales/en-US.json</code></strong></p>
+<pre class="prettyprint" translate="no" dir="ltr"><code translate="no" dir="ltr">{
+   &#34;WELCOME_BASIC&#34;: &#34;Hello, welcome!&#34;,
+   &#34;DATE&#34;: &#34;The date is %s&#34;
+}
+</code></pre>
+<p><strong><code translate="no" dir="ltr">&lt;project-dir&gt;/functions/locales/en-GB.json</code></strong></p>
+<pre class="prettyprint" translate="no" dir="ltr"><code translate="no" dir="ltr">{
+   &#34;WELCOME_BASIC&#34;: &#34;Hello, welcome!&#34;,
+   &#34;DATE&#34;: &#34;The date is %s&#34;
+}
+</code></pre>
+<p><strong><code translate="no" dir="ltr">&lt;project-dir&gt;/functions/locales/de-DE.json</code></strong></p>
+<pre class="prettyprint" translate="no" dir="ltr"><code translate="no" dir="ltr">{
+   &#34;WELCOME_BASIC&#34;: &#34;Hallo und willkommen!&#34;,
+   &#34;DATE&#34;: &#34;Das Datum ist %s&#34;
+}
+</code></pre></li>
+<li><p>In the <code translate="no" dir="ltr">package.json</code> file, declare the i18n-node and moment libraries as
+dependencies:</p>
+<pre class="prettyprint" translate="no" dir="ltr"><code translate="no" dir="ltr">{
+ ...
+ &#34;dependencies&#34;: {
+   &#34;actions-on-google&#34;: &#34;^2.7.0&#34;,
+   &#34;firebase-admin&#34;: &#34;^7.2.1&#34;,
+   &#34;firebase-functions&#34;: &#34;^2.2.1&#34;,
+   &#34;i18n&#34;: &#34;^0.8.3&#34;,
+   &#34;moment&#34;: &#34;^2.22.1&#34;
+ }
+}
+</code></pre></li>
+<li><p>In the <code translate="no" dir="ltr">index.js</code> file, declare the dependencies for the i18n-node and moment
+libraries:
+<pre class="prettyprint" translate="no" dir="ltr">const i18n = require(&#39;i18n&#39;);
+const moment = require(&#39;moment&#39;);</pre></p></li>
+<li><p>In the <code translate="no" dir="ltr">index.js</code> file, configure the i18n-node with your supported locales:
+<pre class="prettyprint" translate="no" dir="ltr">i18n.configure({
+  locales: [&#39;en-US&#39;, &#39;en-GB&#39;, &#39;de-DE&#39;],
+  directory: __dirname + &#39;/locales&#39;,
+  defaultLocale: &#39;en-US&#39;
+});</pre></p></li>
+<li><p>Set the locale for the libraries using <code translate="no" dir="ltr">conv.user.locale</code> from the client library
+property.
+<pre class="prettyprint" translate="no" dir="ltr">app.middleware((conv) =&gt; {
+  i18n.setLocale(conv.user.locale);
+  moment.locale(conv.user.locale);
+});</pre></p></li>
+<li><p>To return a localized response, call <code translate="no" dir="ltr">ask()</code> with a localized string
+returned by i18n. This snippet also contains a function that uses moment
+to return a localized date:
+<pre class="prettyprint" translate="no" dir="ltr">app.intent(&#39;Default Welcome Intent&#39;, (conv) =&gt; { // must not be async for i18n
+  conv.ask(i18n.__(&#39;WELCOME_BASIC&#39;));
+});
+
+app.intent(&#39;date&#39;, (conv) =&gt; { // must not be async for i18n
+  conv.ask(i18n.__(&#39;DATE&#39;, moment().format(&#39;LL&#39;)));
+});</pre></p></li>
+</ol>
+
+<p>Here&#39;s a complete index.js file as an example:
+   <pre class="prettyprint" translate="no" dir="ltr">&#39;use strict&#39;;
+const {dialogflow} = require(&#39;actions-on-google&#39;);
+const functions = require(&#39;firebase-functions&#39;);
+const i18n = require(&#39;i18n&#39;);
+const moment = require(&#39;moment&#39;);
+
+i18n.configure({
+  locales: [&#39;en-US&#39;, &#39;en-GB&#39;, &#39;de-DE&#39;],
+  directory: __dirname + &#39;/locales&#39;,
+  defaultLocale: &#39;en-US&#39;
+});
+
+const app = dialogflow({debug: true});
+
+app.middleware((conv) =&gt; {
+  i18n.setLocale(conv.user.locale);
+  moment.locale(conv.user.locale);
+});
+
+app.intent(&#39;Default Welcome Intent&#39;, (conv) =&gt; { // must not be async for i18n
+  conv.ask(i18n.__(&#39;WELCOME_BASIC&#39;));
+});
+
+app.intent(&#39;date&#39;, (conv) =&gt; { // must not be async for i18n
+  conv.ask(i18n.__(&#39;DATE&#39;, moment().format(&#39;LL&#39;)));
+});
+
+exports.demoAction = functions.https.onRequest(app);</pre></p>
+
+          </div>
+
+    
+                   <devsite-page-rating position="footer" selected-rating="0" hover-rating-star="0">
+         </devsite-page-rating>
+                   
+          </article>
+</article>
+
+<devsite-content-footer class="nocontent">
+  <p>Except as otherwise noted, the content of this page is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>, and code samples are licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>. For details, see the <a href="https://developers.google.cn/site-policies">Google Developers Site Policies</a>. Java is a registered trademark of Oracle and/or its affiliates.</p>  </devsite-content-footer>
+
+
+
+                      </devsite-content>
+        </main>
+        <devsite-footer-promos class="devsite-footer">
+                      
+                  </devsite-footer-promos>
+        <devsite-footer-linkboxes class="devsite-footer">
+                      <nav class="devsite-footer-linkboxes nocontent">
+    <ul class="devsite-footer-linkboxes-list">
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">More Information</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://assistant.google.com"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 1)"           >
+            The Google Assistant
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/assistant/why-build"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 2)"           >
+            Why build for the Assistant?
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://assistant.google.com/explore"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 3)"           >
+            Assistant directory
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/assistant/sdk"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 4)"           >
+            Google Assistant SDK for experimental devices
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/assistant/support"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 5)"           >
+            Support
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/assistant/community"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 6)"           >
+            Community
+          </a>
+        </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">计划</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="//www.womentechmakers.com"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 1)"           >
+            Women Techmakers
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/community/gbg"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 2)"           >
+            Google Business Groups
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/community/gdg"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 3)"           >
+            Google Developer Groups
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/community/experts"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 4)"           >
+            Google Developers Experts
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/community/launchpad"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 5)"           >
+            Launchpad
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/community/dsc"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 6)"           >
+            Developer Student Clubs
+          </a>
+        </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">开发者控制台</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="//console.developers.google.com"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 1)"           >
+            Google API Console
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//console.cloud.google.com"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 2)"           >
+            Google Cloud Platform Console
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//play.google.com/apps/publish"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 3)"           >
+            Google Play 管理中心
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//console.firebase.google.com"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 4)"           >
+            Firebase Console
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//console.actions.google.com"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 5)"           >
+            Actions on Google Console
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//cast.google.com/publish"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 6)"           >
+            Cast SDK Developer Console
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//chrome.google.com/webstore/developer/dashboard"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 7)"           >
+            Chrome Web Store Dashboard
+          </a>
+        </li>
+              </ul>
+    </li>
+      </ul>
+  </nav>
+                  </devsite-footer-linkboxes>
+        <devsite-footer-utility class="devsite-footer">
+                      
+<div class="devsite-footer-utility nocontent">
+    <nav class="devsite-footer-sites">
+    <a href="https://developers.google.cn/"
+       class="devsite-footer-sites-logo-link gc-analytics-event"
+       data-category="Site-Wide Custom Events"
+       data-label="Footer Google Developers Link">
+      <img class="devsite-footer-sites-logo"
+           src="/_static/images/lockup-developers.svg"
+           alt="Google Developers">
+    </a>
+    <ul class="devsite-footer-sites-list">
+            <li class="devsite-footer-sites-item">
+        <a href="//developer.android.google.cn"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Android Link"
+                  >
+          Android
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//developer.chrome.com/home"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Chrome Link"
+                  >
+          Chrome
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//firebase.google.cn"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Firebase Link"
+                  >
+          Firebase
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//cloud.google.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Google Cloud Platform Link"
+                  >
+          Google Cloud Platform
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="/products"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer All products Link"
+                  >
+          所有产品
+        </a>
+      </li>
+          </ul>
+  </nav>
+  
+  <nav class="devsite-footer-utility-links">
+        <ul class="devsite-footer-utility-list">
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="/terms/site-terms"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Terms link"
+         >
+          条款
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//policies.google.cn/privacy"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Privacy link"
+         >
+          隐私权政策
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 devsite-footer-utility-button">
+                <span class="devsite-footer-utility-description">订阅 Google Developers 简报</span>
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//services.google.com/fb/forms/googledevelopersnewsletter/?utm_medium=referral&amp;utm_source=google-products&amp;utm_team=googledevs&amp;utm_campaign=201611-newsletter-launch"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Subscribe link"
+         >
+          订阅
+        </a>
+              </li>
+          </ul>
+    
+    <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+    <select class="devsite-language-selector-select"
+            name="language"
+            track-name="click"
+            track-type="languageSelector">
+                <option>Language</option>
+              <option value="id"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="id"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Bahasa Indonesia
+      </option>
+          <option value="de"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="de"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Deutsch
+      </option>
+          <option value="en"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="en"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        English
+      </option>
+          <option value="es"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="es"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Español
+      </option>
+          <option value="fr"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="fr"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Français
+      </option>
+          <option value="pt_br"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="pt_br"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Português – Brasil
+      </option>
+          <option value="ru"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="ru"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Русский
+      </option>
+          <option value="zh_cn"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="zh_cn"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 简体
+      </option>
+          <option value="ja"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="ja"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        日本語
+      </option>
+          <option value="ko"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="ko"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        한국어
+      </option>
+        </select>
+  </devsite-select>
+</devsite-language-selector>
+
+  </nav>
+</div>
+                  </devsite-footer-utility>
+      </section></section>
+    <devsite-sitemask></devsite-sitemask>
+    <devsite-snackbar                   ></devsite-snackbar>    <devsite-tooltip blocked-link></devsite-tooltip>
+    <devsite-heading-link></devsite-heading-link>
+    <devsite-analytics>
+              <script type="application/json" analytics>[{"metrics": {}, "dimensions": {"dimension6": "en", "dimension4": "Conversational Actions", "dimension5": "zh-cn", "dimension3": false, "dimension1": "Signed out", "dimension8": null}, "gaid": "UA-24532603-11"}, {"metrics": {}, "dimensions": {"dimension6": "en", "dimension4": "Conversational Actions", "dimension5": "zh-cn", "dimension3": false, "dimension1": "Signed out", "dimension8": null}, "gaid": "UA-128680783-1"}]</script>
+<script type="application/json" gtm>{"parameters": {"freeTrialEligibleUser": "False", "language": {"requested": "zh-cn", "served": "en"}, "projectName": "Conversational Actions", "scriptsafe": null, "signedIn": "False", "internalUser": "False"}, "tags": ["GTM-TP5RPLW"]}</script>
+          </devsite-analytics>
+        <script>
+    (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
+    t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
+    E.parentNode.insertBefore(t,E);})(window, document, 'script',
+    'https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/js/app_loader.js', '[1,"zh_cn",null,"/js/devsite_app.js","https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda","https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/developers","https://google-developers.gonglchuangl.net",null,null,["/_pwa/developers/manifest.json","/_static/images/video-placeholder.svg","https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/developers/images/favicon.png","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons"],1]')
+  </script>  </body>
+</html>
