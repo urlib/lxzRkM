@@ -1,0 +1,1819 @@
+<!doctype html>
+<html       lang="zh-CN"      dir="ltr">
+  <head>
+    <meta name="google-signin-client-id" content="721724668570-nbkv1cfusk7kk4eni4pjvepaus73b13t.apps.googleusercontent.com">
+    <meta name="google-signin-scope" content="profile email">
+    <meta property="og:site_name" content="Google Developers">
+    <meta property="og:type" content="website">
+    
+          <meta name="theme-color" content="#1a73e8">
+    
+    <meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="/_pwa/developers/manifest.json"
+          crossorigin="use-credentials">
+    <link rel="preconnect" href="//www.gstatic.cn" crossorigin>
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.googleapis.com" crossorigin>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons">
+        <link rel="stylesheet" href="https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/developers/css/app.css">
+    <noscript>
+      <link rel="stylesheet" href="https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/developers/css/ce_bundle.css">
+    </noscript>
+    <link rel="shortcut icon" href="https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/developers/images/favicon.png">
+    <link rel="apple-touch-icon" href="https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/developers/images/touchicon-180.png"><link rel="canonical" href="https://developers.google.cn/pay/passes/guides/pass-verticals/offers/overview?hl=zh-cn">      
+<title>概览 &nbsp;|&nbsp; Google Pay for Passes &nbsp;|&nbsp; Google Developers</title>
+
+<meta property="og:title" content="概览 &nbsp;|&nbsp; Google Pay for Passes &nbsp;|&nbsp; Google Developers">
+
+
+  <meta property="og:url" content="https://developers.google.cn/pay/passes/guides/pass-verticals/offers/overview?hl=zh-cn">
+
+  <meta property="og:image" content="https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/developers/images/opengraph/google-blue.png">
+  <meta property="og:image:secure_url" content="https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/developers/images/opengraph/google-blue.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:locale" content="zh_cn">
+  <meta name="twitter:card" content="summary_large_image">
+
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Google Pay",
+      "item": "https://developers.google.cn/pay"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Google Pay for Passes",
+      "item": "https://developers.google.cn/pay/passes"
+    },{
+      "@type": "ListItem",
+      "position": 3,
+      "name": "概览",
+      "item": "https://developers.google.cn/pay/passes/guides/pass-verticals/offers/overview"
+    }]
+  }
+  </script>
+
+
+
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    
+    
+    
+  
+
+    </head>
+  <body type="article"
+        theme="google-blue"
+        class=""
+        
+        layout="docs"
+        block-apix                pending>
+    <devsite-progress type="indeterminate" id="app-progress"></devsite-progress>
+    <section class="devsite-wrapper"><devsite-header>
+      
+
+
+
+
+
+
+
+<div class="devsite-header--inner">
+  <div class="devsite-top-logo-row-wrapper-wrapper">
+    <div class="devsite-top-logo-row-wrapper">
+      <div class="devsite-top-logo-row">
+        <button type="button" id="devsite-hamburger-menu"
+          class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+          data-category="Site-Wide Custom Events"
+          data-label="Navigation menu button"
+          visually-hidden
+          aria-label="Open menu">
+        </button>
+        <div class="devsite-product-name-wrapper">
+      
+  
+  <span class="devsite-product-name">
+    <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             devsite-has-google-wordmark">
+                                  <a href="/pay"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Upper Header"
+              data-value="1"
+          >
+              <svg class="devsite-google-wordmark"
+       xmlns="http://www.w3.org/2000/svg"
+       viewBox="0 0 148 48">
+    <title>Google</title>
+    <path class="devsite-google-wordmark-svg-path" d="M19.58,37.65c-9.87,0-18.17-8.04-18.17-17.91c0-9.87,8.3-17.91,18.17-17.91c5.46,0,9.35,2.14,12.27,4.94l-3.45,3.45c-2.1-1.97-4.93-3.49-8.82-3.49c-7.21,0-12.84,5.81-12.84,13.02c0,7.21,5.64,13.02,12.84,13.02c4.67,0,7.34-1.88,9.04-3.58c1.4-1.4,2.32-3.41,2.66-6.16H19.58v-4.89h16.47c0.18,0.87,0.26,1.92,0.26,3.06c0,3.67-1.01,8.21-4.24,11.44C28.93,35.9,24.91,37.65,19.58,37.65z M61.78,26.12c0,6.64-5.1,11.53-11.36,11.53s-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53S61.78,19.43,61.78,26.12z M56.8,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C53.84,33.11,56.8,30.22,56.8,26.12z M87.25,26.12c0,6.64-5.1,11.53-11.36,11.53c-6.26,0-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53C82.15,14.59,87.25,19.43,87.25,26.12zM82.28,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C79.32,33.11,82.28,30.22,82.28,26.12z M112.09,15.29v20.7c0,8.52-5.02,12.01-10.96,12.01c-5.59,0-8.95-3.76-10.22-6.81l4.41-1.83c0.79,1.88,2.71,4.1,5.81,4.1c3.8,0,6.16-2.36,6.16-6.77v-1.66h-0.18c-1.14,1.4-3.32,2.62-6.07,2.62c-5.76,0-11.05-5.02-11.05-11.49c0-6.51,5.28-11.57,11.05-11.57c2.75,0,4.93,1.22,6.07,2.58h0.18v-1.88H112.09z M107.64,26.16c0-4.06-2.71-7.03-6.16-7.03c-3.49,0-6.42,2.97-6.42,7.03c0,4.02,2.93,6.94,6.42,6.94C104.93,33.11,107.64,30.18,107.64,26.16z M120.97,3.06v33.89h-5.07V3.06H120.97z M140.89,29.92l3.93,2.62c-1.27,1.88-4.32,5.11-9.61,5.11c-6.55,0-11.28-5.07-11.28-11.53c0-6.86,4.77-11.53,10.71-11.53c5.98,0,8.91,4.76,9.87,7.34l0.52,1.31l-15.42,6.38c1.18,2.31,3.01,3.49,5.59,3.49C137.79,33.11,139.58,31.84,140.89,29.92zM128.79,25.77l10.31-4.28c-0.57-1.44-2.27-2.45-4.28-2.45C132.24,19.04,128.66,21.31,128.79,25.77z"/>
+  </svg>Pay        
+  </a>
+              </li>
+  </ul>
+  </span>
+</div>
+        <div class="devsite-top-logo-row-middle">
+          <div class="devsite-header-upper-tabs">
+                            <devsite-tabs class="upper-tabs">
+    <div class="devsite-tabs-wrapper">
+                        <tab  >
+            <a href="/pay"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="概览"
+           data-category="Overview"
+        data-label="navTopMenu"
+        data-action="tabClick"
+   >
+  概览
+</a>
+
+          </tab>
+                                <tab dropdown
+                >
+  <a href="/pay/api"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="付款"
+           data-category="Payments"
+        data-label="navTopMenu"
+        data-action="tabClick"
+   >
+  付款
+</a>
+  <a href="#"
+     aria-haspopup="true"
+     aria-expanded="false"
+     aria-label="Toggle menu"
+     role="button"
+     track-type="globalNav"
+     track-metadata-position="nav"
+     track-metadata-eventdetail="nav"
+     track-name="付款"
+            data-category="Payments"
+            data-label="navTopMenu"
+            data-action="tabClick"
+          class="devsite-tabs-dropdown-toggle devsite-icon devsite-icon-arrow-drop-down"></a>
+
+  <div class="devsite-tabs-dropdown" aria-hidden="true" aria-label="submenu">
+        <div class="devsite-tabs-dropdown-content">
+              <div class="devsite-tabs-dropdown-column
+                    ">
+                      <ul class="devsite-tabs-dropdown-section
+                       ">
+                              <li class="devsite-nav-title" tooltip> </li>
+                                                          <li class="devsite-nav-item">
+                  <a href="/pay/api/android/overview"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/pay/api/android/overview"
+                     tooltip
+                                                           data-category="android"
+                                         data-action="dropdownClick"
+                                         data-label="navTopMenu"
+                                      >
+                    
+                    <div class="devsite-nav-item-title">
+                      Android
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/pay/api/web/overview"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/pay/api/web/overview"
+                     tooltip
+                                                           data-category="web"
+                                         data-action="dropdownClick"
+                                         data-label="navTopMenu"
+                                      >
+                    
+                    <div class="devsite-nav-item-title">
+                      Web
+                    </div>
+                                      </a>
+                </li>
+                          </ul>
+                  </div>
+          </div>
+  </div>
+</tab>
+                                <tab dropdown
+        active        >
+  <a href="/pay/passes"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="卡券"
+   aria-label="卡券, selected"         data-category="passes"
+        data-label="navTopMenu"
+        data-action="tabClick"
+   >
+  卡券
+</a>
+  <a href="#"
+     aria-haspopup="true"
+     aria-expanded="false"
+     aria-label="Toggle menu"
+     role="button"
+     track-type="globalNav"
+     track-metadata-position="nav"
+     track-metadata-eventdetail="nav"
+     track-name="卡券"
+            data-category="passes"
+            data-label="navTopMenu"
+            data-action="tabClick"
+          class="devsite-tabs-dropdown-toggle devsite-icon devsite-icon-arrow-drop-down"></a>
+
+  <div class="devsite-tabs-dropdown" aria-hidden="true" aria-label="submenu">
+        <div class="devsite-tabs-dropdown-content">
+              <div class="devsite-tabs-dropdown-column
+                    ">
+                      <ul class="devsite-tabs-dropdown-section
+                       ">
+                              <li class="devsite-nav-title" tooltip> </li>
+                                                          <li class="devsite-nav-item">
+                  <a href="/pay/passes/guides/pass-verticals/boarding-passes/overview"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/pay/passes/guides/pass-verticals/boarding-passes/overview"
+                     tooltip
+                                                           data-action="dropdownClick"
+                                         data-category="boarding-passes"
+                                         data-label="navTopMenu"
+                                      >
+                    
+                    <div class="devsite-nav-item-title">
+                      登机牌
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/pay/passes/guides/pass-verticals/event-tickets/overview"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/pay/passes/guides/pass-verticals/event-tickets/overview"
+                     tooltip
+                                                           data-action="dropdownClick"
+                                         data-category="event-tickets"
+                                         data-label="navTopMenu"
+                                      >
+                    
+                    <div class="devsite-nav-item-title">
+                      活动门票
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/pay/passes/guides/pass-verticals/loyalty/overview"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/pay/passes/guides/pass-verticals/loyalty/overview"
+                     tooltip
+                                                           data-action="dropdownClick"
+                                         data-category="loyalty-cards"
+                                         data-label="navTopMenu"
+                                      >
+                    
+                    <div class="devsite-nav-item-title">
+                      会员卡
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/pay/passes/guides/pass-verticals/gift-cards/overview"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/pay/passes/guides/pass-verticals/gift-cards/overview"
+                     tooltip
+                                                           data-category="gift-cards"
+                                         data-action="dropdownClick"
+                                         data-label="navTopMenu"
+                                      >
+                    
+                    <div class="devsite-nav-item-title">
+                      礼品卡
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/pay/passes/guides/pass-verticals/offers/overview"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/pay/passes/guides/pass-verticals/offers/overview"
+                     tooltip
+                                                           data-action="dropdownClick"
+                                         data-category="offers"
+                                         data-label="navTopMenu"
+                                      >
+                    
+                    <div class="devsite-nav-item-title">
+                      优惠
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/pay/passes/guides/pass-verticals/transit-passes/overview"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/pay/passes/guides/pass-verticals/transit-passes/overview"
+                     tooltip
+                                                           data-action="dropdownClick"
+                                         data-category="transit"
+                                         data-label="navTopMenu"
+                                      >
+                    
+                    <div class="devsite-nav-item-title">
+                      公交卡
+                    </div>
+                                      </a>
+                </li>
+                          </ul>
+                  </div>
+          </div>
+  </div>
+</tab>
+                                <tab dropdown
+                >
+  <a href="/pay/india/api"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="印度"
+           data-category="India"
+        data-label="navTopMenu"
+        data-action="tabClick"
+   >
+  印度
+</a>
+  <a href="#"
+     aria-haspopup="true"
+     aria-expanded="false"
+     aria-label="Toggle menu"
+     role="button"
+     track-type="globalNav"
+     track-metadata-position="nav"
+     track-metadata-eventdetail="nav"
+     track-name="印度"
+            data-category="India"
+            data-label="navTopMenu"
+            data-action="tabClick"
+          class="devsite-tabs-dropdown-toggle devsite-icon devsite-icon-arrow-drop-down"></a>
+
+  <div class="devsite-tabs-dropdown" aria-hidden="true" aria-label="submenu">
+        <div class="devsite-tabs-dropdown-content">
+              <div class="devsite-tabs-dropdown-column
+                    ">
+                      <ul class="devsite-tabs-dropdown-section
+                       ">
+                              <li class="devsite-nav-title" tooltip> </li>
+                                                          <li class="devsite-nav-item">
+                  <a href="/pay/india/api/android/overview"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/pay/india/api/android/overview"
+                     tooltip
+                                                           data-category="android-india"
+                                         data-action="dropdownClick"
+                                         data-label="navTopMenu"
+                                      >
+                    
+                    <div class="devsite-nav-item-title">
+                      Android
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/pay/india/api/web/intro"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/pay/india/api/web/intro"
+                     tooltip
+                                                           data-action="dropdownClick"
+                                         data-category="web-india"
+                                         data-label="navTopMenu"
+                                      >
+                    
+                    <div class="devsite-nav-item-title">
+                      Web
+                    </div>
+                                      </a>
+                </li>
+                              <li class="devsite-nav-item">
+                  <a href="/pay/india/api/otherapis/omnichannel/overview"
+                     track-type="navMenu"
+                     track-metadata-position="nav"
+                     track-metadata-href="/pay/india/api/otherapis/omnichannel/overview"
+                     tooltip
+                                                           data-action="dropdownClick"
+                                         data-category="omnichannel-india"
+                                         data-label="navTopMenu"
+                                      >
+                    
+                    <div class="devsite-nav-item-title">
+                      全渠道
+                    </div>
+                                      </a>
+                </li>
+                          </ul>
+                  </div>
+          </div>
+  </div>
+</tab>
+                                <tab  >
+            <a href="/pay/transit"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="开放式公交"
+           data-category="open-loop-transit"
+        data-label="navTopMenu"
+        data-action="tabClick"
+   >
+  开放式公交
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/pay/spot"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="spot平台"
+           data-category="spot-platform"
+        data-label="navTopMenu"
+        data-action="tabClick"
+   >
+  Spot 平台
+</a>
+
+          </tab>
+                  </div>
+  </devsite-tabs>
+
+
+                       </div>
+          <devsite-search
+            enable-suggestions
+              project-name="Google Pay for Passes"    tenant-name="Google Developers"                >
+  <form class="devsite-search-form" action="https://developers.google.cn/s/results" method="GET">
+    <div class="devsite-search-container">
+      <div class="devsite-searchbox">
+                <input placeholder="搜索"
+          type="text"
+          class="devsite-search-field devsite-search-query"
+          name="q"
+          value=""
+          autocomplete="off"
+                    aria-label="搜索框">
+        <div class="devsite-search-image material-icons" aria-hidden="true"></div>
+      </div>
+      <button type="button"
+              search-open
+              class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+              aria-label="Open search box"></button>
+    </div>
+  </form>
+  <button type="button"
+          search-close
+          class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+          aria-label="Close search box"></button>
+</devsite-search>
+
+        </div>
+
+        
+        <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+    <select class="devsite-language-selector-select"
+            name="language"
+            track-name="click"
+            track-type="languageSelector">
+                <option>Language</option>
+              <option value="id"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="id"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Bahasa Indonesia
+      </option>
+          <option value="de"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="de"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Deutsch
+      </option>
+          <option value="en"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="en"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        English
+      </option>
+          <option value="es"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="es"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Español
+      </option>
+          <option value="fr"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="fr"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Français
+      </option>
+          <option value="pl"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="pl"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Polski
+      </option>
+          <option value="pt_br"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="pt_br"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Português – Brasil
+      </option>
+          <option value="ru"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="ru"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Русский
+      </option>
+          <option value="zh_cn"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="zh_cn"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 简体
+      </option>
+          <option value="zh_tw"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="zh_tw"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 繁體
+      </option>
+          <option value="ja"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="ja"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        日本語
+      </option>
+          <option value="ko"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="ko"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        한국어
+      </option>
+        </select>
+  </devsite-select>
+</devsite-language-selector>
+
+
+        
+              </div>    </div>  </div>
+  <div class="devsite-collapsible-section
+    ">
+    <div class="devsite-header-background">
+                        <div class="devsite-product-id-row"
+           >
+            <div class="devsite-product-description-row">
+                                                <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                    <a href="/pay/passes"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Lower Header"
+              data-value="1"
+          >
+            Google Pay for Passes
+      
+  </a>
+        </li>
+  </ul>
+                                                        </div>
+                                                                            </div>
+                                      <div class="devsite-doc-set-nav-row">
+                                                      <devsite-tabs class="lower-tabs">
+    <div class="devsite-tabs-wrapper">
+                        <tab  >
+            <a href="/pay/passes"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="首页"
+           data-category="Site-Wide Custom Events"
+        data-label="Tab: 首页"
+   >
+  首页
+</a>
+
+          </tab>
+                                <tab  active>
+            <a href="/pay/passes/guides/overview/about/about-google-pay-api-for-passes"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="指南"
+   aria-label="指南, selected"         data-category="Site-Wide Custom Events"
+        data-label="Tab: 指南"
+   >
+  指南
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/pay/passes/rest"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="参考"
+           data-category="Site-Wide Custom Events"
+        data-label="Tab: 参考"
+   >
+  参考
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/pay/passes/samples/quickstart-rest-api"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="示例"
+           data-category="Site-Wide Custom Events"
+        data-label="Tab: 示例"
+   >
+  示例
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/pay/passes/support/faq"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="支持"
+           data-category="Site-Wide Custom Events"
+        data-label="Tab: 支持"
+   >
+  支持
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/pay/passes/partners/enrollment-signin"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="合作伙伴"
+           data-category="Site-Wide Custom Events"
+        data-label="Tab: 合作伙伴"
+   >
+  合作伙伴
+</a>
+
+          </tab>
+                  </div>
+  </devsite-tabs>
+
+
+                            </div>
+          </div>  </div></div>
+  
+
+  </devsite-header>      <devsite-book-nav scrollbars >
+                  
+
+
+
+
+
+<nav class="devsite-book-nav devsite-nav nocontent">
+  <div class="devsite-mobile-header">
+    <button type="button"
+            id="devsite-close-nav"
+            class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+            data-category="Site-Wide Custom Events"
+            data-label="Close navigation"
+            aria-label="Close navigation">
+    </button>
+    <div class="devsite-product-name-wrapper">
+      
+          <span class="devsite-product-name">
+        <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             devsite-has-google-wordmark">
+                                  <a href="/pay"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Upper Header"
+              data-value="1"
+          >
+              <svg class="devsite-google-wordmark"
+       xmlns="http://www.w3.org/2000/svg"
+       viewBox="0 0 148 48">
+    <title>Google</title>
+    <path class="devsite-google-wordmark-svg-path" d="M19.58,37.65c-9.87,0-18.17-8.04-18.17-17.91c0-9.87,8.3-17.91,18.17-17.91c5.46,0,9.35,2.14,12.27,4.94l-3.45,3.45c-2.1-1.97-4.93-3.49-8.82-3.49c-7.21,0-12.84,5.81-12.84,13.02c0,7.21,5.64,13.02,12.84,13.02c4.67,0,7.34-1.88,9.04-3.58c1.4-1.4,2.32-3.41,2.66-6.16H19.58v-4.89h16.47c0.18,0.87,0.26,1.92,0.26,3.06c0,3.67-1.01,8.21-4.24,11.44C28.93,35.9,24.91,37.65,19.58,37.65z M61.78,26.12c0,6.64-5.1,11.53-11.36,11.53s-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53S61.78,19.43,61.78,26.12z M56.8,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C53.84,33.11,56.8,30.22,56.8,26.12z M87.25,26.12c0,6.64-5.1,11.53-11.36,11.53c-6.26,0-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53C82.15,14.59,87.25,19.43,87.25,26.12zM82.28,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C79.32,33.11,82.28,30.22,82.28,26.12z M112.09,15.29v20.7c0,8.52-5.02,12.01-10.96,12.01c-5.59,0-8.95-3.76-10.22-6.81l4.41-1.83c0.79,1.88,2.71,4.1,5.81,4.1c3.8,0,6.16-2.36,6.16-6.77v-1.66h-0.18c-1.14,1.4-3.32,2.62-6.07,2.62c-5.76,0-11.05-5.02-11.05-11.49c0-6.51,5.28-11.57,11.05-11.57c2.75,0,4.93,1.22,6.07,2.58h0.18v-1.88H112.09z M107.64,26.16c0-4.06-2.71-7.03-6.16-7.03c-3.49,0-6.42,2.97-6.42,7.03c0,4.02,2.93,6.94,6.42,6.94C104.93,33.11,107.64,30.18,107.64,26.16z M120.97,3.06v33.89h-5.07V3.06H120.97z M140.89,29.92l3.93,2.62c-1.27,1.88-4.32,5.11-9.61,5.11c-6.55,0-11.28-5.07-11.28-11.53c0-6.86,4.77-11.53,10.71-11.53c5.98,0,8.91,4.76,9.87,7.34l0.52,1.31l-15.42,6.38c1.18,2.31,3.01,3.49,5.59,3.49C137.79,33.11,139.58,31.84,140.89,29.92zM128.79,25.77l10.31-4.28c-0.57-1.44-2.27-2.45-4.28-2.45C132.24,19.04,128.66,21.31,128.79,25.77z"/>
+  </svg>Pay        
+  </a>
+              </li>
+  </ul>
+      </span>
+    
+</div>  </div>
+
+  <div class="devsite-book-nav-wrapper">
+    <div class="devsite-mobile-nav-top">
+              <ul class="devsite-nav-list">
+                      <li class="devsite-nav-item">
+                  <a href="/pay"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 概览"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="概览">
+      <span class="devsite-nav-text" tooltip >
+      概览
+   </span>
+        </a>
+  
+                                        </li>
+                      <li class="devsite-nav-item">
+                  <a href="/pay/api"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 付款"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="付款">
+      <span class="devsite-nav-text" tooltip >
+      付款
+   </span>
+        </a>
+  
+                              <ul class="devsite-nav-responsive-tabs devsite-nav-has-menu">
+                  <li class="devsite-nav-item">
+    <span
+           class="devsite-nav-title"
+       tooltip
+        >
+      <span class="devsite-nav-text" tooltip menu="付款">
+      More
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          menu="付款">
+    </span>
+        </span>
+  </li>
+
+                </ul>
+                                        </li>
+                      <li class="devsite-nav-item">
+                  <a href="/pay/passes"
+           class="devsite-nav-title gc-analytics-event
+                            devsite-nav-active"
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 卡券"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="卡券">
+      <span class="devsite-nav-text" tooltip >
+      卡券
+   </span>
+        </a>
+  
+                              <ul class="devsite-nav-responsive-tabs devsite-nav-has-menu">
+                  <li class="devsite-nav-item">
+    <span
+           class="devsite-nav-title"
+       tooltip
+        >
+      <span class="devsite-nav-text" tooltip menu="卡券">
+      More
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          menu="卡券">
+    </span>
+        </span>
+  </li>
+
+                </ul>
+                                            <ul class="devsite-nav-responsive-tabs">
+                                                                                                  <li class="devsite-nav-item">
+    <a href="/pay/passes"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 首页"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="首页">
+      <span class="devsite-nav-text" tooltip >
+      首页
+   </span>
+        </a>
+  </li>
+
+                                                                                                  <li class="devsite-nav-item">
+    <a href="/pay/passes/guides/overview/about/about-google-pay-api-for-passes"
+           class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              devsite-nav-active"
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 指南"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="指南">
+      <span class="devsite-nav-text" tooltip menu="_book">
+      指南
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          menu="_book">
+    </span>
+        </a>
+  </li>
+
+                                                                                                  <li class="devsite-nav-item">
+    <a href="/pay/passes/rest"
+           class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 参考"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="参考">
+      <span class="devsite-nav-text" tooltip menu="_book">
+      参考
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          menu="_book">
+    </span>
+        </a>
+  </li>
+
+                                                                                                  <li class="devsite-nav-item">
+    <a href="/pay/passes/samples/quickstart-rest-api"
+           class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 示例"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="示例">
+      <span class="devsite-nav-text" tooltip menu="_book">
+      示例
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          menu="_book">
+    </span>
+        </a>
+  </li>
+
+                                                                                                  <li class="devsite-nav-item">
+    <a href="/pay/passes/support/faq"
+           class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 支持"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="支持">
+      <span class="devsite-nav-text" tooltip menu="_book">
+      支持
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          menu="_book">
+    </span>
+        </a>
+  </li>
+
+                                                                                                  <li class="devsite-nav-item">
+    <a href="/pay/passes/partners/enrollment-signin"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 合作伙伴"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="合作伙伴">
+      <span class="devsite-nav-text" tooltip >
+      合作伙伴
+   </span>
+        </a>
+  </li>
+
+                                  </ul>
+                          </li>
+                      <li class="devsite-nav-item">
+                  <a href="/pay/india/api"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 印度"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="印度">
+      <span class="devsite-nav-text" tooltip >
+      印度
+   </span>
+        </a>
+  
+                              <ul class="devsite-nav-responsive-tabs devsite-nav-has-menu">
+                  <li class="devsite-nav-item">
+    <span
+           class="devsite-nav-title"
+       tooltip
+        >
+      <span class="devsite-nav-text" tooltip menu="印度">
+      More
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          menu="印度">
+    </span>
+        </span>
+  </li>
+
+                </ul>
+                                        </li>
+                      <li class="devsite-nav-item">
+                  <a href="/pay/transit"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 开放式公交"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="开放式公交">
+      <span class="devsite-nav-text" tooltip >
+      开放式公交
+   </span>
+        </a>
+  
+                                        </li>
+                      <li class="devsite-nav-item">
+                  <a href="/pay/spot"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Spot 平台"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="spot平台">
+      <span class="devsite-nav-text" tooltip >
+      Spot 平台
+   </span>
+        </a>
+  
+                                        </li>
+                    
+                  </ul>
+          </div>
+          <div class="devsite-mobile-nav-bottom">
+                            <ul class="devsite-nav-list" menu="_book">
+            <li class="devsite-nav-item           devsite-nav-divider           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path"><span class="devsite-nav-text" tooltip>概览</span></div></li>
+  <li class="devsite-nav-item           devsite-nav-expandable           devsite-nav-accordion"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>简介</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/pay/passes/guides/overview/about/about-google-pay-api-for-passes"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Google Pay API for Passes</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/overview/about/how-it-works"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>工作原理</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/overview/about/typical-api-flow"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>典型的 API 流程</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable           devsite-nav-accordion"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>操作方法…</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/pay/passes/guides/overview/how-to/save-passes"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>保存卡券</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/overview/how-to/view-saved-passes"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>查看已保存的卡券</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-divider           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path"><span class="devsite-nav-text" tooltip>开始</span></div></li>
+  <li class="devsite-nav-item           devsite-nav-expandable           devsite-nav-accordion"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>基本设置</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/pay/passes/guides/get-started/basic-setup/get-access-to-rest-api"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>使用 REST API</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/get-started/basic-setup/get-access-to-android-sdk"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>使用 Android SDK</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/get-started/basic-setup/create-issuer-accounts-programmatically"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>以编程方式创建发卡机构帐号</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable           devsite-nav-accordion"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>实现 API</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/pay/passes/guides/get-started/implementing-the-api/save-to-google-pay"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>保存到 Google Pay</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/get-started/implementing-the-api/redeem-from-google-pay"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>从 Google Pay 兑换</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/get-started/implementing-the-api/engage-through-google-pay"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>通过 Google Pay 互动</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/overview/how-to/use-callbacks"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>使用回调</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable           devsite-nav-accordion"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>API 指南</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/pay/passes/guides/get-started/api-guidelines/performance-tips"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>性能提示</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/get-started/api-guidelines/brand-guidelines"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>品牌指南</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/get-started/api-guidelines/button-guidelines"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>按钮指南</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/get-started/api-guidelines/terms-of-service"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>服务条款</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-divider           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path"><span class="devsite-nav-text" tooltip>卡券类型</span></div></li>
+  <li class="devsite-nav-item           devsite-nav-expandable           devsite-nav-accordion"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>登机牌</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/pay/passes/guides/pass-verticals/boarding-passes/overview"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>概览</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/pass-verticals/boarding-passes/use-cases"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>用例</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/pass-verticals/boarding-passes/code-snippets"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>代码段</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/pass-verticals/boarding-passes/design"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>设计</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/pass-verticals/boarding-passes/test"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>测试</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable           devsite-nav-accordion"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>活动门票</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/pay/passes/guides/pass-verticals/event-tickets/overview"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>概览</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/pass-verticals/event-tickets/use-cases"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>用例</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/pass-verticals/event-tickets/code-snippets"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>代码段</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/pass-verticals/event-tickets/design"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>设计</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/pass-verticals/event-tickets/test"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>测试</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable           devsite-nav-accordion"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>礼品卡</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/pay/passes/guides/pass-verticals/gift-cards/overview"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>概览</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/pass-verticals/gift-cards/use-cases"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>用例</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/pass-verticals/gift-cards/code-snippets"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>代码段</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/pass-verticals/gift-cards/design"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>设计</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/pass-verticals/gift-cards/test"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>测试</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable           devsite-nav-accordion"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>会员卡</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/pay/passes/guides/pass-verticals/loyalty/overview"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>概览</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/pass-verticals/loyalty/use-cases"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>用例</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/pass-verticals/loyalty/code-snippets"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>代码段</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/pass-verticals/loyalty/design"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>设计</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/pass-verticals/loyalty/test"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>测试</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable           devsite-nav-accordion"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>优惠</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/pay/passes/guides/pass-verticals/offers/overview"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>概览</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/pass-verticals/offers/use-cases"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>用例</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/pass-verticals/offers/code-snippets"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>代码段</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/pass-verticals/offers/design"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>设计</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/pass-verticals/offers/test"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>测试</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable           devsite-nav-accordion"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>公交卡</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/pay/passes/guides/pass-verticals/transit-passes/overview"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>概览</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/pass-verticals/transit-passes/use-cases"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>用例</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/pass-verticals/transit-passes/design"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>设计</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/pass-verticals/transit-passes/test"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>测试</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-divider           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path"><span class="devsite-nav-text" tooltip>智能触碰</span></div></li>
+  <li class="devsite-nav-item           devsite-nav-expandable           devsite-nav-accordion"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>概览</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/pay/passes/guides/smart-tap/overview/about-smart-tap"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>智能触碰功能简介</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/smart-tap/overview/prerequisites"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>前提条件</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable           devsite-nav-accordion"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>配置智能触碰</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/pay/passes/guides/smart-tap/configure-smart-tap/set-up-a-merchant-terminal"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>设置商家终端</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/smart-tap/configure-smart-tap/configure-with-api"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>使用 API 配置智能触碰</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/smart-tap/configure-smart-tap/design"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>设计</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable           devsite-nav-accordion"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>主要概念</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/pay/passes/guides/smart-tap/key-concepts/collection-identifiers"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>收款标识符</span></a></li><li class="devsite-nav-item"><a href="/pay/passes/guides/smart-tap/key-concepts/specific-passes"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>终端如何请求卡券</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-divider           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path"><span class="devsite-nav-text" tooltip>精选用例</span></div></li>
+  <li class="devsite-nav-item"><a href="/pay/passes/guides/pass-verticals/loyalty/use-cases#linked-offers"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>会员卡关联优惠</span></a></li>
+  <li class="devsite-nav-item"><a href="/pay/passes/guides/pass-verticals/event-tickets/use-cases#linked-offers"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>活动门票关联优惠</span></a></li>
+  <li class="devsite-nav-item"><a href="/pay/passes/guides/pass-verticals/loyalty/link-out-from-a-saved-google-pay-pass"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>从已保存的 Google Pay 卡券进行链接</span></a></li>
+  <li class="devsite-nav-item"><a href="/pay/passes/guides/enrollment-signin"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>注册和登录</span></a></li>
+          </ul>
+                                                                          <ul class="devsite-nav-list" menu="付款" hidden>
+                                                                            <li class="devsite-nav-item devsite-nav-heading">
+    <span
+           class="devsite-nav-title"
+       tooltip
+        >
+      <span class="devsite-nav-text" tooltip >
+       
+   </span>
+        </span>
+  </li>
+
+                                                              <li class="devsite-nav-item">
+    <a href="/pay/api/android/overview"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Android"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="android">
+      <span class="devsite-nav-text" tooltip >
+      Android
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/pay/api/web/overview"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Web"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="web">
+      <span class="devsite-nav-text" tooltip >
+      Web
+   </span>
+        </a>
+  </li>
+
+                                                                    </ul>
+                                                <ul class="devsite-nav-list" menu="卡券" hidden>
+                                                                            <li class="devsite-nav-item devsite-nav-heading">
+    <span
+           class="devsite-nav-title"
+       tooltip
+        >
+      <span class="devsite-nav-text" tooltip >
+       
+   </span>
+        </span>
+  </li>
+
+                                                              <li class="devsite-nav-item">
+    <a href="/pay/passes/guides/pass-verticals/boarding-passes/overview"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 登机牌"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="登机牌">
+      <span class="devsite-nav-text" tooltip >
+      登机牌
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/pay/passes/guides/pass-verticals/event-tickets/overview"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 活动门票"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="活动门票">
+      <span class="devsite-nav-text" tooltip >
+      活动门票
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/pay/passes/guides/pass-verticals/loyalty/overview"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 会员卡"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="会员卡">
+      <span class="devsite-nav-text" tooltip >
+      会员卡
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/pay/passes/guides/pass-verticals/gift-cards/overview"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 礼品卡"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="礼品卡">
+      <span class="devsite-nav-text" tooltip >
+      礼品卡
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/pay/passes/guides/pass-verticals/offers/overview"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 优惠"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="优惠">
+      <span class="devsite-nav-text" tooltip >
+      优惠
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/pay/passes/guides/pass-verticals/transit-passes/overview"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 公交卡"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="公交卡">
+      <span class="devsite-nav-text" tooltip >
+      公交卡
+   </span>
+        </a>
+  </li>
+
+                                                                    </ul>
+                                                <ul class="devsite-nav-list" menu="印度" hidden>
+                                                                            <li class="devsite-nav-item devsite-nav-heading">
+    <span
+           class="devsite-nav-title"
+       tooltip
+        >
+      <span class="devsite-nav-text" tooltip >
+       
+   </span>
+        </span>
+  </li>
+
+                                                              <li class="devsite-nav-item">
+    <a href="/pay/india/api/android/overview"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Android"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="android">
+      <span class="devsite-nav-text" tooltip >
+      Android
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/pay/india/api/web/intro"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Web"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="web">
+      <span class="devsite-nav-text" tooltip >
+      Web
+   </span>
+        </a>
+  </li>
+
+                                          <li class="devsite-nav-item">
+    <a href="/pay/india/api/otherapis/omnichannel/overview"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: 全渠道"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="全渠道">
+      <span class="devsite-nav-text" tooltip >
+      全渠道
+   </span>
+        </a>
+  </li>
+
+                                                                    </ul>
+                                                                                </div>
+      </div>
+</nav>
+              </devsite-book-nav>
+      <section id="gc-wrapper">
+        <main role="main" class="devsite-main-content"
+            has-book-nav            has-toc>
+          <devsite-toc class="devsite-nav"
+            ></devsite-toc>
+          <devsite-content>
+                          
+
+<article class="devsite-article">
+  <article class="devsite-article-inner">        
+    <div class="devsite-article-meta">
+      <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                    <a href="/"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="1"
+          >
+            首页
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/products"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="2"
+          >
+            产品
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/pay"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="3"
+          >
+            Google Pay
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/pay/passes"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="4"
+          >
+            Google Pay for Passes
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/pay/passes/guides/overview/about/about-google-pay-api-for-passes"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="5"
+          >
+            指南
+      
+  </a>
+        </li>
+  </ul>
+               <devsite-page-rating position="header" selected-rating="0" hover-rating-star="0">
+         </devsite-page-rating>
+          </div>
+
+              <h1 class="devsite-page-title">概览</h1>
+    
+    <devsite-toc class="devsite-nav" devsite-toc-embedded
+                 >
+    </devsite-toc>
+
+    <div class="devsite-article-body clearfix
+      ">
+
+              
+
+    <p>Google Pay API for Passes 让您可以通过提供优惠与用户互动。本指南中介绍的概念可帮助您更好地了解所保存优惠的功能。</p>
+
+    <p>本部分介绍的用例仅适用于“优惠”类别。</p>
+
+    <aside class="note"><b>注意</b>：所有“卡券”类别都具有相同的核心功能。
+    如需了解详情，请参阅<a href="/pay/passes/guides/get-started/implementing-the-api/save-to-google-pay">保存到 Google Pay</a>、<a href="/pay/passes/guides/get-started/implementing-the-api/redeem-from-google-pay">从 Google Pay 兑换</a>以及<a href="/pay/passes/guides/get-started/implementing-the-api/engage-through-google-pay">通过 Google Pay 互动</a>。</aside>
+          </div>
+
+    
+                   <devsite-page-rating position="footer" selected-rating="0" hover-rating-star="0">
+         </devsite-page-rating>
+                               <devsite-feedback
+  project-name="Google Pay for Passes"
+  product-id="594798"
+  bucket=""
+  context=""
+  version="devsite-webserver-20200402-r01-rc00.425842974027804700"
+  data-label="Send Feedback Button"
+  track-type="feedback"
+  track-name="sendFeedbackLink"
+  track-metadata-position="header"
+          project-icon="https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/developers/images/touchicon-180.png"
+    >
+    <button>发送反馈</button>
+</devsite-feedback>
+                   
+          </article>
+</article>
+
+<devsite-content-footer class="nocontent">
+  <p>Except as otherwise noted, the content of this page is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>, and code samples are licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>. For details, see the <a href="https://developers.google.cn/site-policies">Google Developers Site Policies</a>. Java is a registered trademark of Oracle and/or its affiliates.</p>  <p>Last updated 2020-03-06.</p></devsite-content-footer>
+
+
+
+                      </devsite-content>
+        </main>
+        <devsite-footer-promos class="devsite-footer">
+                      
+                  </devsite-footer-promos>
+        <devsite-footer-linkboxes class="devsite-footer">
+                      <nav class="devsite-footer-linkboxes nocontent">
+    <ul class="devsite-footer-linkboxes-list">
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">产品信息</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="/pay/passes/support/terms"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 1)"           >
+            服务条款
+          </a>
+        </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">支持</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://support.google.com/pay/merchants/contact/interest?visit_id=1-636208910416382829-1444241290&amp;rd=1"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 1)"           >
+            注册 Google Pay API for Passses
+          </a>
+        </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">相关链接</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="http://github.com/google-pay/"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 1)"           >
+            GitHub 上的 Google Pay 示例
+          </a>
+        </li>
+              </ul>
+    </li>
+      </ul>
+  </nav>
+                  </devsite-footer-linkboxes>
+        <devsite-footer-utility class="devsite-footer">
+                      
+<div class="devsite-footer-utility nocontent">
+    <nav class="devsite-footer-sites">
+    <a href="https://developers.google.cn/"
+       class="devsite-footer-sites-logo-link gc-analytics-event"
+       data-category="Site-Wide Custom Events"
+       data-label="Footer Google Developers Link">
+      <img class="devsite-footer-sites-logo"
+           src="/_static/images/lockup-developers.svg"
+           alt="Google Developers">
+    </a>
+    <ul class="devsite-footer-sites-list">
+            <li class="devsite-footer-sites-item">
+        <a href="//developer.android.google.cn"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Android Link"
+                  >
+          Android
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//developer.chrome.com/home"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Chrome Link"
+                  >
+          Chrome
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//firebase.google.cn"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Firebase Link"
+                  >
+          Firebase
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//cloud.google.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Google Cloud Platform Link"
+                  >
+          Google Cloud Platform
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="/products"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer All products Link"
+                  >
+          所有产品
+        </a>
+      </li>
+          </ul>
+  </nav>
+  
+  <nav class="devsite-footer-utility-links">
+        <ul class="devsite-footer-utility-list">
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="/terms/site-terms"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Terms link"
+         >
+          条款
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//policies.google.cn/privacy"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Privacy link"
+         >
+          隐私权政策
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 devsite-footer-utility-button">
+                <span class="devsite-footer-utility-description">订阅 Google Developers 简报</span>
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//services.google.com/fb/forms/googledevelopersnewsletter/?utm_medium=referral&amp;utm_source=google-products&amp;utm_team=googledevs&amp;utm_campaign=201611-newsletter-launch"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Subscribe link"
+         >
+          订阅
+        </a>
+              </li>
+          </ul>
+    
+    <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+    <select class="devsite-language-selector-select"
+            name="language"
+            track-name="click"
+            track-type="languageSelector">
+                <option>Language</option>
+              <option value="id"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="id"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Bahasa Indonesia
+      </option>
+          <option value="de"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="de"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Deutsch
+      </option>
+          <option value="en"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="en"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        English
+      </option>
+          <option value="es"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="es"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Español
+      </option>
+          <option value="fr"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="fr"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Français
+      </option>
+          <option value="pl"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="pl"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Polski
+      </option>
+          <option value="pt_br"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="pt_br"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Português – Brasil
+      </option>
+          <option value="ru"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="ru"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Русский
+      </option>
+          <option value="zh_cn"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="zh_cn"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 简体
+      </option>
+          <option value="zh_tw"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="zh_tw"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 繁體
+      </option>
+          <option value="ja"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="ja"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        日本語
+      </option>
+          <option value="ko"
+              track-metadata-original-language="zh_cn"
+              track-metadata-selected-language="ko"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        한국어
+      </option>
+        </select>
+  </devsite-select>
+</devsite-language-selector>
+
+  </nav>
+</div>
+                  </devsite-footer-utility>
+      </section></section>
+    <devsite-sitemask></devsite-sitemask>
+    <devsite-snackbar                   ></devsite-snackbar>    <devsite-tooltip blocked-link></devsite-tooltip>
+    <devsite-heading-link></devsite-heading-link>
+    <devsite-analytics>
+              <script type="application/json" analytics>[{"metrics": {}, "dimensions": {"dimension6": "zh-cn", "dimension4": "Google Pay for Passes", "dimension5": "zh-cn", "dimension3": false, "dimension1": "Signed out", "dimension8": null}, "gaid": "UA-24532603-11"}, {"metrics": {}, "dimensions": {"dimension6": "zh-cn", "dimension4": "Google Pay for Passes", "dimension5": "zh-cn", "dimension3": false, "dimension1": "Signed out", "dimension8": null}, "gaid": "UA-22847105-24"}]</script>
+<script type="application/json" gtm>{}</script>
+          </devsite-analytics>
+        <script>
+    (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
+    t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
+    E.parentNode.insertBefore(t,E);})(window, document, 'script',
+    'https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/js/app_loader.js', '[1,"zh_cn",null,"/js/devsite_app.js","https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda","https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/developers","https://google-developers.gonglchuangl.net",null,null,["/_pwa/developers/manifest.json","/_static/images/video-placeholder.svg","https://www.gstatic.cn/devrel-devsite/prod/vafbb0b5d787a2bc7a3bcbfb9dfdb3baefdd01831979d5302dd65271466576cda/developers/images/favicon.png","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons"],1]')
+  </script>  </body>
+</html>
