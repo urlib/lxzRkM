@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>联想社区论坛_联想电脑_联想手机_ThinkPad_Motorola-官方论坛</title>
+    <meta name="keywords" content="联想社区论坛,联想电脑,联想手机,ThinkPad,Motorola,官方论坛" />
+    <meta name="description" content="联想论坛，包含联想电脑，手机,联想服务器，联想外设数码产品等各类产品信息，是专业的在线讨论与知识分享平台。" />
+    <link rel="alternate" media="only screen and (max-width: 640px)"  href="https://mclub.lenovo.com.cn/">
+    <meta http-equiv="Cache-Control" content="no-transform"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="stylesheet" href="//img1cdn.clubstatic.lenovo.com.cn/pc3/css/club_v4/pc/common.css?b0e1knhbloxikl0c"/>
+    <link rel="stylesheet" href="//img1cdn.clubstatic.lenovo.com.cn/pc3/css/club_v4/pc/footer.css?b0e1knhbloxikl0c"/>
+    <script type="text/javascript" src="//js1cdn.clubstatic.lenovo.com.cn/pc3/js/club_v4/pc/lib/jquery-1.8.3.min.js?b0e1knhbloxikl0c"></script>
+    <script type="text/javascript" src="//js1cdn.clubstatic.lenovo.com.cn/pc3/js/club_v4/pc/lib/jquery.cookie.js?b0e1knhbloxikl0c"></script>
+    <script type="text/javascript" src="https://m1.lefile.cn/myStatic/slidingVerification/js/aes.js"></script>
+    <script type="text/javascript" src="https://m1.lefile.cn/myStatic/slidingVerification/js/jquery.slider.js "></script>
+    <script type="text/javascript" src="https://m1.lefile.cn/myStatic/slidingVerification/js/uc.js "></script>
+    <link rel="stylesheet" href="https://pccss1.clubstatic.lenovo.com.cn/static/lenovo/css/header_pm.css?b0e1knhbloxikl0c"/>
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?500de05052e5d5e30e8aab9788ec62bf";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    </head>
+<body style="background:#f3f5f7" class="">
+
+<!--headermenu-->
+    <link rel="stylesheet" href="//m7.lefile.cn/version/batch/cjid.css?id=049a60982e329a554b184272275e2cf1,10cb4fb13a12a218162ed1d9ee230e3b,"/>
+<script type="text/javascript" src="//m6.lefile.cn/version/js/921bab7b2ed77a07625cc399582e957f.js"></script>
+<div pageId='' pageUuid='9eccc834-f9d0-4b12-9d39-e85b7d55938e' type="0">
+	<div layoutId='e6018c80-2af4-4d14-83d4-a0103bdeff99' id="a929d6b2-d941-4851-a57a-ebd87cd1d557" order="1" layoutUuid='a929d6b2-d941-4851-a57a-ebd87cd1d557' type='2' cssPath='' jsPath=''>
+    <style>
+    </style>
+    <div class="cms_currency_layout cms_background_layout_a929d6b2-d941-4851-a57a-ebd87cd1d557  " order='1' tplConfig dischargeComponent floorname="">
+        <div componentId='06cd174f-d22b-4e8d-9d32-043798b9c67d' componentUuid='7987985d-a034-45cb-9fe0-8c3f2ccf764b' type="3" componentAddSrc="css" >
+     <link rel="stylesheet" href="https://m1.lefile.cn/myStatic/slidingVerification/css/jquery.slider.css?v=1520492823591,"/>
+        
+          <script src="https://m2.lefile.cn/lenovo_passport/latest/js/pp.rr.min.js"> </script>
+         <div class="header_2018 clear_rx">
+        <div id="lenovo_logo">
+            <a href="http://www.lenovo.com.cn" target="_parent" latag="latag_pc_logo">
+                <img src="https://p1.lefile.cn/product/adminweb/2018/12/13/2d4534f6-29f3-4a05-8e68-97d9904c7bd2.png" alt="lenovo.com.cn">
+            </a>
+        </div>
+        <div class="header_nav">
+            <div class="content">
+                <ul class="ul_nav">
+                                 <li class="lis">
+                                  <a href="https://www.lenovo.com.cn/"  target="_blank"    latag="latag_pc_顶部导航__0_https://www.lenovo.com.cn/_联想首页">联想首页</a>
+                                 
+                                 </li>
+                                 <li class="lis">
+                                  <a href="https://shop.lenovo.com.cn"  target="_parent"    latag="latag_pc_顶部导航__1_https://shop.lenovo.com.cn_商城">商城</a>
+                                 
+                                 </li>
+                                 <li class="lis">
+                                  <a href="https://brand.lenovo.com.cn/"  target="_blank"    latag="latag_pc_顶部导航__2_https://brand.lenovo.com.cn/_品牌">品牌</a>
+                                 
+                                 </li>
+                                 <li class="lis">
+                                  <a href="https://newsupport.lenovo.com.cn/"  target="_blank"    latag="latag_pc_顶部导航__3_https://newsupport.lenovo.com.cn/_服务">服务</a>
+                                 
+                                 </li>
+                                 <li class="lis">
+                                  <a href="https://club.lenovo.com.cn/"  target="_blank"    latag="latag_pc_顶部导航__4_https://club.lenovo.com.cn/_社区">社区</a>
+                                 
+                                 </li>
+                                 <li class="lis">
+                                  <a href="https://mall.lenovo.com.cn/"  target="_blank"    latag="latag_pc_顶部导航__5_https://mall.lenovo.com.cn/_门店">门店</a>
+                                 
+                                 </li>
+                </ul>
+                <div class="ur_r_html">
+                    <div class="ul_r_2018">
+                        <div class="hd-login-regist">
+                        <a href="https://reg.lenovo.com.cn/auth/v1/regist" class="regist_btn_plat" target="_blank" latag="latag_pc_header_login_注册">注册</a>
+                          
+                            <i class="vertical-line"></i>
+                              <a href="javascript:;" class="login"  latag="latag_pc_header_login_登陆">登录</a>
+                            
+                            <i id="head_bubble"   latag="latag_pc_header_新人气泡_注册">
+                              <a href="https://reg.lenovo.com.cn/auth/v1/regist" class="regist_btn_plat" target="_blank" latag="latag_pc_header_login_注册">
+                                注册立即抽好礼
+                             <img src="//p4.lefile.cn/fes/cms/2019/09/09/2xqbnvufsepfkf68ka5iiqfetf7x5a037357.png" style="position: absolute;right: 7px;top: 8px;">
+                            </a>
+                            </i>
+                        </div>
+                        <div class="hd-login-show">
+                            <ul>
+                                <li class="user">
+                                    <span class="userName"> </span>
+                                    <img  class="userLeve" src="https://p3.lefile.cn/product/adminweb/2019/01/22/f1d4b5d5-b229-4bb5-93f4-7f0e64b274fe.png" alt="">
+                                    <div class="myCenter">
+                                        <div class="top clear_rx">
+                                               <a href="https://i.lenovo.com.cn/info/userinfo.jhtml?sts=e40e7004-4c8a-4963-8564-31271a8337d8"  target="_blank" latag="latag_pc_header_mycenter_个人信息_https://i.lenovo.com.cn/info/userinfo.jhtml?sts=e40e7004-4c8a-4963-8564-31271a8337d8">
+                                            <img class="uer_img" src="https://i.app.lefile.cn/sdefault1477559405444.png" alt="">
+                                            </a>
+                                            <div class="user_id">
+                                              <a href="https://i.lenovo.com.cn/info/userinfo.jhtml?sts=e40e7004-4c8a-4963-8564-31271a8337d8"  target="_blank" latag="latag_pc_header_mycenter_个人信息_https://i.lenovo.com.cn/info/userinfo.jhtml?sts=e40e7004-4c8a-4963-8564-31271a8337d8">
+                                                <p class="noName"></p>
+                                                </a>
+                                                 <a href="https://i.lenovo.com.cn/growth/levelRghtPage.jhtml?sts=e40e7004-4c8a-4963-8564-31271a8337d8"  target="_blank" latag="latag_pc_header_mycenter_等级权益_https://i.lenovo.com.cn/growth/levelRghtPage.jhtml?sts=e40e7004-4c8a-4963-8564-31271a8337d8">
+                                                <p><span class="user_vp">普通会员 </span><img class="img_vp" src=""
+                                                        alt=""></p>
+                                                </a>
+                                            </div>
+                                            
+                                            <a href="javascript:;"  target="_parent" class="logout" latag="latag_pc_header_mycenter_login_退出登陆">退出登录</a>
+                                        </div>
+                                        <div class="mid clear_rx">
+                                            <ul>
+                                                <li>
+                                                     <a href="https://i.lenovo.com.cn/ledou/list.jhtml?sts=e40e7004-4c8a-4963-8564-31271a8337d8"  target="_blank"  latag="latag_pc_header_mycenter_我的乐豆_https://i.lenovo.com.cn/ledou/list.jhtml?sts=e40e7004-4c8a-4963-8564-31271a8337d8" >
+                                                     <h3 class="userledou">暂无数据</h3>
+                                                    <span>乐豆</span>
+                                                    </a>
+                                                    
+                                                </li>
+                                                <li>
+                                                 <a href="https://buy.lenovo.com.cn/lenovo/saleCoupons.jhtm"  target="_blank" latag="latag_pc_header_mycenter_我的优惠券_https://buy.lenovo.com.cn/lenovo/saleCoupons.jhtm">
+                                                    <h3 class="usercoupon">暂无数据</h3>
+                                                    <span>优惠券</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                <a href="https://shop.lenovo.com.cn/consumptionPoint/list.html"  target="_blank" latag="latag_pc_header_mycenter_我的积分_https://shop.lenovo.com.cn/consumptionPoint/list.html" >
+                                                    <h3 class="userScore">暂无数据</h3>
+                                                    <span>消费积分</span>
+                                                </a>   
+                                                </li>
+                                                <li>
+                                                  <a href="https://i.lenovo.com.cn/growth/index.jhtml?sts=e40e7004-4c8a-4963-8564-31271a8337d8"  target="_blank" latag="latag_pc_header_mycenter_成长值_https://i.lenovo.com.cn/growth/index.jhtml?sts=e40e7004-4c8a-4963-8564-31271a8337d8">
+                                                    <h3 class="userGrowth">暂无数据</h3>
+                                                    <span>成长值</span>
+                                                 </a>   
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="bottom">
+                                            <ul>
+                                                <li>
+                                                 <a href="https://buy.lenovo.com.cn/center/orderlist.jhtm?merchantId=1"  target="_blank"  latag="latag_pc_header_mycenter_我的订单_https://buy.lenovo.com.cn/center/orderlist.jhtm?merchantId=1">
+                                                    <img src="https://p3.lefile.cn/product/adminweb/2018/12/29/208ff503-1712-463c-a7a2-6abe09ac064e.png" alt="">
+                                                    <span>我的订单</span>
+                                                </a>
+                                                </li>
+                                                <li>
+                                                 <a href="https://i.lenovo.com.cn/memberInfo/v2/center.jhtml?sts=e40e7004-4c8a-4963-8564-31271a8337d8"  target="_blank" latag="latag_pc_header_mycenter_会员中心_https://i.lenovo.com.cn/memberInfo/v2/center.jhtml?sts=e40e7004-4c8a-4963-8564-31271a8337d8">
+                                                    <img src="https://p4.lefile.cn/product/adminweb/2018/12/29/d3da30f6-cd3e-4120-8db2-712c95ba4fff.png" alt="">
+                                                    <span>会员中心</span>
+                                                </a>
+                                                </li>
+                                                <li>
+                                                 <a href="https://club.lenovo.com.cn/home.php?mod=space"  target="_blank" latag="latag_pc_header_mycenter_我的社区_https://club.lenovo.com.cn/space-uid-12724977.html" >
+                                                    <img src="https://p2.lefile.cn/product/adminweb/2018/12/29/1e768e9d-2fd2-46d0-8f52-f2f388f71620.png" alt="" >
+                                                    <span>我的社区</span>
+                                                     </a>
+                                                </li>
+                                                <li>
+                                                 <a href="https://newsupport.lenovo.com.cn/"  target="_blank" latag="latag_pc_header_mycenter_我的服务_https://newsupport.lenovo.com.cn/" >
+                                                    <img src=" https://p3.lefile.cn/product/adminweb/2018/12/29/36f85303-ab0d-4ef6-a48b-6bd8594f7068.png" alt="">
+                                                    <span>我的服务</span>
+                                                     </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="msg_heaer">
+                                    <img src="https://p2.lefile.cn/product/adminweb/2019/01/03/be5b01b9-8948-42c1-8a82-6c4872a62e21.png" alt="">
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="phone">
+                            <img src="https://p1.lefile.cn/product/adminweb/2019/01/18/c8f87ce8-1e14-4bb3-854e-f86af0f07072.png" alt="">
+                            <div class="phone_hov">
+                                <ul>
+
+                                    <li style=" border-bottom: 1px solid #efefef">
+                                        <div>
+                                            <img src="https://p2.lefile.cn/product/adminweb/2019/01/21/cb6cb783-ef71-4248-9996-3602a7906600.jpg" alt="">
+                                            <span class="title">联想客户端 <span class="name">下载即享 <br>188元新人礼</span></span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="header_box">
+            <ul class="ul">
+                                 <li class="lis">
+                                  <a href="https://club.lenovo.com.cn" class="ass"   target="_parent" latag="latag_pc_二级导航__0_https://club.lenovo.com.cn_联想社区" >联想社区</a>
+  
+                                 </li>
+                                 <li class="lis">
+                                  <a href="https://club.lenovo.com.cn/community-forum/" class="ass"   target="_parent" latag="latag_pc_二级导航__1_https://club.lenovo.com.cn/community-forum/_版块" >版块</a>
+                                 <div class="pull">
+                                    <ul class="pull_box">
+                                    <li class="pull_title" style="width:16%">
+                                    <div>
+                                    <img src="//p1.lefile.cn/fes/cms/2019/01/23/54608j6lm905o9uca0yt2sv9m5g160944263.png" alt="" class="img_0">
+                                     <img src="//p4.lefile.cn/fes/cms/2019/01/23/bur66slurktf6vi19snag8ss7264ii532736.png" alt="" class="img_1">
+                                  <a href="https://club.lenovo.com.cn/pc/" class="a_title"   target="_blank" latag="latag_pc_三级级导航__0_https://club.lenovo.com.cn/pc/_Lenovo电脑"> <span class="title">Lenovo电脑</span>
+                                    </a>
+                                  
+                                    <ul>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1172-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_1_小新笔记本" latag="latag_pc_三级级导航__0_https://club.lenovo.com.cn/forum-1172-1.html_小新笔记本">小新笔记本</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1219-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_2_拯救者笔记本" latag="latag_pc_三级级导航__1_https://club.lenovo.com.cn/forum-1219-1.html_拯救者笔记本">拯救者笔记本</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1583-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_3_扬天笔记本" latag="latag_pc_三级级导航__2_https://club.lenovo.com.cn/forum-1583-1.html_扬天笔记本">扬天笔记本</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1213-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_3_YOGA笔记本" latag="latag_pc_三级级导航__3_https://club.lenovo.com.cn/forum-1213-1.html_YOGA笔记本">YOGA笔记本</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1545-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_4_YOGA Book" latag="latag_pc_三级级导航__4_https://club.lenovo.com.cn/forum-1545-1.html_YOGA Book">YOGA Book</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1425-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_6_MIIX二合一笔记本" latag="latag_pc_三级级导航__5_https://club.lenovo.com.cn/forum-1425-1.html_MIIX二合一笔记本">MIIX二合一笔记本</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1361-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_7_其他系列笔记本" latag="latag_pc_三级级导航__6_https://club.lenovo.com.cn/forum-1361-1.html_其他系列笔记本">其他系列笔记本</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1144-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_8_联想台式机" latag="latag_pc_三级级导航__7_https://club.lenovo.com.cn/forum-1144-1.html_联想台式机">联想台式机</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1349-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_9_联想平板" latag="latag_pc_三级级导航__8_https://club.lenovo.com.cn/forum-1349-1.html_联想平板">联想平板</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1476-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_10_商用电脑" latag="latag_pc_三级级导航__9_https://club.lenovo.com.cn/forum-1476-1.html_商用电脑">商用电脑</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1434-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_11_联想电脑管家" latag="latag_pc_三级级导航__10_https://club.lenovo.com.cn/forum-1434-1.html_联想电脑管家">联想电脑管家</a>
+                                        </li>
+                                       
+                                    </ul>
+                                </div>
+                            </li>
+                                    <li class="pull_title" style="width:16%">
+                                    <div>
+                                    <img src="//p3.lefile.cn/fes/cms/2019/01/23/onrv2h1irqmj9w75fy3bi4ynnfp4v7682809.png" alt="" class="img_0">
+                                     <img src="//p4.lefile.cn/fes/cms/2019/01/23/ut99yjxh3ttr0vew64gdw91pdzrpx1847960.png" alt="" class="img_1">
+                                  <a href="https://bbs.thinkpad.com/" class="a_title"   target="_blank" latag="latag_pc_三级级导航__1_https://bbs.thinkpad.com/_ThinkPad"> <span class="title">ThinkPad</span>
+                                    </a>
+                                  
+                                    <ul>
+                                        <li class="nav3" >
+                                     <a href="https://bbs.thinkpad.com/forum-1388-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_1_ThinkPad" latag="latag_pc_三级级导航__0_https://bbs.thinkpad.com/forum-1388-1.html_ThinkPad">ThinkPad</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1554-1.html"   target="_blank"  latag="latag_pc_common_navcategory_1_2_ThinkBook" latag="latag_pc_三级级导航__1_https://club.lenovo.com.cn/forum-1554-1.html_ThinkBook">ThinkBook</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://bbs.thinkpad.com/forum-1533-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_3_thinkplus" latag="latag_pc_三级级导航__2_https://bbs.thinkpad.com/forum-1533-1.html_thinkplus">thinkplus</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://bbs.thinkpad.com/forum-1518-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_4_ThinkVision" latag="latag_pc_三级级导航__3_https://bbs.thinkpad.com/forum-1518-1.html_ThinkVision">ThinkVision</a>
+                                        </li>
+                                       
+                                    </ul>
+                                </div>
+                            </li>
+                                    <li class="pull_title" style="width:16%">
+                                    <div>
+                                    <img src="//p1.lefile.cn/fes/cms/2019/01/23/4t7lr70mj6kwxj37ho6ukdwkkuk017635633.png" alt="" class="img_0">
+                                     <img src="//p2.lefile.cn/fes/cms/2019/01/23/klqtek8cn71gwc4iqfaq49lcde3mb3764244.png" alt="" class="img_1">
+                                  <a href="https://club.lenovo.com.cn/phone/" class="a_title"   target="_blank" latag="latag_pc_三级级导航__2_https://club.lenovo.com.cn/phone/_Lenovo 手机"> <span class="title">Lenovo 手机</span>
+                                    </a>
+                                  
+                                    <ul>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1546-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_1_拯救者电竞手机" latag="latag_pc_三级级导航__0_https://club.lenovo.com.cn/forum-1546-1.html_拯救者电竞手机">拯救者电竞手机</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1540-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_2_Lenovo Z6 Pro" latag="latag_pc_三级级导航__1_https://club.lenovo.com.cn/forum-1540-1.html_Lenovo Z6 Pro">Lenovo Z6 Pro</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1550-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_3_Lenovo Z6" latag="latag_pc_三级级导航__2_https://club.lenovo.com.cn/forum-1550-1.html_Lenovo Z6">Lenovo Z6</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1547-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_4_Lenovo Z6 青春版" latag="latag_pc_三级级导航__3_https://club.lenovo.com.cn/forum-1547-1.html_Lenovo Z6 青春版">Lenovo Z6 青春版</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1536-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_5_Lenovo Z5 Pro" latag="latag_pc_三级级导航__4_https://club.lenovo.com.cn/forum-1536-1.html_Lenovo Z5 Pro">Lenovo Z5 Pro</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1537-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_6_Lenovo Z5s" latag="latag_pc_三级级导航__5_https://club.lenovo.com.cn/forum-1537-1.html_Lenovo Z5s">Lenovo Z5s</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1490-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_7_Lenovo Z5" latag="latag_pc_三级级导航__6_https://club.lenovo.com.cn/forum-1490-1.html_Lenovo Z5">Lenovo Z5</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1485-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_8_Lenovo S 系列" latag="latag_pc_三级级导航__7_https://club.lenovo.com.cn/forum-1485-1.html_Lenovo S 系列">Lenovo S 系列</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1483-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_9_Lenovo K 系列" latag="latag_pc_三级级导航__8_https://club.lenovo.com.cn/forum-1483-1.html_Lenovo K 系列">Lenovo K 系列</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1584-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_10_Lenovo One" latag="latag_pc_三级级导航__9_https://club.lenovo.com.cn/forum-1584-1.html_Lenovo One">Lenovo One</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1457-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_11_ZUK Z2 Pro" latag="latag_pc_三级级导航__10_https://club.lenovo.com.cn/forum-1457-1.html_ZUK Z2 Pro">ZUK Z2 Pro</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1426-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_12_ZUK Z2" latag="latag_pc_三级级导航__11_https://club.lenovo.com.cn/forum-1426-1.html_ZUK Z2">ZUK Z2</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1447-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_13_ZUK Edge" latag="latag_pc_三级级导航__12_https://club.lenovo.com.cn/forum-1447-1.html_ZUK Edge">ZUK Edge</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1541-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_14_ZUI 专区" latag="latag_pc_三级级导航__13_https://club.lenovo.com.cn/forum-1541-1.html_ZUI 专区">ZUI 专区</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1587-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_15_乐语音" latag="latag_pc_三级级导航__14_https://club.lenovo.com.cn/forum-1587-1.html_乐语音">乐语音</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1567-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_16_反馈中心" latag="latag_pc_三级级导航__15_https://club.lenovo.com.cn/forum-1567-1.html_反馈中心">反馈中心</a>
+                                        </li>
+                                       
+                                    </ul>
+                                </div>
+                            </li>
+                                    <li class="pull_title" style="width:16%">
+                                    <div>
+                                    <img src="//p4.lefile.cn/fes/cms/2019/01/23/wfxw02csi80ecm7g4bn4311nsh5qo2886274.png" alt="" class="img_0">
+                                     <img src="//p4.lefile.cn/fes/cms/2019/01/23/frw3zwgxp052tjl1fuf7pw98x6f9cw171330.png" alt="" class="img_1">
+                                  <a href="https://club.lenovo.com.cn/moto/" class="a_title"   target="_blank" latag="latag_pc_三级级导航__3_https://club.lenovo.com.cn/moto/_Motorola"> <span class="title">Motorola</span>
+                                    </a>
+                                  
+                                    <ul>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1588-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_1_Moto Razr 系列" latag="latag_pc_三级级导航__0_https://club.lenovo.com.cn/forum-1588-1.html_Moto Razr 系列">Moto Razr 系列</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1504-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_2_Moto Z³ 系列" latag="latag_pc_三级级导航__1_https://club.lenovo.com.cn/forum-1504-1.html_Moto Z³ 系列">Moto Z³ 系列</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1451-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_3_Moto Z² 系列" latag="latag_pc_三级级导航__2_https://club.lenovo.com.cn/forum-1451-1.html_Moto Z² 系列">Moto Z² 系列</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1427-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_4_Moto Z 系列" latag="latag_pc_三级级导航__3_https://club.lenovo.com.cn/forum-1427-1.html_Moto Z 系列">Moto Z 系列</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1464-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_5_Moto Mods 开发者" latag="latag_pc_三级级导航__4_https://club.lenovo.com.cn/forum-1464-1.html_Moto Mods 开发者">Moto Mods 开发者</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1421-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_6_Moto G 系列" latag="latag_pc_三级级导航__5_https://club.lenovo.com.cn/forum-1421-1.html_Moto G 系列">Moto G 系列</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1516-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_7_Moto P 系列" latag="latag_pc_三级级导航__6_https://club.lenovo.com.cn/forum-1516-1.html_Moto P 系列">Moto P 系列</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1420-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_8_Moto X 系列" latag="latag_pc_三级级导航__7_https://club.lenovo.com.cn/forum-1420-1.html_Moto X 系列">Moto X 系列</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1515-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_9_Moto E 系列" latag="latag_pc_三级级导航__8_https://club.lenovo.com.cn/forum-1515-1.html_Moto E 系列">Moto E 系列</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1393-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_10_Moto 360 手表" latag="latag_pc_三级级导航__9_https://club.lenovo.com.cn/forum-1393-1.html_Moto 360 手表">Moto 360 手表</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1351-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_11_Moto 经典系列" latag="latag_pc_三级级导航__10_https://club.lenovo.com.cn/forum-1351-1.html_Moto 经典系列">Moto 经典系列</a>
+                                        </li>
+                                       
+                                    </ul>
+                                </div>
+                            </li>
+                                    <li class="pull_title" style="width:16%">
+                                    <div>
+                                    <img src="//p2.lefile.cn/fes/cms/2019/01/23/wtpul123m73fgcd4pwvsbxuf21vufj689520.png" alt="" class="img_0">
+                                     <img src="//p4.lefile.cn/fes/cms/2019/01/23/og2j8xsarh6s13yiy30dvdmf1ahtq0077515.png" alt="" class="img_1">
+                                  <a href="https://club.lenovo.com.cn/siot" class="a_title"   target="_blank" latag="latag_pc_三级级导航__4_https://club.lenovo.com.cn/siot_智能产品"> <span class="title">智能产品</span>
+                                    </a>
+                                  
+                                    <ul>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1527-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_1_智能扫地机器人" latag="latag_pc_三级级导航__0_https://club.lenovo.com.cn/forum-1527-1.html_智能扫地机器人">智能扫地机器人</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1530-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_2_智能指纹锁" latag="latag_pc_三级级导航__1_https://club.lenovo.com.cn/forum-1530-1.html_智能指纹锁">智能指纹锁</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1528-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_3_体脂秤" latag="latag_pc_三级级导航__2_https://club.lenovo.com.cn/forum-1528-1.html_体脂秤">体脂秤</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1574-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_4_智能摄像机" latag="latag_pc_三级级导航__3_https://club.lenovo.com.cn/forum-1574-1.html_智能摄像机">智能摄像机</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1575-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_5_个人存储" latag="latag_pc_三级级导航__4_https://club.lenovo.com.cn/forum-1575-1.html_个人存储">个人存储</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1576-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_6_音频产品" latag="latag_pc_三级级导航__5_https://club.lenovo.com.cn/forum-1576-1.html_音频产品">音频产品</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1531-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_7_微型投影" latag="latag_pc_三级级导航__6_https://club.lenovo.com.cn/forum-1531-1.html_微型投影">微型投影</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1529-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_8_智能穿戴" latag="latag_pc_三级级导航__7_https://club.lenovo.com.cn/forum-1529-1.html_智能穿戴">智能穿戴</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1579-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_9_空气净化器" latag="latag_pc_三级级导航__8_https://club.lenovo.com.cn/forum-1579-1.html_空气净化器">空气净化器</a>
+                                        </li>
+                                       
+                                    </ul>
+                                </div>
+                            </li>
+                                    <li class="pull_title" style="width:16%">
+                                    <div>
+                                    <img src="//p3.lefile.cn/fes/cms/2019/01/23/glbatug0473pm6uml9tp4d3ydcv95x395166.png" alt="" class="img_0">
+                                     <img src="//p3.lefile.cn/fes/cms/2019/01/23/mrtu59pbngvfv4o4o39j20vgwi7ejy786978.png" alt="" class="img_1">
+                                    <span  class="a_title"><span class="title">联萌家园</span></span>
+                                  
+                                    <ul>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-692-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_1_随手拍" latag="latag_pc_三级级导航__0_https://club.lenovo.com.cn/forum-692-1.html_随手拍">随手拍</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1538-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_2_游戏玩家" latag="latag_pc_三级级导航__1_https://club.lenovo.com.cn/forum-1538-1.html_游戏玩家">游戏玩家</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1362-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_3_联萌漫话" latag="latag_pc_三级级导航__2_https://club.lenovo.com.cn/forum-1362-1.html_联萌漫话">联萌漫话</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1539-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_4_联萌科技" latag="latag_pc_三级级导航__3_https://club.lenovo.com.cn/forum-1539-1.html_联萌科技">联萌科技</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1461-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_5_精英汇" latag="latag_pc_三级级导航__4_https://club.lenovo.com.cn/forum-1461-1.html_精英汇">精英汇</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1363-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_6_联想招聘" latag="latag_pc_三级级导航__5_https://club.lenovo.com.cn/forum-1363-1.html_联想招聘">联想招聘</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1395-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_7_软件及服务" latag="latag_pc_三级级导航__6_https://club.lenovo.com.cn/forum-1395-1.html_软件及服务">软件及服务</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1364-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_8_站务反馈" latag="latag_pc_三级级导航__7_https://club.lenovo.com.cn/forum-1364-1.html_站务反馈">站务反馈</a>
+                                        </li>
+                                        <li class="nav3" >
+                                     <a href="https://club.lenovo.com.cn/forum-1431-1.html"   target="_parent"  latag="latag_pc_common_navcategory_1_8_同城联萌" latag="latag_pc_三级级导航__8_https://club.lenovo.com.cn/forum-1431-1.html_同城联萌">同城联萌</a>
+                                        </li>
+                                       
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                                
+  
+                                 </li>
+                                 <li class="lis">
+                                  <a href="https://club.lenovo.com.cn/city.html" class="ass"   target="_parent" latag="latag_pc_二级导航__2_https://club.lenovo.com.cn/city.html_同城联萌" >同城联萌</a>
+  
+                                 </li>
+                                 <li class="lis">
+                                  <a href="https://club.lenovo.com.cn/camera.html" class="ass"   target="_parent" latag="latag_pc_二级导航__3_https://club.lenovo.com.cn/camera.html_随手拍" >随手拍</a>
+  
+                                 </li>
+                                 <li class="lis">
+                                  <a href="https://liveclub.lenovo.com.cn/" class="ass"   target="_parent" latag="latag_pc_二级导航__4_https://liveclub.lenovo.com.cn/_联想直播间" >联想直播间</a>
+  
+                                 </li>
+                                 <li class="lis">
+                                  <a href="https://mall.club.lenovo.com.cn" class="ass"   target="_parent" latag="latag_pc_二级导航__5_https://mall.club.lenovo.com.cn_积分乐园" >积分乐园</a>
+  
+                                 </li>
+            </ul>
+            <div class="ul_r_box"></div>
+            <!-- 搜索 -->
+            <div class="search_btn">
+                <img src="https://p4.lefile.cn/product/adminweb/2018/12/29/f26ff743-3f82-4072-b27a-193f0e9ad675.png" alt="">
+            </div>
+            <div class="search">
+                <div class="logo_text">
+                    <div class="search_box think_search_header">
+                        <div style="display: none">
+                            <object id="plugin0" type="application/x-rloader">
+                                <param name="onload" value="pluginLoaded" />
+                            </object>
+                            <a href="http://support.lenovo.com.cn/lenovo/wsi/Modules/NewDrive.aspx" target="_blank" id="btn_open_driver_win" style="display: none;"></a>
+                        </div>
+
+                        <div class="search_input_bg"></div>
+                        <a tag='searchButton' class="serch_box_img" latag="latag_pc_search_confirm"><span></span></a>
+                        <input type="text" latag="latag_pc_search_keyword" />
+                        <i id="remove_keyword"></i>
+                        <ul class="resou_keyword">
+                        </ul>
+                        <div id="suggestContainer"></div>
+                    </div>
+
+                </div>
+            <div class="search_colse">
+                <img src="https://p3.lefile.cn/product/adminweb/2018/12/29/dc5504f9-d4f7-4aea-b3ff-6a6bda557f8c.png" alt="">
+            </div>
+            </div>
+        </div>
+
+        <!-- 新人礼包 -->
+        <div class="popup_newguy_gift" style="display: none;">
+    <i class="popup_corner popupLeftTop"></i>
+    <i class="popup_corner popupRightTop"></i>
+    <i class="popup_corner popupLeftBottom"></i>
+    <i class="popup_corner popupRightBottom"></i>
+    <i class="popup_cross"></i>
+    <i class="popup_package"></i>
+
+    <i class="getPackageText">恭喜您获得新人礼包</i>
+
+    <div class="popup_cart_wrap">
+        <div id="popup_cart_contain">
+            <div id="popup_cart_scrollBar">
+                <div id="popup_cart_content">
+                    <!--<div class="popup_cart">
+                        <p class="cartNumText">+300</p>
+                        <div class="txt_wp">
+                            <div >
+                                <p class="cartInfoText" href="">Lenovo系列整机机延长1年保修专享卷</p>
+                            </div>
+                        </div>
+                        <a class="cartInfoBtn" href="">查看</a>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+        <div id="popup_cart_scrollbar_line">
+            <div id="popup_cart_scrollbtn" style="display: none;">
+                <!--<div class="reg_down_arrow">
+                    <i class="down_angle1"></i>
+                    <i class="down_angle2"></i>
+                </div>-->
+            </div>
+
+        </div>
+    </div>
+
+    <a href="" class="goToMemberCent">前往会员中心查看</a>
+</div>
+
+
+    </div>
+    <div class="hold_header"></div>
+
+
+   
+
+
+</div>
+    </div>
+</div>
+</div>
+
+<script>
+    window.onload = function () {
+        if(jQuery(".header_box ul .lis")[3].children[0].innerText == '联想11.11'){
+          jQuery(".header_box ul .lis")[3].children[0].style.color='#ff423f';
+        }
+    }
+</script>
+<!--headermenu end-->
+    <script>
+        //短消息
+        jQuery(function(){
+            jQuery('.header_2018 .search_btn').before('<a href="https://club.lenovo.com.cn/home.php?mod=space&do=pm"><div class="cj-message2-box"><span class="message2"></span></div></a>');
+        });
+    </script>
+    <script type="text/javascript">
+        //退出登录
+        function logoutsucess_club() {
+            window.location =  'https://club.lenovo.com.cn/authcb';
+        }
+        //搜索
+        $(".serch_box_img").click(function(){
+            var srchtxt = $(".logo_text").find("input").val();
+            window.open("https://club.lenovo.com.cn/search.html?mod=forum&srchtxt="+srchtxt+"&searchsubmit=yes","_blank");
+        });
+    </script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-110299082-1', 'auto', {'userId': ''});
+        ga('require', 'ec');
+        ga(function(tracker) {
+            var clientId = tracker.get('clientId');
+            ga('set', 'dimension1', clientId); });
+        ga('set', 'dimension2', '');
+        ga('set', 'dimension3', '');
+        ga('send', 'pageview');
+    </script>
+    <script type="text/javascript">
+        var CONFIGS = {
+            "lenovoid":'',
+            "club_pc_fid":'',
+            "pc_child_id":''        }
+        var _trackData = _trackData || [];
+    </script>    <link rel="stylesheet" href="//img1cdn.clubstatic.lenovo.com.cn/pc3/css/club_v4/pc/site/index.css?b0e1knhbloxikl0c"/>
+    <link rel="stylesheet" href="//img1cdn.clubstatic.lenovo.com.cn/pc3/css/club_v4/pc/plate/plate.css?b0e1knhbloxikl0c"/>
+    <link rel="stylesheet" href="//img1cdn.clubstatic.lenovo.com.cn/pc3/css/club_v4/pc/newpost.css?b0e1knhbloxikl0c"/>
+    <script type="text/javascript">
+        var $CONFIG = {};
+        $CONFIG.forumList = '{"1108":{"fid":1108,"fup":0,"name":"Lenovo\u7535\u8111","children":[{"fid":1172,"fup":1108,"name":"\u5c0f\u65b0\u7b14\u8bb0\u672c"},{"fid":1219,"fup":1108,"name":"\u62ef\u6551\u8005\u7b14\u8bb0\u672c"},{"fid":1583,"fup":1108,"name":"\u626c\u5929\u7b14\u8bb0\u672c"},{"fid":1213,"fup":1108,"name":"YOGA\u7b14\u8bb0\u672c"},{"fid":1545,"fup":1108,"name":"YOGA Book"},{"fid":1425,"fup":1108,"name":"MIIX\u4e8c\u5408\u4e00\u7b14\u8bb0\u672c"},{"fid":1361,"fup":1108,"name":"\u5176\u4ed6\u7cfb\u5217\u7b14\u8bb0\u672c"},{"fid":1144,"fup":1108,"name":"\u8054\u60f3\u53f0\u5f0f\u673a"},{"fid":1349,"fup":1108,"name":"\u8054\u60f3\u5e73\u677f"},{"fid":1476,"fup":1108,"name":"\u5546\u7528\u7535\u8111"},{"fid":1434,"fup":1108,"name":"\u8054\u60f3\u7535\u8111\u7ba1\u5bb6"},{"fid":1586,"fup":1108,"name":"\u8054\u60f3\u8f6f\u4ef6\u5546\u5e97"}]},"1535":{"fid":1535,"fup":0,"name":"ThinkPad","children":[{"fid":1388,"fup":1535,"name":"ThinkPad"},{"fid":1554,"fup":1535,"name":"ThinkBook"},{"fid":1533,"fup":1535,"name":"thinkplus"},{"fid":1518,"fup":1535,"name":"ThinkVision"}]},"1065":{"fid":1065,"fup":0,"name":"Lenovo \u624b\u673a","children":[{"fid":1540,"fup":1065,"name":"Lenovo Z6 Pro"},{"fid":1550,"fup":1065,"name":"Lenovo Z6"},{"fid":1547,"fup":1065,"name":"Lenovo Z6 \u9752\u6625\u7248"},{"fid":1537,"fup":1065,"name":"Lenovo Z5s"},{"fid":1536,"fup":1065,"name":"Lenovo Z5 Pro"},{"fid":1490,"fup":1065,"name":"Lenovo Z5"},{"fid":1485,"fup":1065,"name":"Lenovo S \u7cfb\u5217"},{"fid":1483,"fup":1065,"name":"Lenovo K \u7cfb\u5217"},{"fid":1374,"fup":1065,"name":"Lenovo P \u7cfb\u5217"},{"fid":1514,"fup":1065,"name":"Lenovo A \u7cfb\u5217"},{"fid":1546,"fup":1065,"name":"\u62ef\u6551\u8005\u7535\u7ade\u624b\u673a"},{"fid":1426,"fup":1065,"name":"ZUK Z2"},{"fid":1457,"fup":1065,"name":"ZUK Z2 Pro"},{"fid":1447,"fup":1065,"name":"ZUK Edge"},{"fid":1446,"fup":1065,"name":"ZUK Z1"},{"fid":1347,"fup":1065,"name":"\u66f4\u591a\u673a\u578b"},{"fid":1448,"fup":1065,"name":"\u5e94\u7528\u5206\u4eab"},{"fid":1541,"fup":1065,"name":"ZUI \u4e13\u533a"},{"fid":1584,"fup":1065,"name":"Lenovo One"},{"fid":1567,"fup":1065,"name":"\u53cd\u9988\u4e2d\u5fc3"},{"fid":1587,"fup":1065,"name":"\u4e50\u8bed\u97f3"}]},"1350":{"fid":1350,"fup":0,"name":"Motorola","children":[{"fid":1351,"fup":1350,"name":"Moto \u7ecf\u5178\u7cfb\u5217"},{"fid":1516,"fup":1350,"name":"Moto P \u7cfb\u5217"},{"fid":1515,"fup":1350,"name":"Moto E \u7cfb\u5217"},{"fid":1427,"fup":1350,"name":"Moto Z \u7cfb\u5217"},{"fid":1451,"fup":1350,"name":"Moto Z\u00b2 \u7cfb\u5217"},{"fid":1393,"fup":1350,"name":"Moto 360 \u624b\u8868"},{"fid":1421,"fup":1350,"name":"Moto G \u7cfb\u5217"},{"fid":1464,"fup":1350,"name":"Moto Mods \u5f00\u53d1\u8005"},{"fid":1420,"fup":1350,"name":"Moto X \u7cfb\u5217"},{"fid":1504,"fup":1350,"name":"Moto Z\u00b3 \u7cfb\u5217"},{"fid":1588,"fup":1350,"name":"Moto Razr \u7cfb\u5217"}]},"1087":{"fid":1087,"fup":0,"name":"\u667a\u80fd\u4ea7\u54c1","children":[{"fid":1527,"fup":1087,"name":"\u667a\u80fd\u626b\u5730\u673a\u5668\u4eba"},{"fid":1530,"fup":1087,"name":"\u667a\u80fd\u6307\u7eb9\u9501"},{"fid":1528,"fup":1087,"name":"\u4f53\u8102\u79e4"},{"fid":1574,"fup":1087,"name":"\u667a\u80fd\u6444\u50cf\u673a"},{"fid":1575,"fup":1087,"name":"\u4e2a\u4eba\u5b58\u50a8"},{"fid":1576,"fup":1087,"name":"\u97f3\u9891\u4ea7\u54c1"},{"fid":1531,"fup":1087,"name":"\u5fae\u578b\u6295\u5f71"},{"fid":1529,"fup":1087,"name":"\u667a\u80fd\u7a7f\u6234"},{"fid":1589,"fup":1087,"name":"\u667a\u9009\u751f\u6d3b"},{"fid":1577,"fup":1087,"name":"\u66f4\u591a\u4ea7\u54c1"}]},"1359":{"fid":1359,"fup":0,"name":"\u8054\u840c\u5bb6\u56ed","children":[{"fid":692,"fup":1359,"name":"\u968f\u624b\u62cd"},{"fid":1539,"fup":1359,"name":"\u8054\u840c\u79d1\u6280"},{"fid":1362,"fup":1359,"name":"\u8054\u840c\u6f2b\u8bdd"},{"fid":1363,"fup":1359,"name":"\u8054\u60f3\u62db\u8058"},{"fid":1364,"fup":1359,"name":"\u7ad9\u52a1\u53cd\u9988"},{"fid":1544,"fup":1359,"name":"\u60f3\u4e50\u9001"},{"fid":1461,"fup":1359,"name":"\u7cbe\u82f1\u6c47"},{"fid":1395,"fup":1359,"name":"\u8f6f\u4ef6\u53ca\u670d\u52a1"},{"fid":1431,"fup":1359,"name":"\u540c\u57ce\u8054\u840c"},{"fid":1484,"fup":1359,"name":"\u8054\u60f3\u4f1a\u5458"},{"fid":1538,"fup":1359,"name":"\u6e38\u620f\u73a9\u5bb6"},{"fid":1555,"fup":1359,"name":"\u4f01\u4e1a\u590d\u5de5\u8282"}]},"1517":{"fid":1517,"fup":0,"name":"\u793e\u533a\u7ad9\u52a1","children":[{"fid":1415,"fup":1517,"name":"\u6444\u5f71\u7ec4"},{"fid":1416,"fup":1517,"name":"\u8363\u8a89\u4f17\u6d4b"},{"fid":1470,"fup":1517,"name":"\u4e3b\u9898\u5320\u5e08"},{"fid":1442,"fup":1517,"name":"\u539f\u521b\u8fbe\u4eba"},{"fid":1444,"fup":1517,"name":"\u8054\u60f3\u5973\u751f"},{"fid":1469,"fup":1517,"name":"\u6e38\u4fa0\u9152\u9986"},{"fid":1365,"fup":1517,"name":"\u7248\u4e3b\u4e4b\u5bb6"}]},"1506":{"fid":1506,"fup":0,"name":"\u8054\u60f3\u5185\u6d4b","children":[{"fid":1526,"fup":1506,"name":"Lenovo Z5 Pro\u5185\u6d4b"},{"fid":1509,"fup":1506,"name":"Lenovo Z5 \u5185\u6d4b"},{"fid":1505,"fup":1506,"name":"ZUK Z2 \u5185\u6d4b"},{"fid":1512,"fup":1506,"name":"Lenovo S5 \u5185\u6d4b"},{"fid":1534,"fup":1506,"name":"Lenovo Z5s\u5185\u6d4b"},{"fid":1508,"fup":1506,"name":"ZUK Edge \u5185\u6d4b"},{"fid":1519,"fup":1506,"name":"Lenovo S5 Pro\u5185\u6d4b"},{"fid":1520,"fup":1506,"name":"Lenovo K5 Pro\u5185\u6d4b"},{"fid":1507,"fup":1506,"name":"ZUK Z2 Pro \u5185\u6d4b"},{"fid":1548,"fup":1506,"name":"Lenovo Z6 Pro\u5185\u6d4b"}]}}';
+    </script>
+    <!--inner-->
+
+    <div class="w1200">
+        <!--banner-->
+        <div class="indexBanner commonSlide" id="indexBanner">
+            <!--图片轮播-->
+            <div class="bd">
+                <a class="focus_prev prev" href="javascript:;"><img src="//img1cdn.clubstatic.lenovo.com.cn/pc3/images/club_v4/pc/plate/banner_left_btn.png" alt=""></a>
+                <ul>
+                                            <li><a target="_blank" title="联想未来云课堂——人工智能的产业应用" href="https://liveclub.lenovo.com.cn/"><img src="//img2cdn.clubstatic.lenovo.com.cn/pic/18175166067538/0" alt="联想未来云课堂——人工智能的产业应用"></a></li>
+                                            <li><a target="_blank" title="show真爱抽福利，新财年粉丝狂欢夜！" href="https://club.lenovo.com.cn/thread-5766468-1-1.html"><img src="//img2cdn.clubstatic.lenovo.com.cn/pic/18139040738954/0" alt="show真爱抽福利，新财年粉丝狂欢夜！"></a></li>
+                                            <li><a target="_blank" title="【0元试用 无须归还】好家伙！这次我们放大招了" href="https://club.lenovo.com.cn/thread-5768991-1-1.html"><img src="//img2cdn.clubstatic.lenovo.com.cn/pic/18157290836788/0" alt="【0元试用 无须归还】好家伙！这次我们放大招了"></a></li>
+                                            <li><a target="_blank" title="拼搏2020，心动的Offer。购机领津贴，注册享好礼" href="https://club.lenovo.com.cn/thread-5768717-1-1.html"><img src="//img2cdn.clubstatic.lenovo.com.cn/pic/18139068207809/0" alt="拼搏2020，心动的Offer。购机领津贴，注册享好礼"></a></li>
+                                            <li><a target="_blank" title="【绝密】快来围观元庆隐藏的新技能！" href="https://club.lenovo.com.cn/thread-5765727-1-1.html"><img src="//img2cdn.clubstatic.lenovo.com.cn/pic/18013241896269/0" alt="【绝密】快来围观元庆隐藏的新技能！"></a></li>
+                                            <li><a target="_blank" title="致社区朋友们的一封【联想乐云】有奖内测邀请函" href="https://club.lenovo.com.cn/thread-5766946-1-1.html"><img src="//img2cdn.clubstatic.lenovo.com.cn/pic/18104553861241/0" alt="致社区朋友们的一封【联想乐云】有奖内测邀请函"></a></li>
+                                    </ul>
+                <a class="focus_next next" href="javascript:;"><img src="//img1cdn.clubstatic.lenovo.com.cn/pc3/images/club_v4/pc/plate/banner_right_btn.png" alt=""></a>
+            </div>
+            <div class="hd">
+                <ul>
+                                                                        <li class="on"></li>
+                                                                                                <li class=""></li>
+                                                                                                <li class=""></li>
+                                                                                                <li class=""></li>
+                                                                                                <li class=""></li>
+                                                                                                <li class=""></li>
+                                                            </ul>
+            </div>
+        </div>
+        <!--banner end-->
+        <div class="sideList">
+            <!--leftSideList-->
+            <div class="leftSideList">
+                <!--Big Data Module-->
+                <div class="bigDataModule">
+                                                                        <div class="bigDataImg">
+                                <a href="https://club.lenovo.com.cn/thread-5659012-1-1.html"  target="_blank">
+                                    <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/17693128277802/0" alt="首页推荐征集" >
+                                    <p class="bigDataTitle">首页推荐征集</p>
+                                </a>
+                            </div>
+                                                                                                <div class="bigDataImgCenter bigDataImg">
+                                <a href="https://club.lenovo.com.cn/thread-4671004-1-1.html"  target="_blank">
+                                    <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/17693130901069/0" alt="同城联萌官方群号" >
+                                    <p class="bigDataTitle">同城联萌官方群号</p>
+                                </a>
+                            </div>
+                                                                                                <div class="bigDataImg">
+                                <a href="https://club.lenovo.com.cn/thread-5504805-1-1.html"  target="_blank">
+                                    <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/17693132148858/0" alt="晒开箱最高得一年延保" >
+                                    <p class="bigDataTitle">晒开箱最高得一年延保</p>
+                                </a>
+                            </div>
+                                                            </div>
+                <!--Big Data Module end-->
+                <!--topMain-->
+                                                                                                <div class="afterMain">
+                                    <h3><a href="/thread-5773232-1-1.html" target="_blank">春风十里不如你--Show出合影赢好礼~</a> </h3>
+                                    <div class="p">
+                                        <div style="display: initial;">
+                                            <a class="font_text p0" target="_blank" href="/space-uid-24316651.html?do=profile">Think小迷妹</a>
+                                            <a class="font_text font_textHover text_leftLine" href="/forum-1388-1.html"  target="_blank">ThinkPad</a>
+                                            <span class="font_text text_leftLine" >2020年04月10日</span>
+                                        </div>
+                                        <div class="afterMain_shareboxs">
+                                            <div>
+                                                <span class="font_text Icon_read Icon_read_h">377</span>
+                                                <span class="font_text Icon_talk Icon_talk_h">7</span>
+                                                <span class="font_text Icon_share Icon_share_h" onclick="share('5773232')">分享</span>
+                                            </div>
+                                        </div>
+                                        <div class="afterMain_img">
+                                                                                            <a href="/thread-5773232-1-1.html"  target="_blank"> <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/18183551961232/0 " alt="春风十里不如你--Show出合影赢好礼~" /></a>
+                                                                                    </div>
+                                        <div class="h4">都说春天是最美好的季节~
+因为春暖花开、因为万物复苏，
+在刚刚过去的世界首台笔记本电脑诞生纪念日后，
+小迷妹就特别好奇大家所拥有的第一台Think设备是什么？
+赶紧晒出你和Ta的合影吧~
+让我们一起回忆初拥Ta时的美好，
+毕竟，春风十里也抵不过你幸福的微笑……</div>
+                                    </div>
+                                </div>
+                                                                                                                                                <div class="afterMain">
+                                    <h3><a href="/thread-5671993-1-1.html" target="_blank">【联想超级课】手把手教你Linux文本过滤技术</a> </h3>
+                                    <div class="p">
+                                        <div style="display: initial;">
+                                            <a class="font_text p0" target="_blank" href="/space-uid-20159249.html?do=profile">联想商用服务</a>
+                                            <a class="font_text font_textHover text_leftLine" href="/forum-1476-1.html"  target="_blank">商用电脑</a>
+                                            <span class="font_text text_leftLine" >2019年12月09日</span>
+                                        </div>
+                                        <div class="afterMain_shareboxs">
+                                            <div>
+                                                <span class="font_text Icon_read Icon_read_h">14334</span>
+                                                <span class="font_text Icon_talk Icon_talk_h">67</span>
+                                                <span class="font_text Icon_share Icon_share_h" onclick="share('5671993')">分享</span>
+                                            </div>
+                                        </div>
+                                        <div class="afterMain_img">
+                                                                                            <a href="/thread-5671993-1-1.html"  target="_blank"> <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/18180726217792/0 " alt="【联想超级课】手把手教你Linux文本过滤技术" /></a>
+                                                                                    </div>
+                                        <div class="h4">众所周知，Linux在信息安全领域应用非常广泛，学习好Linux是进入信息安全领域必备的基础技能。今天我们邀请到拥有16年网络工作经验的Vmware官方认证工程师贺秋雨老师，跟大家分享Linux文本过滤技术及实战操作。</div>
+                                    </div>
+                                </div>
+                                                                                                                                                <div class="afterMain">
+                                    <h3><a href="/thread-5769019-1-1.html" target="_blank">小伙伴们！网课平板问卷调查来啦~</a> </h3>
+                                    <div class="p">
+                                        <div style="display: initial;">
+                                            <a class="font_text p0" target="_blank" href="/space-uid-18114908.html?do=profile">头上一朵云</a>
+                                            <a class="font_text font_textHover text_leftLine" href="/forum-1349-1.html"  target="_blank">联想平板</a>
+                                            <span class="font_text text_leftLine" >2020年04月08日</span>
+                                        </div>
+                                        <div class="afterMain_shareboxs">
+                                            <div>
+                                                <span class="font_text Icon_read Icon_read_h">976</span>
+                                                <span class="font_text Icon_talk Icon_talk_h">21</span>
+                                                <span class="font_text Icon_share Icon_share_h" onclick="share('5769019')">分享</span>
+                                            </div>
+                                        </div>
+                                        <div class="afterMain_img">
+                                                                                            <a href="/thread-5769019-1-1.html"  target="_blank"> <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/18159300922750/0 " alt="小伙伴们！网课平板问卷调查来啦~" /></a>
+                                                                                    </div>
+                                        <div class="h4">各位家长，您好~
+疫情期间小朋友们都在家上网课啦~
+对我们提供的平板学习机，您有什么好的建议或者意见么？
+占用您宝贵的3分钟时间~
+来帮我们做一个调研吧~</div>
+                                    </div>
+                                </div>
+                                                                                                                                                <div class="afterMain">
+                                    <h3><a href="/thread-5767144-1-1.html" target="_blank">联想M10 Plus平板上市。家长：网课必备，买它就对了！</a> </h3>
+                                    <div class="p">
+                                        <div style="display: initial;">
+                                            <a class="font_text p0" target="_blank" href="/space-uid-24318879.html?do=profile">aysld</a>
+                                            <a class="font_text font_textHover text_leftLine" href="/forum-1349-1.html"  target="_blank">联想平板</a>
+                                            <span class="font_text text_leftLine" >2020年04月03日</span>
+                                        </div>
+                                        <div class="afterMain_shareboxs">
+                                            <div>
+                                                <span class="font_text Icon_read Icon_read_h">3067</span>
+                                                <span class="font_text Icon_talk Icon_talk_h">37</span>
+                                                <span class="font_text Icon_share Icon_share_h" onclick="share('5767144')">分享</span>
+                                            </div>
+                                        </div>
+                                        <div class="afterMain_img">
+                                                                                            <a href="/thread-5767144-1-1.html"  target="_blank"> <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/18103180144285/0 " alt="联想M10 Plus平板上市。家长：网课必备，买它就对了！" /></a>
+                                                                                    </div>
+                                        <div class="h4">平板电脑行业虽然已经度过了黄金期，但是因为这波疫情，又有些回暖的势头。近日，联想上市一款高性价比的联想M10 Plus。在拥有高颜值机身的同时，还内置了多项学习辅助应用，对家长来说简直就是一款神器。</div>
+                                    </div>
+                                </div>
+                                                                                                                                                <div class="afterMain">
+                                    <h3><a href="/thread-5765309-1-1.html" target="_blank">拯救者2020款游戏本 新品细节爆料汇总(4.9更新)</a> </h3>
+                                    <div class="p">
+                                        <div style="display: initial;">
+                                            <a class="font_text p0" target="_blank" href="/space-uid-8416383.html?do=profile">花开易见落难寻</a>
+                                            <a class="font_text font_textHover text_leftLine" href="/forum-1219-1.html"  target="_blank">拯救者笔记本</a>
+                                            <span class="font_text text_leftLine" >2020年03月24日</span>
+                                        </div>
+                                        <div class="afterMain_shareboxs">
+                                            <div>
+                                                <span class="font_text Icon_read Icon_read_h">5666</span>
+                                                <span class="font_text Icon_talk Icon_talk_h">36</span>
+                                                <span class="font_text Icon_share Icon_share_h" onclick="share('5765309')">分享</span>
+                                            </div>
+                                        </div>
+                                        <div class="afterMain_img">
+                                                                                            <a href="/thread-5765309-1-1.html"  target="_blank"> <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/18068202234137/0 " alt="拯救者2020款游戏本 新品细节爆料汇总(4.9更新)" /></a>
+                                                                                    </div>
+                                        <div class="h4">2020年初，又到了新品发布的时期。拯救者作为联想旗下的游戏PC子品牌，即将推出诸多新品，不妨点开链接一看！</div>
+                                    </div>
+                                </div>
+                                                                                                                                                <div class="afterMain">
+                                    <h3><a href="/thread-5769039-1-1.html" target="_blank">千元不到，照样撑得起门面，打造高端精英范儿！</a> </h3>
+                                    <div class="p">
+                                        <div style="display: initial;">
+                                            <a class="font_text p0" target="_blank" href="/space-uid-20659965.html?do=profile">等风来的DaYu</a>
+                                            <a class="font_text font_textHover text_leftLine" href="/forum-1518-1.html"  target="_blank">ThinkVision</a>
+                                            <span class="font_text text_leftLine" >2020年04月08日</span>
+                                        </div>
+                                        <div class="afterMain_shareboxs">
+                                            <div>
+                                                <span class="font_text Icon_read Icon_read_h">1159</span>
+                                                <span class="font_text Icon_talk Icon_talk_h">22</span>
+                                                <span class="font_text Icon_share Icon_share_h" onclick="share('5769039')">分享</span>
+                                            </div>
+                                        </div>
+                                        <div class="afterMain_img">
+                                                                                            <a href="/thread-5769039-1-1.html"  target="_blank"> <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/18159061770649/0 " alt="千元不到，照样撑得起门面，打造高端精英范儿！" /></a>
+                                                                                    </div>
+                                        <div class="h4">功能/颜值/实惠的价格，能在一台机器上全部实现么？当！然！可！以！ 小孩子才做选择，鱼和熊掌我都要！Lecoo正式嗅到了用户的需求，所以打磨出了Lecoo可乐系列M2411和B2411这两款高性价比，不跌面儿还有范儿的显示器，既能撑起”门面“也能满足工作需求。</div>
+                                    </div>
+                                </div>
+                                                                                                                                                <div class="afterMain">
+                                    <h3><a href="/thread-5768917-1-1.html" target="_blank">战“疫”神器，“神兽”必备-联想Lecoo AI指读翻译机</a> </h3>
+                                    <div class="p">
+                                        <div style="display: initial;">
+                                            <a class="font_text p0" target="_blank" href="/space-uid-20659965.html?do=profile">等风来的DaYu</a>
+                                            <a class="font_text font_textHover text_leftLine" href="/forum-1589-1.html"  target="_blank">智选生活</a>
+                                            <span class="font_text text_leftLine" >2020年04月08日</span>
+                                        </div>
+                                        <div class="afterMain_shareboxs">
+                                            <div>
+                                                <span class="font_text Icon_read Icon_read_h">1061</span>
+                                                <span class="font_text Icon_talk Icon_talk_h">16</span>
+                                                <span class="font_text Icon_share Icon_share_h" onclick="share('5768917')">分享</span>
+                                            </div>
+                                        </div>
+                                        <div class="afterMain_img">
+                                                                                            <a href="/thread-5768917-1-1.html"  target="_blank"> <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/18157211887847/0 " alt="战“疫”神器，“神兽”必备-联想Lecoo AI指读翻译机" /></a>
+                                                                                    </div>
+                                        <div class="h4">英语，和汉语一样，都是世界通用语言之一，
+对于英语，有的人很喜欢，
+也有的人视它为恶魔，一提起它就会想起被它支配的恐惧，久久在心里不能消去。在这个时候，联想旗下LecooAI指读翻译机就诞生了，犹如黑暗中出现了一丝光明！</div>
+                                    </div>
+                                </div>
+                                                                                                                                                <div class="afterMain">
+                                    <h3><a href="/thread-5767177-1-1.html" target="_blank">如何快速提高工作效率、优化游戏体验？答案在这里→</a> </h3>
+                                    <div class="p">
+                                        <div style="display: initial;">
+                                            <a class="font_text p0" target="_blank" href="/space-uid-21444350.html?do=profile">联想会员中心助手</a>
+                                            <a class="font_text font_textHover text_leftLine" href="/forum-1484-1.html"  target="_blank">联想会员</a>
+                                            <span class="font_text text_leftLine" >2020年04月03日</span>
+                                        </div>
+                                        <div class="afterMain_shareboxs">
+                                            <div>
+                                                <span class="font_text Icon_read Icon_read_h">1655</span>
+                                                <span class="font_text Icon_talk Icon_talk_h">12</span>
+                                                <span class="font_text Icon_share Icon_share_h" onclick="share('5767177')">分享</span>
+                                            </div>
+                                        </div>
+                                        <div class="afterMain_img">
+                                                                                            <a href="/thread-5767177-1-1.html"  target="_blank"> <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/18148931343673/0 " alt="如何快速提高工作效率、优化游戏体验？答案在这里→" /></a>
+                                                                                    </div>
+                                        <div class="h4">打字缓慢，工作效率不高？
+操作不流畅，游戏体验不好？
+可能是你的鼠标该换啦~
+一款优秀的鼠标，不仅要好上手，
+还应适时提供多种功能，因你而变！
+所以不管你是想提高工作效率的职场人，
+还是想增强游戏体验的资深玩家，
+这里都有你想要的答案↓</div>
+                                    </div>
+                                </div>
+                                                                                                                                                <div class="afterMain">
+                                    <h3><a href="/thread-5768841-1-1.html" target="_blank">拯点真的-一炷香时间充电挑战-快充速度不够快？</a> </h3>
+                                    <div class="p">
+                                        <div style="display: initial;">
+                                            <a class="font_text p0" target="_blank" href="/space-uid-16003284.html?do=profile">嘉沬</a>
+                                            <a class="font_text font_textHover text_leftLine" href="/forum-1546-1.html"  target="_blank">拯救者电竞手机</a>
+                                            <span class="font_text text_leftLine" >2020年04月07日</span>
+                                        </div>
+                                        <div class="afterMain_shareboxs">
+                                            <div>
+                                                <span class="font_text Icon_read Icon_read_h">1296</span>
+                                                <span class="font_text Icon_talk Icon_talk_h">27</span>
+                                                <span class="font_text Icon_share Icon_share_h" onclick="share('5768841')">分享</span>
+                                            </div>
+                                        </div>
+                                        <div class="afterMain_img">
+                                                                                            <a href="/thread-5768841-1-1.html"  target="_blank"> <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/18148139802903/0 " alt="拯点真的-一炷香时间充电挑战-快充速度不够快？" /></a>
+                                                                                    </div>
+                                        <div class="h4">拯点真的-一炷香时间充电挑战-快充速度不够快？</div>
+                                    </div>
+                                </div>
+                                                                                                                                                <div class="afterMain">
+                                    <h3><a href="/thread-5768656-1-1.html" target="_blank">带您玩转小新之Pro13 2020沧海冰蓝版简易评测</a> </h3>
+                                    <div class="p">
+                                        <div style="display: initial;">
+                                            <a class="font_text p0" target="_blank" href="/space-uid-16592534.html?do=profile">北京西站南广场东</a>
+                                            <a class="font_text font_textHover text_leftLine" href="/forum-1172-1.html"  target="_blank">小新笔记本</a>
+                                            <span class="font_text text_leftLine" >2020年04月06日</span>
+                                        </div>
+                                        <div class="afterMain_shareboxs">
+                                            <div>
+                                                <span class="font_text Icon_read Icon_read_h">2245</span>
+                                                <span class="font_text Icon_talk Icon_talk_h">23</span>
+                                                <span class="font_text Icon_share Icon_share_h" onclick="share('5768656')">分享</span>
+                                            </div>
+                                        </div>
+                                        <div class="afterMain_img">
+                                                                                            <a href="/thread-5768656-1-1.html"  target="_blank"> <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/18145690680480/0 " alt="带您玩转小新之Pro13 2020沧海冰蓝版简易评测" /></a>
+                                                                                    </div>
+                                        <div class="h4">小新Pro13，自去年秋季发布后，一度成了年度最香轻薄本。那么今年小新Pro13笔记本都推出了哪些新品呢？我带大家回顾一下。</div>
+                                    </div>
+                                </div>
+                                                                                <!--pages-->
+                <div>
+                    <div id="pages"><ul class="pagination" role="navigation">
+        
+                    <li class="page-item disabled" aria-disabled="true" aria-label="« Previous">
+                <span class="page-link" aria-hidden="true">上一页</span>
+            </li>
+        
+        
+                    
+            
+            
+                                                                        <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+                                                                                <li class="page-item"><a class="page-link" href="/?page=2">2</a></li>
+                                                                                <li class="page-item"><a class="page-link" href="/?page=3">3</a></li>
+                                                                                <li class="page-item"><a class="page-link" href="/?page=4">4</a></li>
+                                                                                <li class="page-item"><a class="page-link" href="/?page=5">5</a></li>
+                                                                                <li class="page-item"><a class="page-link" href="/?page=6">6</a></li>
+                                                                    
+                            <li class="page-item disabled" aria-disabled="true"><span class="page-link">...</span></li>
+            
+            
+                                
+            
+            
+                                                                        <li class="page-item"><a class="page-link" href="/?page=19">19</a></li>
+                                                                                <li class="page-item"><a class="page-link" href="/?page=20">20</a></li>
+                                                        
+        
+                    <li class="page-item">
+                <a class="page-link" href="/?page=2" rel="next" aria-label="Next »">下一页</a>
+            </li>
+            </ul>
+</div>
+                </div>
+                <!--pages end-->
+            </div>
+
+            <!--leftSideList end-->
+            <!--rightSideList-->
+            <div class="rightSideList">
+                <!--SignIn-->
+                <div class="SignInBox">
+                    <div class="date">
+                        <span class="week">星期六</span>
+                        <span class="dates">2020-04-11</span>
+                    </div>
+                    <a href="/signlist/">
+                    <div class="signIn signInImg">
+                        签到
+                    </div>
+                    </a>
+                </div>
+                <!--SignIn end-->
+                <!--QRcode-->
+                <div class="QRcode">
+                    <img src="//img1cdn.clubstatic.lenovo.com.cn/pc3/images/club_v4/pc/site/r2wm.png" alt="二维码App" class="r2wm"/>
+                    <div class="QRcodetext">
+                        <p class="shaoma">扫码下载&nbsp;&nbsp;联想APP</p>
+                        <p class="yanbaotext">每日签到免费领延保</p>
+                    </div>
+                </div>
+                <!--QRcode end-->
+                <!--plateModle-->
+                <div class="plateModle slideTxtBox">
+                    <div class="modleHand hd">
+                        <ul >
+                            <li class="on"><a href="JavaScript:;" class="plateActive">版块推荐</a></li>
+                            <li class=""><a href="JavaScript:;" class="follow">热门关注</a></li>
+                        </ul>
+                    </div>
+                    <div class="bd">
+                        <div class="plateList" style="display:block;">
+                            <ul class="clearfix">
+                                                                    <li>
+                                        <a href="/forum-1546-1.html"  target="_blank">拯救者电竞手机</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/forum-1554-1.html"  target="_blank">ThinkBook</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/forum-1540-1.html"  target="_blank">Lenovo Z6 Pro</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/forum-1172-1.html"  target="_blank">小新笔记本</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/forum-1213-1.html"  target="_blank">YOGA笔记本</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/forum-1388-1.html"  target="_blank">ThinkPad</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/forum-1219-1.html"  target="_blank">拯救者笔记本</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/forum-1504-1.html"  target="_blank">Moto Z³ 系列</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/forum-1583-1.html"  target="_blank">扬天笔记本</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/forum-1431-1.html"  target="_blank">同城联萌</a>
+                                    </li>
+                                                            </ul>
+                            <a href="/community-forum/"  target="_blank">  <p class="seeMore">查看更多版块 > ></p></a>
+                        </div>
+                        <div class="plateList" style="display:none;">
+                            <ul class="clearfix">
+                                                                    <li>
+                                        <a href="/forum-1213-1.html" target="_blank">YOGA笔记本</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/forum-1545-1.html" target="_blank">YOGA Book</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/forum-1427-1.html" target="_blank">Moto Z 系列</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/forum-1516-1.html" target="_blank">Moto P 系列</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/forum-1425-1.html" target="_blank">MIIX二合一笔记本</a>
+                                    </li>
+                                                                    <li>
+                                        <a href="/forum-1515-1.html" target="_blank">Moto E 系列</a>
+                                    </li>
+                                                            </ul>
+                            <a href="/community-forum/" target="_blank"> <p class="seeMore">查看更多版块 > ></p></a>
+                        </div>
+                    </div>
+                </div>
+                <!--plateModle end-->
+                <!--Model-->
+                <div class="Models clearfix">
+                    <div class="modelsTitle">
+                        随手拍
+                    </div>
+                    <div class="modelsMian">
+                        <div class="swiper" id="swiper">
+                            <!--图片轮播-->
+                            <div class="bd">
+                                <a class="swiper_prev  prev" href="javascript:;"><img src="//img1cdn.clubstatic.lenovo.com.cn/pc3/images/club_v4/pc/plate/banner_left_btn.png" alt=""></a>
+                                <ul>
+                                                                            <li>
+                                            <a target="_blank" title="达人馆介绍" href="https://club.lenovo.com.cn/thread-5491589-1-1.html">
+                                                <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/14993813732118/0" alt="达人馆介绍">
+                                                <p class="model-title">达人馆介绍</p>
+                                            </a>
+                                        </li>
+                                                                            <li>
+                                            <a target="_blank" title="达人馆第5期丨喜欢旅行的随手拍版主离火" href="https://club.lenovo.com.cn/thread-5603942-1-1.html">
+                                                <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/14975608663064/0" alt="达人馆第5期丨喜欢旅行的随手拍版主离火">
+                                                <p class="model-title">达人馆第5期丨喜欢旅行的随手拍版主离火</p>
+                                            </a>
+                                        </li>
+                                                                            <li>
+                                            <a target="_blank" title="达人馆第3期丨好吃又好看的美食达人汤圆团子" href="https://club.lenovo.com.cn/thread-5542290-1-1.html">
+                                                <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/14993834127623/0" alt="达人馆第3期丨好吃又好看的美食达人汤圆团子">
+                                                <p class="model-title">达人馆第3期丨好吃又好看的美食达人汤圆团子</p>
+                                            </a>
+                                        </li>
+                                                                            <li>
+                                            <a target="_blank" title="达人馆第2期丨题材丰富的达人神秘色彩" href="https://club.lenovo.com.cn/thread-5493638-1-1.html">
+                                                <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/14975527514082/0" alt="达人馆第2期丨题材丰富的达人神秘色彩">
+                                                <p class="model-title">达人馆第2期丨题材丰富的达人神秘色彩</p>
+                                            </a>
+                                        </li>
+                                                                            <li>
+                                            <a target="_blank" title="达人馆第1期丨张张精品的微距达人一路风景LY" href="https://club.lenovo.com.cn/thread-5478510-1-1.html">
+                                                <img src="//img2cdn.clubstatic.lenovo.com.cn/pic/14993850017519/0" alt="达人馆第1期丨张张精品的微距达人一路风景LY">
+                                                <p class="model-title">达人馆第1期丨张张精品的微距达人一路风景LY</p>
+                                            </a>
+                                        </li>
+                                                                    </ul>
+                                <a class="swiper_next next" href="javascript:;"><img src="//img1cdn.clubstatic.lenovo.com.cn/pc3/images/club_v4/pc/plate/banner_right_btn.png" alt=""></a>
+                            </div>
+                            <div class="hd">
+                                <ul>
+                                                                                                                        <li class="on"></li>
+                                                                                                                                                                <li class=""></li>
+                                                                                                                                                                <li class=""></li>
+                                                                                                                                                                <li class=""></li>
+                                                                                                                                                                <li class=""></li>
+                                                                                                            </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="Models">
+                    <div class="modelsTitle">
+                        社区专题
+                    </div>
+                    <div class="modelsMian">
+                                                    <div class="swiper">
+                                <a target="_blank" title="联想" href="https://liveclub.lenovo.com.cn"><img src="//img2cdn.clubstatic.lenovo.com.cn/pic/16512642373214/0" alt="联想社区直播间" style="width: 320px;height: 140px;margin-top: 10px;"></a>
+                            </div>
+                                                    <div class="swiper">
+                                <a target="_blank" title="联想" href="https://club.lenovo.com.cn/forum-1567-1.html"><img src="//img2cdn.clubstatic.lenovo.com.cn/pic/15934599383496/0" alt="反馈中心" style="width: 320px;height: 140px;margin-top: 10px;"></a>
+                            </div>
+                                            </div>
+                </div>
+                <div class="Models clearfix">
+                    <div class="modelsTitle">
+                        推荐用户
+                    </div>
+                    <div class="modelsMian clearfix">
+                        <ul class="recommendImg">
+                                                            <li>
+                                    <a href="/space-uid-3008724.html" target="_blank"><img class="recommend_avatar" src="https://i.app.lefile.cn/uc_server/data/avatar/00000/00001/00071/06220_profilehead.jpg" alt=""></a>
+                                    <div class="listText">
+                                        <a class="listTextTitle" href="/space-uid-3008724.html" target="_blank">汤圆团子</a>
+                                        <p class="listTextTxt">来自山东的用户，爱分享，摄影，擅长自拍。
+                                        </p></div>
+                                </li>
+                                                            <li>
+                                    <a href="/space-uid-13176783.html" target="_blank"><img class="recommend_avatar" src="https://i.app.lefile.cn/uc_server/data/avatar/00000/00001/00778/46756_profilehead.jpg" alt=""></a>
+                                    <div class="listText">
+                                        <a class="listTextTitle" href="/space-uid-13176783.html" target="_blank">花晨月夕</a>
+                                        <p class="listTextTxt">随手拍摄影团队优秀摄影师，爱好运动，摄影，
+                                        </p></div>
+                                </li>
+                                                            <li>
+                                    <a href="/space-uid-4199637.html" target="_blank"><img class="recommend_avatar" src="https://i.app.lefile.cn/uc_server/data/avatar/00000/00001/00020/22231_profilehead.jpg" alt=""></a>
+                                    <div class="listText">
+                                        <a class="listTextTitle" href="/space-uid-4199637.html" target="_blank">离火</a>
+                                        <p class="listTextTxt">来自湖南的用户，热爱摄影，喜欢旅行。
+                                        </p></div>
+                                </li>
+                                                    </ul>
+                    </div>
+                </div>
+                <!--<div class="Models clearfix topforumlist" style="display: block;">
+                    <div class="modelsTitle">
+                        推荐帖子
+                    </div>
+                    <div class="modelsMian">
+                        <ul class="recommendList">
+                                                    </ul>
+                    </div>
+                </div>
+                <div class="Models clearfix topgoodslist" style="display: block;">
+                    <div class="modelsTitle">
+                        商品推荐
+                    </div>
+                    <div class="modelsMian swipers commonSlide" id="swipers">
+                        <div class="recommendGoods bd">
+                            <ul id="topgoods">
+                                                            </ul>
+                        </div>
+                        <div class="hd banner_bt">
+                            <ul id="html_on">
+                                                            </ul>
+                        </div>
+                    </div>
+
+                </div>-->
+                <div class="Models clearfix">
+                    <div class="modelsTitle">
+                        扫一扫
+                    </div>
+                    <div class="modelsMian">
+                        <div class="sys">
+                            <img src="//img1cdn.clubstatic.lenovo.com.cn/pc3/images/club_v4/pc/site/sys.png" alt="扫一扫" />
+                            <span class="scan_text">激活领取专项福利</span>
+                        </div>
+                    </div>
+                </div>
+                <!--Model end-->
+            </div>
+            <!--rightSideList end-->
+        </div>
+        <!--pages-->
+        <div class="both"></div>
+
+        <!--pages end-->
+        <div class="friend_links">
+            <div class="modelsTitle">
+                友情链接
+            </div>
+            <div class="modelsMian">
+                <ul class="alineImg">
+                    <li>
+                        <a href="https://www.lenovo.com.cn">
+                            <img src="//img1cdn.clubstatic.lenovo.com.cn/pc3/images/club_v4/pc/site/lenovoLogo.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://thinkpad.lenovo.com.cn">
+                            <img src="//img1cdn.clubstatic.lenovo.com.cn/pc3/images/club_v4/pc/site/thinkLogo.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.motorola.com.cn">
+                            <img src="//img1cdn.clubstatic.lenovo.com.cn/pc3/images/club_v4/pc/site/motoLogo.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.lenovomm.com">
+                            <img src="//img1cdn.clubstatic.lenovo.com.cn/pc3/images/club_v4/pc/site/leshopLogo.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://pim.lenovo.com/contact/portal/pim/index.shtml" target="_blank">
+                            <img src="//img1cdn.clubstatic.lenovo.com.cn/pc3/images/club_v4/pc/site/lxyLogo.jpg" alt="">
+                        </a>
+                    </li>
+                    <div class="both"></div>
+                </ul>
+                <ul class="alineName">
+                    <li>
+                        <a href="https://shop.lenovo.com.cn" target="_blank">联想商城</a>
+                    </li>
+                    <li>
+                        <a href="https://newsupport.lenovo.com.cn/" target="_blank">联想服务</a>
+                    </li>
+                    <li>
+                        <a href="https://browser.lenovo.com.cn/" target="_blank">智慧联想浏览器</a>
+                    </li>
+                    <li>
+                        <a href="https://quan.ithome.com" target="_blank">IT圈</a>
+                    </li>
+                    <li>
+                        <a href="https://bbs.zhiyoo.com" target="_blank">智友论坛</a>
+                    </li>
+                    <li>
+                        <a href="https://box.lenovo.com" target="_blank">联想企业网盘</a>
+                    </li>
+
+                    <div class="both"></div>
+                </ul>
+                <div class="both"></div>
+            </div>
+        </div>
+    </div>
+    <!--inner end-->
+
+    <!--发新帖弹层-->
+    <div class="newpost_mark_wrap" style="display:none">
+        <div class="newpost_markbox">
+            <h1>发新帖 <span><img src="//img1cdn.clubstatic.lenovo.com.cn/pc3/images/masklayer/newpost_markerror.png?version=50c21bf2e8b740po" alt="" id="closeplate"/></span></h1>
+            <ul>
+                <li><a href="javascript:void(0);">社区首页</a></li>
+            </ul>
+            <div class="clear" style="clear:both"></div>
+            <div class="newpost_markbox_inall">
+                <div class="newpost_markbox_inallone">
+                    <ol id="firstclass">
+                                                    <li><a href="javascript:void(0);" id="1108">Lenovo电脑<img src="//img1cdn.clubstatic.lenovo.com.cn/pc3/images/club_v4/pc/newpost_inallonebtn.png" alt=""/></a></li>
+                                                    <li><a href="javascript:void(0);" id="1535">ThinkPad<img src="//img1cdn.clubstatic.lenovo.com.cn/pc3/images/club_v4/pc/newpost_inallonebtn.png" alt=""/></a></li>
+                                                    <li><a href="javascript:void(0);" id="1065">Lenovo 手机<img src="//img1cdn.clubstatic.lenovo.com.cn/pc3/images/club_v4/pc/newpost_inallonebtn.png" alt=""/></a></li>
+                                                    <li><a href="javascript:void(0);" id="1350">Motorola<img src="//img1cdn.clubstatic.lenovo.com.cn/pc3/images/club_v4/pc/newpost_inallonebtn.png" alt=""/></a></li>
+                                                    <li><a href="javascript:void(0);" id="1087">智能产品<img src="//img1cdn.clubstatic.lenovo.com.cn/pc3/images/club_v4/pc/newpost_inallonebtn.png" alt=""/></a></li>
+                                                    <li><a href="javascript:void(0);" id="1359">联萌家园<img src="//img1cdn.clubstatic.lenovo.com.cn/pc3/images/club_v4/pc/newpost_inallonebtn.png" alt=""/></a></li>
+                                                    <li><a href="javascript:void(0);" id="1517">社区站务<img src="//img1cdn.clubstatic.lenovo.com.cn/pc3/images/club_v4/pc/newpost_inallonebtn.png" alt=""/></a></li>
+                                                    <li><a href="javascript:void(0);" id="1506">联想内测<img src="//img1cdn.clubstatic.lenovo.com.cn/pc3/images/club_v4/pc/newpost_inallonebtn.png" alt=""/></a></li>
+                                            </ol>
+                </div>
+                <div class="newpost_markbox_inallone">
+                    <ol id="secondclass">
+                    </ol>
+                </div>
+            </div>
+            <div class="newpost_markbox_btn">
+                <span><a href="javascript:void (0);" target="_blank">发新帖</a></span>
+            </div>
+        </div>
+    </div>
+    <!--end-->
+
+    <!--分享-->
+    <div class="share" id="share" style="display: none;">
+        <div class="share_close">
+            <a href="javascript:void(0);" class="share_close_btn"></a>
+        </div>
+        <div class="share_box">
+            <p class="share_text">分享到微信</p>
+            <div id="two_M">
+
+            </div>
+            <p class="share_font_text share_border">打开微信，点击底部的“发现”</p>
+            <p class="share_font_text">使用扫一扫即可将网页分享到朋友圈</p>
+        </div>
+    </div>
+    <!--end-->
+
+    <!--浮标-->
+    <div class="take_toptopbox1">
+        <div class="pcx_toptop1">
+            <p></p>
+            <div class="taketop_box1">
+                <ul>
+                    <li class="taketop_li4"><a id="publish" href="javascript:void(0);" target="_black"></a></li>
+                    <!-- <li class="taketop_li2"><a href="/thread-4236259-1-1.html" target="_black"></a></li>
+                    <li class="taketop_li3"><a href="/thread-1781687-1-1.html" target="_black"></a></li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--end-->
+    <!--返回顶部-->
+    <div class="take_toptopbox Offscreen" id="ScrollToTop">
+        <div class="pcx_toptop">
+            <p></p>
+            <div class="taketop_box">
+                <b></b>
+                <!-- < img src="images/newtake/to_top.png" class="to_top"/>-->
+                <!-- < img src="images/newtake/to_tophover.png" class="to_tophover"/>-->
+            </div>
+        </div>
+    </div>
+    <!--end-->
+<!--欢迎页-->
+<div id="welcome_page" class="show_box" style="display: none;">
+    <div class="welcome_center">
+        <div class="close_btn"></div>
+    </div>
+</div>
+	<script src="//js1cdn.clubstatic.lenovo.com.cn/pc3/js/club_v4/pc/lib/sea.js?b0e1knhbloxikl0c"></script>
+    <script src="//js1cdn.clubstatic.lenovo.com.cn/pc3/js/club_v4/pc/sea_config.js?b0e1knhbloxikl0c"></script>
+    <script type="text/javascript" src="//js1cdn.clubstatic.lenovo.com.cn/pc3/js/club_v4/pc/pages/index.js?b0e1knhbloxikl0c"></script>
+    <script>
+        //获取用户uid
+        function getuid() {
+            var lenovoid  = "";
+            var uid = $.cookie('LA_C_C_Id') ? $.cookie('LA_C_C_Id') : '';
+            if(lenovoid != ''){
+                return lenovoid; exit();
+            }
+            if(uid != '' ){
+                return uid; exit();
+            }
+            return '';
+        }
+        //获取推荐帖子
+        function get_index_forum_post(uid) {
+            jQuery.ajax({
+                type: "GET",
+                cache: false,
+                data : {uid:uid},
+                dataType: 'json',
+                url: 'https://club.lenovo.com.cn/homepagepost',
+                success: function(data){
+                    if (data.code == 100000) {
+                        jQuery(".recommendList").html(data.data);
+                    }else{
+                        //jQuery(".topforumlist").hide();
+                    }
+                }
+            })
+        }
+        //获取用户id
+        function get_data_good(){
+          var get_timeout = setInterval(function(){
+              uid = getuid();
+                if(uid == '' ){
+                    get_data_good();
+                }else{
+                    clearInterval(get_timeout);
+                    get_index_forum_post(uid);
+                    homepagegoods(uid);
+                }
+            },1500);
+        }
+        //获取推荐产品
+        function homepagegoods(uid) {
+            jQuery.ajax({
+                type: "GET",
+                cache: false,
+                dataType: 'json',
+                data : {uid:uid},
+                url: 'https://club.lenovo.com.cn/homepagegoods',
+                success: function(data){
+                    if(data.html != ''){
+                        jQuery("#swipers .bd ul").html('');
+                        jQuery("#swipers .bd ul").append(data.html);
+                        jQuery("#html_on").html('');
+                        jQuery("#html_on").append(data.html_on);
+                        jQuery("#swipers").slide({mainCell:".bd ul",autoPlay:true, trigger:'click'});
+                    }else{
+                        // jQuery(".topgoodslist").hide();
+                    }
+
+                }
+            })
+        }
+        jQuery(function(){
+            get_data_good();
+            //判断是否首次打开页面
+            if(document.cookie.indexOf("times=true")==-1){
+                jQuery('#welcome_page').show();
+                var t=new Date(new Date().getTime()+1000*60*60*24*30);
+                document.cookie="times=true; expires="+t.toGMTString();
+            }else{
+                jQuery('#welcome_page').hide();
+            }
+            jQuery('.close_btn').click(function(){
+                jQuery('#welcome_page').hide();
+            })
+
+
+        });
+
+        //点击分享
+        function share(tid) {
+            var threadUrl = "https://mclub.lenovo.com.cn/thread-" + tid + "-1-1.html";
+            $.get('share', { 'threadUrl': threadUrl }, function (data) {
+                if (data.code == 100000) {
+                    $("#share").show();
+                    $("#two_M").html(data.data);
+                } else {
+                    return false;
+                }
+            }, 'json');
+        }
+
+        //关闭分享
+        $('.share_close_btn').click(function(){
+            $("#share").hide();
+        })
+
+        //发表按钮
+        jQuery(document).ready(function(){
+            var  toptopbox= jQuery(window).height();
+            if(toptopbox>1184){
+                jQuery('.pcx_toptop1').show();
+            }
+        });
+        jQuery(window).scroll(function(){
+            var  toptopbox= jQuery('.take_toptopbox1').offset().top;
+            if(toptopbox>1165){
+                jQuery('.pcx_toptop1').show();
+            }else{
+                jQuery('.pcx_toptop1').hide();
+            }
+        });
+        //返回顶部
+        var ScrollToTop=ScrollToTop||{
+            setup:function(){
+                var a=jQuery(window).height()/2;
+                jQuery(window).scroll(function(){
+                    (window.innerWidth?window.pageYOffset:document.documentElement.scrollTop)>=a?jQuery("#ScrollToTop").removeClass("Offscreen"):jQuery("#ScrollToTop").addClass("Offscreen")
+                });
+                jQuery("#ScrollToTop").click(function(){
+                    jQuery("html, body").animate({scrollTop:"0px"},400);
+                    return false
+                })
+            }
+        };
+        jQuery(document).ready(function(){
+            ScrollToTop.setup();
+        });
+    </script>
+
+    <!--发帖相关js-->
+    <script type="text/javascript">
+        //发表帖子
+        $('#publish').click(function(){
+            $(".newpost_mark_wrap").show();
+        });
+
+        //关闭发帖
+        $("#closeplate").live("click",function(){
+            $(".newpost_mark_wrap").hide();
+        });
+
+        //点击一级菜单
+        $("#firstclass").live("click",function(e){
+            $("#firstclass li").removeClass("newpost_inallone_hili");
+            $(e.target).parent("li").addClass("newpost_inallone_hili");
+            fid=e.target.id;
+            var htmls="";
+            $.each(JSON.parse($CONFIG.forumList),function(n,value){
+                if(fid==n){
+                    $.each(value.children,function(a,b){
+                        htmls+="<li><a href=\"javascript:void(0);\" id='"+b.fid+"'>"+b.name+"</a></li>";
+                    });
+                }
+            });
+            $("#secondclass").html(htmls);
+
+            //显示面包屑
+            $(".newpost_markbox ul li").not(":first").remove();
+            var fname = $("#firstclass .newpost_inallone_hili").text();
+            var ulhtml = "<li>></li><li><a href='/forum-g"+fid+".html'>"+fname+"</a></li>";
+            $(".newpost_markbox ul").append(ulhtml);
+        });
+
+        //点击二级菜单
+        $("#secondclass").live("click",function(e){
+            $("#secondclass li").removeClass("newpost_inallone_hili");
+            $(e.target).parent("li").addClass("newpost_inallone_hili");
+            sid = e.target.id;
+
+            //显示面包屑
+            $(".newpost_markbox ul li:gt(2)").remove();
+            sname = $("#secondclass .newpost_inallone_hili a").text();
+            var ulhtml = "<li>></li><li><a href='/forum-"+sid+"-1.html'>"+sname+"</a></li>";
+            $(".newpost_markbox ul").append(ulhtml);
+        });
+
+        //弹窗点击发新帖
+        $(".newpost_markbox_btn span a").live("click",function(){
+            forum_id = $(".newpost_markbox_inallone #secondclass .newpost_inallone_hili a").attr('id');
+            if(forum_id){
+                var link = "/forum.php?mod=post&action=newthread&fid=" + forum_id;
+                $(this).attr('href', link);
+            }
+        });
+    </script>
+<div class="clear" style="clear: both"></div>
+	<!--公共底部-->
+	<div class="pub_footer">
+		<div class="pub_footer_top">
+			<a href="http://appserver.lenovo.com.cn/About/index.aspx" title="关于联想" target="_blank">  关于联想</a>
+			<span class="">|</span>
+			<a href="http://appserver.lenovo.com.cn/Public/public_bottom/contact.shtml" title="联系我们" target="_blank">  联系我们</a>
+			<span class="">|</span>
+			<a href="http://www.lenovocareers.com/chi/index.html" title="工作机会" target="_blank">  工作机会</a>
+			<span class="">|</span>
+			<a href="http://appserver.lenovo.com.cn/About/news_center.aspx" title="新闻中心" target="_blank">  新闻中心</a>
+			<span class="">|</span>
+			<a href="http://appserver.lenovo.com.cn/LenovoMap/LenovoMap_Direct.aspx?intcmp=MAP20140730_1" title="销售网点" target="_blank">销售网点</a>
+			<span class="">|</span>
+			<a href="http://support1.lenovo.com.cn/lenovo/wsi/station/servicestation/default.aspx?intcmp=MAP20140730_2" title="服务网点" target="_blank"> 服务网点</a>
+			<span class="">|</span>
+			<a href="javascript:void(0);" title="举报邮箱：lenovoclub@lenovo.com" target="_blank"> 举报邮箱：lenovoclub@lenovo.com</a>
+		</div>
+		<div class="pub_footer_bottom">
+			<span>版权所有：1998-2020 联想集团</span>
+			<span class="">|</span>
+			<a href="http://appserver.lenovo.com.cn/Public/public_bottom/legal.shtml" title="法律公告" target="_blank">法律公告</a>
+			<span class="">|</span>
+			<a href="http://appserver.lenovo.com.cn/Public/public_bottom/privacy.shtml" title="隐私保护" target="_blank">隐私保护</a>
+			<span class="">|</span>
+			<a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备11035381号</a>
+			<span class="">|</span>
+			<span>京公网安备110108007970号</span>
+		</div>
+	</div>
+	<!--end-->
+	<script>
+		(function(){
+			var bp = document.createElement('script');
+			var curProtocol = window.location.protocol.split(':')[0];
+			if (curProtocol === 'https') {
+				bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+			}
+			else {
+				bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+			}
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(bp, s);
+		})();
+	</script>
+	<script language="JavaScript"> var _la_lenovo_website = '10000008';//社区站 </script>
+	<script src="https://pcjs	1.clubstatic.lenovo.com.cn/s/la/la_v2020041107.min.js" type="text/javascript"></script>
+	</body>
+</html>
