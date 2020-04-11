@@ -1,0 +1,68 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Worldpay Developers</title><base href="/"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png"><link rel="icon" type="image/x-icon" href="/assets/favicons/favicon.ico"><link rel="manifest" href="/assets/favicons/site.webmanifest"><link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#e4e3de"><meta name="msapplication-TileColor" content="#e4e3de"><meta name="theme-color" content="#e4e3de"><script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autorun=false"></script><style>.wpdh-global-loader-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+
+    .wpdh-global-loader {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -60px;
+      margin-top: -60px;
+      font-size: 0;
+      width: 120px;
+      height: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center
+    }
+
+    .wpdh-global-loader img {
+      width: 45px;
+      height: 45px;
+    }
+
+    .wpdh-global-loader__circle {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .05)
+    }
+
+    .wpdh-global-loader__line--mask {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 50%;
+      height: 100%;
+      overflow: hidden;
+      transform-origin: 60px 60px;
+      -webkit-mask-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0));
+      animation: rotate 1s infinite linear
+    }
+
+    .wpdh-global-loader__line {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      box-shadow: inset 0 0 0 2px rgba(255, 0, 0, 1)
+    }
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0)
+      }
+
+      to {
+        transform: rotate(360deg)
+      }
+    }</style><link href="styles.410c74e68e268d87cb87.bundle.css" rel="stylesheet"/></head><body id="top"><app-root><div class="wpdh-global-loader-wrapper"><div class="wpdh-global-loader"><div class="wpdh-global-loader__circle"></div><div class="wpdh-global-loader__line--mask"><div class="wpdh-global-loader__line"></div></div><img src="/assets/images/icon.svg"/></div></div></app-root><script type="text/javascript" src="inline.318b50c57b4eba3d437b.bundle.js"></script><script type="text/javascript" src="polyfills.fa3e153f7fed79a5c36e.bundle.js"></script><script type="text/javascript" src="main.72b837d1c84cfe057364.bundle.js"></script></body></html>
