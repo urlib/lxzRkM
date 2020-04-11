@@ -1,0 +1,188 @@
+<?xml version="" encoding="utf-8" standalone="no"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<meta name="description" content="Authorize.Net API Documentation" />
+<meta name="keywords" content="AIM ARB CIM Reporting" />
+<title>
+               Authorize.Net API Documentation - 
+               Mobile In-App Transactions</title>
+<link href="../dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="../dist/css/main.css" rel="stylesheet" type="text/css" />
+<link href="../dist/css/docs.min.css" rel="stylesheet" type="text/css" />
+<link href="../dist/css/anet.css" rel="stylesheet" type="text/css" />
+<link href="../dist/css/APIDocsDocBook.css" rel="stylesheet" type="text/css" />
+<link href="../dist/css/show-hint.css" rel="stylesheet" type="text/css" />
+<link href="../dist/css/responsiveUI.css" rel="stylesheet" type="text/css" />
+<link href="../dist/css/feature_details.css" rel="stylesheet" type="text/css" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.29.0/codemirror.min.css" rel="stylesheet" type="text/css" integrity="sha384-c3gwVfQ7MBwoNCaSyxFcu/2pPnViUuJhZZ78E+FROMs+Tsc0Fd+I3/tR3NMLsDNX" />
+<link rel="icon" href="/content/dam/developer/images/favicon.ico" />
+</head>
+<body data-spy="scroll" data-target="#featureDetailsNavID" id="featureDetailsPage"><nav class="navbar navbar-inverse" id="mobileUtilityBar"><div class="container-fluid"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mobileNavbar"><span class="glyphicon glyphicon-align-justify" /></button><a class="navbar-brand col-xs-8" href="https://developer.authorize.net/"><img class="img-responsive" src="/content/dam/developer/images/anet-logo-white-developer.png" alt="Developer.Authorize.Net" /></a></div><div class="collapse navbar-collapse" id="mobileNavbar"><ul class="nav navbar-nav"><li><a href="#headerAPI" data-toggle="collapse">API<span class="glyphicon glyphicon-chevron-right pull-right" /></a><ul class="collapse list-unstyled" id="headerAPI"><li><a href="/api/">API Developer Guides</a></li><li><a href="/api/reference/">API Reference </a></li><li><a href="/samplecode/" target="_blank" rel="noopener noreferrer">Sample Code on [GitHub]</a></li><li><a href="https://github.com/AuthorizeNet">SDKs on [GitHub]</a></li><li><a href="/api/changes/">API Change Log</a></li><li><a href="/api/system_changes/">System Change Log</a></li><li><a href="/api/upgrade_guide/">Upgrade Guide</a></li></ul></li><li><a href="#headerHelloWorld" data-toggle="collapse">HELLO WORLD<span class="glyphicon glyphicon-chevron-right pull-right" /></a><ul class="collapse list-unstyled" id="headerHelloWorld"><li><a href="/hello_world/">Get Started</a></li><li><a href="/hello_world/common_setup_questions/">Common Setup Questions</a></li><li><a href="https://www.authorize.net/resources/howitworksdiagram/">How Payments Work</a></li><li><a href="/hello_world/testing_guide/">Testing Guide</a></li><li><a href="https://developer.authorize.net/hello_world/go-live.html">Go-Live Checklist</a></li></ul></li><li><a href="#headerSupport" data-toggle="collapse">SUPPORT<span class="glyphicon glyphicon-chevron-right pull-right" /></a><ul class="collapse list-unstyled" id="headerSupport"><li><a href="/support/">Get Support</a></li><li><a href="https://community.developer.authorize.net/t5/News-and-Announcements/bd-p/News_Annoucements">News and Announcements</a></li><li><a href="https://community.developer.authorize.net/t5/Integration-and-Testing/bd-p/Integration01">Forums</a></li><li><a href="https://github.com/AuthorizeNet">Authorize.Net on GitHub</a></li><li><a href="https://stackoverflow.com/questions/tagged/authorize.net">Authorize.Net on Stack Overflow</a></li><li><a href="https://community.developer.authorize.net/t5/The-Authorize-Net-Developer-Blog/bg-p/DeveloperBlog">Developer Blog</a></li><li><a href="/api/reference/responseCodes.html">Response (Error) Codes</a></li><li><a href="/support/faqs/">FAQs</a></li><li><a href="https://support.authorize.net/s/">Knowledge Base</a></li></ul></li><li><a href="#SignIn" data-toggle="collapse">SIGN IN<span class="glyphicon glyphicon-chevron-right pull-right" /></a><ul class="collapse list-unstyled" id="SignIn"><li><a href="https://sandbox.authorize.net">Sandbox</a></li><li><a href="https://account.authorize.net/interfaces/reseller/frontend/login.aspx">Affiliate</a></li></ul></li><li><br /><p style="color: white;">Search Developer Site</p><form class="dev-menu-search-form inline-form input-group" action="https://search.authorize.net/search" method="GET"><input type="text" placeholder="Enter questions, specific items" class="dev-menu-search-textfield placeholder form-control" style="width: 100%" name="q" id="q" /><input id="client" type="hidden" value="developer-anet-frontend" name="client" /><input id="proxystylesheet" type="hidden" value="developer-anet-frontend" name="proxystylesheet" /><input id="site" type="hidden" value="developer-anet" name="site" /><input id="output" type="hidden" value="xml_no_dtd" name="output" /><span class="input-group-addon"><button type="submit" class="dev-menu-search-cta" name="dev-menu-search-cta" id="dev-menu-search-cta" alt=""><span class="glyphicon glyphicon-search" style="color: black" /></button></span></form></li></ul></div></div></nav><div class="conatiner no-padding developer feature-detail"><div class="wrap"><div class="col-md-12 no-padding developer-wrapper"><div class="developer-inner"><header class="container utility-bar"><div class="wrap"><div class="row"><div id="logo" class="col-md-3"><a href="https://developer.authorize.net/" tabindex="1"><img src="/content/dam/developer/images/anet-logo-white-developer.png" alt="Developer.Authorize.Net" /></a></div><nav class="col-md-7 main-menu-wrapper"><ul class="main-menu full-width no-margin"><li class="api main-menu-item"><a href="javascript:void(0)" class="main-menu-link" data-dev-submenu="dev-submenu-1" tabindex="2" data-href="/api/">API</a></li><li class="hello-world main-menu-item"><a href="javascript:void(0)" class="main-menu-link" data-dev-submenu="dev-submenu-2" tabindex="7" data-href="/hello_world/">Hello World</a></li><li class="support main-menu-item"><a href="javascript:void(0)" data-dev-submenu="dev-submenu-3" tabindex="12" data-href="developer-support.html">Support</a></li></ul></nav><div class="col-md-1 sign-in no-padding main-menu-item"><span class="btn-blue-dark border-white text-white sign-in-button" data-dev-submenu="dev-submenu-4"><a href="javascript:void()" tabindex="21">Sign in</a></span></div><div class="col-md-1 search main-menu-item"><a href="javascript:void(0)" class="search-cta" data-dev-submenu="dev-submenu-5" tabindex="24"><img src="../dist/imgs/developer/icons/icon-search.png" alt="Search" /></a></div></div></div></header><div class="container-outter"><div class="container utility-bar dev-submenu dev-submenu-1 row-sticky"><div class="wrap"><div class="row"><div class="col-md-3"><h3>OUR API</h3></div><div class="col-md-3 dev-submenu-links-col"><a href="/api/" tabindex="3">API Developer Guides</a><a href="/api/reference/" tabindex="4">API Reference </a><a href="/samplecode/" target="_blank" rel="noopener noreferrer" tabindex="5">Sample Code on [GitHub] </a></div><div class="col-md-3 dev-submenu-links-col"><a href="https://github.com/AuthorizeNet" tabindex="6">SDKs on [GitHub]</a><a href="/api/changes/" tabindex="7">API Change Log</a><a href="/api/system_changes/" tabindex="8">System Change Log</a></div><div class="col-md-3 dev-submenu-links-col"><a href="/api/upgrade_guide/" tabindex="9">Upgrade Guide</a></div></div></div></div><div class="container utility-bar dev-submenu dev-submenu-2 row-sticky"><div class="wrap"><div class="row"><div class="col-md-3"><h3>Hello World</h3></div><div class="col-md-3 dev-submenu-links-col"><a href="/hello_world/" tabindex="8">Get Started</a><a href="/hello_world/common_setup_questions/" tabindex="9">Common Setup Questions</a><a href="https://www.authorize.net/resources/howitworksdiagram/" tabindex="10">How Payments Work </a></div><div class="col-md-3 dev-submenu-links-col"><a href="/hello_world/testing_guide/" tabindex="9">Testing Guide</a><a href="https://developer.authorize.net/hello_world/go-live.html">Go-Live Checklist</a></div></div></div></div><div class="container utility-bar dev-submenu dev-submenu-3 row-sticky"><div class="wrap"><div class="row"><div class="col-md-3"><h3>Support</h3></div><div class="col-md-3 dev-submenu-links-col"><a href="/support/" tabindex="13">Get Support</a><a href="https://community.developer.authorize.net/t5/News-and-Announcements/bd-p/News_Annoucements" tabindex="14">News and Announcements</a><a href="https://community.developer.authorize.net/t5/Integration-and-Testing/bd-p/Integration01" tabindex="15">Forums</a></div><div class="col-md-3 dev-submenu-links-col"><a href="https://github.com/AuthorizeNet" tabindex="16">Authorize.Net on GitHub</a><a href="https://stackoverflow.com/questions/tagged/authorize.net" tabindex="17">Authorize.Net on Stack Overflow</a><a href="https://community.developer.authorize.net/t5/The-Authorize-Net-Developer-Blog/bg-p/DeveloperBlog" tabindex="18">Developer Blog</a></div><div class="col-md-3 dev-submenu-links-col last"><a href="/api/reference/responseCodes.html" tabindex="19">Response (Error) Codes</a><a href="/support/faqs/" tabindex="20">FAQs</a><a href="https://support.authorize.net/s/" tabindex="21">Knowledge Base</a></div></div></div></div><div class="container utility-bar dev-submenu dev-submenu-4 row-sticky"><div class="wrap"><div class="row"><div class="col-md-3"><h3>Sign In</h3></div><div class="col-md-3 dev-submenu-links-col"><a href="https://sandbox.authorize.net" tabindex="22">Sandbox</a><a href="https://account.authorize.net/interfaces/reseller/frontend/login.aspx" tabindex="23">Affiliate</a></div></div></div></div><div class="container utility-bar dev-submenu dev-submenu-5 row-sticky"><div class="wrap"><div class="row"><div class="col-md-4"><h3>Search Developer Site</h3></div><div class="col-md-8"><form class="dev-menu-search-form" action="https://search.authorize.net/search" method="GET"><input type="text" tabindex="28" placeholder="Enter questions, specific items, or Document IDs" class="dev-menu-search-textfield placeholder" name="q" id="q" /><input id="client" type="hidden" value="developer-anet-frontend" name="client" /><input id="proxystylesheet" type="hidden" value="developer-anet-frontend" name="proxystylesheet" /><input id="site" type="hidden" value="developer-anet" name="site" /><input id="output" type="hidden" value="xml_no_dtd" name="output" /><input type="submit" tabindex="29" class="dev-menu-search-cta" name="dev-menu-search-cta" id="dev-menu-search-cta" /></form></div></div></div></div><div class="dropdown" id="dropDownMenu" hidden="true" data-spy="affix" data-offset-top="70"><button class="btn dropdown-toggle col-xs-12" type="button" data-toggle="dropdown" style="background-color: #f2f2f2"><b class="pull-left">Mobile In-App Transactions</b><span class="glyphicon glyphicon-chevron-down pull-right" /></button><ul class="dropdown-menu col-xs-12" style="max-height: 90vh; height:auto; overflow-x: hidden"><li><a href="#">Mobile In-App Transactions</a></li><li class="col-xs-offset-1"><a data-toggle="collapse" data-target=".navbar-collapse" href="#Resources">Resources</a></li><li class="col-xs-offset-1"><a data-toggle="collapse" data-target=".navbar-collapse" href="#Accept_Mobile_SDK">Accept Mobile SDK</a></li><li class="col-xs-offset-1"><a data-toggle="collapse" data-target=".navbar-collapse" href="#Apple_Pay">Apple Pay</a></li><li class="col-xs-offset-1"><a data-toggle="collapse" data-target=".navbar-collapse" href="#Google_Pay™">Google Pay™</a></li><li><a class="dropdown-toggle pull-right" style="padding: 4px"> CLOSE <span class="glyphicon glyphicon-remove" /></a></li></ul></div><div class="container xml-detail-container text-dev-grey social-float-parent"><div class="wrap"><div class="col-md-3"><div class="bs-docs-sidebar hidden-print scroll1 social-float" role="complementary" id="featureDetailsNavID" data-spy="affix" data-offset-top="125"><ul class="bs-docs-sidenav"><li class="active"><a href="#" class="link1">Mobile In-App Transactions</a><ul class="nav-list"><li><a class="link2" href="#Accept_Mobile_SDK">Accept Mobile SDK</a></li><li><a class="link2" href="#Apple_Pay">Apple Pay</a></li><li><a class="link2" href="#Google_Pay™">Google Pay™</a></li></ul></li></ul></div></div><div class="col-md-9 scroll">
+<div class="wrap xml-detail-content-wrapper"><div class="row"><div class="col-md-12 remove-space">
+<h2 class="title">Mobile In-App Transactions</h2>
+<p>The Authorize.Net Accept Mobile SDKs for Apple Pay and Google Pay enable mobile developers to integrate credit card payment functionality into their mobile applications without passing sensitive card data back to their application servers. For example, you can accept credit card data directly, or use the Apple Pay or Google Pay services on your customer's phone.</p>
+<p>For information about in-person payments using a mobile point-of-sale application, see the <a href="http://developer.authorize.net/api/reference/features/in-person.html">In-Person SDK</a>.</p>
+</div></div></div>
+<div class="container text-bar orange no-shadow"><div class="wrap"><div class="col-md-3"><p class="text-bar-label" id="Resources">
+Resources
+</p></div><div class="col-md-9"><ul class="text-bar-list"><li class="text-bar-list-item"><a href="http://developer.authorize.net/api/reference/index.html#mobile-inapp-transactions" class="text-bar-link text-white caret-right caret-orange">API Reference</a></li><li class="text-bar-list-item"><a href="https://github.com/AuthorizeNet/accept-sdk-ios" class="text-bar-link text-white caret-right caret-orange">Accept Mobile SDK for iOS</a></li><li class="text-bar-list-item"><a href="https://github.com/AuthorizeNet/accept-sample-ios" class="text-bar-link text-white caret-right caret-orange">Accept Mobile iOS Sample Application on GitHub </a></li><li class="text-bar-list-item"><a href="https://github.com/AuthorizeNet/accept-sdk-android" class="text-bar-link text-white caret-right caret-orange">Accept Mobile SDK for Android</a></li><li class="text-bar-list-item"><a href="https://github.com/AuthorizeNet/accept-sample-android" class="text-bar-link text-white caret-right caret-orange">Accept Mobile Android Sample Application on GitHub </a></li></ul></div></div></div>
+<div class="wrap xml-detail-content-wrapper" id="in-app-sdk"><div class="row"><div class="col-md-12 content-section border-bottom-blue">
+<h3 class="section-title subtitle para-diff3" id="Accept_Mobile_SDK">Accept Mobile SDK</h3>
+<h4 class="feature-item-subtitle subtitle2" id="Obtaining_a_Public_Client_Key">Obtaining a Public Client Key</h4>
+<p>Use a public client key to secure payment data sent to Authorize.Net.</p>
+<p><emphasis>To obtain a public client key:</emphasis></p>
+<p><emphasis>Step 1.</emphasis> Log in to the Authorize.Net Merchant Interface using an administrator account.</p>
+<p><emphasis>Step 2.</emphasis> Navigate to <emphasis>Account &gt; Settings &gt; Security Settings &gt; General Settings &gt; Manage Public Client Key.</emphasis></p>
+<p><emphasis>Step 3.</emphasis> In the section Create New Public Client Key, click <emphasis>Submit</emphasis>. Request and verify a PIN to complete the public client key process. The client key appears as a string.</p>
+<h4 class="feature-item-subtitle subtitle2" id="Securing_the_Payment_Data">Securing the Payment Data</h4>
+<p>Use the Accept Mobile SDK to dispatch the payment data and receive a secure payment nonce (one-time-use token). For sample code, see our GitHub page for either <a href="https://github.com/AuthorizeNet/accept-sample-ios">iOS</a> or <a href="https://github.com/AuthorizeNet/accept-sample-android">Android</a>.</p>
+<h4 class="feature-item-subtitle subtitle2" id="Using_the_Secure_Payment_Nonce">Using the Secure Payment Nonce</h4>
+<p>The secure payment nonce can be used anywhere in the Authorize.Net API in place of credit card data. See our <a href="http://developer.authorize.net/api/reference/index.html#mobile-in-app-transactions-create-an-accept-transaction">API Reference</a> for an example of a payment transaction.</p>
+</div></div></div>
+<div class="wrap xml-detail-content-wrapper" id="ApplePay"><div class="row"><div class="col-md-12 content-section border-bottom-blue">
+<h3 class="section-title subtitle para-diff3" id="Apple_Pay">Apple Pay</h3>
+To use Apple Pay to submit payment transactions, follow the processes below.
+<h4 class="feature-item-subtitle subtitle2" id="Create_an_Apple_Merchant_ID">Create an Apple Merchant ID</h4>
+<p>You must create an Apple merchant ID before you can generate the Certificate Signing Request (CSR) that Apple Pay requires. See Apple's documentation on <a href="https://developer.apple.com/documentation/passkit/apple_pay/setting_up_apple_pay_requirements">setting up Apple Pay requirements</a> for details.</p>
+<h4 class="feature-item-subtitle subtitle2" id="Signing_Up_for_the_Service">Signing Up for the Service</h4>
+<p>Apple Pay uses payment network tokenization. If your processor does not support payment network tokenization, or if Authorize.Net does not support your payment processor's tokenization interface, you cannot sign up for Apple Pay through Authorize.Net.</p>
+<p><emphasis>To sign up for Apple Pay:</emphasis></p>
+<p><emphasis>Step 1.</emphasis> In the <a href="https://account.authorize.net">Authorize.Net Merchant Interface</a>, navigate to <emphasis>Account &gt; Settings &gt; Digital Payment Solutions</emphasis>. The available digital payment solutions appear.</p>
+<p><emphasis>Step 2.</emphasis> In the Apple Pay section, click <emphasis>Sign Up.</emphasis></p>
+<p><emphasis>Step 3.</emphasis> Enter your Apple Merchant ID and click <emphasis>Generate Apple CSR</emphasis>. The Apple CSR appears.</p>
+<h4 class="feature-item-subtitle subtitle2" id="Generating_the_CSR">Generating the CSR</h4>
+<p>You must submit a Certificate Signing Request (CSR) to Apple in order to receive a payment processing certificate. The certificate enables Authorize.Net to decrypt the payment data in your Apple Pay requests.</p>
+<p><emphasis>To generate the CSR:</emphasis></p>
+<p><emphasis>Step 1.</emphasis> Log in to the <a href="https://account.authorize.net">Authorize.Net Merchant Interface</a>.</p>
+<p><emphasis>Step 2.</emphasis> Navigate to <emphasis>Tools &gt; Digital Payments Solutions &gt; Apple Pay</emphasis>.</p>
+<p><emphasis>Step 3.</emphasis> Enter your Apple Merchant ID in the <emphasis>Apple Merchant ID</emphasis> field.</p>
+<p><emphasis>Step 4.</emphasis> Click <emphasis>Generate Apple CSR</emphasis>.</p>
+<h4 class="feature-item-subtitle subtitle2" id="Submitting_the_CSR_File_to_Apple">Submitting the CSR File to Apple</h4>
+<p>See Apple's documentation on <a href="https://developer.apple.com/documentation/passkit/apple_pay/setting_up_apple_pay_requirements">setting up Apple Pay requirements</a> for details. Use the CSR that you created in Authorize.Net instead of creating a new CSR.</p>
+<h4 class="feature-item-subtitle subtitle2" id="Apple_Pay_Transactions">Apple Pay Transactions</h4>
+<p>To process an Apple Pay transaction, use the <code>createTransactionRequest</code> API call with the <code>opaqueData</code> field instead of payment information such as a credit card, bank account, or customer profile. For more information on submitting the payment request, see the <a href="http://developer.authorize.net/api/reference/#mobile-in-app-transactions-create-an-apple-pay-transaction">Apple Pay section of the API Reference Guide</a>.</p>
+<p><emphasis>Note:</emphasis> Keep the following points in mind when submitting Apple Pay transactions:</p>
+<ul class="itemizedList"><li>Specify both opaque parameters.</li><li>You cannot include a card number or expiration date.</li><li>You cannot include track data.</li><li>The transaction must be an e-commerce transaction. To submit card-not-present transactions through the Authorize.Net API, set <code>marketType=0</code> in the <code>createTransactonRequest</code> API call. If you do not submit the <code>marketType</code> field, the payment gateway will use its default transaction type setting.</li><li>Set the <code>transactionType</code> to <code>authCaptureTransaction</code> or <code>authOnlyTransaction</code>.</li><li>You cannot include 3D Secure data.</li><li>You must submit data that can be successfully decrypted.</li><li>Decrypted data must belong to the merchant submitting the request.</li><li>The submitted data must be Base64-encoded.</li></ul>
+<h4 class="feature-item-subtitle subtitle2" id="Identifying_Apple_Pay_Transactions_in_the_Merchant_Interface">Identifying Apple Pay Transactions in the Merchant Interface</h4>
+<p>You can identify Apple Pay transactions in the Transaction Detail view of the Authorize.Net Merchant Interface.</p>
+<p><emphasis>To identify an Apple Pay transaction:</emphasis></p>
+<p><emphasis>Step 1.</emphasis> Log in to the Authorize.Net <a href="https://account.authorize.net">Merchant Interface</a> and navigate to <emphasis>Reports &gt; Transaction Detail</emphasis>.</p>
+<p><emphasis>Step 2.</emphasis> Choose an item type and a date from their respective drop-down menus and click <emphasis>Run Report</emphasis>.</p>
+<p><emphasis>Step 3.</emphasis> Choose a transaction by clicking its transaction ID.</p>
+<p>The Transaction Details lightbox appears. Apple Pay information appears in the Tokenization Information section.</p>
+</div></div></div>
+<div class="wrap xml-detail-content-wrapper"><div class="row"><div class="col-md-12 content-section">
+<h3 class="section-title subtitle para-diff3" id="Google_Pay™">Google Pay™</h3>
+<p>The Google Pay API enables merchants to accept payments from Google Pay users without entering payment information manually.</p>
+<p>Google Pay supports transactions paid through American Express, Discover, JCB, Mastercard, and Visa payment cards. For authorizations, Google Pay also supports the following authorization methods:</p>
+<ul class="itemizedList"><li><code>PAN_ONLY</code> for receiving personal account numbers (PAN) from Google Pay</li><li><code>CRYPTOGRAM_3DS</code> for receiving network tokens and cryptograms from Google Pay</li></ul>
+<p>Merchants using Google Pay can pass billing information with their transactions for AVS checks. Contact your Merchant Service Provider to confirm the minimum billing address requirements that they set.</p>
+<h4 class="feature-item-subtitle subtitle2" id="Web_Integration_in_JavaScript">Web Integration in JavaScript</h4>
+<p>The integration steps for the Google Pay SDK are based on the steps listed in the <a href="https://developers.google.com/pay/api/web/guides/tutorial">Google Pay integration tutorial</a>. The details below explain how to use your Authorize.Net account to request and use Google Pay payment network tokens.</p>
+<p><emphasis>Choosing a Payment Tokenization Method</emphasis></p>
+<p>Google Pay uses the Authorize.Net account's payment gateway ID to identify the merchant. See <a href="https://support.authorize.net/s/article/What-Is-My-Payment-Gateway-ID">What is My Payment Gateway ID?</a> for instructions on finding the payment gateway ID.</p>
+<p>In the <a href="https://developers.google.com/pay/api/web/guides/tutorial">Google Pay integration tutorial</a>, Step 2 explains how to set the payment tokenization method. For the <code>parameters</code> object, set the <code>gateway</code> field to <code>authorizenet</code>, and set the <code>gatewayMerchantId</code> field to your Authorize.Net account's payment gateway ID.</p>
+<p>See below for an example of how the fields would appear in the JavaScript code.</p>
+<textarea class="code-mirror-textarea" cols="145" id="code-js-encode" rows="5">
+tokenizationType: 'PAYMENT_GATEWAY',
+	parameters: {
+	    gateway: 'authorizenet',
+    	gatewayMerchantId: '[your Authorize.Net payment gateway ID]'
+			}
+			</textarea>
+<p><emphasis>Using the Payment Network Token</emphasis></p>
+<p>After obtaining a payment network token from Google Pay, encode the token's blob using Base64:</p>
+<textarea class="code-mirror-textarea" cols="145" id="code-js-encode" rows="2">
+let token = paymentData.paymentMethodToken.token;
+var enc = window.btoa(token);
+			</textarea>
+<p>Submit a <a href="https://developer.authorize.net/api/reference/#mobile-in-app-transactions-create-a-google-pay-transaction"><code>createTransactionRequest</code></a> API call. Set the <code>dataDescriptor</code> field to <code>COMMON.GOOGLE.INAPP.PAYMENT</code>, and set the <code>dataValue</code> field to the Base64-encoded blob.</p>
+<p>See the <a href="https://developer.authorize.net/api/reference/#mobile-in-app-transactions-create-a-google-pay-transaction">Google Pay section of the API Reference</a> for a sample API request.</p>
+<h4 class="feature-item-subtitle subtitle2" id="Phone_Application_Integration_in_Java">Phone Application Integration in Java</h4>
+<p>The integration steps for the Google Pay SDK are based on the steps listed in the <a href="https://developers.google.com/pay/api/android/guides/tutorial">Google Pay integration tutorial</a>. The details below explain how to use your Authorize.Net account to request and use Google Pay payment network tokens.</p>
+<p><emphasis>Choosing a Payment Tokenization Method</emphasis></p>
+<p>Google Pay uses the Authorize.Net account's payment gateway ID to identify the merchant. See <a href="https://support.authorize.net/s/article/What-Is-My-Payment-Gateway-ID">What is My Payment Gateway ID?</a> for instructions on finding the payment gateway ID.</p>
+<p>In the <a href="https://developers.google.com/pay/api/android/guides/tutorial#tokenization">Google Pay integration tutorial</a>, Step 2 explains how to set the payment tokenization method. For the <code>parameters</code> object, set the <code>gateway</code> field to <code>authorizenet</code>, and set the <code>gatewayMerchantId</code> field to your Authorize.Net account's payment gateway ID.</p>
+<p>See below for an example of how the fields would appear in the JavaScript code.</p>
+<textarea class="code-mirror-textarea" cols="145" id="code-js-encode" rows="3">
+.setPaymentMethodTokenizationType(WalletConstants.PAYMENT_METHOD_TOKENIZATION_TYPE_PAYMENT_GATEWAY)
+.addParameter("gateway", "authorizenet")
+.addParameter("gatewayMerchantId", "[your Authorize.Net payment gateway ID]")
+			</textarea>
+<p><emphasis>Using the Payment Network Token</emphasis></p>
+<p>After obtaining a payment network token from Google Pay, encode the token's blob using Base64:</p>
+<textarea class="code-mirror-textarea" cols="145" id="code-js-encode" rows="1">
+new String(Base64.encode(paymentData.getPaymentMethodToken().getToken().getBytes()))
+			</textarea>
+<p>Submit a <a href="https://developer.authorize.net/api/reference/#mobile-in-app-transactions-create-a-google-pay-transaction"><code>createTransactionRequest</code></a> API call. Set the <code>dataDescriptor</code> field to <code>COMMON.GOOGLE.INAPP.PAYMENT</code>, and set the <code>dataValue</code> field to the Base64-encoded blob.</p>
+<p>See the <a href="https://developer.authorize.net/api/reference/#mobile-in-app-transactions-create-a-google-pay-transaction">Google Pay section of the API Reference</a> for a sample API request.</p>
+</div></div></div>
+</div></div></div></div><footer class="container" id="footer"><div class="wrap footer-wrapper"><div class="row"><div class="col-md-3 dev-footer-col"><h3>ABOUT US</h3><ul><li><a href="https://www.authorize.net/" target="_blank" rel="noopener noreferrer">Authorize.Net</a></li><li><a href="https://www.authorize.net/resources/blog/" target="_blank" rel="noopener noreferrer">Corporate Blog</a></li><li><a href="https://twitter.com/authorizenetdev" target="_blank" rel="noopener noreferrer">Twitter</a></li><li><a href="https://status.authorize.net" target="_blank" rel="noopener noreferrer">Status</a></li></ul></div><div class="col-md-3 dev-footer-col"><h3>HOW PAYMENTS WORK</h3><ul><li><a href="https://www.authorize.net/resources/howitworksdiagram/" target="_blank" rel="noopener noreferrer">Understanding Credit Card Processing</a></li><li><a href="https://www.authorize.net/resources/blog/understanding-pci-compliance/" target="_blank" rel="noopener noreferrer">PCI Compliance</a></li></ul></div><div class="col-md-3 dev-footer-col"><h3>FIND A PARTNER</h3><ul><li><a href="https://www.authorize.net/partners/affiliate" target="_blank" rel="noopener noreferrer">Affiliate Program</a></li><li><a href="https://www.authorize.net/partners" target="_blank" rel="noopener noreferrer">Certification Program</a></li><li><a href="https://www.authorize.net/solutions/merchantsolutions/merchantservices/certifiedsolutiondirectory/" target="_blank" rel="noopener noreferrer">Certified 3rd Party Products and Services</a></li><li><a href="https://www.cybersource.com/" target="_blank" rel="noopener noreferrer">CyberSource.com</a></li></ul></div><div class="col-md-3 dev-footer-col last"><ul><li class="bbb-logo"><a class="ruhzbum" target="_blank" rel="noopener noreferrer" title="Authorize.Net is a BBB Accredited Credit Card Payment Processor." href="http://www.bbb.org/utah/business-reviews/credit-card-processing-service/authorize-net-a-cybersource-solution-in-american-fork-ut-2009493/#bbblogo"><img src="../dist/imgs/bbb-logo.png" alt="Authorize.Net is a BBB Accredited Credit Card Payment Processor." /></a></li></ul></div></div><div class="divider"></div><div class="row dev-footer-bottom"><div class="col-md-3 left"><a href="https://www.authorize.net/en-us.html"><img src="/content/dam/developer/images/anet-logo-white-developer.png" alt="Authorize.Net Logo" /></a></div><div class="col-md-9 align-right right" style="padding-top:16px;"><a href="https://developer.authorize.net/sitemap/">Site Map</a><a href="https://www.authorize.net/company/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a><a href="https://www.authorize.net/company/terms/" target="_blank" rel="noopener noreferrer">Terms of Use</a><p class="copyright text-uppercase">© 2018-2019. Authorize.Net. All rights reserved.
+All brand names and logos are the property of their respective owners, are used for identification purposes only, and do not imply product endorsement or affiliation with Authorize.Net.
+</p></div></div></div></footer></div></div></div></div><script src="../dist/js/app.js" type="text/javascript"> </script><script src="../external/bootstrap.min.js"> </script><script src="../external/doc.min.js"> </script><script src="../dist/js/feature_details.js"> </script><script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.29.0/codemirror.min.js" integrity="sha384-qntMdLR7o8tSdm0KTMxeq9MnbkRzhfxMVY2doqZdmieORkpiVgXzpD+nT+rY98xi"> </script><script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.29.0/mode/xml/xml.min.js" integrity="sha384-e/fnBGr9qdKNHXyNtN4otYP1GeqWpciMOrXfaDt8GH8tBJI3bm6e6lrXBf3W6nmJ"> </script><script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.29.0/mode/javascript/javascript.min.js" integrity="sha384-jwN0k+8Rv0RSXteUQx0mCa15siARsJTQnNdd8+aPscMQFoR/4NlW8LawAg3/yRcz"> </script><script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.29.0/mode/htmlmixed/htmlmixed.min.js" integrity="sha384-kacwmjZtheZ6SiaxbTEmD2WbJI8tfWhk9Di7+t7205BnbV7xkLtYElo5DO0OZrvR"> </script>
+<script type="text/javascript">
+                  
+                  	var _gaq = _gaq || [];
+                  	_gaq.push(['_setAccount', 'UA-20120532-2']);
+                  	_gaq.push(['_trackPageview']);
+                  	(function() {
+                  		var ga = document.createElement('script');
+                  		ga.type = 'text/javascript';
+                  		ga.async = true;
+                  		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                  		var s = document.getElementsByTagName('script')[0];
+                  		s.parentNode.insertBefore(ga, s);
+                  	})();
+                  	
+                  	window.onload = function(){ 
+                  
+                  		$("textarea.code-mirror-textarea").each(function(ind, ele) {
+                  
+                  			var height = $(ele).attr('rows')*16+10;
+                  			var type = $(ele).attr('id').split("-");
+                  			if(type[1] === "html")
+                  			{
+                  				var codeEditor =  CodeMirror.fromTextArea(ele, {"mode": "text/html", "lineNumbers": true, "readOnly": true});
+                  				codeEditor.setSize(900,height);
+                  			}
+                  			else if(type[1] === "js")
+                  			{
+                  				var codeEditor =  CodeMirror.fromTextArea(ele, {"mode": "text/javascript", "lineNumbers": true, "readOnly": true});
+                  				codeEditor.setSize(900,height);	
+                  			}
+                  			else if(type[1] === "json")
+                  			{
+                  				var codeEditor =  CodeMirror.fromTextArea(ele, {"mode": "application/json", "lineNumbers": true, "readOnly": true});
+                  				codeEditor.setSize(900,height);
+                  			}
+                  			else if(type[1] === "xml")
+                  			{
+                  				var codeEditor =  CodeMirror.fromTextArea(ele, {"mode": "text/xml", "lineNumbers": true, "readOnly": true});
+                  				codeEditor.setSize(900,height);
+                  			}
+                  
+                  		});
+                  		 $('.dropdown-toggle').dropdown();
+                  		 $('#mobileNavbar>ul>li>ul').on('show.bs.collapse', function (e) {
+                  			 $(this).prev().find(".glyphicon").removeClass("glyphicon-chevron-right").addClass("glyphicon-chevron-down");
+                  			 $(this).parent().siblings().each(function(index,element){
+                  				 $(element).find("ul").removeClass("in");
+                  				 $(element).find(".glyphicon-chevron-down").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-right");
+                  			 });
+                  		 });
+                  		  $('#mobileNavbar>ul>li>ul').on('hide.bs.collapse', function (e) {
+                  			 $(this).prev().find(".glyphicon-chevron-down").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-right");
+                  		 });
+                  		 $(".container-outter img").addClass("img-responsive-inline");
+                  		 if ($("#featureDetailsNavID").css('display') == 'none') {	$("body").attr('data-target','#dropDownMenu');  }
+                  		 $("#featureDetailsPage .dropdown-menu>li>a").click(function(){ $('.dropdown-toggle').dropdown('toggle'); });
+                  	};
+                  		
+                  </script>
+</body>
+</html>
