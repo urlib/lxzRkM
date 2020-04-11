@@ -1,0 +1,408 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Google Pay</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css">
+      <link rel="apple-touch-icon" sizes="57x57" href="../images/icons/apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="../images/icons/apple-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="../images/icons/apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="../images/icons/apple-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="../images/icons/apple-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="../images/icons/apple-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="../images/icons/apple-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="../images/icons/apple-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="../images/icons/apple-icon-180x180.png">
+      <link rel="icon" type="image/png" href="../images/icons/android-icon-192x192.png" sizes="192x192">
+      <link rel="icon" type="image/png" href="../images/icons/favicon-32x32.png" sizes="32x32">
+      <link rel="icon" type="image/png" href="../images/icons/favicon-96x96.png" sizes="96x96">
+      <link rel="icon" type="image/png" href="../images/icons/favicon-16x16.png" sizes="16x16"><script type="text/javascript" src="../js/jquery.min.js"></script><script type="text/javascript" src="../js/fingerprint2.js"></script><script type="text/javascript" src="../js/bootstrap.min.js"></script><link type="text/css" rel="stylesheet" href="../css/syntaxhighlighter/shCore.css">
+      <link type="text/css" rel="stylesheet" href="../css/syntaxhighlighter/shThemeDefault.css"><script type="text/javascript" src="../js/syntaxhighlighter/shCore.js"></script><script type="text/javascript" src="../js/syntaxhighlighter/shBrushPhp.js"></script><script type="text/javascript" src="../js/syntaxhighlighter/shBrushBash.js"></script><script type="text/javascript" src="../js/syntaxhighlighter/shBrushCss.js"></script><script type="text/javascript" src="../js/syntaxhighlighter/shBrushXml.js"></script><script type="text/javascript" src="../js/syntaxhighlighter/shBrushPlain.js"></script><script type="text/javascript" src="../js/syntaxhighlighter/shBrushJScript.js"></script><link type="text/css" rel="stylesheet" href="../css/font.css">
+      <link type="text/css" rel="stylesheet" href="../css/PayUDev.css">
+      <link type="text/css" rel="stylesheet" href="../css/style.css"><script type="text/javascript">
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-23234678-27', 'payu.com');
+            ga('send', 'pageview');
+        </script><script type="text/javascript">
+            function trackOutboundLink(link) {
+
+                try {
+                    ga('send', 'event', 'outbound', 'click', link.href);
+                } catch (err) {
+                }
+
+                setTimeout(function () {
+                    window.open(link.href);
+                }, 100);
+            }
+        </script><script type="text/javascript">
+            //
+            $(function () {
+                $('#sidebar').affix({
+                    offset: {
+                        top: 290,
+                        bottom: 60
+                    }
+                });
+
+                $('body').scrollspy({
+                    target: '#sidebar',
+                    offset: 70
+                });
+
+                //$('.dropdown-toggle').dropdown();
+
+                SyntaxHighlighter.defaults['toolbar'] = false;
+                SyntaxHighlighter.all();
+
+                $('.lng-select').click(function () {
+                    var url = $(location).attr('href');
+                    var list = url.split("/");
+                    var lang = list[list.length - 2];
+                    url = url.replace("/" + lang + "/", "/" + $(this).data("lng") + "/");
+                    //console.log(url);
+                    $(location).attr('href', url);
+                });
+
+                /*$('#lang-select').change(function() {
+                    var url = $(location).attr('href');
+                    var list = url.split("/");
+                    var lang = list[list.length-2];
+                    url = url.replace("/" + lang + "/", "/" + $(this).val() + "/");
+                    //console.log(url);
+                    $(location).attr('href', url);
+                    //$('#lang-form').submit();
+                });*/
+
+                $('.faq > div > h4').click(function () {
+                    var panels = $(this).parents('.faq').find('> div');
+
+                    var questions = panels.find('> h4');
+                    var answers = panels.find('> div');
+
+                    var thisQuestion = $(this);
+                    var thisAnswer = $(this).parent().find('> div');
+
+                    questions.not(thisQuestion).removeClass('active');
+                    answers.not(thisAnswer).slideUp();
+
+                    $(this).toggleClass('active');
+                    $(this).siblings().slideToggle();
+
+                    ga('send', 'event', 'FAQ click', thisQuestion.text().replace(/^.*?\./, '').trim());
+                });
+            });
+            //
+            
+        </script><script language="javascript" type="text/javascript">
+            $(document).ready(function () {
+                var possible = "abcdefghijklmnopqrstuvwxyz0123456789";
+                $("pre").each(function () {
+                    //extOrderId
+                    var extOrderId = "";
+                    for (var i = 22; i > 0; i--)
+                        extOrderId += possible.charAt(Math.floor(Math.random() * possible.length));
+
+                    //deviceFingerPrint
+                    var deviceFingerPrint2 = "";
+                    new Fingerprint2({
+                        excludeJsFonts: true,
+                        excludeAdBlock: true,
+                        excludeFlashFonts: true,
+                        excludeWebGL: true
+                    }).get(function (result) {
+                        deviceFingerPrint2 = result;
+                    });
+
+                    //replacement
+                    var content = $(this).text();
+                    $(this).text(content.replace('[generateExtOrderId]', extOrderId));
+                    content = $(this).text();
+                    $(this).text(content.replace('[generateFingerPrint2]', deviceFingerPrint2));
+                });
+            });
+        </script><script>
+            function setProduction(isProduction) {
+                if (isProduction) {
+                    document.getElementById('sandbox_div').style.display = 'none';
+                    document.getElementById('production_div').style.display = '';
+                }
+                else {
+                    document.getElementById('sandbox_div').style.display = '';
+                    document.getElementById('production_div').style.display = 'none';
+                }
+            }
+        </script></head>
+   <body><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5HBR2C" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start':
+                        new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s), dl = l != 'dataLayer' ? '&amp;l=' + l : '';
+            j.async = true;
+            j.src =
+                    '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5HBR2C');
+        </script><div id="navbar" class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+         <div class="container">
+            <div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="https://www.payu.pl"><img src="../images/payu_logo.png" alt="PayU"></a></div>
+            <div class="collapse navbar-collapse">
+               <ul class="nav navbar-nav">
+                  <li><a href="overview.html">Overview</a></li>
+                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">API and SDK<b class="caret"></b></a><ul class="dropdown-menu">
+                        <li><a href="restapi.html">REST API</a></li>
+                        <li><a href="classic_api.html">Classic API</a></li>
+                        <li><a href="sdk.html">SDK</a></li>
+                        <li><a href="mobile_sdk.html">PayU ǀ Mobile (Mobile SDK)</a></li>
+                        <li><a href="payouts.html">Payout API</a></li>
+                     </ul>
+                  </li>
+                  <li class="active"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Additional services<b class="caret"></b></a><ul class="dropdown-menu">
+                        <li><a href="apple_pay.html">Apple Pay</a></li>
+                        <li><a href="blik_oneclick.html">BLIK OneClick</a></li>
+                        <li><a href="payment_link.html">Payment link</a></li>
+                        <li class="active"><a href="google_pay.html">Google Pay</a></li>
+                        <li><a href="marketplace.html">Marketplace PSD2</a></li>
+                        <li><a href="mass_collect.html">Mass Collect</a></li>
+                        <li><a href="masterpass.html">Masterpass</a></li>
+                        <li><a href="moto.html">MOTO</a></li>
+                        <li><a href="multi-currency.html">Multi-Currency Pricing</a></li>
+                        <li><a href="payu_express.html">PayU | Express</a></li>
+                        <li><a href="installments.html">Installments and Pay later</a></li>
+                        <li><a href="recurring.html">Recurring payments</a></li>
+                        <li><a href="partner_program.html">Referral Program</a></li>
+                        <li><a href="visa_checkout.html">Visa Checkout</a></li>
+                        <li><a href="statements.html">Transaction statements</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="plugins.html">Plugins and integrations</a></li>
+                  <li><a href="overview.html#sandbox">Sandbox</a></li>
+                  <li><a href="#" data-lng="pl" class="lng-select">pl</a><span>/</span><a href="#" data-lng="en" class="lng-select active">en</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="head">
+         <div class="container">
+            <div class="jumbotron">
+               <h1>Google Pay</h1>
+               <p class="lead"></p>
+               <p></p>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-3">
+               <div id="sidebar" class="bs-sidebar hidden-print affix" role="complementary">
+                  <ul class="nav bs-sidenav">
+                     <li><a href="#google_pay_introduction">1&nbsp;Introduction</a></li>
+                     <li><a href="#google_pay_integration">2&nbsp;Integration</a><ul>
+                           <li><a href="#google_pay_integration_web">2.1&nbsp;Web integration</a></li>
+                           <li><a href="#google_pay_integration_android">2.2&nbsp;Android integration</a></li>
+                        </ul>
+                     </li>
+                     <li><a href="#google_pay_order">3&nbsp;Order</a></li>
+                     <li><a href="#google_pay_error_codes">4&nbsp;Error codes in Google Pay</a></li>
+                     <li><a href="#google_pay_sandbox">5&nbsp;Sandbox</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-md-9"><span id="google_pay_introduction" class="anchor"></span><div>
+                  <h2>1 Introduction</h2>
+                  <div>
+                     
+                     <p>Google Pay™ (formerly Android Pay) is a digital wallet, which enables simple and fast
+                        card payments,
+                        without the need to enter the card data for each payment. The card data is safely
+                        stored by Google.
+                        This payment method is available for all devices (mobile phones and computers), irrespective
+                        of the
+                        operating system and web browser.
+                        </p>
+                     
+                     <p>In case of Google Pay usage, Acceptor is obligated to comply with the provisions of
+                        the following <b><a href="https://payments.developers.google.com/terms/sellertos">regulations</a></b>.</p>
+                     
+                     <blockquote>
+                        Note: the description below applies to provision of this service directly by displaying
+                        the Google Pay
+                        <i>lightbox</i> at the website of payment recipient (e-store) or in the mobile application.
+                        </blockquote>
+                     
+                     <p>If you wish to offer this method via PayU hosted payment page, no additional integration
+                        effort is required.</p>
+                     </div>
+               </div><span id="google_pay_integration" class="anchor"></span><div>
+                  <h2>2 Integration</h2>
+               </div><span id="google_pay_integration_web" class="anchor"></span><div>
+                  <h2>2.1 Web integration</h2>
+                  <div>
+                     
+                     <p>To integrate the website with the Google Pay method, proceed according to the instructions
+                        placed at this website:</p>
+                     
+                     <div class="p">
+                        
+                        <ul>
+                           <li>API documentation: <b><a href="https://developers.google.com/pay/api/web">https://developers.google.com/pay/api/web</a></b></li>
+                           <li>Brand guidelines: <b><a href="https://developers.google.com/pay/api/web/guides/brand-guidelines">https://developers.google.com/pay/api/web/guides/brand-guidelines</a></b></li>
+                        </ul>
+                        </div>
+                     
+                     <p>The <i>gateway</i> parameter in the script should have the constant value of <b>payu</b>, according to the example below:
+                        </p>
+                     
+                     
+                     <pre class="brush:jscript;">
+                const tokenizationSpecification = {
+                  type: 'PAYMENT_GATEWAY',
+                  parameters: {
+                    'gateway': 'payu',
+                    'gatewayMerchantId': '[Point of Service Id (pos_id)]'
+                  }
+                };
+            </pre>
+                     
+                     
+                     <p>The value of the <i>gatewayMerchantId</i> parameter should be the identifier of the payment point where the order is made.</p>
+                     
+                     <p>Please note that PayU as the processor of Google Pay payments enables the handling
+                        of all types of payment cards issued by the Visa and MasterCard organizations (including
+                        Maestro). This implies the following configuration of the Google script:</p>
+                     
+                     
+                     <pre class="brush:jscript;">
+                const allowedCardNetworks = ['MASTERCARD', 'VISA'];
+                const allowedCardAuthMethods = ['PAN_ONLY', 'CRYPTOGRAM_3DS'];
+            </pre>
+                     
+                     
+                     <p>In response, Google shall return the <i>PaymentData</i> item, and the field <i>paymentMethodData.tokenizationData.token</i> shall contain a safely encrypted <b>Google Pay Token</b> (a <i>string</i> of characters).</p>
+                     
+                     <p>A sample <b>Google Pay Token</b> looks like this:</p>
+                     
+                     
+                     <pre class="brush:jscript;">
+                {
+                    "signature": "MEUCIQDY3wBQyHB4sZcktRoJXKxm+OLcjHzCvdDeGn23oX0kkwIgKznRFZZL+sDMv1b5cuD+YurXMZraYBsr9hbravVY5Ro\u003d",
+                    "protocolVersion": "ECv1",
+                    "signedMessage": "{\"encryptedMessage\":\"cI87tLqzqTGyCFnMMCVWcTHw3xhYIK+CEnuQ74K+nlLpCgOlfpScib9jds4sxDtN6CunCqCSMfd/3yHeeRy6aCx1yyqcT4ey6NueeBznprJpkmVVgI1JHWLQt4hzAXMUAcYASYLOabKP9fUZvHkOBDytD531jpzNXa+Spc/zrpGzFKx2C4VU9sC95q9i+ey+kr7ZMNVCOFJPWXu7lKZ105IOOqozJ6/70MKmxP3jM89eeq+/19QnyHjQLXfnQPvQjiUJKGCcRKDLlrb3XoY5ZUUzGfN5eZCLzCVg0hWEbwU+6J7KWYJyW+Wr1r8bagN9zWsrMKhDpsQbHfyzb+yBzFUoxeUgL4a7FeVvEllIcHtqsvTCf6FENV20aF5VLDv5qzUkV+PzTAIbFEuabA0God9UbVCVVv7nM8QFzvRPhzYYFVFTn4JHvL2qZ4pAR9lE+w\\u003d\\u003d\",\"ephemeralPublicKey\":\"BPHLC4sBHpenY1M0ixmiDMuWJTaTJOqggRUwtgBJMcBp28VsxHD7zPI7985x4F5EjMP5y8j/cuUzbe/cGPjOKGk\\u003d\",\"tag\":\"RaXrPOUuc5iw3oxDa0C2MOjaKxgxIRQvwOspmtFV0zU\\u003d\"}"
+                }
+            </pre>
+                     </div>
+               </div><span id="google_pay_integration_android" class="anchor"></span><div>
+                  <h2>2.2 Android integration</h2>
+                  <div>
+                     
+                     <p>To integrate the mobile application with the Google Pay method, proceed according
+                        to the instructions placed at this website:</p>
+                     
+                     <div class="p">
+                        
+                        <ul>
+                           <li>API documentation: <b><a href="https://developers.google.com/pay/api/android">https://developers.google.com/pay/api/android</a></b></li>
+                           <li>Brand guidelines: <b><a href="https://developers.google.com/pay/api/android/guides/brand-guidelines">https://developers.google.com/pay/api/android/guides/brand-guidelines</a></b></li>
+                        </ul>
+                        </div>
+                     
+                     <p> To make the integration easier, use the <b><a href="https://drive.google.com/drive/folders/1BvDT6gUs2uD0VYMc_7InUfG0rWk8WBae">technical documentation</a></b> for the <b><a href="mobile_sdk.html">PayU | Mobile</a></b> SDK. </p>            
+                     </div>
+               </div><span id="google_pay_order" class="anchor"></span><div>
+                  <h2>3 Order</h2>
+                  <div>
+                     
+                     <p>To charge the payment card stored under Google Pay, in the request <i>OrderCreateRequest</i> place an extended item of <i>payMethods</i>.</p>
+                     
+                     <p>The item <i>payMethods.payMethod</i> must contain the <i>authorizationCode</i> field, whose value is the <b>GooglePay Token</b> parameter, coded with the Base64 function. The field <i>payMethod.value</i> should have the <b>ap</b> value, and the field <i>payMethod.type</i> - the <b>PBL</b> value.</p>
+                     
+                     
+                     <pre class="brush:jscript;">
+                "payMethods": {
+                    "payMethod": {
+                        "value": "ap",
+                        "type": "PBL",
+                        "authorizationCode": "eyJzaWduYXR1cmUiOiJNRVVDSVFEWTN3QlF5SEI0c1pja3RSb0pYS3htK09MY2pIekN2ZERlR24yM29YMGtrd0lnS3puUkZaWkwrc0RNdjFiNWN1RCtZdXJYTVpyYVlCc3I5aGJyYXZWWTVSb1x1MDAzZCIsInByb3RvY29sVmVyc2lvbiI6IkVDdjEiLCJzaWduZWRNZXNzYWdlIjoie1wiZW5jcnlwdGVkTWVzc2FnZVwiOlwiY0k4N3RMcXpxVEd5Q0ZuTU1DVldjVEh3M3hoWUlLK0NFbnVRNzRLK25sTHBDZ09sZnBTY2liOWpkczRzeER0TjZDdW5DcUNTTWZkLzN5SGVlUnk2YUN4MXl5cWNUNGV5Nk51ZWVCem5wckpwa21WVmdJMUpIV0xRdDRoekFYTVVBY1lBU1lMT2FiS1A5ZlVadkhrT0JEeXRENTMxanB6TlhhK1NwYy96cnBHekZLeDJDNFZVOXNDOTVxOWkrZXkra3I3Wk1OVkNPRkpQV1h1N2xLWjEwNUlPT3Fveko2LzcwTUtteFAzak04OWVlcSsvMTlRbnlIalFMWGZuUVB2UWppVUpLR0NjUktETGxyYjNYb1k1WlVVekdmTjVlWkNMekNWZzBoV0Vid1UrNko3S1dZSnlXK1dyMXI4YmFnTjl6V3NyTUtoRHBzUWJIZnl6Yit5QnpGVW94ZVVnTDRhN0ZlVnZFbGxJY0h0cXN2VENmNkZFTlYyMGFGNVZMRHY1cXpVa1YrUHpUQUliRkV1YWJBMEdvZDlVYlZDVlZ2N25NOFFGenZSUGh6WVlGVkZUbjRKSHZMMnFaNHBBUjlsRSt3XFx1MDAzZFxcdTAwM2RcIixcImVwaGVtZXJhbFB1YmxpY0tleVwiOlwiQlBITEM0c0JIcGVuWTFNMGl4bWlETXVXSlRhVEpPcWdnUlV3dGdCSk1jQnAyOFZzeEhEN3pQSTc5ODV4NEY1RWpNUDV5OGovY3VVemJlL2NHUGpPS0drXFx1MDAzZFwiLFwidGFnXCI6XCJSYVhyUE9VdWM1aXczb3hEYTBDMk1PamFLeGd4SVJRdndPc3BtdEZWMHpVXFx1MDAzZFwifSJ9"
+                    }
+                }
+            </pre>
+                     
+                     
+                     <p>Further processing of the request is subject to the standard process, which is
+                        described under <b><a href="restapi.html">REST API</a></b>. </p>
+                     
+                     <blockquote>Please note that it may be necessary to handle a redirect of the request to the 3D
+                        Secure authentication page.</blockquote>
+                     </div>
+                  <div>
+                     
+                     <p>As the orders paid with the Google Pay method shall be settled just as standard card
+                        payments, it is worth considering the integration of the service <b><a href="restapi.html#trx_data_retrieve">transaction data
+                              retrieve</a></b>. In this manner, you will be able to differentiate cards
+                        entered through the PayU form from cards downloaded from Google Pay.</p>
+                     </div>
+               </div><span id="google_pay_error_codes" class="anchor"></span><div>
+                  <h2>4 Error codes in Google Pay</h2>
+                  <div>
+                     
+                     <p>List of standard errors returned by Google Pay lightbox can be found on the <b><a href="https://developers.google.com/pay/api/web/support/troubleshooting?hl=en" target="_blank" onClick="trackOutboundLink(this); return false;">Google Developers</a></b> site.</p>
+                     
+                     <p>In addition following errors may occur:</p>
+                     
+                     <ul>
+                        <li>
+                           <b>"Nieoczekiwany błąd po stronie programisty - spróbuj ponownie później"</b> -
+                           returned e.g. if  parameter <code>environment</code> is specified as
+                           "PRODUCTION" for POS from the Sandbox environment. </li>
+                     </ul>
+                     </div>
+               </div><span id="google_pay_sandbox" class="anchor"></span><div>
+                  <h2>5 Sandbox</h2>
+                  <div>
+                     
+                     <p>The Google Pay payment method is available also under the Sandbox environment – during
+                        the integration process, openly indicate the test environment:</p>
+                     
+                     
+                     <pre class="brush:jscript;">
+                var paymentsClient = new google.payments.api.PaymentsClient({environment: 'TEST'});
+            </pre>
+                     
+                     
+                     <p>As Google Pay is not the default payment method, please contact our  <b><a href="https://www.payu.pl/en/help" target="_blank" onClick="trackOutboundLink(this); return false;">IT support department</a></b> after registration in the Sandbox environment, but before commencing integration
+                        with the use of the Google Pay method.</p>
+                     </div>
+               </div>
+            </div>
+         </div>
+         <div id="footer">
+            © PayU, All rights reserved
+            
+            <ul class="small_menu">
+               <li><a href="http://www.payu.pl/o-payu" onClick="trackOutboundLink(this); return false;">About PayU
+                     </a></li>
+            </ul>
+            <div id="cookie_info">
+               This website uses cookies to provide services and pursuant to the <a target="_blank" href="https://static.payu.com/sites/terms/files/PayU_cookies_policy.pdf" onClick="trackOutboundLink(this); return false;">Cookies Policy</a>. You may
+               define the conditions for keeping or accessing cookies in your browser.
+               </div>
+         </div>
+      </div><script src="http://app1.sugester.com/7623/widget.js" type="text/javascript"></script><script>
+            setProduction(true);
+        </script></body>
+</html>
